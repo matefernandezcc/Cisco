@@ -1,0 +1,6745 @@
+Title: Lab: Red Cisco | Redes de Datos UTN | 27/8/2026
+
+(0:27) Buenas  tardes,  chicos.  ¿Me  escuchan
+
+(0:29) bien?
+
+(0:30) Perfecto.  Buenas  tardes.
+
+(0:33) Sí,
+
+(0:33) profe.  Buenas  tardes.
+
+(0:35) Vamos  a  aguantar.
+
+(0:37) Se  escucha  bien.
+
+(0:39) Perfecto.  Vamos  a  aguantar  que  ingresen
+
+(0:43) los  alumnos  que  faltan  y  arrancamos  este
+
+(0:47) 1905.  ¿Les  parece?
+
+(0:51) Dale,
+
+(0:51) perfecto.  Bárbaro,
+
+(0:54) bárbaro.
+
+(1:06) Bueno,  ahora  sí.
+
+(1:09) Bueno,  les  doy  la  bienvenida  a  los
+
+(1:12) cursos  de  redes.  Eh,  los  voy  a  nombrar
+
+(1:15) uno  por  uno  porque  en  este  caso  vamos  a
+
+(1:18) trabajar  de  manera  virtual  la  mayoría  de
+
+(1:22) las  clases  y  algunas  clases  las  vamos  a
+
+(1:24) hacer  presencial.  Sí,  eso  lo  vamos  a  ir
+
+(1:27) informando  en  la  medida  que  pase  eh  vaya
+
+(1:30) corriendo  el  cuatrimestre.  Sí,  me
+
+(1:32) presento.  Mi  nombre  es  Leonardo  Souza.
+
+(1:34) Yo  soy  ingeniero  en  sistemas,  me  recibí
+
+(1:36) en  esta  casa  de  estudios.
+
+(1:38) A  mí  me  acompaña  el  ingeniero  Rafael
+
+(1:40) Oliveri  en  que  te  doy  la  palabra.
+
+(1:44) Rafael,
+
+(1:48) ¿estás  muteado.
+
+(1:52) Bueno,  ahora  sí,  por  acá  estoy.  También
+
+(1:54) los  saludo.  Este,  les  doy  la  bienvenida
+
+(1:58) y  bueno,  vamos  a  hacer  este  trabajo  en
+
+(2:01) conjunto.  Como  yo  me  incorporo
+
+(2:03) recientemente  a  estas  prácticas,  este,
+
+(2:08) el  ingeniero  de  Souza  va  a  dar  los
+
+(2:11) lineamientos,  las  cuestiones  para  que  el
+
+(2:13) curso  sea  estandarizado  y  después  cuando
+
+(2:15) tengan  que  trabajar  las  consultas  y  todo
+
+(2:17) eso  la  van  a  atender  conmigo
+
+(2:20) el  curso,  en  principio  el  curso  4773
+
+(2:26) y  el  otro  curso  del  ingeniero  Cobal  que
+
+(2:28) bueno  dividiremos
+
+(2:30) los  los  alumnos  para  para  poder
+
+(2:32) atenderlos  convenientemente.
+
+(2:36) Perfecto.  Bueno,  entonces  para  resumir
+
+(2:40) los  días  jueves  eh  estamos  en  esta
+
+(2:44) sesión  virtual  tres  cursos,  el  4773,
+
+(2:48) digamos,  que  es  el  que  va  a  manejar  el
+
+(2:50) ingeniero  Oliveri.
+
+(2:53) el  40
+
+(2:56) 575,
+
+(2:57) sí,  que  es  el  es  del  ingeniero  Alcina
+
+(3:00) también.  E  ese  lo  lo  voy  a  manejar  yo,
+
+(3:03) van  a  estar  principalmente  conmigo.  Y
+
+(3:06) después  el  otro  curso  que  es  del
+
+(3:08) ingeniero  Cobal,  que  es  el  4574,
+
+(3:11) también  lo  vamos  a  manejar  en  conjunto
+
+(3:14) eh  junto  con  Rafael  Oliveri.  ¿Sí?
+
+(3:17) Entonces,  e
+
+(3:20) nuevamente,  como  les  decía,  les  doy  la
+
+(3:21) bienvenida,  les  voy  a  compartir  eh
+
+(3:24) nosotros  vamos  a  trabajar,  cada  curso
+
+(3:27) tiene  su  aula  virtual,  ¿sí?  O  sea,  el
+
+(3:29) curso  del  4773
+
+(3:32) del  ingeniero  Alcina  tiene  su  propia
+
+(3:35) aula  virtual.  El  45
+
+(3:39) 74  del  ingeniero  Cobal  tiene  su  propia
+
+(3:41) aula  virtual.  Y  por  último,  el  4575,  que
+
+(3:45) también  es  del  ingeniero  Alcina,  eh,
+
+(3:48) también  tiene  su  aula  virtual.  Sí.
+
+(3:51) Entonces,  acá  estamos  todos  los  alumnos
+
+(3:53) lo  de  los  tres  cursos,  ¿sí?  En  esta
+
+(3:55) sesión  virtual,  pero  consideremos  que
+
+(3:57) cada  cada  alumno  corresponde  a  uno  de
+
+(4:00) estos  tres  cursos.  Después,  algo
+
+(4:03) importante  a  saber  es  que  la  cátedra  de
+
+(4:07) redes  tiene  un  aula  virtual  general  que
+
+(4:10) es  transversal  para  todos  los  cursos.
+
+(4:12) que  es  donde  se  suben  todos  los
+
+(4:15) materiales  que  vamos  a  ir  descargando,
+
+(4:18) ¿sí?,  y  con  los  que  vamos  a  ir
+
+(4:19) trabajando.  Y  yo  ahora  les  voy  a  ir
+
+(4:22) comentando  cómo  es  la  cómo  es  la
+
+(4:24) metodología.  Sí,  para  probar  el
+
+(4:26) laboratorio  de  redes  tenemos  que  cumplir
+
+(4:29) ciertos  lineamientos.
+
+(4:31) Dentro  de  ellos  tenemos  seis  trabajos  de
+
+(4:33) laboratorio  o  o  denominados  trabajos
+
+(4:36) prácticos.
+
+(4:37) Esos  trabajos  de  laboratorio,  que  son
+
+(4:39) seis  en  total,  se  dividen  en  en  dos
+
+(4:43) tramos.  El  primer  tramo  que  se  lo  llama
+
+(4:47) eh  del  uno  al  cuatro,  van  a  ver  todos
+
+(4:50) los  conceptos  relacionados  con
+
+(4:52) networking,  o  sea,  con  redes  de  datos.
+
+(4:55) Eh,  y  vamos  a  usar  un  simulador
+
+(4:57) conocido,  digamos,  que  fue  desarrollado
+
+(5:00) por  Cisco,  eh,  que  se  denomina  Cisco
+
+(5:02) Packet  Tracer.  Y  a  través  del  uso  de  ese
+
+(5:05) simulador,  todo  lo  que  ustedes  van  a  ver
+
+(5:07) en  la  teoría  lo  vamos  a  trasladar  a  la
+
+(5:10) práctica  haciendo  ejercicios  con  el
+
+(5:12) simulador.  ¿Sí?  Vamos  a  ver,  por
+
+(5:14) ejemplo,  en  todo  lo  que  es  eh  eh
+
+(5:18) direccionamiento  IP,  vamos  a  ver  eh  lo
+
+(5:21) que  es  direccionamiento
+
+(5:23) lógico  a  través  de  MACADRES  eh  y  eh
+
+(5:26) perdón,  direccionamiento  físico,
+
+(5:28) digamos,  a  través  de  macadres.  Y  con  eso
+
+(5:30) eh  vamos  a  aprender  lo  que  es  eh  la
+
+(5:32) conmutación  de  paquetes,  o  sea,  eh  a
+
+(5:35) través  de  los  switches,  o  sea,  lo  que
+
+(5:37) switching.  Después  vamos  a  ver
+
+(5:39) enrutamiento,  vamos  a  ver  en  eh  VPN,  o
+
+(5:43) sea,  túneles  IPSC,  vamos  a  ver  cómo
+
+(5:45) funcionan  la  lista  de  control  de  acceso,
+
+(5:48) o  sea,  vamos  a  ver,  vamos  a  barrar  una
+
+(5:50) serie  de  temas  eh  que  todos  lo  van  a  ver
+
+(5:52) en  la  teoría  y  nosotros  lo  vamos  a
+
+(5:54) trasladar  a  la  práctica  usando  el
+
+(5:56) simulador.  Esos  son  los  trabajos  de
+
+(5:58) laboratorio  del  uno  al  cuatro.  Los
+
+(6:00) últimos  dos  trabajos  de  laboratorio  que
+
+(6:02) tenemos  en  es  de  análisis  de  tráfico.  En
+
+(6:07) para  el  análisis  de  tráfico  usamos  un
+
+(6:08) analizador  de  protocolos  también
+
+(6:10) conocido  en  el  mercado,  se  usa  mucho,
+
+(6:12) que  se  llama  Wirk.
+
+(6:15) Entonces,  les  voy  a  mostrar,  les  voy  a
+
+(6:17) compartir  la  pantalla  y  les  voy  a
+
+(6:18) mostrar  un  poco  el  tema  de  las  aulas
+
+(6:21) virtuales  para  que  ustedes  ya  vayan  eh
+
+(6:23) viendo  cómo  es  el  tema  y  en  caso  de  que
+
+(6:26) haya  alguien  que  no  se  matriculó,  que  ya
+
+(6:29) vaya  sabiendo  que  tiene  que  trabajar
+
+(6:31) sobre  eso.  Voy  a  sacar  la  cámara  ahora
+
+(6:33) que  ya  me  presenté  para  que  sea  un  poco
+
+(6:35) más  dinámico  esto  y  ustedes  se  se
+
+(6:38) enfoquen  más  en  lo  que  voy  a  mostrar.
+
+(6:41) Bien,  entonces
+
+(6:44) si  se  fijan  en  la  pantalla  que  compartí,
+
+(6:48) nosotros  tenemos
+
+(6:50) esta  aula  virtual  que  se  llama  2026
+
+(6:53) laboratorio  de  redes  de  datos,  perdón,
+
+(6:55) segundo  cuatrimestre.  En  esta  aula
+
+(6:58) virtual  que  es  transversal,  es  decir,
+
+(7:01) común  a  todos  los  cursos,  están  cuáles
+
+(7:03) son  los  requisitos  del  laboratorio  para
+
+(7:05) probar,  eh,  que  son  estos  que  están  acá.
+
+(7:10) Después  habla  también  de  un  cronograma
+
+(7:12) general.  Sí,  digo  general  porque  todos
+
+(7:14) los  cursos  de  redes  de  manera  general
+
+(7:17) usan  este  cronograma  como  referencia,
+
+(7:20) pero  después  cada  curso,  ya  sea  cursos
+
+(7:24) que  están  en  los  viernes,  cursos  que
+
+(7:25) están  en  los  jueves,  cursos  que  están  en
+
+(7:27) los  lunes,
+
+(7:28) cada  docente  puede  adaptarlo,  ¿sí?,
+
+(7:31) según  las  necesidades  de  cómo  se  se  den
+
+(7:35) eh  las  clases  a  lo  largo  del
+
+(7:36) cuatrimestre,  pero  es  una  guía,  digamos,
+
+(7:38) este  cronograma  genérica  general  para
+
+(7:41) tener  una  idea  eh  o  una  hoja  de  ruta  de
+
+(7:44) cómo  vamos  a  ir  avanzando.
+
+(7:47) En  esta  misma  aula  virtual  que  yo  le
+
+(7:48) digo  que  se  va,  se  descargan  los
+
+(7:50) materiales,  aparecen  distintas  cosas  que
+
+(7:53) ustedes  van  a  ir  descargando  para  ir
+
+(7:56) trabajando.
+
+(7:57) Una  de  ellas  son  estas  guías  de
+
+(7:59) ejercicios.  Sí,  guía  de  ejercicio  de
+
+(8:02) escritorio,  la  llaman  acá  en  esta  en
+
+(8:03) esta  cátedra  que  son  dos  PDF.  Sí,  yo  voy
+
+(8:07) a  hacer  una  salvidad  acá.  Sí,  algunos
+
+(8:10) cursos  o  algunos  eh  sí,  algunos  cursos
+
+(8:13) de  redes  eh  los  docentes  solicitan  que
+
+(8:17) ustedes  trabajen  en  estas  guías  y  las
+
+(8:20) vayan  entregando,  ¿si?  O  la  entreguen
+
+(8:22) con  las  con  las  respuestas.  Yo
+
+(8:25) particularmente,
+
+(8:27) digamos,  estas  guías  no  se  las  pido  que
+
+(8:29) la  entreguen,  ¿sí?  Simplemente  y  desde
+
+(8:32) el  punto  de  vista  conceptual  dejo  que
+
+(8:34) ustedes  las  tomen  en  cuenta  y  las  usen
+
+(8:37) para  reforzar  los  conceptos  que  ustedes
+
+(8:40) van  aprendiendo,  tanto  en  la  teoría  como
+
+(8:42) en  lo  que  estamos  dando  en  la  práctica.
+
+(8:43) ¿Sí?  Y  si  tienen  alguna  duda,  digamos,
+
+(8:47) en en  la  medida  que,  digamos,  van  usando
+
+(8:50) esa  guía  como  para  ejercitarse,  nos
+
+(8:54) pueden  consultar.  Sí,  pero  eso  lo  hago
+
+(8:56) yo  en  en  mi  curso,  en  el  que  manejo,  en
+
+(8:58) los  cursos  que  manejo  de  manera
+
+(9:00) particular.  Es  decir,  no  les  pido  que  me
+
+(9:01) entreguen  esto  resuelto  porque  lo  veo
+
+(9:05) como  algo  que  tiene  que  ver  con  un
+
+(9:07) compromiso  de  cada  uno  de  ustedes  en  la
+
+(9:09) en  la  medida  que  quieren  aprender  sobre
+
+(9:11) la  materia,  ¿sí?  en  la  medida  que
+
+(9:13) quieren  desarrollarse  los  conceptos  para
+
+(9:16) poder,  digamos,  e  eh  estar  un  poco  más
+
+(9:21) preparados  para  rendir  los  parciales,
+
+(9:23) ¿sí?  Tanto  de  teoría  como  los  de  los  del
+
+(9:25) laboratorio.  Los  parciales  o  las
+
+(9:27) evaluaciones  del  laboratorio  e  son
+
+(9:30) prácticas,  sí  son  prácticas,  pero  bueno,
+
+(9:33) hay  que  tener  los  conceptos  adecuados
+
+(9:36) para  poder  llevarlos  a  esa  práctica.
+
+(9:38) Hasta  acá  se  va  entendiendo.  ¿Alguien
+
+(9:40) quiere  hacer  alguna  pregunta?
+
+(9:46) ¿Quieres  agregar  algo?  Sí.
+
+(9:48) ¿Cómo  son  tipo  los  parciales?  ¿Qué  es
+
+(9:51) tipo  Multiple  Choice  en  el  aula  virtual
+
+(9:53) o  cómo  cómo  funciona  tema  parcial?  Tema
+
+(9:58) para  eso,  para  eso  no  no  se  preocupen
+
+(10:01) que  les  voy  a  seguir  contando  eh  lo  que
+
+(10:04) les  decía.  si  por  ahora  todo  lo  que  fui
+
+(10:06) explicando  se  entendió  e  y  en  la  medida
+
+(10:09) que  continúe  voy  a  ir  abordando  todos
+
+(10:11) esos  temas.  Eh,  Guillermo,  ¿no?
+
+(10:13) Perdón,
+
+(10:14) profe.
+
+(10:16) Sí.
+
+(10:16) Eh,  el  link  que  había  pasado  usted
+
+(10:19) intenté  entrar  y  no  me  permitía.  Igual
+
+(10:22) creo  que  era  de  otro  curso,  solamente
+
+(10:25) puedo  entrar  a  este  aula,  aula  general.
+
+(10:28) Ya  después  el  aula  particular  no  lo  no
+
+(10:33) lo  pueden  ingresar.
+
+(10:35) Okay.  El  aula  tuya  particular  que  puede
+
+(10:37) ser  o  la  4575  o  la  4574,
+
+(10:42) te  deberías  haber  matriculado  antes  o  no
+
+(10:46) sé  cómo  es  el  proceso  de  matriculación
+
+(10:47) que  se  está  usando  antes  de  tener  la
+
+(10:50) primer  clase,  que  es  esta.  Eh,  pero  si
+
+(10:52) llegas  a  tener  algún  problema,  me  decís
+
+(10:54) en  qué  en  qué  curso  estás  y  de  última  yo
+
+(10:56) te  te  agrego.  Sí.  Después  al  final  de  la
+
+(10:59) clase,  ¿te  parece?
+
+(11:00) Perfecto.  Gracias.
+
+(11:01) Sí.  Eh,  profesor,  yo  me  sumo  al  mismo
+
+(11:04) pedido,  después  le  mando  un  mail  si
+
+(11:05) quiere,  porque  soy  el  4574  y  tampoco  me
+
+(11:09) dejaba  entrar  a  la  particular.  Tengo  la
+
+(11:11) individual  de  de  45  74  y  la  general,
+
+(11:14) pero  no  podía  entrar  a  través  del  del
+
+(11:15) link.
+
+(11:17) Está  bien,  lo  vemos  al  final  de  la  clase
+
+(11:18) los  casos  particulares  y  lo  resolvemos.
+
+(11:20) No  se  preocupen.
+
+(11:21) Perdón,  igual  me  parece  que  era  un
+
+(11:23) problema.  Estaba  linkeado  mal  el  Zoom
+
+(11:25) porque  si  entrabas  al  contexto  del
+
+(11:27) mensaje  ibas  al  Zoom  de  ahí  y  te  dejaba
+
+(11:29) entrar.
+
+(11:30) Okay,  okay,  okay.  Sí.  Eh,  quienes
+
+(11:33) quienes  estánado  al  4053,
+
+(11:37) ¿sí?  Quienes  tienen,  claro,  eh,  eso  lo
+
+(11:39) vamos  a  corregir  después.  Quienes  tienen
+
+(11:41) el  curso  el  4773  o  que,  mejor  dicho,
+
+(11:45) quienes  están  en  ese  curso  e  eh  quizás
+
+(11:49) no  tenían  acceso  al  link  que  compartimos
+
+(11:53) porque  eh  eso  está  en  el  aula  de  otro
+
+(11:55) curso,  digamos.  Eh,  pero  después  lo
+
+(11:57) corregimos,  no  se  preocupen.  Eh,  para
+
+(11:59) acceder  acá  no  no  hay  problema.  Bueno,
+
+(12:02) entonces  les  decía  que  estas  guías  de
+
+(12:04) digamos  de  de  de  escritorio  eh,  si  tengo
+
+(12:08) que  hacer  una  analogía  para  que
+
+(12:09) entiendan  de  qué  se  trata,  es  como
+
+(12:11) cuando  uno  estudiaba  análisis  matemático
+
+(12:14) uno  o  dos,  que  había  unas  guías  eh  que
+
+(12:16) uno  las  compraba  en  el  centro  de
+
+(12:18) estudiantes  o  las  imprimía  y  con  eso
+
+(12:20) practicaba.  Bueno,  tienen  ese  espíritu,
+
+(12:23) ¿sí?  digamos,  eh  si  ustedes  quieren
+
+(12:26) ampliar  un  poco  más  eh  la  práctica  o  los
+
+(12:28) conceptos  respecto  a  lo  que  se  da  en  la
+
+(12:30) teoría  eh  y  o  lo  que  abordamos  acá  en  el
+
+(12:33) laboratorio.
+
+(12:35) Bueno,  un  poco  siguiendo  con  lo  que  les
+
+(12:38) quiero  mostrar  de  esta  aula,  barriendo
+
+(12:41) como  esta  primer  clase  que  es
+
+(12:42) orientativa
+
+(12:44) en  el  simulador,  el  Cisco  Packet  Tracer
+
+(12:47) se  descarga  de  el  sitio  que  está  acá  en
+
+(12:52) yí  hay  un  instructivo,  digamos  que  que
+
+(12:55) es  el  que  está  acá  abajo,  ¿sí?  que  es
+
+(12:57) donde  les  les  explica  cómo  instalarlo.
+
+(13:00) Eh,  es  multiplataforma,  o  sea,  quienes
+
+(13:03) de  ustedes  no  tengan  una  PC  con  Windows,
+
+(13:05) una  laptop  o  una  PC  con  Windows,  y  usen
+
+(13:08) Linux  o  usen  macOS,  eh,  el  simulador
+
+(13:12) funciona  para  cualquiera  de  las
+
+(13:14) plataformas.  Sí,  en  este  instructivo  que
+
+(13:16) que  está  acá  adjunto,  eh,  les  muestra
+
+(13:19) cómo  instalarlo,  que  no  es  más  ni  menos
+
+(13:22) que  siguiente  siguiente  siguiente,  pero
+
+(13:23) este  existe.  Sí.  y  tiene  que  descargarse
+
+(13:27) la  última  versión.  Una  cosita  importante
+
+(13:30) que  es  lo  que  es  lo  que  dice  acá  y  es
+
+(13:32) una  una  recomendación,
+
+(13:35) ustedes  para  descargarse  el  Cisco  Packet
+
+(13:38) Tracer  de  la  página,  digamos,  de  Cisco,
+
+(13:40) eh,  tienen  que  registrarse.  Sí,  yo  les
+
+(13:44) sugiero,  ¿sí?  Que  se  registren  o
+
+(13:47) ingresen  al  sitio  con  la  cuenta
+
+(13:50) institucional  de  la  universidad,  o  sea,
+
+(13:51) la  que  es  @frba.edu.ar.
+
+(13:54) ¿Por  qué?  Porque  después  cuando  abren  el
+
+(13:57) packet  tracer  por  primera  vez  le  va  les
+
+(13:59) va  a  decir  que  se  logueen  y  ustedes
+
+(14:01) digamos  se  van  a  login  y  automáticamente
+
+(14:04) seleccionan  la  cuenta  de  Google,  ponen
+
+(14:07) la  la  las  credenciales  de  la  cuenta  eh
+
+(14:10) institucional  la  de  la  @frba  y  ya  entra
+
+(14:13) directo  y  ya  les  queda  también  eh  del
+
+(14:16) punto  de  vista  educativo  en  el  el  acceso
+
+(14:20) a  a  la  plataforma  de  Cisco  que  también
+
+(14:22) tiene  cursos,  tiene  cosas  Este,  para
+
+(14:25) quien  les  gusta  la  parte  de
+
+(14:27) infraestructura,  la  parte  de  redes,  la
+
+(14:29) parte  de  seguridad  informática,  eh  tiene
+
+(14:32) todo  unas  unas  ofertas  de  de  cursos
+
+(14:34) gratuitos  que  que  si  tienen  tiempo  lo
+
+(14:37) pueden  explorar.
+
+(14:40) Eh,
+
+(14:40) profe,  una  consulta  ahí.  Yo  yo  ya  me
+
+(14:42) creé  una  cuenta  con  la  personal,  no  me
+
+(14:44) di  cuenta  de  usar  la  de  la  UTN.  No  pasa
+
+(14:48) nada,  ¿verdad?
+
+(14:49) No  pasa  nada,  pero  si  querés,  digamos,
+
+(14:53) podés  ingresar  eh eh  nuevamente  con  la
+
+(14:55) con  la  otra,  con  la  con  la  institucional
+
+(14:57) porque  como  te  toma  los  datos  de  Google,
+
+(14:59) automáticamente  no  tenés  que  completar
+
+(15:01) nada,  es  un  poco  más  fácil  incluso.  Así
+
+(15:03) que  si  querés  después  puedes  hacerlo
+
+(15:05) también,  no,  no  hay  problema.
+
+(15:07) Okay,  dale.  Gracias.
+
+(15:09) E  volviendo,  volviendo  acá  donde  nos
+
+(15:12) quedamos
+
+(15:14) en  los  trabajos  de  laboratorio  del  uno
+
+(15:17) al  cuatro,  vamos  a  usar  el  simulador,  el
+
+(15:19) ciscopacket  tracer,  ¿sí?  Después  los
+
+(15:22) trabajos  5  y  seis,  que  son  los  dos
+
+(15:24) últimos.  Ahí  vamos  a  usar  el  analizador
+
+(15:27) de  protocolos,  el  famoso  Wirejack,  ¿sí?
+
+(15:29) que  eh  cuando  llegue  el  momento  lo  vamos
+
+(15:32) a  ver  en  detalle,  pero  acá  también  se
+
+(15:34) pueden  bajar  algunas  guías  eh  y  pueden
+
+(15:37) leer  algunas  cositas  en  la  página  web  eh
+
+(15:39) por  si  quieren  profundizar,  pero  no  me
+
+(15:42) meto  mucho  en  esto  porque  cuando  llegue
+
+(15:43) el  momento  les  voy  a  explicar  eh
+
+(15:46) absolutamente  todo.  Así  que  esto  esta
+
+(15:48) clase  es  un  poco  orientativa
+
+(15:51) e  y  después  van  a  ver  que  en  la  medida
+
+(15:53) que  van  bajando  en  esta  aula  general  van
+
+(15:56) a  ir  viendo  el  material  que  tienen  que
+
+(15:58) ir  descargando.  ¿Sí?  Por  ejemplo,  este
+
+(15:59) que  dice  trabajo  de  laboratorio  número
+
+(16:01) uno,  se  descarga  en  la  carpeta  completa
+
+(16:02) en  un  lo  descarga  en  punto  zip,  lo  lo
+
+(16:07) abren,  sí,  lo  el  digamos  desempaquetan
+
+(16:11) todos  los  archivos  y  eh  van  a  ver  todo
+
+(16:14) esto  que  está  acá,  ¿sí?  Dentro  de  este
+
+(16:16) punto  RAR  está  el  archivo  punto  pktisco
+
+(16:22) packet  tracer  cuando  trabajemos  y
+
+(16:24) después  hay  otros  PDFs  adentro  de  estos
+
+(16:27) otros  dos.  que  tienen  material,  digamos,
+
+(16:31) e  eh  orientativo  y  teórico  que  también
+
+(16:36) algunos  están  buenos,  algunos  son  muy
+
+(16:38) largos,  no  hace  falta  darles
+
+(16:40) importancia,  pero  tiene  otros  que  sí  eh
+
+(16:43) son  interesantes  como  para  tenerlos  este
+
+(16:46) al  costado  y  y  en  todo  caso  hacer  alguna
+
+(16:48) consultita  en  alguno  de  esos  archivos.  Y
+
+(16:51) lo  mismo  pasa  con  el  resto  de  los
+
+(16:52) trabajos,  ¿sí?  Eh,  en  este  caso  vamos  a
+
+(16:55) trabajar  la  semana  que  viene  con  el
+
+(16:56) trabajo  laboratorio  número  uno.  Así  que
+
+(16:58) yo  les  sugiero  dos  cosas.  La  primera,
+
+(17:02) que  se  registren  y  se  descarguen  en  el
+
+(17:04) Cisco  Packet  Tracer  y  lo  abran.  Y  la
+
+(17:07) segunda,  que  ya  se  descargue  en  esta
+
+(17:09) carpetita  con  todo  el  material  que  está
+
+(17:11) acá.  Y  también  este  eh  tengan  la
+
+(17:15) posibilidad  de  abrir  el  escenario  del
+
+(17:16) trabajo  de  la  rutorio  número  uno,  que  yo
+
+(17:18) se  los  voy  a  mostrar  ahora  e  porque  lo
+
+(17:21) vamos  a  abordar  la  clase  que  viene.  ¿Sí?
+
+(17:25) Hasta  acá  solamente  con  lo  que  fui
+
+(17:28) explicando.  ¿Hay  alguna  duda?  Después
+
+(17:30) vamos  a  abordar  los  otros  temas  que  no
+
+(17:33) dije  nada  todavía.  clase  que  viene  es
+
+(17:35) virtual  también  de  vuelta,  ¿no?
+
+(17:37) Sí,  las  clases  van  a  ser  virtuales  hasta
+
+(17:40) que  de  alguna  manera  Rafael,  el
+
+(17:43) ingeniero  Rafael  Oliveri  o  lo
+
+(17:45) notifiquemos  por  las  aulas  virtuales
+
+(17:47) correspondientes,  como  hicimos  para  para
+
+(17:50) que  entren  a  esta  clase  de  hoy.  Sí,  en
+
+(17:53) principio  van  a  ser  virtuales  hasta  que
+
+(17:57) le  notifiquemos  este  que  que  nos
+
+(18:00) encontraremos,  por  ejemplo,  la  semana
+
+(18:02) que  viene  de  manera  presencial,  pero  en
+
+(18:04) principio  vamos  a  trabajar  así.
+
+(18:06) Okay.  Y  el  link  es  siempre  el  mismo.
+
+(18:09) El  link  siempre  es  el  mismo  para  las
+
+(18:11) clases  de  laboratorio,  porque
+
+(18:14) generalmente  el  ingeniero  Cobal  o  el
+
+(18:16) ingeniero  Alcina  usan  su  propia  sala  de
+
+(18:18) Zoom,  sub  Meet  o  la  plataforma  que
+
+(18:21) utilicen.  ¿Sí?
+
+(18:25) Bien.
+
+(18:27) Bueno,  ahora  me  voy  a  ir  a  una  de  las
+
+(18:30) aulas  virtuales,  o  sea,  esta  es  el  aula
+
+(18:32) general,  como  les  decía,  eh,  que  es
+
+(18:35) transversal  para  todos.  Recuerden,  se
+
+(18:37) llama  2026,  laboratorio  redes  de  datos,
+
+(18:40) segundo  cuatrimestre,  ¿sí?  Así  que,
+
+(18:42) bueno,  de  aquí  es  donde  se  van  a  bajar
+
+(18:45) todo  el  material  con  el  que  vamos  a
+
+(18:47) trabajar  a  lo  largo  de  todo  el
+
+(18:49) cuatrimestre.  ¿Sí?
+
+(18:52) E  bien.
+
+(18:55) Ahora  bien,  me  voy  a  ir  a  una  de  las
+
+(18:57) aulas  virtuales,  por  ejemplo,  la  4575,
+
+(19:01) ¿sí?  Que  es  del  ingeniero  Alcina  y  es  y
+
+(19:03) es  la  que  parte  de  todos  ustedes  van  a
+
+(19:06) trabajar  100%  conmigo.
+
+(19:09) El  ingeniero  Alcina,  bueno,  pone  el
+
+(19:11) material  que  corresponde  a  su  curso  acá,
+
+(19:14) ¿sí?,  Sí,  de  las  clases  teóricas  y
+
+(19:18) más  abajo  van  a  ver  que  dice  laboratorio
+
+(19:21) curso  4575.
+
+(19:23) Este,  en  este  caso,  en  el  otro  va  a
+
+(19:25) decir  4574
+
+(19:27) y  en  el  otro  4773,
+
+(19:30) porque  todos  somos  del  jueves  a  la
+
+(19:32) noche.  Y  acá  les  cuento  un  poquito
+
+(19:34) cuáles  son  las  condiciones  para  probar
+
+(19:36) el  laboratorio.  Ustedes  saben  que  para
+
+(19:38) probar  la  materia,  al  igual  que  lo  que
+
+(19:41) ocurre  con,  por  ejemplo,  sistemas
+
+(19:42) operativos,  tienen  que  aprobar  la  parte
+
+(19:46) teórica,  ¿sí?,  con  el  ingeniero  Alcina,
+
+(19:49) que  es  quien  dictamina  en  este  caso  la
+
+(19:51) parte  de  teoría,  y  la  parte  del
+
+(19:53) laboratorio  con  con  nosotros.  Sí,  si
+
+(19:57) aprueban  las  dos  cosas  ahí,  digamos,  si
+
+(19:59) aprueban  los  exámenes,  los  trabajos  y
+
+(20:02) todo  de  las  dos  cosas,  de  la  teoría  y  de
+
+(20:04) la  práctica,  ahí  regularizan  eh  la
+
+(20:08) materia  o  la  promocionan  o  bueno,
+
+(20:11) regularizarla  es  aprobarla.
+
+(20:13) Eh,  ahora,  ¿cuáles  son  las  condiciones?
+
+(20:16) entiendo  que  las  condiciones  de  la
+
+(20:17) teoría
+
+(20:20) ya  la  conocen  o  se  las  va  a  informar  el
+
+(20:22) ingeniero  Cobal  o  el  ingeniero  Alcina,
+
+(20:25) pero  bueno,  a  priori  digamos  es  aprobar
+
+(20:28) los  dos  parciales,  ¿sí?  E  y  si  no,  si
+
+(20:32) ustedes  tienen  la  posibilidad  de  aprobar
+
+(20:34) los  dos  parciales  de  teoría  con  ocho
+
+(20:37) cada  uno  o  más,  ¿sí?  Ahí  creo  que  entra
+
+(20:40) el  régimen  de  promoción,  ¿sí?  O  sea,
+
+(20:43) desde  la  parte  teórica.  Después  eso  se
+
+(20:45) lo  van  a  se  lo  va  a  contar  el  docente  de
+
+(20:47) teoría  para  el  laboratorio.  Para  probar
+
+(20:50) el  laboratorio.
+
+(20:52) Eh,  yo  les  establecí  acá  eh  de  manera  lo
+
+(20:55) más  ordenada  posible  para  que  no  queden
+
+(20:57) dudas  cuáles  son  las  condiciones  que
+
+(21:00) debemos  cumplir  los  alumnos  para  poder
+
+(21:03) eh  aprobar  el  laboratorio  y  o
+
+(21:05) promocionarlo  según  se  den  todas  estas
+
+(21:07) condiciones.  La  primera  es  la
+
+(21:09) asistencia,  digamos.  La  segunda  es
+
+(21:13) aprobar  todos  los  trabajos  de
+
+(21:14) laboratorio,  que  son  seis  en  total.  ¿Se
+
+(21:17) aprueba  o  desaprueba,  digamos,  qué
+
+(21:19) significa  se  aprueba  o  desaprueba.
+
+(21:21) Ustedes  van  a  hacer  en  sus  casas  el
+
+(21:23) trabajo  de  laboratorio,  ¿sí?  Lo  van  a
+
+(21:25) entregar,  ¿sí?  El  archivito  pkt  del
+
+(21:29) escenario  del  Packet  Tracer,  por
+
+(21:30) ejemplo,  lo  van  a  entregar.
+
+(21:32) Nosotros  los  profes,  lo  abrimos,  lo
+
+(21:34) corregimos.  Si  el  simulador,  digamos,  eh
+
+(21:38) responde  a  lo  que  dice  el  enunciado  y
+
+(21:41) está  todo  bien,
+
+(21:43) el  trabajo  laboratorio  se  aprueba.
+
+(21:47) Eh,  si  hay  algún  defecto  o  hay  algo  que
+
+(21:49) no  funciona  o  o  no  o  está  incompleto,
+
+(21:53) ahí  estaría  desaprobado  ese  trabajo  de
+
+(21:55) laboratorio  y  se  recupera.  Sí.
+
+(21:59) E  y  así  con  los  con  los  primeros  cuatro,
+
+(22:02) ¿sí?
+
+(22:03) Eh,  los  trabajos  de  laboratorios  son
+
+(22:04) individuales  o  grupales.
+
+(22:07) Ya  voy  a  abordar  ese  tema.
+
+(22:09) Ah,  okay,  okay,  okay.
+
+(22:10) Voy,  voy  de,  voy  de  menos  a  más  o  como
+
+(22:13) les  enseñaron  en  paradigmas  o  en  otras
+
+(22:16) materas,  hacemos  este  bottom  up,  la  la
+
+(22:21) metodología.
+
+(22:23) Profesor,  perdón  que  interrumpa,  porque
+
+(22:25) yo  no  podía  acceder  al  link  que  mandó
+
+(22:27) por  mail.  Justo  ahí  un  compañero  me
+
+(22:29) pasó,  eh,  soy  del  curso  de  Alcina.
+
+(22:32) Quería  saber  si  estoy  bien  acá  eh,  del
+
+(22:36) 4575.  Ah,  está  bien.  Y
+
+(22:38) sí,
+
+(22:39) no  sé.  Bueno,  no  sé  si  me  perdí  mucho
+
+(22:41) porque  quise  entrar  desde  las  7  de  la
+
+(22:43) tarde  y  no  podía.  Eh,
+
+(22:45) sí,  no,  no  te  perdiste  mucho.  Estoy
+
+(22:47) explicando  los  lineamientos  generales,
+
+(22:49) digamos,  como  como  es  la  primer  clase.
+
+(22:52) Eh,  cualquier  cosa  después  si  al  final
+
+(22:54) de  la  clase  tenés  alguna  duda  de  todo  lo
+
+(22:56) que  voy  barriendo,  e  nos  quedamos  unos
+
+(22:59) minutitos  y  te  te  vuelvo  a  a  comentarlo
+
+(23:03) en  la  parte  que  por  ahí  no  escuchaste,
+
+(23:05) ¿te  parece?
+
+(23:05) Perfecto.  Dale.  Gracias.
+
+(23:07) Bien,  entonces  para  aprobar  el
+
+(23:09) laboratorio,  asistencia  75%.
+
+(23:13) aprobar  los  los  seis  trabajos  de
+
+(23:15) laboratorio  en  un  segundito.  Anda  para
+
+(23:20) allá,  hija.  Estoy  estoy,  no  puedo,  no
+
+(23:23) puedo  porque  estoy  dando  clases.  Allá
+
+(23:25) para  allá.
+
+(23:37) Disculpen,  ya  volví.  Entonces,  les
+
+(23:40) decía,  aprobar  los  seis  laboratorios  en
+
+(23:42) los  trabajos,  trabajo  laboratorio,
+
+(23:44) trabajo  operativo,  como  le  llamamos,
+
+(23:47) aprobar  los  dos  parciales,  ¿sí?  Que  acá
+
+(23:49) le  llamamos  evaluaciones,
+
+(23:51) que  son
+
+(23:54) la  que  la  llamamos  primer  tramo  es  la
+
+(23:57) evaluación  tele  1  2  3  4.  ¿Sí?  ¿Por  qué
+
+(24:00) se  llama  así?  Porque  yo  les  comenté  que
+
+(24:04) una  parte  de  la  práctica  se  hace  con  el
+
+(24:06) simulador,  el  Cisco  Packet  Tracer,  ¿si?
+
+(24:08) donde  eh  vemos  toda  la  parte  de
+
+(24:10) configuración,  ¿sí?,  e  de  de  del
+
+(24:14) simulador  para  que  responda  a  las
+
+(24:17) funcionalidades  de  enrutamiento  y  todo
+
+(24:19) lo  que  van  a  ver  desde  el  punto  de  vista
+
+(24:20) networking.
+
+(24:22) Eh,  y  esa  y  esa  y  esa  avaluación  Tele  1
+
+(24:25) 2  3  4  responde,  ¿sí?,  a  todos  los  temas
+
+(24:28) que  vamos  a  a  ver  y  a  practicar  en  los
+
+(24:31) trabajos  de  laboratorio  del  uno  al
+
+(24:32) cuatro.  Es  decir,  esa  evaluación  es  un
+
+(24:36) ejercicio  integrador,  ¿sí?,  que  contiene
+
+(24:40) todo  lo  que  se  ve  en  el  trabajo
+
+(24:41) laboratorio,  el  uno,  el  dos,  el  tres  y
+
+(24:43) el  cuatro.  Y  tienen  ese  y  tiene  ese
+
+(24:45) orden  porque  esa  es  la  manera  que  vamos
+
+(24:47) a  ir  aprendiendo  los  temas  de  de  lo  más
+
+(24:50) fácil  a  lo  más  complejo.  ¿Sí?  Y  esa
+
+(24:53) evaluación
+
+(24:55) contiene  todo  lo  que  se  ve  en  esos
+
+(24:57) trabajos  de  laboratorio  del  uno  al
+
+(24:58) cuatro.
+
+(25:00) Y  la  segunda  evaluación  que  tenemos  ya
+
+(25:03) es  abordar  eh  unas  unos  ejercicios  eh
+
+(25:08) que  responde  a  a  contestar  unas
+
+(25:10) preguntas,  ¿sí?,  que  nosotros  le
+
+(25:13) formulamos  en  a  través  del  aula  virtual,
+
+(25:17) eh,  donde  ustedes  tienen  que  analizar
+
+(25:18) una  trama,  ¿sí?  Esa  trama  se  la  podemos
+
+(25:22) dar  de  dos  maneras  distintas.
+
+(25:24) o  o  le  damos  un  archivito  que  lo  abren
+
+(25:27) con  el  warjack  y  con  eso  analizan  la
+
+(25:30) trama  y  responden  las  preguntas  en  el
+
+(25:32) aula  virtual  o  se  les  da  una  captura  de
+
+(25:34) imagen,  digamos,  y  ustedes  conociendo  eh
+
+(25:39) lo  que  contiene  la  trama  dentro  desde  el
+
+(25:41) punto  de  vista  teórico,  que  lo  van  a  ver
+
+(25:42) en  la  teoría,  también  van  a  poder  ir
+
+(25:45) respondiendo  esas  preguntas,  conociendo
+
+(25:48) qué  qué  significa  cada
+
+(25:51) eh  cada  parte  de  la  trama  que  ustedes
+
+(25:54) analizan.  Sí,
+
+(25:56) así  son  las  dos  evaluaciones.  Una  es
+
+(25:59) 100%  práctica  y  la  otra  es  viendo  el
+
+(26:03) contenido  de  una  trama  responder  unas
+
+(26:04) preguntas  eh  relacionadas  con  con  el
+
+(26:08) temario.
+
+(26:09) Perdón,  profe,  hay  algo  que  no  me  quedó
+
+(26:10) muy  O  sea,  ¿estas  evaluaciones  son  del
+
+(26:13) laboratorio  o  son  de  la  materia  de
+
+(26:15) redes?
+
+(26:16) son  las  evaluaciones  de  la  materia  o  son
+
+(26:18) evaluaciones  aparte  del  laboratorio  y
+
+(26:20) después  además  tenemos  las  evaluaciones
+
+(26:23) de
+
+(26:24) de  lo  que  es  la  materia  en  sí.  Como
+
+(26:27) te  respondo,  el  la  materia  redes  de
+
+(26:31) datos
+
+(26:32) sí
+
+(26:32) eh  tiene  una  parte  teórica  que  es  lo  que
+
+(26:35) van  a  ver  con  el  ingeniero  Cal  o  el
+
+(26:37) ingeniero  Alcina  y  tiene  parciales
+
+(26:39) teóricos,  ¿sí?  como  cualquier  materia,
+
+(26:42) eh,  y  al  mismo  tiempo  tiene  una  parte
+
+(26:45) práctica,  ¿sí?  Eh,  es  lo  mismo  que,  como
+
+(26:48) les  decía,  igual  que  sistemas
+
+(26:49) operativos,  igual  que  eh  bases  de  datos,
+
+(26:52) o  sea,  que  tienen  este  una  parte  teórica
+
+(26:55) y  una  parte  práctica.  ¿Sí?  En  este  caso
+
+(26:58) yo  estoy  hablando  100%  de  la  parte
+
+(26:59) práctica  en  que  que  tiene  que  aprobarse
+
+(27:03) para  aprobar  la  materia,  ¿sí?  O  sea,
+
+(27:05) ustedes  van  a  tener  dos  parceles  de
+
+(27:06) teoría  y  van  a  tener  estas  dos
+
+(27:07) evaluaciones  de  laboratorio  que  son
+
+(27:10) prácticas.  ¿Sí?
+
+(27:13) Okay.  O  sea,  son  las  dos  evaluaciones
+
+(27:15) más  los  seis  trabajos  prácticos.  Eso
+
+(27:16) sería  la  práctica.
+
+(27:18) Claro.
+
+(27:20) Los  trabajos  de
+
+(27:21) Okay.
+
+(27:22) Los  Claro.  Sí,  sí.  Los  trabajos
+
+(27:24) prácticos,  digamos,  e
+
+(27:29) en  el  sentido  de  que  se  aprueban  es
+
+(27:30) entregándolos  y  que  estén  bien
+
+(27:32) resueltos,  no  son  parciales.  Sí.
+
+(27:34) digamos,  digamos,  no  llevan  nota,  llevan
+
+(27:36) aprobado,  desaprobado.  Pero,  ¿por  qué?
+
+(27:38) porque  es  una  manera  de  que  eh  de  que  el
+
+(27:41) aprendizaje  sea  guiado  e  y  ustedes  no  se
+
+(27:45) queden  en  el  camino  en  eh  no  sé  si  en
+
+(27:48) los  no  sé  si  en  los  en  los  en  sistemas
+
+(27:51) operativos  cuando  tienen  que  hacer  el
+
+(27:53) famoso  TP  este  complejo  eh  en  un  momento
+
+(27:57) le  llamaban  cumplir  con  determinados
+
+(27:59) checkpoints.  No  sé  si  sigue  siendo  así,
+
+(28:02) pero  bueno,
+
+(28:03) es  un  poco  así.  son  nada  más  que  no
+
+(28:05) tienen  nada  que  ver  con  eso,  ¿no?  Eso  es
+
+(28:07) demasiado  complejo  comparado  con  esto,
+
+(28:10) pero  es  para  para  que  ustedes  tengan  un
+
+(28:12) aprendizaje  guiado,  ¿sí?,  de  por  qué  se
+
+(28:15) se  hace  así.  Porque  si  yo  eh  les  digo,
+
+(28:18) "Bueno,  listo,  no  entreguen  nada."
+
+(28:20) Ninguno  va  a  a  resolver  ningún  trabajo
+
+(28:23) laboratorio.  Cuando  llegue  el  parcial  no
+
+(28:24) van  a  saber  resolver  nada.  Entonces  está
+
+(28:27) está  todo  diseñado  para  que  ustedes
+
+(28:29) vayan  aprendiendo  paulatinamente  y  no  se
+
+(28:31) queden  en  el  camino  e  sin  entender  nada.
+
+(28:36) Entonces,
+
+(28:36) pero  no  hay  algo  que  no  me  queda  claro,
+
+(28:38) o  sea,  nosotros  tenemos  los  TPS  y  tipo  a
+
+(28:41) TP1  tenemos  que  entregar  algo,  TP2
+
+(28:43) tenemos  que  entregar  algo  y  después  hay
+
+(28:46) como  una  especie  de  evaluación  o  lo  que
+
+(28:48) sea  del  TP  entero.  ¿Cómo  funciona  eso?
+
+(28:51) digo  del  TP  unos  dos  3  cu
+
+(28:56) es  así.  Sí,  sí.  Bueno,  e
+
+(29:00) es  exactamente  así,  o  sea,  ustedes
+
+(29:02) tienen  que  que  todas  las  semanas  hacemos
+
+(29:05) un  trabajo  y  tienen  una  semana  para  para
+
+(29:07) entregarlo,  ¿sí?  En  eh  que  es  subirlo
+
+(29:11) acá  a  la  plataforma.  Ahora  les  voy  a
+
+(29:12) mostrar  cómo.  Eh,  pero  también  lo
+
+(29:15) importante  es  es  eh  que  después  que
+
+(29:18) cumplimos  los  trabajos  de  laboratorios
+
+(29:19) viene  la  la  evaluación.  Sí.
+
+(29:21) son  como  una
+
+(29:23) son  como  una  preparación  para  la
+
+(29:24) evaluación,  se  entiende.
+
+(29:26) Buenas,  una  pregunta.  Entiendo  que  los
+
+(29:29) TPS  individual,  o  sea,  los  seis  TPS
+
+(29:31) tienen  aprobado  o  no  aprobado,  digamos.
+
+(29:34) No,  no,  no  tienen  nota.  Las
+
+(29:35) evaluaciones,  ¿esas  sí  tienen  nota  o  son
+
+(29:38) igual?  ¿Aprobado  o  no  aprobado?
+
+(29:40) No,  también  son  aprobados  y  no
+
+(29:42) aprobados.
+
+(29:42) Listo.  Okay.  Binario.  Gracias.  Eh,  lo
+
+(29:45) puse  acá  en  lo  puse  acá  en  los  trabajos,
+
+(29:48) lo  puse  así  a  propósito  que  se
+
+(29:50) diferencie  suficiente,  insuficiente  y
+
+(29:51) los  parciales  aprobado  o  reprobado.
+
+(29:54) Nada,  bien,  listo.  No,  no,  como  una
+
+(29:56) decía  insuficiente,  insuficiente,  la
+
+(29:57) otra  aprobado,  reprobado,  no  sabía  si
+
+(29:59) por  ahí  uno  implicaba  una  nota  y  el  otro
+
+(30:01) no,  pero  listo,  ninguno  de  los  dos  es
+
+(30:03) con  nota.  Listo.  Gracias,
+
+(30:05) profe.  Las  evaluaciones,
+
+(30:08) las  evaluaciones  son  virtuales  o
+
+(30:09) presenciales.
+
+(30:11) Las  evaluaciones  son  eh  en  principio  son
+
+(30:15) presenciales,  pero  eh  vamos  a  ir
+
+(30:17) evaluando  todas  estas  cosas  a  lo  largo
+
+(30:18) del  cuatrimestre  porque  como  los  cursos
+
+(30:20) son  de  demasiado  numerosos,  ¿sí?  E  lo
+
+(30:24) que  se  hace  en  realidad  es  lo  siguiente.
+
+(30:27) Esta  primer  clase  de  hoy  la  la
+
+(30:28) deberíamos  tener  presencial.
+
+(30:31) Eh  eh  las  clases  generalmente  son
+
+(30:34) virtuales  y  alguna  hacemos  presencial
+
+(30:36) según  eh  nosotros  los  docentes  cómo  cómo
+
+(30:41) nos  gustaría  presentar  el  contenido  y
+
+(30:43) las  evaluaciones  son  presenciales.  Como
+
+(30:46) estos  cursos  donde  ustedes  se  encuentran
+
+(30:48) son  muchos  alumnos,  vamos  a  ver  y  vamos
+
+(30:51) a  evaluar  si  los  parciales  los  hacemos
+
+(30:54) de  manera  virtual  o  presencial  como
+
+(30:56) correspondería.  Sí.
+
+(30:59) Okay.  Gracias.
+
+(31:01) Volviendo  al  tema  de  la  promoción,  que
+
+(31:03) esto  por  ahí  les  va  a  interesar  a  a
+
+(31:05) alguno  de  ustedes  o  o  a  los  que  estén  en
+
+(31:07) las  condiciones  de  las  correlativas  y  y
+
+(31:10) todo  el  tema  administrativo  también  para
+
+(31:14) promocionar  la  materia  de  redes.  Yo  les
+
+(31:17) decía  que  aunque  se  los  va  a  informar  el
+
+(31:19) docente  de  teoría,  deberían  sacarse  en
+
+(31:21) los  parciales  de  teoría  eh  ocho  en  cada
+
+(31:24) uno  o  más.  Sí.  Y  en  el  laboratorio,  en
+
+(31:28) el  laboratorio  tienen  que  aprobar
+
+(31:30) obviamente  las  dos  evaluaciones
+
+(31:33) en  primera  instancia  o  hasta  el  primer
+
+(31:35) recuperatorio.  ¿Sí?  ¿Por  qué?  Porque
+
+(31:38) cada  evaluación  que  nosotros  tomamos  acá
+
+(31:39) en  el  laboratorio,  que  son  prácticas,  le
+
+(31:42) digo  evaluaciones  porque  no  son
+
+(31:43) parciales  teóricos,  son  prácticas.
+
+(31:46) Eh,
+
+(31:49) cada  una  de  ellas  le  damos  la
+
+(31:50) posibilidad  de  recuperarlo  dos  veces,
+
+(31:52) ¿sí?  O  sea,  lo  rinden  una  vez,  no  lo  no
+
+(31:55) lo  pudieron  resolver,  lo  hacen  mal,
+
+(31:57) tienen  un  primer  recuperatorio  y  un
+
+(31:59) segundo  recuperatorio.  Sí,
+
+(32:02) la  instancia  que  les  permite  promocionar
+
+(32:05) es  hasta  el  primer  recuperatorio
+
+(32:07) inclusive.  O  sea,  si  si  rindieron  una
+
+(32:09) vez,  no  lo  hicieron  bien,  fueron  al
+
+(32:11) primer  recuperatorio,  no  pudieron
+
+(32:14) resolver,  no  lo  no  lo  no  les  fue  bien.
+
+(32:17) Ya  ahí  ya  pierden  la  estancia  de
+
+(32:18) promoción  cuando  ya  van  a  ir  al  segundo
+
+(32:21) recuperatorio.  Sí.
+
+(32:22) y  de  los  y  de  los  trabajos  de
+
+(32:24) laboratorio,  esto,  los  trabajos
+
+(32:26) prácticos,  llamémosle,
+
+(32:29) para  tener  esa  condición  de  promoción
+
+(32:31) los  tienen  que  aprobar  todos,
+
+(32:33) salvo  que  haya  uno  que  no  le  fue  bien  y
+
+(32:36) lo  pueden  recuperar,  pero  solamente  uno.
+
+(32:39) Sí.  Si  no,  si  hacen  los  tres  mal,  de  los
+
+(32:42) cuatro  hacen  tres  mal,  sí,  todos  lo  van
+
+(32:45) a  poder  recuperar  para  probar  la
+
+(32:47) materia,  pero  no  van  a  poder  promocionar
+
+(32:49) porque  si  no,  digamos  sería  todo
+
+(32:52) extremadamente  simple  y  sin  ninguna
+
+(32:54) restricción  y  todo  el  mundo  tengo  una
+
+(32:56) pregunta,  tipo,  para  la  firma  también  de
+
+(32:59) estas  tener  todos  los  TP  aprobados  y
+
+(33:02) además  la  evaluación,  pero  podría  llegar
+
+(33:04) a  pasar  que  yo  tenga,  por  ejemplo,  el
+
+(33:07) TP1  desaprobado,  pero  apruebo  la
+
+(33:09) evaluación  y  ahí  nos  firmaríamos,
+
+(33:11) ¿no?  Todo  hay  que  aprobar.  Todo  hay  que
+
+(33:13) aprobar.  Lo  escribí  acá,
+
+(33:15) se  los  estoy  contando  para  que  no  queden
+
+(33:17) duda,  pero  lo  escribí  todo  acá  para  que
+
+(33:19) ninguno  tenga  estas  eh  dudas  eh  o  se
+
+(33:23) quede  con
+
+(33:25) algún  no  entendimiento  del  tema,
+
+(33:28) digamos,  porque  esto  es  blanco  o  negro,
+
+(33:30) no  hay  grises.  Entonces,  justamente  si
+
+(33:33) bien  yo  me  estoy  tomando  el  tiempo  de
+
+(33:35) contárselos,  está  escrito  acá.  Sí.  Eh,
+
+(33:38) si  alguno  no  lo  entiende,  se  lo  vuelvo  a
+
+(33:41) explicar  una,  dos,  tres  veces  más,  pero
+
+(33:44) es  es  esto  que  está  acá  escrito,
+
+(33:45) cortito,  digamos,  o  sea,  y  conciso  para
+
+(33:49) que  no  haya  muchas  dudas.
+
+(33:52) Sí,  está  clarísimo,  profe.  Gracias.
+
+(33:55) Okay.
+
+(33:55) Okay.  Y  otra  consulta,  tema,  por
+
+(33:57) ejemplo,  el  TP1,  el  laboratorio,
+
+(34:00) vos  agarrás,  no  sé,  tipo,  abrís  el  coso,
+
+(34:03) lo  explicase  en  la  clase  y  después  le
+
+(34:04) decís,  "Bueno,  acá  termino  la  clase  o  lo
+
+(34:07) que  sea  o  das  tipo  algún  ejemplo  de,
+
+(34:09) bueno,  no  sé  si  lo  pueden  encarar  por
+
+(34:10) acá  y  tienen  hasta  la  semana."  Ah,  okay.
+
+(34:13) No  llegué  a  eso.  Déjame,  déjame  que  vaya
+
+(34:15) de  menor  a  mayor  porque  eh  si  no  no
+
+(34:19) podemos  seguir  un  orden  y  somos  muchos  y
+
+(34:22) y  por  eso  estoy  yendo  de  menor  a  mayor.
+
+(34:27) Bueno,  después  cada  aula  virtual  va  a
+
+(34:30) tener
+
+(34:32) un  un  foro
+
+(34:34) administrativo  que  es  el  que  manejamos
+
+(34:36) nosotros  los  docentes  donde  le
+
+(34:38) informamos  cosas,  como  por  ejemplo  en  yo
+
+(34:42) les  mandé  una  notificación  a  través  de
+
+(34:45) este  de  este  foro  que  hoy  era  la  primer
+
+(34:48) clase  y  bueno,  lo  uso  para  hacer
+
+(34:50) notificaciones.  ¿Sí?
+
+(34:53) Después  hay  un  foro  de  intercambio  entre
+
+(34:56) alumnos  que,  por  ejemplo,
+
+(34:59) si  ustedes,  además  de  tener  los  canales
+
+(35:02) de  comunicaciones  eh  que  todos
+
+(35:04) conocemos,  el  WhatsApp,  este  Telegram  eh
+
+(35:08) o  el  que  ustedes  deseen,  nosotros  les
+
+(35:10) disponibilizamos  este  foro  para  que  si
+
+(35:13) algún  alumno  eh  quiere  consultar  algo  a
+
+(35:16) otro  compañero,  digamos,  o  al  resto  o  o
+
+(35:19) debatirlo  con  el  resto,  no  sé,  no  logré
+
+(35:21) configurar  el  el  el  Letter  Channel,
+
+(35:25) ¿alguno  pudo  hacerlo?  Seguramente  alguno
+
+(35:28) de  tus  compañeros  lo  pudo  resolver.  Sí,
+
+(35:30) sí,  tenés  que  eh  digamos  este  eh  poner
+
+(35:32) en  en  la  interface  tal  tal  línea  y  con
+
+(35:36) eso  ya  te  va  a  levantar.  Les  estoy  dando
+
+(35:38) un  ejemplo,  ¿sí?  Pero  lo  pueden  hacer
+
+(35:40) ustedes  este  en  eh  sin  problemas  porque
+
+(35:44) para  eso  está  este  este  recurso  de  acá,
+
+(35:47) para  que  puedan  eh  justamente
+
+(35:50) interactuar  entre  ustedes.  Sí.
+
+(35:53) Eh  y  después,  bueno,  eh  está  este
+
+(35:55) pequeño  eh  link  que  es  el  que  yo  les
+
+(35:58) pasé  a  ustedes  por  correo.  Digamos  que
+
+(36:01) ustedes  entran  acá  y  acá  les  dice  cómo
+
+(36:03) entrar  a  esta  Zoom  a  la  que  estamos
+
+(36:04) ahora,  que  pueden  entrar  por  el  link  o
+
+(36:06) si  no  pueden  usar  estos  datos  que  están
+
+(36:08) acá.  Sí.
+
+(36:10) Eh,  así  que  bueno,  el  aula  virtual  está
+
+(36:13) eh  están  digamos  eh
+
+(36:17) organizadas  de  esta  manera,  ¿sí?  Eh,
+
+(36:20) después  van  a  ver  acá  que  dice  trabajos
+
+(36:22) de  laboratorio,  ¿sí?  Que  ahora  dice  que
+
+(36:24) no  está  disponible,  ¿sí?  Pero  cuando
+
+(36:26) ustedes  abran  acá  va  a  decir  trabajo  de
+
+(36:28) laboratorio  uno,  entregar  aquí,  ¿sí?  en
+
+(36:32) eh  y  ahí  les  va  a  aparecer  para  entregar
+
+(36:34) el  trabajo  laboratorio  número  uno.
+
+(36:36) Después  más  adelante  van  a  estar  las
+
+(36:37) evaluaciones,  la  primera,  la  segunda  y
+
+(36:40) después  acá  van  a  estar  los
+
+(36:41) recuperatorios,  ¿sí?  O  sea,  está  todo
+
+(36:43) bien  organizado  para  que  no  haya
+
+(36:45) confusiones  y  ustedes  vayan  eh  de  manera
+
+(36:49) organizada  eh  accediendo  al  al  lugar
+
+(36:53) donde  tienen  que  que  acceder  eh  de
+
+(36:55) manera  oportuna.  Sí.
+
+(36:59) Bueno,  no  sé  si  si  hay  alguna  duda.  Eh,
+
+(37:02) el  acá  les  muestro  el  otro  curso,  el
+
+(37:04) 4574.  Muy  breve.
+
+(37:08) ¿Cómo?
+
+(37:09) Sí.  Y  bastante  concisa.  Eh,  si  querés  ir
+
+(37:13) a  la  parte  de  los  de  los  las  condiciones
+
+(37:15) de  aprobación  del  laboratorio,  un
+
+(37:16) poquito  más  abajo  ahí,  esas
+
+(37:19) recuperatorio  que  está  abajo  eh  digamos
+
+(37:22) en  los  dos  renglones  son  mutuamente
+
+(37:24) excluyentes.  Es  un  recuperatorio  para
+
+(37:26) cualquiera  de  los  dos  o  es  uno  en
+
+(37:28) evaluaciones  y  uno  en  TPS.  Capaz  lo
+
+(37:31) dijiste,  pero  ya  me  perdí,
+
+(37:32) ¿no?  Buen,  buena  pregunta.  Buena
+
+(37:34) pregunta.  cada  evaluación,  digamos,  o
+
+(37:38) cada  parcial,  llamémosle,  cada
+
+(37:39) evaluación,  cada  una  tiene  dos
+
+(37:42) recuperatorios.  Sí.  Eh,  cada  una,  o  sea,
+
+(37:46) si  te  fue  mal
+
+(37:47) Sí,  eso  sigue  las  generales  de  la  ley  de
+
+(37:49) la  UTN.  Lo  que  digo  para  la  promoción,
+
+(37:52) para  la  promoción  es  eh  es  en  cualquiera
+
+(37:56) de  las  dos  evaluaciones  es  hasta  el
+
+(37:58) primer  recuperatorio  inclusive.
+
+(38:00) Sí.  O  sea,  cada  parcial  si  te  va  mal,
+
+(38:04) sí.  En  lo lo  en  el  primer  recuperatorio
+
+(38:07) lo  tenés  que  aprobar.  Sí,
+
+(38:08) por  eso  me  puede  ir  mal  en  los  dos
+
+(38:10) parciales  y  en  si  los  levanto  en  el
+
+(38:12) primer  recuperatorio  de  los  dos,  sigo  en
+
+(38:14) carrera  para  promoción.
+
+(38:16) Exactamente.
+
+(38:17) Bien.
+
+(38:17) Y  con  los  trabajos  de  laboratorio  tenés
+
+(38:19) que  tenerlos  todos,
+
+(38:20) perdón,  con  el  trabajo  de  laboratorio
+
+(38:22) tenés  que  aprobar  los  seis,  pero  ponele
+
+(38:24) que  hay  uno  que  que  no  sé,  faltaste,  no
+
+(38:27) pudiste  entregarlo,  la  razón  que  sea,
+
+(38:29) ¿sí?  O  lo  hiciste  mal,  ¿entendés?  En  eh
+
+(38:33) de  los  de  los  seis  hay  uno,  pero  no  lo
+
+(38:35) aprobaste,
+
+(38:37) lo  podés  recuperar  y  seguís  con  esa
+
+(38:38) condición.  Ahora  si  no  aprobaste  dos  ahí
+
+(38:41) ya  no  porque  solamente  podría  similar  a
+
+(38:43) esto,  similar  a  esto,  pero  con  la  parte
+
+(38:46) de  teoría,  son  mutuamente  excluyentes
+
+(38:48) las  oportunidades  de  recuperación  o  no.
+
+(38:52) Eso  deberías  consultarlo  con  el  docente
+
+(38:54) de  teoría  porque  no  me  quiero  meter  en
+
+(38:55) un  terreno  que  no  es  el  que  me
+
+(38:57) corresponde.
+
+(38:57) Listo,  gracias.  Clarísimo.
+
+(38:59) Cuando  tengan  la  la  clase  con  el
+
+(39:00) ingeniero  Cal  o  con  el  ingeniero  Alcina,
+
+(39:03) eso  se  lo  consultan  a  él.  Sí.
+
+(39:06) Eh,
+
+(39:06) profesor,  ahí  yo  le  Sí,  yo  le  le  quería
+
+(39:08) consultar  porque  yo  estoy  en  el  en  un
+
+(39:11) curso  en  un  aula  que  dice  eh  laboratorio
+
+(39:14) de  redes  2C,  no  estoy  viendo  el  curso
+
+(39:18) del  4575,  que  es  el  curso  mío.  No,  no  sé
+
+(39:23) si  es  otra  aula  virtual.
+
+(39:25) Eh,  claro,  vos  eh  llegaste  un  poquito
+
+(39:27) después  que  me  dijiste  el  laboratorio
+
+(39:29) este,  el  que  dice  2026,  laboratorio  R
+
+(39:32) segundos  segundo  cuatrimestre,  es  es  el
+
+(39:35) aula  general  transversal  y  cross  para
+
+(39:37) todos  los  cursos.  Sí,  de  ahí  se  baja
+
+(39:39) todo  el  material,  se  lo  bajan  todos  los
+
+(39:41) cursos  de  red,  se  bajan  el  material  de
+
+(39:42) ahí.  Sí,  lo  que  pasa  que  después
+
+(39:45) no  sé  a  qué  curso,  en  qué  curso  estás
+
+(39:47) vos.
+
+(39:47) Estoy  en  en  4575  que  por  ahí  no  sé  si
+
+(39:52) por  no  poder  acceder.  No,  no  me  dejó  a
+
+(39:55) ese.  No,  no  lo  tengo.  Sí,  no  sé  si  me
+
+(39:58) No  te  preocupes.  Al  final  de  la  clase,
+
+(40:01) eh,  como  le  dije  a  los  alumnos  en
+
+(40:03) particular  que  no  están  en  su  aula
+
+(40:06) virtual,  eh,  yo  los  ayudo  a  resolverlo.
+
+(40:10) Eso
+
+(40:10) no  sé  cómo  hace  la  facultad.  Si  los
+
+(40:13) matricul  si  ustedes  se  matriculan
+
+(40:14) automáticamente,  los  matricul,  no  lo  sé.
+
+(40:17) A  mí  la  la  la  parte  teórica  me  matriculó
+
+(40:20) automáticamente,  por  eso  no
+
+(40:23) sé.  Eh,  okay.  Bueno,  porque  la  parte
+
+(40:24) teórica  está  acá  es  la  parte  teórica,
+
+(40:26) solamente  hay  una  sección  nueva.  No
+
+(40:28) estaba  muy  claro,  profe.  Es  la  misma,  es
+
+(40:31) el  mismo  que  el  aula  teórica,  la  misma.
+
+(40:33) Bajas  y  aparece  una  nueva  que  dice  el
+
+(40:35) laboratorio.
+
+(40:36) La  misma.  Miren,  miren
+
+(40:39) este  curso  que  es  el  eh  4575
+
+(40:43) que  es  del  ingeniero  Alcina.  Todo  esto
+
+(40:45) que  está  acá  lo  puso  el  ingeniero
+
+(40:46) Alcina.  Compartimos  esta  aula  virtual,
+
+(40:49) digamos,  nada  más  que  él  en  esta  parte
+
+(40:51) pone  la  parte  teórica  y  yo  más  abajo
+
+(40:53) pongo  la  parte  del  laboratorio.  Pero
+
+(40:55) esta  es  la  esta  es  el  aula  virtual  de
+
+(40:57) esa  de  esa  de  esa
+
+(40:59) Ah,  bueno,  ahora  me  meto  por  ahí.  Está
+
+(41:01) bien,  está  bien,  está  bien,
+
+(41:02) está  y  lo  mismo  para  los  otros.
+
+(41:06) Solo  para  informarle  que  la  eh  4773
+
+(41:10) no  tiene  la  sección  del  laboratorio
+
+(41:12) todavía.
+
+(41:13) Sí,  no  importa.  Eh,  después  lo  vamos  a
+
+(41:15) corregir  porque  eso  lo  tengo  que
+
+(41:16) trabajar  con  con  el  ingeniero  Rafael
+
+(41:18) Oliveri.  No,  no  te  preocupes  porque  lo
+
+(41:20) van  a  tener
+
+(41:21) lo  van  a  tener  igual.
+
+(41:24) Sí,  sí,  sí.  Va  a  estar  igual,
+
+(41:25) pero  lo  van  a  tener  igual.
+
+(41:27) 473  no  es  al  Cina.
+
+(41:30) Sí,  son  dos  cursos,  por  eso  son  dos
+
+(41:32) cursos.
+
+(41:35) Dos  cursos  de  alcina  son.  Correcto.
+
+(41:37) Claro.  E
+
+(41:39) el  ingeniero  Rafael  Olivieri  es  el
+
+(41:42) docente  de  laboratorio  del  curso  del
+
+(41:44) ingeniero  Alcina.  Es  sería  la  respuesta
+
+(41:46) correcta.
+
+(41:49) Bueno,  no  sé  si  me  levantó  la  mano  Tomás
+
+(41:51) e  que  lo  vi.
+
+(41:53) No,  no  era  eso  que  preguntó  Rén,  pero
+
+(41:55) justo  reinicié  y  ahí  están  cargando  la
+
+(41:58) parte  práctica  porque  no  está  en  la
+
+(41:59) teoría.
+
+(42:01) Bien,  perfecto.  Bueno,  entonces  hasta
+
+(42:04) acá  toda  la  parte,  llamémosle  eh
+
+(42:07) mensajes  parroquiales  barra  este  parte
+
+(42:11) administrativa.  ¿Se  entendió  todo  o
+
+(42:13) alguno  le  quedó  una  duda?
+
+(42:14) Todo  claro.  Todo  claro  por  ahora.
+
+(42:16) Perfecto.
+
+(42:17) Listo.  Bueno,  entonces
+
+(42:19) buenísimo,  profe.
+
+(42:20) Dicho  esto,  dicho  esto,  les  voy  a
+
+(42:23) mostrar  el  Cisco  Packet  Tracer,  que  ya
+
+(42:26) lo  abrí.  Sí.  y  les  voy  a  mostrar  cómo  es
+
+(42:29) el  primer  archivo  e  perdón,  cómo  es  el
+
+(42:33) primer  trabajo  laboratorio.
+
+(42:36) Ahí  lo  abro  bien  grande  y  ustedes
+
+(42:38) díganme  si  lo  ven.  Entiendo  que  sí.
+
+(42:44) Ahora  sí.
+
+(42:45) Bueno,  ahí  se
+
+(42:46) les  presento,  les  presento  el  simulador
+
+(42:50) denominado  Cisco  Packet  Tracer.  Sí.  Y  y
+
+(42:53) en  este  caso  lo  que  hice  fue  abrir  el  el
+
+(42:56) trabajo  o  el  laboratorio  número  uno,  que
+
+(42:59) es  se  va  a  trabajar  todos  los  conceptos
+
+(43:02) de  switching.  Sí.
+
+(43:04) Eh,  y  sobre  eso  vamos  a  ir  abordando  los
+
+(43:09) distintos  temas  eh  relacionados  con  este
+
+(43:12) trabajo,  pero  este  es  el  simulador.  Sí,
+
+(43:15) les  voy  a  mostrar  algunas  cositas  eh
+
+(43:18) simplemente  como  para  que  vayan  sabiendo
+
+(43:20) qué  es  cada  cosa.
+
+(43:22) El  simulador  acá  en  la  parte  de  abajo,
+
+(43:26) si  en  la  parte  en  la  esquina  digamos
+
+(43:28) inferior  izquierda,  sería  acá  donde
+
+(43:30) tengo  el  puntero  del  mouse,  tiene
+
+(43:32) distintos  iconos  que  hacen  referencia.
+
+(43:34) Esperen  que  a  mí  me  molesta  esto.  A  ver
+
+(43:36) si  lo  puedo  ver.  Sí,
+
+(43:38) ahí  está.  Tiene  distintos  iconos  que  si
+
+(43:41) ustedes  se  paran  arriba  dice,  por
+
+(43:43) ejemplo,  este  dice  network  devices.  Si
+
+(43:46) yo  aprieto  ahí  me  va  a  mostrar  todo  lo
+
+(43:47) que  está  acá.  Sí,  si  yo  aprieto  acá
+
+(43:50) donde  dice  devices,  me  va  a  mostrar  todo
+
+(43:52) esto  que  está  acá  que  son  devices  o
+
+(43:55) dispositivos  finales,  son  PCs,  laptops,
+
+(43:58) servidores.  ¿Sí?  Y  yo  lo  si  presiono  y
+
+(44:01) lo  arrastro,  fíjense  que  lo  pongo  en  el
+
+(44:03) en  el  workspace.  Sí,  fíjense,  ¿ven  que
+
+(44:06) lo  arrastro  y  lo  pongo  en  el  workspace?
+
+(44:09) Bueno,  son  todos  dispositivos  que
+
+(44:12) nosotros  usamos  en  el  mismo
+
+(44:15) workspace  o  área  de  trabajo.  Sí.
+
+(44:19) Eh,  y  bueno,  según  lo  que  necesitemos,
+
+(44:22) vamos  navegando  por  estos  iconitos,  ¿sí?
+
+(44:24) Por  ejemplo,  si  me  paro  en  el  primero
+
+(44:25) que  se  llama  Network  Devices,  voy  a  ver
+
+(44:27) que  todos  estos  van  a  ir  conociendo  los
+
+(44:30) símbolos  en  la  medida  que  vayamos
+
+(44:32) avanzando  en  la  clase.  Pero  estos  son
+
+(44:33) routers,  ¿sí?  Este  es  el  símbolo  de  un
+
+(44:35) router,  ¿sí?  Un  dispositivo  que  enruta
+
+(44:38) paquetes  de  un  lado  hacia  otro.  Sí,  si
+
+(44:41) sigo  eh  navegando  por  acá
+
+(44:44) tengo  otros  componentes  que  está
+
+(44:46) relacionado  con  dispositivos  de  de  IoT.
+
+(44:48) También
+
+(44:50) este  icono  que  está  acá,  que  tiene  el
+
+(44:53) dibujito  de  un  rayo,  hace  referencia  a
+
+(44:56) las  conexiones,  ¿sí?  Los  cables,  ¿sí?
+
+(44:58) Porque  ustedes  saben  que  las  PCs  contra
+
+(45:01) los  switches  se  conectan  con  con  un
+
+(45:03) cable  de  red  que  es  un  cable  este  si  es
+
+(45:08) una  PC  o  una  laptop  contra  un  Switch  se
+
+(45:10) usa  un  cable  derecho.  Sí,  este  es  el
+
+(45:13) cable  de  redes  que  ahora  lo  vamos  a  ver
+
+(45:16) igual.  Pero  lo  que  les  quiero  decir  es
+
+(45:17) qué  significa  cada  icono.  Si  ustedes
+
+(45:19) tocan  acá  en  el  rayito,  le  van  a
+
+(45:20) aparecer  todos  los  cables.  Y  acá  le  dice
+
+(45:23) este  el  cable.  Es  este  sería  el  cable
+
+(45:25) derecho,  el  Cooper  Stright  Thr
+
+(45:29) este  el  punteado  es  el  cable  cruzado.
+
+(45:31) Sí,  cuando  ustedes  antiguamente
+
+(45:33) conectaban  dos  pets  entre  sí  hace  muchos
+
+(45:35) años  para  para  jugar  un  juego  en  red
+
+(45:40) cuando  no  existía  internet  y  digamos  si
+
+(45:43) ustedes  tenían  dos  máquinas  en  su  casa  y
+
+(45:45) y  abrían  un  juego  y  querían  jugar  uno  en
+
+(45:47) cada  máquina,  bueno,  se  conectaban  a
+
+(45:49) través  de  un  cable  cruzado.
+
+(45:53) o  cuando  son  dispositivos
+
+(45:55) de  un  mismo  que  tienen  la  misma
+
+(45:58) funcionalidad,  por  ejemplo,  dos  switches
+
+(46:00) entre  sí,  se  usa  el  cable  cruzado.  Sí.  Y
+
+(46:04) bueno,  hay  conexiones  seriales  que  lo
+
+(46:06) van  a  ver,  lo  vamos  a  ver  en  la  medida
+
+(46:08) que  yo  les  cuento  esto  como
+
+(46:10) adelantándome,  pero  ya  van  a  ver  en  la
+
+(46:12) medida  que  vayamos  trabajando,  ¿sí?  Los
+
+(46:15) cables  seriales  que  son  los  que  se  usan
+
+(46:17) para  conectar  routers  entre  sí.
+
+(46:20) Y  bueno,  e  y  así  van  a  ir  eh  pasando.
+
+(46:23) Por  ejemplo,  si  vuelvo  a  a  ponerme  en  el
+
+(46:25) primer  icono,  que  son  network  devices,
+
+(46:28) ¿sí?  Automáticamente  cuando  toco  acá  me
+
+(46:32) habilita  el  primero  que  está  más  abajo,
+
+(46:35) que  se  llaman  son  los  routers.  Pero,
+
+(46:37) ¿qué  pasa  también?  Si  toco  en  el  de  al
+
+(46:39) lado  tengo  los  switches  y  estos  son
+
+(46:40) switches.  Sí,  todos  saben  lo  que  son
+
+(46:43) switches,  lo  que  son  has.  Este,  están
+
+(46:46) todos  acá.  Sí.
+
+(46:47) En  si  sigo  tocando,  acá  tengo  el  Hub,
+
+(46:51) por  ejemplo,  ¿ves?  Es  un  dispositivo  que
+
+(46:53) no  se  usa  nunca,  no  se  usa  más.  Otros,
+
+(46:55) acá  están  los  dispositivos  wireless,  por
+
+(46:57) ejemplo,  los  access  point  son  estos,
+
+(47:00) ¿sí?  Los  AP
+
+(47:02) eh
+
+(47:03) dispositivos  de  seguridad,  por  ejemplo,
+
+(47:05) firewalls.  Acá  estos  son  firewall,  este
+
+(47:07) es  un  firewall,  por  ejemplo.  Sí.
+
+(47:10) Eh,  y  bueno,  y  así  tiene,  bueno,  acá
+
+(47:12) esto  simula  un  un  cloud  de  una  internet.
+
+(47:16) Y  bueno,  el  simulador  tiene  para
+
+(47:18) configurar  eh  un  montón  de  cosas,  hacer
+
+(47:21) las  pruebas  que  nosotros  querramos,
+
+(47:22) simulando  una  red  empresarial,  eh  algo
+
+(47:26) este  eh  hogareño.  Justamente  el
+
+(47:30) simulador  está  para  para  aprender  todos
+
+(47:33) los  conceptos  de  networking
+
+(47:35) en  tanto  hogareños  como  a  nivel
+
+(47:39) académico  como  eh  algo  corporativo.  Sí.
+
+(47:44) Entonces,
+
+(47:45) este  es  esta  es  la  topología.  Bueno,
+
+(47:47) después  eh  van  a  ir  viendo,  por  ejemplo,
+
+(47:49) los  iconos  que  están  acá.  Veamos,  por
+
+(47:51) ejemplo,  este  se  utiliza  para  borrar
+
+(47:53) cosas.  Sí,  si  yo  presiono  en  este  icono
+
+(47:56) que  está  acá  arriba,  me  va  a  poner  el
+
+(47:57) puntero  del  mouse  como  una  cruz  y  yo  acá
+
+(47:59) empiezo  a  poder  borrar  eh  los
+
+(48:02) dispositivos  que  no  uso  del  workspace.
+
+(48:04) Vemos  eh  en  caso  que  quiera  quitarlos.
+
+(48:07) Sí,
+
+(48:09) pero  bueno,  esto  es  un  poco  eh  eh  quería
+
+(48:12) mostrarles  el  simulador  eh  para  que  para
+
+(48:15) que  sepan  con  qué  se  van  a  encontrar
+
+(48:17) cuando  lo  instalen  en  sus  casas  y  lo
+
+(48:18) puedan  abrir  eh  y  y  puedan  observar  que
+
+(48:23) qué  es  cada  cosa.  Sí.  E  si  voy  a  abrir
+
+(48:27) ahora
+
+(48:29) e  simplemente  para  mostrarles  cómo  es.
+
+(48:32) Dejo  de  compartir  acá  y  vuelvo  a
+
+(48:34) compartir  otra  vez.
+
+(48:39) Eh,  a  ver,  déjenme  ver  porque  los  PDF  me
+
+(48:41) los  abre  así  con  este.
+
+(48:46) Ahí  está.  Bueno,  en  cuando  ustedes  eh
+
+(48:51) abran  el  trabajo  de  laboratorio  número
+
+(48:53) uno  se  van  a  encontrar  con  algo  así.  Es
+
+(48:55) un  PDF.  Sí,  todos  tienen  la  misma  eh
+
+(49:01) estructura.  Sí,  les  dice  cuál  es  qué  es
+
+(49:04) la  práctica.  En  este  caso,  configurar
+
+(49:06) switches  LAN,  digamos,  el  funcionamiento
+
+(49:08) a  nivel  K2.  Ya  van  a  ver  qué  significa
+
+(49:10) K1,  K2,  para  el  que  no  sabe  nada  de
+
+(49:12) redes.
+
+(49:14) Le  va  a  decir  en  qué  en  qué  consta  la
+
+(49:16) actividad,  cuáles  son  los  objetivos  de
+
+(49:17) las  cosas  que  van  a  aprender,  qué
+
+(49:19) conocimientos  previos  deberían  tener,
+
+(49:21) ¿sí?  Que  lo  que  son  cosas  que  van  a  ver
+
+(49:23) en  la  teoría.  en  la  teoría  pregunta,  eh,
+
+(49:26) ¿todavía  ninguno  de  estos  cursos  tuvo  la
+
+(49:28) clase  teórica,  la  primer  clase  teórica  o
+
+(49:31) ya  alguno  la  tuvo  eh  durante  los  días
+
+(49:34) precedentes  de  esta  semana?
+
+(49:36) El  4773
+
+(49:39) estamos  ya  vimos  dos  clases  teóricas,
+
+(49:41) mañana  tenemos  la  tercera.
+
+(49:43) Ah,  bien,  bien,  bien,  bien.
+
+(49:45) 774  también.
+
+(49:47) Excelente.  Entonces,  ¿quiere  decir  que
+
+(49:49) ya  saben  lo  que  es  el  modelo  OSI
+
+(49:51) mínimamente?  Sí,  sí,  sí.  De  comunicación
+
+(49:55) de  datos  también
+
+(49:56) vimos  LAN  Switch,  ya  vimos  esos  temas.
+
+(49:58) El  protocolo  internet  802
+
+(50:01) direcciones  de  Mac  también.
+
+(50:04) Ah,  perfecto.  O  sea,  quiere  decir  que
+
+(50:06) muchos  de  los  de  las  cosas  que  están  acá
+
+(50:08) ya  las  vieron  eh  como  para  empezar  a  a
+
+(50:11) trabajar  sobre  este  sobre  este  trabajo
+
+(50:13) laboratorio.  entendía  que  era  así,  pero
+
+(50:15) por  las  dudas  lo  consulté  porque,  bueno,
+
+(50:17) como  ahora  somos  tres  cursos  en  una
+
+(50:20) misma  meeting,  quizás  todos  no  estamos
+
+(50:23) en  la  misma  sintonía  e  porque  bueno,  eso
+
+(50:27) depende  de  cuándo  les  tocó  la  clase,
+
+(50:29) hasta  dónde  viero,  hasta  dónde  dio  el
+
+(50:33) contenido  a  un  docente  u  otro,  pero
+
+(50:34) bueno,
+
+(50:36) e  no  importa,  avancemos  así.  Entonces,
+
+(50:40) ¿cuáles  son  los  conocimientos  previos
+
+(50:41) que  tenían  que  tener?  Bueno,  si  ya
+
+(50:43) vieron  la  teoría  que  es  el  modelo  OSI,
+
+(50:45) cuando  yo,  por  ejemplo,  hablo  de  capa
+
+(50:47) dos,  ya  entiendo  que  deberían  saber  a
+
+(50:50) qué  se  refiere.  ¿Si?  Entonces  después,
+
+(50:53) bueno,  eh  conceptos  de  LAN,  bueno,
+
+(50:56) Ethernet,  direccionamiento  MAC,  ¿sí?
+
+(50:58) Direccionamiento  MAC  es  justamente  esto
+
+(51:00) a  nivel  de  capa  dos  se  lo  llama
+
+(51:01) direccionamiento  físico.
+
+(51:04) En  lo  que  es  una  vilan,  ¿sí?  Se se
+
+(51:07) tendrían  que  entender  lo  que  es  el
+
+(51:09) protoc  el  el  estándar  Ile  802.1Q.
+
+(51:14) Sí,  en  el  802.1D,
+
+(51:18) que  es  spaning  tre,  que  es  un  es  un
+
+(51:20) protocolo  eh  que  se  utiliza  para  que  no
+
+(51:22) haya  bucles  en  una  red.  Ya  van  a  ver  por
+
+(51:24) qué.
+
+(51:25) Bueno,  todos  estos  conceptos  habría  que
+
+(51:28) entenderlos  para  poder  abordar  este
+
+(51:30) trabajo  de  laboratorio.  Y  acá  les  dice
+
+(51:32) cuáles  son  los  materiales.
+
+(51:34) Es  el  archivito,  el  punto  pkt
+
+(51:39) y  se  los  mostré  recién.
+
+(51:41) En  dentro  de  esa  carpetita  que  se  tienen
+
+(51:43) que  descargar  de  la  aula  virtual  donde
+
+(51:45) está  el  archivo  este,  el  el  tele  1,  ¿sí?
+
+(51:49) que  es  el  de  switching.  En  dentro  de
+
+(51:52) esos  zip  que  hay  están  estos  archivos
+
+(51:54) que  les  digo,  los  comandos  del
+
+(51:56) Ciscopacket  Tracer,  una  introducción,  el
+
+(51:58) spaning  tre,  este  están  estos  archivos,
+
+(52:01) ¿sí?  En  esa  carpetita.  Después,  bueno,
+
+(52:04) una  pequeña  descripción  y  ya  les  dice,
+
+(52:06) "Bueno,  arranquemos  a  trabajar  sobre
+
+(52:09) esto.  Estas  guías  de  laboratorio,  ¿sí?
+
+(52:13) o  llamémoslo  trabajo  práctico  barra
+
+(52:16) trabajo  laaboratorio.
+
+(52:18) Son  guías  que  están  hechas  a  propósito
+
+(52:20) para  que  ustedes  vayan  aprendiendo.  Es
+
+(52:22) decir,  son  guías,  déjenme  decir  esta
+
+(52:25) palabra,  guiadas  para  que  ustedes  vayan
+
+(52:28) siguiendo  un  paso  a  paso  y  con  ese  paso
+
+(52:30) a  paso  que  van  haciendo,  van  a  ir
+
+(52:32) aprendiendo
+
+(52:34) cómo  se  usa  el  simulador  y  qué  es  lo  que
+
+(52:37) tienen  que  hacer  con  cada  cosa  del
+
+(52:39) simulador.  Porque,  por  ejemplo,  si  yo  me
+
+(52:40) bo,  voy  bajo  hasta  acá,
+
+(52:44) les  dice  que  en  el  simulador  ejecuten  el
+
+(52:47) comando  show.  Sí,  el  comando  show
+
+(52:49) espacio  signo  pregunta  que  está  acá,
+
+(52:51) perdón,
+
+(52:54) no  me  lo  estaría  marcando  como  quiero
+
+(52:58) ahí.  El  comando  show,  signo  de  pregunta,
+
+(53:00) es  un  comando  que  les  muestra  este
+
+(53:03) dentro  del  del  equipo  que  están
+
+(53:06) configurando,  en  este  caso  sería  un
+
+(53:08) switch  porque  estamos  hablando  de  nivel
+
+(53:09) capa  2,  nivel  switching.  Les  muestra  qué
+
+(53:13) comandos  les  permite  ver  cierta
+
+(53:16) información  del  switch.  Sí.
+
+(53:18) e  y  les  va  diciendo,  por  ejemplo,  pase
+
+(53:20) al  modo  privilegiado,  que  ahora  les  voy
+
+(53:22) a  decir  qué  es  y  cómo  y  qué  significa
+
+(53:24) eso,  con  el  comando  enable.  O  sea,  que
+
+(53:26) si  ustedes  están  en  parados  en  el  prompt
+
+(53:28) o  en  el  o  llamémosle  como  si  fuese  el
+
+(53:30) cmd.xe,  Ex,  pero  pero  del  del
+
+(53:35) del  switch  donde  se  configura  el  switch,
+
+(53:37) si  ponen  el  comando  enable,  pasa  de  un
+
+(53:39) modo  a  otro  y  con  eso  les  habilita  hacer
+
+(53:42) más  cosas  de  lo  que  podían  hacer  antes.
+
+(53:45) Eh,  y  así  fíjense  que  les  va  diciendo
+
+(53:48) qué  comandos  tirar,  que  son  los  que
+
+(53:49) están  sombreados,  ¿sí?  Para  ir
+
+(53:53) resolviendo  lo  que  les  está  pidiendo  el
+
+(53:55) trabajo.  Fíjense  que  es  algo  guiado.  Acá
+
+(53:57) dice,  "Configure  el  acceso  remoto  por
+
+(53:59) medio  del  protocolo  Telnet.  Y  acá  les
+
+(54:02) dice  cómo  hacerlo.  ¿Ven?  Ustedes  siguen
+
+(54:04) esto  y  les  dice  cómo  van  a,  o  sea,  es  un
+
+(54:08) trabajo  práctico  barra  trabajo
+
+(54:10) laboratorio  guiado  donde  ustedes
+
+(54:12) siguiendo  paso  a  paso  lo  que  hacen  acá
+
+(54:14) deberían  poder  cumplir  con  lo  que  ese
+
+(54:16) trabajo  requiere  para  entregarlo.  Sí,
+
+(54:20) se  entendió  más  o  menos.  O  sea,  no  es
+
+(54:22) que  le  le  tiramos  un
+
+(54:25) No  es  que  le  tiramos  un  una  adquín  y
+
+(54:28) arréglenselas.  Sí.  O  sea,  no  es  así,  es
+
+(54:32) algo  guiado  para  que  ustedes  vayan
+
+(54:35) tomando  ritmo  y  vayan  aprendiendo.  Sí,
+
+(54:39) bien,  dicho  esto,  sí,  ya  que  les  mostré
+
+(54:43) cómo  abrí  el  escenario  con  el  packet
+
+(54:45) Tracer  y  les  mostré  cómo  es  la  guía  del
+
+(54:48) trabajo  laboratorio  un  que  van  a  usar
+
+(54:51) para  seguirla  paso  a  paso,  cómo  ir
+
+(54:53) resolviendo  lo  que  tienen  que  hacer.  Y
+
+(54:55) déjenme  bajar  hasta  abajo,  fíjense.
+
+(54:57) Miren.  A  ver.
+
+(55:01) Bueno,  en  esto  en  en  esta  guía  no  está
+
+(55:04) la  topología  general,  pero  no  importa,
+
+(55:05) yo  la  voy  a  completar  bien  después.
+
+(55:09) E  déjenme  eh  hablarles  un  poco  de
+
+(55:13) teoría,  ¿sí?  E
+
+(55:17) no  sé,  en  otros  cursos  de de  amor  redes
+
+(55:20) las  cosas  las  manejan  de  otra  manera.
+
+(55:22) Tal  vez  quizás  las  clases  que  tengan  con
+
+(55:25) conmigo  y  con  Rafael  eh  Oliveri  sean  un
+
+(55:29) poquito  más  largas,  pero  yo  además  de
+
+(55:31) dar  eh  un  poco  eh  o  ir  directamente  al
+
+(55:35) hueso  con  la  práctica,  les  hago  un
+
+(55:38) pequeño  refresh  a  veces  de  la  teoría,  eh
+
+(55:40) porque  creo  que  a  veces  es  necesario.
+
+(55:43) Entonces  el  trabajo  laboratorio  número
+
+(55:45) uno  arrancaría  acá.  ¿Sí?  Y  yo  les  voy  a
+
+(55:47) contar  algunas  cosas  teóricas,  ¿sí?  Eh,
+
+(55:50) bueno,  esto  es  lo  que  dice  la  guía,  los
+
+(55:52) objetivos  que  les  mostré  recién,
+
+(55:55) pero  bueno,
+
+(55:58) acá  empieza  la  parte,  digamos,  como  la
+
+(56:00) descripción  y  yo  les  voy  a  contar  cada
+
+(56:02) cosa.  Este  trabajo  laboratorio  que  eh
+
+(56:05) tiene  principal  foco  en  lo  que  es  la
+
+(56:07) capa  2  del  modelo  OSI.  En  la  capa  2  del
+
+(56:09) modelo  OSI  se se  utiliza  e  el
+
+(56:13) direccionamiento  eh  físico  a  nivel
+
+(56:15) macadres.  Sí.  Si  no  saben  quién  qué  es
+
+(56:18) una  macadr,  bueno,  es  una  dirección
+
+(56:19) física,  ¿sí?  Que  cada  placa  de  red  y
+
+(56:23) cada  dispositivo  de  de  networking  tiene
+
+(56:26) este  y  viene  eh  de  viene  de  fábrica.  Sí,
+
+(56:30) en  este  caso  las  placas  de  red  o  las
+
+(56:32) Nick,  que  se  le  llama  network  interface
+
+(56:34) Card  tienen  eh  una  dirección  macadres
+
+(56:37) que  ya  viene  establecida  de  fábrica  e
+
+(56:42) y  y  los  switches  que  son  dispositivos
+
+(56:44) como  el  como  estos  que  están  aquí  en  la
+
+(56:45) foto  e  tienen  una  n  cantidad  de  puertos
+
+(56:49) para  conectar  muchos  dispositivos
+
+(56:51) finales,  o  sea,  muchos  endpoints,  ¿si?
+
+(56:53) muchas  PCs,  muchas  laptops,  muchas
+
+(56:55) impresoras  y  cada  dispositivo,  cada  end
+
+(56:58) point  tiene  una  dirección  MACRES.  Sí,
+
+(57:01) los  switches
+
+(57:04) comparado  con  los  eh  antecesores  eh
+
+(57:07) dispositivos  que  se  los  conocía  como
+
+(57:09) HABS  en  que  se  dejaron  de  usar  tienen
+
+(57:12) una  inteligencia.  Sí,  esa  inteligencia
+
+(57:16) está  en  que  cuando  uno  conecta  una  PC  en
+
+(57:18) un  puerto,  el  Switch  automáticamente
+
+(57:22) e  aprende  de  ese  dispositivo  que  se
+
+(57:25) conectó  su  dirección  MACres  y  cuando
+
+(57:28) tiene  que  enviar  un  un  paquete,  ¿sí?,
+
+(57:31) desde  el  puerto  un  al  puerto  5  ya  sabe
+
+(57:34) que  está  conectado  al  puerto  un  y  ya
+
+(57:35) sabe  que  está  conectado  al  puerto  5,  o
+
+(57:37) sea,  conoce  la  macades  del  de  lo  que
+
+(57:39) está  conectado  en  el  puerto  uno,  conoce
+
+(57:41) la  macad  lo  que  está  en  eh eh  conectado
+
+(57:43) en  el  puerto  5  y  manda  un  mensaje
+
+(57:46) Unicast.  Sí,  sí,  eh  porque  al  principio
+
+(57:49) para  conocer  todo  eso  hace  un  broadcast,
+
+(57:51) pero  una  vez  que  tiene  conocimiento  y
+
+(57:54) arma  su  tabla  de  macadres,  sí,  ya  conoce
+
+(57:57) que  tiene  conectado  en  cada  puerto  y
+
+(57:59) manda  mensajes  únicas.  Sí.  ¿Qué  pasaba
+
+(58:02) con,  o  sea,  en  contraparte  esto,  ¿qué
+
+(58:05) pasaba  con  los  dispositivos  de  capa  dos,
+
+(58:07) pero  que  no  eran  los  switches,  sino  que
+
+(58:09) eran  los  hubs?  Los  hubs  eran  como  una
+
+(58:12) caja  boba  e,  por  así  decirlo,  eran,
+
+(58:16) ustedes  vieron  eh  que  cuando  tienen  eh
+
+(58:19) un  enchufe  solo  en  sus  casas,  conectan
+
+(58:21) una  zapatilla  y  de  ese  enchufe  salen
+
+(58:24) cinco  enchufes  más,  las  típicas
+
+(58:27) zapatillas.  Bueno,  si  yo  tuviese  que
+
+(58:29) hacer  una  analogía  de  esa  zapatilla  con
+
+(58:32) un  hub  resultaba  exactamente  igual,
+
+(58:35) porque  ¿qué  pasa?  Todo  lo  que  conectaban
+
+(58:37) ustedes  al  hub  se  veía  todo  con  todo.
+
+(58:41) Sí.  O  sea,  si  ustedes  tenían  cinco
+
+(58:42) puertos  y  conectaban  cinco  PCs,  todas
+
+(58:46) las  PC  se  veían  con  todas.  Sí.  Y  cuando
+
+(58:49) una  PC  mandaba  este  un  mensaje  a  la  otra
+
+(58:52) PC,  o  sea,  lo  recibían  las  otras  cuatro.
+
+(58:56) Sí.  Si  son  cinco  puertos  y  hay  están  los
+
+(58:58) cinco  ocupados,  o  sea,  tenemos  cinco  PC,
+
+(59:01) la  PC1  mandaba  un  mensaje  y  en  vez  de
+
+(59:04) ser  un  mensaje  únicas  lo  repetía  por
+
+(59:06) todos  los  puertos  y  eso  generaba
+
+(59:09) congestión  en  la  red.  Sí,  porque  es  como
+
+(59:11) que  cada  uno  que  mandaba  un  paquete  se
+
+(59:13) replicaba  para  todos  los  puertos.  Sí,
+
+(59:16) por  eso  los  Hubs  se  dejaron  de  utilizar
+
+(59:19) porque  generaban  una  congestión  en  la
+
+(59:21) red  más  allá  de  que  había  un  mecanismo
+
+(59:23) desarrollado,  digamos,  que  se  llama  se
+
+(59:26) llama  CSMD,  ¿sí?  Que  utiliza  todo  un
+
+(59:31) algoritmo  para  para  que  para  resolver
+
+(59:33) esa  problemática  que  después  los
+
+(59:35) switches  la  optimizaron.
+
+(59:38) Nosotros  acá  en  este  trabajo  de
+
+(59:40) laboratorio,  en  el  uno,  vamos  a  ver  todo
+
+(59:42) esto.  Vamos  a  ver  la  configuración
+
+(59:44) básica  del  dispositivo,  que  es  cómo
+
+(59:46) setearle  un  host  name,  o  sea,  el  nombre
+
+(59:48) del  propio  equipo,  cómo  configurar  el
+
+(59:52) acceso  remoto,  porque  cuando  nosotros
+
+(59:54) tenemos  un  dispositivo  de  red,  lo
+
+(59:56) sacamos  de  la  caja,  lo  ponemos  arriba  de
+
+(59:58) una  mesa,  lo  energizamos,  o  sea,  lo
+
+(60:00) conectamos  a  la  red  eléctrica  y  prende.
+
+(60:04) Nosotros,  ¿cómo  nos  conectamos?
+
+(60:07) Si  le  enchufo  un  cable  de  red,  no  puedo
+
+(60:10) e  hacer  nada  porque  no  tiene  una
+
+(60:11) dirección  IP.  Entonces,  se  conecta  con
+
+(60:14) un  cable  de  consola.  El  cable  de
+
+(60:16) consola,  si  es  que  cursaron  la  materia
+
+(60:18) de  comunicaciones,  saben  que  es  una
+
+(60:19) conexión  serial.  Sí.
+
+(60:22) Ahora  vamos  a  profundizar  sobre  eso.
+
+(60:24) Entonces,  conectándole  el  cable  de
+
+(60:26) consola
+
+(60:27) o  también  denominado  eh  una
+
+(60:30) administración  out  of  band,  o  sea,  eh
+
+(60:33) digamos  eh  una  conexión  directa  al
+
+(60:36) equipo,  eh  ahí  puedo  acceder  al  equipo  y
+
+(60:39) empezar  a  configurarle,  empezar  a
+
+(60:40) configurarle  un  host  name,  ponerle  una
+
+(60:41) IP  y  una  vez  que  tengo  la  IP  ya  después
+
+(60:44) lo  puedo  acceder
+
+(60:46) eh  en  forma  remota  por  Telnet  o  por  SSH.
+
+(60:49) Sí.
+
+(60:51) Eh,  ¿qué  significa  en  accederlo  por
+
+(60:53) Telnet  o  por  CSH?
+
+(60:55) Bueno,  son  dos  protocolos  que  me
+
+(60:57) permiten  conectarme  este  por  IP  a  a  un
+
+(61:01) equipo  y  administrarlo.  Sí,  la  conexión
+
+(61:04) que  se  hace  por  Telnet,  a  diferencia  de
+
+(61:06) lo  que  es  por  SSH,
+
+(61:08) eh,  la  conexión  va  en  texto  plano  si  es
+
+(61:11) por  Telnet  y  va  cifrada  si  es  por  SSH.
+
+(61:15) Sí,  con  las  dos  obtengo  el  mismo
+
+(61:17) resultado,  pero  si  alguien  me  está
+
+(61:19) haciendo  un  un  sniffing  en  la  red  o  está
+
+(61:23) haciendo  un  análisis,  digamos,  del
+
+(61:25) tráfico  que  pasa  de  un  lado  al  otro  y  yo
+
+(61:28) estoy  conectado,  me  voy  a  conectar  por
+
+(61:30) Telnet  a  un  switch  y  en  eso  que  me  voy  a
+
+(61:33) conectar  eh  pongo  las  credenciales,  el
+
+(61:36) usuario  y  la  contraseña  conectándome  por
+
+(61:39) Telet.  Como  eso  viaja  por  texto  plano,
+
+(61:41) eh  la  persona  que  está  haciendo  un
+
+(61:42) análisis  del  tráfico  la  puede  ver.
+
+(61:45) Por  eso  en  las  redes  eh  se  utiliza  el
+
+(61:49) protocolo  SSH  en  lugar  del  TENET,  que  es
+
+(61:53) muy  antiguo.
+
+(61:56) Después  vamos  a  ver  un  poco  la
+
+(61:57) configuración  más  avanzada  y  en  esa
+
+(61:59) configuración  vamos  a  vamos  a  ver  estos
+
+(62:02) conceptos,  el  concepto  de  por  security
+
+(62:05) en  el  concepto  de  puertos  troncales,  que
+
+(62:09) entiendo  que  ya  saben  qué  es,  o
+
+(62:12) tranking,  eh,  que  se  utiliza  para
+
+(62:14) conectar  eh  switches  entre  sí.  Eh,  van  a
+
+(62:18) ver  lo  que  son  las  van  y  van  a  van  a  a
+
+(62:21) ver  lo  que  es  el  protocolo  spanning  tre
+
+(62:23) o  cómo  funciona.  Sí.  De  todo  esto  que
+
+(62:26) está  acá,  ¿hay  algo  que  no  vieron?  Yo
+
+(62:29) calculo  que  esto.
+
+(62:33) Lo  de  tranking  tampoco  me  suena.
+
+(62:34) Sí,  yo  particularmente  tranking  no  sé.
+
+(62:38) Okay,  yo  se  lo  voy  explicar.  Lo  de
+
+(62:41) trankin  era  para  vincular  las  vel  dos
+
+(62:44) switches.
+
+(62:46) Correcto.
+
+(62:48) El  el  puerto  troncal  o  el  tranking  e  es
+
+(62:53) una  forma  de  configurar  un  puerto  que
+
+(62:56) permite  conectar  dos  switches  entre  sí.
+
+(62:59) Y  lo  que  la  funcionalidad  que  que  brinda
+
+(63:03) eso  es  que  si  yo  tengo  van  configuradas
+
+(63:06) en  los  dos  switches,
+
+(63:08) el  puerto  configurado  como  troncal  me
+
+(63:10) deja  pasar  todas  las  van  por  esos
+
+(63:12) puertos,  por  eso,  por  esos  puertos
+
+(63:13) configurados  como  Troncales  o  como
+
+(63:15) Tranking.  Y  el  protocolo  que  se  usa  o  el
+
+(63:19) el  estándar  es  el  802.1Q.
+
+(63:23) Sí.
+
+(63:25) Bien,
+
+(63:27) recién  les  estaba  hablando  de  esto,  el
+
+(63:29) tema  del  cable  de  consola.  ¿Qué  es  el
+
+(63:31) cable  de  consola?  El  cable  de  consola  es
+
+(63:34) un  cable  especial,  digamos,  que  viene
+
+(63:36) todo  eh  e  invertido.  Sí,  se  lo  llama
+
+(63:42) rollover.  En  inglés  es  rollover  cable.
+
+(63:46) Eh,  y  si  ustedes  eh  conocen  los  cables
+
+(63:51) que  se  utilizan  en  networking,
+
+(63:54) los  cables  que  están  catalogados  como
+
+(63:57) categoría  5,  6,  7,  eh  tienen  muchos
+
+(64:02) cablecitos  de  colores  adentro  chiquitos,
+
+(64:04) ¿sí?  Eh,  numerados  del  uno  al  oo,  ¿sí?
+
+(64:07) Eh,  existen  unas  normas  para  eso,  para
+
+(64:10) cuando  un  cable  es  derecho,  cuando  es  un
+
+(64:12) cable  cruzado  y  en  este  caso  cuando  es
+
+(64:13) un  cable  invertido,  en  inglés,  como  les
+
+(64:17) decía,  denominado  rollover.
+
+(64:20) Este  cable  sí  es  un  cable  que  se  usa
+
+(64:23) para  hacer  una  conexión  serial  por
+
+(64:24) consola.  Sí,  donde  nosotros  antiguamente
+
+(64:28) teníamos  las  PCs.  ¿Se  acuerdan  que  en
+
+(64:30) las  PCs  eh  había  unos  puertos
+
+(64:34) denominados  COM,  ¿sí?  que  antes  de  que
+
+(64:37) exista  el  USB,  en  esecom  se  conectaba  el
+
+(64:41) mouse,  ¿sí?  Eh,  los  mouse  que  estaban
+
+(64:45) que  venían  con  cable  antes  de  que  exista
+
+(64:47) el  USB,  se  conectaban  con  un  cable  eh  el
+
+(64:50) cablecito  del  mouse  se  conectaba  a  ese
+
+(64:51) puerto  que  se  se  lo  llamaba  COM,  ¿sí?
+
+(64:54) Generalmente  era  el  COM  1  o  el  COM  2,
+
+(64:59) ¿sí?  que  es  un  cable  que  e  que  se
+
+(65:02) conectaba  a  un  puerto  serial.  Sí,  que
+
+(65:04) tiene  una  ficha,  digamos,  o  sea,  que  es
+
+(65:06) de  B9.  Es  el  en  cómo  era  la  ficha
+
+(65:10) antiguamente,  que  es  esta  que  está  acá
+
+(65:11) abajo.  Miren,  le  voy  a  hacer  un  poquito
+
+(65:12) de  zoom.
+
+(65:15) Este  es  el  conector  de  B9,  el  que  está
+
+(65:17) acá,  el  que  estoy  redondeando  con  el  con
+
+(65:19) el  puntero  del  mouse.  Ese  conector  de  B9
+
+(65:22) es
+
+(65:24) perdón,  ese  no  es  ese  no  es  BGA,
+
+(65:27) ¿no?  El  BGA  es  parecido,
+
+(65:29) eh,  es  parecido,  pero  este  es  el  que  se
+
+(65:32) usa  en  las  conexiones  seriales,  en  las
+
+(65:35) COM,  ¿sí?  Eh,  ¿qué  es?  Eh,  se  lo  conoce
+
+(65:38) como  hembra  o  macho.  Este  es  el  conector
+
+(65:41) hembra  en  este  caso.  Sí.  Los  mouse
+
+(65:43) traían  un  conector  como  este,  digamos,
+
+(65:46) en  que  en  este  caso  era  era  macho  y  se
+
+(65:49) conectaba  en  el  en  el  en  el  en  el
+
+(65:52) motherbard  de  de  las  PCs  y  con  eso,
+
+(65:55) bueno,  ustedes  tenían  la  conexión  con  el
+
+(65:57) mouse,  ¿sí?  Después,  bueno,  apareció
+
+(65:59) otro  cablecito,  otro  conector  que  era
+
+(66:02) redondito,  cilíndrico,  digamos,  para  que
+
+(66:04) para  dejar  de  usar  esto  y  después  ya
+
+(66:07) apareció  el  USB.  Pero  bueno,  este  cable
+
+(66:10) eh  cereal  sí  eh  se  conecta  hoy  ya  no
+
+(66:14) existe  más  así  existe  un  adaptador  que
+
+(66:17) que  es  USB  acereal,  sí,  como  este  que
+
+(66:22) está  acá  en  en  la  esquina  inferior
+
+(66:25) izquierda.  Eh,  se  usa  un  adaptador,
+
+(66:28) digamos,  de  USB  a  conexión  serial,  como
+
+(66:31) esto  que  que  está  acá  en  en  la  figura
+
+(66:33) esta  que  está  acá.  tienen  la  PC,  el
+
+(66:35) cable  este  eh  serial,  acá  entre  medio
+
+(66:39) está  un  adaptador  que  es  de  USB  a  serial
+
+(66:41) y  después  se  conecta,  se  usa  este  cable
+
+(66:45) e  que  es  de  color  celeste  generalmente  o
+
+(66:48) por  lo  menos  el  de  Cisco  es  de  color
+
+(66:50) celeste.  Después  hay  otros  colores  y  que
+
+(66:53) se  conecta  al  switch.  este  este  icono
+
+(66:56) que  está  acá  o  stencil  o  como  quieramos
+
+(66:59) llamarlo,  es  el  que  representa  un  switch
+
+(67:03) este  que  es  una  cajita  que  tiene  muchas
+
+(67:04) flechitas,  ¿sí?  Que  van  para  un  lado  y
+
+(67:06) para  el  otro.  Y  en  el  Switch  lo  van  a
+
+(67:09) ver,  existen  distintos  tipos  de
+
+(67:11) conexiones  en  el  Switch.  Puede  ser  un
+
+(67:13) RJ45  eh  donde  se  donde  se  conecta,  como
+
+(67:17) este  que  está  acá,  digamos.  O  también
+
+(67:20) hay  un  micro  eh  eh  USB  que  también  eh
+
+(67:25) simula  esa  conexión  de  consola  con  el
+
+(67:28) switch.  O  sea,  los  switches
+
+(67:31) tuvieron  distintos  tipos  de  conexión  eh
+
+(67:34) para  la  para  conectarse  por  consola,  por
+
+(67:36) línea  serial  con  RJ45  o  con  mínim  USB.
+
+(67:40) Sí,  digamos,  por  eso  existen  varios
+
+(67:42) cables.
+
+(67:45) ¿Cómo  es  una  conexión  serial?  Bueno,
+
+(67:47) como  vieron,  si  si  cursaron
+
+(67:49) comunicaciones,  ustedes  abren  un
+
+(67:52) software,  por  ejemplo,  el  Puti  algún
+
+(67:55) otro,  el  más  conocido  es  el  Puti,  e
+
+(67:57) hacen  una  conexión  serial  y  tienen  que
+
+(67:59) configurar  estos  parámetros  que  casi
+
+(68:00) siempre  son  los  mismos  porque  se
+
+(68:02) estandarizaron.  Antiguamente  cada
+
+(68:04) fabricante  le  ponía  lo  que  quería  acá  sí
+
+(68:06) eran  todos  similares,  pero  variaban
+
+(68:08) algunas  cositas.  hoy  está  más
+
+(68:09) estandarizado  y  suele  seguir  o  responder
+
+(68:12) a  este  patrón  y  digamos  a  9,600  o  bits
+
+(68:16) por  segundo,  8  bits  de  datos  en  la
+
+(68:19) transmisión  sin  paridad,  un  bit  de  stop
+
+(68:22) y  control  de  flujo,  bueno,  por  hardware
+
+(68:24) que  podría  ser  por  software  también.
+
+(68:29) Bueno,  si  hasta  acá  se  entendió  esto  de
+
+(68:31) las  conexiones  cereales,  eh,  el  tema  de
+
+(68:34) los  switches,
+
+(68:36) acá  ya  me  pongo  a  hablar  de  los  de  del
+
+(68:39) simulador.  Sí,  hay  alguna  pregunta  hasta
+
+(68:43) acá.
+
+(68:44) Ese  material,  ¿las  PPT  las  vas  a  subir  a
+
+(68:47) algún  lado?
+
+(68:49) No,  estas  PPTs  no  hace  falta  que  las  que
+
+(68:54) las  pasemos  porque  no  las  necesitan
+
+(68:56) ustedes,  sino  que  es  el  material  de
+
+(68:58) apoyo  que  usamos  los  docentes  para
+
+(68:59) explicar,  ¿sí?  Porque  ya  con  las  guías
+
+(69:01) que  tienen  eh  estas  sí  ya  pueden
+
+(69:05) resolver  e  eh  las  cosas  que  necesitan
+
+(69:08) hacer.  Sí,  esto  es  una  una  presentación
+
+(69:11) que  usamos  nosotros  para  explicar.
+
+(69:15) Entonces,
+
+(69:16) si  se  entendió  todo  hasta  acá,  voy  a
+
+(69:18) empezar  a  abordar  el  tema  de  teórico  de
+
+(69:22) de  de  lo  que  hace  el  simulador  y  les  voy
+
+(69:25) a  ir  mostrando  algunas  cositas.
+
+(69:28) nosotros  cuando  entramos  a  un  switch  y
+
+(69:30) voy  a  entrar  a  uno,  eh,  así  que  voy  a
+
+(69:33) voy  a  volver  a  a  compartir,  voy  a
+
+(69:35) compartir  e  la  pantalla,
+
+(69:39) voy  a  compartir  el  Cisco  Packet  Tracer  y
+
+(69:40) voy  a  compartir  el  PDF,  las  dos  cosas
+
+(69:43) ahí.
+
+(69:45) Entonces,  me  voy  al  CCO  Packet  Tracer.
+
+(69:48) Ah,  no  me  va  a  dejar.  Esperen,  esperen,
+
+(69:50) porque  tiene  esto  tiene  su
+
+(69:53) su  lado  su  lado
+
+(69:56) particular.  Bueno,
+
+(70:00) les  voy  a  mostrar  primero  en  el  Packet
+
+(70:02) Tracer  y  después  les  explico  esto  que  es
+
+(70:07) yo.  Para  conectarme  a  este  a  este  switch
+
+(70:09) que  está  acá,  que  es  el  que  voy  a  tener
+
+(70:12) que  configurar,  y  este  que  está  acá,  que
+
+(70:13) es  el  que  voy  a  tener  que  configurar,
+
+(70:16) necesito  conectarme  por  consola.
+
+(70:18) Entonces,  ¿cómo  me  conecto  por  consola?
+
+(70:21) Apreto  acá  en  el  rayito,  me  paro,  eh,
+
+(70:24) veo  todos  los  cables  que  están  acá.  El
+
+(70:26) cable  celeste  que  está  acá  dice  conso
+
+(70:29) consola.  Entonces,  presiono  sobre  ese
+
+(70:31) cable,  me  va  a  cambiar  el  puntero  del
+
+(70:33) mouse  con  ese  icono  que  ven  ustedes  ahí.
+
+(70:37) Presiono  con  el  mouse  una  vez  y  acá
+
+(70:39) selecciono  RS232,  que  ese  es  el
+
+(70:42) protocolo  que  se  usa  en  conexiones
+
+(70:44) seriales.
+
+(70:46) Una  vez  que  toqué  ahí,  me  conectó  el
+
+(70:48) cable  en  la  PC  y  fíjense  que  tengo  el
+
+(70:51) cable,  digamos,  eh,  conectado  y  ahora  lo
+
+(70:53) tengo  que  vincular.  Lo  voy  a  vincular  al
+
+(70:56) switch  donde  dice  consola.  Sí,
+
+(71:01) aprieto  ahí  y  ya  tengo  conectado  mi  PC
+
+(71:05) hacia  el  switch  por  el  cable  de  consola.
+
+(71:08) Sí,  ven  que  está  conectado  ahí.
+
+(71:11) Bien,  entonces  si  yo  entro  a  la  PC,  si
+
+(71:14) damos  toco  con  el  mouse,  entro  a  la  PC,
+
+(71:19) me  voy  hasta  la  parte  donde  está  el
+
+(71:21) desktop,  ¿sí?  como  si  fuese,  digamos,  el
+
+(71:24) Windows,  digamos,  el  escritorio  de
+
+(71:26) Windows.  Y  acá  hay  un  icono  que  dice
+
+(71:29) terminal.  Si  si  aprieto  ahí  en  terminal,
+
+(71:32) me  aparece  esa  conexión
+
+(71:36) por  consola  con  los  parámetros  que  les
+
+(71:38) mostré  en  la  en  la  en  la  en  la  PPT.  Si
+
+(71:42) le  doy  okay,  fíjense,  me  aparece,
+
+(71:46) digamos,  la  interfaz
+
+(71:49) del  switch,  o  sea,  yo  ya  estoy  acá
+
+(71:52) adentro  del  switch.  ¿Ven  que  esto  que
+
+(71:55) dice  acá  se  es  el  sistema  operativo  del
+
+(72:00) switch?  Sí,  todos  los  dispositivos  que
+
+(72:03) uno  tiene,  digamos,  incluso  el
+
+(72:05) smartphone  que  ustedes  tienen,
+
+(72:08) el  sistema  operativo  que  usa  es  Android.
+
+(72:11) o  veamos  eh  el  iOS  que  que  vendría  a  ser
+
+(72:16) eh  el  de  Mac  si  alguien  si  alguno  tiene
+
+(72:18) un  un  iPhone,  ¿no?  Bueno,  eh
+
+(72:23) en  los  en  los  dispositivos  de  Cisco,  en
+
+(72:26) los  switches,  en  los  router,  el  sistema
+
+(72:28) operativo  que  corre  adentro  del  hardware
+
+(72:30) este  se  llama  Cisco  iOS.  Sí,  Cisco  iOS.
+
+(72:35) Y  en  este  caso,  este  Switch,  es  un
+
+(72:38) modelo  que  se  llama  2950.  Sí.  ¿Qué
+
+(72:42) quiere?  ¿Qué  quiero  decir?  Que  cada
+
+(72:43) dispositivo,  al  igual  que  un  smartphone,
+
+(72:46) tiene  un  sistema  operativo.  En  este  caso
+
+(72:47) se  llama  Cisco  iOS.  Si  ustedes  se  paran
+
+(72:51) adentro  y  apretan  enter,
+
+(72:53) van  a  ver  que  tienen  lo  que  se  denomina
+
+(72:56) el  prompt  de  eh  del  sistema  operativo  de
+
+(73:00) este  de  este  de  este  equipo,  ¿sí?,  del
+
+(73:03) Cisco  iOS.  Sí,
+
+(73:05) ese  prom  así  como  está
+
+(73:09) en  están  en  un  modo  específico  que  se
+
+(73:12) llama  el  modo  usuario.  Sí,  el  modo
+
+(73:14) usuario,  si  ustedes  hacen  signo  de
+
+(73:16) pregunta
+
+(73:18) les  muestra  esos  comandos.  Sí,  esos
+
+(73:21) comandos  son  los  únicos  que  ustedes
+
+(73:23) pueden  utilizar  estando  en  este  modo
+
+(73:26) particular.
+
+(73:27) Ahora,
+
+(73:29) si  yo  elijo  uno  de  esos  comandos,  por
+
+(73:31) ejemplo,  el  comando  show,  ¿sí?  Escribo
+
+(73:34) ah  algo  importante
+
+(73:36) en  esta  este  el  sistema  operativo  de
+
+(73:40) Cisco,  el  Cisco  iOS,  tiene  ciertas
+
+(73:42) similitudes  con  lo  que  ustedes  conocen,
+
+(73:44) si  lo  si  conocen  en  el  sistema  operativo
+
+(73:47) Linux,  ¿sí?  Porque  por  ejemplo,  si  yo
+
+(73:49) escribo  sh  para  escribir  el  comando  show
+
+(73:54) y  presiono  la  tecla  tab,  me  lo
+
+(73:56) autocompleta.  Sí.  Y  después  pongo  signo
+
+(73:59) de  pregunta  y  me  muestra  todas  las  cosas
+
+(74:03) que  yo  podría  ver  con  el  comando  show.
+
+(74:06) ¿Sí?
+
+(74:08) Y  si  aprieto  enter,  bueno,  voy  pasando
+
+(74:10) de  línea,  pero  si  pongo  show,  espacio
+
+(74:13) signo  de  pregunta,  me  muestra  todo  lo
+
+(74:15) que  el  comando  show  me  permitiría  hacer.
+
+(74:18) Sí,  por  ejemplo,  si  yo  hago  show
+
+(74:20) version,  show,  apreté,  puse  sh  y  apreté
+
+(74:24) la  tecla  tab.  Después  pongo  ver  y
+
+(74:27) aprieto  la  tecla  tab  y  me  autocompleta
+
+(74:29) los  comandos  si  los  reconoce.  Si  el
+
+(74:31) intérprete  de  comandos
+
+(74:34) reconoce  el  comando,  me  lo  completa  show
+
+(74:37) version  y  aprieto  enter.  Si  yo  pongo
+
+(74:39) show  version,  me  me  muestra  toda  la
+
+(74:42) información  del  sistema  operativo  que
+
+(74:44) corre  este  equipo.  Me  hasta  incluso  me
+
+(74:45) muestra  el  número  de  serie.  ¿Ven?
+
+(74:49) Me  muestra  el  número  de  serie,  me
+
+(74:50) muestra  la  versión  del  sistema  operativo
+
+(74:53) del  equipo,  me  dice  qué  modelo  es.  Sí,
+
+(74:57) la  versión  121  damos  el  de  software  que
+
+(75:01) corresponde  a  este  modelo  que  es  el  el
+
+(75:03) modelo  del  switch  Cisco  C2950.
+
+(75:07) Y  así  es  como  eh  y  así  es  lo  que  yo
+
+(75:10) puedo  hacer  con  esta  con  este  prompt.
+
+(75:13) Pero,  ¿qué  pasa?
+
+(75:15) Este  prompt  que  es  el  modo  usuario,  no
+
+(75:18) me  permite  modificar  la  configuración
+
+(75:19) del  switch.  Sí,
+
+(75:22) para  poder  eh  escalar  en  los  privilegios
+
+(75:25) tengo  que  usar  el  comando  enable.  Pongo
+
+(75:28) en  o  escribo  enable,  enter.  Y  fíjense
+
+(75:32) ahora  que  mi  prompt  cambió,  ya  no  es  el
+
+(75:34) mismo.  Antes  tenía  este  un  signo  mayor  y
+
+(75:39) ahora  tiene  un  signo  numeral.  Sí.  O  como
+
+(75:43) le  dicen  los  mexicanos,  Almohadilla  o  o
+
+(75:46) o  los  peruanos  que  le  dicen  Michi,  no
+
+(75:49) sé.  Lo  lo  escuché  en  los  videos  de
+
+(75:51) YouTube.
+
+(75:52) Eh,
+
+(75:54) entonces
+
+(75:56) si  yo  ahora  acá  pongo  signo  de  pregunta,
+
+(76:00) fíjense  que  la  cantidad  y  voy  apretando
+
+(76:02) enter,  fíjese  que  la  cantidad  de
+
+(76:03) comandos  que  tengo  adentro  de  este  modo
+
+(76:07) es  mucho  mayor  que  la  cantidad  de
+
+(76:09) comandos  que  tenía  en  el  modo  anterior.
+
+(76:11) Sí,  perdón,  acá.
+
+(76:15) Estos  son  los  comandos  que  tenía  antes
+
+(76:17) dentro  del  promp,  que  es  modo  usuario.
+
+(76:20) Fíjense  que  son  un  par.  Y  si  me  voy
+
+(76:23) ahora  al  otro  modo,  tengo  casi  el  doble
+
+(76:25) de  comandos,  ¿sí?  Es  decir,  que  puedo
+
+(76:28) hacer  más  cosas  adentro  del  equipo.  Es
+
+(76:30) como  cuando  ustedes  están  en  el  Linux  y
+
+(76:33) pasan  de  de  y  pasan  de  modo  del  modo  del
+
+(76:36) usuario  a  modo  root.  Bueno,
+
+(76:40) hay  ciertas  similitudes  acá.
+
+(76:43) Entonces,
+
+(76:45) pero  yo  voy  a  volver  a  la  presentación
+
+(76:46) para  no  marearlos,  porque  les  tengo  que
+
+(76:48) explicar  que  es  cada  una  de  estas  cosas.
+
+(76:50) Una  pregunta,  perdón,  profesor,
+
+(76:52) interrumpí
+
+(76:53) estábamos  viendo  la  información  del
+
+(76:55) Switch,  pero  vos  habías  eh  accedido  a  la
+
+(76:58) PC,  digamos,  en  en  el  icono.
+
+(77:01) Yo  accedí  a  la  PC,  pero  después  a  la  PC
+
+(77:04) es  como  que  me  fui  al  desktop.  Sí,
+
+(77:07) estando  y  y  dentro  del  desktop  abrí  un
+
+(77:10) software  que  se  llamaba  terminal  y  de
+
+(77:13) ahí  el  terminal  me  abrió  como  si  fuese
+
+(77:15) eh  la  configuración  que  tendría  que
+
+(77:17) hacer  para  una  conexión  serial.  Le  di
+
+(77:19) conectar  y  me  conecté  al  Switch.
+
+(77:21) Ah,  okay,  perfecto,  perfecto.  Ya  me
+
+(77:23) perdí  esa  parte.
+
+(77:24) Okay,  gracias.
+
+(77:26) Bueno,  bueno,  entonces  estando  dentro
+
+(77:28) del  switch,  que  es  lo  que  estábamos
+
+(77:29) haciendo  recién,  yo  estoy  en  el  al
+
+(77:32) principio  estaba  en  el  modo  usuario,
+
+(77:34) ¿sí?  Permite  que  una  persona  tenga
+
+(77:37) acceso  solamente  a  una  cantidad  limitada
+
+(77:39) de  comandos  básicos  de  monitoreo.  Sí,  el
+
+(77:43) modo  usuario
+
+(77:45) eh  es  el  modo  predeterminado  que  se
+
+(77:47) ingresa  este  al  iniciar  sesión  a  un
+
+(77:49) switch,  o  sea,  lo  que  les  mostré.  Ahora,
+
+(77:52) cuando  yo  pongo  la  palabra  enable,  paso
+
+(77:54) del  modo  usuario  al  modo  privilegiado  y
+
+(77:58) me  cambia  el  prompt.  Sí,  el  modo
+
+(78:00) privilegiado  dice,  "Permite  a  una
+
+(78:02) persona  que  tenga  acceso  a  todos  los
+
+(78:04) comandos  del  dispositivo
+
+(78:06) como  aquellos  que  se  utilizan  para  la
+
+(78:08) configuración  y  administración
+
+(78:11) del  switch  y  en  lo  posible  para
+
+(78:14) protegerlo  por  contraseña.  ¿Sí?  Ya  van  a
+
+(78:17) ver  que  tirando  un  comando  específico  se
+
+(78:19) le  puede  poner  una  contraseña  y  después
+
+(78:22) cuando  yo  accedo  a  un  switch
+
+(78:24) entrando  al  switch  después  para  escalar
+
+(78:26) desde  un  modo  al  otro  modo  sí  tengo  que
+
+(78:30) poner  podría  necesitar  una  contraseña  si
+
+(78:34) le  agrego  seguridad  a  ese  switch.
+
+(78:37) Y  por  último,  bueno,  acá  les  explico,
+
+(78:40) les  expliqué  lo  lo  del  lo  del  signo  de
+
+(78:43) pregunta  para  ver  los  comandos.
+
+(78:46) algunos  comandos  que  después  lo  vamos  a
+
+(78:48) ir  viendo.  Veamos  el  show  version  que
+
+(78:50) les  mostré  recién,  pero  después  está  el
+
+(78:52) show  running  config.  Este  es  el  que  más
+
+(78:54) van  a  usar.
+
+(78:56) Este  comando,  grábenselo,  show  running
+
+(78:59) configración
+
+(79:02) del  switch  en  la  medida  que  ustedes  van
+
+(79:04) haciendo  cambios  en  la  configuración  del
+
+(79:07) del  equipo.  ¿Sí?
+
+(79:09) Eh,  y  el  show  startup  config  es  el
+
+(79:13) mismo,  o  sea,  le  muestra  le  mostraría  la
+
+(79:15) misma  configuración  que  el  show  running,
+
+(79:18) nada  más  que  el  show  running  es  lo  que
+
+(79:19) está  corriendo  en  memoria.  Y  cuando
+
+(79:21) ustedes  hacen,  vieron  que  en  en  el  Word
+
+(79:24) hacen  archivo  guardar.  Bueno,  si  ustedes
+
+(79:28) en  el  switch
+
+(79:30) hacen  como  si  fuese  archivo  a  guardar  o
+
+(79:33) ponen  save  en  la  configuración,
+
+(79:36) esa  configuración  que  está  corriendo  en
+
+(79:37) memoria  se  traslada  a  un  archivo  que
+
+(79:40) corre  y  está  resguardado  en  la  NB  RAM
+
+(79:42) que  se  llama  Start  Config  y  ahí  se
+
+(79:45) guarda  la  configuración.  Porque,  ¿qué
+
+(79:47) pasa  si  ustedes  hacen  modificaciones  en
+
+(79:49) el  switch?
+
+(79:51) Y  por  alguna  razón  el  switch  se  reinicia
+
+(79:54) o  se  corta  la  luz  y  el  switch  eh  se
+
+(79:56) apaga  y  después  se  vuelve  a  prender.  Si
+
+(79:58) no  guardaron  la  configuración  que
+
+(80:00) estaban  haciendo  los  cambios  en  memoria,
+
+(80:04) si  no  lo  guardan  en  con  el  comando
+
+(80:07) WR,  que  significa  WR,  que  es  el  que
+
+(80:11) traslada  la  configuración  de  la  memoria
+
+(80:13) al  archivo  este  donde  se  guarda,  donde
+
+(80:15) persisten  los  datos,  esa  configuración
+
+(80:17) que  hicieron  se  pierde.  Sií.  Es  como
+
+(80:20) cuando
+
+(80:22) ustedes  trabajan  en  el  repositorio  en  el
+
+(80:24) GitHub  y  hacen  cambios  en  su  PC  y  no
+
+(80:28) hicieron  el  git  commit  y  no  y  no
+
+(80:30) guardaron  los  cambios  en  en  el  repo.
+
+(80:34) Bueno,  una  analogía,  ¿no?  Pero  no  es  muy
+
+(80:37) una  analogía  muy  feliz,  pero  bueno,  para
+
+(80:39) que  para  que  entiendan  que  si  no  guardan
+
+(80:41) la  configuración  la  pierden.
+
+(80:44) Y  bueno,  estos  son  comandos  también
+
+(80:45) importantes,  el  show  interface  para  ver
+
+(80:48) la  configuración  de  los  puertos.
+
+(80:52) Show  vil  para  ver  las  van  que  tiene
+
+(80:54) configurada  el  switch.  Sí.  Bueno,  son
+
+(80:56) comandos  que  van  a  ir  aprendiendo  en  la
+
+(80:59) medida  que  vayan  practicando  con  el
+
+(81:01) simulador.
+
+(81:03) Ahora,
+
+(81:05) esto  es  algo  teórico,
+
+(81:07) 100%  teórico.  Eh,  cuando  el  switch  manda
+
+(81:11) una  trama  de  un  lado  al  otro,  eh,
+
+(81:14) trabaja  en  dos  en  tres  modos.  Acá  hay
+
+(81:17) dos  nada  más,  pero  trabaja  en  tres
+
+(81:18) modos.  el  modo  almacenamiento  de  envío
+
+(81:21) que  agarra,  recibe  toda  la  trama
+
+(81:23) completa,
+
+(81:25) le  calcula  el  CRC  y  si  la  trama  está
+
+(81:27) bien,  la  vuelve  a  enviar.  Sí,  ese  es  el
+
+(81:30) modo  almacenamiento  de  envío.  Es  un  poco
+
+(81:32) más  lento  porque,  bueno,  tiene  que  leer
+
+(81:33) toda  la  trama  para  después  fijarse  si
+
+(81:36) está  la  trama  en  condiciones  este  y
+
+(81:38) después  enviarla.
+
+(81:40) El  método  de  corte  lo  voy  a  leer  para
+
+(81:42) que  se  entienda.  Dice,  "El  switch  que
+
+(81:44) utiliza  el  método  de  corte  envía  las
+
+(81:47) tramas  antes  de  recibirla  en  su
+
+(81:48) totalidad.
+
+(81:50) Como  mínimo,  la  dirección  de  destino  de
+
+(81:52) la  trama  debe  leerse  antes  de  que  la
+
+(81:54) trama  pueda  enviarse.  Es  decir,  ustedes
+
+(81:57) saben  que  una  trama  tiene  dirección
+
+(81:59) macades  de  origen  y  dirección  macades  de
+
+(82:01) destino  a  nivel  capa  dos  y  después  tiene
+
+(82:04) otras  cosas.
+
+(82:06) ¿Me  siguen  hasta  ahí?
+
+(82:09) Sí,
+
+(82:10) sí,  sí,  sí,  sí.
+
+(82:11) Bien.
+
+(82:12) Bueno,  el  método  de  corte  lee  por  lo
+
+(82:15) menos  el  encabezado  de  la  trama  de  capa
+
+(82:17) dos,  lee  la  dirección  macadre  destino  y
+
+(82:21) automáticamente  manda  la  trama.  Sí,  es
+
+(82:24) más  rápido,  pero  es  menos  fiable.  En
+
+(82:27) cambio,  el  método  de  almacenamiento  de
+
+(82:29) envío  recibe,  lee  toda  la  trama,  le
+
+(82:32) calcula  el  CRC,  se  fijan  si  con  el  CRC
+
+(82:34) la  trama  está  perfecta  o  está  bien,  no
+
+(82:36) tiene  ningún  problema  en  la  comunicación
+
+(82:37) y  la  reenvía.  Sí.  o  la  envía,  mejor
+
+(82:40) dicho,  es  algo  teórico.  Sí.
+
+(82:45) Eh,  esto  que  está  acá  hace  referencia  a
+
+(82:48) la  conmutación  esta  de  tramas  y  hace
+
+(82:51) referencia  a  lo  que  yo  les  expliqué  de
+
+(82:53) que  existe  una  tabla  de  macadres  donde
+
+(82:56) el  Switch  aprende,  digamos,  cuál  es  la
+
+(82:59) MACADRES,  digamos,  de  cada  uno  de  los  de
+
+(83:02) de  de  los  ends,  ya  sean  PCs,  laptops,
+
+(83:06) este,  impresoras  o  lo  que  sea  y  se
+
+(83:09) guarda  en  esa  tabla  lo  que  tiene
+
+(83:11) conectado.  Después  se  los  voy  a  mostrar.
+
+(83:13) Eh,  y  con  eso  puede  mandar  los  mensajes
+
+(83:16) en  forma  de  únicas  y  no  haciendo  eh  una
+
+(83:19) una  difusión  o  un  broadcast.
+
+(83:21) Perdón,  profe,  una  consulta  rápida.
+
+(83:24) Dice,
+
+(83:24) dijo  que  tenía  tres  modos  de
+
+(83:25) funcionamiento.  Almacenamiento  y  envío,
+
+(83:27) el  método  de  corte  y  el  otro,  el
+
+(83:29) tercero,  ¿lo  dijo  o  no  lo  dijo?  No,  no
+
+(83:31) lo  dije  porque  digamos  e  no  digamos  no
+
+(83:35) está  acá  como  que  no  es  tan  importante.
+
+(83:37) Tampoco  me  acuerdo  de  memoria  como  se
+
+(83:39) llamaba,  pero  pero  hay  un  tercero,
+
+(83:41) digamos.  Existe  tercero.
+
+(83:43) Listo,  listo.  Pensé  que  lo  haya  hecho  y
+
+(83:44) me  había  perdido.  Gracias.
+
+(83:46) No,  no,  tranqui.  E
+
+(83:49) esos  son  los  que  más  se  usan  y  los  más
+
+(83:51) importantes.  Hay  un  tercero  que  no  me
+
+(83:52) acuerdo  cómo  cómo  se  llama  porque  como
+
+(83:55) no  se  le  da  demasiada  importancia.
+
+(83:57) Fragment  free  puede  ser  o  algo  así.  Sí,
+
+(84:00) puede  ser,  puede  ser.
+
+(84:03) E  bueno,  e  el  show  running  config,
+
+(84:08) el  show  running  config  eh  que  aparece,
+
+(84:10) digamos,  eh,  y  lo  van  a  usar  todo  el
+
+(84:13) tiempo,  es  el  archivo  de  configuración
+
+(84:17) del  switch  que  corre  en  memoria,  ¿sí?  Es
+
+(84:20) decir,  que  ustedes  cada  vez  que  hagan  un
+
+(84:21) cambio  en  el  switch  y  después  pongan
+
+(84:24) show  running  config,  ese  cambio  se  va  a
+
+(84:26) ver  en  memoria.  Sí.
+
+(84:28) en  y  es  y  y  tiene  toda  la  configuración
+
+(84:32) del  switch.  Es  como  el  apach.com,  como
+
+(84:35) el
+
+(84:37) como  el  el  enginex.com,  o  sea,  es  el
+
+(84:40) archivo  configuración,  ¿sí?  Pero
+
+(84:42) corriendo  en  memoria,  ¿sí?  Es  decir,  que
+
+(84:45) eh  cuando  ustedes  ponen  show  running
+
+(84:47) config,  ven  el  archivo  configuración
+
+(84:48) corriendo  en  memoria  para
+
+(84:51) guardar  la  configuración  esa,  pero  que
+
+(84:54) persista  dentro  de  del  switch,
+
+(84:58) eh,  y  eso  evita  que  se  haga  un  que  se  se
+
+(85:01) hace  un  reinicio,  no  se  pierda,  se  tiene
+
+(85:03) que  guardar  esa  configuración  en  el
+
+(85:04) startup  config
+
+(85:09) y  ahora  se  los  voy  a  mostrar.
+
+(85:11) Bueno,  el  show  interface  es  un  comando
+
+(85:13) para  ver  una  interfaz  específica,  un
+
+(85:15) puerto  de  red  quiere  decir  del  switch.
+
+(85:18) Los  puertos  de  red  del  switch  eh  se  los
+
+(85:21) denomina  eh  fast  Ethernet  y  van
+
+(85:23) numerados  del  01  al  0/24.  Sí,  depende  si
+
+(85:28) el  switch  es  de  24  puertos,  si  el  Switch
+
+(85:31) tiene  todos  puertos  Ethernet  porque
+
+(85:33) también  puede  tener  puertos  gigabit,  o
+
+(85:35) sea,  que  funcionan  a  1  gig.  Sí,  en  ese
+
+(85:38) caso  son  gigabit  Ethernet.
+
+(85:41) Eh,  los  FAS  Ethernet  funciona  a  100
+
+(85:43) megas,  ¿sí?  E  y  este  comando  es  para  ver
+
+(85:48) las  interfaces,  show  interface,  eh,  y  el
+
+(85:51) nombre  de  la  interface,  en  este  caso
+
+(85:52) fase  01.  Y  les  muestra  todos  los
+
+(85:55) parámetros  de  de  de  la  interface.
+
+(86:00) Después  lo  vamos  a  ver  igual,  ¿no?  O
+
+(86:01) sea,  estoy  haciendo  como  un  repaso
+
+(86:02) general.
+
+(86:04) Eh,  show  van,  les  muestra  si  el  switch
+
+(86:06) tiene  configurados  vans.  Estas  van  que
+
+(86:08) están  acá  son  van  por  defecto  que  todos
+
+(86:10) los  switches  las  traen.  Sí,  esta  que
+
+(86:12) dice  FDI  default,  token  Ring,  ya
+
+(86:14) prácticamente  ni  se  usan,  pero  bueno,
+
+(86:16) este  son  predeterminadas,
+
+(86:20) pero  lo  que  nosotros  nos  importa  es  la
+
+(86:22) la  vanan  por  default.
+
+(86:26) Eso  es  algo  importante.  Lo  todos  los
+
+(86:28) switches  de  fábrica
+
+(86:31) vienen  con  lo  que  se  denomina  van  por
+
+(86:33) default  y  esa  van  por  default  tiene  la
+
+(86:35) ID  1.  ¿Sí?  Y  todos  los  switches  de
+
+(86:39) fábrica
+
+(86:41) eh  tienen  todos  sus  puertos  en  la  van
+
+(86:45) uno.  Ahora,  cuando  ustedes  crean  una
+
+(86:48) vilan,  ¿sí?  ¿Alguien  sabe  lo  que  es  una
+
+(86:50) van?
+
+(86:54) Si  es  una  virtual.
+
+(86:57) Sí,
+
+(86:57) no  me  digan  la  traducción,  yo  se  las
+
+(86:59) digo.  Es  virtual  virtual  L.
+
+(87:02) Es  segmentar  una  red  en  distintas  Ls,
+
+(87:07) distintos  dominios  de  broadcast.
+
+(87:10) Es  como  separar  una  red  física  en  varias
+
+(87:12) redes  lógicas.
+
+(87:14) Perfecto,  perfecto.  Bien.  Bueno,
+
+(87:17) justamente  digamos  cuando  ustedes  tienen
+
+(87:19) un  switch  y  dividen  ese  switch  eh  eh  o
+
+(87:24) mejor  dicho  crean  dentro  de  eses
+
+(87:26) switches,  eh  los  beneficios  que  tiene
+
+(87:29) son  muchos.  El  primero  es  aislar
+
+(87:32) dominios  de  broadcast,  como  bien  ustedes
+
+(87:34) dijeron.  Sí,  eh  para  aislar  dominios  de
+
+(87:37) broadcast  eh  existen  dos  formas.  La
+
+(87:40) primera  es  a  través  de  van  o  la  otra  es
+
+(87:44) a  través  de  dispositivos  de  capa  3  que
+
+(87:45) son  los  routers.  ¿Sí?  ¿Qué  significa  un
+
+(87:48) dominio  de  broadcast?  Que  cuando  ustedes
+
+(87:51) tienen  en  una  red,  en  este  caso  podría
+
+(87:53) tener  el  switch  12  puertos  como  muestra
+
+(87:56) acá.  Si  ustedes  quieren  que  cinco,  seis
+
+(87:59) puertos  sean  de  una  van  y  seis  puertos
+
+(88:01) sean  de  otra  vilan,  cuando  ustedes  hacen
+
+(88:04) un  broadcast,  ese  broadcast  va  a  tener
+
+(88:05) alcance  solamente  a  seis  puertos.  Sí.  Y
+
+(88:08) la  y  en  la  otra  van  si  hacen  un
+
+(88:10) broadcast  va  a  tener  solamente  alcance
+
+(88:12) hasta  seis  puertos.  Pero  así  como  está
+
+(88:14) el  switch  que  solamente  tiene  la  van  un
+
+(88:17) que  es  la  van  por  default,  si  ustedes
+
+(88:18) hacen  un  broadcast  ese  broadcast  llega  a
+
+(88:20) los  12  puertos.  ¿Sí?  Entonces  una  de  los
+
+(88:24) beneficios  de  tener  vance  es  eh
+
+(88:27) segmentar  los  dominios  de  broadcast  para
+
+(88:29) que  sean  más  chiquitos  y  la  red  sea  un
+
+(88:32) poco  más  eficiente.  Lo  otro  es  para
+
+(88:34) seguridad.  Sí,  si  yo  quiero  que  los
+
+(88:37) dispositivos  que  están  en  la  van  10  no
+
+(88:39) se  vean  con  los  dispositivos  que  están
+
+(88:40) en  otra  van  que  la  van  20,  obviamente
+
+(88:43) hago  dos  vans  y  asigno  esos  puertos  a
+
+(88:47) cada  van  y  los  puertos  que  están  en  la
+
+(88:49) van  10  no  se  van  a  ver  con  los  que  están
+
+(88:51) en  la  vanan  20  y  ahí  va  a  tener  el
+
+(88:52) switch  como  partido  a  la  mitad  y  es  como
+
+(88:55) si  tuviese  dos  switches  físicos,  pero  en
+
+(88:57) realidad  es  un  switch  solo  que  está
+
+(88:59) dividido  lógicamente  en  dos.  ¿Se
+
+(89:01) entiende  hasta  ahí?
+
+(89:04) Sí,  sí,  sí,
+
+(89:06) profe,  habría  posibilidad  igual  de  verse
+
+(89:08) entre  vans,  ¿no?
+
+(89:10) Sí.  Eh,  la  forma  de  de  hacer  eso  es  que
+
+(89:14) en,  digamos,  haya  un  dispositivo,  una
+
+(89:16) capa  superior  que  sea  un  router  y  yo
+
+(89:19) conecto  el  switch  al  router  a  través  de
+
+(89:23) un  de  un  de  un  de  de  una  conexión  que
+
+(89:26) para  el  switch  sería  un  el  puerto
+
+(89:28) configurado  como  troncal  y  el  router
+
+(89:31) habría  que  hacer  una  configuración
+
+(89:32) especial.  para  que  para  que  después  los
+
+(89:35) paquetes  se  puedan  este
+
+(89:39) se  llama  fordear  este  o  enrutar  de  una
+
+(89:42) van  hacia  otra.  A  nivel  capa  2  no  hay
+
+(89:46) forma  de  que  las  van  se  vean  entre  sí.
+
+(89:48) Sí,  quizás  lo  que  te  estás  confundiendo
+
+(89:50) vos  es  que  si  yo  tengo  dos  switches  y  y
+
+(89:54) en  los  dos  switches  tengo  configurados
+
+(89:56) la  van  10  y  la  van  20,
+
+(90:00) los  dispositivos  que  estén  conectados  en
+
+(90:02) la  van  10  de  un  switch  se  van  a  poder
+
+(90:04) ver  solamente  con  los  dispositivos  que
+
+(90:07) están  conectados  en  el  otro  switch,  pero
+
+(90:09) en  la  vila,  la  misma  vila,  ¿sí?  No  en
+
+(90:11) vanas  distintas.  ¿Me  explico?
+
+(90:15) Sí,  sí.  Perfecto.
+
+(90:16) Que  eso  es  lo  que  van  a  hacer  en  este
+
+(90:17) trabajo.
+
+(90:20) En  este  trabajo,
+
+(90:22) esto  va  a  ser  así.  Miren,  se  los  voy  a
+
+(90:24) ir,  eh,  se  los  voy  a  se  los  voy  a
+
+(90:26) conectar.  Voy  a  conectar
+
+(90:30) el  puerto  de  la  placa  de  red.  Bueno,
+
+(90:33) fíjense,  me  voy  al  rayito,
+
+(90:36) toco  el  rayito  y  me  voy  a  al  cable
+
+(90:39) derecho,  que  es  el  que  el  que  tiene  el
+
+(90:41) que  no  tiene  línea  punteada,  el  de  color
+
+(90:43) negro  que  está  acá.  Toco  ahí.
+
+(90:45) quedó  seleccionado.
+
+(90:49) Me  voy  a  la  a  la  PC  102
+
+(90:51) en  conecto  el  cable  en  la  placa  red  que
+
+(90:54) es  la  fase  cero.  Me  voy  al  switch,
+
+(90:58) presiono.  El  switch  este  tiene  24
+
+(91:00) puertos  del  1  al  24.
+
+(91:04) Sí.
+
+(91:06) Lo  que  voy  a  hacer  es  conectarme  en  el
+
+(91:07) puerto  dos  simplemente  por  un  tema  de  si
+
+(91:12) esta  es  la  102,  entonces  este  lo  conecto
+
+(91:14) en  el  dos.
+
+(91:15) Ahí  lo  conecté.  Hago  lo  mismo  con  el
+
+(91:17) uno.
+
+(91:20) Conecto  la  placa  de  red  al  cable  y  lo
+
+(91:23) conecto  al  puerto.  Fíjense  que  el  puerto
+
+(91:25) dos  desapareció  porque  ya  no  lo  puedo
+
+(91:27) usar.  Ya  conecté  un  dispositivo  ahí.
+
+(91:29) Conecto  en  el  puerto  uno.  Ahora  hago  lo
+
+(91:31) mismo  en  el  otro  switch.  Vengo  acá,
+
+(91:36) fase  ethernet  1,  lo  conecto  al  puerto
+
+(91:39) uno,
+
+(91:41) fase  ethernet
+
+(91:44) en  la  placa  de  red  y  lo  conecto  al
+
+(91:45) puerto  dos.
+
+(91:47) Y  ahora  lo  que  yo  tengo  que  hacer  es
+
+(91:49) vincular  estos  dos  switches  entre  sí,
+
+(91:52) pero  para  eso  utilizo,  bueno,  y  ahora
+
+(91:55) les  voy  a  explicar,  aprovecho,  hago  un
+
+(91:57) paréntesis  y  le  aplico,  les  explico  eh
+
+(91:59) este  concepto  de  tres  capas,  así  como
+
+(92:03) ustedes  los  que  les  gusta  el  desarrollo
+
+(92:05) de  softwarees  y  digamos  y  y  se  van  a
+
+(92:08) dedicar  a  trabajar  eh  en  esa  en  esa
+
+(92:12) arista  de  de de  ingeniería  en  sistemas,
+
+(92:15) ustedes  saben  que  en  el  desarrol
+
+(92:16) desrollo.  Hay  desarrollos,  digamos,  que
+
+(92:18) usan  en  tres  capas,  ¿sí?  eh  donde
+
+(92:22) separan  el  backend  del  front  end  eh  y  y
+
+(92:25) con  otra  capa  en  el  medio,  ¿no?
+
+(92:28) Bien,  acá  en  networking  para  que  la  red
+
+(92:33) funcione  de  manera  óptima  y  para  también
+
+(92:36) para  tener  un  control  más  relacionado
+
+(92:39) con  temas  de  seguridad  y  y  digamos  y
+
+(92:43) presupuesto  eh  y  funcionamiento  de  una
+
+(92:47) red,  la  red  se  divide  eh  desde  el  punto
+
+(92:50) de  vista  de  arquitectura  o  de  diseño  en
+
+(92:53) tres  capas,  ¿sí?  la  capa  de  acceso,  que
+
+(92:55) es  donde  yo  conecto  los  dispositivos
+
+(92:57) finales  hacia  los  switches.  Estos  se
+
+(93:00) llaman  switches  de  acceso,  estos  se
+
+(93:02) llaman  switches  de  distribución  y  este
+
+(93:04) se  llama  switch  de  core  o  switch  de
+
+(93:06) núcleo.
+
+(93:08) Cada  capa  tiene  una  funcionalidad  des  el
+
+(93:10) punto  de  vista  conceptual,  ¿sí?  En  el  en
+
+(93:13) el  caso  de  la  capa  de  acceso,  donde
+
+(93:16) están  los  switches  de  acceso,
+
+(93:19) el  objetivo  era  que  tenga  muchos
+
+(93:21) puertos.  Digamos  que  son  switches  más
+
+(93:23) baratos.  Sí,  son  puertos  de  velocidades
+
+(93:26) más  bajas  de  100  meg  o  1  GB
+
+(93:31) donde  conecto  dispositivos  finales  y
+
+(93:33) necesito  muchos  puertos.  Sí.  Y  con  eso
+
+(93:36) hago  segmentación  de  la  red,  tengo
+
+(93:38) muchos  dispositivos  conectados  y  digamos
+
+(93:42) eh  puedo  brindar  seguridad  a  la  red  ya
+
+(93:45) desde  desde  el  desde  la  parte  más  baja,
+
+(93:48) digamos,  de  la  topología,  que  es  la  la
+
+(93:50) capa  de  acceso.  La  capa  de  distribución,
+
+(93:53) como  su  nombre  lo  dice,  es  una  capa  que
+
+(93:56) me  permite  vincular  los  switches  de
+
+(93:58) acceso,  ¿sí?,  a  través  de  una  conexión
+
+(94:01) de  mayor  velocidad.  Sí,  generalmente  los
+
+(94:04) switches  de  distribución  tenían  menos
+
+(94:07) puertos  que  los  switches  de  acceso.
+
+(94:09) Pónganse  que  estos  tienen  48  puertos,  24
+
+(94:11) puertos  o  más.  Y  estos  switches  en
+
+(94:14) realidad  tienen  menos  puertos.  Fíjense,
+
+(94:16) estos  switches  podrían  tener  lo  toqué  y
+
+(94:19) lo  abrí  sin  querer.  No  quería  eso.  A
+
+(94:21) ver,  me  paro  arriba.  Estos  switches,
+
+(94:23) fíjense,  tienen  switches  solamente
+
+(94:25) gigabit  Ethernet,  o  sea,  de  1  gig.
+
+(94:27) tienen
+
+(94:31) 2  cu  se  puertos  de  de  de  giga,  ¿sí?  Y
+
+(94:35) estos  tienen  24  puertos  de  100  megas.
+
+(94:39) Entonces,  ¿qué  quiero  decir?  Los  puertos
+
+(94:41) de  distribución  son  switches,  perdón,
+
+(94:43) los  switches  de  distribución  son  equipos
+
+(94:45) que  son  más  costosos  que  los  switches  de
+
+(94:48) acceso  porque  tienen  menor  cantidad  de
+
+(94:50) puertos,  pero  que  tienen  mayor  velocidad
+
+(94:53) de  transferencia  de  datos  y  se  usan  para
+
+(94:56) vincular  switches  de  acceso.  Sí,  esa  es
+
+(94:59) la  funcionalidad.  es  una  capa  intermedia
+
+(95:01) que  este  se  utiliza  para  descomprimir
+
+(95:05) los  switches  de  core,  que  son  los  que
+
+(95:07) tienen  la  mayor  capacidad,  digamos,  de
+
+(95:10) procesamiento  y  de  y  de  y  de  conmutación
+
+(95:13) de  paquetes,  eh  le  descarga  eh  un  poco
+
+(95:17) esa
+
+(95:19) esa  funcionalidad  a  los  switches  de  core
+
+(95:21) y  permite  eh  como  una  capa  intermedia
+
+(95:24) vincular  todos  los  switches  de  acceso.
+
+(95:26) Entonces,  yo  voy  a  vincular  los  switches
+
+(95:28) estos  de  acceso  de  esta  manera.  Me  voy  a
+
+(95:33) través  del  puerto,  uso  el  puerto  24  y  me
+
+(95:36) voy  al  puerto
+
+(95:39) en  gigabit,  por  ejemplo,  el  41.
+
+(95:44) Y  esto  lo  conecto.  Fíjense  que  como
+
+(95:46) estoy  conectando  dispositivos  que  tienen
+
+(95:49) la  misma  funcionalidad,  o  sea,  switches
+
+(95:51) con  switches,  estoy  utilizando
+
+(95:55) eh  cables  cruzados.  Cuando  en  realidad
+
+(95:58) cuando  conecté  una  PC  con  el  switch,
+
+(96:00) como  son  dispositivos  que  tienen
+
+(96:02) distintas  funcionalidades,  uno  es  una  PC
+
+(96:04) y  otro  es  un  switch,  utilicé  un  cable
+
+(96:06) derecho.  Sí.
+
+(96:10) Eh,  fíjense  que  el  simulador  tiene  este
+
+(96:15) botón  que  está  acá,  que  es  como  para
+
+(96:16) pasar  rápido.  Sí,  se  llama  fast  forward
+
+(96:19) time  porque  si  no  yo  tengo  que  esperar
+
+(96:21) el  tiempo  que  se  toma  el  puerto  para
+
+(96:23) pasar  de  en  de  cuatro  en  los  puertos
+
+(96:26) para  para  ponerse  online.  Eh,
+
+(96:29) conceptualmente  pasan  por  cuatro
+
+(96:31) estados,  ¿sí?  que  es  algo  medio  teórico,
+
+(96:33) no  se  lo  voy  a  comentar  tanto  en  detalle
+
+(96:35) porque  no  tiene  sentido,  pero  si  sepan
+
+(96:38) que  los  puertos  para  ponerse  en  verde  y
+
+(96:40) es  decir  para  para  ponerse  100%  en
+
+(96:44) funcionalidad  pasan  por  cuatro  estados.
+
+(96:46) Al  para  pasar  esos  cuatro  estados  hay
+
+(96:48) que  esperar  un  tiempo.  En  cambio,  si
+
+(96:49) ustedes  presionan  muchas  veces  este
+
+(96:51) botón  fast  forward,  pasa  rápido  el
+
+(96:53) tiempo  y  digamos  y  al  toque
+
+(96:57) eh eh  no  tienen  que  esperar  tanto  en  que
+
+(96:59) todo  eso  ocurra.
+
+(97:02) Entonces,  ahora  yo  vinculé  este  switch
+
+(97:06) que  está  acá,  o  sea,  yo  vinculé  el
+
+(97:09) tráfico  que  este  switch  e  eh  recibe  a
+
+(97:13) través  de  esas  dos  PCs,  lo  puedo  mandar
+
+(97:16) a  a  este  switch  para  vincularlo  con
+
+(97:19) estas  PCs.  Sí,
+
+(97:22) porque  eh  me  digamos  hice  una  conexión  a
+
+(97:25) través  del  puer  del  switch  de
+
+(97:27) distribución.  Sí.  O  sea,  esto  es  lo
+
+(97:29) correcto.  Lo  incorrecto  sería  esto,  que
+
+(97:33) lo  he  visto  ya  muchas  veces  en  en  en
+
+(97:39) las  correcciones  que  he  hecho  que  no
+
+(97:41) estaban  bien.  Sí,  esto  no  se  puede
+
+(97:43) hacer.
+
+(97:45) Sí,  cruzar  un  cable  este  en  de  un  switch
+
+(97:49) de  acceso  a  otro  no  se  puede  hacer.  Sí.
+
+(97:51) Eh,  porque  esto  violaría  el  diseño  de  lo
+
+(97:55) que  la  red  requiere.  Sí.  Y  para  que  y
+
+(97:59) para  que  esto  funcione  correctamente.
+
+(98:01) Entonces,  bueno,  lo  voy  a  quitar  el
+
+(98:03) cable  ese  que  lo  puse  a  propósito.  Lo
+
+(98:04) quito.  Sí.  Entonces,  la  forma  correcta
+
+(98:08) de  conectar  los  dispositivos  es  esta.  Es
+
+(98:11) decir,  que  si  yo  quiero  mandar  un
+
+(98:14) paquete  desde  esta  PC  hasta  esta  otra
+
+(98:16) PC,  va  a  funcionar  porque  todos  los
+
+(98:18) switches  están  en  la  van  uno.  Sí.  Es
+
+(98:21) decir,  que  acá  no  hay  segmentación  de
+
+(98:22) tráfico  todavía.  Y  lo  que  ustedes  tienen
+
+(98:24) que  hacer  en  este  trabajo  es  segmentar
+
+(98:28) este  switch  y  este  switch  con  bilance,
+
+(98:31) ¿sí?  O  sea,  en  esta  PC  que  está  acá,  con
+
+(98:35) esta  PC  que  está  acá,  las  voy  a  poner  en
+
+(98:38) la  van  10  y  esta  PC  y  esta  PC  voy  a
+
+(98:42) poner  en  la  van  20.  O  sea,  que  yo  tengo
+
+(98:44) que  configurar  en  todos  los  switches  que
+
+(98:45) están  acá,  en  todos  las  vans,  ¿si?
+
+(98:49) Porque  cada  switch  tiene  que  conocer  la
+
+(98:52) van,  ya  la  tiene  porque  es  por  default,
+
+(98:54) pero  tiene  que  conocer  la  van  10  y  la
+
+(98:55) vanan  20,  que  cuando  yo  las  voy  creando
+
+(98:58) y  después  voy  asignándole  a  cada  puerto
+
+(99:00) la  van  que  le  corresponde  a  la  PC,
+
+(99:04) después  me  voy  a  dar  cuenta  que  esta  PC
+
+(99:06) con  esta  PC  no  se  van  a  poder  comunicar
+
+(99:08) más.  ¿Por  qué?  Porque  van  a  estar  en  van
+
+(99:10) distintas.  Una  va  a  estar  en  la  van  10  y
+
+(99:13) la  otra  va  a  estar  en  la  vanan  20.  Sí,
+
+(99:16) eso  es  la  segmentación  de  tráfico  a
+
+(99:18) nivel  capa  2.  ¿Hasta  acá  se  entendió?
+
+(99:22) Sí,  profe,  una  consulta.  Eh,  entonces,
+
+(99:24) cuando  vos  asignás  un  equipo  en  una
+
+(99:26) vilan,  no  es  de  ese  switch  para  abajo,
+
+(99:29) es  a  nivel  de  toda  la  red.
+
+(99:32) Eh,  es  a  nivel  de  toda  la  red,  pero  lo
+
+(99:34) hay  que  configurarlo.  Sí.  Este  no  no  se
+
+(99:37) puede  en  si  no  lo  configuras  en  toda  la
+
+(99:41) red,  no  funciona.  ¿Por  qué?  Claro,
+
+(99:43) porque  no  va  a  funcionar  porque,  ¿qué
+
+(99:46) pasa?  En
+
+(99:49) entiendo  que  si  lo  vieron  en  la  teoría,
+
+(99:52) sí,  la  trama,  digamos,  o  sea,  Ethernet
+
+(99:57) cuando  cuando  está  eh  configurado  el
+
+(100:00) protocolo  802.11Q,  1Q,  digamos,  que  es
+
+(100:03) el  que  permite  e  el  uso  de  van  eh  la
+
+(100:08) trama  adentro,  digamos,  eh  tiene  el  van
+
+(100:12) ID,
+
+(100:14) sí
+
+(100:16) tiene  el  van  ID  y  para  eso,  para  que  el
+
+(100:20) switch  reconozca  que  esa  van  viene,
+
+(100:24) digamos,  se  lo  se  dice  en  la  Jerga
+
+(100:26) networking,  se  dice  que  viene  tagueada.
+
+(100:28) Sí,  por  eso  se  llama  802.1.  1q  van  tag
+
+(100:33) eh  en  laga  networking.
+
+(100:36) Si  esa  si  esa  trama  viene  taggueada  con
+
+(100:39) la  vanan  10  y  digamos  que  viene  el
+
+(100:41) switch  de  acceso  y  la  recibe  el  switch
+
+(100:43) de  distribución,  pero  el  switch  de
+
+(100:46) distribución  no  tiene  configuradas  las
+
+(100:47) vilan,  no  va  a  entender  que  es  la  van  10
+
+(100:50) porque  va  a  querer  abrir  la  trama  y  va  y
+
+(100:52) no  va  a  entender  que  que  es  ese  ID10
+
+(100:56) porque  no  no  él  no  la  tiene  configurada
+
+(100:58) la  Viran,  ¿se  entiende?
+
+(101:01) Bueno,  y  así  va  a  pasar  eh,  con  el
+
+(101:04) switch  este.  Supongamos  que  ustedes
+
+(101:06) configuran  la  vilan,  las  vilan  acá  y  las
+
+(101:09) configuran  acá,  pero  no  lo  hacen  acá.  El
+
+(101:12) tráfico  va  a  subir  del  switch  de  de
+
+(101:14) acceso  eh  el  100.  Este  va  a  ir  al  switch
+
+(101:18) de  distribución  acá  y  cuando  baja  acá
+
+(101:20) este  va  a  recibir  esa  trama  tagueada  con
+
+(101:23) la  biran  10.  no  la  va  no  la  va  a
+
+(101:25) entender  porque  cuando  abre  el  el
+
+(101:28) paquete
+
+(101:30) se  va  a  encontrar  con  algo  que  no
+
+(101:31) entiende  que  es.  Sí,  por  eso  y  eso  es  un
+
+(101:35) error  muy  común  eh  eh  que  que  que  se
+
+(101:38) comete,  o  sea,  que  cometen  los  alumnos
+
+(101:42) cuando  no  entienden  el  concepto  de  de  de
+
+(101:45) cómo  se  la  segmentación  de  Billan,  creen
+
+(101:47) que  la  segmentación  de  Billan  es  acá
+
+(101:48) solamente  y  en  realidad  la  tienen  que
+
+(101:51) entender  todos  los  switches  que  están  en
+
+(101:52) la  topología.  Eso  es  lo  que  lo  que  me
+
+(101:54) había  dado  la  primera  impresión  a  mí  es,
+
+(101:56) por  decirlo  de  una  forma  coloquial,  que
+
+(101:59) en  la  capa  acceso  el  Switch  dice,  "Esta
+
+(102:01) es  mi  van  uno  o  mi  van  2  y  no,  esto  es
+
+(102:06) la  van  o  la  van  2.",  o  sea,  la  dos
+
+(102:09) debería  ser  la  dos  en  toda  la
+
+(102:11) infraestructura.
+
+(102:13) Claro.  Exactamente.Amos
+
+(102:15) tiene,  digamos  eh  tiene  que  ser
+
+(102:18) exactamente  la  misma  que  esté
+
+(102:19) configurada  en  todos  lados.  Sí,  porque
+
+(102:21) si  no,  bueno,  eh,  no  funciona,  no  no  hay
+
+(102:24) forma  de
+
+(102:24) Tengo  una  pregunta.
+
+(102:27) Sí.  Eh,  cuando  decís  lo  de  la  vila,  lo
+
+(102:29) tengo  que  configurar.  Está  bien  en  los
+
+(102:31) switch  de  acceso  y  en  el  de
+
+(102:33) distribución,  pero  y  en  el  de  núcleo,
+
+(102:34) ¿no?
+
+(102:36) Sí,  hay  que  configurarlas  en  todos
+
+(102:37) lados,
+
+(102:39) digo  en  toda  la  red,  digamos,  porque,
+
+(102:41) o  sea,  en  todos  los  switches  que
+
+(102:42) aparecen  acá,  digamos,
+
+(102:44) sí,  están  todos  vinculados  entre  sí,
+
+(102:46) entonces  hay  que  confiarla  en  todos.
+
+(102:50) E  entonces,  bueno,  eh,
+
+(102:54) así  es  como  funciona  eh  digamos  eh  una
+
+(102:57) red  eh  correctamente,  digamos,  para  que
+
+(103:00) después,  fíjense  lo  siguiente,  acá
+
+(103:03) arriba  en  en  esta  en  esta  parte  donde
+
+(103:06) están  los  iconos,  digamos  que  estoy
+
+(103:08) moviendo  el  mouse,  eh,  está  esta
+
+(103:11) cartita,  este  sobrecito,  ese  sobrecito  e
+
+(103:15) simula  lo  que  sería  un  eh  cuando  uno
+
+(103:17) hace  un  pin  de  hasta  B.  Eh,  bueno,
+
+(103:20) simula  eso.  Es  decir,  yo  aprieto  acá  y
+
+(103:23) el  puntero  del  mouse  se  convierte  en  un
+
+(103:25) sobrecito.  Si  yo  toco  la  PC  esta,  la
+
+(103:28) 101,  a  la  102,
+
+(103:31) veamos,  fíjense  que  mando  un  paquete  de
+
+(103:34) una  hacia  otra  y  a  nivel  capa  2  llega.
+
+(103:37) Acá  me  aparece  como  successful,  ¿lo  ven?
+
+(103:42) O  sea,  vinculadas  a  nivel  K2  porque  nada
+
+(103:44) tiene  IP  acá  todavía.  Entonces,  a  nivel
+
+(103:47) K2,  si  yo  mando  un  paquete,  digamos,  de
+
+(103:51) un  lugar  a  otro  donde  ese  paquete,  yo  le
+
+(103:54) digo  paquete,  pero  en  realidad  es  una  es
+
+(103:57) una  trama,  ¿no?  A  nivel  K2  es  una  trama.
+
+(104:00) E  si  yo  mando  esa  trama  en  desde  este
+
+(104:04) equipo,  la  PC101,  la  PC102,
+
+(104:08) en  a  nivel  K2,  eso  funciona  porque  eh eh
+
+(104:12) obviamente  que  el  Switch  reconoce  que
+
+(104:15) esta  PC  tiene  una  dirección  MACres,  esta
+
+(104:18) PC  tiene  otra  dirección  MACADES  y  están
+
+(104:20) vinculadas  a  nivel  capa  2  a  través  del
+
+(104:22) direccionamiento  físico.  ¿Si?
+
+(104:25) Entonces,  si  yo  con  esta  cartita  hago
+
+(104:27) haría  como  si  fuese  un  pin  de  acá  hasta
+
+(104:29) acá,  como  las  dos  PCs  están  en  la  misma
+
+(104:32) vilan,  o  sea,  no  hay  ninguna
+
+(104:34) segmentación
+
+(104:36) este  a  nivel  K2  porque  está  todo  en  la
+
+(104:38) vilan  uno,  tanto  el  Switch  y  como  las
+
+(104:40) dos  PC,  todo  se  debería  de  todo  se  ve
+
+(104:42) con  todo.  Y  lo  mismo  lo  mismo  pasa  si  yo
+
+(104:46) cruzo,  o  sea,  por  ejemplo,  este  switch
+
+(104:48) lo  tengo  en  el  piso  uno  y  este  otro
+
+(104:50) switch  lo  tengo  en  el  piso  dos  de  un
+
+(104:52) edificio.  Si  yo  agarro  esta  cartita,  le
+
+(104:54) quiero  mandar  un  pin  a  la  PC  101  y  de  la
+
+(104:59) 101  a  la  2011,  que  es  lo  que  van  a  hacer
+
+(105:01) ustedes.
+
+(105:04) El  paquete  llega,  el  paquete  va  al
+
+(105:06) switch  de  acceso,  escala  al  switch  de
+
+(105:08) distribución,  baja  al  switch  de
+
+(105:10) distribución  del  otro  piso  y  llega  la
+
+(105:12) PC.  O  sea,  toda  esa  conmutación  de
+
+(105:15) tramas  a  nivel  capa  2  se  da  en  la  red.
+
+(105:19) Sí,  se  da  y  funciona  armónicamente.  Sí,
+
+(105:22) esto  funciona  así  porque  todo  está  en  la
+
+(105:24) vilan  uno  y  todo  se  ve  con  todo.  Sí,  lo
+
+(105:27) que  ustedes  van  a  hacer  es  después
+
+(105:29) segmentar  esto.  Sí,  la  PC  101  se  va  a
+
+(105:32) ver  con  la  200,  se  debería  ver  con  la
+
+(105:34) 2011  y  la  102  se  debería  ver  con  la  202.
+
+(105:38) Sí,  por  eso  la  separé  así  para  que  se
+
+(105:40) entienda.  Estas  dos  acá  arriba,  estas
+
+(105:42) dos  acá  abajo.  A  propósito,  lo  puse  así.
+
+(105:45) Y  lo  que  va  a  pasar  es  que  cuando  dentro
+
+(105:48) de  un  en  el  mismo  piso,  si  esta  PC
+
+(105:51) pertenece  a  la  a  la  van  de  marketing  y
+
+(105:54) esta  PC  pertenece  a  la  van  de
+
+(105:56) ingeniería,  no  se  van  a  ver  entre  sí
+
+(105:58) porque  van  a  estar  segmentados,  van  a
+
+(106:00) estar  en  puertos  distintos  y  cada  puerto
+
+(106:02) tiene  asignado  la  del  área  que  le
+
+(106:04) corresponde.
+
+(106:06) Sí,
+
+(106:08) profe.
+
+(106:10) Bien,  entonces
+
+(106:11) una  consulta,  profe.
+
+(106:13) Sí,
+
+(106:14) en  en  la  capa  núcleo  el  switch  tiene
+
+(106:17) algo  que  ver  con  el  switch  de  capa  3  o
+
+(106:19) no  nada  que  ver.
+
+(106:22) Eh,  existen  switches  de  capa  3,  pero
+
+(106:24) nosotros  acá  en  este  trabajo  de
+
+(106:27) laboratorio  nos  estamos  enfocando  en  la
+
+(106:30) capa  dos.  Sí.  O  sea,  son  switches  de
+
+(106:32) capa  dos.
+
+(106:34) Sí.
+
+(106:34) Bien,  gracias.
+
+(106:36) Yo  tengo  una  pregunta.  el  tema  de  qué
+
+(106:38) cables  usar  y  eso  que  que  explicabas
+
+(106:41) antes  es  parte  de  la  teoría.  ¿Está  la
+
+(106:43) teoría  o  de  dónde  digo,  sacamos  la
+
+(106:46) información?
+
+(106:48) Es  parte  de  la  teoría,  yo  se  los  estoy
+
+(106:49) explicando.  Eh  eh  no  hay  tampoco
+
+(106:53) demasiado  secreto.  Sí  les  puedo  contar
+
+(106:56) que  o  lo  que  van  a  ver  es  ustedes  me
+
+(106:59) preguntarían,  "Profe,
+
+(107:01) ¿qué  onda?  ¿Por  qué  eh  los  switches  que
+
+(107:03) están  arriba  están  conectados  con  cable
+
+(107:05) derecho  y  no  con  cable  cruzado?  Si  son
+
+(107:07) de  la  misma  funcionalidad,
+
+(107:09) ¿no  es  cierto?
+
+(107:11) ¿No  deberían  tener  cables  cruzados  acá
+
+(107:13) los  los  de  línea  punteada?
+
+(107:17) Sí,  me  genera  esa  duda.
+
+(107:18) En  principio,  sí.  Lo lo  correcto  sería
+
+(107:21) que  sí,  pero  ¿qué  pasa
+
+(107:24) a  lo  largo  de  la  historia?  como  fue
+
+(107:26) evolucionando  la  tecnología  y  ese  era  un
+
+(107:28) error  muy  común  en
+
+(107:31) que  que  que  cometían  los  técnicos,
+
+(107:36) digamos,  de  digamos  en  las  redes.  Si  a
+
+(107:40) alguien  se  le  ocurrió
+
+(107:42) diseñar  una  lógica  electrónica  dentro  de
+
+(107:45) los  switches  que  cuando  en  los  switches
+
+(107:48) se  den  cuenta  que  alguien  fue  y  en  vez
+
+(107:50) de  usar  un  cable  cruzado  para
+
+(107:51) conectarlos  entre  sí,  usó  un  cable
+
+(107:54) derecho,
+
+(107:56) el  switch  automáticamente  con  la  lógica
+
+(107:59) electrónica  que  tiene  se  da  cuenta  de
+
+(108:01) eso  y  lo  hace  funcionar  igual.  Es  decir,
+
+(108:04) que  electrónicamente
+
+(108:07) y  lógicamente  el  switch
+
+(108:10) e  arregla  eh  eso  para  que  lo  que  debería
+
+(108:15) ser  un  cable  cruzado  se  pueda  hacer  con
+
+(108:19) un  cable  derecho.  ¿Sí?  Esa
+
+(108:21) característica  se  llama  MDI  MDX.  Sí,  si
+
+(108:25) lo  quieren  googlear  después  eh  eh
+
+(108:28) y  lo  quieren  leer,  esa  es  una
+
+(108:30) característica  que  tienen  los  switches
+
+(108:32) en  su  en  su  inteligencia,
+
+(108:35) que  si  alguien  no  conecta  el  cable
+
+(108:37) correcto,  con  esa  con  ese  feature,  con
+
+(108:39) esa  tecnología,  digamos,  el  switch  se  da
+
+(108:43) cuenta  y  lo  y  lo  y  electrónicamente  lo  y
+
+(108:47) del  punto  de  vista  lógico  lo  arregla.
+
+(108:49) Sí,  pero  bueno,  lo  correcto  es  lo  otro.
+
+(108:52) Se  podría  conectar  con  cualquier  cable.
+
+(108:53) Entonces,  o
+
+(108:55) se  podría  conectar  si  quiero  con  un
+
+(108:57) cable  en  con  un  cable  derecho,  pero
+
+(109:00) bueno,  conceptualmente  estaría  mal.  O
+
+(109:02) sea,  podría  hacer  esto  si
+
+(109:03) alguna  manera,
+
+(109:05) eh,
+
+(109:05) podría  hacer  esto,  mira,  24
+
+(109:10) podría  hacer  esto  también,  mira  ahí.  Y
+
+(109:13) acá  hago  pasar  el  tiempo  rápido.  ¿Ven
+
+(109:14) que  funciona  igual?
+
+(109:17) ¿Ven?  En  este  usé  un  cable  derecho.  Ahí
+
+(109:19) usó  la  tecnología  MDI  MDX  y  lo  arregló.
+
+(109:25) Ah,  pero  no  afecta  nada.  Entonces
+
+(109:27) te  escucho  muy  bajito,  Camilo.  Me  cuesta
+
+(109:30) entender  lo  que  decís.
+
+(109:32) A  ver,  espérame,  perdón.
+
+(109:52) Alguien  mandó  por  mensaje  que  no
+
+(109:53) afectaría  nada.  Entonces,
+
+(109:57) no  afectaría  nada  entonces,  digamos.  Eh,
+
+(110:00) pero  bueno,  lo  correcto,  uno  tiene  que
+
+(110:04) hacer  lo  correcto  más  allá  de  que  eh
+
+(110:08) se  haya  hayan  aparecido  estas  cosas,
+
+(110:11) enan
+
+(110:13) saber  que  lo  correcto  es  lo  otro.  Sí.
+
+(110:16) Eh,  pero  sí  no  afectaría  en  nada,  por
+
+(110:19) eso  está  a  propósito  así,  ¿no?  Para
+
+(110:21) poder  explicarlo,  ¿no?  Pero  bueno,
+
+(110:24) funciona  igual,  con  lo  cual  si  ustedes
+
+(110:25) lo  conectan  va  a  funcionar  igual  y  no
+
+(110:27) pasa  nada.  Eso  no,  eso  no  se  observa  en
+
+(110:31) en  la  corrección,  ¿no?  Porque  lo
+
+(110:33) importante  es  que  funcione,  digamos.
+
+(110:34) Pero  sí  yo  lo  explico  para  que  sepan
+
+(110:36) como  cómo cómo
+
+(110:39) fue  históricamente  y  cómo  fue
+
+(110:40) evolucionando.
+
+(110:42) Claro.  Y  en  teoría  entre  los  switches  de
+
+(110:44) distribución  y  el  switch  núcleo  eh
+
+(110:47) tendrían  que  ser  cruzados  también,  pero
+
+(110:50) claro,  deberían  ser  todos  cruzados,
+
+(110:51) deberían  ser  todos  los  cables  con  línea
+
+(110:53) punteada.  Ahora,  fíjense  lo  siguiente,  o
+
+(110:56) sea,  el  concepto  es  el  siguiente.
+
+(110:58) Dispositivos  que  tienen  la  misma
+
+(110:59) funcionalidad,  o  sea,  un  switch  y  otro
+
+(111:02) switch  tienen  la  misma  funcionalidad,
+
+(111:04) deberían  ser  conectados  con  cable
+
+(111:05) cruzado.  Dispositivos  que  tienen
+
+(111:07) funcionalidades  diferentes,
+
+(111:10) un  router  y  un  switch,  un  router  y  un
+
+(111:12) switch  tienen  funcionalidades
+
+(111:14) diferentes.  Unos  trabajan  en  la  capa
+
+(111:16) tres  y  en  ruta  paquetes,  el  otro  trabaja
+
+(111:18) en  la  capa  dos  y  con  muta  tramas.
+
+(111:21) Entonces  ellos  que  son  que  tienen
+
+(111:24) funcionalidades  diferentes,  van
+
+(111:25) conectados  con  un  cable  derecho.
+
+(111:28) Sí.  O  sea,  conceptualmente  es  eso.
+
+(111:32) Sí.
+
+(111:32) Excelente.  Gracias.  Sí,  sí.
+
+(111:34) Bien.  Eh,
+
+(111:37) entonces
+
+(111:39) eh  a  ver  dónde  me  quedé.  Déjenme  ver
+
+(111:41) acá.  Bueno,  e  después,  bueno,  viene  el
+
+(111:45) comando  este  para  ver  las  filance  que  le
+
+(111:47) decía
+
+(111:49) en  eh  que  ahora  lo  lo lo  tiramos  ahora
+
+(111:52) para  que  vean  que  se  ve  se  ve  igual  que
+
+(111:54) acá.
+
+(111:57) Y  después  ya  viene  la  configuración.
+
+(111:59) Esto  mismo  que  yo  les  estoy  mostrando  es
+
+(112:00) lo  que  está  en  la  guía.  Después  viene  la
+
+(112:03) configuración  de  e
+
+(112:06) de  lo  que  sería  la
+
+(112:09) la  esto  que  dice  line  BTI.  es  BTI,  es
+
+(112:14) esto  que  está  acá,  es  en  inglés  es
+
+(112:16) virtual  terminal,  ¿sí?  En  es  decirle  al
+
+(112:20) switch  te  voy  a  configurar  tanta
+
+(112:24) cantidad  de  terminales  virtuales  para
+
+(112:27) que  la  gente  se  pueda  conectar  eh  hacia
+
+(112:30) vos  e  y  poder  administrarte.  Supongamos
+
+(112:33) que  yo  tengo  tres  administradores  de
+
+(112:35) red.  Acá  tendría  que  poner  line  BTI  0-2,
+
+(112:40) digamos,  eh  0  1  y  2.  Y  ahí  tendría  tres
+
+(112:43) terminales  virtuales  porque  si  yo  da  la
+
+(112:47) casualidad  que  las  tres  personas  se
+
+(112:48) quieren  conectar  de  manera  concurrente,
+
+(112:50) si  yo  pongo  0-1,  solamente  se  va  a  poder
+
+(112:52) conectar  una.
+
+(112:55) Eh  eh  pero  bueno,  se  se  usa  en
+
+(113:00) bueno,  0-1  es  para  habilitar  estas  dos
+
+(113:02) así  de  la  cer  y  la  uno.
+
+(113:05) E  y  bueno,  las  terminales  virtuales
+
+(113:09) permiten  eso,  conectarse  por  IP  a  través
+
+(113:12) del  protocolo  Telnet  a  través  del
+
+(113:13) protocolo  SSH,  ¿sí?  A  los  switches.  Y
+
+(113:16) acá  les  muestra  cómo  configurarla,  ¿sí?
+
+(113:20) Y  se  usan  estos  comandos  de  acá  que  van
+
+(113:22) a  estar  en  la  guía.  Ustedes  entran.
+
+(113:26) Hay  algo  que  no  dije,  eh,  que  no  está
+
+(113:29) acá  arriba.
+
+(113:30) Subo  un  poquito  más.  Hay  algo  que  no
+
+(113:32) dije  que  no  está  acá  arriba.
+
+(113:35) Acá.
+
+(113:37) Hasta  ahora  yo  les  hablé  del  modo  del
+
+(113:39) modo  usuario  y  el  modo  privilegiado,
+
+(113:41) ¿sí?  Que  escalar  de  uno  a  otro  es  como
+
+(113:43) escalar  del  usuario  común  eh  al  usuario
+
+(113:46) root  del  switch.  Pero,  ¿qué  pasa
+
+(113:49) después?  el  switch  tiene  una  estructura
+
+(113:51) de  árbol  o  de  grafos,  ¿sí?,  en  la  medida
+
+(113:54) que  va  para  configurar  sus  sus  distintas
+
+(113:59) eh  cosas,  vamos  a  llamarlos.  Eh,  ¿por
+
+(114:03) qué  cosas?  ¿Por  qué?  Porque  puedo
+
+(114:04) configurar  una  interfaz  eh  virtual  como
+
+(114:07) esa  la  line  BTI.  Puedo  configurar  una
+
+(114:10) interfaz  física  como  la  fase  Ethernet  00
+
+(114:13) 01,  perdón.  puedo  configurar  este  en  el
+
+(114:17) host  name,  o  sea,  cada  cosa,  digamos,
+
+(114:20) voy  entrando  a  un  lugar  de  ese  de  ese
+
+(114:22) árbol  tipo  grafo  y  y  entro  y  salgo.
+
+(114:25) Entro  y  salgo.  Pero  para  eso,  para
+
+(114:27) modificar  la  configuración  del  switch,
+
+(114:30) una  vez  que  estoy  en  el  modo
+
+(114:31) privilegiado,  tengo  que  entrar  al  modo
+
+(114:35) configuración  global,  ¿sí?  Porque  el  el
+
+(114:38) modo  privilegiado  me  permite  hacer  más
+
+(114:41) cosas,  o  sea,  estando  como  si  fuese  como
+
+(114:43) root.  Pero  yo  para  cambiar  parámetros
+
+(114:46) tengo  que  entrar  en  un  modo  especial  que
+
+(114:48) llama  configuración,  modo  configuración
+
+(114:49) global.
+
+(114:51) Eh,  y  eso  se  y  para  pasar  de  del  modo
+
+(114:55) privilegiado  al  modo  configuración
+
+(114:57) global  se  usa  el  comando  configure
+
+(115:00) terminal.  Y  fíjense  que  lo  voy  a  hacer
+
+(115:02) ahora.  Vuelvo  acá  a  la  PC  donde  tengo
+
+(115:06) conectada  la  terminal.  Sí,  estoy  acá.
+
+(115:09) Acá,  acá  yo  veo  la  PC,  ¿la  ven?  Esta  es
+
+(115:11) la  PC  que  la  puedo  apagar  si  quiero.  Si
+
+(115:13) aprieto  los  botoncitos  acá  rojo,  la
+
+(115:14) puedo  lo  puedo  apagar.
+
+(115:17) Vengo  acá  al  desktop,  al
+
+(115:21) y  me  pongo  en  la  terminal  y  ahí  en  la
+
+(115:23) terminal  presiono  okay  y  ya  me  me  entro
+
+(115:26) al  switch  este  a  la  a  la  consola  del
+
+(115:29) switch.  Pongo  enable  y  ahí  paso  al  modo
+
+(115:34) e  al  modo  privilegiado,  sería  el  modo
+
+(115:36) root.
+
+(115:37) Pero  si  yo  quiero  alterar  algún
+
+(115:40) parámetro  del  switch,  tengo  que  entrar
+
+(115:42) en  este  modo  que  se  llama  configure
+
+(115:46) terminal.
+
+(115:48) Sí,  ese  es  el  comando  que  me  permite
+
+(115:51) alterar  la  configuración  de  switch.
+
+(115:52) Presiono  enter  y  ya  estoy  en  el  modo
+
+(115:55) configuración  global.  O  sea,  tengo  tres
+
+(115:57) modos.  El  modo  usuario,  que  es  cuando
+
+(115:59) entro  y  no  puedo  hacer  casi  nada.  el
+
+(116:02) modo  privilegiado  que  tengo  como  acceso
+
+(116:04) root  al  switch  y  después  el  modo
+
+(116:07) configuración  global  que  es  el  que  tengo
+
+(116:09) que  entrar  para  alterar  la  configuración
+
+(116:11) de  switch.  Y  acá,  por  ejemplo,  si  uso  el
+
+(116:13) comando  host  name,  pongo  host,  aprieto
+
+(116:15) la  tecla  tab.  Acá  yo  puedo  cambiar  el
+
+(116:17) parámetro  y  le  puedo  poner  switch
+
+(116:22) guíjense
+
+(116:25) que  ahí  cambió  el  nombre.
+
+(116:28) Switch  100.
+
+(116:31) Y  ahora,
+
+(116:33) ahora  veamos,  si  yo  quiero  ver  la
+
+(116:36) configuración  del  switch,  salgo  del  modo
+
+(116:39) configuración  global,  pongo  exit  y  poner
+
+(116:43) exit  volver  atrás
+
+(116:45) y  vuelvo  del  modo  configuración  global.
+
+(116:47) Fíjense  que  volvió  a  cambiar  el  prompt.
+
+(116:50) Vuelvo  al  modo  anterior,  que  es  el  modo
+
+(116:51) privilegiado.  Y  acá  puedo  hacer  el
+
+(116:53) comando  show  running  config.
+
+(116:57) Show  running  config.
+
+(117:00) Y  ahora  voy  a  ver  la  configuración  del
+
+(117:02) switch  toda.  Voy  presionando  enter  y  voy
+
+(117:06) pasando  línea  por  línea.  Si  aprieto  la
+
+(117:08) barra  espaciadora  me  pasa  de  a  página,
+
+(117:10) ¿no?  Pero  fíjense  que  en  la
+
+(117:13) configuración  del  switch  acá  aparece  el
+
+(117:15) host  name  que  antes  tenía  otro  nombre  y
+
+(117:17) ahora  se  llama  switch  100  porque  yo  le
+
+(117:19) puse  switch  100.  Sí,  si  sigo  presionando
+
+(117:23) enter,  sigo  barriendo  todo  lo  que  tiene
+
+(117:25) adentro  el  el  archivo  configuración  que
+
+(117:28) tiene  todas  sus  interfaces.  Fíjense  que
+
+(117:31) tiene  acá  eh  bueno,  sigo  apretando  enter
+
+(117:34) y  sigo  viendo  hasta  que  termina  y  sale,
+
+(117:37) sí,  automáticamente.  Si  no,  si  quiero
+
+(117:39) salir  antes,  presiono  la  la  Q  y  sale.
+
+(117:44) Pero  fíjense  que  acá  el  Switch  tiene
+
+(117:45) configurada  una  dirección  IP  en  su  en  su
+
+(117:49) interfaz  de  management  que  es  la  vanan  1
+
+(117:52) y  tiene  configurada  esta  IP,  la
+
+(117:54) 198.1.100.
+
+(117:59) eh  tiene  configurada  esa  IP,  con  lo
+
+(118:01) cual,  si  yo  a  la  PC,  a  la  101  le
+
+(118:04) configuro  una  IP,  por  ejemplo,  la  192
+
+(118:06) 168.1.101,
+
+(118:10) ya  voy  a  tener  vinculación  a  nivel  K  3,
+
+(118:13) y  por  IP  con  el  switch.  Ahora  estoy
+
+(118:15) conectado  por  consola,  ¿sí?
+
+(118:18) Eh,
+
+(118:20) y  lo  que  voy  a  tener  que  hacer  para
+
+(118:22) poder  una  vez  que  tenga  configurada  la
+
+(118:24) IP  en  la  PC,  voy  a  tener  que  configurar
+
+(118:27) la  la  line  BTI.
+
+(118:31) Este,  puedo  hacer  04  o  01  según  la
+
+(118:34) cantidad  de  interfaces  virtuales  que
+
+(118:35) quiera  habilitar.  Y  acá  tengo  que  poner
+
+(118:38) ciertos  parámetros  para  que  me  permita
+
+(118:40) conectarme  después  por  Telnet,  ¿sí?  O
+
+(118:42) por  SSH.
+
+(118:44) Eh,  eso  es  lo  que  debería  hacer.
+
+(118:47) Entonces,  ¿cómo  hago  eso?  Bueno,  de
+
+(118:49) vuelta,  antes  de  entrar  al  modo
+
+(118:52) configuración  global  de  vuelta,  yo
+
+(118:54) debería  guardar  la  configuración  de  lo
+
+(118:58) que  acabo  de  hacer  ahora,  que  es  alterar
+
+(119:00) el  nombre  del  switch,  guardarlo  de  lo
+
+(119:03) que  está  corriendo  en  memoria  en  el  en
+
+(119:05) el  archivo  físico  que  está  dentro  de  la
+
+(119:09) memoria  persistente,  la  NB  RAM  del
+
+(119:11) switch.
+
+(119:13) Entonces,  ¿cómo  hago  eso?  Hago  copy
+
+(119:19) running  config
+
+(119:22) a  startup  config.  ¿Qué  estoy  diciendo
+
+(119:25) acá?  Cópiame  la  configuración  que  tengo
+
+(119:29) corriendo  en  memoria.  Copiamela  al
+
+(119:31) Startup  Config,  que  es  el  archivo
+
+(119:34) que  persiste
+
+(119:37) dentro  del  switch  en  la  NB  RAM.
+
+(119:40) Dice,  "¿El  archivo  lo  querés
+
+(119:42) sobrescribir?"  Sí.  Enter.  Okay.
+
+(119:46) Y  automáticamente
+
+(119:49) lo  que  lo  que  acabo  de  de  configurar  y  y
+
+(119:52) que  está  corriendo  en  memoria  ya  está
+
+(119:54) guardado.  Es  como  hacer  archivo  guardar
+
+(119:57) en  el  en  el  archivo  configuración  real.
+
+(120:00) ¿Sí?
+
+(120:01) Esto  mismo  se  puede  hacer  con  un  comando
+
+(120:03) que  se  llama  WR,  que  significa  right.
+
+(120:09) Pongo  write,  enter  y  hace  esto  mismo.
+
+(120:12) Pero  conceptualmente  es  hace  esto,  ¿sí?
+
+(120:14) Que  ustedes  conceptualmente  tienen  que
+
+(120:15) saberlo  más  allá  de  que  poniendo  WR  o  WR
+
+(120:18) ya  lo  hacen.  Sí.
+
+(120:23) Bien,
+
+(120:27) después
+
+(120:29) vuelvo  al  al  archivo  al  PPT.  Entonces,
+
+(120:34) con  estos  comandos  que  están  acá,
+
+(120:36) ustedes  podrían
+
+(120:38) configurar  la  interfaz  virtual,  ¿sí?,
+
+(120:40) para  después  acceder  por  Telnet,  que  es
+
+(120:43) lo  que  dice  la  guía,  ¿no?
+
+(120:46) Y  bueno,  hasta  acá  vendría  ser  como  lo
+
+(120:49) más  básico.  ¿Se  acuerdan  que  había  una
+
+(120:52) parte  básica,  hay  una  parte  avanzada?
+
+(120:54) Hasta  acá  vendría  a  ser  como  lo  más
+
+(120:56) básico  para  eh  encarar  el  trabajo  de
+
+(120:59) laboratorio  número  uno.
+
+(121:02) La  realidad  es  que  no  los  quiero
+
+(121:03) abrumar,  ¿sí?  en  el  porque  la  idea  en
+
+(121:07) realidad  no  era  hoy  abordar  el  trabajo
+
+(121:09) laboratorio  número  uno,  la  idea  era  hoy
+
+(121:11) un  poco  darle  los  lineamientos  generales
+
+(121:14) de  la  materia,  mostrarles  el  simulador,
+
+(121:17) que  es  lo  que  hice  que  lo  abrí,  ¿sí?
+
+(121:20) Mostrarle  cómo  se  conectarían  las  cosas,
+
+(121:23) ¿sí?  Eh,  y  después,  bueno,
+
+(121:27) los  quiero  invitar  a  ustedes  que  de  acá
+
+(121:29) para  la  semana  que  viene
+
+(121:32) eh  usen  la  guía  esta  que  que  es  la  del
+
+(121:35) la  del  trabajo  laboratorio  número  uno  y
+
+(121:38) hagan  un  poquito  de  lo  que  les  fui
+
+(121:39) explicando  ahora,  ¿sí?  Que  va  a  ser  e
+
+(121:44) como  la  como  esto  está  es  guiado,  ¿sí?
+
+(121:47) Eh,  va  a  ser  más  o  menos  hasta  el  punto
+
+(121:50) hasta  el  punto  E,  ¿sí?  del  punto  E  para
+
+(121:53) abajo,  ¿no?  Sí,  pero  lo  que  está  acá
+
+(121:55) arriba,  de  acá  para  arriba,
+
+(121:59) este,  es  decir,  el  punto  eh  A,  B,  C  y  D,
+
+(122:07) como  es  todo  guiado  y  les  dice  los
+
+(122:09) comandos  y  todo,  lo  podrían  hacer  si
+
+(122:11) quieren.  Sí.  Eh,  la  idea  es  que
+
+(122:15) traten
+
+(122:16) eh,  no  no  tienen  que  entregar  nada
+
+(122:18) todavía  porque  estamos  en  el  en  este
+
+(122:22) momento  de  explicar,  ¿sí?  Pero  la  idea
+
+(122:24) es  que  con  lo  que  las  cositas  más
+
+(122:27) básicas  que  les  fui  dando  ahora,  ya
+
+(122:29) vayan  tratando  de  tomar  ritmo  eh  en
+
+(122:33) hacer  algunas  cositas  que  lo  que  está
+
+(122:35) acá  y  les  dice  cómo  hacerlo  paso  a  paso,
+
+(122:37) porque  ya  la  semana  que  viene  sí  voy  a
+
+(122:40) entrar  fuerte,  eh,  y  voy  a  ir  con  un
+
+(122:42) poco  más  de  velocidad  para  que  para  que
+
+(122:45) lo  lo  vayamos  resolviendo  el  trabajo
+
+(122:47) juntos.  Sí,
+
+(122:49) pero  bueno,  no  los  quiero  abrumar
+
+(122:51) demasiado,  por  eso  quiero  llegar  hasta
+
+(122:53) acá  no  más.  E  y  ahora  les  pregunto  si
+
+(122:57) tienen  alguna  duda.  Eh,  después,  bueno,
+
+(123:00) lo  que  tienen  que  hacer  es  conectar  esta
+
+(123:01) PC  así  de  acá  a  este  switch,
+
+(123:04) a  este  switch  y  también  tienen  que
+
+(123:06) conectarla  por  consola,  ¿sí?  RS232  al
+
+(123:09) switch  de  núcleo,  porque  esta  PC  la  van
+
+(123:13) a  tener  que  conectar  a  este  switch  para
+
+(123:15) administrarlo  por  SSH.  Y  esta  van  a
+
+(123:18) tener  que  conectarla  acá  por  Telnet  para
+
+(123:20) poder  administrar  esto.  Sí.
+
+(123:23) Y  lo  mismo  va  a  ser  acá  desde  la  PC  2011
+
+(123:27) a  esta  que  está  acá  por  consola.  Ven,  lo
+
+(123:31) pongo  así,  así  se  ve.  Ahí  está  conectada
+
+(123:34) por  consola  con  el  con  el  cablecito
+
+(123:37) este  celeste  y  por  datos,  digamos,  con
+
+(123:42) el  cable  negro.
+
+(123:47) Marcos  Federico.  Sí,
+
+(123:50) sí,  profe.  Eh,  es  indistinto  los  puertos
+
+(123:53) ethernet  a  los  que  se  conectan,  o  sea,
+
+(123:55) antes  de  configurar  bilance  y  eso.
+
+(123:57) ¿Usted  cuando  empezó  a  conectar  la  PC
+
+(123:59) con  el  Switch  elegía  puertos  al  azar  o  o
+
+(124:03) con  algún  criterio?
+
+(124:06) En  sí,  en  cuál  eh  eso  se  puede  usar
+
+(124:10) cualquier  porto  del  de  los  24  que  tiene.
+
+(124:14) A  veces  hay  que  usar  lo  que  se  llama  en
+
+(124:17) inglés  serían  como  best  practices  o
+
+(124:20) mejores  prácticas.
+
+(124:22) ¿Cómo  es  una  mejor  práctica?
+
+(124:24) Si  yo  tengo  una  PC  que  se  llama  101,
+
+(124:28) la  voy  a  conectar  al  puerto  5,  no  tiene
+
+(124:31) más  sentido  que  si  dice  101,  la  conecta
+
+(124:33) al  puerto  un  y  yo  sé  que  el  uno  con  el
+
+(124:35) uno  machean  mejor  que  el  uno  con  el
+
+(124:37) cinco.
+
+(124:38) Tal  cual.  Sí.
+
+(124:40) Después  si  yo  tengo  conectar  dos
+
+(124:41) switches  entre  sí,
+
+(124:43) ¿no  es  más  fácil  decir  uso  los  últimos
+
+(124:46) puertos  del  Switch  para  conectarlos
+
+(124:49) entre  sí?  Por  ejemplo,  uso  el  24  de  este
+
+(124:51) para  subir  al  switch  de  distribución.
+
+(124:54) uso  el  24  este  para  subir  al  switch  de
+
+(124:56) distribución  y  yo  ya  sé  que  los  puertos,
+
+(124:59) los  últimos  puertos  de  los  switches  los
+
+(125:01) uso  para  hacer  los  troncales.  No  tiene
+
+(125:04) sentido  también  eso
+
+(125:07) eh  podría  ser,  o  sea,  los  últimos
+
+(125:09) puertos
+
+(125:10) o  los  primeros  o  los  primeros.  Claro,
+
+(125:13) este,  digamos,  tiene  que  ver  todo  con  un
+
+(125:16) tema  de  eh  de  del  criterio  también  o  la
+
+(125:19) o  que  uno  use  eh  eh  si  quiere  tal  vez
+
+(125:23) seguir  algunos  lineamientos  que  son  como
+
+(125:25) como  mejores  prácticas,  ¿no?  Pero
+
+(125:28) tranquilamente  lo  pueden  conectar  en
+
+(125:29) cualquiera.
+
+(125:32) Perfecto.  Gracias,
+
+(125:33) profe.  Cuando  conecto  un  switch  con  el
+
+(125:36) otro  usando  un  puerto  X  directamente
+
+(125:39) solo  sabe  que  estoy  conectando  un  switch
+
+(125:41) o  tengo  que  decirle  algo  de  vuelta  con
+
+(125:44) esto  de  las  buenas  prácticas.
+
+(125:47) Muy  buena  pregunta.
+
+(125:50) El  tema  es  así.  los  switches,  eh,  todos
+
+(125:54) los  puertos  que  tienen  del  cero  eh  o
+
+(125:58) mejor  dicho  eh  del  1  al  24  o  del  0  al
+
+(126:03) 23,  porque  la  nomenclatura  está  así.  E
+
+(126:09) existen  conceptualmente  dos  formas  de
+
+(126:11) configurar  un  puerto  de  un  switch.
+
+(126:14) Eh,  uno  es  en  modo  acceso
+
+(126:17) y  el  otro  es  en  modo  troncal  o  o  o  modo
+
+(126:21) trank.  Sí,  ahora  no  lo  hice  porque  ya
+
+(126:24) les  decía  que  no  los  quería  abrumar  en
+
+(126:26) el  tema  de  la  configuración  y  de  seguir
+
+(126:29) y  de  seguir  dándole  máquina  eh  a  ustedes
+
+(126:32) porque  me  parece  que  ya  es  mucho  para
+
+(126:34) ser  el  primer  día,
+
+(126:36) pero  conceptualmente  los  puertos  de  los
+
+(126:39) switches  funcionan  en  modo  acceso  o  en
+
+(126:41) modo  troncal.  en  modo  acceso  que  hay  que
+
+(126:45) configurarlo.  Hay  un  comando  que
+
+(126:49) digamos  permite  decirle  al  switch,  vos
+
+(126:52) te  vas  a  comportar  como  un  puerto  de
+
+(126:53) acceso  o  vos  te  vas  a  conectar  como  vos
+
+(126:56) te  vas  a  comportar  como  un  puerto
+
+(126:59) configurado  como  troncal.
+
+(127:02) E
+
+(127:04) eh  eso  le  permite  al  al  switch  saber  que
+
+(127:07) lo  que  tiene  conectado  es  una  cosa  u
+
+(127:09) otra.  Sí,  en  el  caso  de  de  del  switch
+
+(127:13) este,  el  100,  el  puerto  24,  que  es  el
+
+(127:17) que  yo  usé  para  conectarme  hacia  el
+
+(127:19) switch  de  distribución,  ese  puerto
+
+(127:21) debería  yo  configurarlo  como  un  puerto
+
+(127:23) troncal.  ¿Sí?  ¿Por  qué?  Porque  ese
+
+(127:26) puerto  troncal  va  a  dejar  pasar  las  van
+
+(127:30) de  desde  este  switch  hacia  el  otro
+
+(127:32) switch,  o  sea,  las  va  a  dejar  pasar.  Es
+
+(127:34) como  que  agarro,  digamos,  es  como  que
+
+(127:36) tengo  un  un  tubo  y  yo  trae  tengo  dos,
+
+(127:40) ¿vieron  la  lotería,  digamos,  que  que
+
+(127:42) viene  por  un  tubito  cae  la  pelotita,
+
+(127:44) digamos,  la  agarra  el  el  la  agarra
+
+(127:48) Riverito  y  dice  el  ocho.  Bueno,  eh  es
+
+(127:51) ese  tubito,  digamos,  ese  cable.  Yo  paso
+
+(127:54) un  un  una  trama  que  tiene  el  ocho.  Sí.
+
+(127:58) Entonces,  el  otro  switch  la  recibe,  abre
+
+(128:00) y  y  sabe  que  es  el  ocho.  La  otra  la  otra
+
+(128:03) pelotita  vendría  a  ser  la  la  10.
+
+(128:06) Entonces,  el  switch  la  pasa  por  ese
+
+(128:08) tuito,  ese  cable,  el  otro  switch  la
+
+(128:10) recibe,  lo  abre  la  trama.  Ah,  es  la  10.
+
+(128:13) Si  yo  no  hago  eso,  si  yo  no  configuro
+
+(128:15) ese  puerto  como  Troncal,  no  pasan  todas
+
+(128:17) las  vilan  de  un  lado,  o  sea,  todas  esas
+
+(128:19) pelotitas  no  pasan  de  un  lado  al  otro.  E
+
+(128:22) y  el  Switch  no  sabe  que  le  estoy
+
+(128:25) mandando  una  trama  con  una  van  que  no
+
+(128:27) sea  la  van  por  default  y  no  funciona
+
+(128:31) nada.  Entonces,  cuando  yo  conecto  dos
+
+(128:33) switches  entre  sí,  los  puertos  de  esos
+
+(128:35) dos  switches  tienen  que  ser  configurados
+
+(128:38) eh  explícitamente  como  troncales.  Y  los
+
+(128:41) puertos  de  acceso  son  los  que
+
+(128:44) eh  se  configuran  para  las  PCs,  para  las
+
+(128:47) impresoras,  para  todos  los  dispositivos
+
+(128:50) finales  que  no  son  switches,  ¿sí?  O  no
+
+(128:54) son  routers,  ¿sí?
+
+(128:56) Eh,  es  decir,  son  PCs,  son
+
+(128:59) e  dispositivos  finales.  Sí.
+
+(129:04) Bueno,  me  parece  que  eh  por  hoy  eh  está
+
+(129:08) estamos  bien.  Eh,  espero  no  haberlos
+
+(129:10) abrumado  demasiado.  Eh,  perdón,  Rafael,
+
+(129:13) que  hablé  todo  seguido.  No  sé  si  querés
+
+(129:15) agregar  algo  de  lo  que  sea.  Eh,
+
+(129:18) no,  por  favor.  Este  e  yo  lo  único  es  que
+
+(129:22) los  del  curso  4773  van  a  encontrar  en  el
+
+(129:27) en  el  web  campus  algo  similar  a  lo  que  a
+
+(129:30) lo  que  mostraste  también  con  un  foro  de
+
+(129:32) consultas  en  el  que  me  me  pueden  hacer
+
+(129:35) consultas  particulares  a  mí  sobre  las
+
+(129:37) prácticas  y  también  el  foro  de
+
+(129:39) intercambio  de  alumnos  y  también  estés
+
+(129:43) estaré  subiendo  material  que  puedan
+
+(129:45) utilizar.  Eh,  también  he  visto  mientras
+
+(129:47) yo  veía  algunas  algunas  cosas  que
+
+(129:50) pasaban  en  el  chat,  hay  alumnos  que  que
+
+(129:53) no  tienen  acceso  al  curso  de  de  redes  de
+
+(129:56) datos  2C,  eh,  que  algo  debe  estar
+
+(129:59) pasando.  Pantalla,
+
+(130:02) no  importa,
+
+(130:02) yo  tampoco  tengo,  así  que  son  cosas  que
+
+(130:06) iremos  solucionando  en  este  tiempo,  ¿no?
+
+(130:09) No  se  preocupen,  lo  resolvemos  ahora.
+
+(130:11) Así  que  e  lo  que  vamos  a  hacer  ahora  es
+
+(130:14) los  que  tienen  todos  los  accesos  y
+
+(130:17) pueden  entrar  a  su  curso  específico  y
+
+(130:19) pueden  entrar  al  curso  específico  eh
+
+(130:21) general,
+
+(130:23) ya  los  libero  o  los  liberamos  con  Rafael
+
+(130:26) eh  y  ya  la  clase  eh  estaría  terminada
+
+(130:30) por  ahora.  Y  los  que  tienen  esos
+
+(130:33) problemas  les  invito  a  que  se  queden  y
+
+(130:36) los  resolvemos  ahora.  Así  ya  pueden
+
+(130:40) acceder  todos  de  la  misma  manera  los
+
+(130:42) materiales  eh  específicos.  Sí.
+
+(130:48) Matías  Federico.  Marcos  Federico.
+
+(130:50) Sí.  Yo  tenía  una  pregunta  más  que  nada
+
+(130:52) con  los  eh  trabajos  de  laboratorio
+
+(130:54) entregables,  porque  habla  al  final  de
+
+(130:57) respuestas,  evaluaciones  orales
+
+(130:58) individuales.  Eso  eh  no  sé  si  se
+
+(131:02) denunció  algo  en  el  criterio  de
+
+(131:04) evaluación  dice.  Sí,  eso  es  así.
+
+(131:08) en  cuando  los  trabajos  de  laboratorio  se
+
+(131:11) recuperan.  O  sea,  ejemplo,  hicieron  el
+
+(131:14) trabajo  de  laboratorio,  lo  hicieron  mal,
+
+(131:17) lo  entregar,  o  sea,  lo  entregaron,  lo
+
+(131:21) corregimos  o  lo  y  lo  mirábamos,  o  sea,  e
+
+(131:25) viendo  que  cumpla  con  lo  que  le  dice  el
+
+(131:27) enunciado  y  funciona  todo.
+
+(131:30) Ahí  está  todo  bien.  Si  hay  algo  que  no
+
+(131:31) está  bien,  no  funciona,  no  cumple  con  lo
+
+(131:33) que  con  lo  que  pedía  el  enunciado  que
+
+(131:35) hagan,
+
+(131:37) eh,  ese  trabajo  eh  queda  como
+
+(131:40) insuficiente.  O  sea,  no  aprobado.  Cuando
+
+(131:42) pasa  eso  y  lo  tienen  que  recuperar,  que
+
+(131:45) eso  no  va  a  ser  al  al  a  la  semana
+
+(131:47) siguiente,  sino  que  va  a  ser  cuando
+
+(131:48) nosotros  lo  indiquemos  y  según  el
+
+(131:50) cronograma  que  tenemos  definido.
+
+(131:52) Sí.
+
+(131:53) Eh,  para  recuperarlo  no  es  lo  corrijo,
+
+(131:57) lo  vuelvo  a  entregar.  La  forma  de
+
+(131:59) recuperarlo  es  lo  corrigen  y  cuando
+
+(132:02) establecemos  esa  fecha  donde  donde
+
+(132:06) lo  tenemos  que  volver  a  evaluar,  les
+
+(132:08) pedimos  a  ustedes  que  nos  digan,  "Bueno,
+
+(132:11) en  esto  que  te  confundiste,  digamos,
+
+(132:14) explícame  cómo  hiciste  para  arreglarlo  y
+
+(132:16) por  qué."  ¿Cuál  es  la  razón  de  esto?  Es
+
+(132:19) muy  simple.  Vos  hacés  el  trabajo  de
+
+(132:21) laboratorio  uno  mal,  se  lo  pedís  a  tu
+
+(132:23) compañero  que  lo  hizo  bien,  te  lo  pasa,
+
+(132:26) le  cambias  el  nombre  y  lo  volvés  a
+
+(132:27) subir.  ¿Aprendiste  algo?
+
+(132:29) Claro.  No,  no  sentido.
+
+(132:31) Entonces,  eso  es  eso,  ese  tiempo  que  nos
+
+(132:34) tomamos  para
+
+(132:36) hacer  esa  eso  en  particular,  que  no  van
+
+(132:38) a  ser  muchos  porque  ya  les  mostré  que
+
+(132:40) los  trabajos  son  medios  guiados  y  tienen
+
+(132:43) el  espíritu  de  no  que  se,  lo  voy  a  decir
+
+(132:47) bien,  dice  llanamente,  no  que  se  rompan
+
+(132:49) los  cuernos.  sino  que  aprendan,  que  que
+
+(132:51) practiquen,  que  que  se  vayan  embviendo
+
+(132:54) en  el  uso  del  simulador,  que  vayan
+
+(132:55) entendiendo  los  conceptos  de  cómo
+
+(132:58) digamos  eh  o  sea,  no  que  tienen  que
+
+(132:59) ilustrar  la  la  lámpara  para  para  hacer
+
+(133:04) que  mágicamente  salgan  las  cosas,  no  es
+
+(133:07) es  ir  haciéndolo,  resolviéndolo  en  forma
+
+(133:09) individual  para  que  ustedes  vayan
+
+(133:12) tomando  ritmo  y  entendiendo  los
+
+(133:14) conceptos  y  en  la  medida  que  lo  vayan
+
+(133:15) haciendo  después  automáticamente  se  van
+
+(133:18) a  acordar  que  es  cada  comando  que  para
+
+(133:21) crear  una  van  ponen  van  espacio  y  el  ID
+
+(133:24) este  name  espacio  y  el  nombre  y  el  y  el
+
+(133:28) el  nombre  que  le  van  a  dar  esa  van.
+
+(133:30) Claro,  porque  toda  esa  velocidad  que
+
+(133:32) necesitan  este  adquirir  a  lo  largo  de
+
+(133:36) estos  cuatro  trabajos  son  las  que  van  es
+
+(133:38) la  es  la  velocidad  y  lo  que  van  a  a
+
+(133:41) necesitar  para  que  cuando  venga  el
+
+(133:43) parcial,  que  es  un  ese  esa  valoración
+
+(133:46) integradora  que  incluye  los  temas  de  los
+
+(133:48) cuatro  trabajos,  lo  van  a  tener  que
+
+(133:51) hacer,  van  a  tener  que  tener  esa
+
+(133:52) gimnasia  ya  este  lista  porque  van  a
+
+(133:56) tener  que  resolver  algo,  no  van  a  tener
+
+(133:58) tiempo  de  ay,  ¿cómo  se  crea  una  van.  Ay,
+
+(134:01) a  ver,  me  voy  a  fijar.  Y  no,  ya  esa
+
+(134:04) velocidad  la  tienen  que  tener  para  crear
+
+(134:06) al  top  al  toque  la  van  y  resolver  el
+
+(134:08) parcial.  Excelente.  Y  entonces  el
+
+(134:11) entregable  esperado  sería  el  archivo  del
+
+(134:14) del  Cisco  Packet  Tracer,  ¿no?  O  sea,  ese
+
+(134:16) es  el
+
+(134:17) Exo.  Exacto.  Sí.  Y  vamos  a  hacer  una  Me
+
+(134:19) hiciste  acordar  de  algo  que  no  se  los
+
+(134:21) dije  en  eh  y  se  los  voy  a  los  voy  a
+
+(134:26) decir  de  esta  manera.
+
+(134:29) Vamos  a  trabajar  de  a  pares,  o  sea,  de  a
+
+(134:31) dos  personas,  o  sea,  ustedes  van  a
+
+(134:34) elegir  un  compañero  con  el  que  van  a
+
+(134:36) hacer  todos  los  trabajos  prácticos  a  lo
+
+(134:38) largo  del  cuatrimestre.  Sí.  Eh,  lo  van  a
+
+(134:41) elegir,  o  sea,  calculo  que  entre  ustedes
+
+(134:44) serán  amigos  algunos  o  otros  serán
+
+(134:46) conocidos  de  cursadas  anteriores.  Bueno,
+
+(134:49) les  voy  a  pedir  que  para  la  clase  que
+
+(134:50) viene  sepan  quiénes  van  a  estar
+
+(134:52) agrupados  de  A2,  porque  los  que  no  se
+
+(134:55) agrupen  de  A2  los  voy  a  agrupar  yo  de  eh
+
+(134:58) Rafael  y  yo  de  manera  forzada,  digamos,
+
+(135:00) para  que  no  queden  flotando.  Si,  porque
+
+(135:04) los  trabajos  lo  van  a  resolver  de  de  a
+
+(135:06) dos  y  lo  y  van  a  entregar  un  solo
+
+(135:09) archivo  punkt  con  el  nombre  de  dos
+
+(135:12) personas.  Sí,  por  ejemplo,  van  a
+
+(135:16) entregar  eh  un  archivo,  por  ejemplo,  si
+
+(135:19) supongamos  que  Juan  Manuel  Rama  y  Shair
+
+(135:23) Aen,  calculo  que  dice  Álvarez,  no  llegó
+
+(135:26) a  ver  porque  está  cortado,  eh,  se  ponen
+
+(135:28) en  grupo  cuando  entreguen  el  trabajo  de
+
+(135:31) laboratorio  número  uno,  el  archivo  PKT
+
+(135:34) va  a  decir  TL1
+
+(135:37) K45
+
+(135:39) 75  GU  rama  gulvarez.
+
+(135:43) Sí.  Y  y  uno  de  ustedes,  solamente  uno,
+
+(135:46) lo  va  a  entregar  y  nosotros  cuando  lo
+
+(135:48) recibimos  ya  vamos  a  saber  que
+
+(135:49) corresponde  a  dos  a  esas  dos  personas  y
+
+(135:52) lo  vamos  a  corregir.  Y  bueno,  y  la  nota
+
+(135:54) va  a  ser  para  los  dos.  Y  acá  hago  una
+
+(135:56) salvedad
+
+(135:58) y  eso  eh  es  una  recomendación  o  una
+
+(136:01) sugerencia,  como  quieran  llamarlo.
+
+(136:04) Si  ustedes
+
+(136:07) se  toman  eh  la  atribución  de  decir,
+
+(136:09) "Bueno,  este,  vos,  Juan  Manuel,  hacete
+
+(136:13) el  uno  y  el  dos  y  yo,  Ya  voy  a  hacer  el
+
+(136:15) tres  y  el  cuatro."
+
+(136:17) A  mí  eso  y  a  mí  y  a  Rafael  eso  no  me  va
+
+(136:19) a  importar  porque  yo  lo  voy  a  corregir,
+
+(136:22) Rafael  lo  va  a  corregir  y  a  los  dos  le
+
+(136:24) vamos  a  poner  la  misma  nota,  pero  eso
+
+(136:26) tiene  una  una  doble  vara.  Sí.  Y  el
+
+(136:30) problema  lo  van  a  tener  ustedes,  no  lo
+
+(136:31) vamos  a  tener  Rafael  y  yo.  ¿Por  qué?
+
+(136:34) Porque  si  ustedes  hacen  eso,  no  van  a
+
+(136:36) entender  los  temas  y  cuando  llegue  el
+
+(136:39) parcial  van  a  estar  en  el  horno.
+
+(136:43) Se  los  digo  así  porque  es,  digamos,  eh
+
+(136:45) va  a  pasar  eso.  Entonces,  la  sugerencia
+
+(136:49) mía  como  docente  para  que  ustedes
+
+(136:51) aprendan  y  puedan  desarrollarse  bien  y
+
+(136:54) puedan  aprobar  el  laboratorio  y  puedan
+
+(136:57) aprobar  la  materia,  cada  uno  para  hacer
+
+(137:00) esa  gimnasia  que  les  digo,
+
+(137:03) resuelve
+
+(137:04) el  trabajo  en  forma  individual  y  después
+
+(137:08) hablan  entre  ustedes  y  dicen,  "Che,
+
+(137:11) ¿sabes  que  no  pude  resolver  esta  parte?"
+
+(137:13) "Ah,  yo  sí  la  pude  hacer  andar.
+
+(137:15) entreguemos  el  mío,  que  de  las  dos
+
+(137:17) archivos  que  tenemos,  del  tuyo  y  el  mío,
+
+(137:20) la  mejor  versión  es  la  mía  y  subamos  la
+
+(137:23) mía,  pero  los  dos  resuelven  las  cosas  en
+
+(137:26) forma  individual  en  sus  casas  y  después
+
+(137:29) se  ponen  de  acuerdo  si  entregan  el  de
+
+(137:31) uno  o  el  de  otro.  Si  no  lo  hacen  así,  el
+
+(137:34) que  lo  resuelve  va  a  entender  y  el  que
+
+(137:36) no  resuelve  no  va  a  entender  nada  y  se
+
+(137:38) va  a  trazar  y  y  no  va  a  entender  los
+
+(137:42) conceptos  y  cuando  llegue  el  día  de  la
+
+(137:43) evaluación  integradora  que  involucra  los
+
+(137:45) cuatro  TLS,  eh  si  no  resolvió  el  tres,
+
+(137:48) no  va  a  entender  nada  y  no  lo  va  a  poder
+
+(137:50) hacer.  ¿Se  entendió  conceptualmente  qué
+
+(137:53) es  lo  que  les  digo?  O  sea,  a  mí  y  a
+
+(137:55) Rafael,  lo  voy  a  decir  así  bien  crudo,
+
+(137:58) no  me  calienta  porque  el  digamos,  o  sea,
+
+(138:01) el  veredicto  va  a  estar  cuando
+
+(138:03) corrijamos  los  la  evaluación,  o  sea,  es
+
+(138:06) algo  que  es  un  compromiso  de  ustedes,
+
+(138:10) ¿sí?  O  sea,  yo  no  voy  a  andar  como  un
+
+(138:11) vigilante  atrás,  che,  eh,  digamos  este
+
+(138:14) TL  lo  resolvió,  lo  resolviste  vos  y  él
+
+(138:17) no  lo  hizo.  No,  no,  eso  corre  por  cuenta
+
+(138:20) ustedes.  Sí,  se  entendió
+
+(138:23) conceptualmente.
+
+(138:25) Sí,  perfecto.  Muy  bueno.
+
+(138:28) Bien.  Eh,  Juan  Manuel,  vos  tenés
+
+(138:30) levantada  la  mano.
+
+(138:32) Sí,  era  un  poco  sobre  eso  lo  de
+
+(138:34) entregar.  Se  entrega  solo  el  punto  PKT
+
+(138:36) porque  hay  partes  en  la  consigna  que
+
+(138:38) dice  que  hay  que  liste  y  documente,  por
+
+(138:39) ejemplo,  en  la  consigna
+
+(138:42) entregar.
+
+(138:43) Ah,
+
+(138:43) solo  se  entrega  el  punto  PKT,  se  va  a
+
+(138:45) subir  en  un  recurso  del  aula  virtual  que
+
+(138:49) yo  voy  a  habilitar  semana  tras  semana
+
+(138:51) para  que  lo  suban  ahí,  ¿sí?  Que  va  a
+
+(138:53) decir  trabajo  de  laboratorio  uno,
+
+(138:55) entregar  aquí.  Ustedes  entran  ahí,
+
+(138:58) graban  el  archivo,  eh,  digamos  con
+
+(139:01) nombre,  apellido  de  su  con  su  apellido,
+
+(139:04) el  de  su  compañero,
+
+(139:06) R,  por  ejemplo,  eh  Rama  Otero  y  lo  suben
+
+(139:11) ahí.  Lo  sube  uno  solo  ustedes  dos,  ¿no?
+
+(139:13) Porque  si  lo  suben  los  dos  no  tiene
+
+(139:14) sentido,  uno  solo  y  nosotros  lo
+
+(139:16) descargamos,  lo  revisamos  y  listo.
+
+(139:21) Sí,
+
+(139:23) perfecto.  Sí.  En  Camila,  tenés  levantada
+
+(139:26) la  mano  y  Pablo  también.
+
+(139:28) Sí,  profe,  te  quería  consultar  si  el
+
+(139:30) equipo  de  dos  se  puede  hacer  entre
+
+(139:31) comisiones.
+
+(139:33) No,  tiene  que  hacerse  entre  el  mismo
+
+(139:34) curso.  O  sea,  si  bien  estamos  todos  en
+
+(139:36) la  meeting,  la  parte,  digamos,  toda
+
+(139:39) administrativa  y  toda  la  parte  de
+
+(139:42) aprobación  de  cada  de  los  alumnos  y  todo
+
+(139:46) está  segmentada  por  curso.  Sí,  digamos.
+
+(139:49) Entonces,  los  que  se  agrupen  de  a  dos
+
+(139:51) tienen  que  estar  en  el  mismo  curso,  por
+
+(139:52) ejemplo,  en  el  4574  o  en  el  4575,
+
+(139:58) así.
+
+(139:59) Okay,  gracias,
+
+(140:01) Pablo.
+
+(140:02) Sí,  profe,  eh  mi  pregunta  era  porque  vi
+
+(140:05) que  en  la  consigna  te  eh  ponen  unos  como
+
+(140:08) unos  ejercicios  para  hacer  de  manera
+
+(140:11) previa.  Si  quería  preguntar  si  en  esos
+
+(140:13) ejercicios  vemos  eh  varios  de  los
+
+(140:16) conceptos  que  estuvimos  viendo  en  la
+
+(140:18) clase  de  hoy,  porque  bueno,  como  que  no
+
+(140:21) pude  anotar  mucho  y  bueno,  hay  capas
+
+(140:23) cosas  que  son  medio  detalles  o  eh
+
+(140:27) conceptos  que
+
+(140:30) estaría  bueno  tener.  Si  si  haciendo  eso
+
+(140:33) lo  eh
+
+(140:35) eh  en  lo  que  es  la  configuración  de  lo
+
+(140:37) que  se  va  a  hacer  en  el  simulador,  no  te
+
+(140:39) preocupes  porque  la  semana  que  viene
+
+(140:41) vamos  a  abordar  el  trabajo  de  cero.  Lo
+
+(140:44) que  pasa  que  lo  que  yo  les  sugiero  es
+
+(140:47) que  se  descarguen  las  cosas  y  empiecen  a
+
+(140:49) trabajar  eh  hasta  hasta  con  leyendo  la
+
+(140:53) la  guía  de  trabajo  de  laboratorio  y  este
+
+(140:57) viendo  también  eh  revisando  los  archivos
+
+(141:01) que  hay
+
+(141:03) eh  de  lo  que  se  descargan  como  para  ir
+
+(141:05) viendo  material  y  y  un  poco  empaparse  en
+
+(141:08) el  tema,  pero  después  nosotros  la  semana
+
+(141:11) que  viene  ya  abordamos  el  trabajo  la
+
+(141:12) oratorio  número  uno  de  cero,  pero  ya
+
+(141:15) empezamos  a  configurar.  Sí,  hoy  estuve
+
+(141:18) hablando  mucho  de  teoría,  mucho  eh  de  de
+
+(141:21) de  lineamientos  generales,  de  cosas  muy
+
+(141:25) conceptuales.  Ya  después  la  semana  que
+
+(141:26) viene  ya  abordamos  directamente  eh  o
+
+(141:29) sea,  metemos  los  garfios  en  el  simulador
+
+(141:31) directo.
+
+(141:32) Perfecto,  muchas  gracias.  Pero  ya  metan
+
+(141:35) los  barf  ustedes  eh  durante  la  semana
+
+(141:37) cuando  quieran,  como  para  ir
+
+(141:38) empapándose,  porque  no  es  lo  mismo
+
+(141:41) este  en  eh  otro  error  que  que  yo  les
+
+(141:46) diría  que  no  hagan  porque  lo  cometen
+
+(141:48) casi  todos  los  alumnos  o  muchos,  en
+
+(141:50) realidad  no  decir  todos,  pero  muchos,  es
+
+(141:53) que  algunos  quieren  resolver  el  trabajo
+
+(141:54) de  laboratorio  online  mientras  yo  lo
+
+(141:57) estoy  resolviendo.  Y  si  hacen  eso,  se
+
+(142:00) pierden  la  explicación  de  los  conceptos
+
+(142:03) teóricos.  Es  decir,  yo  pongo  show
+
+(142:06) running  config,
+
+(142:08) el  alumno  que  está  al  otro  lado  pone
+
+(142:10) show  running  config.
+
+(142:12) Está  bien,  transcribiste  el  comando,
+
+(142:13) pero  te  acordas  lo  que  yo  dije  de  lo  que
+
+(142:15) hacía  ese  comando  y  para  qué  era
+
+(142:17) importante  y  por  qué  y
+
+(142:19) se  entiende  que  se  pierde  en  eso.  Total,
+
+(142:22) para  para  hacerlo  está  la  guía.  Sí,
+
+(142:26) justamente  la  guía  está  media  está
+
+(142:28) resuelta  en  algún  aspecto.
+
+(142:31) Sí.  O  sea,  presten,  lo  que  quiero  decir
+
+(142:33) es  presten  atención,  digamos,  eh  eh  no
+
+(142:36) traten  de  digamos  o  bueno,  depende  las
+
+(142:40) capacidades  de  cada  uno,  ¿no?  También
+
+(142:42) porque  puede  ser  que  digamos  puedan
+
+(142:45) resolver  eh  al  mismo  tiempo  mientras  yo
+
+(142:48) explico  y  después  acordarse  de  todo  lo
+
+(142:49) que  digo.  Pero  bueno,  la  la  sugerencia
+
+(142:53) sería  presten  atención  e  y  bueno,  y
+
+(142:56) después  resuelvan  tranquilos  los  en  sus
+
+(142:58) casas  porque  lo  van  a  resolver  en  el
+
+(142:59) mismo  momento  que  doy  la  clase,  lo  van  a
+
+(143:01) entregar  rápido  o  lo  van  a  querer
+
+(143:02) entregar  rápido,  pero  no  les  va  a  quedar
+
+(143:04) nada  de  lo  que  expliqué  porque  su
+
+(143:06) atención  está  más  puesta  en  en  en  hacer
+
+(143:10) lo  que  tienen  que  hacer  para  entregarlo
+
+(143:12) y  sacárselos  de  encima  y  no  en  adquirir
+
+(143:15) los  conocimientos  y  los  conceptos.
+
+(143:19) ¿Alguna
+
+(143:23) pregunta  más?
+
+(143:30) Bueno,  si  todo  se  entendió  y  estamos
+
+(143:32) todos  bien,  yo  los  libero  y  les  diría  a
+
+(143:36) los  que  tienen  esos  problemas  con  las
+
+(143:38) aulas  virtuales  y  eso  que  se  queden  acá
+
+(143:40) que  que  yo  les  voy  a  a  resolver  ese
+
+(143:44) problema.  Así  ya  pueden  acceder  a  a
+
+(143:46) donde  no  pueden  acceder.  Por  ejemplo,
+
+(143:48) acá  Frank  Frank  Bari  me  dice,  "Profesor,
+
+(143:51) yo  no  tengo  acceso  al  aula  virtual,
+
+(143:53) redes  de  datos,  segundo  cuatrimestre."
+
+(143:55) Quédate  acá,  eh,  mientras  se  va  el  resto
+
+(143:58) de  los  alumnos  a  a  cenar  y  resolvemos
+
+(144:01) eso.
+
+(144:02) Una  consulta,  profe,  antes  de  partir.
+
+(144:06) Sí.
+
+(144:07) Eh,  los  grupos  se  los  enviamos  por  mail,
+
+(144:11) los  completamos  en  la  plataforma  como
+
+(144:17) los  grupos  en  No  hace  falta  que  me  lo
+
+(144:20) digan  porque  cuando  hagan  el  trabajo  de
+
+(144:21) laboratorio.
+
+(144:23) Ah,  okay,  listo.
+
+(144:24) Me  eh eh  yo  ya  sé  que  lo  van  a  entregar.
+
+(144:27) Lo  que  sí  me  van  a  decir  quienes  no  se
+
+(144:30) hayan  podido  eh  agrupar  con  otro
+
+(144:33) compañero,  porque  eso  va  a  pasar.  va  a
+
+(144:35) pasar  que  muchos  de  ustedes  eh  se
+
+(144:37) conocen  entre  sí  por  cursadas  anteriores
+
+(144:39) y  uno  va  a  decir,  "Yo  hago  el  trabajo,
+
+(144:42) yo  a  hago  el  trabajo  con  B."  Pero
+
+(144:45) después  va  a  haber  un  otro  alumno  C  que
+
+(144:47) dice,  "Ay,  yo  no  sé,  no  conozco  a  nadie,
+
+(144:50) no  sé  con  quién  ponerme."  Bueno,
+
+(144:52) digamos,  eh,  los  que  queden  así  flotando
+
+(144:54) los  agrupamos  nosotros  los  docentes,
+
+(144:56) pero  eso  sí  tenemos  que  saber  quiénes
+
+(144:58) son.
+
+(144:59) y  los  agrupamos  así,  digamos,  como
+
+(145:03) en  on  the  fly  sería.
+
+(145:08) Dale,  bárbaro.  Gracias.
+
+(145:09) también  eh,  perdón,  Leonardo,  también
+
+(145:11) pueden  usar  para  eso,  tratar  de  ubicarse
+
+(145:13) el  foro  de  alumnos  también  para  para
+
+(145:16) poder  conectar.
+
+(145:17) Sí,  obvio,  obvio.  Los  canales  de
+
+(145:18) comunicación
+
+(145:20) están  el  del  aula  virtual  está  para  eso,
+
+(145:24) porque  yo  obviamente  son  50  alumnos  en
+
+(145:28) un  aula,  no  se  conocen  los  50,  los  50  no
+
+(145:31) están  en  un  grupo  de  WhatsApp.  O  sea,
+
+(145:33) para  eso  está  el  foro  ese  de  intercambio
+
+(145:36) que  yo  creé  junto  con  Rafael  entre
+
+(145:38) alumnos  para  que  entre  ustedes,  no  sé,
+
+(145:41) por  ahí  alguno  dice,  "Eh,  chicos,  yo  no
+
+(145:44) no  no  hice  grupo  con  nadie.  Alguno
+
+(145:47) quiere  hacer  grupo  conmigo  y  ahí  otro  va
+
+(145:49) a  responder,  dale,  hacemos  juntos."
+
+(145:52) Eh,  y  ahí  ya  después  se  se  vinculan
+
+(145:54) entre  sí,  este,  eh,  y  hacen  un  uno  a  uno
+
+(145:59) y  bueno,  y  después  ya  se  se  sincronizan
+
+(146:03) ustedes.
+
+(146:08) Listo.
+
+(146:10) Bueno,  liberados  y  me  quedo  con  Frank
+
+(146:13) Barry  y  los  que  tengan  el  problemita
+
+(146:16) para
+
+(146:18) para  las  aulas  virtuales  y  es  y  esas
+
+(146:20) cosas.
+
+(146:22) Así  que  te  uso  como  como  primer  eh
+
+(146:25) contacto.  Frank,  decme  en  qué  curso
+
+(146:28) estás  eh  eh,  que  que  te  agrego  o  o
+
+(146:32) decime

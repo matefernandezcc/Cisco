@@ -1,0 +1,7639 @@
+Title: Lab: TL1 | Redes de Datos UTN | 3/9/2026
+
+(0:00) Buenas  tardes.
+
+(0:01) Buenas  profes.  Se  escucha.
+
+(0:03) Buenas  tardes.
+
+(0:03) Buenas  tardes.
+
+(0:05) Se  escucha  bien.
+
+(0:07) Hola.  Buenas  tardes.
+
+(0:14) Bueno,
+
+(0:16) ¿cómo  le  fue  con  el  tema  de  del
+
+(0:19) material?  si  vieron  algo  respecto  a  lo
+
+(0:22) que  vimos  la  clase  pasada  y  si  pudieron
+
+(0:25) descargar  el  simulador  y  por  otro  lado
+
+(0:30) si  ya  eh  pudieron  descargar  todo  el
+
+(0:33) material  también  del  trabajo  de
+
+(0:36) laboratorio  número  uno  y  estuvieron
+
+(0:37) viendo  algo.
+
+(0:39) Cuéntenme  hoy  arrancamos
+
+(0:43) con  todo,  por  así  decirlo.
+
+(0:46) Sí,  yo  yo  en  mi  caso  pude  descargarme  la
+
+(0:51) eh  la  plataforma  y  bueno,  del  material
+
+(0:55) estuve  siguiendo  los  pasos  hasta  el
+
+(0:57) punto  e  donde  habías  comentado
+
+(0:59) y
+
+(1:01) y  bueno,  lo  pude  seguir  bien,  o  sea,
+
+(1:04) conceptualmente,  bueno,  no  es  que  tengo
+
+(1:06) claro  todos  los  puntos  que  fui  haciendo,
+
+(1:09) iba  siguiendo  la  guía.
+
+(1:11) Eh,  algunas  cosas  la  la  las  comprendí,
+
+(1:14) otras  por  ahí  nada,  trataba  de  de
+
+(1:17) entender  de  lo  que  estaba  haciendo,  pero
+
+(1:20) pero  bien,  lo  que  sí  todavía  no  tengo
+
+(1:22) compañía  de  grupo,  hay  un  chat  de  de
+
+(1:24) WhatsApp  que  que  hay  varios  que  estamos
+
+(1:25) poniendo  que  que  no  teníamos,  eh,  pero
+
+(1:29) bueno,  no  sé  si  ahora  lo  terminaremos  de
+
+(1:31) de  formar.
+
+(1:33) Bien,  bien,  bien.  Perfecto.  Bueno,
+
+(1:35) buenísimo.  Me  encanta  haber  escuchado
+
+(1:37) todo  eso.  Eh,  es  más  o  menos  la  idea  el
+
+(1:40) espíritu  de  de  cómo  vamos  a  ir
+
+(1:43) trabajando  a  lo  largo  de  del
+
+(1:45) cuatrimestre.  Eh,  la  idea  que  sea  así
+
+(1:48) interactivo,  que  ustedes  se  sientan
+
+(1:51) cómodo  con  lo  que  están  aprendiendo  y
+
+(1:54) bueno,  eh  obviamente  que  eh  del  lado
+
+(1:57) nuestro,  tanto  mío  como  de  Rafael,  es
+
+(1:59) poder  transmitirles  todos  los  conceptos
+
+(2:02) e  de  la  mejor  manera  y  bueno,  y  que
+
+(2:06) ustedes  puedan  justamente  este  ir
+
+(2:09) avanzando  pavatinamente.  Si,  obviamente
+
+(2:11) que  más  allá  del  esfuerzo  que  pongamos
+
+(2:13) nosotros,  mucho  depende,  digamos,  de  del
+
+(2:16) seguimiento  que  le  hagan  ustedes  a  la
+
+(2:17) materia  y  y  todo  lo  que  les  conté  la
+
+(2:19) clase  pasada.  Marcos,  levantaste  la
+
+(2:22) mano.
+
+(2:23) Sí.  ¿Qué  tal,  profe?  Eh,  sí,  yo  comparto
+
+(2:26) lo  que  dijo  Claudio,  pero  en  el  último
+
+(2:29) punto  de  Telnet  quizás  estaría  bueno
+
+(2:31) verlo  después.  No  entendí.  No,  quédense
+
+(2:34) tranquilo  [carraspeo]  que  lo  vamos  a  ver
+
+(2:35) todo.  Lo  vamos  a  ver  todo,  pero  con  una
+
+(2:37) velocidad  eh  no  tan  eh
+
+(2:41) poniendo  segunda  como  como  el  otro  día,
+
+(2:44) sino  no  digo  quinta  a  fondo,  pero  te
+
+(2:47) vamos  a  ir  a  cuarta,  tercera,  cuarta
+
+(2:49) para  como  bien
+
+(2:50) como  para  para  avanzar  más  rápido,  ¿sí?
+
+(2:52) y  que  las  clases  no  sean  tan  largas,
+
+(2:53) porque  lo  que  me  pasa  a  mí  que  cuando
+
+(2:56) son  muchos  alumnos  respondo  muchas
+
+(2:58) consultas  que  no  tengo  problema  de
+
+(3:00) hacerlo,  pero  se  nos  va  la  hora  rápido.
+
+(3:02) Entonces,  estoy  tratando  de  optimizar
+
+(3:04) eso  también.  Por  eso  la  idea  de  esta  de
+
+(3:07) esta  forma  de  trabajar  este  que  estoy
+
+(3:09) implementando  que  ustedes  obviamente  lo
+
+(3:11) vean  un  poquito  antes  eh  con  algunas
+
+(3:13) cosas  que  yo  ya  enseño  y
+
+(3:16) [carraspeo]  bueno  y  avancemos.  Sí,
+
+(3:18) Francisco,
+
+(3:21) eh,  sí,  no,  bueno,  capaz  con  esto  ya  se
+
+(3:23) respondió,  pero  en en  uno  de  los  puntos
+
+(3:25) dice  que  conectemos  las  PCs  al  puerto  de
+
+(3:27) consola  al  Switch,  pero  hay  dos  PCs  y  un
+
+(3:29) solo  puerto,  o  sea,  no  se  pueden
+
+(3:31) conectar  todas,  una  sola  queda
+
+(3:33) conectada.  Entonces,
+
+(3:35) ahora  lo  vemos.  Ahora  lo  vemos,
+
+(3:36) Guillermo,  rapidito.
+
+(3:38) Eh,  sí,  mi  duda  es  porque  el  TP  tiene
+
+(3:41) algunas  preguntas  teóricas,  entonces  no
+
+(3:42) sé  bien  qué  te  tengo  que  entregar,  si
+
+(3:44) solo  el  PKT  y  las  preguntas  teóricas  son
+
+(3:47) orientativas  o  cómo  es  el  tema.
+
+(3:50) Facilísimo.  Solo  el  PKT,  las  preguntas
+
+(3:53) eh  son  eh  básicamente  eh  para  ustedes,
+
+(3:58) ¿sí?  No  hace  falta  responderlas.  Así  que
+
+(4:01) eh  básicamente  lo  que  hay  que  hacer  es
+
+(4:03) eh  seguir  eh  lo  que  dice  el  trabajo
+
+(4:06) práctico,  eh  ir  resolviendo  todo  en  el
+
+(4:08) simulador,  probando  las  cosas  para  ver
+
+(4:11) si  funcionan  y  a  partir  de  eso  eh  una
+
+(4:14) vez  que  esté  terminado,  digamos,
+
+(4:16) obviamente  que  como  les  dije  ustedes
+
+(4:19) trabajen  en  forma  individual,  ¿no?  para
+
+(4:22) resolverlo,  para  para  tener  el  propio
+
+(4:24) conocimiento  cada  uno  de  ustedes,  pero
+
+(4:28) la  forma  de  de  entregarlo  va  a  ser  en
+
+(4:30) grupo,  o  sea,  en  grupo  de  A2,  o  sea,
+
+(4:32) ustedes  se  van  a  poner  de  A2,  ¿sí?  Van  a
+
+(4:35) conversar  entre  ustedes,  como  les  decía,
+
+(4:39) no  sé,  por  ahí  uno  resolvió  lo  del
+
+(4:41) Telnet  y  el  otro  no  lo  pudo  resolver.
+
+(4:43) Entonces,  cuando  hablan  entre  ustedes,
+
+(4:44) porque  son  compañeros,  amigos,  este,  lo
+
+(4:47) que  sea,  eh,  o  se  conocen  en  esta  en
+
+(4:49) esta  en  esta  en  esta  materia  y  después
+
+(4:53) van  a  seguir  forjando  una  buena  relación
+
+(4:55) para  la  siguiente,  que  eso  es  lo  bueno
+
+(4:57) también  de  de  cuando  no  se  conocen  de
+
+(4:59) antes  forman  un  equipo  de  trabajo  nuevo.
+
+(5:04) Este,  eso  también  los  les  sirve  y  los
+
+(5:06) potencia  para  para  las  próximas
+
+(5:08) asignaturas.  Entonces,  ¿a  qué  voy  con
+
+(5:11) esto?
+
+(5:12) [carraspeo]
+
+(5:12) E  por  ahí  uno  resolvió  la  parte  de  Tnet
+
+(5:14) y  el  otro  no.  Entonces  hablando  entre
+
+(5:16) ustedes,  ah,  mira,  si  yo  lo  puedo
+
+(5:18) resolver  de  esta  manera.  Bueno,  de  las
+
+(5:20) dos  versiones  de  los  archivos,  tanto  el
+
+(5:21) tuyo  como  el  mío,  ¿te  parece  que
+
+(5:23) entreguemos  el  mío?  Digamos  que  que  creo
+
+(5:25) que  quedó  mejor  resuelto  por  H  y  por  B.
+
+(5:28) ¿Listo?  Y  entregan  uno.  Sí,  eso  es  lo
+
+(5:31) que  vamos  a  hacer.  Yo  voy  a  hacer  un
+
+(5:32) Excel  eh  con  nombre,  apellido  cada  uno
+
+(5:36) de  ustedes  y  les  voy  a  poner  eh  que  les
+
+(5:39) voy  a  pedir  que  lo  completen.  ¿Qué  van  a
+
+(5:41) tener  que  hacer?  Poner,  por  ejemplo,  no
+
+(5:43) sé,  e  supongamos  que  e
+
+(5:48) Lucas  Vázquez  está  con  eh  Francisco
+
+(5:52) Marquip.  Entonces,  e  en  ese  Excel  van  a
+
+(5:55) ver  que  están  los  nombres,  apellidos
+
+(5:57) todos  este  y  y  ustedes  se  van  a  poner
+
+(6:00) un,  ¿sí?  que  van  van  a  ser  como  el  grupo
+
+(6:02) uno,  después  va  a  haber  otros  compañeros
+
+(6:04) y  van  a  poner  dos dos.  Sí.  Entonces,  yo
+
+(6:06) ya  voy  a  saber  que  este  que  cada  uno
+
+(6:09) pertenece  a  Igual  lo  voy  a  hacer  yo  eso
+
+(6:11) también,  pero  este  solo  necesito  saber
+
+(6:14) quiénes  cómo  se  agruparon.  Milagros.
+
+(6:21) A  ver,  ¿cuándo  era  la  primera  entrega?
+
+(6:25) La  primera  entrega  va  a  ser
+
+(6:27) una  vez  que  termine  la  clase  de  hoy
+
+(6:30) hasta
+
+(6:31) el
+
+(6:33) jueves  de  la  semana,  o  sea,  hasta  las  19
+
+(6:36) horas  del  jueves  de  la  semana  que  viene.
+
+(6:37) O  sea,  tienen  una  semana  para  trabajar
+
+(6:40) en  resolverlo  eh  entre  ambos  compañeros
+
+(6:44) y  entregar  una  versión  sola  y  lo  tienen
+
+(6:45) que  entregar  uno  solo  ustedes.  Sí.
+
+(6:49) Bien.
+
+(6:50) [carraspeo]
+
+(6:50) Bueno,
+
+(6:51) voy  a  compartir.  Yo  no  voy  a  seguir
+
+(6:54) mucho  lo  que  dice,
+
+(6:56) o  sea,  sí  y  no  voy  a  avanzar  con  con  la
+
+(7:01) resolución  del  del  trabajo  de
+
+(7:03) laboratorio,  pero  tal  vez  no  siga  100%
+
+(7:07) el  orden  de  la  guía  porque,  digamos,  me
+
+(7:09) gusta  hacerlo  más  interactivo  y  no  andar
+
+(7:11) mirando  eh  mucho
+
+(7:14) en
+
+(7:16) el  el  PDF,  por  así  decirlo,  que  que  poco
+
+(7:19) también  ya  me  lo  conozco  de  memoria,
+
+(7:20) ¿no?  Pero  bueno,  este  eh  no  es  por  eso,
+
+(7:23) sino  porque  me  gusta  hacerlo  más
+
+(7:25) interactivo.  Entonces,  me  quedé  en  el
+
+(7:28) escenario  de  la  vez  pasada  donde
+
+(7:30) teníamos  eh  conectado  de  esta  manera
+
+(7:35) el
+
+(7:36) eh  las  PCs,  o  sea,  las  laptops.  Eh,  las
+
+(7:40) PC,  las  laptops  y  los  switches.  ¿Sí?
+
+(7:43) Entonces,  e  yo  me  había  quedado  acá  en
+
+(7:46) en  esta  parte  donde  les  voy  a  mostrar  en
+
+(7:50) una  vez  que  ustedes  ya  aprendan  a
+
+(7:53) conectarse  por  Telnet  como  está  esta  PC
+
+(7:55) o  como  está  esta  otra  con  el  cable  de
+
+(7:56) consola,  ¿sí?  que  era  viéndose  acá,
+
+(7:59) poniendo  este  acá  la  terminal,  acá  en
+
+(8:02) los  valores  de  como  vieron  en  la  cátedra
+
+(8:04) de  comunicaciones  que  ya  le  hicieron,  le
+
+(8:06) dan  okay  y  ya  entran  acá
+
+(8:09) a  eh  a  la  a  la  línea  de  comandos  del  del
+
+(8:13) switch.  ¿Sí?  Entonces,  yo  qué  tengo  que
+
+(8:17) hacer  acá  en  todos  los  switches  tenía
+
+(8:19) que  configurar  las  mismas  vans,  digamos,
+
+(8:21) para  que  todos,  digamos,  funcione
+
+(8:23) armónicamente.
+
+(8:25) Ahora  bien,  una  vez  que  ya  ustedes
+
+(8:28) aprendieron  y  cumplieron  con  lo  que  dice
+
+(8:30) el  enunciado,  en  los  trabajos  de
+
+(8:32) laboratorio  de  más  adelante,
+
+(8:35) e  no  va  a  ser  necesario  que  e  ustedes
+
+(8:40) agarren  y  y
+
+(8:43) esperen  que  voy  a  minimizar  esto,  si  no
+
+(8:44) me  molesta.
+
+(8:46) No  va  a  ser  necesario  que  ustedes  eh
+
+(8:48) cada  vez  que  vayan  a  configurar  un
+
+(8:49) equipo  o  un  switch  entren  conectando,
+
+(8:53) digamos  eh  el  cable  de  consola  o
+
+(8:57) digamos,  o  sea,  una  vez  que  ya  tiene  la
+
+(8:59) IP,  el  Switch,  entren  con  con  la  IP,
+
+(9:01) digamos,  a  través  de  Telnet  o o  SSH.  Se
+
+(9:04) puede  hacer  de  otra  manera  que  esto  en
+
+(9:07) la  vida  real  no  está,  pero  sí  en  el
+
+(9:09) simulador.
+
+(9:10) Y  es  que,  bueno,  yo  voy  a  tener  abierto
+
+(9:12) este  switch  que  es  el  100,  ¿sí?  y  le  voy
+
+(9:15) a  poner  acá  en  el  tile  que  dice  top  para
+
+(9:18) poder  tenerlo  en  pantalla.  Y  voy  a  abrir
+
+(9:21) el  otro  switch,  el  switch  200  que  está
+
+(9:23) acá.  Fíjense  como  como  esta  pantalla
+
+(9:25) está  arriba,  la  otra  queda  por  detrás.
+
+(9:28) ¿Ven?  Bien.  Entonces,  si  yo  directamente
+
+(9:31) presiono  en  la  tercer  sola  para  que  dice
+
+(9:33) click  comand  line  interface,  acá  estoy
+
+(9:37) adentro  ya  de  la  interfaz  del  switch,
+
+(9:39) ¿sí?  eh  adentro  de  la  consola,  por  así
+
+(9:41) decirlo.  Los  voy  a  mover  eh  uno  para  un
+
+(9:44) lado,  otro  para  el  otro  para  que  queden,
+
+(9:46) obviamente
+
+(9:48) este  los  dos  bien
+
+(9:51) ordenaditos.  Así.
+
+(9:52) Entonces,  una  consulta,  perdón  que
+
+(9:54) interrumpa,
+
+(9:55) pero  se  está  grabando  la  clase  o  no.
+
+(9:58) No,  no  las  grabo  las  clases.  No  las
+
+(10:00) grabo  las  clases  porque  eso  se  hacía  en
+
+(10:02) la  pandemia
+
+(10:03) y  en  los  servidores  donde  se  alojaban
+
+(10:07) las  grabaciones  eh  después  se  eh
+
+(10:11) se  se  liberaron,  o  sea,  para  que  no  se
+
+(10:14) utilicen  más  porque  traían  mucho  costo  y
+
+(10:16) aparte  no  tiene  sentido  porque  siempre
+
+(10:17) la  clase  la  hago  igual,  así  que  no  tiene
+
+(10:20) sentido.  Pero  si  ustedes,  aunque  no
+
+(10:24) sería  por  ahí  lo  más  este
+
+(10:28) políticamente  correcto,  la  quieren
+
+(10:30) grabar  con  con
+
+(10:33) digamos  en  su  PC,  a  mí  no  me  molesta  en
+
+(10:35) absoluto.  Sí.  E
+
+(10:37) Ah,  okay.  Bárbaro,  muchas  gracias.
+
+(10:39) Si  usan  el  software  este  de
+
+(10:41) multiplataforma  que  es  de  tres  letritas,
+
+(10:44) OC  OCP,  no  me  acuerdo  cómo  se  llama,
+
+(10:47) ese,  está  bueno.
+
+(10:49) Funciona  Linux.  ¿Cómo  es?
+
+(10:52) OB.  Ahí  está.  OB.
+
+(10:53) OBS.
+
+(10:54) Sí.
+
+(10:56) Bueno,  entonces
+
+(10:58) ya  estoy  adentro  de  los  dos  switches.
+
+(11:00) Por  un  lado,  me  conecté  por  por  Telnet,
+
+(11:02) como  es  el  que  está  la  pantalla  negra,
+
+(11:04) el  de  la  izquierda.  Y  por  el  otro  lado
+
+(11:06) usé,  entré  al  switch,  veo  el  switch  acá
+
+(11:10) y  voy  a  la  tercera  solapa  y  pongo  en  la
+
+(11:12) parte  que  dice  click  comandline
+
+(11:14) interface.
+
+(11:15) Entonces,  voy  [carraspeo]  a  hacer  todo
+
+(11:17) como  si  no  hubiésemos  hecho  nada  la
+
+(11:20) clase  pasada,  pero  con  velocidad,  casi
+
+(11:23) velocidad  con  la  pinto.  Entonces,  enable
+
+(11:26) para  entrar  al  modo  privilegiado,  o  sea,
+
+(11:28) paso  del  modo  usuario  al  modo
+
+(11:29) privilegiado.
+
+(11:31) Pongo  configuración
+
+(11:33) global.  Conf.  Conf.  Sí.  A  este,  al
+
+(11:37) switch  de  la  izquierda  ya  le  había
+
+(11:39) puesto  el  host  name,  le  había  puesto
+
+(11:41) switch  100.  Entonces,  al  otro  le  voy  a
+
+(11:42) poner  host  name.
+
+(11:45) Host  name  y  acá  le  voy  a  poner  switch
+
+(11:49) 200.  ¿Por  qué  se  llaman  así?  Creo,  en  el
+
+(11:52) en  la  guía,  aunque  le  pueden  poner  el
+
+(11:54) nombre  que  ustedes  quieran.
+
+(11:56) Bien,  déjenme  ver  igual  voy  a  ver
+
+(11:59) [carraspeo]  eh  por  dónde  ando  acá.  Eh
+
+(12:02) switch  100,  switch  200.  Bien.  Enable
+
+(12:04) secret  utn.  Bueno,  vamos  a  ponerle  la
+
+(12:06) contraseña
+
+(12:10) enable.
+
+(12:12) Secret
+
+(12:13) UTN
+
+(12:16) enable
+
+(12:18) secret  UTN.
+
+(12:20) Uy,  flechita  para  arriba  porque  me
+
+(12:22) confundí.  Inable  secret  utn.  Sí.  Bien,
+
+(12:26) entonces  ahora  los  switches  ya  tienen
+
+(12:28) una  contraseña  sers  segura  para  poder
+
+(12:31) entrar  en  de  de  para  poder  pasar  de  un
+
+(12:35) modo  al  otro.  Configuración  del
+
+(12:37) internet.  Acá  estamos  bien.  Eh,  no  sé  si
+
+(12:40) alguien  había  tenido  problemas  con  esto,
+
+(12:43) pero  e  lo  voy  a  hacer  de  vuelta,  ¿sí?,
+
+(12:47) en  ambos  switches  para  que  después  vean
+
+(12:49) cómo  me  conecto  por  Telnet  eh  hacia
+
+(12:52) hacia  el  otro.  Entonces  pongo
+
+(12:55) line  BTI,  o  sea,  virtual  terminal
+
+(12:58) significa  BTI.  CER,  le  voy  a  poner  02
+
+(13:01) para  tener  dos  o  tres  eh  interfaz
+
+(13:04) virtuales.
+
+(13:07) Fíjense  que  para  trabajar  más  rápido  lo
+
+(13:10) hago  en  dos  switches  al  mismo  tiempo
+
+(13:12) porque  lo  voy  a  tener  que  hacer  en  los
+
+(13:13) dos.  ¿Si?  Entonces,  para  trabajar  más
+
+(13:17) eficiente,  no  es  que  lo  hago  en  uno  y  lo
+
+(13:18) hago  en  otro,  lo  hago  en  los  dos  al
+
+(13:19) mismo  tiempo,  en  forma  paralela,  ¿se
+
+(13:21) entiende?  ¿Por  qué  trabajo  así?  Para  ser
+
+(13:24) más  eficiente.  Entonces,  esto  en  la  guía
+
+(13:27) creo  que  está  al  revés,  pero  a  ver,  lo
+
+(13:28) voy  a  probar,  eh,  porque  con  el  comando
+
+(13:31) login  login  ustedes  deberían
+
+(13:35) está  al  revés  en  la  guía.  ¿Se  dan
+
+(13:37) cuenta?  El  comando  login  lo  que  hace
+
+(13:40) cuando  están  dentro  de  la  de  la  de  la
+
+(13:42) interfaz  de  de  la  virtual  terminal  esta,
+
+(13:46) recuerden  que  el  sistema  operativo
+
+(13:49) trabaja  en  como  en  un  modo  de  grafos,  va
+
+(13:52) entrando,  digamos,  a  los  niveles  de
+
+(13:54) configuración  eh  como  si  fuese  un  grafo,
+
+(13:57) ¿sí?  Y  cuando  pongan  ponen  exit  vuelve
+
+(14:00) eh  eh  un  nodo  hacia  atrás,  ¿sí?  Es  una
+
+(14:03) analogía  que  yo  hago  para  que  entiendan
+
+(14:05) cómo  funciona  el  el  iOS  de
+
+(14:09) del  sistema  operativo,  eh,  de  de  los
+
+(14:12) switches,  de  los  routers,  de  todo.
+
+(14:14) Entonces,  el  comando  login  me  habilita
+
+(14:17) el  uso  de  la  virtual  terminal,  pero
+
+(14:18) primero  tiene  que  estar  configurada.  No
+
+(14:20) está  configurada.  Fíjense  que  ahí  me
+
+(14:21) dice,  "Che,  no  tiene  el  password."  Me
+
+(14:22) dice,  "Okay,  listo."  Entonces  le  pongo
+
+(14:24) el  password  y  después  le  pongo  ex  time
+
+(14:27) out  para  decir  cuánto  tiempo  me  va  a
+
+(14:29) permitir  tener  abierta  este  en  la
+
+(14:32) sesión.  Sí.  O  sea,  el  timeout  de  la
+
+(14:34) sesión  sería.  Entonces,  vamos  a  hacer  eh
+
+(14:36) vamos  a  ponerle  password  clase,  como
+
+(14:38) dice  ahí,
+
+(14:40) password  clase.
+
+(14:42) Del  otro  lado  también  password  clase.
+
+(14:47) Y  ahora  le  voy  a  poner  ex  time  out  y  le
+
+(14:50) voy  a  poner,  no  sé,  10  minutos.
+
+(14:55) Ex.  10  minutos.  Ahí  estamos.  Sí.  Con  lo
+
+(14:58) cual  ahora  ya
+
+(15:00) así  no  me  va  a  andar.
+
+(15:02) La  conexión  por  Telnet  no  me  va  a  andar
+
+(15:04) porque  ahora  sí  le  tendría  que  poner  la
+
+(15:06) palabra  login,
+
+(15:08) que  es  lo  que  me  habilita,  digamos,  o
+
+(15:10) sea,  eh  que  la  funcionalidad  del  TLET
+
+(15:14) esté  habilitada.  Sí,  porque
+
+(15:16) anteriormente  con  todo  lo  que  hice  la
+
+(15:17) configuré,  le  configuré  el  password,  le
+
+(15:19) configuré  el  time  out,  pero  con  el
+
+(15:21) comando  login  le  digo  activate.  Sí.
+
+(15:26) Bueno,  una  cosita  que  no  les  dije  la  vez
+
+(15:28) pasada,  pero  se  las  voy  a  ir  tirando
+
+(15:30) ahora.
+
+(15:31) No  todos  los  comandos  se  pueden  tirar  en
+
+(15:33) el  modo  en  el  que  se  encuentran.  Sí.  Por
+
+(15:36) ejemplo,  si  yo  quiero  hacer  acá  quiero
+
+(15:39) tirar  el  comando  show  run,  ¿sí?  para  ver
+
+(15:43) la  configuración,  digamos,  eh  que  desde
+
+(15:46) lo  que  hice  hasta  ahora,  que  que  está
+
+(15:48) guardada  en  memoria  en  el  switch  o
+
+(15:50) simplemente  la  quiero  guardar  con  el
+
+(15:52) comando  WR  o  WR  estando  en  esta  parte  de
+
+(15:56) digamos  de  [carraspeo]  de  de  del  switch,
+
+(15:59) o  es  decir,  en  el  modo  configuración
+
+(16:01) global  y  dentro  de  una  interfaz  virtual,
+
+(16:03) no  me  deja.  ¿Cómo  hago  para  saltar  esto
+
+(16:07) y  que  me  tome  el  comando  que  quiero  este
+
+(16:10) ejecutar  sin  tener  que  andar  volviendo
+
+(16:12) atrás  en  este  en  este
+
+(16:16) en  este  esquema  de  grafos  de  que  tiene
+
+(16:18) el  prompt  del  del  equipo?  Simplemente
+
+(16:22) ejecuto  o  escribo  la  palabra  reservada
+
+(16:25) do  y  después  de  eso  pongo  el  comando  que
+
+(16:28) me  lo  tengo  que  saber  porque  con  el  do
+
+(16:30) adelante  no  funciona  ya  el  tab  para
+
+(16:32) completar  el  comando,  pero  pongo  do  show
+
+(16:34) run,  ¿sí?  Que  sería  do,  digamos,  ehamos
+
+(16:38) ejecutame  el  siguiente  comando  que  es
+
+(16:40) show  running  config,  nada  más  que  show
+
+(16:43) run,  como  lo  escribí,  es  el  modo
+
+(16:44) abreviado.  Y  fíjense  que  ahí  me  ejecutó
+
+(16:47) el  comando  que  antes  no  me  dejaba
+
+(16:48) ejecutar.
+
+(16:50) Si  le  pongo  el  do  adelante.  Sí.  Entonces
+
+(16:53) si  si  barro  digamos  presionando  enter,
+
+(16:56) barro  barro  barro  todo.  Sí.  Acuérdense
+
+(16:58) que  si  preto  la  barra  espaciadora  pasa
+
+(17:00) de  a  páginas,  pero  me  gusta  pasar  con  el
+
+(17:02) enter  y  pasarlo  rápido.  Ya  el  switch
+
+(17:05) este  ya  tenía  configurada  una  IP  de
+
+(17:08) management.  Sí,  los  switches  de  capa  2
+
+(17:12) no  se  le  puede  configurar  direcciones
+
+(17:15) IPs  en  las  interfaces
+
+(17:17) justamente  porque  son  switches  de  capa
+
+(17:19) 2.  La  única  IP  que  puede  tener  el  switch
+
+(17:22) configurada  es  la  IP  de  management,  o
+
+(17:24) sea,  la  IP  con  la  cual  yo  accedo  para
+
+(17:25) configurarlo.  Y  esa  IP  está  en  esa
+
+(17:28) interfaz  virtual  que  se  llama  van  1,
+
+(17:31) ¿si?  En  este  caso  que  es  la  van  por
+
+(17:33) default  del  switch.
+
+(17:35) e  y  solamente  en  esa  interfaz  virtual  se
+
+(17:39) puede  poner  una  dirección  IP  que  ya  la
+
+(17:41) tiene  configurada  en  este  caso.  Y
+
+(17:43) fíjense  que  yo  acá,  más  allá  de  la
+
+(17:46) configuración  que  tenía  el  switch  por
+
+(17:47) default,
+
+(17:49) acá  es  donde  aparece  que  están
+
+(17:51) habilitadas  las  interfaces  eh  las
+
+(17:55) virtual  eh  terminal  que  yo  configuré,
+
+(17:58) que  son  del  er  a  la  dos,  o  sea,  para  que
+
+(18:00) permita  0  1  y  dos  tres  e  sesiones  eh
+
+(18:06) virtuales,  o  sea,  que  tres  personas
+
+(18:08) puedan  conectarse  en  forma  concurrente
+
+(18:09) por  Telnet,  ¿sí?  Más  no.  Y  los  que  están
+
+(18:13) acá  abajo,  digamos,  no  están
+
+(18:15) configurados  correctamente,  con  lo  cual
+
+(18:17) no  les  da  importancia.  Se  pueden
+
+(18:19) eliminar,  obviamente.
+
+(18:22) Ahora,  eh,
+
+(18:25) entonces  quiero  guardar  la
+
+(18:27) configuración.  Listo,  pongo  do  WR  y  ahí
+
+(18:30) me  lo  guardó.  O  sea,  me  pasó,  me  hizo  un
+
+(18:32) copy  show  running  config  a  startup
+
+(18:35) config.  me  volcó  la  configuración  de  la
+
+(18:37) memoria  al  archivo  que  persiste  en  la  NB
+
+(18:41) RAM  del
+
+(18:43) dispositivo.
+
+(18:45) Y  bueno,  con  eso  con  eso  en  acá  también
+
+(18:49) WRR  en  la  parte  derecha
+
+(18:52) con  eso  ya  configuré  el  telnet.  ¿Sí?
+
+(18:56) Entonces,  si  yo  vuelvo  a  mirar,  estoy
+
+(18:59) trabajando  siempre  el  lado  de  la
+
+(19:01) izquierda  y  después  lo  traslado  a  la
+
+(19:02) derecha,  ¿no?  Fíjense  que  las  interfaces
+
+(19:05) del  switch  están  todas  en  blanco.  Y  yo
+
+(19:08) les  conté  la  vez  pasada,  ¿sí?  Vamos  a
+
+(19:11) ver  de  vuelta  la  de  este  lado.  Do  show
+
+(19:13) run.  Vamos  a  verla  al  lado  derecho
+
+(19:16) también.  ¿Ves  que  están  todas  las
+
+(19:18) interfaces  en  blanco,
+
+(19:20) o  sea,  qué  quiere  decir  que  están  en
+
+(19:21) blanco?  No  están  configuradas.  Y  yo  les
+
+(19:23) dije  que  cuando  dos  switches  se  conectan
+
+(19:26) entre  sí,  minimizo  acá  y  minimizo  acá,
+
+(19:29) dos  switches  se  conectan  entre  sí,
+
+(19:31) primero  tienen  que  estar  conectados  con
+
+(19:32) cable  cruzado  porque  son  tienen  la  misma
+
+(19:35) funcionalidad.  Y  segundo,  que  cuando  se
+
+(19:39) manejan  muchas  vce,  los  puertos  donde
+
+(19:43) están  configurados  los  switches  para
+
+(19:46) conectarse  entre  sí  tienen  que  estar
+
+(19:47) configurados  como  troncales  o  como
+
+(19:49) trank.
+
+(19:51) Y  por  otro  lado,  los  puertos  donde  están
+
+(19:53) conectadas  las  PCs,  las  impresoras,  es
+
+(19:56) decir,  los  dispositivos  finales,  también
+
+(19:59) denominados  endpsints  en  inglés,  tienen
+
+(20:02) que  estar  configurados  como  puertos  de
+
+(20:04) acceso.  ¿Sí?  Entonces,  vamos  a  hacer
+
+(20:06) eso.  Sí,  si  yo  me  paro  acá  en  este
+
+(20:08) switch,  veo  que  había  conectado  en  el
+
+(20:11) puerto  24  e  un  switch  contra  el  switch
+
+(20:15) de  distribución,  o  sea,  el  switch  este
+
+(20:17) de  acceso  contra  el  switch  de
+
+(20:18) distribución.
+
+(20:20) Se,  ese  es  el  puerto  24  y  después  en  el
+
+(20:22) puerto  1  y  2  están  las  PCs,  o  sea,  los
+
+(20:25) puertos  1  y  2  deberían  estar  conectados,
+
+(20:27) deberían  estar  configurados  con  modo
+
+(20:28) acceso  y  los  puertos  24
+
+(20:32) de  los  switches  deberían  estar
+
+(20:34) configurados  este  como  troncales.  De  la
+
+(20:38) misma  manera  en  el  switch  de
+
+(20:40) distribución,  que  es  el  que  está  arriba,
+
+(20:43) ¿qué  pasa  con  el  switch  de  distribución
+
+(20:44) de  arriba?
+
+(20:47) Todos  los  puertos  están  conectados  a
+
+(20:50) switches,  no  hay  end  points.  Entonces,
+
+(20:53) todos  los  switches,  perdón,  todos  los
+
+(20:55) puertos  o  todas  las  interfaces
+
+(20:58) de  los  switches  de  distribución  tienen
+
+(21:01) que  estar  configuradas  como  troncales.
+
+(21:03) Sí,  porque  lo  único  que  se  conecta  a
+
+(21:05) ellas,  este,  salvo  el  de  arriba,  que  es
+
+(21:08) el  de  núcleo,  pero  por  lo  menos  los  dos
+
+(21:09) switches  de  distribución,  todos  sus
+
+(21:11) puertos  están  configurados,  eh,  perdón,
+
+(21:14) todos  sus  puertos  tienen  conectados
+
+(21:16) switches.  Sí.  Entonces,  tienen  que  estar
+
+(21:18) como  Tróncales.
+
+(21:20) Perdón,  profesor,  te  interrumpo.
+
+(21:23) Eh,  Claudio  Mesuti,  te  hago  una
+
+(21:27) consulta.  Eh,  ahí  cuando  estás  viendo,
+
+(21:30) digamos,  la  configuración,  ¿no?,  que  que
+
+(21:33) en  el  switch,  en  cada  switch,  ¿cómo  te
+
+(21:35) das  cuenta  eh  cuál  es  eh  Troncal?  ¿Cómo
+
+(21:39) te  das  cuenta  eh  si  si  está  digamos  un
+
+(21:42) puerto  en  un  puerto  la  PC  o  a  otro
+
+(21:44) switch?
+
+(21:47) Ahí  voy  con  eso.  Sí.  E
+
+(21:51) lo  primero  lo  miro,  digamos.  O  sea,  eh,
+
+(21:54) si  me  paro  acá,  digamos,  yo  yo  sé  dónde
+
+(21:56) yo  en  realidad  yo  sé  dónde  conecté  cada
+
+(21:58) cosa.  Yo  sé  que  la  PC  101  la  conecté  al
+
+(22:01) puerto  1,  la  PC  102  la  conecté  al  puerto
+
+(22:04) 2.  Sí.  Y  el  puerto  lo  conecté  hacia
+
+(22:08) arriba.
+
+(22:09) Eso  porque  lo  anotaste,  te  acordás,  pero
+
+(22:11) no  porque  lo  veas  ahí  algo  que  te  lo
+
+(22:13) identifique,  digamos,  en  lo  que  se  lee
+
+(22:15) ahí,  digo,
+
+(22:16) eh,  sí,  lo  podés  identificar  con  la
+
+(22:18) dirección  macadres.  ¿Ves  que  eh  aparece
+
+(22:21) a  la  a  la  derecha  dice  macadres?
+
+(22:24) Okay.
+
+(22:24) Veamos,  si  vos  agarrás  y  entrás  a  la  PC
+
+(22:27) y  ves  la  macadre  de  la  PC,  va  a
+
+(22:28) coincidir  con  esa.
+
+(22:29) Okay.  Okay.  Está  bien.  Sí,
+
+(22:31) sí.  Pero  bueno,  eh  lo  que  pasa  que  esto
+
+(22:33) quedó  en  la  clase  pasada,  pero  cuando
+
+(22:35) uno  eh  lo  eh  va  a  hacer  las  cosas,  va  a
+
+(22:38) configurar  como  yo  voy  a  seguir
+
+(22:39) configurando  ahora.
+
+(22:41) Eh  solo  deme  tiempo  porque  necesito
+
+(22:44) trabajar  un  poco  para  para  explicarles
+
+(22:46) las  cosas.
+
+(22:48) E
+
+(22:49) entonces,  lo  primero  que  voy  a  hacer  en
+
+(22:53) eh  no  voy  a  seguir  el  orden  de  la  guía,
+
+(22:55) lo  primero  que  voy  a  hacer  es  voy  a
+
+(22:56) configurar  los  puertos  troncales,  voy  a
+
+(22:59) configurar  los  puertos  de  acceso  y  le
+
+(23:01) voy  a  y  les  voy  a  dar  una  descripción  a
+
+(23:03) cada  uno.  Sí.  Entonces,
+
+(23:06) en  el  voy  a  ir  primero  con  este,
+
+(23:09) digamos,  con  el  switch  100.  Sí,  como  les
+
+(23:13) dije,  si  yo  miro  la  configuración,  las
+
+(23:15) interfaces  están  todas  vacías.  Sí.
+
+(23:18) Entonces,  voy  a  voy  a  voy  a  empezar
+
+(23:20) primero  por  la  interfaz  en  ahseño.
+
+(23:24) Las  interfaces  de  los  de  los  switches
+
+(23:27) que  no  se  usan  deberían  ser  por
+
+(23:30) seguridad  en  apagadas  o  en  la  herga
+
+(23:34) networking  sería  como  bajarlas,  bajar
+
+(23:37) las  interfaces,  o  sea,  sería  como
+
+(23:39) apagarlas,  ¿sí?  lógicamente.  Entonces,
+
+(23:41) vamos  a  hacer  eso.  Voy  a  poner  exit  para
+
+(23:44) volver  al  modo  configuración  global
+
+(23:46) porque  antes  estaba
+
+(23:48) en,  digamos  en  la  configurando  la
+
+(23:51) interfaz  virtual.  Entonces,  lo  que  voy  a
+
+(23:52) hacer  es  lo  siguiente.  Voy  a  poner
+
+(23:55) interface  range
+
+(23:58) y
+
+(23:59) este  comando  interface  range  me  permite
+
+(24:02) seleccionar
+
+(24:03) un  grupo  entero  de  interfaces.  O  sea,
+
+(24:06) por  ejemplo,  voy  a  ir  de  la  interfaz
+
+(24:10) 03
+
+(24:11) a  la  023,  que  no  son  las  que  estoy
+
+(24:15) usando.  Entonces,  las  voy  a  bajar  todas
+
+(24:17) y  pongo  FA0
+
+(24:20) barra  3-23,
+
+(24:24) o  sea,  estoy  seleccionando
+
+(24:26) los  puertos  del  3  al  23  inclusive.
+
+(24:31) Enter.  Y  fíjense  que  el  prom  cambió  a  if
+
+(24:34) range  ahora.  Y  ahora  voy  a  poner  un
+
+(24:37) comando  que  se  llama  shutdown,  que  lo
+
+(24:40) que  me  permite  es  bajar  las  interfaces
+
+(24:43) administrativamente,  es  decir,  apagarlas
+
+(24:45) administrativamente.
+
+(24:47) Y  ahora  si  yo  veo  el  archivo
+
+(24:49) configuración,  o  sea,  hago  un  do  show
+
+(24:51) run,  que  es  lo  que  tienen  que  hacer
+
+(24:52) ustedes  siempre  una  vez  que  cambian
+
+(24:54) algo,  fíjense  que  todas  las  interfaces
+
+(24:57) que  dice  de  la  3  a  la  23,  adentro  de  la
+
+(25:01) interfaz  tiene  el  comando  shoot,  que
+
+(25:03) quiere  decir  que  está  apagada.  Sí,  hasta
+
+(25:06) ahí  me  siguieron.
+
+(25:09) Sí,  perfecto.
+
+(25:10) Listo.  Entonces,  sigo  apretando  enter
+
+(25:13) para  que  lo  vean  y  vean  toda  la
+
+(25:15) configuración,  pero  si  quiero  salir,
+
+(25:17) aprieto  la  Q  y  sale  de  la  de  la  del
+
+(25:20) archivo  de  configuración.  Es  como  hacer
+
+(25:22) un  en  el  Linux  es  como  hacer  un  more  de
+
+(25:24) un  archivo,  el  el  show  run.  Bueno,  pero
+
+(25:27) del  archivo  de  configuración.
+
+(25:29) E
+
+(25:31) bien.  Entonces  ahora  lo  que  voy  a  hacer,
+
+(25:35) voy  a  poner  un  exit  acá  y  voy  a
+
+(25:37) configurar  el  el  puerto  troncal,  que
+
+(25:39) para  mí  es  uno  de  los  más  importantes.
+
+(25:41) Entonces,  voy  a  poner  interface.
+
+(25:43) ¿Cuál  es  el  puerto  troncal?  El  que  yo  eh
+
+(25:46) eh  decidí  que  sea  el  Troncal,  el  24.
+
+(25:49) Entonces,  interface  fa  0/24
+
+(25:53) y  ahí  entro  al  puerto  que  voy  a
+
+(25:56) configurar.  Y  lo  primero  que  voy  a  hacer
+
+(25:57) es  ponerle  una  descripción.  Le  voy  a
+
+(25:59) poner  description.  Sí.  Y  le  voy  a  poner
+
+(26:03) hacia  switch-
+
+(26:07) 10  guion  distribución.  Voy  a  poner.
+
+(26:10) Eso  lo  tenemos  que  hacer  con  todos  los
+
+(26:12) switches,  digamos.
+
+(26:16) Yo  les  voy  a  enseñar  eh  todo  y  cuáles
+
+(26:19) son  las  mejores  prácticas.  Después,  si
+
+(26:22) ustedes  no  quieren  ponerle  una
+
+(26:23) descripción,  pueden  no  hacerlo.  No  me  va
+
+(26:25) a  importar  eso  a  mí.  Eh,  lo  que  me
+
+(26:27) importa  es  que  funcione  lo  que  hacen,
+
+(26:29) pero  les  voy  a  mostrar  yo  cómo  trabajo
+
+(26:32) de  manera  prolija  o  cómo  me  gusta
+
+(26:34) trabajar  a  mí.  Y  el  que  quiere  seguir
+
+(26:36) esa  metodología  como  una  mejor  práctica
+
+(26:38) la  sigue  y  el  que  no  mientras  esté
+
+(26:40) configurado
+
+(26:43) no  pasa  nada.  Entonces,
+
+(26:45) profe,
+
+(26:45) ya  le  puse.
+
+(26:47) Sí,  perdón,  yo  tengo  una  duda,  quizás  me
+
+(26:49) perdí  en  algún  momento,  pero  vi  que  en
+
+(26:51) una  ventana  ustedes  tienen  la  PC  101  y
+
+(26:53) en  la  otra  el  Switch.  Eso  es  a  propósito
+
+(26:56) porque  no  me  queda  claro  si  hay  que
+
+(26:58) configurar  los  dos  switch  o  uno  se  hace
+
+(27:00) se  hace  de  la  PC  y  otro  se  hace  desde  la
+
+(27:02) terminal  del  Switch.
+
+(27:05) Lo  que  pasa  que  de  la  PC  101  estoy
+
+(27:08) conectado  por  Telnet  al  Switch
+
+(27:11) y
+
+(27:11) eso  es  lo  correcto  en  la  vida  real.  Lo
+
+(27:14) correcto  es  esto,  porque  si  no,  ¿cómo  te
+
+(27:16) conectas  al  Switch?  Bueno,  en  este  caso
+
+(27:19) podría  ser  por  Telet.  Ah,  ya  que
+
+(27:20) configuramos  el  telnet,  vamos  a  entrar
+
+(27:22) por  Telet.  Miren
+
+(27:24) en  cierro  acá  la  terminal.  Estoy  estoy
+
+(27:27) todavía  en  la  PC  101,  ¿lo  ves?
+
+(27:29) Sí.
+
+(27:30) Bueno,  ahora  voy  a  conectarme  por
+
+(27:32) Telnet.  Entonces,  ¿ven  este  icono  que
+
+(27:34) está  acá  que  dice  Telnet  y  SSH  client?
+
+(27:37) Toco  ahí,
+
+(27:40) selecciono  Telnet  porque  SSH  no  está
+
+(27:42) configurado  todavía
+
+(27:44) y  eh  le  voy  a  voy  a  voy  a  entrar  a  la  IP
+
+(27:47) del  Switch.  Uy,  no  me  acuerdo  de  la  IP
+
+(27:49) del  Switch.  A  ver,  me  paro  acá  arriba.
+
+(27:52) 192  168  1  Bueno,  era  lo  que  suponía,
+
+(27:56) ¿no?  Y  y  la  PC,  ¿cuál  tiene?  Uy,  a  ver,
+
+(27:58) me  voy  a  fijar.
+
+(28:00) ¿Cómo  me  fijo  la  PC?
+
+(28:02) Entro  acá,  IP  configuration  y  acá  dice
+
+(28:05) 101.  ¿Ven?
+
+(28:07) Entonces,  cierro,  vuelvo  acá  al  icono
+
+(28:11) que  dice  Telnet  SSH,  selecciono  Telnet  y
+
+(28:14) pongo  192  168  pun  eh  1.100
+
+(28:20) y  pongo  conectar.
+
+(28:24) Estando  en  la  PC,  me  voy  a  conectar
+
+(28:26) ahora  por  me  voy  a  conectar  por  Telnet,
+
+(28:28) ya  lo  configuré.  La  contraseña  era
+
+(28:30) clase.  Y  fíjense  que  ahora  ya  estoy
+
+(28:33) adentro  del  switch,  ¿ven?
+
+(28:36) Enable,
+
+(28:38) paso  del  modo  usuario  al  modo  al  modo
+
+(28:40) configur  de  vuelta.  Paso  del  modo
+
+(28:43) usuario  al  modo  privilegiado.  Como  le
+
+(28:46) había  configurado  una  contraseña  por
+
+(28:48) seguridad,  ahora  me  la  pide.  Era  UTN,
+
+(28:51) ¿se  acuerdan?
+
+(28:53) Y  ahora  pasé  al  modo  privilegiado.
+
+(28:56) Entro  al  modo  configuración  global  para
+
+(28:58) seguir  configurando  la  la  lo  que  estaba
+
+(29:00) haciendo.  Lo  que  estaba  configurando  era
+
+(29:02) la  interface  interface  FA0/24.
+
+(29:07) Sí,
+
+(29:08) por  las  dudas  pongo  do  WR  para  guardar
+
+(29:11) la  configuración  y  vuelvo  a  mirar  si  lo
+
+(29:14) que  hice  está  bien.
+
+(29:17) Do  show  run.
+
+(29:20) Bajo  hasta  el  final.
+
+(29:22) que  está  la  interfaz,  o  sea,  bajo  hasta
+
+(29:24) donde  lo  que  quiero  ver,  ¿qué  quiero
+
+(29:25) ver?  La  interfaz  esta  que  está  la  que
+
+(29:28) estoy  configurando,  la  24.  Entonces,
+
+(29:29) bajo  hasta  ahí.
+
+(29:31) La  descripción  quedó.  Sí,  listo,  quedó
+
+(29:33) la  descripción.  Estoy  respondiendo  la
+
+(29:35) pregunta  que  me  que  me  creo  que  me
+
+(29:37) preguntó  Claudio  en  cómo  sé  qué
+
+(29:40) interface.  Bueno,  vos  tenés  que
+
+(29:42) configurar  y  vos  tenés  que  declarar  que
+
+(29:45) como  la  conectaste  ahí,
+
+(29:47) digamos,  como  no  te  vas  a  acordar  más
+
+(29:49) adelante  le  pones  la  descripción.
+
+(29:53) Entonces,  yo  ya  sé  que  esta  interfaz  24
+
+(29:56) tiene  como  descripción  dice  hacia  switch
+
+(29:58) de  distribución,  es  decir,  que  el  cable
+
+(29:59) va  hacia  el  switch  de  distribución.  Sí.
+
+(30:03) Bueno,
+
+(30:04) y  empiezo  a  configurarlo.  Switch  port,
+
+(30:07) este  comando  switch  port,  signo
+
+(30:09) pregunta.  me  permite  eh  definir  el  modo
+
+(30:14) en  el  que  va  a  estar  configurado  el
+
+(30:15) puerto.  En  este  caso,  como  se  como  se
+
+(30:19) conecta  contra  otro  switch,  tiene  que
+
+(30:20) estar  configurado  como  troncal  y  también
+
+(30:23) me  va  a  permitir  configurar,  o  sea,  con
+
+(30:25) este  comando,  el  mode  después  del  switch
+
+(30:27) port  me  va  a  poder  voy  a  poder  decir  que
+
+(30:30) es  troncal  o  o  o  acceso  y  también  me  voy
+
+(30:35) a  poder  me  va  a  permitir  configurar  la
+
+(30:36) seguridad  del  puerto,  que  es  algo  que
+
+(30:38) les  voy  a  contar  después,  pero  déjenme
+
+(30:39) avanzar.
+
+(30:41) Switchboard  mode,  espacio,  signo
+
+(30:44) pregunta  otra  vez  y  ahí  me  dice  que
+
+(30:46) puedes  ponerlo  como  acceso  dinámico  o
+
+(30:48) troncal.  Sí,  nosotros  vamos  a  trabajar
+
+(30:51) con  acceso  y  con  troncal.  Entonces  este
+
+(30:53) en  este  caso  es  un  puerto  troncal  porque
+
+(30:55) se  conecta  contra  otro  switch.
+
+(30:58) Do  WR  para  guardar  la  configuración.  Do
+
+(31:01) show  run  para  mirar  si  y  bajo  hasta  la
+
+(31:03) interfaz  24.
+
+(31:06) Apreto  la  Q  para  salir  y  me  doy  cuenta
+
+(31:08) que  lo  que  yo  hice  ya  quedó  bien
+
+(31:11) establecido,  es  decir,  que  mi  puerto  ya
+
+(31:13) es  troncal  y  tiene  una  descripción,  que
+
+(31:16) era  lo  que  estaba  buscando.
+
+(31:19) Lo  mismo  tengo  que  hacer  en  el  switch  de
+
+(31:20) distribución  porque  yo  acá  estoy  en
+
+(31:23) origen,  pero  en  el  destino  también  tiene
+
+(31:25) que  estar  configurado  como  troncal  y
+
+(31:27) idealmente  también  tendría  que  tener  una
+
+(31:30) este  una  descripción,  pero  eso  lo  vamos
+
+(31:32) a  hacer  después.
+
+(31:34) Entonces,  ya  configuré  el  puerto  eh  eh
+
+(31:38) como  troncal.  Bien,  ahora  lo  que  voy  a
+
+(31:41) hacer  rápidamente  es  configurar
+
+(31:46) en  el  el  puerto  uno  y  el  puerto  dos.
+
+(31:49) Veamos,  el  puerto  uno  está  está  la  PC
+
+(31:51) 101  y  el  puerto  2  está  la  PC  102.  Acá  va
+
+(31:56) a  producirse  algo  e
+
+(32:01) eh  que  después  se  los  voy  a  comentar,
+
+(32:03) pero  primero  eh  vamos  a  ponerlo  como
+
+(32:06) modo  acceso.
+
+(32:08) Entonces,  pongo  exit  acá,  vuelvo  al  modo
+
+(32:11) configuración  global  y  ahora  hago
+
+(32:14) flechita  para  arriba  para  seguir  usando
+
+(32:17) los  mismos  comandos  que  usé  y  pongo
+
+(32:19) interface
+
+(32:20) fazer  barra.  Y  ahora  le  voy  a  poner  uno
+
+(32:23) acá.
+
+(32:25) Y  ahora  voy  a  usar  el  mismo  comando,
+
+(32:27) switch  por  mode.  Y  este  va  a  ser  un
+
+(32:30) puerto  acceso.  Switch  por  mode  access.  Y
+
+(32:33) lo  defino  como  acceso  y  le  pongo  una
+
+(32:35) descripción
+
+(32:37) de  vuelta  para
+
+(32:39) ser  un  buen  administrador  de  red  y  le
+
+(32:42) voy  a  le  voy  a  poner  PC-11.
+
+(32:47) Y  si  yo  pongo  do  para  guardar  la
+
+(32:50) configuración  y  pongo  do  show  run  para
+
+(32:52) mirar
+
+(32:54) como  cómo cómo  se  grabó  en  mi  archivo,
+
+(32:57) ahí  me  fijo  que  la  descripción  del
+
+(32:59) puerto  y  el  puerto  ya  quedó  como  acceso.
+
+(33:02) ¿Qué  pasa  si  el  puerto  eh  yo  tengo  como
+
+(33:05) el  puerto  2  tengo  conectada  la  PS2,  pero
+
+(33:08) no  está  definido  como  acceso,
+
+(33:11) pero  sin  embargo  yo  ahí  veo  que  lo
+
+(33:14) veo  que  lo  conecté  y  está  en  verde,  como
+
+(33:15) que  estaría  funcionando.
+
+(33:18) Está  funcionando,  pero  cuando  le  hable
+
+(33:19) le  va  a  pegar  la  etiqueta  de  Velan  y  no
+
+(33:21) va  a  entender  bien  lo  que  pasa  a  la
+
+(33:22) computadora.  No  lo  va  a  poder  saber
+
+(33:23) interpretar.
+
+(33:26) Bien,  exacto,  exacto.  Acá  funciona  todo
+
+(33:29) armónicamente  porque  todavía  no  están
+
+(33:31) configuradas  las  van  y  todo  está  en  la
+
+(33:34) van  uno  y  cuando  todo  está  en  la  van  un,
+
+(33:37) todo  se  ve  con  todo.
+
+(33:40) Pero  cuando  hagamos  la  segmentación  por
+
+(33:42) van,  si  el  puerto  no  está  definido  como
+
+(33:44) acceso,  no  toma  la  van.  Sí.
+
+(33:47) Entonces,  yo  todavía  no  lo  hice  eso
+
+(33:49) porque  todavía  no  cree  las  vans.  Les
+
+(33:51) estoy  explicando  un  poco  la  parte  y  lo
+
+(33:53) estoy  yendo  rápido  porque  yo  supongo  que
+
+(33:55) esto  ya  lo  hicieron,  pero  pero  para  el
+
+(33:57) que  no  todavía  no  entendió  algunas
+
+(33:58) cosas,  eh  lo  estoy  como  haciendo  un
+
+(34:01) pequeño  refresh.  Entonces,  bueno,
+
+(34:04) yo  lo  que,  perdón,  no,  en  lo  que  estaba
+
+(34:07) en  lo  que  estuve  practicando  ahí  creo
+
+(34:08) que  le  pifié.  Eh,  yo  conecté  el  Switch
+
+(34:11) 100  con  el  switch  200  en  vez  del  de
+
+(34:14) distribución,  o  sea,  no  sería  lo
+
+(34:16) correcto.  Eso  está  mal.  Okay,
+
+(34:18) lo  expliqué  la  clase  pasada.  Es  está
+
+(34:19) mal.
+
+(34:20) Está  pésimo.  Sí.  Okay.
+
+(34:22) Porque  digamos  estás  conectando  el  piso
+
+(34:25) uno  con  el  piso  dos  y  eso  queda  aislado.
+
+(34:28) Si  tú  si  si  realmente  siguiéramos
+
+(34:30) haciendo  el  ejercicio,  tendríamos  piso
+
+(34:32) tres  y  cuatro.
+
+(34:33) Claro.
+
+(34:34) Eh,  no  podrías  tener  acceso  al  al  piso
+
+(34:37) tres  y  cuatro  que  irían  conectados  al
+
+(34:39) switch.  20  de  distribución  y  no  se
+
+(34:41) podría  conectar  el  piso  uno  y  dos  con  el
+
+(34:44) tres  y  el  cuatro  porque  eh  quedan
+
+(34:46) aislados  y  además  está  mal,  digamos,
+
+(34:48) conceptualmente  desde  el  punto  de  vista
+
+(34:50) topológico  está  mal.  Claro,  claro.
+
+(34:53) Profe,  yo  tenía  una  yo  tenía  una  duda
+
+(34:56) que  que  creo  que  ahora  la  respondió,
+
+(34:59) pero  eh  yo  tenía  justo  esa  duda  de  antes
+
+(35:02) de  que  configuremos  el  modo  acceso  y  el
+
+(35:04) modo  trunk,  eh  si  yo  tiraba  un  pin  de,
+
+(35:06) no  sé,  de  la  PC  101  a  la  2011  tenía  la,
+
+(35:10) o  sea,  llegaba  y  me  respondía  lo  más
+
+(35:12) bien.  Entonces,  el  problema  de  eso  es
+
+(35:14) que  si  yo  después  configuro  una  van  o
+
+(35:17) dos  vilan,  voy  a  tener  problemas  si  yo
+
+(35:19) no  configure  el  modo  de  los  puertos.
+
+(35:22) Te  voy  a  responder  en  un  rato  cuando
+
+(35:24) cuando  llegue  a  ese  punto  de  configurar
+
+(35:26) las  vilas  y  lo  vas  a  ver.
+
+(35:27) Okay.
+
+(35:29) Eh,  así  que  eh  tranqui,  tranqui.  Eh,
+
+(35:31) déjenme  avanzar  porque  me  están  haciendo
+
+(35:33) preguntas  de  cosas  más  adelante  e  yo
+
+(35:37) estoy  yendo  un  poco  más  eh  desde  lo
+
+(35:39) llano  para  llegar  a  eh  allá.  Entonces,
+
+(35:44) entré  al  puerto  dos  y  vo  y  acabo  de
+
+(35:46) ponerle  la  descripción  al  puerto  dos.
+
+(35:49) Eh,  entonces  ahora  le  voy  a  poner  como
+
+(35:51) modo  acceso.  Hago  flechita  hacia  arriba,
+
+(35:53) ¿sí?,  para  no  escribir  todo  de  vuelta  y
+
+(35:56) pongo  switchbard  mode  access,  ¿sí?  Wr
+
+(35:59) para  guardar  la  configuración.  Y  ahora
+
+(36:02) ya  tengo  los  dos  PCs  con  eh  digamos
+
+(36:05) tengo  el  switch,  tengo  conectadas  las
+
+(36:06) dos  PCs,  las  dos  puertos  están  como
+
+(36:09) acceso  y  el  puerto  como  troncal  hacia  el
+
+(36:10) switch  de  distribución.  O  sea,  que  hasta
+
+(36:12) ahora  venimos  bien.
+
+(36:16) Este  mismo  trabajo  que  hice  acá
+
+(36:19) hay  que  hacerlo  todo  en  el  switch  que
+
+(36:20) está  al  lado.  ¿Sí?  Eh,  con  lo  cual  lo
+
+(36:24) voy  a  hacer  muy  rápido,  pero  lo  voy  a
+
+(36:26) hacer  muy  rápido  porque  eh
+
+(36:30) necesito
+
+(36:32) eh  necesito  esa  eh  esa  configuración
+
+(36:35) hecha  para  mostrarles  las  otras
+
+(36:37) funcionalidades  que  es  eh  con  las  vance.
+
+(36:40) Entonces,  lo  que  voy  a  hacer  es  voy  a
+
+(36:41) minimizar  esto  simplemente  como  para  que
+
+(36:44) vean  que  estoy  trabajando  acá.  Y  ahora
+
+(36:46) lo  voy  a  hacer  rápido.  Sí,  voy  a  ir  más
+
+(36:48) rápido  ahora.
+
+(36:50) eh  enable
+
+(36:52) UPN.
+
+(36:54) Y  ahora  voy  a  poner  conface
+
+(36:58) range
+
+(37:00) y  pongo  fa  0/3-
+
+(37:05) 23
+
+(37:07) shutdown.
+
+(37:08) ¿Cómo  hago  para  si  yo  con  el  comando
+
+(37:11) shoot  down?  Eh,  miren,  lo  voy  a  hacer.
+
+(37:15) Voy  a  poner  inter.  Ahora  voy  a
+
+(37:17) configurar  el  puerto  un  interface  fa/1,
+
+(37:21) o  sea,  y  ahora  le  pongo  shoot  down.
+
+(37:25) Fíjense  que  se  me  puso  en  rojo  acá
+
+(37:28) porque  como  apagué  el  puerto  donde
+
+(37:31) estaba  conectado  esa  PC,  lo  apagué,  lo
+
+(37:33) apagué,  lo  lo  bajé.
+
+(37:36) Se  quedó  sin  conectividad  la  PC,  la
+
+(37:38) 2011.  Sí.  Este,
+
+(37:43) ¿cómo  hago  ahora?
+
+(37:45) para  restablecer  la  configuración,  o
+
+(37:47) sea,  para  volverlo  a  levantar  el  puerto.
+
+(37:50) Bueno,  la  forma  de  trabajar  del  sistema
+
+(37:53) operativo  de  los  switches,  de  los  router
+
+(37:55) y  los  dispositivos
+
+(37:57) de  networking,  en  este  caso  los  Cisco,
+
+(38:00) si  yo  quiero  en  modificar  el  comando
+
+(38:04) anterior,  lo  la  forma  de  hacer  que  en
+
+(38:07) vez  de  este  shoot  down  esté  no  shoot
+
+(38:09) down,  o  sea,  es  decir,  esté  levantado,
+
+(38:12) es  justamente  haciéndole  una  negación  a
+
+(38:14) ese  comando,  es  decir,  no  shoot  down.
+
+(38:19) y  ahí  automáticamente  lo  vuelve  a
+
+(38:21) levantar.  O  sea,  si  si  yo  hice  una
+
+(38:25) configuración  errónea,  tengo  que  usar
+
+(38:27) esa  misma  configuración  y  ponerle  un  no
+
+(38:29) adelante  y  con  eso  con  esa  negación  es
+
+(38:32) como  que  e
+
+(38:35) invalido  la  configuración  esa  que
+
+(38:37) escribí  por  error  o  en  este  caso  en  el
+
+(38:39) puerto  eh  el  no  shoot  down  sería  como
+
+(38:41) levantarlo.  Sí.
+
+(38:44) Entonces  voy  a  ponerle  una  descripción,
+
+(38:46) como  dije,  PC-201
+
+(38:48) para  hacer  prolijo  y  voy  a  poner  el
+
+(38:50) puerto  como  acceso.  Switch  port  mode
+
+(38:53) access.
+
+(38:56) Sí,  DR  para  guardar.  Y  voy  a  hacer  esto
+
+(38:59) mismo  con  el  puerto,  flechita  para
+
+(39:02) arriba.  Voy  a  hacer  esto  por  con  el
+
+(39:04) puerto  dos.  Description
+
+(39:07) PC  gu-  202.  Creo  que  arriba  me
+
+(39:10) confundan.  Está  bien.  2011.  Y  acá  voy  a
+
+(39:12) poner  flechita  hacia  arriba,  switch  por
+
+(39:14) mode  access.  Bien.  Do  WR  para  guardar  la
+
+(39:18) configuración.  Do  show  run  para  ver  qué
+
+(39:21) pasó.
+
+(39:25) Entonces  quedaron  configurados  los
+
+(39:27) puertos  uno  y  dos  con  las  PCs  como
+
+(39:29) corresponde
+
+(39:31) y
+
+(39:32) eh  me  falta  el  puerto  24  que  lo  voy  a
+
+(39:35) configurar  como  troncal  porque  los  otros
+
+(39:37) como  les  puse  están  shootown.
+
+(39:40) Exit  para  volver  atrás
+
+(39:43) y  flechita  hacia  arriba.  Voy  a  poner
+
+(39:47) FA
+
+(39:48) FA0/24.
+
+(39:51) Description.  Voy  a  poner  hacia
+
+(39:54) switch  guion  distribución
+
+(40:00) y  acá  le  voy  a  poner  switchbard  mode
+
+(40:04) trank.
+
+(40:06) Sí.
+
+(40:08) Perfecto.  Bien,  teniendo  esto  ya
+
+(40:11) configurado,  ya  tengo  los  dos  switches
+
+(40:13) configurados  de  la  misma  manera.  Ahora
+
+(40:16) lo  que  voy  a  hacer  es  configurar  las
+
+(40:18) vans,  ¿sí?  Y  acá  es  donde  viene  la  parte
+
+(40:21) importante.
+
+(40:24) Vamos  a  poner  un  cachito  más.  Así.  Ahí
+
+(40:27) está.  Bueno,  a  ver,  déjenme  ver  qué
+
+(40:29) decía  las  van.  el  lo  que  es  la  seguridad
+
+(40:31) de  los  puertos.  Lo  voy  a  contar  en  un
+
+(40:33) ratito.  Primero  voy  a  configurar  las
+
+(40:34) vance.
+
+(40:36) Ah,  no,  lo  voy  a  lo  voy  a  comentar  ahora
+
+(40:38) porque  si  no
+
+(40:40) si  no  lo  comento  ahora  e  después  eh
+
+(40:44) tengo  que  hacer  eh  un  unas
+
+(40:46) modificaciones.
+
+(40:50) Vamos  a  ver  entonces  la  la  seguridad  en
+
+(40:53) los  puertos  la  voy  a  hacer  en  un
+
+(40:54) solamente  en  un  lugar  y  después  ustedes
+
+(40:56) la  tienen  que  hacer  o  propagar  para  las
+
+(41:00) cuatro  PC  que  están  acá.  Sí,  yo  la  voy  a
+
+(41:02) hacer  para  una  sola.
+
+(41:04) Entonces,  exit.  Voy  a  hacerla  con  la
+
+(41:07) PC1,  ¿sí?  Que  es  con  la  que  estoy
+
+(41:09) conectado  y  lo  van  a  ver  en  vivo  y  en
+
+(41:11) directo.  Sí.
+
+(41:14) Entonces,  interface
+
+(41:17) FA0/1,
+
+(41:18) es  decir,  que  voy  a  voy  a  trabajar  sobre
+
+(41:21) la  interfaz  0/1,  pero  para  eso,  estando
+
+(41:25) acá  en  la  PC,  en  la  PC1,  que  además  de
+
+(41:29) eso  yo  estoy  conectado  al  switch  por
+
+(41:33) Telnet,  me  voy  a  fijar  cuál  es  la
+
+(41:36) dirección  MACres  de  esta  PC.  Entonces,
+
+(41:39) voy  acá  a  la  parte  de  configuración,
+
+(41:41) voy  a  la  parte  de  fase  ethernet  y  voy  a
+
+(41:44) copiar  esta  esta  macadres.  La  voy  a
+
+(41:47) copiar.  Control  C  porque  la  voy  a
+
+(41:49) necesitar.  Sí,  la  voy  a  copiar.  Me  la
+
+(41:52) copio.  Sí,  vuelvo  de  vuelta  acá  al
+
+(41:56) escritorio,  al  desktop,  que  tengo
+
+(41:58) abierto  el  la  conexión  por  Telnet.
+
+(42:01) Y  lo  que  voy  a  hacer  ahora  es
+
+(42:02) configurarle  la  seguridad  del  puerto.
+
+(42:04) ¿Qué  es  la  seguridad  del  puerto?  Bueno,
+
+(42:07) justamente  cuando  yo  quiero  agregarle
+
+(42:09) seguridad  a  la  red,  sí,  lo  que  puedo
+
+(42:12) hacer  es  configurar  que  en  el  puerto  del
+
+(42:16) switch
+
+(42:17) solamente  me  deje  conectar  la  PC  que
+
+(42:22) tenga  una  determinada  Mcadres.  Y  esa  PC,
+
+(42:25) digamos,  como  yo  conozco  la  Mcadropiar,
+
+(42:29) se  la  voy  a  impactar  en  la  configuración
+
+(42:31) al  Switch.  Y  si  yo  desconecto  el  cable
+
+(42:34) de  esa  PC  y  conecto  otra  PC,  obviamente
+
+(42:37) la  otra  PC  va  a  tener  una  Mcadre
+
+(42:39) distinta.  Entonces  el  Switch  se  va  a  dar
+
+(42:42) cuenta  que  esa  Mcadres
+
+(42:44) no  es  la  que  tiene  configurada  el  puerto
+
+(42:47) y  automáticamente  el  puerto  se  va  a
+
+(42:49) bajar.
+
+(42:51) Conceptualmente  eso  se  hace
+
+(42:54) con  esta  configuración  que  está  acá,
+
+(42:56) ¿sí?  que  es  la  que  aparece  en  la  guía  y
+
+(42:59) que  nosotros  la  vamos  a  hacer  y  la  vamos
+
+(43:02) a  trabajar  ahora  y  lo  vamos  a  mostrar.
+
+(43:05) Entonces,  fíjense  que  con  el  comando
+
+(43:07) switchport  entro  a  lo  que  es  switch  port
+
+(43:10) por  security
+
+(43:12) y  le  configuro  la  MACADR.  Entonces,
+
+(43:14) vamos  a  hacer  eso.
+
+(43:16) Entonces,  switch,  supongamos  que  no  no
+
+(43:19) tengo  la  guía,  no  me  acuerdo  cómo  cómo
+
+(43:22) configurarlo.  Bueno,  yo  sé  que  el
+
+(43:23) comando  switchw  si  pongo  signo  de
+
+(43:24) pregunta  me  muestra  todo  esto.  Y  fíjense
+
+(43:28) que  acá  dice  por  security,  security
+
+(43:30) related  command,  ¿sí?,  o  sea,  es  la
+
+(43:32) sería  como  la  ayuda  que  necesito  para
+
+(43:35) trabajar  cuando  no  me  acuerdo.  No  me  voy
+
+(43:37) a  acordar  los  comandos  de  memoria.  Yo
+
+(43:38) tampoco  me  los  acuerdo  de  memoria.
+
+(43:39) Algunos  sí,  pero  otros  no.  Switch  por
+
+(43:42) security.
+
+(43:44) Enter.  Con  eso  a  secas  habilité  el  port
+
+(43:49) security  en  el  switch,  en  el  puerto  ese.
+
+(43:52) Ahora,  switch  por  security.  Signo  de
+
+(43:55) pregunta,
+
+(43:59) el  comando  máximum,  digamos,  switch  por
+
+(44:02) security  maximum  me  dice  cuántas  macadre
+
+(44:06) podés  querés  que  sean  reconocidas.
+
+(44:09) Yo  quiero  que  sea  una  sola,  entonces
+
+(44:10) pongo  uno.  Enter.
+
+(44:14) Ahora  que  configure  eso,  switch  port  por
+
+(44:17) security,
+
+(44:19) signo  de  pregunta  otra  vez
+
+(44:22) y  fíjense  que  dice  macadres.  Okay.
+
+(44:25) Switch  por  segurity,  macadres.  Y  acá
+
+(44:28) signo  de  pregunta  y  me  dice  la  forma  en
+
+(44:31) la  que  tiene  que  estar  configurada  la
+
+(44:32) macadres.  Y  la  forma  es  esta  que  dice  h.
+
+(44:36) H.  Si  yo  pongo  botón  derecho  pegar,
+
+(44:40) fíjense  que  la  macadres  está  puesta  con
+
+(44:44) esa  nomenclatura.  Fíjense  que  tiene
+
+(44:48) cuatro  caracteres,  un  punto,  cuatro
+
+(44:50) caracteres,  un  punto,  cuatro  caracteres,
+
+(44:51) un  punto.  La  macadre  se  escribe  de  otra
+
+(44:54) manera.  También  se  escribe  un  carácter,
+
+(44:56) dos  puntos,  otro  carácter,  dos  puntos  y
+
+(44:58) así.  Sí.
+
+(45:01) No  importa  la  nomenclatura  que  se  use,
+
+(45:04) las  macares  tienen  48  bits  o  son  eh  seis
+
+(45:09) eh  seis  eh  6  bytes  serían.  Sí,  6*  8  48.
+
+(45:14) Sí.  En  eh  por  eso  son  48  bits
+
+(45:20) entonces  porque  cada  cada  carácter,  o
+
+(45:23) sea,  si  yo  tomo  dos  caracteres,  esto  es
+
+(45:26) un  byte,  un  byte,  los  otros  dos
+
+(45:28) caracteres,  otro  byte  y  así.  Y  son  6
+
+(45:30) bytte,  ¿sí?  6  por  8  cada  byte  son  8
+
+(45:34) bits,  48.
+
+(45:36) Presiono  enter
+
+(45:38) y  me  dice
+
+(45:40) duplicated.
+
+(45:43) Okay,  eso  quiere  decir  que  como  las  PCs
+
+(45:47) e  vamos  a  cambiarle  la  macadr  a  la  PC.
+
+(45:49) Hay  otra  en  el  workspace,  o  sea,  hay
+
+(45:52) otra  PC  que  tiene  la  misma  macadres,
+
+(45:55) entonces  se  la  vamos  a  cambiar  al
+
+(45:57) switch.  Venimos  acá  a  la  configuración  y
+
+(46:00) le
+
+(46:00) eso  en  la  vida  real  no  debería  pasar,
+
+(46:02) ¿no?  O  sea,  que  tengan.
+
+(46:04) Perfecto.  Esto  es  porque  es  el
+
+(46:05) simulador.  Sí.  Eh,  y  las  PC  fueron  como
+
+(46:09) clonadas  o  copiadas  o  algo  así.
+
+(46:11) Entonces,  vamos  a  agarrar  y  le  vamos  a
+
+(46:13) modificar  la  E  por  la
+
+(46:17) G.  Sí,  por  la  G.
+
+(46:22) Lo  copio  acá  de  vuelta.
+
+(46:29) Bueno,  me  tiró  un  error,  no  le  gustó.
+
+(46:33) Tiene  que  ser  hexadecimal  o  no,  profe.
+
+(46:38) Esperen  un  cachito  que  voy  a  cerrar.
+
+(46:41) No,  aparte  estoy  conectado  ya.  Tu  WR
+
+(46:47) le  vamos  la  vamos  a  setear.  Le  voy  a
+
+(46:49) poner  eh  le  voy  a  poner  acá  en  vez  de
+
+(46:52) una  E  le  pongo  una  eh  una  B.  A  ver  si  me
+
+(46:56) la  toma.
+
+(46:59) Listo,  le  puse  una  B.
+
+(47:02) Le  puse  una  B.  Ahora  la  pecesa  le  vamos
+
+(47:04) a  la  vamos  a  cambiar  por  la  B.  Sí.  Eh,  y
+
+(47:07) lo  voy  a  hacer  ahora
+
+(47:10) porque  si  no
+
+(47:12) eh,  bueno,
+
+(47:16) la  voy  a  hacer  ahora  a  propósito  para
+
+(47:18) que  ustedes  vean  el  comportamiento.
+
+(47:22) Voy  de  vuelta  acá  y  acá  la  cambio  con
+
+(47:23) una  B.
+
+(47:25) Sí,
+
+(47:26) pero  ahora  el,  o  sea,  el  verde  no
+
+(47:30) debería  haber  caído
+
+(47:32) o  no  coincida  la  macadres.
+
+(47:35) Lo  hice  a  propósito.  ¿Ven?
+
+(47:38) Ahora  que  yo  la  cambié,  hizo  como  un
+
+(47:40) refresh  y  se  dio  cuenta  que  que  no  era
+
+(47:43) la  B  y  me  bajó  el  puerto.  Sí,  porque  me
+
+(47:47) vine  acá  y  como  estaba  todavía  la  E,
+
+(47:49) claro,
+
+(47:50) le  hizo  un  Es  como  que  hiiz  un  refresh  y
+
+(47:52) se  dio  cuenta  que  no  era  y  la  bajó.
+
+(47:54) Pero  se  dieron  cuenta  del  comportamiento
+
+(47:57) y  obviamente
+
+(47:59) yo  ya  no  no  estoy  más  conectado.  Ven,
+
+(48:02) ven  que  estoy  acá,  quiero  hacer  enter  y
+
+(48:05) no  pasa  nada  porque  me  sacó.  Perdí  la
+
+(48:08) perdí  la  conexión.
+
+(48:09) Sí,
+
+(48:10) ¿ven?  Perdiste  la  conexión.  ¿Queres
+
+(48:12) establecerla?  Le  pongo  que  sí.  A  ver,
+
+(48:16) a  ver  qué  pasa.
+
+(48:20) No  se  conecta.  ¿Alguien  sabe  por  qué?
+
+(48:25) Porque  está  shutdown  el  puerto.
+
+(48:28) Exactamente.  El  puerto  está  shutdown
+
+(48:31) y  el  puerto  no  se  vuelve  a  levantar  solo
+
+(48:34) cuando  uno  le  genera  una  violación  de
+
+(48:37) seguridad.
+
+(48:38) El  puerto  queda  bajo.  Sí.  Y  y  al  quedar
+
+(48:42) bajo,  la  única  manera  de  poder
+
+(48:45) restablecerlo  es  que  el  administrador  de
+
+(48:47) la  red  lo  levante  en  forma  manual.  Sí,
+
+(48:50) porque  queda  queda  marcado  en  un  log  del
+
+(48:53) switch  que  fue,  digamos,  un  evento  de
+
+(48:56) violación  de  puerto  de  de  la  seguridad
+
+(48:58) del  puerto.  Sí.  Eh,  y  fíjense,  ahora  me
+
+(49:01) voy  a  conectar  e  ya  que  tengo  el  cable
+
+(49:04) de  Telnet  ahí,  lo  voy  a  conectar  eh  por
+
+(49:07) Telnet.  Sí,
+
+(49:08) eso  es  el  violation  shutdown,  o  sea,  que
+
+(49:11) al  sufrir  una  violación  se  apagada.
+
+(49:15) Miren,  miren  lo  que  dice  acá.
+
+(49:20) Ven  por  security  violation.  Security
+
+(49:24) violation  occured  causado  por  la
+
+(49:28) macadres.
+
+(49:29) Sí.  Entonces  lo  que  tengo  que  hacer  es
+
+(49:35) ir  al  modo  UTN
+
+(49:38) showram.  Vamos  a  poner
+
+(49:45) switch  por  security.
+
+(49:49) Bueno,  no  grabó  la  configuración,  se  dan
+
+(49:51) cuenta,  pero  porque  la  violé  antes  de
+
+(49:53) que  veamos  antes  de  que  antes  de
+
+(49:56) grabarlo,  eh,  se  dan  cuenta  la  violación
+
+(49:59) ocurrió  igual,  entonces  no  se  terminó  de
+
+(50:01) no  de  grabar.  Entonces,  lo  que  vamos  a
+
+(50:03) hacer  ahora,  voy  a  poner  conf.
+
+(50:06) Voy  a  copiar  la  macadresses  para  poner
+
+(50:08) la  macadresses  correcta,  que  en  esta  en
+
+(50:09) este  caso  era  la  B.  La  copio
+
+(50:16) y  lo  voy  a  configurar  bien  como
+
+(50:17) corresponde.  Entonces  pongo  interface  fa
+
+(50:21) 0/1
+
+(50:23) y  ahora  pongo  switch  por
+
+(50:26) switch  por
+
+(50:29) signo  pregunta
+
+(50:33) por  security  signo  de  pregunta
+
+(50:37) macadres
+
+(50:40) y  pego.
+
+(50:43) Ahí  me  la  tomó.  ¿Ven?  Antes  no  me  la
+
+(50:45) tomaba  porque  la  la  B  era  eh  era
+
+(50:50) A  ver  si  la  otra  no  tiene  el  otra  PC  no
+
+(50:52) tiene  puesta  la  B.  Déjenme  mirar  una
+
+(50:54) cosa  porque
+
+(50:59) la  102  tiene  la  C,  me  parece.
+
+(51:03) Sí,  tiene  la  C.  Bien,  perfecto.
+
+(51:08) Bien.
+
+(51:11) Bueno,  ahí  estamos.  Yo  me  perdí,  ¿cuál
+
+(51:13) era  la  que  se  repetía?
+
+(51:15) Eh,  la  e  me  parece  que  es  la  que  se
+
+(51:17) repetía.  Entonces,  y  acá  y  acá  me  falta
+
+(51:20) poner  el  otro  comando  que  es  este  que
+
+(51:22) está  acá,  el  violation  shutdown,  este  en
+
+(51:26) switch  port  por  security,  signo  de
+
+(51:29) pregunta,  violation,  signo  de  pregunta
+
+(51:32) shutdown.  O  sea,  acá  estoy  configurando
+
+(51:35) el  modo  de  violación  que  por  default  es
+
+(51:37) shutdown,  pero  lo  estoy  poniendo  en
+
+(51:39) forma  explícita  porque  existen  otros  dos
+
+(51:41) métodos.  que  no  importa  que  sea  cada
+
+(51:44) uno,  pero  nosotros  acá  enseñamos  el  de
+
+(51:46) Shutdown.
+
+(51:48) Entonces,  do  show  run,  porque  yo  quiero
+
+(51:51) ver  que  cómo  quedó  configurado.  Y
+
+(51:54) fíjense  ahora,  fíjense  ahora.
+
+(51:57) Si  bien  el  puerto  está  abajo,  que  está
+
+(51:59) abajo  a  propósito,  yo  estoy  conectado
+
+(52:01) por  Telnet  porque  nunca  lo  levanté  el
+
+(52:03) puerto.
+
+(52:05) Estoy,  perdón,  estoy  conectado  por
+
+(52:07) consola  con  el  cable,  digamos,  de
+
+(52:09) consola  que  era  el  de  color  celeste.  Sí,
+
+(52:13) cuando  estoy  conectado  por  consola  es  la
+
+(52:16) conexión  eh  autos  van  se  dice.  Sí,  o
+
+(52:19) sea,  no  importa  si  tengo,  no  tengo  IP,
+
+(52:21) no  me  importa.
+
+(52:23) E  entonces  estoy  conectado  por  consola,
+
+(52:25) pero  fíjense  que  yo  les  quiero  recalcar
+
+(52:28) cómo  quedó  la  configuración  con  el
+
+(52:29) Portity.  ¿Lo  ven?
+
+(52:32) Acá
+
+(52:34) quedó  la  descripción,  que  es  un  modo
+
+(52:36) acceso,  tiene  habilitado  el  por  security
+
+(52:38) y  además  tiene  este  seteada  cuál  es  la
+
+(52:41) macadres  y  eso  se  ve  en  el  archivo
+
+(52:43) configuración.  Sí.  Y  para  que  esto  se
+
+(52:45) guarde,  pongo  WR,  porque  como  no  lo
+
+(52:48) guardé  antes  porque  no  me  dejó,  porque
+
+(52:50) lo  hice  a  propósito.  Sí,  yo  le  le  puse
+
+(52:53) una  macadres  que  no  era  la  que  tenía
+
+(52:54) porque  antes  tenía  la  E  y  le  puse  la  B.
+
+(52:57) Se  dio  cuenta  de  eso  on  the  flight,  por
+
+(52:59) así  decirlo,  y  me  bajó,  me  desconectó.  Y
+
+(53:03) cuando  me  desconectó,  yo  no  había
+
+(53:05) grabado  la  la
+
+(53:07) los  cambios,  por  eso  no  se  veían.
+
+(53:11) Entonces,  ahora  sí  lo  lo  generé  bien
+
+(53:13) correctamente  y  lo  y  lo
+
+(53:17) y  lo
+
+(53:19) y  lo  guardé,  pero  el  switch  no  dice  pero
+
+(53:22) el  puerto  ese  no  dice  shoot  down  como
+
+(53:24) dice  el  puerto  3.  Entonces,  ¿por  qué
+
+(53:27) está  abajo?  está  abajo  por  esa  condición
+
+(53:30) especial  que  cuando  se  viola  la
+
+(53:32) seguridad  de  un  puerto  no  aparece  acá
+
+(53:35) como  shoot  down  en  la  configuración,
+
+(53:37) pero  hay  un  comando  que  se  llama  show  IP
+
+(53:41) interface  brief
+
+(53:44) y  le  voy  a  poner  un  do  adelante  porque
+
+(53:45) no  me  lo  va  a  tomar  porque  es  un  comando
+
+(53:47) que  no  va  a  reconocer  en  ese  lugar.
+
+(53:50) Y  fíjense,  fíjense,
+
+(53:54) este  comando  show  IP  interface  brief  me
+
+(53:58) hace  como  un
+
+(54:00) resumen  de  todas  las  interfaces.  Y
+
+(54:03) fíjense  que  la  interfaz  uno  aparece
+
+(54:06) estado  down,  protocolo  down.  Sí,
+
+(54:10) eso  quiere  decir  que  está  baja,  pero  no
+
+(54:12) aparece  en  el  archivo  configuración  como
+
+(54:14) shoot  down,  no  aparece  así  como  dice
+
+(54:18) acá.  Administrative  Down
+
+(54:22) porque  yo  no  la  bajé  manualmente,  se
+
+(54:24) bajó  por  una  violación  de  seguridad,  por
+
+(54:26) un  evento  de  violación  de  seguridad  que
+
+(54:29) aparece
+
+(54:31) identificado  en  un  archivo  de  log  switch
+
+(54:33) como  error  disable  y  eso  es  eso  si
+
+(54:37) quieren  ver  eso  ponen  así  do  show
+
+(54:41) interface  fa0/1
+
+(54:45) show  interface  fa0/1  muestra  toda  la
+
+(54:48) descripción  de  interface
+
+(54:50) toda.  Y  ahí  fíjense  que  aparece  esta
+
+(54:55) condición  especial  que  dice  error
+
+(54:57) disable.  Error  disable
+
+(55:00) hace  referencia  que  una  violación  de
+
+(55:03) seguridad  en  el  puerto.  ¿Se  entendió
+
+(55:05) todo?
+
+(55:07) Esa  es  toda  la  teoría  de  de  la  de  de de
+
+(55:10) digamos  de  la  violación  de  seguridad  del
+
+(55:11) puerto.
+
+(55:13) Entonces,  y  la  única  forma  de  sacarlo  de
+
+(55:16) ese  estado  es  entrando  en  la  interfaz
+
+(55:19) como  es  que  estoy,  haciendo  un  shutdown,
+
+(55:22) es  decir,  bajándola  administrativamente.
+
+(55:26) La  bajo  administrativamente,  aunque  ya
+
+(55:28) está  baja,  ¿no?  Porque  no  están  dando,  y
+
+(55:30) la  subo  de  vuelta  administrativamente,
+
+(55:32) no  shutdown.
+
+(55:34) Y  ahí  automáticamente  levanta  la
+
+(55:37) interfaz  de  vuelta  porque  primero  se
+
+(55:38) fija
+
+(55:40) si  la  macadres  es  la  que  él  tiene
+
+(55:42) grabada,  que  en  este  caso  es  correcto,
+
+(55:44) es  la  B.
+
+(55:46) y  lo  que  hace  eh  es  darle  paso,  o  sea,
+
+(55:51) darle  vía  libre  para  que  nuevamente  se
+
+(55:54) conecte  como  corresponde.
+
+(55:57) Y  ahora  acá  voy  a  poner  para  guardar  la
+
+(55:59) configuración  porque  quedó  perfectamente
+
+(56:02) e  como  corresponde.  Lo  que  voy  a  hacer
+
+(56:06) ahora  para  volverles  a  mostrar  el
+
+(56:08) comportamiento  una  vez  más,
+
+(56:11) voy  a  agregar  una  PC  al  escenario,
+
+(56:18) una  PC
+
+(56:20) que  va  a  ser  esta  que  está  acá.  Me  voy  a
+
+(56:23) fijar  qué  macadres  tiene.
+
+(56:27) Configuración,  interface.  Tiene  otra  que
+
+(56:30) otra  que  nada  que  ver.  Fíjense  que  tiene
+
+(56:32) D9  cualquiera,  no  tiene  nada  que  ver  con
+
+(56:34) la  otra.  Y  lo  que  voy  a  hacer  a
+
+(56:36) propósito,  veamos,  a  propósito,  la  voy  a
+
+(56:39) conectar.
+
+(56:41) Voy  a  quitar  esta  de  acá,
+
+(56:47) quito  el  cable  este,  lo  quito  ahí.  El
+
+(56:49) switch  me  dice  que  se  desconectó.
+
+(56:52) Y  ahora  voy  a  conectar  esta  otra  PC
+
+(56:56) que  yo  la  agregué  a  propósito.  La  voy  a
+
+(56:58) conectar  al  puerto  uno.
+
+(57:02) Ahí  la  conecté  al  puerto  uno.  Les  estoy
+
+(57:04) mostrando  el  switch  en  vivo  cómo  lo  ve.
+
+(57:08) El  switch
+
+(57:10) la  conectó,  pero  la  conectó  de  manera
+
+(57:12) mentirosa,  porque  yo  voy  a  venir  a  la
+
+(57:15) PC,  le  voy  a  poner  la  IP  estática.
+
+(57:22) 192  168.1.101.
+
+(57:28) Y  fíjense  que  ni  bien  le  configuré  la
+
+(57:30) IP.  ¿Qué  pasó
+
+(57:36) en  la  parte  derecho?
+
+(57:38) ¿Lo  ven  ahí?
+
+(57:39) Saló  la  violación.
+
+(57:40) Sí,  saltó  la  violación  al  toque  y
+
+(57:44) automáticamente  me  bajó  el  puerto  y  se
+
+(57:46) queda  grabado  eso,  ese  evento  de
+
+(57:49) seguridad  se  queda  grabado  en  en  el  log
+
+(57:51) del  switch  en  adentro.
+
+(57:56) Consulta  conectas  de  nuevo  la  101  o
+
+(57:59) perdón.
+
+(58:01) Eh,  y  ahora
+
+(58:04) ahora  lo  que  voy  a  hacer  es  voy  a  cerrar
+
+(58:07) esto,  voy  a  desconectar  otra  vez  para
+
+(58:10) porque  lo  que  quería  yo  es  mostrar  el
+
+(58:11) comportamiento.  Desconecto  esto,  la
+
+(58:14) borro.
+
+(58:20) Si  yo  acá  presiono  enter,  o  sea,  yo  acá
+
+(58:23) deo  el  switch  porque  estoy  conectado  por
+
+(58:25) el  cable  eh  de  consola,  ¿sí?  Que  no
+
+(58:28) importa  si  tiene  red  o  no  red,  yo  estoy
+
+(58:30) conectado  por  el  cable  este  famoso  para
+
+(58:33) tener  una  conexión  autos  band.  Ahora
+
+(58:36) vuelvo  a  conectar  esta  PC,  la  101,  que
+
+(58:39) tiene  la  macadres  correcta.
+
+(58:41) A  esta  la  conecto,  le  doy  con  la
+
+(58:43) flechita  esta  para  que  pase  rápido  el
+
+(58:45) tiempo,  pero  ven  que  la  conecté  y  no  no
+
+(58:47) pasa  nada,
+
+(58:50) no  pasa  nada  porque  el  puerto  tiene  la
+
+(58:52) violación  de  seguridad,  digamos,  este
+
+(58:55) activada  y  por  más  que  yo  le  conecte  la
+
+(58:58) PC  que  tiene  la  macadre,  por  ejemplo,
+
+(58:59) vino  el  otro  día  la  persona  que  tiene
+
+(59:01) esa  laptop,  eh  la  conecta  y  y  dice,
+
+(59:04) "Che,  no  me  anda."  ¿Por  qué  no  me  anda?
+
+(59:07) llama  al  al  soporte  técnico  y  le  dice,
+
+(59:10) "Mira,  no  me  anda  la  PC.  El  soporte
+
+(59:12) técnico,  si  es  el  que  administra  la  red,
+
+(59:14) lo  hace  él."  O  si  no,  le  avisa  al
+
+(59:16) administrador  de  la  red.  El
+
+(59:17) administrador  de  red  ve  esto  y  le  dice,
+
+(59:19) "Che,  mira,  en  en  tu  en  tu  escritorio,
+
+(59:23) el  en  el  escritorio  en  el  que  estás,  en
+
+(59:25) el  101,  vino  una  persona  y  se  conectó  a
+
+(59:28) la  red  con  otra  con  te  desconectó  la
+
+(59:31) computadora  a  vos  desde  la  red  y  conectó
+
+(59:34) otra."
+
+(59:36) Entonces,  bueno,  el  puerto  se  se  bajó  y
+
+(59:39) bueno,  entonces  el  administrador  de  red
+
+(59:41) le  dice,  "Mira,  tené,  fíjate  bien,  tené
+
+(59:43) cuidado  con  esto,  este  que  no  nadie  se
+
+(59:46) siente  en  tu  escritorio
+
+(59:48) o  que  si  se  sienta  no  te  desconecte  tu
+
+(59:50) computadora  y  conecte  otra."  Entonces
+
+(59:53) viene  y  hace  un  shutdown
+
+(59:57) en  ese  puerto  y  un  no  shutdown  en  ese
+
+(60:00) puerto  y  automáticamente  se  lo  levanta.
+
+(60:04) Hasta  acá  se  entendió  todo.
+
+(60:08) Sí,  sí.  Lo  que  no  entendí  es  por  qué  le
+
+(60:10) tuvo  que  poner  la  IP  address  para  que
+
+(60:13) empiece  a  conectarse,
+
+(60:17) porque  de  alguna  manera  le  tengo  que
+
+(60:18) forzar  que  que  que  haga  una  vinculación
+
+(60:21) este  eh  para  que  entienda  que  que
+
+(60:26) [carraspeo][tos]  para  que  para  que
+
+(60:28) muestre  el  evento,  ¿sí?  Digamos,  eh,  de
+
+(60:31) alguna  manera  hay  que  forzarle  algo,
+
+(60:33) hacer  algo  para  para  que  se  produzca  el
+
+(60:36) evento.  Sí.
+
+(60:38) Okay.  Okay.  O  sea,  no  alcanzaba  con  solo
+
+(60:41) poner  el  cable,  sino  también  aclarar,
+
+(60:43) ¿no?  Necesitaba  forzar  a  hacer  algo,
+
+(60:46) digamos,  conectarme,  tirar  un  ping,  algo
+
+(60:48) tenía  que  hacer,  digamos,  para  que  para
+
+(60:51) que  lo  vean,  ¿sí?  Para  forzar  a  que  a
+
+(60:54) que  se  produzca  eso,
+
+(60:56) ¿sí?
+
+(60:58) O  sea,  para  que  el  Switch  interactúe  con
+
+(61:00) la  PC.  Algo  tenía  que  pasar  para  que  se
+
+(61:02) dé  cuenta  de  eso.  Yo  lo  hice  a
+
+(61:03) propósito,  eso  lo  forcé.
+
+(61:05) Pero  el  Switch  se  iba  a  dar  cuenta
+
+(61:07) cuando  cuando  aprendía  cuando  quería
+
+(61:09) aprender  la  macad  de  esa  PC,  se  iba  a
+
+(61:11) dar  cuenta  que  no  era  la  que  él  tenía
+
+(61:12) configurada  y  iba  a  pasar  finalmente.
+
+(61:16) Bueno,  eh  esto  mismo  que  yo  hice  lo
+
+(61:18) tienen  que  hacer  en  todas  las  PCs,  en  la
+
+(61:21) 101,  en  la  102,  en  la  2011,  en  la  202.
+
+(61:23) No  lo  voy  a  hacer  yo  en  todas  porque  yo
+
+(61:25) quiero  mostrar  el  concepto,  no  eh
+
+(61:27) hacerlo  todo.
+
+(61:29) E  hasta  acá  me  siguieron.  Entonces,
+
+(61:32) sí,  yo
+
+(61:34) noía  suar  solamente  que  se  pueda
+
+(61:36) restablecer  desde  la  computadora  del
+
+(61:38) admin.
+
+(61:41) ¿Qué  de  vuelta?
+
+(61:42) Porque  vos  restableciste  el  puerto  con
+
+(61:44) la  101  por  el  cable  de  consola.
+
+(61:49) Sí.
+
+(61:50) Y  no  debería  suceder  que  solamente  se
+
+(61:52) puede  desde  la  computadora  del  admin,
+
+(61:54) como  habías  dicho,  o  cualquiera  podría.
+
+(61:58) Sí,  pero  bueno,  yo  estoy  mostrando  la
+
+(62:00) funcionalidad.  Lo  otro  es  conceptual,
+
+(62:03) digamos,  lo  otro  es  conceptual.
+
+(62:04) Obviamente  que  esto  lo  va  a  hacer  el
+
+(62:06) administrador  de  la  red
+
+(62:08) en  esté  donde  esté,  digamos,  esté  acá
+
+(62:10) arriba,  por  ejemplo,  accede  al  switch  y
+
+(62:13) lo  hace.  Accede  al  switch  por  IP  y  lo
+
+(62:15) hace.
+
+(62:18) [carraspeo]
+
+(62:18) Bueno,  entonces  ya  está.  Eh,  entonces
+
+(62:23) aprendimos  a  configurar  las  cosas
+
+(62:25) básicas  como  las  interfaces,  este,  en  eh
+
+(62:29) la  descripción  de  los  puertos,  qué  es  un
+
+(62:31) puerto  de  acceso  y  qué  es  un  puerto
+
+(62:33) troncal.  Aprendimos  a  configurar  la
+
+(62:35) seguridad  de  los  puertos  y  ahora  vamos  a
+
+(62:37) segmentar  la  red.  Para  segmentar  la  red
+
+(62:40) vamos  a  hacerlo  a  través  del  uso  de
+
+(62:41) vance,  ¿sí?
+
+(62:43) en  y  lo  que  va  a  pasar  ahora  que  la  PC
+
+(62:47) 101  y  la  2011  van  a  pertenecer  a  una  van
+
+(62:50) y  la  102  y  la  202  van  aer  van  a
+
+(62:53) pertenecer  a  otra  van.  Sí.  Entonces  ya
+
+(62:56) todo  se  va  a  poder  ver  con  todo.  Sí.
+
+(62:59) ¿Qué  quiere  decir?  Que  si  yo  hago  un  pin
+
+(63:01) de  la  101  a  la  2011
+
+(63:05) de  vuelta  de  la  101  a  la  2011,  eso  va  a
+
+(63:09) funcionar.  Va  a  dar  acá  bajo  successful.
+
+(63:12) Si  yo  hago  de  la  101  a  la  a  la  102,  va  a
+
+(63:16) dar  successful  porque  hay  conectividad
+
+(63:18) entre  ellos  y  lo  mismo  entre  la  102,  la
+
+(63:21) 2011,  o  sea,  todo  se  ve  con  todo
+
+(63:25) porque  todo  está  en  la  vilan  uno.
+
+(63:27) Entonces  yo  voy  ahora  a  empezar  a
+
+(63:29) segmentar  la  red  y  cuando  empiece  a
+
+(63:30) segmentar  la  red  e  va  a  dejar  de
+
+(63:34) funcionar  todo  eso.  ¿Sí?
+
+(63:37) Entonces,  para  segmentar  la  red,  voy  a
+
+(63:39) poner  un  switch  al  lado  del  otro
+
+(63:43) y  voy  a  empezar  a  configurar
+
+(63:47) las  van  y  las  voy  a  asignar  a  los
+
+(63:50) puertos  y  después  automáticamente  se  van
+
+(63:52) a  dar  cuenta  que  nada  nada  va  a
+
+(63:54) funcionar.
+
+(63:56) Entonces,  si  en  UTN
+
+(64:01) configuración
+
+(64:03) global  y  acá  voy  a  empezar  a  configurar
+
+(64:05) las  vance.  Sí.
+
+(64:07) No  me  acuerdo  qué  nombre  le  dio  en  la
+
+(64:08) guía,  pero  no  me  importa.  Las  voy  a
+
+(64:10) configurar  como  yo  quiero,  pero  van  a
+
+(64:12) ser  todas  iguales.  Van  10.  Sí.  Y  acá
+
+(64:16) también.  Van  10.
+
+(64:19) Name,  le  voy  a  poner  un  nombre.
+
+(64:21) Ingeniería.
+
+(64:26) Bilan  10.  Name,  ingeniería.
+
+(64:32) Exit.
+
+(64:34) Exit.
+
+(64:36) Bilan  20
+
+(64:38) RRH  ahí.  Name  RRH
+
+(64:46) van  Bilan  20.
+
+(64:49) Name  RRH
+
+(64:52) exit.
+
+(64:55) Exit.  Dr  para  guardar  la  configuración.
+
+(64:58) DR  para  guardar  la  configuración.
+
+(65:02) Show
+
+(65:04) vilan,  no  me  vaar  el  comando  este  acá
+
+(65:06) porque  estoy  adentro  del  modo
+
+(65:07) configuración  global.  Lo  hice  a
+
+(65:09) propósito.  Do  show  van.  Entonces
+
+(65:14) voy  a  apretar  la  Q  para  salir.
+
+(65:18) Cuando  ponen  show  van
+
+(65:20) se  dan  cuenta  todas  las  van  que  están
+
+(65:22) creadas.  No  le  den  importancia  a  estas
+
+(65:24) van  que  están  acá,  porque  estas  van  que
+
+(65:26) están  acá  son  van  que  aparecen  en  los
+
+(65:29) switches  que  son  por  def  por  default,
+
+(65:31) perdón.
+
+(65:33) Las  que  nos  importan  son  la  vil,  que  ya
+
+(65:35) existe  y  las  que  ustedes  creen.
+
+(65:38) Fíjense,  la  van  un  dice  default  y  tiene
+
+(65:40) todos  los  puertos  asignados,
+
+(65:43) todos.
+
+(65:45) Las  dos  van  que  yo  creé  no  tienen  nada.
+
+(65:48) Do  show  van
+
+(65:50) no  tienen  asignado  nada.
+
+(65:53) Entonces,  lo  que  voy  a  hacer  ahora  es
+
+(65:56) asignarle  a  cada  PC  la  vida  en  que  le
+
+(65:59) corresponde.
+
+(66:01) Listo,  voy  a  hacer  eso.  Interface  FA0/1
+
+(66:06) de  un  lado.  Interface  FA0/1  del  otro
+
+(66:10) lado.
+
+(66:12) Y  le  voy  a  asignar  la  van.  ¿Cómo  se
+
+(66:14) asigna?  Con  el  comando  switchport.
+
+(66:15) Switchport.  Signo  pregunta.
+
+(66:18) Switchport.
+
+(66:22) Este  puerto  de  qué  era?
+
+(66:25) De  acceso.
+
+(66:26) Acceso.
+
+(66:27) Acceso.  Bien.  Switch  access.  Signo
+
+(66:31) pregunta.
+
+(66:33) Después  de  Access  me  dice  van
+
+(66:36) y  y  dice  el  comando  van  le  dice  set  van
+
+(66:39) when  interface  is  in  access  mode.  Okay.
+
+(66:43) Van  espacio.  Sign  pregunta.
+
+(66:47) me  dice
+
+(66:49) switch  access  van  y  tenés  que
+
+(66:51) especificar  el  ID  de  la  van.
+
+(66:54) El  ID  de  la  van  para  este  puerto  es  la
+
+(66:56) 10,  que  es  la  de  ingeniería.  Enter.
+
+(67:00) Voy  a  copiar  todo  esto.
+
+(67:04) Copiar.  Y  lo  voy  a  pegar  acá  porque  el
+
+(67:08) puerto
+
+(67:10) FA01  del  otro  switch  también  va  a  estar
+
+(67:14) en  la  vil,  que  es  la  de  ingeniería.
+
+(67:16) Y  ahora  hago  esto  mismo  con  el  puerto
+
+(67:18) dos,  pero  le  voy  a  asignar  la  otra  vila.
+
+(67:22) Exit.
+
+(67:23) Exit.
+
+(67:26) Flechita  para  arriba.
+
+(67:29) Y  ahora  entro  al  a  la  interfaz  dos.
+
+(67:32) Flechita  para  arriba,  entro  a  la
+
+(67:34) interfaz  dos.
+
+(67:37) flechita  para  arriba  o  lo  escribo.
+
+(67:41) Le  voy  a  poner,  lo  voy  a  poner  en  la  van
+
+(67:43) 20  al  otro  y  a  este  también.  Flechita
+
+(67:47) para  arriba  lo  voy  a  poner  la  van  20.
+
+(67:50) Listo,  ya  segmenté  la  red.  ¿Cómo
+
+(67:54) segmenté  la  red?  Dije,  el  puerto  uno  de
+
+(67:58) cada  Switch  va  a  estar  en  la  van  10.  O
+
+(68:01) sea,  que  la  PC  101,
+
+(68:04) esperen  que  lo  voy  a  guardar.  DWR  para
+
+(68:06) guardar  la  configuración.  DR  para
+
+(68:08) guardar  la  configuración.
+
+(68:11) Exit.
+
+(68:13) Exit  acá  también.  Y  les  voy  a  mostrar
+
+(68:15) haciendo  un  do  show  van,
+
+(68:19) que  mágicamente
+
+(68:21) acá  aparece
+
+(68:23) tanto  en  este  switch  como  en  el  otro  que
+
+(68:26) la  van  10  tiene  asignado  el  puerto  1  y
+
+(68:30) la  van  20  tiene  asignado  el  puerto  2  y
+
+(68:32) la  van  1  está  configurada  en  todos  los
+
+(68:34) switch  en  todos  los  puertos  de  arriba.
+
+(68:38) Sí,  se  ve  que  ahora  están  eh  asignados
+
+(68:42) los  puertos  correctamente.
+
+(68:44) Lo  mismo  acá,  do  show  van  villan,
+
+(68:48) lo  mismo  acá.
+
+(68:52) Entonces,  si  yo  les  voy  a  mostrar  la
+
+(68:54) configuración  do  show  run  para  que  vean.
+
+(68:57) Do  show  run.
+
+(69:00) Do  show  run.
+
+(69:02) Fíjense  ahora
+
+(69:06) lo  completo  que  está  el  tema,  ¿no?
+
+(69:09) El  puerto  uno  tiene  todo  configurado,
+
+(69:10) tiene  configurado  la  vila,  tiene
+
+(69:12) configurado  la  descripción  que  es  modo
+
+(69:14) acceso  y  la  seguridad  del  puerto  y  el  y
+
+(69:17) la  interfaz  dos,  si  bien  todavía  no  hizo
+
+(69:20) la  parte  de  seguridad  de  los  puertos,
+
+(69:22) que  la  tendría  que  hacer,  tiene  la
+
+(69:24) descripción,  es  un  puerto  de  acceso  y
+
+(69:27) además  tiene  configurada  la  van  20,  es
+
+(69:30) decir,  que  lo  que  tengo  conectado  en  la
+
+(69:32) vilan  1  y  en  el  puerto  1  no  tiene  nada
+
+(69:38) que  ver  con  lo  que  está  conectado  en  el
+
+(69:39) puerto  dos.  Sí,
+
+(69:43) minimizo  esto,  minimizo  esto.
+
+(69:48) Ahora,
+
+(69:51) fíjense  lo  siguiente.  Voy  a  borrar  acá.
+
+(69:53) Voy  a  tratar  de  hacer  un  pin  desde  la
+
+(69:55) 101  a  la  102.
+
+(69:58) Dice  progres  y  falla.  Lo  vuelvo  a  hacer.
+
+(70:03) Improgres  y  falla.  Lo  vuelvo  a  hacer.
+
+(70:06) Improgres  y  falla.  Ese  comportamiento
+
+(70:10) está  porque  el  la  PC  101  está  en  una  van
+
+(70:14) y  la  PC102  está  en  otra  van.  Entonces,
+
+(70:17) esas  dos  PCs  no  se  ven  entre  sí  porque
+
+(70:21) están  aisladas  en  capa  dos,  es  decir,
+
+(70:25) este,  a  través  del  concepto  de  van.  Sí
+
+(70:30) se  entendió  hasta  acá  el  concepto  de  van
+
+(70:32) y  por  qué  quedaron  aisladas  y  no  tienen
+
+(70:34) conectividad  una  con  la  otra.
+
+(70:37) Sí,  sí,  sí,
+
+(70:38) sí.
+
+(70:40) Ahora,
+
+(70:43) fíjense  lo  siguiente.
+
+(70:46) Yo  configuré  este  switch  y  configuré
+
+(70:48) este  switch.  Ambos  tienen  los  puertos
+
+(70:51) como  troncales,
+
+(70:53) ambos  tienen  configuradas  las  vance,
+
+(70:55) pero  en  el  switch  de  distribución,  el  de
+
+(70:56) arriba,  no  hice  nada.
+
+(70:59) Con  lo  cual,  si  yo  quiero  hacer  un  pin
+
+(71:01) de  acá  hasta  acá,
+
+(71:05) la  PC  101  y  la  2011,  las  dos  están  en
+
+(71:09) los  puertos  uno  de  cada  Switch,  si  yo
+
+(71:12) quiero  hacer  un  pin  de  entre  ellas,  no
+
+(71:15) funciona.
+
+(71:16) Y  uno  dice,  "Pero,  ¿por  qué  no
+
+(71:18) funciona?"  Si  yo  en  los  dos  switches
+
+(71:20) donde  conecté  las  cosas  configuré  todo  y
+
+(71:22) está  todo  bien,  a  los  dos  los  puse  en  la
+
+(71:24) van  10  y  los  dos  están  eh  eh
+
+(71:28) configurados  correctamente.
+
+(71:31) Eso  pasa  porque  si  bien  el  puerto  del
+
+(71:35) switch  de  acceso  y  el  otro  eh  de  acceso
+
+(71:39) tienen  configurados  los  puertos  como
+
+(71:41) troncales  y  tienen  configurado  las  vans,
+
+(71:43) el  switch  de  distribución  no  tiene  nada
+
+(71:45) de  eso.  Entonces,  cuando  viene  un
+
+(71:48) paquete  con  con  el  tag  de  la  van  10,
+
+(71:52) sale  por  acá,  pero  quiere  ir  al  al
+
+(71:55) switch  de  de  distribución.  El  switch  de
+
+(71:57) distribución  no  entiende  que  es  la  van
+
+(71:59) 10  porque  no  la  tiene  configurada.  No
+
+(72:01) entiende  qué  es  eso.  No  entiende  tampoco
+
+(72:05) eh  digamos  eh  lo  que  viene  por  ese
+
+(72:08) puerto,  porque  él  espera  que  venga  algo
+
+(72:10) por  la  van  nativa,  que  es  la  van,
+
+(72:13) porque  no  tiene  configurado  el  puerto
+
+(72:15) como  troncal.  Entonces  no  deja  pasar
+
+(72:17) todas  las  vans,  además  de  que  no  la
+
+(72:18) entiende.  Sí,  supongamos  que  el  puerto
+
+(72:21) está  configurado  como  troncal,
+
+(72:24) pero  no  la  entiende  porque  no  tiene
+
+(72:25) configurar  las  vans.  O  sea,  vengo  acá,
+
+(72:29) entro  al  switch  enable  show  van.
+
+(72:34) No  están  configuradas  las  van,  ¿lo  ven?
+
+(72:37) Tiene  configurada  solamente  la  vila  en
+
+(72:38) uno
+
+(72:40) acá
+
+(72:42) y  todos  sus  puertos  están  en  la  vila  en
+
+(72:43) uno.  Sí.
+
+(72:46) Está  bien  que  los  puertos  estén  la  van
+
+(72:48) uno,  pero  ¿qué  pasa?  No  está  configurado
+
+(72:50) el  puerto  como  troncal.  Fíjense,
+
+(72:54) show.
+
+(72:57) No  tienen  nada  los  puertos  están  en
+
+(72:59) blanco,  no  tienen  nada,  no  están
+
+(73:01) configurados  como  troncal  y  el  switch  no
+
+(73:04) tiene  configurad  las  vans.  Ponele,
+
+(73:06) ponele  que  los  switches,  que  los  puertos
+
+(73:10) estén  configurados  como  troncales.
+
+(73:11) Ponele.  Lo  vamos  a  hacer.  Miren,
+
+(73:16) lo  vamos  a  lo  vamos  a  configurar  todos
+
+(73:18) como  troncales.  Sí,  lástima  que  no
+
+(73:20) podemos  usar  el  comando  range  acá  porque
+
+(73:23) es  01  1  2  1.  No,  no  se  puede,  pero  no
+
+(73:27) importa.  Lo  voy  a  hacer  con  la  flechita
+
+(73:29) hacia  arriba.  Interface  gigabit  0/1
+
+(73:35) y  acá  pongo
+
+(73:39) switch  port  mode  trank.
+
+(73:44) Lo  puse  como  troncal.  Exit.  Flechita
+
+(73:47) para  arriba.  ¿Cuál  era  el  otro  puerto?
+
+(73:50) El  11.
+
+(73:52) Flechita  para  arriba.  Switch  for  trank.
+
+(73:55) Exit.  Flechita  para  arriba.  ¿Cuál  es  el
+
+(73:58) otro?  El  21,  ¿no?
+
+(74:02) 01  1  2  1  3  1.  O  sea,  fácil.  Atrás  todo
+
+(74:07) uno,  adelante  es  01  3  45.  Listo,  ahora
+
+(74:11) voy  con  el  dos.  Flechita  hacia  arriba.  S
+
+(74:14) trank.  Exit.
+
+(74:17) Puedo  no  poner  exit  si  quiero.  Veamos.
+
+(74:20) Miren,  si  pongo  estando  ahí,  pongo  el
+
+(74:23) tres.  Va,  yo  yo  ponía  exit  para
+
+(74:26) explicarles  a  ustedes  que  voy,  voy  un
+
+(74:28) nivel  hacia  atrás  y  después  vuelvo.  Pero
+
+(74:29) si  yo  estoy  ahí  y y  lo  especifico,  me  me
+
+(74:33) me  lleva  a  ese  lugar.  Entonces,  el  tres
+
+(74:38) un  segundo.
+
+(74:41) Ay,  gracias,  mi  amor.  Qué  lindo.  Te  amo.
+
+(74:46) Te  amo.  Escúchame,  me  lo  mostrás
+
+(74:48) después.  Me  lo  guardo  acá,  pero  me  dejas
+
+(74:51) un  ratito  ahora  que  tengo  que  terminar
+
+(74:53) de  dar  clases.  Gracias,  mi  amor.  Cerrame
+
+(74:55) la  puerta.
+
+(74:56) Cerrame  la  puerta  y  andá  para  allá,
+
+(74:58) hija.  Gracias,  hija.
+
+(75:01) Ahí  la  hija  tiró  un  do  y  le  tiró  el
+
+(75:03) mensaje  igual.
+
+(75:04) [resoplido]
+
+(75:05) Sí,  exacto.  No  esperó,
+
+(75:08) no  esperó.  E  así  que  y  acá  vino  la  otra.
+
+(75:14) Bueno,  e  entonces,  eh,  me  quedé.  Ah,
+
+(75:18) flechita  hacia  arriba,  switch  por  mod
+
+(75:20) trank.
+
+(75:22) Me  falta  el  cuatro  y  el  cinco.
+
+(75:25) Cuatro.  Switch  for  trank.
+
+(75:29) Esos  dos  puertos,  el  el  tres  y  el
+
+(75:31) cuatro,  no  no  no  tiraron  un  mensaje
+
+(75:33) porque  no  tienen  nada  conectado.
+
+(75:35) Eh,  a  ver,  este,
+
+(75:39) ahí  está.
+
+(75:40) Entonces,  DR  para  guardar  la
+
+(75:42) configuración.  Y  ahora  voy  a  poner  do
+
+(75:47) showrun  de  vuelta.  Fíjense  ahora  que
+
+(75:50) tengo  todos  los  puertos  como  troncales.
+
+(75:53) Están  todos  como  troncales.  ¿Lo  ven?
+
+(75:57) Vamos  a  hacer  la  pruebita.
+
+(76:00) No  debería  andar,  no  debería  andar,  pero
+
+(76:03) lo  voy  a  probar.  Voy  a  hacer  un  pin
+
+(76:05) desde  la  PC  101  a  la  2011.
+
+(76:09) Falla
+
+(76:11) de  la  101  a  la  2011.
+
+(76:14) Falla.  Los  dos  están  en  la  van  10,  la
+
+(76:18) 101  y  la  2011,  en  sus  switches  de  acceso
+
+(76:21) correspondientes.  Los  cuatro  puertos,
+
+(76:24) los  puertos  están  todos  configurados
+
+(76:25) como  troncales.  Eh,  profe,  no  sé  qué
+
+(76:28) hacer,  no  me  anda,  digamos,  ya  hice  todo
+
+(76:31) bien.  No,  no  configuraste  las  todavía  no
+
+(76:35) sabe,  no  sabe  de  la  vil,  no  sabe  que
+
+(76:37) existe.  no  sabe  que  existe,  o  sea,  viene
+
+(76:40) viene  pasa  el  el  paquete  del  puerto  del
+
+(76:45) switch  de  acceso  al  al  su  distribución,
+
+(76:47) pasa  porque  los  dos  están  configurados
+
+(76:49) como  troncales,  pero  recibe  el  paquete,
+
+(76:52) lo  abre  y  no  sabe  que  viene  tagueado  con
+
+(76:55) la  vanan  10.  Él  solamente  conoce  la  van
+
+(76:58) 1,  no  sabe  lo  que  es  la  vanan  10.
+
+(77:00) Entonces,
+
+(77:02) lamentablemente
+
+(77:04) no  lo  descarta  porque  no  no  sabe,  eh,
+
+(77:08) viene  tagado  con  el  ID  10  y  él  no  sabe
+
+(77:11) eso,  no  lo  entiende  porque  no  la  no
+
+(77:13) tiene  configurada  esa  van.  Entonces,
+
+(77:15) ahora  lo  que  voy  a  hacer,
+
+(77:19) lo  que  voy  a  hacer  es  configurar  las  van
+
+(77:21) en  este  switch.  Exit.
+
+(77:23) Van  10,
+
+(77:25) name,  ingeniería.
+
+(77:30) Bilan  20,  no  hago  exit.  Van  20  directo.
+
+(77:35) Name
+
+(77:37) RHH.
+
+(77:40) Exit  do
+
+(77:45) show  van.
+
+(77:48) Ahora  sí,
+
+(77:50) ahora  sí
+
+(77:52) tengo,
+
+(77:55) ahora  sí  tengo  en  las  dos  vilan,  la  10  y
+
+(77:59) la  20.  Okay,  listo.  Entonces,  lo  que  voy
+
+(78:04) a  hacer  ahora,  lo  que  voy  a  hacer  ahora
+
+(78:06) es  probar  de  vuelta.
+
+(78:11) Voy  a  hacer  un  pin  de  la  101  a  la  2011.
+
+(78:16) Y  se  dan  cuenta  que  funciona  ahí
+
+(78:20) que  dices  access  acá  cuando  tiro  un
+
+(78:23) ping.  La  cartita  esta  es  para  hacer  un
+
+(78:24) pin  de  acá  hasta  acá.
+
+(78:27) Si  no  me  fijo  cuál  es  la  IP,  la  1201.  y
+
+(78:31) hago  así,  vengo  acá,
+
+(78:34) cierro  esto,  me  voy  al  command,  el
+
+(78:38) famoso  promp  de  de  Windows,  y  hago  un
+
+(78:41) pin  192  168.1.201.
+
+(78:45) Perdón,  profe,  una  consulta.
+
+(78:48) Sí,
+
+(78:48) o  sea,  ahí  las  van  no  hace  falta  como
+
+(78:52) asignárselas  a  a  cada  puerto,  o  sea,
+
+(78:55) cada  puerto  no  tiene  que  estar  asignado
+
+(78:56) a  una  vila  en  el  de  distribución.
+
+(79:01) No,  porque  eh  el  switch  de  distribución
+
+(79:04) no  tiene  conectada  PCs  ni  ni  ni
+
+(79:07) impresoras,  nada,  tiene  conectados
+
+(79:09) switches  y  solamente  tienen  que  los
+
+(79:12) puertos  que  están  activados,  por  así
+
+(79:14) decirlo,  tienen  estar  puestos  como
+
+(79:16) troncales.
+
+(79:18) Sí,  el  switch  de  distribución  este  que
+
+(79:20) está  acá.
+
+(79:21) Sí,  sí,  sí.  Okay,  bien.  Gracias.
+
+(79:23) Todos  los  switches,  el  de  núcleo,  el  de
+
+(79:25) distribución,  el  otro  distribución,
+
+(79:27) todos  tienen  que  tener  las  vilan
+
+(79:29) configuradas.
+
+(79:30) Todo  el  escenario  tiene  que  conocer  las
+
+(79:32) vans.  Sí.  Si  no,  no  anda  nada.  Sí.
+
+(79:35) Una  consulta.
+
+(79:36) Entonces,
+
+(79:37) sí,
+
+(79:38) los  nombres  que  se  le  ponen  a  las  Ven  eh
+
+(79:41) son  meramente  descriptivos.  Digo,  si  nos
+
+(79:44) hubiésemos  olvidado  de  la  mayúscula  de
+
+(79:45) ingeniería  en  uno  de  los  switches,
+
+(79:47) funciona  igual.
+
+(79:47) Son  descriptivos.  Son  descriptivos.  Lo
+
+(79:49) que  le  importa  al  switch  es  el  ID.
+
+(79:52) Perfecto.  Gracias.  Si  ustedes  vieron  en
+
+(79:54) la  teoría,
+
+(79:56) calculo  que  ya  lo  vieron,  pero  vieron  en
+
+(79:58) la  teoría
+
+(79:59) e  cómo  se  abre  el  paquete  o  la  trama
+
+(80:04) esa,  cómo  se  abre  y  en  el  medio  hay  4
+
+(80:07) bytes,  si  mal  no  recuerdo,  que  hacen
+
+(80:09) referencia  al  802.1Q  1Q  Bilan  tag,  uno
+
+(80:15) de  los  campos  de  esos  4  bytes  o  eran  2
+
+(80:17) bytes,  no  me  acuerdo,  e  hace  referencia
+
+(80:21) al  ID  de  la  van  y  los  otros  tienen  otra
+
+(80:23) información,  pero  no  hace  referencia  a
+
+(80:24) la  descripción.  ¿Se  acuerdan  de  eso?
+
+(80:27) Sí,  sí,  sí.
+
+(80:29) Okay.  Bueno,  e  creo  que  eran  dos  bytes,
+
+(80:34) eh  no  me  acuerdo,  la  verdad  que
+
+(80:37) [tos][carraspeo]
+
+(80:37) eh  pero  lo  importante  es  que
+
+(80:39) conceptualmente  saben  que  ahí  en  ese  en
+
+(80:42) esa  uno,  el  campo  más  importante  de  ese
+
+(80:46) e
+
+(80:48) de  de  ahí  es  el  van  ID,  ¿sí?  De  de  lo
+
+(80:51) que  agrega  el  800.1Q  unq  en  esa  en  esa
+
+(80:55) trama  o  en  ese  paquete.
+
+(80:57) Bueno,  entonces,
+
+(80:59) profe,  una  consulta.
+
+(81:02) Sí,
+
+(81:03) ahí  en  el  switch  de  distribución  usted
+
+(81:05) lo  conectó  directamente  por  el  CLI,  pero
+
+(81:07) deberíamos  nosotros  tener  una  PC  y
+
+(81:09) conectarnos  con  un  cable  azul  o
+
+(81:10) directamente  se  puede  con  el  CLI.
+
+(81:12) No,  no  hace  falta,  no  hace  falta,  no
+
+(81:14) hace  falta.  Yo  lo  del  cable  azul  se  los
+
+(81:16) expliqué  en  la  clase  anterior  y  en  esta
+
+(81:18) porque  en  la  vida  real  es  así,  pero  una
+
+(81:20) vez  que  ya  lo  aprenden  y  lo  y  lo  hacen
+
+(81:23) en  este  en  este  escenario,  en  el  trabajo
+
+(81:25) dos  y  en  el  tres  y  en  el  cuatro,  en  lo
+
+(81:27) siguiente,  no  lo  hagan,  no  hace  falta.
+
+(81:29) Sí,  pero  yo  tengo  la  obligación  de
+
+(81:31) mostrárselos  cómo  es  en  la  vida  real  e  y
+
+(81:35) bueno,  después  para  trabajar  más  rápido
+
+(81:38) eh  eh  usen  el  CLI  de  de de  Switch,  como
+
+(81:42) hice  yo.  Sí,
+
+(81:44) perfecto.
+
+(81:44) Ahora,  fíjense,  yo  voy  a  hacer  un  pin
+
+(81:46) desde  la  101  a  la  a  la  102.  Las  dos
+
+(81:49) están  en  el  mismo  en  el  mismo  piso  todo,
+
+(81:52) pero  no  va  a  funcionar
+
+(81:54) porque  la  112  está  en  la  van  20  y  ahí
+
+(81:57) está  la  segmentación  hecha  a  nivel  K2,
+
+(82:00) es  decir,  que  quedan  aisladas  una  vez
+
+(82:02) que  uno  asigna  las  vans,  quedan  aisladas
+
+(82:04) a  capa  dos.  Ya  la  capa  3  ya  ni  siquiera
+
+(82:06) tiene  injerencia.
+
+(82:08) Sí,  eso  que  para  que  entiendan  cómo  se
+
+(82:10) hace  el  travel  shooting,  se  hace  por
+
+(82:12) capas.  Por  eso  se  les  enseña  el  modelo
+
+(82:15) OSI  para  que  entiendan  dónde  está  cada
+
+(82:17) uno  de  los  problemas  y  en  la  medida  que
+
+(82:19) voy  escalando  o  bajando,  digamos,  voy
+
+(82:22) entendiendo  dónde  está  el  problema.  Acá
+
+(82:24) el  problema  está  o  no  es  un  problema,
+
+(82:26) está  hecho  a  propósito,  está  a  nivel
+
+(82:28) capa  2,  ¿no?  La  capa  3  no  tiene  nada  que
+
+(82:30) ver.  Las  dos  PCs  tienen  IPS  y  están  en
+
+(82:33) el  mismo  rango,  en  la  misma  subred.  Una
+
+(82:36) está  en  la  1928  101  y  la  otra  está  en  la
+
+(82:41) 112.
+
+(82:42) O  sea,  las  dos  están  en  la  misma  red,  en
+
+(82:44) la  198.1.
+
+(82:49) El  último  obteto  hace  referencia  al
+
+(82:50) host.  Sí,
+
+(82:53) pero  acá  la  capa  3  funciona  bien.  Lo  que
+
+(82:56) pasa  que  hay  una  segmentación  a  nivel
+
+(82:58) capa  2,  a  nivel  de  vance.  ¿Se  entiende?
+
+(83:06) Sí.  Sí.
+
+(83:07) Bueno,  entonces  ya  está  todo  segmentado,
+
+(83:10) o  sea,  que  la  101  con  la  2011  va  a  andar
+
+(83:12) bien,
+
+(83:14) la  102  con  la  202  también  va  a  andar
+
+(83:16) bien  porque  están  en  la  misma  vila,  pero
+
+(83:18) no  va  a  pasar  eso  con  la  2011  y  la  202
+
+(83:22) porque  si  bien  están  conectadas  al  mismo
+
+(83:24) switch,  también  están  segmentadas  por
+
+(83:25) las  van.
+
+(83:27) Bien,  ¿hay  alguna  duda  hasta  acá?
+
+(83:31) Eh,  ¿tiene  sentido  que  al  switch  de  la
+
+(83:34) capa  de  distribución  también  le  hagamos
+
+(83:36) lo  de  los  puertos  de  seguridad  o  solo
+
+(83:38) los  acceso?
+
+(83:40) No,  no  lo  puedes  hacer  porque  no  tenés
+
+(83:41) conectadas  PCs.
+
+(83:43) Ah,  solo  para  dispositivos
+
+(83:46) de  computadores.  Eso.  Okay.
+
+(83:47) Solo  para  solo  para  switches  de  acceso
+
+(83:50) que  tengan  conectados  dispositivos
+
+(83:52) finales.
+
+(83:52) Perfecto.
+
+(83:54) Sí.  O  sea,  los  switches  de  distribución
+
+(83:55) no  se  hace  eso.  Si  quisieras  podrías
+
+(83:58) hacerlo  en  el  switch  de  núcleo  para  esta
+
+(84:00) laptop  que  está  conectada,  pero  no  es  lo
+
+(84:02) que  pide  el  enunciado.  Pero  si  querés
+
+(84:04) hacerlo  para  practicar,  no  pasa  nada.
+
+(84:07) Eh,  pero  sí  tienen  que  hacerlo  en  todos
+
+(84:09) estos  cuatro  puertos.  Acá  en  estos
+
+(84:12) cuatro  tiene  que  estar  todo  lo  que  yo
+
+(84:13) hice.  Miren,  todo  lo  que  yo  hice.
+
+(84:17) Enable,  UTN,  show  run.  Todo  lo  que  yo
+
+(84:21) hice  en  el  puerto  uno  tiene  que  estar
+
+(84:23) para  todo  para  todos,  o  sea,  tiene  que
+
+(84:26) estar  en  el  dos  de  acá  y  en  los  otros
+
+(84:28) dos  de  Sí.
+
+(84:31) Bueno,  si  todo  se  entendió  hasta  acá,
+
+(84:35) quiere  decir  que  barrimos  hasta  el  punto
+
+(84:40) G.  Lo  que  falta  es  la  parte,  la  segunda
+
+(84:43) parte,  esta  que  está  acá,
+
+(84:45) que  era  la  parte  que  yo  le  dije  que  lo
+
+(84:47) dejen  porque  no  iban  a  entender  muy
+
+(84:49) demasiado.  Sí,  lo  que  no  voy  a  hacer,  lo
+
+(84:52) que  no  voy  a  hacer
+
+(84:55) yo  es  configurar  el  SSH,  porque  si
+
+(84:59) ustedes  hacen  exactamente  lo  mismo  que
+
+(85:01) está  acá  del  punto  A  que  dice
+
+(85:03) configuraciones  SH,  que  lo  tienen  que
+
+(85:05) hacer,
+
+(85:09) lo  tienen  que  hacer  para  para  la  PC,
+
+(85:11) para  el  laptop  admin,  lo  tienen  que
+
+(85:13) hacer  acá.
+
+(85:15) Acá  ustedes  tienen  que  tienen  que  poder
+
+(85:17) venir  acá  a  donde  dice  desktop.  venir
+
+(85:20) acá  al  icono  donde  dice  eh  SSH  y  acá  van
+
+(85:25) a  tener  que  poner  la  dirección  IP  de  e
+
+(85:28) del  switch  de  núcleo  que  la  tiene,  que
+
+(85:32) es  la
+
+(85:35) C.
+
+(85:36) Ah,  no,  no  la  tiene.
+
+(85:42) Bueno,  hay  que  configurársela.  Hay  que
+
+(85:44) configurar,  hay  que  entrar  por  el  puerto
+
+(85:47) de  consola  y  configurarle  la  IP  al
+
+(85:49) switch  de  núcleo.  A  ver,
+
+(85:52) pero  con  el  nombre  host  ahí  dice  que  se
+
+(85:53) puede.
+
+(85:55) ¿Cómo?
+
+(85:56) Con  el  digo  que  no  se
+
+(85:58) estoy  viendo  el  switch  de  núcleo  y  no
+
+(85:59) veo  que  tenga
+
+(86:02) en  la  van  un  configurada  la  IP.
+
+(86:04) Creo  que  la  guía  dice  ahí  que  hay  que
+
+(86:06) configurársela.
+
+(86:08) Sí,  sí,  seguramente.
+
+(86:10) Configur  la  dirección  de  la  van  un  acá
+
+(86:12) está.
+
+(86:14) Y  acá  está  cómo  configurarlo.
+
+(86:18) Bueno,  esto  no  lo  voy  a  hacer  porque,
+
+(86:21) bueno,  si  quieren  lo  hacemos,  no  hay
+
+(86:22) problema.
+
+(86:27) Bueno,  si  quieren  hacer
+
+(86:28) usted  quiera,  profe.
+
+(86:29) Sí,  lo  hago  rápido.  Eh,  entonces,  ¿hasta
+
+(86:32) acá  se  había  entendido  todo,  ¿sí?  No,
+
+(86:36) bueno,  acuérdense  que  hay  que  configurar
+
+(86:38) las  van  en  todos  los  switches.  Hasta
+
+(86:40) ahora  la  tiene  solamente  de  lo  que  hice
+
+(86:41) yo.  Ah,  vayan  en  la  medida  que  va
+
+(86:44) pasando  en  archivo  guardar  como
+
+(86:48) yo  le  voy  a  poner  mi  nombre  guion  ls.
+
+(86:52) Acá
+
+(86:55) acuérdense  de  ir  guardando  con  el  una
+
+(86:58) vez  que  guardaron  el  archivo  con  su
+
+(86:59) nombre,  ir  guardándolo  con  el  candadito
+
+(87:01) de  acá  porque  si  se  les  cuelga  la  PC,  se
+
+(87:03) les  crashea  el  packet  tracer  o  algo,
+
+(87:05) pierden  todo.  Y  lo  voy  a  decir  ahora  y
+
+(87:08) después  no  me  digan  que  no  lo  dije
+
+(87:10) porque  eso  es  algo  que  me  hace  enojar,
+
+(87:12) digamos,  a  mí  y  a  cualquier  docente.
+
+(87:15) Cuando  uno  un  docente  dice  algo  y
+
+(87:17) después  un  alumno  le  dice,  le  insinúa
+
+(87:20) como  que  eso  no  lo  dijo.  Cuando  hagan  el
+
+(87:23) parcial  y  estén  trabajando  con  el
+
+(87:26) simulador  y  el  simulador  se  les  cierre
+
+(87:29) mágicamente  o  pasó  algo
+
+(87:33) y  ustedes  no  guardaron  el  archivo  y
+
+(87:37) falta  media  hora,  40  minutos  para  que
+
+(87:40) termine  el  parcial  y  tienen  que  como  no
+
+(87:44) guardaron  el  archivo  o  no  hicieron
+
+(87:46) guardar  en  el  candadito  o  no  lo
+
+(87:49) guardaron  nunca
+
+(87:51) y  pasa  algo.  algo  se  cr  el  el  Pisco
+
+(87:54) Packet  Tracer,  se  cierra
+
+(87:56) intelectivamente,  pasa  con  lo  que  sea,
+
+(87:58) se  reinicia  la  PC,  lo  que  sea  y  ustedes
+
+(88:00) no  guardaron  el  archivo,
+
+(88:02) no  es  el  problema  nuestro.
+
+(88:05) Y  se  los  estoy  diciendo  ahora  porque  ya
+
+(88:07) me  pasó  varias  veces  y  digamos  y  yo  no
+
+(88:11) puedo  hacer  nada,  digamos,  como  docente
+
+(88:13) si  ustedes  no  tomaron  el  recaudo  que
+
+(88:15) tuvieron  que  tomar,  porque  si  se  les
+
+(88:17) scrashea  el  Packet  Tracer,  se  reinicia
+
+(88:19) la  PC  o  pasa  algo,  el  archivo  lo  van  a
+
+(88:22) tener.  Abren  de  vuelta  el  Packet  Tracer,
+
+(88:25) abren  el  archivo  y  van  a  tener  lo  que
+
+(88:27) confiron  hasta  el  momento.
+
+(88:29) Professor,
+
+(88:29) ¿sí?  Y  lo  digo  ahora  así  bien
+
+(88:31) explícitamente  porque  no  quiero  que
+
+(88:33) llegue  ese  día  y  pase  algo  y  me  digan,
+
+(88:36) eh,  ¿quieren  que  yo  les  dé  una  solución
+
+(88:38) mágica?  Porque  esa  solución  mágica  no
+
+(88:39) existe.
+
+(88:41) Sí.  ¿Quién  me  quería  preguntar  algo?
+
+(88:44) Eh,  no,  no  tiene  un  sistema  de  guardado
+
+(88:46) automático  el  Packet  Racer.
+
+(88:49) Creo  que  sí  lo  tiene,  pero  yo  la  verdad
+
+(88:52) que  no  no  lo  uso  en  ti  de  backup,  pero
+
+(88:56) no  es  lo  mismo,  creo.
+
+(88:57) Acá  Preference  por  ahí  acá  en  preference
+
+(89:00) en
+
+(89:02) eh  tiene  algo  seguramente
+
+(89:04) en  miselos,
+
+(89:07) pero  bueno,  yo  la  verdad  que  no  le  Sí,
+
+(89:11) puede  ser  acáños.
+
+(89:14) Acá  está.
+
+(89:20) Bueno,  sería  cuestión  de  probarlo.  La
+
+(89:23) verdad  que  yo  no  lo  no  le  doy
+
+(89:25) importancia  porque  no  digamos,
+
+(89:29) fíjense,  si  quieren  pueden  investigar  lo
+
+(89:30) que  quieran  del  simulador.  Yo  eh  le  doy
+
+(89:33) los  lo  más  elemental  para  que  ustedes
+
+(89:36) aprendan,  porque  de  esto  se  puede  hablar
+
+(89:38) 5  horas,  20  horas  de  todas  las
+
+(89:40) funcionales  que  tiene,  las  cosas.  Es
+
+(89:42) super  completo  el  simulador.  Antes  el
+
+(89:44) simulador  era  bastante  más  precario,
+
+(89:46) pero  para  lo  que  se  necesitaba  hacer
+
+(89:49) venía  bárbaro.  Pero  ahora  tiene  un
+
+(89:51) montón  de  cosas  porque  estamos  por  la
+
+(89:53) versión,  imagínense,  es  la  versión  eh
+
+(89:58) nueve  y  esto  viene  de  la  de  versiones  de
+
+(90:01) la  uno,  ponele,  así  que  imagínense  la
+
+(90:04) evolución  que  tuvo.  tiene  dispositivos
+
+(90:05) de  IoT,  tiene  un  montón  de  cosas  eh
+
+(90:10) interesantísimas  que  se  pueden  probar  en
+
+(90:13) el  simulador  para  después  llevarlas  a  la
+
+(90:15) vida  real.  Bueno,  no  me  quiero  detener
+
+(90:17) eh  filosofando  cosas  que  que  ahora  no
+
+(90:20) quiero  aburrirlos,
+
+(90:22) pero  bueno,  si  se  entendió  todo  lo  que
+
+(90:24) está  acá,  lo  que  yo  tendría  que  hacer
+
+(90:25) ahora  es  configurar  el  switch  de  núcleo.
+
+(90:27) Tengo  que  configurar  el  IP  y  tengo  que
+
+(90:28) configurarlo  todo.  Sí.  Entonces  voy  a  ir
+
+(90:32) al  a  la  laptop  admin.  Me  voy  a  fijar  si
+
+(90:34) tiene  la  IP  configurada  laptop  admin.  No
+
+(90:36) la  tiene.  Sí,  se  la  voy  a  poner  porque
+
+(90:39) después  la  voy  a  necesitar.
+
+(90:42) La  el  switch  va  a  tener  la  192  681.
+
+(90:46) Okay.  No  sé  si  más  arriba  dice  que qué
+
+(90:48) ponerle,  pero  yo  le  voy  a  poner  una  se
+
+(90:50) que  me  guste  a  mí.  192  168.1.252.
+
+(90:55) Le  voy  a  poner.
+
+(90:57) Ahí  estamos.  Le  voy  a  poner  esa  IP  al
+
+(91:00) switch,  ah,  perdón,  al  laptop.  Sí.  Y
+
+(91:03) como  no  tiene  IP  todavía  el  switch  de  en
+
+(91:08) de  núcleo,  me  voy  a  conectar  con  la
+
+(91:11) famosa  terminal,  porque  para  eso  le  puse
+
+(91:12) el  cablecito  la  otra  vez.  Me  conecto  y
+
+(91:15) ya  estoy  adentro  del  switch  de  núcleo  y
+
+(91:17) voy  a  hacer  toda  una  configuración
+
+(91:19) rápida.  Enable.  Voy  a  poner  eh  no  le  voy
+
+(91:23) a  poner  la  clave,  después  póngan
+
+(91:24) ustedes.  Sí,  voy  a  poner  conf  host  name
+
+(91:28) núcleo.
+
+(91:30) Voy  a  poner  como  me  gusta  a  mí.  Switch
+
+(91:32) guion  núcleo.
+
+(91:36) Edu  para  guardar  la  configuración.
+
+(91:40) Y  e  acá  voy  a  voy  a  debería  yo
+
+(91:43) configurar  el  telnet.  Sí,  para
+
+(91:45) configurar  el  telnet  hay  que  hacer  eh  eh
+
+(91:49) cosas  que  están  más  abajo,  ¿sí?  Que  no
+
+(91:52) las  voy  a  hacer  yo  porque  no  tiene
+
+(91:53) sentido.  Digamos  que  es  exactamente  lo
+
+(91:56) que  está  acá,  ¿eh?  Y  y  digo  que  es
+
+(91:58) exactamente  lo  que  está  acá  porque  es  lo
+
+(92:00) que  tienen  que  hacer,  no  falta  nada.  Sí,
+
+(92:02) o  sea,  que  si  lo  hacen  va  a  funcionar,
+
+(92:04) pero  a  modo  resumen  tienen  que
+
+(92:05) configurarle  el  switch.  Eh,  el  SSH,
+
+(92:08) digamos,  eh  es  eh  un  protocolo  eh  para
+
+(92:12) conectarse  de  manera  remota  a  un  equipo
+
+(92:15) y  el  tráfico  entre  el  equipo  A  y  el
+
+(92:19) equipo  Bifrado.
+
+(92:21) Para  que  eso  funcione  hay  que  generar
+
+(92:23) una  clave  privada  que  se  genera  con  el
+
+(92:24) comando  crypto  key  generate  y  ahí  le
+
+(92:27) ponen  RCA  en  este  caso.  Pero  antes  de
+
+(92:30) eso,  el  switch  tiene  que  tener  un
+
+(92:33) dominio  de  un  dominio  de  de  trabajo,  si
+
+(92:37) digamos,  y  hay  que  especificarlo,  si  acá
+
+(92:41) en  la  guía  le  dice  que  le  pongan  este
+
+(92:43) nombre  al  dominio,  pero  en  una  empresa,
+
+(92:45) si  por  ejemplo,  no  sé,  Accentur,  el
+
+(92:48) dominio  puede  ser  accenture.com,
+
+(92:51) el  dominio  interno  de  la  red.  Sí.
+
+(92:54) Entonces,  al  switch  hay  que  ponerle  IP
+
+(92:55) domaine,  IP  domain  nameaccenture.com.
+
+(92:59) Sí,  Crypto  Key  RCA,  eh  bueno,  Crypto  Key
+
+(93:03) Generate  RCA,  eh  pone  las  versiones  SH2,
+
+(93:06) que  es  la  la  uno  fue  vulnerada,
+
+(93:11) eh,  y  eh  entran  a  la  line  BTI  0-2
+
+(93:16) o  0,  como  dice  acá,
+
+(93:19) eh,  y  le  ponen  transport  input  SSH.  Sí,
+
+(93:24) cuando  ponen  este  comando  dice  transport
+
+(93:26) input  SSH,
+
+(93:28) le  habilita  solamente  el  acceso  por  SSH,
+
+(93:31) porque  si  acá  dijera  transport  input
+
+(93:34) telnet  espacio  SSH,
+
+(93:36) le  permite  el  acceso  por  los  dos,  por
+
+(93:39) telnet  o  por  SSH.  Pero  la  idea  es  que
+
+(93:41) solamente  tenga  Telnet
+
+(93:44) eh  perdón,  solamente  tenga  SSH  porque  el
+
+(93:46) Telnet  seguro.
+
+(93:49) Y  al  mismo  tiempo  con  la  diferencia  de
+
+(93:51) ambos  del  Telnet,  también  necesita  un
+
+(93:53) usuario  y  una  contraseña.
+
+(93:56) El  usuario  es  redes,  ¿sí?  Y  la
+
+(93:58) contraseña  es  Cisco.  Sí.  En  este  caso,
+
+(94:02) fíjense,
+
+(94:04) fíjense  que  cuando  yo  quiero  conectarme
+
+(94:08) al  switch  por  SSH,  cierro  acá  un
+
+(94:11) cachito,  vengo  acá  abajo  donde  dice  SSH,
+
+(94:15) o  sea,  este  es  el  cliente,  digamos,  y
+
+(94:18) dice,  si  yo  pongo  Telnetamente  me  pide
+
+(94:21) me  pide  que  ponga  la  IP,  pero  si  pongo
+
+(94:23) SSH,  me  pide  la  IP  y  el  usuario.  Y
+
+(94:26) cuando  pongo  conectar  me  pide  la
+
+(94:27) contraseña.  Sí,  por  eso  requiere  un
+
+(94:30) nombre  usuario,  el  SSH  comparado  con  el
+
+(94:34) Telnet  porque  es  más  seguro,  obviamente.
+
+(94:37) Entonces,  [carraspeo]  vamos,  vamos  a
+
+(94:39) seguir  por  la  consola  y  vamos  a
+
+(94:42) configurarle  la  IP  al  switch.  ¿Cómo  se
+
+(94:45) configurar  la  IP?  Bueno,  interface  van
+
+(94:49) 1.
+
+(94:52) ¿Se  acuerdan?  Miren,  do  show  run.  ¿Se
+
+(94:54) acuerdan  que  en  un  switch  de  capa  dos,
+
+(94:57) la  única
+
+(95:00) en  un  switch  de  capa  2,  la  única
+
+(95:02) interface  a  la  que  se  le  puede  asignar
+
+(95:04) una  IP  es  la  IP  de  management  del
+
+(95:06) switch,  que  en  este  caso  es  la  interfaz
+
+(95:09) virtual  que  se  llama  van  1.  Dice,  "No  IP
+
+(95:12) address  porque  no  tiene  nada  y  está
+
+(95:13) shoot  down,  está  baja.  Entonces  yo  ya
+
+(95:15) entré  ahí,  entonces  pongo  IP  address
+
+(95:19) y  pongo  la  IP  192  168.1.251
+
+(95:23) 251,  que  es  lo  que  me  dice  la  guía.
+
+(95:26) Y  seguido  de  la  IP  tengo  que  poner  la  la
+
+(95:28) la  máscara  subred  255  255  255.0,  que  es
+
+(95:33) una  clase  C.
+
+(95:36) Enter.
+
+(95:38) Ya  automáticamente  ya  le  le  establecí,
+
+(95:44) digamos,
+
+(95:46) cuál  es  la  IP.  Y  ahora  pongo  no
+
+(95:49) shutdown,  porque  si  se  fijan  acá
+
+(95:53) no  solamente  no  tiene  la  IP  asignada,
+
+(95:55) sino  que  está  como  shutdown,  es  decir,
+
+(95:57) que  le  puedo  poner  la  IP,  pero  si  no
+
+(95:59) levanto  el  interfaz  no  va  a  andar.  Ahí
+
+(96:02) no  shutdown.  Y  fíjense  que
+
+(96:04) automáticamente  me  muestra  el  mensajito
+
+(96:06) que  levantó
+
+(96:07) la  interface.
+
+(96:09) Eso  quiere  decir  que
+
+(96:12) eso  quiere  decir  que
+
+(96:14) a  partir  de  ahora  desde  la  laptop  si
+
+(96:18) hubiese  tenido  configurada
+
+(96:20) la  consola  eh  la  interfaz  la  eh  la
+
+(96:25) virtual  terminal,  ya  sea  por  Tnet  o  por
+
+(96:27) SSH,  me  podría  conectar  ya  por  IP.  Sí,
+
+(96:31) pero  bueno,  no  lo  voy  a  hacer  porque
+
+(96:32) quiero  que  lo  hagan  ustedes.  No  tiene
+
+(96:34) sentido  que  yo  lo  haga  porque  tienen  que
+
+(96:35) hacer  exactamente  igual  lo  que  dice  ahí.
+
+(96:37) Con  lo  cual  ya  les  expliqué  la  teoría.
+
+(96:40) Es  simplemente  hacerlo  y  probarlo.
+
+(96:44) Lo  que  sí,  lo  que  sí  pueden  hacer  lo  que
+
+(96:46) sí  pueden  hacer  es  probar  si  tiene  un
+
+(96:49) pin,  digamos,  ya  que  configuraron  la  IP
+
+(96:51) y  todo  y  hago  un  pin  de  acá  hasta  acá
+
+(96:56) y  me  dice  fail.  ¿Por  qué?  porque  algo
+
+(96:59) pasa  y  lo  que  pasa  es  que  a  ver  dónde
+
+(97:03) está  conectado.
+
+(97:08) A  ver.
+
+(97:14) 192  682.
+
+(97:23) A  ver,
+
+(97:25) se  supone  que
+
+(97:25) puede  ser  que  una  dice  252
+
+(97:28) y  otra  251.
+
+(97:32) Eh,  sí,  pero  bueno,  es  porque  cada
+
+(97:34) dispositivo  tiene  una  IP.
+
+(97:37) Do  WR  para  guardar.  Do  show  run.  Do  show
+
+(97:41) run.  Ah,  okay.  No  es  porque  no  están
+
+(97:44) configurados  los  puertos,
+
+(97:46) entonces  no  está  configurado  nada.
+
+(97:49) Ninguno.
+
+(97:50) Tengo  que  configurar  yo  los  puertos
+
+(97:52) estos  como  troncales  todo.  Qué  raro  que
+
+(97:54) no  esté  hecho  esto.
+
+(97:57) Bueno,
+
+(97:59) eh,  ah,  no,  no  está  hecho  porque  hay  que
+
+(98:02) hacerlo  este,  bueno,  lo  primero  que  hay
+
+(98:05) que  hacer  es  configurar  todos  los
+
+(98:07) puertos  como  troncales  en  así  que  eh
+
+(98:11) menos  el  que  tiene  conectada  la  laptop  y
+
+(98:13) el  que  tiene  conectado  el  router,  ¿no?
+
+(98:17) Igual  al  del  router  no  le  den
+
+(98:18) importancia  porque  eso  está  agregado  en
+
+(98:19) el  escenario  y  no,
+
+(98:24) déjenme  ver  porque  me  debería  mostrar
+
+(98:26) cuando  yo  me  paro  ahí  arriba,  me  debería
+
+(98:28) mostrar
+
+(98:33) acá,  miren,  tienen  que  eh  tildar  este
+
+(98:37) esta  opción  que  dice  mostrar  port  label
+
+(98:41) cuando  el  mouse  está  por  encima  del
+
+(98:43) workspace.
+
+(98:45) ¿Ven?  preferencias  en  interface,  tiene
+
+(98:48) que  tildar  esta  opción  de  acá,  ¿la  ven?
+
+(98:50) Que  dice  show  port  labels.
+
+(98:52) ¿Por  qué?  Porque  eso  me  permite  hacer
+
+(98:54) esto.  Miren,  me  paro  acá  y  ahora  me  dice
+
+(98:57) que  el  puerto  Gigabit  51  es  el  que  está
+
+(99:01) conectado  a  la  laptop.  ¿Lo  ven  ahí?  Si
+
+(99:04) yo  me  paro  acá  en  el  triangulito.  Sí,
+
+(99:06) sí,
+
+(99:07) sí.  Bueno,  entonces  lo  que  yo  tengo  que
+
+(99:09) hacer  ahora
+
+(99:11) es
+
+(99:13) conectar  eso.
+
+(99:16) Tenes  que  en  ese  puerto  habilitar  la
+
+(99:17) velan  1.
+
+(99:20) Sí,  mínimamente  tengo  que  ponerlo  como
+
+(99:22) acceso.
+
+(99:24) Eh,  la  van  uno  no  se  configura  porque  ya
+
+(99:26) es  la  vanan  que  tiene  por  default  todos
+
+(99:28) los  puertos  o  debería.
+
+(99:31) Entonces,
+
+(99:32) voy  a  copiar  esto  y  voy  a  de  vuelta.  Voy
+
+(99:34) interface.
+
+(99:38) Ya  estaba  ahí,  pero  bueno,  lo  voy  a
+
+(99:39) hacer  de  vuelta.
+
+(99:41) Ah,  ya  estoy  ahí,  ¿eh?  Ah,  puse  inter.
+
+(99:45) Inter.  Qué  tonto.
+
+(99:48) Ahí  ya  estoy  ahí.  Description,  ¿se
+
+(99:51) acuerdan?  Laptop.
+
+(99:55) Laptop
+
+(99:58) laptop  admin.
+
+(100:02) Entonces,
+
+(100:06) switch  port  mode  access.
+
+(100:20) Perfecto.
+
+(100:22) No  es  un  troncal.  Listo.  En  este  switch,
+
+(100:27) en  este  switch  tenemos  que  configurar  el
+
+(100:29) spaning  tree.
+
+(100:31) Entonces  tiró  ese  error  porque  lo  que  me
+
+(100:32) está  diciendo  es  que  eh  que  no  es  un
+
+(100:36) puerto  troncal.  Sí.  Eh  igual  en  este
+
+(100:39) switch  tenemos  que  configurar  las  van
+
+(100:41) también.  Así  que  vamos  a  hacer  rápido.
+
+(100:43) Lo  voy  a  hacer.
+
+(100:45) Van  10.  Name  ingeniería.
+
+(100:50) Bilan  20
+
+(100:53) name  rrh
+
+(100:58) exit  do  para  guardar  configuración
+
+(101:03) do  show  run.
+
+(101:06) Bueno,  fíjense
+
+(101:09) ya  configuré  el  puerto  modo  acceso.
+
+(101:11) Ahora  sí  me  debería
+
+(101:15) me  debería  dejar  hacer  un  pin  de  acá
+
+(101:16) hasta  acá.  A  ver.  ¿Ven
+
+(101:22) que  ahí  funciona?
+
+(101:24) No  estaba  configurado  el  puerto  como
+
+(101:25) acceso  y  si  bien  tenía  la  IP  configurada
+
+(101:29) e  ahí  se  dan  cuenta  que  la  teoría  valida
+
+(101:32) lo  que
+
+(101:34) lo  que  debería  pasar  en  la  práctica,
+
+(101:39) ¿sí  o  no?
+
+(101:41) Sí.
+
+(101:43) Bueno,  listo.
+
+(101:44) Sí,  sí,
+
+(101:45) listo.  Ya  confiré.  Ahora  vamos  a
+
+(101:47) configurar  todos  los  puertos  como
+
+(101:48) troncales  menos  este  menos  el  Bueno,  sí
+
+(101:51) los  configuramos  con  Troncales  todos
+
+(101:53) porque  los  vamos  a  necesitar.
+
+(101:57) Entonces
+
+(102:00) interface
+
+(102:03) me,  o  sea,
+
+(102:05) ya  sé  eh  tengo  que
+
+(102:07) Sí.  ¿Qué  quién  me  está  hablando?
+
+(102:09) Eh,  profe,  una  consulta.  Las  los  dos
+
+(102:12) vínculos  que  hay  entre  distribución  a
+
+(102:14) núcleo,  eso  es  porque  cada  uno  es  half.
+
+(102:16) duplex,
+
+(102:18) ¿no?
+
+(102:20) Eso  es  lo  que  te  voy  a  explicar  tú
+
+(102:22) ahora.
+
+(102:23) Okay.
+
+(102:23) Así  que  wait.
+
+(102:26) Eh,  entonces  nosotros  lo  que  vamos  a
+
+(102:29) hacer,  lo  digo  conceptualmente  y  después
+
+(102:30) lo  hacemos,  los  switches
+
+(102:34) de  distribución  están  conectados
+
+(102:38) contra  el  switch  de  núcleo  a  través  de
+
+(102:41) dos  cables.
+
+(102:43) Pero,  ¿qué  pasa?  Eh,  yo  creo  que  ustedes
+
+(102:46) vieron  la  teoría  el  protocolo  spaning
+
+(102:49) tri,  así  que  quiero  que  me  digan  eso.
+
+(102:53) Eso  pasa  cuando  se  forma  un  bucle  entre
+
+(102:55) varios  switches  y  el  mensaje  iría
+
+(102:58) infinitamente  viajando,  se  lo
+
+(103:00) repartirían.  Entonces,  el  protocolo
+
+(103:01) spanning  trick  es  el  802.1Q  o  un  Q  creo
+
+(103:05) o  D,
+
+(103:06) no  lo  que  hace  bucle,
+
+(103:08) el  D  está  perfecto.
+
+(103:09) Evita  que  se  forme,
+
+(103:11) bloquea  puertos  y  evita  que  se  forme.
+
+(103:14) Exactamente.  Muy  bien.  Excelente  todo.
+
+(103:17) Simplemente  te  corrijo  para  que  lo
+
+(103:18) sepas,  digamos.  No,  no,  no.  Digamos,  el
+
+(103:21) Q  es  el
+
+(103:23) Claro,
+
+(103:24) claro.
+
+(103:26) Perfecto.
+
+(103:28) Está  perfecto  lo  que  dijiste.  No
+
+(103:29) importa.  El  resto  está  todo  perfecto.
+
+(103:32) Era  lo  que  lo  que  importaba.  Gracias.
+
+(103:34) Entonces,  según  lo  que  dijo  su
+
+(103:36) compañero,  el  spaning  tree  protocol  hace
+
+(103:39) eso.  Sí,  arma  un  árbol,  digamos,  existen
+
+(103:43) distintos  tipos  de  spanning  tree.  Acá  se
+
+(103:45) usa  el  eh  el  spanning  tree  que  se  que  se
+
+(103:49) genera  el  árbol  por  van.  Por  eso  por  eso
+
+(103:52) dice
+
+(103:54) es  uno  de  los  tipos  de  spanning  tree,  es
+
+(103:56) uno  de  los  que  más  se  usa,
+
+(103:59) que  es  este  que  está  acá.
+
+(104:02) Esto  significa
+
+(104:04) dice  span  mode  PB  corta  ST.
+
+(104:09) Ese  es  eso  significa  que  se  hace  spaning
+
+(104:11) tree  por  van.  Sí,  el  árbol  que  genera
+
+(104:14) spaning  tree  lo  hace  por  van  y  eso
+
+(104:16) significa  per  van  spanning  tree.  El  modo
+
+(104:19) es  per  van  spanning  tree,  o  sea,
+
+(104:21) spanning  tree  por  van.  Sí,  como  acá
+
+(104:23) tenemos  tres  vilan,  la  van  1,  la  van  10
+
+(104:25) y  la  van  20,  por  cada  van  a  armar  un
+
+(104:28) árbol.  Sí.  Y  en  cada  árbol  que  arme,  que
+
+(104:31) es  como  un  spanning  tree,  eh,
+
+(104:33) independiente  del  otro,  va  a  decir  cuál
+
+(104:36) es  el  switch,  el  root  switch,  o  sea,  el
+
+(104:38) switch  raíz,  y  cuáles  son  los  los
+
+(104:41) switches  que  no  son  root,  digamos,  que
+
+(104:43) no  son  switches  raíz.  Ya  saben  la  teoría
+
+(104:46) del  spaning  tre,  entonces  porque  eso  se
+
+(104:49) ven  teoría,  no  la  voy  a  repetir,  pero
+
+(104:51) digamos  lo  que  le  voy  a  decir
+
+(104:52) conceptualmente  es  que  spaning  tre,  como
+
+(104:54) dijo  su  compañero,  es  un  protocolo  que
+
+(104:57) evita  que  se  produzcan  bucles  en  una
+
+(104:59) red,  porque  si  se  produce  un  bucle  se
+
+(105:02) hace  un  efecto  espiral  e  y  y  la  red  se
+
+(105:05) cae.
+
+(105:07) Y  lo  que  pasa  es  que  para  que  eso  no
+
+(105:11) ocurra,  el  protocolo  spaning  tre  con  ese
+
+(105:13) árbol  que  arma  deshabilita  en  forma
+
+(105:16) lógica  el  puerto  que  está  uno  de  los
+
+(105:19) puertos  para  que  no  se  genere  ese  bucle.
+
+(105:21) En  este  caso,  si  ustedes  ven
+
+(105:24) el  puerto  deamos,  o  sea,  entre  el  switch
+
+(105:26) de  núcleo,  el  SH  y  el  switch  de
+
+(105:28) distribución,  Spaning  Tree  está  cortando
+
+(105:31) el  vínculo,  el  uno  de  los  dos  cables,
+
+(105:34) fíjense  que  uno  tiene  un  puntito  de  eh
+
+(105:37) naranja,  ese  está  cortado,  lógicamente,
+
+(105:40) en  el  otro  switch  de  núcleo,  eh,  perdón,
+
+(105:43) en  el  otro  switch  de  distribución,  el  20
+
+(105:44) contra  el  switch  de  núcleo,  corta  otro
+
+(105:46) de  los  vínculos.  Sí.
+
+(105:49) Y  bueno,  este  eh  y  y  lo  que  tiene  que
+
+(105:53) pasar  es  eso  y  tiene  que  cortar  también
+
+(105:55) este  vínculo,  no  está  funcionando,  tiene
+
+(105:57) que  cortar  también  este  vínculo  que  está
+
+(105:59) bajo,  ¿sí?  Para  que  no  se  produzca  ese
+
+(106:02) bucle.  Hay  algo  que  hay  que  configurar
+
+(106:04) que  no  está  funcionando  bien
+
+(106:07) y  no  está  funcionando  bien  porque  me
+
+(106:08) parece  que  en  el  switch  de  distribución
+
+(106:10) el  20  no  se  está  configurada  todas  las
+
+(106:12) vans,  pero  bueno,  eh,  ustedes  tienen  que
+
+(106:15) hacerlo.  Y  a  qué  va  con  todo  esto.
+
+(106:20) Lo  que  está  pasando  entre  los  switches
+
+(106:21) de  distribución  y  el  de  núcleo  es  que  yo
+
+(106:24) tengo  dos  cables,  digamos,  y  yo  podría
+
+(106:27) aprovechar
+
+(106:29) eh  el  ancho  de  banda.  Con  uno  de  los
+
+(106:32) vínculos  cortados  tengo  1  gig,  pero  si
+
+(106:35) tuviese  los  dos  vínculos  funcionando,
+
+(106:37) tendría  2  GB,  tendría  el  doble  ancho
+
+(106:39) banda.
+
+(106:41) Entonces,  para  aprovechar  eso  y  que
+
+(106:44) tener  un  un  ancho  de  banda  de  2  GB  sin
+
+(106:47) que  Spaning  Tri  me  corte  uno  de  los  de
+
+(106:49) los  de  los  de  los  enlaces  para  que  no  se
+
+(106:51) produzca  un  un  bucle,  se  usa  un
+
+(106:54) protocolo  que  se  llama  LACP,  que
+
+(106:57) significa  link  agregation,  control
+
+(107:00) protocol,  ¿sí?  Y  lo  que  hace  ese
+
+(107:04) protocolo  configurado  correctamente  en
+
+(107:06) los  cuatro  puertos,  configurado  en  el
+
+(107:08) switch  de  núcleo  y  configurado  en  el
+
+(107:10) switch  de  distribución,  es  tener  la  la
+
+(107:14) posibilidad  de  este  agrupar  esos  dos
+
+(107:17) puertos  de  manera  lógica  como  si  fuese
+
+(107:20) un  solo  cable  más  grueso.  ¿Sí?  Es  decir,
+
+(107:24) haciendo  una  configuración  lógica,  yo
+
+(107:27) voy  a  convertir  estos  dos  cables
+
+(107:30) físicamente  los  convierto  en  un  cable
+
+(107:32) lógico  más  grande.  ¿Sí?  Y  los  paquetes
+
+(107:35) van  a  ir  por  las  dos  interfaces  físicas
+
+(107:40) simulando  como  si  fuese  una  una  interfaz
+
+(107:43) sola  lógica
+
+(107:45) de  un  ancho  banda  de  2  GB.  Sí,  eso  es  lo
+
+(107:48) que  se  va  a  pasar  conceptualmente  y  eso
+
+(107:50) lo  tengo  que  hacer  entre  los  switches  de
+
+(107:52) núcleo,  entre  el  switch  de  núcleo  y  los
+
+(107:54) dos  switches  de  distribución,  porque
+
+(107:55) cada  uno  tiene  dos  cables.  ¿Sí?
+
+(107:59) Entonces,  eso  es  lo  que  dice  la  guía,
+
+(108:01) que  tenemos  que  trabajar  acá  en  esta
+
+(108:03) parte
+
+(108:05) en  que  dice,  déjenme  ver,
+
+(108:12) esto,  ¿no?  Que  era  está  más  arriba.
+
+(108:17) en  esta  parte  donde  dice  donde  empieza
+
+(108:19) la  segunda  parte  que  dice  configurar  el
+
+(108:21) spaning  tree  y  dice  que  hagan  el  spaning
+
+(108:24) tre
+
+(108:25) e
+
+(108:27) dice  que  ustedes  tienen  que  hacer  que
+
+(108:29) que  el  switch  de  núcleo  sea  el  root
+
+(108:31) primary,  o  sea,  tiene  que  ser  para  todas
+
+(108:34) las  vilan  el  switch  raíz.  Sí,  ese
+
+(108:38) comando  es  el  que  tenemos  que  tirar  este
+
+(108:41) para  convertir  el  switch  en  root  bridge.
+
+(108:45) O  sea,  porque  si  fíjense  lo  siguiente,
+
+(108:48) igual  ahora  no  están  no  están
+
+(108:50) configurados  los  puertos,  así  que  lo
+
+(108:51) vamos  a  configurar  como  troncales
+
+(108:53) mínimamente  porque  si  no  no  funciona
+
+(108:55) nada.
+
+(108:57) Entonces,  eso  es  lo  que  iba  a  hacer  yo
+
+(108:58) ahora.
+
+(109:00) iba  a  venir  acá  y  iba  a  poner
+
+(109:04) eh  los  que  no  tenemos  que  configurar
+
+(109:06) como  troncales  son
+
+(109:09) eh  el
+
+(109:12) el  cinco
+
+(109:14) y  el  cuatro,  ¿no?  El  cinco  y  el  cuatro,
+
+(109:16) no.  Sí,  el  cinco  y  el  cuatro,  ¿no?
+
+(109:23) O  sea,  a  ver,  déjenme  ver.
+
+(109:30) Perdón,
+
+(109:32) hice  algo  mal.
+
+(109:36) 51  y  yo  configuré
+
+(109:39) el  01  cualquiera.
+
+(109:47) Podemos  enchufarlo  en  el  01.
+
+(109:51) Eh,  sí,  podríamos  hacer  eso,  pero  e
+
+(109:59) sí  podríamos  hacerlo  total,  son  todos
+
+(110:01) iguales.  Bueno,  vamos  a  hacerlo  así,  así
+
+(110:04) no  cambio  la  configuración,  pero  bueno,
+
+(110:06) lo  correcto  es  que  cambie  la
+
+(110:07) configuración.
+
+(110:08) Pero  ahí,  profe,  ¿por  qué  funcionó
+
+(110:09) entonces  si  no  estaba  conectado  a  el
+
+(110:11) mismo  puerto?
+
+(110:13) funcionó  porque  e  porque  está  todo  en  la
+
+(110:17) vilo  y  en  el  Switch  este,  o  sea,  la
+
+(110:21) laptop  admin
+
+(110:23) o  sea  no  hay  no  había  no  hay  no  había
+
+(110:25) segmentación  por  van.  Entonces  eh  cuando
+
+(110:28) no  hay  ninguna  segmentación  de  nada
+
+(110:31) ehamos  como  les  mostré  al  principio,
+
+(110:33) funciona  todo,  pero  cuando  empezas  a
+
+(110:35) hacer  segmentación  51.  Ahí  está.
+
+(110:41) Ah,  no,  no  puedo  cambiarlo.  Bueno,  no
+
+(110:44) puedo  cambiarlo  porque  están  todos
+
+(110:45) ocupados  los  puertos.  No,  no  importa.  Lo
+
+(110:47) le  le  cambio  la  configuración  y  listo.
+
+(110:50) Eh,  y  de  paso  y  de  paso  les  muestro  que
+
+(110:52) que  está  mal  en  eso.  Bueno,  entonces  voy
+
+(110:55) a  hacer  voy  a  pasar  todos  a  a  troncales
+
+(110:57) y  después  lo  lo
+
+(110:59) interface.  Entonces,  los  troncales
+
+(111:01) tienen  que  ser  todos  menos
+
+(111:04) el,  como  les  decía,
+
+(111:08) el  51.  y  el  cuatro,  ¿no?  Cinco,  el
+
+(111:11) cuatro.  Listito.  Bueno,
+
+(111:14) interface  gigabit
+
+(111:17) 0/0.  Era  0/0.  A  ver.  0/0
+
+(111:32) interface.  No.  0/1.
+
+(111:35) Es  un  medio  rolor.  0/1.
+
+(111:39) Switch  port  mode  trank
+
+(111:46) no  description.  Le  borro  la  descripción.
+
+(111:48) Sí.
+
+(111:50) Eh,  entonces  el  0/1,  el  otro  era
+
+(111:56) es  01  1  2  1  3  1.  Listo.
+
+(112:02) Facilísimo.
+
+(112:04) 1
+
+(112:06) switch  por  m  trank
+
+(112:12) 1.
+
+(112:13) Switch  por  m  trank
+
+(112:17) 1.  Switch  por  motr
+
+(112:26) 51
+
+(112:30) description
+
+(112:32) laptop  admin
+
+(112:36) switch  for  mode  access.
+
+(112:41) Ahí  está
+
+(112:44) do  show  run.  A  ver.
+
+(112:48) Perfecto,  ahora  quedó  todo  bien.  ¿Lo
+
+(112:50) ven?
+
+(112:54) Ahí  estamos.  Ahí  quedó  bien.
+
+(112:56) Perfecto.
+
+(112:58) Entonces  ahora  miren  lo  siguiente.
+
+(113:03) Do
+
+(113:05) show
+
+(113:07) spaning  tree.
+
+(113:20) Fíjense  lo  siguiente.
+
+(113:23) Acá  les  muestra  información  de  el
+
+(113:26) spaning  tree.  Como  el  spaning  tre  está
+
+(113:29) por  vilan,  lo  que  dice  acá  hace
+
+(113:32) referencia  a  la  van  un,  ¿lo  ven?
+
+(113:35) Y  sigue  para  abajo.
+
+(113:37) Lo  que  si  yo  sigo  apretando  enter,
+
+(113:43) lo  que  dice  acá,
+
+(113:45) todo  esto  es  para  la  van  10.
+
+(113:49) Y  si  sigo  apretando  enter,  lo  que  dice
+
+(113:52) acá  es  para  la  van  20.
+
+(113:55) Entonces,  ¿se  dan  cuenta  ustedes?
+
+(113:59) ¿Se  dan  cuenta  ustedes
+
+(114:01) que
+
+(114:03) el  árbol  de  spaning  tre  que  crea  lo
+
+(114:05) hace,  digamos,  e  por  vilan,  como  les
+
+(114:09) expliqué?  Ahora,  fíjense,  vamos  a
+
+(114:14) hacerlo,  vamos  a  verlo  con  la  vil  uno.
+
+(114:18) El  root  bridge,
+
+(114:20) el  switch  de  núcleo,  así  como  está
+
+(114:22) configurado  ahora,  no  es  el  root,  o  sea,
+
+(114:25) no  es  el  switch  raíz  para  spaning  tree.
+
+(114:28) El  switch  raíz  es  el  que  tiene  esta
+
+(114:30) macadres.
+
+(114:32) Vamos  a  ver  cuál  es.  Simplemente  de
+
+(114:35) curiosos  me  paro  acá.  es  la  que  tiene
+
+(114:38) macadres  que  termina  en  eh  1D.
+
+(114:44) Entonces,  a  ver,  me  paro  acá.
+
+(114:51) Bueno,  habría  que  habría  que  entrar  en
+
+(114:52) los  switches  y  mirar,  ¿no?  Pero  bueno,
+
+(114:54) en  porque  acá  muestra  los  puertos.  Pero
+
+(114:57) bueno,  si  ustedes  entran  los  switches  y
+
+(114:59) miran,
+
+(115:08) no,  ahí  está,  perdón,  ahí  está.  Es  el  es
+
+(115:10) la  que  dice  van  1.  La  interfaz  de  la
+
+(115:11) vanan  1  es  la  interfaz  de  la  vanan  1  del
+
+(115:16) switch  de  distribución  20.  Si  la  ven  ahí
+
+(115:18) dice  triple01.
+
+(115:21) coincide  justo  con  el  con  lo  que  está
+
+(115:24) sombreado.
+
+(115:25) Esperen.
+
+(115:29) O  sea,  quiere  decir  que  para  la  van  1
+
+(115:32) actualmente  el  switch,  el  root  es  este,
+
+(115:34) el  20,  porque  tiene  esa  macadress  que
+
+(115:37) está  acá,  ¿ven?  Que  acá  dice  root  bridge
+
+(115:40) priority  tanto  y  esta  macadress,  esa
+
+(115:43) macadress  corresponde  al  switch  20  de
+
+(115:45) distribución.
+
+(115:47) Sí.
+
+(115:49) Bien.  Y  eso  mismo  se  repite  para  Y
+
+(115:53) bueno,  dice  Bridge  ID,  eh,  este  la  la
+
+(115:57) 040  es  este  es  este  switch,  el  de
+
+(115:59) núcleo.  Miren,
+
+(116:01) ¿ven  ven  la  la  que  dice  van  1  app  la  IP?
+
+(116:04) Y  después  dice  la  macadres,  esa,  la
+
+(116:06) 040d,  es  la  macadr  del  switch  de  núcleo.
+
+(116:10) Y  fíjense  que  es  un  bridge,  o  sea,  no  es
+
+(116:13) el  root,  sí,  no  es  el  switch  raizel  de
+
+(116:15) núcleo.  Lo  que  tenemos  que  hacer  con  el
+
+(116:17) comando  y  eso  eso  mismo  se  propaga  para
+
+(116:19) todas  las  vance.  Lo  que  tenemos  que
+
+(116:21) hacer  con  este  comando  que  dice  la  guía
+
+(116:24) spanning  tre  van  1  10  20  root  primary  es
+
+(116:29) convertir
+
+(116:30) convertir  lo  voy  a  copiar  convertir
+
+(116:33) el  switch  núcleo  en  el  switch  raíz.
+
+(116:38) Ahí  está.  Y  ahora  se  va  a  recalcular  el
+
+(116:41) árbol.  Entonces  yo  lo  pongo,  le  lo
+
+(116:43) adelanto  un  poquito  y  fíjense  lo  que  va
+
+(116:46) a  pasar.
+
+(116:51) Le  vuelvo  a  poner  de  vuelta  duo  w
+
+(116:53) spanning  tree.  Fíjense  ahora  tanto  para
+
+(116:57) la  van  un  como  para  todas  las  vilan  dice
+
+(116:59) acá  donde  dice  root  id  tiene  la  macadres
+
+(117:03) ahora  el  switch  de  núcleo.  Y  fíjese  que
+
+(117:05) dice  esto,  this  is  the  bridge,  perdón,
+
+(117:09) this  bridge  is  the  root.  O  sea,  e  en
+
+(117:13) este  switch  es  lo  que  quiere  decir  ahí,
+
+(117:15) es  este  switch  es  el  root.
+
+(117:18) Sí,  si  ustedes  van  a  los  otros  switches
+
+(117:20) de  distribución  y  tiran  ese  comando,  el
+
+(117:22) show  spaning  tre,  se  van  a  dar  cuenta
+
+(117:25) que  los  otros  no  son  lo  va  no  va  a  decir
+
+(117:28) esto  this  is  the  de the  this  bridge  is
+
+(117:31) the  root.  va  a  decir,  como  decía  antes,
+
+(117:35) le  va  a  decir  que  el  root  id  la  y  va  a
+
+(117:38) decir  las  macadres  del  del  switch  de
+
+(117:40) núcleo  y  abajo  va  a  decir  esto  con  la
+
+(117:44) información  del  propio  switch.  Bueno,
+
+(117:46) esta  es  la  teoría  de  spaning  tre,  ¿sí?
+
+(117:48) Digamos,  con  ese  comando  se  fuerza  a  que
+
+(117:51) el  switch  eh  de  núcleo  sea  el  que  mande
+
+(117:55) y  el  que  genere  los  árboles  de  spaning
+
+(117:56) tre.  Está  hecho  a  propósito.  Así  el
+
+(117:58) escenario.
+
+(118:00) Lo  que  hay  que  hacer  ahora  es  utilizar
+
+(118:03) los  puertos  para  que  sean  el  doble  de
+
+(118:05) ancho  de  banda.  Sí.  Y  ahí  es  donde  viene
+
+(118:08) la  configuración  del  famoso  LCP.
+
+(118:11) ¿Hasta  acá  se  entiende  todo  o  hay  alguna
+
+(118:13) pregunta?
+
+(118:17) O  sea,  acá
+
+(118:19) hicimos  que  que  el  núcleo  sea  el  root
+
+(118:21) por  algo  en  especial.  O  sea,  eso  es  lo
+
+(118:24) que
+
+(118:24) porque  lo  pide  el  enunciado  así.
+
+(118:26) Ah,  okay,  okay.  O  sea,  el  enunciado  dice
+
+(118:30) eh  el  enunciado  dice
+
+(118:32) hace  que  el  switch  de  núcleo  sea  el
+
+(118:34) switch  raíz  de  spaning  tre  para  esa
+
+(118:37) topología
+
+(118:38) y  y  para  que  eso  ocurra  hay  que  tirar
+
+(118:40) ese  comando  y  automáticamente  recalcula
+
+(118:43) todo  el  árbol  diciendo  que  el  switch
+
+(118:45) raíz  pasa  a  ser  el  switch  de  núcleo
+
+(118:48) cuando  antes,  por  cómo  estaba
+
+(118:50) configurado
+
+(118:51) el  escenario  inicialmente  el  switch  raíz
+
+(118:54) era  el  switch  20  de  distribución.
+
+(118:57) Se  entiende.
+
+(118:59) ¿Hay  alguna  pregunta  hasta  acá  o  hay
+
+(119:01) algo  que  no  se  haya  o  hay  algo  que  no  se
+
+(119:03) haya  entendido?
+
+(119:07) Bueno,  lo  que  voy  a  hacer  ahora,  lo  que
+
+(119:10) voy  a  hacer  ahora  es  el  punto  dos  de  la
+
+(119:13) de  el  punto  de  la  segunda  parte.  Voy  a
+
+(119:17) hacer  el  punto  B2,  ¿sí?  que  es  hacer  la
+
+(119:22) parte  de  configurar  el  enlace  LACP  entre
+
+(119:27) los  switches.
+
+(119:28) Para  eso,  los  comandos  que  están  ahí  en
+
+(119:31) la  guía  son  los  que  hay  que  utilizar,
+
+(119:34) pero  si  lo  hacen  mal  no  va  a  funcionar.
+
+(119:37) Por  eso  les  pido  que  presten  mucha
+
+(119:39) atención  en  lo  que  vamos  a  hacer  ahora,
+
+(119:42) porque  no  prestando  atención  no  lo  van  a
+
+(119:44) poder  resolver  porque  no  está  hecho  en
+
+(119:46) la  guía  exactamente  como  lo  que  yo  voy  a
+
+(119:48) explicar  ahora.
+
+(119:50) Y  si  lo  hacen  mal,  va  a  funcionar  todo
+
+(119:52) mal.
+
+(119:54) Lo  que  va  a  pasar  es  lo  siguiente.  Vamos
+
+(119:57) a  focalizarnos  en  el  switch  de  núcleo
+
+(119:58) ahora  y  en  el  switch  de  distribución  de
+
+(120:00) abajo,  en  el  10,  en  este  que  está  acá.
+
+(120:04) Nos  vamos  a  focalizar  en  este  y  en  el  de
+
+(120:07) núcleo  por  ahora.
+
+(120:09) ¿Qué  tengo  que  hacer  yo?  Ustedes  ven  que
+
+(120:11) tienen  dos  cables  y  esos  dos  cables
+
+(120:14) tienen  lo  tienen  puesto  así.  Me  paro
+
+(120:16) acá.
+
+(120:19) El  cable  uno  está  conectado  en  los
+
+(120:21) puertos  gigabit  11  y  el  cable  2  está
+
+(120:24) conectado  en  los  gigabit.  Ya  les  digo  el
+
+(120:27) otro.
+
+(120:33) Uno  está  en  el  11  y  el  otro  está  en  el
+
+(120:39) 1  y
+
+(120:44) bueno,  se  ven  uno  arriba  del  otro,  con
+
+(120:46) lo  cual  no  se
+
+(120:51) bueno,  igual  lo  puedo  mirar  de  acá,  pero
+
+(120:52) bueno,  se  los  quería  mostrar  de  ahí.
+
+(120:55) Show  IP  interface  brief  con  un  dúo
+
+(120:58) adelante
+
+(121:04) y  sí  lo  que  va  a  hacer  que  van  a  ser  el
+
+(121:07) 01  y  el  1  y  del  otro  lado  van  a  estar  eh
+
+(121:11) del  otro  lado  va  a  estar  el  21  y  el  31.
+
+(121:13) Está,
+
+(121:15) ¿ven?  31
+
+(121:18) y  21.  Ahí  se  ven,  ¿ven?  21.  O  sea,  del
+
+(121:22) lado  derecho  están.  Estoy  hablando  los
+
+(121:25) de  núcleo
+
+(121:27) del  lado  derecho  están,  bueno,  están  en
+
+(121:29) orden.  Eh,  el  21  y  el  31  están  en  el
+
+(121:32) lado  derecho  y  el  01  y  el  1  están  del
+
+(121:36) lado  izquierdo.
+
+(121:38) Entonces,  lo  que  yo  tengo  que  hacer  es  y
+
+(121:41) si  se  fijan  en  los  dos  cables  que  hay,
+
+(121:45) hay  uno  que  está  funcionando  y  el  otro
+
+(121:47) está  cortado  por  spaning  tre  de  manera
+
+(121:49) lógica.  ¿Cómo  se  dan  cuenta?  Bueno,  en
+
+(121:51) las  dos  puntas  tienen  los  triangulitos
+
+(121:52) de  de  color  verde  y  en  el  otro  cable  uno
+
+(121:57) tiene  un  triangulito  verde  y  el  otro
+
+(121:58) tiene  un  puntito  naranja.  Sí,  eso
+
+(122:00) significa  que  span  los  está  cortando.
+
+(122:03) Entonces,  ¿qué  tengo  que  hacer  ahí?
+
+(122:06) Tanto  en  el  switch  de  núcleo  como  en  el
+
+(122:08) de  distribución,  que  también  lo  voy  a
+
+(122:09) abrir,
+
+(122:12) voy  a  poner  así  y  voy  a  checarlo  un
+
+(122:14) poquito  acá.  Ahí.
+
+(122:17) Enable.
+
+(122:21) Do  show  run  para  mirar  cómo  está  la
+
+(122:23) configuración.  Showran,  perdón,  acá
+
+(122:26) showrun.
+
+(122:30) Ahí  veo  cuáles  son  los  puertos
+
+(122:32) troncales.  Acá  duran  también
+
+(122:35) no  tiene  nada  configurado.
+
+(122:38) Okay.  Bueno,  ¿qué  tiene  qué  tenemos  que
+
+(122:42) hacer?  configurar  esos  puertos,  o  sea,
+
+(122:44) los  dos  puertos  de  acá  abajo  de
+
+(122:45) distribución  y  los  dos  puertos  de  acá
+
+(122:47) arriba  del  switch  de  núcleo.  Tiene  que
+
+(122:48) estar  exactamente  igual  configurados
+
+(122:50) para  que  todo  funcione.  Lo  que  el  efecto
+
+(122:53) que  voy  a  lograr  es  que  voy  a  tener  con
+
+(122:57) la  ayuda  del  protocolo  LAACP  link
+
+(123:01) aggregation  control  protocol.  Con  la
+
+(123:03) ayuda  de  ese  protocolo  voy  a  tener  el
+
+(123:06) doble  de  ancho  de  banda  porque  voy  a
+
+(123:08) usar  los  dos  cables  físicos  agrupados  en
+
+(123:11) una  interfaz  lógica  que  va  a  tener  un
+
+(123:13) nombre
+
+(123:15) y  esa  interfaz  lógica  va  a  usar  los  dos
+
+(123:18) cables  físicos  para  mandar  tráfico  por
+
+(123:20) ahí  y  con  eso  doblo  el  ancho  de  banda.
+
+(123:22) ¿Sí?  ¿Cómo  voy  a  lograr  eso?  Bueno,
+
+(123:26) tengo  que  agarrar  y  generar
+
+(123:31) en  una  interfaz  eh  lógica  que  le  vamos  a
+
+(123:34) dar  un  nombre.  Sí.  E  y  lo  vamos  a  hacer
+
+(123:38) con  est  con  estos  comandos  que  están  acá
+
+(123:40) en  la  guía.  En  el  punto  dos,  lo  primero
+
+(123:42) que  voy  a  hacer  es  decir  que  cuando  yo
+
+(123:45) genere  eso,  que  es  eso,  esa  interfaz
+
+(123:47) lógica  recibe  un  nombre  que  se  llama
+
+(123:49) port  channel  o  ether  channel.  Sí,
+
+(123:52) digamos,  eh,  y  después  en  ese  channel  o
+
+(123:56) port  channel,  digamos,  que  que  se  va  a
+
+(123:58) llamar  por  channel  1,  por  ejemplo,
+
+(124:01) adentro  de  ese  port  channel  va  a  tener
+
+(124:03) las  dos  interfaces  estas  que  de  las  que
+
+(124:06) estoy  hablando,  que  en  el  caso  del
+
+(124:08) switch  de  distribución  van  a  ser
+
+(124:12) la  01  y  la  11.  Seguro  que  es  la  otra.
+
+(124:14) Ahí  está,  ahí  se  ve  01  y  11  1.  Así  que
+
+(124:17) primero  lo  voy  a  hacer  en  el  switch  de
+
+(124:19) distribución.
+
+(124:20) Pero  antes  de  eso  tengo  que  decirle  cómo
+
+(124:22) va  a  funcionar  ese  port  channel.  Ese
+
+(124:25) port  channel  va  a  balancear  el  tráfico
+
+(124:29) eh  de  distintas  maneras.  Lo  puede  hacer,
+
+(124:32) fíjense,  tiene  tenemos  que  usar  este
+
+(124:34) comando
+
+(124:36) por  channel  load  balance,  signo  pregunta
+
+(124:40) y  puede  balancear  el  tirar  un  paquete
+
+(124:44) por  un  puerto  y  por  el  otro.  lo  puede
+
+(124:47) balancear  por
+
+(124:49) macadres  o  por  IP  y  puede  ser  por
+
+(124:52) macadre  destino  o  por  macadres  de
+
+(124:55) origen,  ¿sí?  O  por  IP  de  destino,  por  IP
+
+(124:58) de  origen.  Nosotros  acá  estamos  usando
+
+(125:00) capa  dos,  ¿si?  Así  que  vamos  a  elegir,
+
+(125:04) por  ejemplo,
+
+(125:06) en  qué  les  gusta  más,  por  destino  o  por
+
+(125:08) origen.
+
+(125:13) Siempre  hablando  de  macadres
+
+(125:15) por  destino.  Listo.  Entonces  uso  esto.
+
+(125:18) Sí,  uso  en  en  ambos  lados,  en  ambos
+
+(125:22) switches,  voy  a  usar  destination.
+
+(125:26) Y  ahí  lo  que  hice  fue  setear.  Y  eso
+
+(125:28) mismo  voy  a  hacer  en  el  switch  de
+
+(125:30) núcleo,
+
+(125:31) porque  tiene  que  ser  exactamente  igual.
+
+(125:35) Entonces,  en  el  switch  de  núcleo  pego
+
+(125:37) eso  mismo,  porque  lo  que  estoy  haciendo
+
+(125:39) es  definir  cómo  voy  a  balancear  el
+
+(125:41) tráfico  cuando  esté  hecho  el  el  port
+
+(125:42) channel,  que  ahora  no  está  no  está  hecho
+
+(125:45) todavía,  no  existe,  pero  cuando  yo  lo
+
+(125:47) cree  de  antemano  yo  tengo  que  decir  cómo
+
+(125:50) va  a  balancear  el  tráfico  de  lo  que  va  a
+
+(125:51) mandar  por  ahí.
+
+(125:54) Una  vez  que  hice  eso,  entro  a  la
+
+(125:56) interfaz,
+
+(125:58) entro  a  las  interfaces,  entro  a  las
+
+(126:00) interfaces  que  van  a  participar  de  ese
+
+(126:03) port  channel.  Y  yo  ya  sé  cuáles  son.  En
+
+(126:06) el  switch  de  núcleo  dije  que  van  a  ser
+
+(126:10) la  1
+
+(126:12) y  la  y  la  y  la  01,  creo.
+
+(126:16) Estoy  seguro.  Sí.  01  y  1  Entonces  tengo
+
+(126:19) que  hacer  la  misma  configuración  en  la
+
+(126:21) 01  y  en  la  11.  Entonces  pongo  interface
+
+(126:24) gigabit  0/1
+
+(126:28) y  acá  le  voy  a  poner  una  descripción
+
+(126:30) description  y  le  voy  a  poner  port
+
+(126:32) channel
+
+(126:34) 1.
+
+(126:36) Le  voy  a  poner.  Sí,  esa  interfalla  está
+
+(126:40) puesta  como  troncal  porque  yo  lo  hice
+
+(126:42) antes  eso,  pero  si  no  hubiese  estado
+
+(126:44) como  troncal  lo  tendría  que  haber  hecho
+
+(126:45) ahora.  Sí.  Eh,  pero  yo  me  adelanté  eh,
+
+(126:49) me  adelanté  porque  quería  mostrarles
+
+(126:51) otra  funcionalidad,  pero  acá  debería
+
+(126:54) usar,  fíjense,
+
+(127:01) estoy  dentro  de  la  interfaz  y  ahora
+
+(127:03) tengo  que  definir  el  el  protocolo  LAP.
+
+(127:07) ¿Cómo  se  define  channel?  A  ver,  ahí
+
+(127:11) está.  Es  Channel  Protocol.
+
+(127:16) No  me  lo  reconocía  porque  cuando  hay  dos
+
+(127:18) comandos  que  empiezan  igual,  eh,  no  sabe
+
+(127:21) cuál  seleccionar  y  te  muestra  los  dos.
+
+(127:24) Entonces,  channel
+
+(127:26) guion  protocol
+
+(127:30) signo  de  pregunta
+
+(127:32) y  ahí  me  pregunta  qué  protocolo  quiero
+
+(127:34) usar.  El  protocolo,  el  primero,  el  LCP,
+
+(127:37) que  es  el  que  vamos  a  usar  nosotros,  ese
+
+(127:39) es  un  protocolo  estándar.  El  de  abajo
+
+(127:41) que  dice  PP
+
+(127:44) es  el  antecesor  al  LACP  y  lo  creó  Cisco.
+
+(127:48) Sí.  O  sea,  que  los  switches  de  otro
+
+(127:50) fabricante  no  tenían  esta  funcionalidad
+
+(127:52) porque  el  que  fue  pionero  en  esto  fue
+
+(127:55) Cisco  como  fabricante  y  después  es
+
+(127:59) digamos  la  Ile
+
+(128:01) estandarizó  esa  utilización  con  el
+
+(128:04) protocolo  LAACP.  Entonces  acá  yo  tengo
+
+(128:06) que  poner  LAACP.
+
+(128:10) Y  lo  que  hice  acá  entonces  fue
+
+(128:14) en  la  interfaz  Gigabit  en  01  le  puse  una
+
+(128:18) descripción  para  saber  que  que  va  a
+
+(128:19) pertenecer  al  por  channel  1.  Le  definí
+
+(128:23) el  protocolo  que  use  que  es  el  LACP  y
+
+(128:26) ahora  lo  voy  a  le  voy  a  asignar  el  porc
+
+(128:30) channel  S  que  se  va  a  crear  en  forma
+
+(128:32) automática.  ¿Cómo  cómo  hago  eso?  y  le
+
+(128:35) digo,
+
+(128:37) "¿Vieron  que  antes  puse  channel
+
+(128:38) protocol?  Ahora  voy  a  poner  channel
+
+(128:40) group.  Channel
+
+(128:43) group,  signo  de  pregunta  y  me  dice
+
+(128:46) asignar  un  número.
+
+(128:49) Entonces  a  este  grupo  de  puerto  yo  le
+
+(128:50) voy  a  asignar  el  uno,
+
+(128:52) perdón,  ya  el  group  espacio  uno.
+
+(128:56) Signo  de  pregunta
+
+(128:58) mode,
+
+(129:00) signo  de  pregunta  otra  vez  y  le  voy  a
+
+(129:02) poner  que  sea  modo  activo.  Sí.  mode
+
+(129:05) active.  Sí,  existen  otros  modos,  pero
+
+(129:08) nosotros  vamos  a  usar  el  mode  active  que
+
+(129:10) dice  habilitp
+
+(129:13) incondicionalmente,  o  sea,  habilitarlo
+
+(129:15) sí  o  sí.  Enter.
+
+(129:18) Automáticamente  en  ese  puerto,
+
+(129:21) Automáticamente  en  ese  puerto,
+
+(129:24) si  yo  hago  un  do  show  run,  vamos  a  ver
+
+(129:28) qué  pasó.
+
+(129:31) Fíjense  lo  siguiente.  Presten  atención
+
+(129:33) porque  esto  es  importantísimo.
+
+(129:36) Automáticamente  se  creó  la  interfaz.
+
+(129:40) Se  escuchen  de  vuelta.  automáticamente
+
+(129:42) se  creó  la  interfaz  virtual  por  channel
+
+(129:46) 1,  se  creó  en  forma  automática  y  en  esa
+
+(129:49) interfaz  que  se  creó  en  forma
+
+(129:51) automática,  si  ustedes  se  fijan,  la
+
+(129:54) interfaz  0/1
+
+(129:56) dice,  "Yo  le  puse  descripción  autom  le
+
+(130:00) puse  una  descripción.  Yo  le  dije  que  va
+
+(130:02) a  pertenecer  al  por  channel  1."  Es  una
+
+(130:05) descripción,
+
+(130:07) es  un  troncal.
+
+(130:09) Usa  el  protocolo  LACP.
+
+(130:11) Y  esa  interfaz  pertenece  al  Port  channel
+
+(130:14) 1,  a  esta,  porque  yo  podría  tener  varias
+
+(130:17) interfaces  eh  con  ese  nombre,  con  otro
+
+(130:20) nombre,  por  ejemplo,  por  Channel  2,  pero
+
+(130:23) el  puerto,  o  sea,  la  interfaz  física,
+
+(130:26) quiero  decir,  tiene  que  ser  asignada  eh
+
+(130:29) cuando  está  configurable  el  LCP  a  un  por
+
+(130:32) channel,  a  una  interfaz  lógica,  que  en
+
+(130:35) este  caso  es  esta.
+
+(130:37) Y  es  y  este  este  puerto  está  asignado  a
+
+(130:41) eso,  a  esa.  Ahora  yo  voy  a  hacer  eso
+
+(130:44) mismo.  Yo  voy  a  hacer  eso  mismo  con  la
+
+(130:47) otra  interfaz  que  es  esta
+
+(130:50) con  la  11  1.
+
+(130:52) Entonces  repito  el  procedimiento.
+
+(130:56) Pongo  interface  gigabit  1/1,  flechita
+
+(131:00) hacia  arriba,
+
+(131:03) le  pongo  una  descripción,  le  digo
+
+(131:06) por  channel  1  para  yo  saber  que  esa  otra
+
+(131:09) interfaz  también  pertenece  al  port
+
+(131:10) channel  1,  aunque  después  si  ven  la
+
+(131:13) configuración  se  van  a  dar  cuenta  que  es
+
+(131:14) así.
+
+(131:16) Flechita  hacia  arriba,  le  asigno  el
+
+(131:18) protocolo  LACP,
+
+(131:20) flechita  hacia  arriba,  le  digo  que  esa
+
+(131:22) interfaz  va  a  pertenecer  al  channel
+
+(131:24) group  1  en  modo  activo
+
+(131:29) y  cuando  lo  lo  meto  en  ese  LACP,
+
+(131:32) automáticamente  empieza  a  cambiar  el
+
+(131:34) estado  y  bueno,  la  baja  y  la  vuelve  a
+
+(131:36) subir.
+
+(131:42) Guardo  la  configuración  y  vuelvo  a  ver
+
+(131:45) el  showrun.
+
+(131:47) Do  showrun.
+
+(131:49) Fíjense  que
+
+(131:53) Fíjense  que  los  dos  puertos  de  del
+
+(131:57) switch  de  los  dos  puertos  del  switch  eh
+
+(132:01) de  este  de  distribución,  el  10  en  el  cer
+
+(132:07) y  el  uno
+
+(132:09) tienen  la  misma  configuración,
+
+(132:13) tienen  están  configurados  como  Troncal,
+
+(132:15) tienen  configurado  el  protocolo  LACP
+
+(132:18) y  pertenecen  a  la  interfaz  lógica  que  se
+
+(132:21) llama  por  Channel  1.  Si  yo  bajo  esta
+
+(132:24) interface,
+
+(132:27) copio,
+
+(132:30) pego,
+
+(132:34) esta  es  una  interfaz  lógica,  yo  le  puedo
+
+(132:36) poner  una  descripción  también.  Le  pongo
+
+(132:38) LCP
+
+(132:41) LAP  contra  switch  núcleo.
+
+(132:48) Le  puse  una  descripción,  es  una  interfaz
+
+(132:50) lógica.  La  puedo  bajar  yo  shutdown.
+
+(132:54) Si  la  bajo,
+
+(132:57) automáticamente,  como  bajé  la  interfaz
+
+(132:59) lógica,  me  baja  las  dos  interfaces
+
+(133:01) físicas.
+
+(133:03) ¿Por  qué  pasa  eso?  Porque  las  dos
+
+(133:05) interfaces  físicas  pertenecen  a  él,  o
+
+(133:09) sea,  responden  a  lo  que  yo  haga  en  en
+
+(133:11) él,  porque  las  dos  interfaces  pertenecen
+
+(133:14) al  channel  group  1  y  él  es  el  por
+
+(133:16) channel  1.
+
+(133:18) Entonces,  lo  que  yo  haga  tiene  impacto
+
+(133:21) en  las  interfaces  físicas  que  están  que
+
+(133:23) él  comanda.
+
+(133:25) Si  le  pongo  no  shutdown,
+
+(133:27) las  voy  a  levantar  de  vuelta.
+
+(133:31) ¿Se  entiende  hasta  acá  todo  lo  que  hice?
+
+(133:34) DWR.
+
+(133:36) Sí,  sí.
+
+(133:37) Entonces,  ya  configuré  el  LCP  en  los
+
+(133:40) puertos  de  abajo.
+
+(133:42) Sí,  do  show  run,  porque  tenemos  que
+
+(133:45) hacer  esta  misma  configuración
+
+(133:49) y  lo  repito,  esta  misma  configuración  la
+
+(133:52) tenemos  que  hacer  en  los  dos  puertos  de
+
+(133:54) arriba
+
+(133:56) porque  si  no  no  anda.  De  hecho,  no  anda
+
+(133:58) así  como  está.
+
+(134:00) Sigue  cortado.  ¿Ven?  Uno  funciona  y  el
+
+(134:02) otro  está  cortado.  Así  todo  funciona
+
+(134:05) porque  uno  está  configurado  con  el
+
+(134:06) protocolo  LSP  y  el  puo  de  arriba  no
+
+(134:08) tiene  configuración  como  el  LSP.
+
+(134:10) Entonces  va  a  haber  un  mismatch,  o  sea,
+
+(134:14) una  eh  incongruencia
+
+(134:17) entre  lo  que  está  arriba  y  lo  que  está
+
+(134:19) abajo,  porque  el  puerto  abajo  usa  un
+
+(134:20) protocolo  que  el  de  arriba  no  lo  conoce.
+
+(134:23) Por  más  que  aparezca  así  en  verde,  no  va
+
+(134:24) a  funcionar  tampoco,
+
+(134:26) porque  el  protocolo  intercambia.  Los
+
+(134:28) protocolos,  ¿para  qué  se  usan?  para
+
+(134:30) intercambiar  información  y  que  todos
+
+(134:33) hablen  en  el  mismo  idioma.  Eso  es  un
+
+(134:34) protocolo
+
+(134:36) del  punto  de  vista  conceptual.
+
+(134:39) Cuando  yo  eh  hago  referencia  a  un
+
+(134:41) protocolo
+
+(134:43) e  eh  por  ejemplo  acá  en  Cava  se  usa  el
+
+(134:47) protocolo  antipiquete.
+
+(134:49) Si  en  no  sé  en  Córdoba  el  protocolo
+
+(134:52) antipiquete  no  existe,  digamos,  no  se
+
+(134:54) puede  aplicar,  digamos,  y  digamos  eh
+
+(134:57) bueno,  es  lo  mismo.  El  protocolo  eh
+
+(135:00) desde  el  punto  de  vista  conceptual
+
+(135:02) hace  referencia  a  que  se  hable  en  un
+
+(135:04) mismo  idioma,  en  un  lugar  y  en  el  otro.
+
+(135:07) en  este  caso  en  un  extremo  y  en  el  otro.
+
+(135:10) Entonces,  estando  yo  en  el  switch  de
+
+(135:12) núcleo  y  sabiendo  que  tengo  que  hacer
+
+(135:15) eso  en  los  puertos  01  y  11,  voy  a  hacer
+
+(135:20) la  misma  configuración.
+
+(135:24) Entonces,  tu  show  run  para  ver  los
+
+(135:26) puertos.
+
+(135:28) Hasta  ahora  solamente
+
+(135:31) tengo  configurado
+
+(135:35) el  spaning  tri.  Entonces  voy  a  hacer
+
+(135:38) esta  misma  configuración.  Voy  a  agarrar
+
+(135:40) el  puerto  este
+
+(135:43) que  es  el  gigabit
+
+(135:45) 01
+
+(135:47) y  lo  voy  a  configurar  abajo.
+
+(135:50) Description
+
+(135:53) port  channel
+
+(135:56) 1
+
+(135:59) y  voy  a  hacer  exactamente  lo  mismo  que
+
+(136:01) está  acá,  o  sea,  porque  el  resultado
+
+(136:03) tiene  que  ser  exactamente  el  mismo.  O
+
+(136:05) sea,  ¿puedo  copiar  esto  y  pegarlo  o  lo
+
+(136:08) puedo  hacer  uno  por  uno.  El  modo  troncal
+
+(136:10) ya  está.  Si  quieren  lo  copio,  que  es  más
+
+(136:13) fácil,  así  me  queda  igual.
+
+(136:16) Le  digo  que  el  protocolo  que  usen  va  a
+
+(136:19) ser  el  EACP  y  le  digo  que  va  a
+
+(136:21) pertenecer
+
+(136:23) también.
+
+(136:25) [risas]
+
+(136:26) Fíjense
+
+(136:28) que  ya  cuando  yo  lo  creo  se  da  cuenta
+
+(136:31) que  del  otro  lado  usa  el  mismo  protocolo
+
+(136:33) y  es  el  mismo  por  channel,  el  uno  y  ya
+
+(136:36) produce  cambios  en  en
+
+(136:39) lo  que  está.
+
+(136:42) Y  fíjense,  DoR,
+
+(136:44) do  show  run  y  fíjense  que  ya  me  creó
+
+(136:48) automáticamente  la  interfaz  por  channel
+
+(136:52) 1.  Es  una  interfaz  lógica,  me  la  creó.  Y
+
+(136:55) ya  en  esa  interfaz,  el  gigabit  0/1
+
+(137:00) pertenece  a  esa  interfaz  y  tiene  la
+
+(137:02) misma  configuración  que  el  switch  de
+
+(137:05) distribución.  Me  falta  hacer  ahora  todo
+
+(137:08) esto  mismo  con  el  otro  puerto  que  es  el
+
+(137:11) Gigabit  11.
+
+(137:14) Lo  pego,
+
+(137:16) voy  al  Gigabit  11  y  pongo  toda  esa  misma
+
+(137:19) configuración.  Ustedes  eh  si  quieren
+
+(137:22) pueden  pegarlo  todo  junto,  pueden
+
+(137:24) copiarlo  y  pegarlo  todo  junto.  Yo  no  lo
+
+(137:26) hago  así,  pero  lo  voy  a  probar.
+
+(137:29) Lo  toma.  ¿Ven  que  lo  toma?  Así  copio
+
+(137:31) todos  juntos.  A  mí  me  gusta  hacerlo
+
+(137:33) línea  por  línea.
+
+(137:35) Do  WR  do  show  run
+
+(137:39) de  vuelta,  porque  lo  que  yo  tengo  que
+
+(137:41) hacer  es  comparar  las  dos
+
+(137:42) configuraciones  que  tienen  que  ser
+
+(137:43) exactamente  igual,  arriba  y  abajo.  Y  si
+
+(137:46) las  comparo,
+
+(137:49) todo  esto  que  está  acá  es  igual  a
+
+(137:53) casi  todo  esto  que  está  acá,  porque  en
+
+(137:57) el  port  channel,  este,  en  la  interfaz
+
+(137:58) port  channel,  yo  tengo  que  decirle  que
+
+(138:00) también  esté  en  modo  troncal,  más  allá
+
+(138:01) que  las  las  dos  interfaces  de  abajo  eh
+
+(138:05) eh  son  troncales,  pero  yo  lo  tengo  que
+
+(138:07) poner  explícito.
+
+(138:10) Switch  port  mode  track.
+
+(138:16) Y  en  la  interfaz  de  allá,  que  ya  estaba
+
+(138:18) como  troncal,
+
+(138:21) le  vamos  [carraspeo]  a  poner  la
+
+(138:22) descripción.
+
+(138:25) La  copio.
+
+(138:29) Interface
+
+(138:30) por  channel
+
+(138:34) interface  portion  channel  1  yon  channel.
+
+(138:44) La  voy  a  copiar  así  no  tengo  problemas
+
+(138:48) porque  a  veces  cuando  uno  la  escribe  la
+
+(138:51) puede  escribir  mal  y  en  este  caso  la
+
+(138:53) quiero  escribir  bien.
+
+(138:55) Description
+
+(138:57) lap
+
+(139:01) switch
+
+(139:03) distribución.  ¿Cómo  se  llama  el  switch
+
+(139:05) de  distribución  este?
+
+(139:07) 10.
+
+(139:07) 10.
+
+(139:09) Switch  10  distribución  sería  switch  10
+
+(139:12) distribución.  Así,  listo.
+
+(139:16) Do  WR  para  guardar  la  configuración.  Do
+
+(139:19) show  run  de  vuelta.  Entonces,  ahora  sí,
+
+(139:22) ahora  sí.
+
+(139:25) Acá  también
+
+(139:28) do  show  run.
+
+(139:30) Ahora  sí,
+
+(139:32) ambas  configuraciones  deberían  estar
+
+(139:35) exactamente  iguales.
+
+(139:37) Es  decir,  que  todo  esto  de  acá
+
+(139:40) se  tiene  que  o  tiene  que  coincidir  con
+
+(139:43) todo  esto  de  acá.  ¿Lo  ven?
+
+(139:46) Y  ahora  sí,  mágicamente  corro  esto  de
+
+(139:49) acá,
+
+(139:51) le  doy  a  la  flechita  y  si  ustedes  ven,
+
+(139:53) ambos  puertos  están
+
+(139:57) traficando  online.  ¿Lo  ven?
+
+(140:01) Fíjense  lo  de  la  izquierda  y  lo  de  la
+
+(140:03) derecha.  En  la  izquierda  los  dos  cables
+
+(140:06) están  operativos,  eh,  traficando
+
+(140:09) información,  paquetes,  los  dos  puertos
+
+(140:12) de  la  de  la  derecha,  hay  uno  que  está
+
+(140:15) cortado  por  spaning  tre  y  el  otro  está
+
+(140:17) funcionando.  Y  fíjense  que
+
+(140:18) automáticamente  Spaning  Tree  también
+
+(140:20) cortó  el  vínculo  que  está  entre  los  dos
+
+(140:22) switches  de  distribución,  porque  ahora
+
+(140:24) está  funcionando  bien  spanent  tre
+
+(140:28) y  no  hay  bucles.
+
+(140:30) No  hay  bucles  porque  el  de  distribución
+
+(140:31) 10  se  conecta  con  el  de  núcleo.  El  de
+
+(140:34) núcleo  se  conecta  con  el  de  distribución
+
+(140:36) 20,  pero  el  10  con  el  20  no  se  no  se
+
+(140:38) pueden  conectar  entre  sí  para  que  no  se
+
+(140:40) genere  ese  bucle.
+
+(140:42) ¿Se  entiende  hasta  acá  todo  lo  que  hice?
+
+(140:47) Profe,  yo  tengo  una  duda.
+
+(140:50) Eh,  este  protocolo  solo  se  usa  de  la
+
+(140:54) capa  de  núcleo  a  distribución  o  se
+
+(140:55) podría  usar  de  distribución  a  la  de
+
+(140:58) acceso  con  los  switch  de  abajo?
+
+(141:02) Es  un  protocolo  que  se  puede  usar  en
+
+(141:04) cualquier  lado,  siempre  y  cuando  haya
+
+(141:07) más  de  un  eh  vínculo  físico,  digamos,
+
+(141:12) decir,  como  como  acá  que  haya  dos  cables
+
+(141:14) y  las  configuraciones  estén  bien  hechas
+
+(141:16) en  los  dos  extremos.
+
+(141:19) ¿Para  qué  se  usa?  Para  doblar  el  ancho
+
+(141:21) de  banda.  Porque  si  no  lo  que  está  la  a
+
+(141:24) la  derecha,  en  vez  de  usar  2  GB  para
+
+(141:29) traficar  eh  datos  o  paquetes  entre  el
+
+(141:32) núcleo  de  distribución,
+
+(141:34) está  está  desperdiciando  un  un  vínculo
+
+(141:36) porque  están  en  trilo  corta  para  que  no
+
+(141:38) haya  bucle.  En  cambio,  de  este  modo,  si
+
+(141:41) yo  hubiese  necesitado  doblar  el  ancho  de
+
+(141:43) banda  en  mi  red,  porque  hay  congestión
+
+(141:46) entre  la  distribución  y  el  y  el  corde,
+
+(141:49) entre  la  capa  de  distribución  y  la  capa
+
+(141:51) de  de  núcleo,  eh,  la  capa  la  capa  de
+
+(141:54) núcleo  se  llama  capa  de  core  en  inglés  y
+
+(141:57) abajo  la  capa  de  distribución.
+
+(141:59) Yo  haciendo  esto  doblo  el  ancho  de
+
+(142:01) banda.  Sí.  Eh,  y  con  eso  haciendo  esta
+
+(142:07) esta  manganeta,  vamos  a  llamarlo,  voy  a
+
+(142:09) tener  el  doble  de  ancho  banda  entre  el
+
+(142:11) entre  la  distribución  y  el  core  de  la
+
+(142:13) red.  Sí,  para  eso  se  usa.  Podría  hacerlo
+
+(142:17) también  en  otro  lado,  sí,  digamos,  pero
+
+(142:19) eh  bueno,  si  entendieron  esto,
+
+(142:22) perdón,  pero  cuando  te  bloquea  el
+
+(142:24) spaning  tree,  una  de  la  de  los  dos
+
+(142:26) interfaces  no  puede  hacer  ese
+
+(142:30) esa  comunión  de  lógica,  ¿o  sí?
+
+(142:34) Es  que  justamente  eso  se  hace  para  que
+
+(142:36) Span  Trino  te  lo  bloquee.
+
+(142:38) Ah,  okay.  Perfecto.
+
+(142:39) O sea,  lo  vuelvo  a  repetir.
+
+(142:42) como  está  a  la  a  la  derecha,  o  sea,
+
+(142:45) entre  el  núcleo  y  la  y  el  20  de
+
+(142:47) distribución,
+
+(142:49) se  usa  un  cable  solo  físico  y  y  y
+
+(142:53) perdés,  o  sea,  no  puedes  usar  el  segundo
+
+(142:56) cable  para  doblar  el  ancho  banda  entre
+
+(142:58) esos  dos  equipos  porque  Spaning  Trite  te
+
+(143:01) lo  bloquea  porque  es  como  que  ve  que  hay
+
+(143:03) dos  caminos  distintos.
+
+(143:05) En  cambio,  en  con  lo  que  hicimos  en  la
+
+(143:08) izquierda,
+
+(143:11) en  Spaning  Tree,  ve  esos  dos  vínculos
+
+(143:14) que  son  físicos,  porque  son  dos  cables,
+
+(143:17) lo  ve  como  un  solo  puerto  lógico  que  se
+
+(143:20) llama  por  Channel  1.  ¿Sí?  Y  ese  vínculo
+
+(143:25) funciona
+
+(143:26) a  2  GB  porque  cada  interfaz  física  que
+
+(143:29) está  dentro  de  él
+
+(143:32) funciona  1  gig.  Entonces,  Spaning  Tree
+
+(143:35) ahora  ve  una  interfaz  sola  que  se  llama
+
+(143:38) por  Channel  1,  que  es  una  interfaz
+
+(143:39) lógica,
+
+(143:41) pero  dentro  de  esa  interfaz  lógica  hay
+
+(143:43) dos  interfaces  físicas  que  están
+
+(143:45) conectadas  con  dos  cables.  ¿Se  entiende
+
+(143:47) o  no  se  entiende  nada?
+
+(143:49) Sí,  sí,  perfecto.  Era  para  saber  qué
+
+(143:51) pasaba.  Yo  yo  convertí  convertí  dos
+
+(143:53) interfaces  físicas,
+
+(143:56) digamos,  en  una  interfaz  lógica  más
+
+(143:58) grande.  O  sea,  es  como  que  tengo  dos
+
+(144:00) caños  por  donde  pasa  agua,  digamos,  y
+
+(144:03) antes  usaba  uno.  Ahora,  para  que  el
+
+(144:06) caudal  aumente,  uso  los  dos  al  mismo
+
+(144:09) tiempo  porque  abro  la  llave,  pero  para
+
+(144:11) que  el  tanque  se  me  llene,  digamos,  o
+
+(144:15) sea,  uso  los  dos  vínculos,  los  dos  las
+
+(144:18) dos  cañerías  juntas,  pero  las  la  las
+
+(144:21) renombro  como  si  fuese  una  sola  cañería
+
+(144:24) más  grande.  Sí.  Y  eso  es  lo  que  hace  la
+
+(144:27) configuración  y  lo  que  permite  el
+
+(144:28) protocolo  LAP.
+
+(144:30) Sí.
+
+(144:32) No  sé  si  se  entendió,  pero  bueno.  Eh,
+
+(144:35) básicamente  convierto  dos  interfaces
+
+(144:37) físicas
+
+(144:39) separadas  en  una  interfaz  lógica  para
+
+(144:41) que  funcione  todo  junto  y  doblare  el
+
+(144:43) ancho  de  banda.  Y  el  tráfico  cómo  se
+
+(144:46) hace,  se  balancea  por  un  enlace  físico  o
+
+(144:48) por  otro  enlace  físico,  pero  en  realidad
+
+(144:50) lógicamente  es  una  interfaz  lógica
+
+(144:55) eh  de  2  GB  porque  es  1  GB  de  una  más  1
+
+(144:58) GB  de  la  otra.  Por  eso  se  llama
+
+(145:00) agregación.  digamos  el  término  en
+
+(145:03) networking.
+
+(145:05) Sí,
+
+(145:07) sí.  Y  yo  podría  hacer  lo  mismo,  o  sea,
+
+(145:09) hacer  LCP  entre  el  núcleo  y  el  20  de
+
+(145:12) distribución,  o  sea,  el  otro  switch  de
+
+(145:14) distribución.
+
+(145:15) Es  que  eso  es  lo  que  tenemos  que  hacer.
+
+(145:17) Ah,  bien.
+
+(145:18) Justamente  lo  que  pide,  justamente  lo
+
+(145:20) que  pide  el  enunciado  es  eso.
+
+(145:22) Lo  que  pasa  que  acá  viene  la
+
+(145:23) particularidad  en  la  que  todos  se
+
+(145:25) confunden.
+
+(145:26) En  est  esta  pantalla  que  está  ahora  acá
+
+(145:29) abierta  es  el  switch  de  núcleo.
+
+(145:32) Yo  tengo  que  hacer  este  mismo  trabajo
+
+(145:34) con  los  puertos  dos  y  tres  de  acá
+
+(145:38) y  con  los  puer  y  tengo  que  entrar  al  sut
+
+(145:41) distribución  20  y  hacerlo  para  los
+
+(145:44) puertos  que  se  conectan  contra  el  su  de
+
+(145:45) núcleo.  O  sea,  yo  tengo  que  hacer  este
+
+(145:49) mismo  trabajo  en  los  puertos
+
+(145:53) dos  y  tres  del  núcleo,  que  son  los  que
+
+(145:55) van  contra
+
+(145:58) el  01  y  el  11  de  eh  de  del  distribución
+
+(146:03) 20.  ¿Se  entiende?  Perfecto.  Pero  sería
+
+(146:05) un  poquito  son  no  son  iguales  los
+
+(146:07) números  son  distintos  porque  bueno,  en
+
+(146:10) este  caso  van  a  ser  el  dos  y  el  tres  y
+
+(146:13) acá  van  a  ser  el
+
+(146:16) eh,  [carraspeo]  como  les  dije  recién  el
+
+(146:19) 01  y  el  1  Sí,
+
+(146:22) claro.
+
+(146:22) O  sea,  que  ahora  la  configuración  que  me
+
+(146:24) tiene  que  dar  idéntica  es  en  el  núcleo
+
+(146:28) el  21  y  el  31  se  tienen  que  ser
+
+(146:30) equivalentes.
+
+(146:32) Show.
+
+(146:35) al  a  estos  dos,  al  01  y  al  1.  Y  acá
+
+(146:40) viene  el  error  que  cometen  todos  los
+
+(146:41) alumnos
+
+(146:43) que  no  entienden  que  si  vos  usaste  un
+
+(146:48) port  channel,  que  lo  llamaste  uno,  para
+
+(146:50) con  el  switch  de  distribución  10,  no
+
+(146:54) puedes  usar  el  mismo  para  el  otro  switch
+
+(146:56) porque  es  otro  vínculo  distinto.
+
+(146:58) Entonces,  tenés  que  crear  otro  port
+
+(147:00) channel  que  se  llame  por  channel  2,  por
+
+(147:02) ejemplo.  Si
+
+(147:05) digamos  vos  vas  a  hacer  el  mismo  trabajo
+
+(147:07) para  el  otro  lado.  Si  vos  metés  los
+
+(147:09) cuatro  puertos  en  el  P  channel  1  y  no
+
+(147:12) van  a  andar  nada  porque  son  enlaces
+
+(147:15) distintos.  Un  enlace  va  para  un  lado  y
+
+(147:17) otro  enlace  va  para  el  otro  lado.
+
+(147:19) O  sea,  para  mí  está  clarísimo,  pero
+
+(147:21) bueno,  es  un  error  que  cometen  siempre  y
+
+(147:22) no  sé  por  qué,
+
+(147:25) eh,  porque  son  caminos  distintos.  Lo  de
+
+(147:28) la  derecha  es  de  la  derecha  y  lo  de  la
+
+(147:30) izquierda  es  de  la  izquierda,  porque  lo
+
+(147:31) de  la  derecha  va  al  switch  de
+
+(147:33) distribución  20  y  lo  de  la  izquierda  va
+
+(147:35) al  switch  de  distribución  10.  O  sea,  no
+
+(147:37) entiendo  por  qué  lo  mezclan,  pero  lo
+
+(147:40) digo  así  con  énfasis  porque  me  llama  la
+
+(147:43) atención  cuando  lo  veo.
+
+(147:46) E  entonces,  bueno,  lo  que  yo  tengo  que
+
+(147:49) hacer  ahora
+
+(147:51) es  configurar  en  el  su  de  núcleo  la
+
+(147:54) interfaz  esta  que  es  la  21.
+
+(147:58) Copio,  pego
+
+(148:01) description  y  le  voy  a  poner,
+
+(148:04) por  eso  la  descripción  es  importante,
+
+(148:06) por  channel  2.
+
+(148:10) ¿Está  bien?  ¿Y  qué  tengo  que  hacer?
+
+(148:13) Bueno,  tengo  que  primero  decirle  que
+
+(148:16) utilice  el  el  protocolo  LACP  también,
+
+(148:19) porque  las  interfaces  no  tienen
+
+(148:21) configurado  nada,  fíjense,  solo  tienen
+
+(148:23) configurado  el  modo  trank.
+
+(148:25) Entonces  pego  acá  y  le  digo,  "Vas  a  vos
+
+(148:28) vas  a  vas  a  usar  el  protocolo  LCP,  le
+
+(148:30) estoy  diciendo."  Y  con  este  otro
+
+(148:33) comando,  que  ya  lo  había  puesto  antes  y
+
+(148:35) lo  pego  acá,  le  tengo  que  decir  que  el
+
+(148:39) channel  group  al  que  va  a  pertenecer  ya
+
+(148:41) no  es  el  uno,  es  el  dos  a  este  puerto.  Y
+
+(148:45) le  doy  enter.
+
+(148:48) Si  yo  pongo  do  show  run,
+
+(148:51) fíjense  que  el  puerto  21  ahora
+
+(148:56) tiene  la  misma  configuración  que  los  de
+
+(148:58) arriba,  pero  pertenece  al  grupo  dos.  Y
+
+(149:01) el  grupo  dos  es  la  interfaz  que  ahora
+
+(149:04) aparece,  la  interfaz  lógica  que  aparece
+
+(149:05) acá  arriba,  que  antes  no  aparecía,  pero
+
+(149:08) ahora  aparece,  que  se  llama  por  Channel
+
+(149:10) 2,  porque  es  otra  interfaz  lógica  que  va
+
+(149:14) a  serla  usada  para  el  otro  lado,  para  el
+
+(149:16) lado  de  la  derecha.  ¿Se  entiende  acá  eh
+
+(149:20) lo  que  digo  o  todavía  quedan  dudas?
+
+(149:23) Sí,  se  entiende.
+
+(149:24) Se  entiende.
+
+(149:26) Bueno,  entonces  ahora  voy  a  hacer  lo
+
+(149:28) mismo  con  el  otro  puerto  porque  para
+
+(149:30) abajo  van  dos  puertos.
+
+(149:33) Entro  al  31.
+
+(149:36) Bueno,  voy  a  copiar  lo  mismo,  ya  que  lo
+
+(149:38) tengo  todo  hecho.  Copio  todo  esto,
+
+(149:43) lo  copio  y  lo  pego  acá  porque  va  la
+
+(149:47) descripción  también  va  para  por  Chanel
+
+(149:49) 2,  tiene  que  estar  con  modo  troncal,
+
+(149:52) tiene  que  ser  al  SP  y  pertenece  al  grupo
+
+(149:54) dos.
+
+(149:56) Do  WR
+
+(149:58) do  show.  Y  ahora  sí  tengo  las  los  cuatro
+
+(150:03) puertos  configurados.
+
+(150:05) como  corresponde,
+
+(150:07) nada  más  que  los  dos  primeros  pertenecen
+
+(150:11) al  grupo  uno  y  los  dos  segundos
+
+(150:14) pertenecen  al  grupo  dos.
+
+(150:16) ¿Por  qué?  Porque  mi  switch  de
+
+(150:18) distribución
+
+(150:20) 20,  que  lo  voy  a  configurar  ahora  con  T,
+
+(150:24) el  puerto  Gigabit  01,  que  es  este  que
+
+(150:27) voy  a  configurar  ahora,
+
+(150:30) va  a  tener  la  misma  configuración  que
+
+(150:32) estos  va  a  pertenecer.
+
+(150:35) al  port  channel  2  y  lo  voy  a  copiar
+
+(150:39) porque  como  no  tiene  sentido  que  lo  haga
+
+(150:41) todo  porque  ya  se  los  expliqué,
+
+(150:45) la  interfaz  01  y  la  interfaz  1
+
+(150:51) ambas  tienen  que  tener  la  misma
+
+(150:53) configuración  que  la  interfaz  21  y  la
+
+(150:58) interfaz  31  del  otro  del  otro  switch.
+
+(151:04) Y  fíjense  ahora  que  yo  tengo  que  usar  el
+
+(151:07) modo  comparativo,  el  modo  una  de  las
+
+(151:10) formas  que  se  utiliza  para  hacer  lo  que
+
+(151:12) se  llama  resolución  de  problemas  o  en
+
+(151:14) ingrés  travel  shooting
+
+(151:17) es  el  método  de  comparación  dur
+
+(151:21) do  showrun
+
+(151:23) que  para  ver  si  algo  funciona  bien  tiene
+
+(151:26) que  estar  tiene  que  compararlo  y  verlo
+
+(151:29) si  están  exactamente  igual.
+
+(151:32) Entonces,
+
+(151:33) por  channel  2,
+
+(151:36) por  channel  2  le  tengo  que  poner  modo
+
+(151:38) tranquil  descripción  todavía  en  ambos
+
+(151:39) lados,  pero
+
+(151:42) los  dos  puertos  que  están  abajo  se
+
+(151:44) corresponden  con  los  dos  puertos  que
+
+(151:46) están  arriba.  Los  dos  pertenecen  al
+
+(151:48) grupo  dos,  los  dos  tienen  el  protocolo
+
+(151:50) LAP,  los  dos  están  en  modo  troncal.
+
+(151:55) Sí.
+
+(151:57) Y  si  me  fijo
+
+(152:00) ahora
+
+(152:02) se  va  a  recalcular  el  árbol.  Cuando  yo
+
+(152:05) agregue  esto  bien,
+
+(152:07) voy  a  entrar  a  la  interfaz
+
+(152:10) por  channel  2,  esta  que  está  acá.
+
+(152:19) La  voy  a  pegar  acá.
+
+(152:21) Voy  a  decir  switch  por  mode  trank
+
+(152:23) simplemente  para  que  quede
+
+(152:24) explícitamente
+
+(152:25) y  funcione  todo  bien.  Description  LACP
+
+(152:31) contra
+
+(152:33) switch  20
+
+(152:36) distribución.
+
+(152:39) Y  eso  mismo  voy  a  hacer  acá.
+
+(152:43) pegar  porque  se  llama  igual  la  interfaz
+
+(152:47) y  le  voy  a  poner
+
+(152:49) switch  por  m,  aunque  ya  está.  Switch  por
+
+(152:52) m  trank,  acá  ya  estaba.
+
+(152:55) y  le  voy  a  poner
+
+(152:58) description
+
+(153:00) la lap
+
+(153:02) switch
+
+(153:04) núcleo.
+
+(153:07) WR  para  guardar  la  configuración.  TWR
+
+(153:10) para  guardar  la  configuración.
+
+(153:13) Y  ahora  sí  está  todo  exactamente  igual.
+
+(153:16) Y  si  se  fijan,
+
+(153:19) ahora  spanning  tre  cortó  todo  porque
+
+(153:20) está  recalculando  el  árbol,  pero  si  yo
+
+(153:23) le  acelero  el  tiempo,
+
+(153:26) automáticamente  spaning  tree  va  a
+
+(153:28) recalcular  todo  el  árbol
+
+(153:31) y  va  a  cortar.  Después  debería  cortar
+
+(153:35) este  vínculo  si  no  ese  vínculo  está  mal
+
+(153:39) configurado  o  algo  pasa  y  hay  que
+
+(153:42) revisarlo,
+
+(153:45) pero  en  un  principio
+
+(153:48) la  configuración  estaría  correcta.
+
+(153:51) Eso  iba  a  preguntar,  "Profe,  ¿ese
+
+(153:52) vínculo  entre  los  dos  switches  de
+
+(153:54) distribución
+
+(153:56) es  necesario  o  está  a  modo  conceptual?
+
+(154:02) Eh,  está  a  propósito
+
+(154:04) porque  eh  es  el  que  muestra  la
+
+(154:06) funcionalidad  de  Spaning  Tre.
+
+(154:09) Eh,  justamente  Spaning  Tree  en  eh  es  el
+
+(154:13) que  les  muestra  eh  justamente  esa  esa  lo
+
+(154:18) que  voy  a  hacer  como  Span  no  calculó
+
+(154:20) correctamente  eso,  voy  a  revisar  en  el
+
+(154:23) switch  este  enable  show  run.
+
+(154:32) Este  vínculo  tiene  estar  como  troncal  y
+
+(154:34) tienen  que  estar  el  21.  Este  esta
+
+(154:37) interface  tiene  que  estar  como  troncal
+
+(154:43) con  esta  interface  tiene  que  estar  como
+
+(154:45) troncal.
+
+(154:47) Switch  por  mod  trank
+
+(154:52) como  troncal.  Show  van
+
+(154:56) show  van.
+
+(154:59) Este  switch  tiene  que  por  eso  le  digo
+
+(155:01) este  está  todo  completo,  ¿no?  Yo  hay
+
+(155:03) cosas  que  bueno,  no  iba  a  hacer,  pero
+
+(155:04) bueno,  pues  ya  es  muy  tarde,  pero
+
+(155:08) [carraspeo]
+
+(155:09) van  10
+
+(155:13) no  le  voy  a  poner  el  nombre.  Van  20.
+
+(155:19) ¿Ven  que  ahí  cortó  el  vínculo
+
+(155:22) span  entry?
+
+(155:25) Sí,
+
+(155:26) sí.  ¿Qué  faltaba?
+
+(155:27) Porque  no  tenía  configurada  todas  las
+
+(155:29) van  y  el  spaning  tre  funciona.  El
+
+(155:31) spaning  tre  que  funciona  es  per  van.
+
+(155:32) Spaning  tre  es  spaning  tri  por  van.
+
+(155:35) Entonces,  claro,
+
+(155:37) [carraspeo]  los  otros  switches  tienen  la
+
+(155:39) van  1,  10  y  20  y  este  tenía  la  uno.
+
+(155:42) Spanit  no  puede  funcionar  correctamente
+
+(155:45) porque  quiere  calcular  un  árbol  que  no
+
+(155:46) puede  calcular.  Entonces,
+
+(155:49) si  ustedes  vieron  la  la  teoría  de
+
+(155:52) Spaning  Tree,  cuando  Spaning  Tree  va  a
+
+(155:54) calcular  el  árbol,  envía  hace  un
+
+(155:57) broadcast  todo  el  tiempo  de  unos
+
+(155:59) paquetitos  especiales  que  se  llaman
+
+(156:01) BPDU.
+
+(156:03) Esos  paquetitos  especiales  que  se  llaman
+
+(156:04) BPDU  los  manda  a  Spanentry  como
+
+(156:06) broadcast  eh  a  nivel  K2
+
+(156:11) para  poder  calcular  el  árbol.  se  quedó
+
+(156:14) dando  vueltas  y  por  eso  no  se  cortaba  el
+
+(156:17) vínculo,  porque  Spaning  Tree  quería
+
+(156:19) calcular  el  árbol  y  no  podía  y  eso
+
+(156:21) genera  una  inestabilidad  en  la  red  y
+
+(156:23) funciona  todo  mal.
+
+(156:25) Por  eso,  por  eso  teníamos  que  configurar
+
+(156:29) las  vilan  en  este  switch  también.
+
+(156:31) ¿Se  entendió?
+
+(156:34) Sí.
+
+(156:35) Bueno,  hasta  acá  es  el  trabajo  de  la
+
+(156:40) número  uno  y  después  tienen  que
+
+(156:42) configurar  ustedes  lo  que  falta,  que  es
+
+(156:45) en  el  el  SSH  y  [resoplido]  bueno,  este  y
+
+(156:51) hacer  esas  pruebitas.  Sí,  acá  les
+
+(156:54) muestra  que  dicen  que  tienen  que  hacer
+
+(156:55) un  unos  show  spanent  sumary  y  todo  eso
+
+(156:58) para  un  poco  entender
+
+(157:00) un  poco  más  de  spanentry  lo  que  vien  en
+
+(157:02) la  teoría,
+
+(157:04) pero  hasta  acá  es  lo  que  tienen  que  eh
+
+(157:08) saber  ustedes  y  resolver  del  escenario
+
+(157:11) más  lo  que  yo  no  resolví.
+
+(157:14) La  pregunta  mía  es,
+
+(157:16) ¿a  les  quedó  claro  todo  lo  que  hice  y
+
+(157:18) todo  lo  que  expliqué  o  hay  algo  que  no
+
+(157:20) quedó  claro?
+
+(157:24) Traté  de  explicarlo  lo  más  rápido  que
+
+(157:25) pude  y  con  el  nivel  de  detalle  que  que
+
+(157:28) que  merece  que  lo  explique  o  para  que  lo
+
+(157:31) entienda.  Pues  por  ahí  podría  haber
+
+(157:33) omitido  un  montón  de  cosas,  pero
+
+(157:35) prefiero  decirles  todo  y  tardar  un  poco
+
+(157:37) más  y  que  entiendan.
+
+(157:43) Perfecto.
+
+(157:44) Si  si  no  hay  ninguna  pregunta,  hasta  acá
+
+(157:47) llegó  la  clase  de  hoy.  Sí,  les  voy  a
+
+(157:50) habilitar  el  recurso  en  el  aula  virtual
+
+(157:52) que  va  va  a  decir  trabajo  laboratorio
+
+(157:55) número  uno,  entregar  aquí.
+
+(157:57) Se  tienen  que  agrupar  de  a  dos  y  tienen
+
+(157:59) que  en  uno  solo  de  ustedes  entregar  el
+
+(158:03) trabajo  antes  en  el  aula  virtual  que  le
+
+(158:07) corresponda  antes  del  jueves  que  viene  a
+
+(158:10) las  19  horas.
+
+(158:13) E
+
+(158:15) vayan  agrupándose  a  dos.  Cuando  suban  el
+
+(158:18) archivo,  acuérdense  que  diga  trabajo  lao
+
+(158:20) número  uno  guion
+
+(158:23) y  el  apellido  de  cada  el  curso  K  45  75  o
+
+(158:27) el  que  sea  eh  según  el  que  les
+
+(158:30) corresponde  a  cada  uno  de  ustedes  en
+
+(158:32) guion  apellido  uno  y  apellido  del  otro
+
+(158:36) eh  compañero.  Sí.  Y  lo  sube  uno  solo
+
+(158:40) ustedes.  Sí.  E  así  que  bueno,  así  como
+
+(158:44) vamos  a  a  trabajar.  Yo  voy  a  crear  un
+
+(158:46) Excel
+
+(158:49) e  donde  voy  a  marcar  quién  se  agrupó  con
+
+(158:53) quién.  Eh,  y  bueno,  quien  no  tenga  un
+
+(158:57) compañero  de  grupo,  eh,
+
+(159:02) yo  le  voy  a  asignar  uno  eh  al  azar  si  no
+
+(159:05) me  avisan  lo  antes  posible.
+
+(159:07) Posible.  en  el  chat  pregunta  si  se  puede
+
+(159:09) hacer  individual,  profe.
+
+(159:11) No  se  puede  hacer  individual.  A  menos
+
+(159:13) que  alguien  quede,  a  menos  que,  no  sé,
+
+(159:16) que  sean,  no  sé,  49.
+
+(159:19) Y  bueno,  va  a  haber  uno  solo  que  va  a
+
+(159:22) quedar  este  solo,  pero  no  no  se  puede
+
+(159:26) hacer  eh  individual,  tienen  que  hacerlo
+
+(159:28) de  aparez,
+
+(159:31) salvo  que,  como  les  digo,  quede  uno.  Es
+
+(159:35) más,  si  queda  uno,  me  voy  a  dar  cuenta.
+
+(159:38) Y  a  ese  uno  o  lo  hace  solo  o  lo  hacen  de
+
+(159:42) a  tres,  pero  va  a  ser  un  caso
+
+(159:44) particular,
+
+(159:47) ¿eh?  No,  lo  que  pregunta  Natalie  ya  lo
+
+(159:50) aclaré,  no  se  puede.  ¿Por  qué?  Porque
+
+(159:55) nosotros  los  docentes  eh  tenemos
+
+(159:58) asignado  un  curso  cada  uno.  El  ingeniero
+
+(160:01) Rafael  Olivier  tiene  asignado  el  curso
+
+(160:04) 4773.
+
+(160:06) Yo  tengo  asignado  el  curso  4575.
+
+(160:09) El  4574
+
+(160:11) lo  vamos  a  trabajar  de  manera
+
+(160:12) compartida,  ¿sí?  En  los  dos.
+
+(160:17) Eh,  pero  no,  eh,  digamos,  tenemos  que
+
+(160:19) focalizarnos  en  el  curso  en  el  que
+
+(160:21) corresponde  cada  uno.  Por  eso  no  se
+
+(160:23) pueden  mezclar  los  alumnos  de  un  una
+
+(160:24) comisión  con  la  otra  como  como  están
+
+(160:27) sugirio,  porque  no  se  puede
+
+(160:29) administrativamente
+
+(160:31) en  eh  no  se  puede  administrativamente  no
+
+(160:34) se  puede  en  porque  la  forma  de
+
+(160:37) evaluación  es  por  cada  curso,  por  cada
+
+(160:41) comisión.  Sí.
+
+(160:46) Profe,  hay  dos  PK,  perdón,
+
+(160:52) si  que  hay  dos  puntos  PKT  que  uno  dice
+
+(160:55) con  SSH,  TL1  switch  y  uno  dice  Tele
+
+(160:57) Switch  con  SSH.  Eh,  hay  que  hacer  una
+
+(161:00) parte  en  uno  y  otra  en  el  otro  o  no.
+
+(161:02) No,  no,  tomen  uno  solo.  No  sé  por  qué
+
+(161:04) hay  dos  y  tampoco  me  interesa  porque  la
+
+(161:06) realidad  es  que  como  que  hay  que
+
+(161:07) resolverlo  para  aprender,  digamos.  Eh,
+
+(161:11) yo  en  este  caso  abría  el  el  que  dice  el
+
+(161:13) el  común,  el  que  el  que  no  dice  con  SSH.
+
+(161:17) No  sé  qué  tiene,  debe  tener  algo
+
+(161:18) configurado,  algo  adicional,  pero  la
+
+(161:20) realidad  es  que  como  ustedes  lo  tienen
+
+(161:22) que  resolver  para  aprender,
+
+(161:24) abren  uno  u  otro,  es  exactamente  igual,
+
+(161:27) pero  yo  abriría  el  que  el  común,  el  que
+
+(161:29) no  dice  SSH,  porque  no  sé  lo  que  tiene
+
+(161:31) el  otro.
+
+(161:33) Okay.  Okay.
+
+(161:34) E  bueno,  eh,
+
+(161:38) yo  voy  a  hacer  lo  siguiente.  Voy  a  hacer
+
+(161:40) ese  Excel  que  le  digo,  lo  voy  a  subir  e
+
+(161:43) y  voy  a  y  y  se  los  voy  a  dejar  a  ustedes
+
+(161:45) para  que  lo  editen.  Sí.  ¿Cuál  es  la  idea
+
+(161:50) en  en  la  medida  que  ustedes  vayan
+
+(161:53) haciendo  grupo?
+
+(161:56) E  lo  que  pasa  que  eso  lo  hacen  ustedes,
+
+(161:59) va  a  ser  un  problema  en  eh  por  ahí  voy  a
+
+(162:04) preferir  que  me  avisen  por  mail  quién
+
+(162:06) está  con  quién  y  yo  lo  lo  voy  a  lo  voy  a
+
+(162:10) completar  el  Excel  mejor.  Sí,  sí,
+
+(162:11) hagamos  así.
+
+(162:13) Avísenme,  digamos,  por  mail  en  eh  quién
+
+(162:18) va  a  estar  con  quién.  En
+
+(162:21) obviamente  cuando  me  escriban,  pónganme.
+
+(162:23) Somos  del  curso  K  4575.
+
+(162:27) A  mí  en  los  del  otro  curso  le  van  a
+
+(162:30) escribir  a  a  al  ingeniero  Oliveri
+
+(162:34) y  los  del  otro,  los  del  45  74,
+
+(162:37) escríbanme  a  mí  también,  no  hay
+
+(162:38) problema.  Entonces,  cada  uno  le  manda  un
+
+(162:41) mensaje  a  su  profesor  por  mail  de  los
+
+(162:43) integrantes  del  grupo.
+
+(162:44) Sí,  correcto.  E  muchas  gracias.  Así  así
+
+(162:49) hacemos  esa  parte  administrativa  y  y  no
+
+(162:52) los  complicamos  a  ustedes.  Sí.  y  después
+
+(162:55) nosotros  nos  vamos  a  dar  cuenta  quién
+
+(162:56) quedó  colgado,  por  así  decirlo.  Eh  eh  y
+
+(163:00) bueno,  lo  le  asignamos  un  compañero,
+
+(163:05) así  que  bueno,  si  esa  información  la
+
+(163:07) tienen,  eh  ya  saben  ustedes  quién  va  a
+
+(163:10) estar  con  quién,  mándennos  mañana  eh  eh
+
+(163:15) o  pasado  e  eh  esa  información,  así  ya
+
+(163:19) resolvemos  ese  tema  administrativo.  ¿Les
+
+(163:21) parece,
+
+(163:22) profe,  una  consulta?
+
+(163:24) E  estoy  en  otra  computadora  y  estaba
+
+(163:27) queriendo  entrar  para  bajar  el  Cisco
+
+(163:29) Packet  Manager  e
+
+(163:33) Tracer,  perdón,  Tracer.  Y  no  sé  si
+
+(163:35) deshabilitó  el  la  entrada  en  el  campus
+
+(163:38) virtual,
+
+(163:40) eh,  porque  no  encuentro  el  link  ahora.
+
+(163:42) Puede  ser  que  haya  deshabilitado  algo,
+
+(163:45) ¿no?  E  acordate  que  no  es  el  aula
+
+(163:47) virtual  nuestra,  eh,  o  no  es  el  aula
+
+(163:50) virtual  del  curso,  sino  el  aula  virtual
+
+(163:51) general,  la  que  donde  entran  todos  los
+
+(163:55) cursos  de  redes,  la  que  dice  segundo
+
+(163:59) cuatrimestre,  algo  así  decía.
+
+(164:01) Okay.
+
+(164:03) Bueno,  ¿hay  alguna  pregunta  más?
+
+(164:06) Profe,  ¿puedes  escribir  tu  mail  en  el
+
+(164:08) chat,  por  favor?  Sí,  lo  tengo.
+
+(164:10) Sí,  sí,  obvio.  Sí,
+
+(164:13) yo  tengo  una  duda,  Leonardo.
+
+(164:15) Sí.
+
+(164:16) Eh,  tengo  dos.  Una  es  eh  había  un  punto
+
+(164:19) que  era  llegar  con  pin  a  todos  los
+
+(164:22) endpsints  o  switches  y  yo  no  sé  por  qué
+
+(164:25) no  llego  a  desde  las  PCs  al  Switch.
+
+(164:33) Eh,  perdón,  de  vuelta.  que  no  llego  por
+
+(164:37) pin,  no  llego  desde  una  PC  a  un  Switch.
+
+(164:40) Va  en  todas  me  pasa.
+
+(164:44) No  sé  si
+
+(164:44) porque  el  S,  bueno,  eso  sí  te  lo
+
+(164:46) respondo  porque  les  va  a  pasar  a  todos.
+
+(164:50) Vieron  que  el  Switch  trabaja  en  la  Vila
+
+(164:51) 1  porque  cuando  lo  cuando  sin  que  hagan
+
+(164:55) ningún  cambio,  todos  los  puertos  están
+
+(164:56) en  la  Vila  1.  Cuando  ustedes  ponen  la  PC
+
+(165:00) 101  en  la  van  10  y  ponen  la  PC  102  en  la
+
+(165:04) van  20,  ¿qué  pasa?  El  Switch  está  en  la
+
+(165:07) van  un
+
+(165:08) PC  están  en  la  van  una  en  la  10,  una  en
+
+(165:10) la  20.  O  sea,  están  las  tres  cosas
+
+(165:11) quedan  segmentadas  porque  el  Switch  está
+
+(165:14) en  la  van  1,  la  PC  101  en  la  van  10,  la
+
+(165:17) PC  102  en  la  van  20.  Claro.  Y  al  ser  por
+
+(165:20) IP,  si  quieren,  si  quieren
+
+(165:24) pongan  una  tercer,  si  quieren  hacer  esa
+
+(165:26) prueba,  pongan  una  tercer  PC  en  alguno
+
+(165:28) de  los  puertos  de  del  Switch,  llámenla
+
+(165:31) si  quieren  103,  le  ponen  una  IP
+
+(165:35) y  esa  PC  va  a  quedar  en  la  vila  en  uno
+
+(165:37) porque  el  puerto  al  que  lo  conecten,  por
+
+(165:38) ejemplo,  el  puerto  3  del  Switch  va  a
+
+(165:41) estar  va  a  seguir  siendo  estando  en  la
+
+(165:43) va  a  seguir  estando  en  la  Vila  en  uno
+
+(165:45) porque  no  ustedes  no  le  van  no  no  lo
+
+(165:47) pusieron  en  la  Vila  ni  ni  la  10  ni  en  la
+
+(165:49) 20.  ¿Se  entiende
+
+(165:51) bien?  Sí.  Y
+
+(165:53) bueno,  e  mándenme  eh  eh  si  quieren  eh
+
+(166:00) eh  esta  información  por  mail,  que  ahí  se
+
+(166:03) los  puse,  pero  lo  único  que  voy  a
+
+(166:05) manejar  por  mail  eso,  eso  que  me  van  a
+
+(166:07) mandar  después.  Siempre  nos  vamos  a
+
+(166:08) manejar  por  el  aula  virtual,  ¿sí?  Este,
+
+(166:11) cuando  tengan  alguna  consulta  o  algo,
+
+(166:13) ¿sí?  El  mail  se  lo  paso  porque  no  es
+
+(166:16) ningún  secreto  tampoco,  pero  lo  voy  a
+
+(166:19) usar  simplemente  para  que  me  manden  el
+
+(166:21) agrupamiento.  Sí,  después  todo  el  todo
+
+(166:23) el  trabajo  lo  vamos  a  hacer  por  el  aula
+
+(166:27) virtual.  Sí,  así  me  lo  la  cátedra.
+
+(166:29) Muchísimas  gracias.
+
+(166:30) Bueno,  si  no  tienen  ninguna  duda,  los
+
+(166:32) libero.  Puede  ser  retarde.  Son  las  10
+
+(166:34) ya.
+
+(166:36) Eh,  Rafael,  eh,
+
+(166:38) ¿vos  querés  decir  algo  eh  a  los  alumnos
+
+(166:42) de  de  alguno  de  los  cursos?
+
+(166:48) Ahí  desconectó,  ahí  conectó  el
+
+(166:50) micrófono.  Eh,  no  tienen  el  curso  477,
+
+(166:55) tienen  exactamente  lo  mismo  que  el  tuyo
+
+(166:58) de  lo  que  estás  explicando,  o  sea,  está
+
+(167:01) habilitado  ya  para  subir  los  trabajos  y
+
+(167:05) y  en  cuanto  a  a  los  a  que  informen  el
+
+(167:08) grupo,  hacemos  los  mismos.  Ya  ahí
+
+(167:10) también  estoy
+
+(167:12) estoy  pasando  el  mail  y
+
+(167:15) así  ya  está,
+
+(167:17) ya  está  todo  ahí  lo  paso  por  el  chat.
+
+(167:22) Bien,
+
+(167:22) perfecto.
+
+(167:23) Ahí  está.  Así  que  sí,  así  hacemos  lo
+
+(167:26) mismo,  de  manera  que  lo  que  vos  estás
+
+(167:29) diciendo  en  la  clase  para  el  curso  que
+
+(167:31) me  toca  a  mí  este  evaluar  y  controlar  va
+
+(167:35) a  ser  exactamente  lo  mismo.
+
+(167:38) Bueno,  perfecto,  así  estamos  en  esa
+
+(167:40) línea.  Bueno,  chicos,  ¿alguna  duda  más?
+
+(167:43) Sí,  una  última  duda.  Por  si  tenemos
+
+(167:45) alguna  duda  durante  la  semana,  el  foro
+
+(167:48) de  novedades  y  consultas  administrativas
+
+(167:50) sería  el  canal  o  otro  foro.
+
+(167:53) El  foro  del  curso  que  les  corresponde  a
+
+(167:56) ustedes,  el  no  el  de  el  de  temas
+
+(168:00) administrativos,  sino  el  otro.  Vieron
+
+(168:02) que  hay  dos  laboratorio,
+
+(168:05) el  que  dice  intercambio.
+
+(168:07) Esperen  ahí,  ahí  les  digo  exactamente
+
+(168:09) cómo  se  llama.  Esperen  que  entro  de
+
+(168:10) vuelta  al  a  virtual  que  se  me  cerró.
+
+(168:12) Perdón,  hay  un  foro  de  laboratorio
+
+(168:15) de  consultas  para  laboratorio  y  un  foro
+
+(168:18) también  para  trabajar  entre  alumnos,  que
+
+(168:21) justamente
+
+(168:23) eh  habíamos  dicho  que  era  para  que  se
+
+(168:25) pongan  de  acuerdo  con  el  grupo,  también
+
+(168:27) para  justamente  trabajar  con  los
+
+(168:29) trabajos  y  demás.
+
+(168:31) Sí.  Eh,  bueno,  lo  que  dice  Rafael  es
+
+(168:34) correcto.  En  eh  en  particular  eh  yo  el
+
+(168:39) curso  de  novedades  y  consultas
+
+(168:41) administrativas  lo  uso  para  notificar
+
+(168:44) cuándo  hay  un  parcial,  cuándo  si  la
+
+(168:46) clase  virtual  es  presencial,  más  para
+
+(168:48) temas  administrativos  de  ese  tipo.  El
+
+(168:51) otro  que  dice  foro  de  intercambio  entre
+
+(168:52) alumnos,  ahí  pueden  poner  las  consultas
+
+(168:55) que  inicialmente  se  pueden  responder
+
+(168:58) entre  ustedes,  que  eso  va  a  pasar  porque
+
+(169:00) son  como  60,  digamos,  de  los  60  estoy
+
+(169:03) seguro  que  va  a  haber  uno,  digamos,  que
+
+(169:05) le  va  a  responder  a  su  compañero.  Si  eso
+
+(169:08) no  llega  a  pasar  ahí  voy  a  intervenir  yo
+
+(169:11) o  va  a  intervenir  también  Rafael.  Pero
+
+(169:14) la  idea  es  que  ese  foro  de  intercambio
+
+(169:16) entre  alumnos  que  están  en  el  aula
+
+(169:18) virtual  sea  para  para  que  ustedes  este
+
+(169:21) se  evacúen  dudas  entre  ustedes.  Sí.  E
+
+(169:27) y  bueno,  si  les  resulta  e  más  cómodo,  me
+
+(169:32) pueden  escribir  o  por  mail  o  en  ese
+
+(169:34) mismo  foro.  También  podemos  me  puede
+
+(169:37) escribir  esto,  lo  del  agrupamiento,  pero
+
+(169:38) bueno,  eso  no  pasa  nada.  Este,  ya  les
+
+(169:41) expliqué  que  una  vez  que  tengamos  eso
+
+(169:44) administrativo  de  quién  trabaja  con
+
+(169:45) quién,  ya  está.  Es  una  sol  es  es  por
+
+(169:47) única  vez.
+
+(169:49) Bueno,  si  no  hay  más  nada  e
+
+(169:53) adelante,  vayan  a  descansar.  Eh,  no  sé
+
+(169:56) si  Rafael  quiere  sale  decir  algo  más  o
+
+(169:57) si  alguno  de  los  alumnos  quiere  agregar
+
+(169:58) algo  más.  Si  no,  ya  los  libramos.
+
+(170:02) Gracias.
+
+(170:03) No,  por  mí  no.  Gracias.
+
+(170:06) Bueno,  chicos,  buen  fin  de  semana  y  nos
+
+(170:09) vemos  la  semana  que  viene.  Entonces,
+
+(170:12) igualmente  nos  vemos
+
+(170:14) de  la  misma  manera.  Chao.  Gracias.
