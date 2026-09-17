@@ -1,0 +1,5099 @@
+Title: TL2 | Redes de Datos UTN | 10/9/2026
+
+(0:00) Aprovechando  que  estamos  eh  todos  los
+
+(0:02) cursos,  eh  les  voy  a  preguntar  rapidito.
+
+(0:06) Eh  eh  me  falta
+
+(0:09) completar  algunas  cositas  relacionadas  a
+
+(0:11) los  grupos.  Eh  les  voy  a  preguntar
+
+(0:13) rapidito  para  para  terminar  esto.  E
+
+(0:17) Agustín  Ignacio
+
+(0:19) Capelasi  está.
+
+(0:22) Sí,  sí  estoy.
+
+(0:24) Perfecto.  ¿Con  quién  estás  haciendo
+
+(0:25) grupo?
+
+(0:28) Con  Hernán  Muniz.
+
+(0:31) Perfecto,
+
+(0:33) ahí  están  registrados  los  dos.  Después,
+
+(0:35) eh,  Roberto  Cuevas  está  por  acá  también.
+
+(0:44) Pasamos  entonces  a  otro  a  otro
+
+(0:46) compañero,  a  Lautaro  Iglesias.
+
+(0:55) Tampoco  voy  con  otro.  Ignacio  Nobel.
+
+(1:08) tampoco.
+
+(1:17) Bien,  entonces  a  ver,  voy  a  preguntarle
+
+(1:20) a
+
+(1:22) Natalie  Martiroyan.
+
+(1:26) Sí.
+
+(1:28) Natali,  ¿con  quién  estás  haciendo  grupo?
+
+(1:30) Ahora  te  digo  su  nombre.  Lo  escribo  por
+
+(1:32) el  chat.
+
+(1:33) No,  no,  decímelo,  decímelo.
+
+(1:36) Ahora  me  digo.
+
+(1:38) Me  quedan  poquitos  compañeros,  entonces
+
+(1:40) lo  si  el  que  no  tiene  grupo  lo  agrupo
+
+(1:42) ahora.  Así  ya  queda  eso.
+
+(1:46) Se  llama  Guido,  pero  no  sé  su  apellido.
+
+(1:48) A  ver,
+
+(1:50) soy  yo,  profe.  Guido  así  por  las  dudas.
+
+(1:56) No  te  tengo  acá,  eh,  pero  bueno,  te
+
+(1:59) agrego.
+
+(2:03) No  te  tengo  en  la  lista.  Por  ahí  se
+
+(2:05) agregó  lo  se  se  actualizó  a  lo  último.
+
+(2:07) Por  eso  quería  chequear  esto,  porque
+
+(2:10) recibí  una  actualización  a  lo  último.  ¿Y
+
+(2:13) cómo  es  el  apellido?  Guido
+
+(2:15) Basis  con  Varg.  Igual  me  anoté  en  el
+
+(2:18) campus  y  me  aparecían  los  dos  nombres.
+
+(2:19) Me  parece  raro  que  med
+
+(2:21) No,  sí,  pero  me  bajé  una  lista  que  a  lo
+
+(2:24) mejor  les  falta
+
+(2:29) eh  Vos  estás  en  el  curso  45  74,  ¿verdad?
+
+(2:33) Porque  Natalí  está
+
+(2:34) no  73  creo  con  Alino.
+
+(2:37) Claro,  Guido  está  en  el  73.  Sí,  sí,
+
+(2:41) entonces  no  pueden  hacer,  salvo  que
+
+(2:43) salvo  que  Natalibos  eh  no  se  puede  hacer
+
+(2:46) grupo  entre
+
+(2:48) entre  distinta  distintos  cursos.
+
+(2:51) Sí,  pero  yo  también  estoy  en  el  4773.
+
+(2:55) El  mismo.  Sí.
+
+(2:56) Okay.  Bueno,  entonces  hay  un  error
+
+(2:59) porque  aparecés  en  la  lista  del  4574.
+
+(3:02) Por  casualidad.  ¿Vos  te  cambiaste  o?
+
+(3:04) Sí,  me  cambié.
+
+(3:05) Ah,  okay.  Listo,  listo.  Entonces,  eh
+
+(3:07) desestimo  esto,  eh  lo  desestimo  también.
+
+(3:11) Eh  listo.  Okay.  Eh  por  es  por  eso,  por
+
+(3:15) esta  pequeña  incongruencia  me  parecía
+
+(3:17) raro  eh  que  que  me  falten  algunos
+
+(3:20) alumnos  acá.  Bueno,  en
+
+(3:24) Luca  Prestia  está.
+
+(3:27) Sí.
+
+(3:28) ¿Con  quién  estás  vos,  Lucas?
+
+(3:29) Con  Martín  Simón.
+
+(3:32) Perfecto.
+
+(3:33) Ahora  sí.  Esto  es  válido  y  no  sé  si  está
+
+(3:38) Valentín  Vallejos.
+
+(3:44) Bueno,  acá  tengo  cuatro  alumnos  que  no
+
+(3:47) sé  si  pasó  lo  mismo  que  que  con  Natalie
+
+(3:51) que  no  están  en  este  curso  o  no  se
+
+(3:53) conectaron  hoy,
+
+(3:55) pero  ya  tengo  casi  resuelto  esto.  E  y
+
+(3:58) bueno,  a  ver,  deme  un  segundo  que
+
+(4:00) también  resuelvo  acá  en  el  otro  en  el
+
+(4:02) otro  curso  también.
+
+(4:04) Eh,  a  ver,  lo  tengo  a  Gabriel  Dick.
+
+(4:08) Sí,  acá  estoy.
+
+(4:09) Gabriel,  ¿con  quién  estás?
+
+(4:11) Estoy  con  Luca  Greco.
+
+(4:13) Perfecto.  Listo.
+
+(4:16) Ignacio  Jubila,
+
+(4:18) buenas.  Sí,  estoy  con  Facundo  Soca.
+
+(4:24) Perfecto,  están  los  dos.  Perfecto.
+
+(4:28) Nicolás  Claver.
+
+(4:33) Nicolás,  no.  Federico  Lamas.
+
+(4:41) Siguiente.  Nicolás  Lazo.
+
+(4:47) Joaquín
+
+(4:49) Mariosa  Rendón.
+
+(4:55) Tampoco.  Cristian  Medrano  Mamani
+
+(5:01) tampoco.  Joaquín  Negrete
+
+(5:07) poco.
+
+(5:08) Profe,  ahí  en  el  chat  me  parece  que
+
+(5:09) mandaron  que  Joaquín  Negrete  y  Claver
+
+(5:12) están  juntos.
+
+(5:13) Perfecto.  No  vi  el  chat  porque  estoy
+
+(5:15) Entonces,  Nicolás,  me  repetís,  porfa,
+
+(5:17) que  no  estoy  viendo  el  chat.  Nicolás
+
+(5:19) Cláver  y
+
+(5:21) eh  Joaquín  Negrete.
+
+(5:27) Mira  qué  loco.  Joaquín.
+
+(5:30) Acá  está  Joaquín.  Perfecto.  ¿Hay  algo
+
+(5:32) más  que  escribir  en  el  chat?  Porque
+
+(5:33) estoy  en  otra  pantalla.
+
+(5:36) Me  parece  que  no  estoy  leyendo  y  no.
+
+(5:39) Perfecto.  Gracias.  A  ver,  me  falta.  A
+
+(5:42) ver,  Marcos,  Nicolau,
+
+(5:48) Luciano  Pérez.
+
+(5:50) ¿Qué  tal,  profe?  Buenas  noches.
+
+(5:52) ¿Cómo  estás,  Luciano?  ¿Con  quién  estás
+
+(5:53) en
+
+(5:54) Eh,  no,  yo  estoy  solo.  No,  no  conozco.
+
+(5:57) ¿Hay  alguien  del  curso  45
+
+(6:00) 75  que  esté  solo  también  para  trabajar
+
+(6:03) con  Pérez  Luciano?
+
+(6:06) que  levante  la  mano  ahora.  Eh,  sí,  a  vos
+
+(6:09) te  tenía,  eh,  vos  me  mandaste  un  mail,
+
+(6:10) Luciano,  ahora  que  me  acuerdo.
+
+(6:12) Sí,  sí,  yo  lo  había  avisado.
+
+(6:13) Sí.  E  no  sé  si  hay  algún  compañero  que
+
+(6:16) esté  solo  y  hace  grupo  con  Luciano.
+
+(6:19) Eh,  yo  también  estoy  solo,  justo  eso  te
+
+(6:21) iba  a  decir.
+
+(6:22) Perfecto.  Listo.  Entonces,  los  pongo
+
+(6:24) ustedes  dos.  Luciano  Pérez  y  decime  tu
+
+(6:26) nombre,  apellido.
+
+(6:28) Gabriel  Suárez.
+
+(6:30) Perfecto,  listo.  Y  eso  le  iba  a
+
+(6:32) consultar,  profe,  porque  yo  subí  el  TP,
+
+(6:34) no  sabía  si  nos  iba  a  juntar  los  grupos
+
+(6:36) ya  o  cuánto.
+
+(6:38) Sí,  sí.  No,  no  se  preocupen.  Si  quieren
+
+(6:41) a  ustedes  que  todavía  no  estaban
+
+(6:42) agrupados,  si  quieren  revisarlos,  eh,
+
+(6:45) revísenlo  entre  los  dos,  pónganse  en
+
+(6:47) contacto.
+
+(6:49) Luciano  Pérez  y  Gabriel  Suárez.  Sí,
+
+(6:53) pónganse  en  contacto  ustedes  y  me  dicen
+
+(6:56) si  quieren  actualizar  la  entrega,  no  hay
+
+(6:57) ningún  problema.  Lo  lo  actualizamos.
+
+(7:01) Eh,
+
+(7:02) en  mi  caso  también  estoy  solo  pensé  que
+
+(7:04) desarmado  eso.
+
+(7:05) Sí.  ¿Quién?  Decime  apellido.
+
+(7:08) Vargas.  Vargas  Marcos  4575.
+
+(7:12) 4575.  A  ver,  Vargas  Marcosi.
+
+(7:16) Acá  no.  A  ver.  Sí,  acá  estás.  Bueno,
+
+(7:20) quedó  algún  otro  compañero  solo  en
+
+(7:24) tengo  acá,  digamos,  para  como  para
+
+(7:27) nombrar,  pero  aprovecho  si  alguno  está
+
+(7:29) solo  que  me  avise  y  hace  grupo  con  con
+
+(7:31) Marcos  Vargas.
+
+(7:35) Profe,  yo  estoy  solo,  pero  soy  del  4773.
+
+(7:39) Okay.  Bueno,  ahora  después  eso  lo  lo
+
+(7:42) revisamos  con
+
+(7:43) Okay.
+
+(7:44) con  Rafael  eh  del  4575.
+
+(7:49) ¿Hay  alguien  más  que  esté  solo?  Yo  tengo
+
+(7:51) acá  algunos  alumnos  para  nombrar.  No  sé
+
+(7:53) si  Franco  Vinascia  está.
+
+(7:58) Después  lo  tengo.  Bueno,  a  Lucas
+
+(8:00) Valentín
+
+(8:02) Por
+
+(8:04) sí.  ¿Quién  me  habla?
+
+(8:05) Yo  soy  Vinascia.  Estoy  con  Porno  justo.
+
+(8:09) Eh,  decime  tu  nombre,  apellido.
+
+(8:11) Franco  Vinascia.
+
+(8:14) Ah,  perfecto.  Están  juntos  ustedes.
+
+(8:15) Impecable.
+
+(8:16) Sí.
+
+(8:16) Entonces,  para
+
+(8:17) No  le  llegó  o  Lucas  lo  entregó.
+
+(8:20) Eh,  no  vi  las  entregas.  Estoy  haciendo
+
+(8:22) un  trabajo  administrativo  sin  haber
+
+(8:24) visto  las  entregas.  Eh,  y  los  tengo
+
+(8:26) todos  medio  identificados  porque  me
+
+(8:27) escribieron  por  correo  eh  la  mayoría,
+
+(8:31) eh,  pero  me  faltaban  algunos  que  los
+
+(8:32) tenía  medio  suelto  y  digo,  "Bueno,
+
+(8:35) aprovecho  unos  minutos  y  les  pregunto  eh
+
+(8:37) antes  de  ver  las  entregas."
+
+(8:39) Bueno,  entonces  eh  Franco  Vinascia  está
+
+(8:41) con  Pornoy.  Bueno,  me  queda  Marcos
+
+(8:44) Vargas  que  tiene  que  hacer  grupo  con
+
+(8:46) algún  compañero  más  y  tengo
+
+(8:50) en  esta  pequeña  lista  casi  final  lo
+
+(8:54) tengo  a  Marcos  Nicolau,
+
+(8:57) eh  lo  tengo  a  Cristian  Medrano  Mamani,
+
+(9:00) lo  tengo  a  Joaquín
+
+(9:02) Mariosa,
+
+(9:04) a  Nicolás  Lazo  y  a  Federico  Lamas.  Todos
+
+(9:07) ellos  aún  no  mirí  las  entregas,  pero  los
+
+(9:11) tengo  como  que  aún  tienen  que  formar  un
+
+(9:13) grupo,
+
+(9:15) eh,  así  que  bueno,  me  falta  me  falta
+
+(9:19) terminar  de  cerrar  eso.  Y  en  alguno  de
+
+(9:24) estos  chicos
+
+(9:26) no  lo  veo  en  la  entrega
+
+(9:29) o  se  cambiaron  de  curso  o  algo.  Y  a  vos,
+
+(9:32) Marcos,  Marcos  Vargas,  eh,  te  voy  a
+
+(9:36) marcar  para  ver  eh  con  quién  te  agrupo
+
+(9:39) este
+
+(9:41) y  en  caso  de  que  no  llegue  a  haber
+
+(9:42) ningún  colega,  eh,  bueno,  ahí  eh  tenés
+
+(9:46) como  la  excepción  de  de  trabajar  solo.
+
+(9:49) Okay.  Okay.  Sí,  una
+
+(9:51) este  tengo  tengo,  a  ver,  tengo,  espérate
+
+(9:53) que  te  voy  a  marcar  acá,  así  ya  después
+
+(9:55) no  me  olvido.  Hm.  Te  voy  a  marcar  acá,
+
+(9:58) así  ya  no  me  olvido  esto.  Eh,  tengo  hay
+
+(10:02) como  cuatro  o  cinco  compañeros  más,  pero
+
+(10:04) bueno,  no  no no  o  no  se  pudieron
+
+(10:06) conectar  o  por  ahí  se  conectan  después  o
+
+(10:08) no.  Sí,  independientemente  ya  hice  la
+
+(10:10) entrega  igual  de  el  uno,  así  que
+
+(10:12) bien,  bien,  perfecto.
+
+(10:13) Quedó  atento.
+
+(10:15) Listo,  perfecto.  Bueno,
+
+(10:17) hay  alguien  en  el  chat  que  escribió  que
+
+(10:19) no  tiene  grupo.  ¿Alguien  más?
+
+(10:21) ¿De  qué?  ¿De  qué  curso?
+
+(10:22) Eh,  sí,  es  del  4773,  que  ya  de  paso  los
+
+(10:26) los
+
+(10:27) Agrupalo  con  el  otro.
+
+(10:28) Sí,  sí.  Agrupalo  con  el  otro  eh  alumno.
+
+(10:31) Claro.
+
+(10:32) Comentó.  Bueno,  justamente  estos
+
+(10:34) minutitos,
+
+(10:36) eh,  perdón,  Rafael,  estos  minutitos  que
+
+(10:38) me  quería  tomar  eran  para  justamente
+
+(10:40) para  eso.  Este,
+
+(10:44) bueno,  del  45,
+
+(10:46) perdón.  Sí,  sí,  Rafael.
+
+(10:48) No,  no,  que  en  el  4773  para  los  que
+
+(10:51) están  preguntando,  bueno,  ya  saben,  eh,
+
+(10:54) en  mi  caso  lo  que  hice  es  este  habilitar
+
+(10:57) la  herramienta  para  armar  los  grupos
+
+(11:00) entre  ustedes  y  ya  hay  la  mayoría  ya  se
+
+(11:04) agruparon  en  grupos,  quedan  algunos  y
+
+(11:07) bueno,  hoy  les  mandé  un  mensaje  por  eso
+
+(11:09) diciéndoles  que  traten  de  reagruparse
+
+(11:13) e  pueden  utilizar  el  foro  todo.  hasta
+
+(11:16) mañana  y  mañana  los  que  quedan  libres
+
+(11:19) los  voy  a  agrupar,  este,  los  voy  a
+
+(11:22) agrupar  directamente,  les  aviso  en  qué
+
+(11:24) grupo  están,  así  pueden  este  ya  subir
+
+(11:27) los  trabajos.  Eh,  ya  la  mayoría  igual
+
+(11:30) subieron  al  trabajo,  los  estoy  viendo.
+
+(11:33) Eh,  pero  para  esos  alumnos  así  ya  pueden
+
+(11:36) empezar  cuanto  antes.  Por  eso  esta  nueva
+
+(11:39) apertura  del  de  la  de  la  herramienta
+
+(11:42) para  armar  grupos  va  a  quedar  hasta
+
+(11:44) mañana  a  las  19  horas.  Después  ya  lo
+
+(11:46) armo  directamente  yo,  nada  más.  Así  que
+
+(11:50) perfecto.  Bueno,  estamos  bien.  Sí.  eh
+
+(11:53) quedaron  algunos  unos  pocos  alumnos  que
+
+(11:57) hay  que  corregir  eso  que  que  después
+
+(12:00) vemos,  pero  en  principio  estamos  todos
+
+(12:04) este  ya  bien  agrupados,  así  que  este  eso
+
+(12:07) es  algo  bueno.  Bien,  bueno,  hoy  vamos  a
+
+(12:11) ver  el  trabajo  de  la  autorio  número  dos.
+
+(12:14) Eh,  el  trabajo  de  laatorio  número  dos,
+
+(12:18) eh,  principalmente  tiene,  eh,  dos  puntos
+
+(12:23) importantes  para  ver.  El  primero  es  cómo
+
+(12:25) funciona  eh  un  dispositivo,  un  router
+
+(12:29) wireless.  Sí,  porque  este  trabajo  está
+
+(12:32) en  más  que  nada  pensado  para  para
+
+(12:36) mostrarles  cómo  es  la  parte  Wi-Fi,  la
+
+(12:38) parte  wireless,  este,  en  el  uso  del
+
+(12:40) simulador  y  y  en  la  vida  real.  Y  por
+
+(12:45) otro  lado,  lo  que  lo  que  enseña,  entre
+
+(12:48) otras  cosas  es  la  importancia  del
+
+(12:50) default  gateway.  Sí,  porque  según  el
+
+(12:53) default  gateway  que  uno  utilice  en  un
+
+(12:57) dispositivo,  en  una  PC,  en  una  laptop  o
+
+(13:01) en  otro  dispositivo,
+
+(13:03) en  la  importancia  del  defedway  les  da  a
+
+(13:05) conocer  a  ustedes  cuando  eh  ese
+
+(13:09) dispositivo,
+
+(13:11) vale  la  redundancia,  una  laptop  o  una  PC
+
+(13:14) que  esté  en  un  en  una  en  una
+
+(13:16) infraestructura,  quiere,  digamos,  enviar
+
+(13:19) un  paquete  de  su  origen.  a  un  destino  y
+
+(13:22) ese  destino  está  eh  fuera  del  ámbito  de
+
+(13:26) la  LAN,  ¿sí?  Entonces,  ese  paquete  le
+
+(13:29) llega  al  default  gateway  y  el  defall
+
+(13:31) Gateway  sabe  hacia  dónde  este  eh
+
+(13:34) forguardearlo  o  reenviarlo  para  que
+
+(13:37) llegue  al  al  destino,  digamos,  que  que
+
+(13:41) ese  mensaje  tiene  como  dirección  IP
+
+(13:44) destino.  Sí,
+
+(13:46) esa  es  la  importancia  del  default
+
+(13:47) gateway.
+
+(13:49) Entonces,  eh  lo  que  voy  a  hacer  ahora  es
+
+(13:52) le  voy  a  compartir  eh  a  todos  e
+
+(13:58) lo  que  tengo  acá  que  se  les  voy  a  les
+
+(14:00) voy  a  compartir,  voy  a  hacer  así.
+
+(14:04) Esperen  que
+
+(14:08) a  ver,  tengo  abierto  varias  cosas  al
+
+(14:11) mismo  tiempo.  Ah,  está  bien.  Bueno,
+
+(14:13) después  voy  a  voy  a  seguir  trabajando
+
+(14:15) con  esto  que  es  la  parte  de  los  grupos.
+
+(14:17) Ahora  lo  voy  a  cerrar.  Así  ya  no  tengo
+
+(14:19) tantas  cosas  abiertas
+
+(14:23) y  trabajo  laboratorio  número  dos
+
+(14:30) y  voy  a  abrir  un  cachito  el
+
+(14:40) Tengo  1000  cosas  abiertas  y  eso  es  un
+
+(14:43) problema  porque
+
+(14:45) cuando  uno  tiene  muchas  cosas  abiertas
+
+(14:47) empieza
+
+(14:48) a  anublar  todo.  Bien,  bueno,  ahora  sí
+
+(14:51) voy  a
+
+(15:12) número  dos.
+
+(15:14) Eh,
+
+(15:16) entonces  esta  es  una  actividad  que,  como
+
+(15:19) les  decía,
+
+(15:20) tiene  como  objetivo  eh  darles  a  conocer
+
+(15:23) lo  que  es  un  dispositivo  wireless,  que
+
+(15:25) ya  los  conocen,  se  los  conoce  como
+
+(15:26) access  point.  Y  esos  access  point  eh
+
+(15:29) sobre  todo  lo  los  hogareños,  que  son  los
+
+(15:32) que  usamos  en  nuestras  casas,
+
+(15:35) eh  trabajan  en  dos  modos,  ¿sí?  en  eh  un
+
+(15:40) modo  que  trabaja  de  conmutación,
+
+(15:42) digamos,  eh  a  nivel  capa  dos.  Eh  ese
+
+(15:45) modo  se  lo  llama  modo  bridge,  ¿sí?  Y  el
+
+(15:48) modo  de  trabajo  a  nivel  capa  3  se  lo
+
+(15:51) llama  el  modo  router,  ¿sí?  Eh,  cuando
+
+(15:54) trabaja  en  modo  bridge,  ¿sí?  el  equipo,
+
+(15:58) sí,  este  eh  cuando  está  seteado  en  esa
+
+(16:02) en  esa  modalidad,  en  modo  bridge,  el
+
+(16:04) equipo  se  comporta  como  si  fuese  un
+
+(16:05) switch,  o  sea,  los  puertos  que  tiene  se
+
+(16:08) comportan  como  si  fuese  un  switch,  como
+
+(16:10) los  que  vimos  el  trabajo  laboratorio
+
+(16:12) anterior.
+
+(16:14) En  cambio,  si  la  modalidad  de  trabajo
+
+(16:17) que  tiene,  o  sea,  está  seteado  o  está
+
+(16:19) configurado  en  este  otro  modo  que  se  lo
+
+(16:22) llama  el  modo  router,
+
+(16:24) ahí  el  dispositivo  trabaja  en  capa  3  y
+
+(16:28) se  le  puede  configurar  una  IP  a  una
+
+(16:30) interfaz  específica  del  equipo  para  que
+
+(16:33) pueda  forwarddear  o  reenviar  los
+
+(16:37) paquetes  de  un  lugar  hacia  otro,  es
+
+(16:39) decir,  fuera  del  contexto  de  la  Red
+
+(16:41) Llan,  ¿sí?  O  sea,  hacia  el  exterior,
+
+(16:43) hacia  afuera.
+
+(16:45) Eh,  así  que  bueno,  y  como  les  decía,  la
+
+(16:49) idea  es  que  entiendan  lo  que  son  las
+
+(16:51) direcciones  IP,  las  máscaras  de  subred,
+
+(16:53) eh,  y  cómo  y  y  lo  y  la  principal
+
+(16:57) funcionalidad,  digamos,  de  de  digamos  de
+
+(17:00) de  una  red,  que  es  la  puerta  enlace  o  el
+
+(17:03) default  gateway  o  el  gateway.  Sí.  E  y
+
+(17:08) después,  bueno,  cositas  relacionadas  a
+
+(17:10) wireless  land  que  ya  las  manejan  en  el
+
+(17:13) día  a  día.  Sí.
+
+(17:15) Eh,  bueno,  en
+
+(17:19) mensajes  parroquiales  que  tienen  acá  las
+
+(17:21) guías.
+
+(17:23) Y  bueno,  y  acá  e  eh  les  dice  que  cuál  es
+
+(17:26) el  archivo  que  tienen  que  abrir.  Eh,  lo
+
+(17:28) mismo  de  siempre  e  algunos  objetivos,
+
+(17:31) digamos,  que  uno  debería  cumplir  eh  para
+
+(17:33) entender  todo  esto.  También  en  es  en  hay
+
+(17:36) PDFs  para  mirar,  cosas  para  para
+
+(17:39) chusmear.  Eh,  algunas  son
+
+(17:42) más  relevantes  que  otras,  o  sea,
+
+(17:44) fíjense,  ustedes  van  abriendo  los
+
+(17:45) archivos  y  fíjense
+
+(17:47) en  base  a  lo  que  van  viendo  acá.  Si  les
+
+(17:49) interesa,  aunque  sea,  abranlo  una  vez  y
+
+(17:52) fíjense,
+
+(17:53) vamos  a  decir  qué  onda  y  si  no  tiene
+
+(17:56) mucha  importancia
+
+(17:58) pasa  de  largo.  Pero  bueno,  voy  a  este
+
+(18:00) punto  que  es  el  punto  importante,  el
+
+(18:02) punto  siete.  Sí.  En  acá  dice  que  abren
+
+(18:07) ese  archivo  y  acá  viene  lo  que  le  quiero
+
+(18:10) los  que  le  lo  que  yo  les  quiero  explicar
+
+(18:12) a  ustedes  del  punto  de  vista  teórico
+
+(18:15) conceptual,  que  es  no  es  más  ni  menos
+
+(18:17) que  lo  que  les  acababa  de  decir  recién.
+
+(18:21) E  si  alguna  vez  e
+
+(18:25) vieron  un  dispositivo  Wi-Fi  como  ese  que
+
+(18:28) tienen  en  sus  casas,  que  antes  venían
+
+(18:30) con  antenitas,  digamos,  y  sigue  habiendo
+
+(18:33) con  antenitas,  pero  el  más  conocido  eh
+
+(18:39) por  y  que  y  que  ganó  mucho  mercado
+
+(18:43) durante  muchos  años  eh  se  llamaban  eh  eh
+
+(18:49) TPLink.  son  los  que  están  ahora  en  este
+
+(18:51) estos  se  llamaban  Linxis.  Sí,  la  marca,
+
+(18:54) la  marca  se  llamaba  Linis.  Esa  marca
+
+(18:57) después  la  adquirió  Cisco.  Sí.  Eh,  y
+
+(19:01) bueno,  y  siguió  dándole  continuidad
+
+(19:03) hasta  que,  bueno,  hasta  que  después  los
+
+(19:05) proveedores  estuvieron  este  entregando
+
+(19:08) ya  dispositivos
+
+(19:10) eh  eh  modems  Wi-Fi.  Sí.  Y  entonces  ya
+
+(19:14) poco  se  dejaron  de  usar  estos  equipos.  E
+
+(19:17) porque  antiguamente,  si  ustedes
+
+(19:20) recuerdan  o  o  tienen  ese  recuerdo,
+
+(19:23) eh  cuando  uno  contrataba  un  servicio  de
+
+(19:25) internet  hogareño,  eh  le  daban  un  modem,
+
+(19:28) pero  no  era  Wi-Fi,  era  un  modem  común  y
+
+(19:30) corriente,  digamos,  donde  llegaba  la
+
+(19:32) conexión  por  cable  coaxial.  Sí.  Eh,  y
+
+(19:37) para  que  ustedes  pudieran  conectarse  a
+
+(19:39) internet  tenían  la  computadora,  digamos,
+
+(19:42) que  era  generalmente  una  desktop.
+
+(19:46) Eh,  aunque  en  algunos  lugares  tenían
+
+(19:48) laptops  e  y  ustedes  conectaban  con  un
+
+(19:51) cable  de  red,  digamos,  un  cable  UTP  de
+
+(19:54) red,  se  conectaban  al  puerto  en  eh  el
+
+(20:00) único  puerto  que  tenía  ese  equipo  y  lo
+
+(20:02) conectaban  a  su  PC  y  a  través  de  ese
+
+(20:06) modem  tenían  conexión  a  internet,  ¿sí?
+
+(20:09) De  banda  ancha  se  decía.
+
+(20:12) Pero,  ¿qué  pasa  si  uno  quería  y  uno
+
+(20:13) tenía  una  laptop?  que  el  laptop  tenía  la
+
+(20:16) posibilidad  deamos  tener  conexión  a
+
+(20:18) través  de  wireless.  Claro,  tenía  que
+
+(20:21) comprar  un  dispositivo  como  estos.  Sí,
+
+(20:24) comprar  un  dispositivo  como  estos  para
+
+(20:26) que  poder  conectarlo  a  ese  modem  eh  que
+
+(20:29) les  daba  el  proveedor  y  con  este  equipo
+
+(20:32) hacer  la  parte  Wi-Fi.  Sí,
+
+(20:36) eso  es  un  poco  una  reseña  un  poco
+
+(20:38) histórica.  Sí,  hoy  los  equipos  que  el
+
+(20:41) proveedor  da  ya  tienen  esto,  tienen
+
+(20:44) cuatro  puertos  acá,  digamos,  para  que
+
+(20:47) ustedes  conecten  cuatro  PCs,  ¿sí?  O  o  lo
+
+(20:51) que  quieran  conectar  acá  en  forma
+
+(20:52) cableada.  Sí,  tiene  un  puerto  que  se  lo
+
+(20:56) llama  internet,  que  en  ese  puerto,  ¿sí?
+
+(20:59) en
+
+(21:01) el  caso  de  los  proveedores  nuestros  no
+
+(21:03) lo  usan  porque  si  ingresa  con  un  cable
+
+(21:07) coaxil  o  coaxial  eh  ya  digamos  a  través
+
+(21:11) de  ahí  estaba  la  conexión  hacia  la  hacia
+
+(21:13) la  red  one.  Ahora  vienen  con  fibra,  ¿sí?
+
+(21:16) digamos,  o  sea,  ahora  hacen  una  conexión
+
+(21:18) de  fibra  que  eso  da  la  conexión  contra
+
+(21:19) la  WAN.  Pero  bueno,  supongamos  que
+
+(21:22) nosotros  tenemos  este  dispositivo  en
+
+(21:24) nuestra  red  que  ahora  lo  vamos  a  ver  en
+
+(21:25) el  simulador
+
+(21:27) y  este  dispositivo  tiene
+
+(21:30) cinco  puertos,  de  los  cuales  los  puertos
+
+(21:33) que  están  pintados  de  color  amarillo,
+
+(21:36) ¿sí?  E  son  los  puertos  que  simulan  como
+
+(21:41) si  este  equipo  fuese  un  switch.  Sí.  Es
+
+(21:44) decir,  yo  si  yo  conecto  cuatro  peces
+
+(21:45) acá,  una  al  lado  de  la  otra,  veamos,  y
+
+(21:49) las  conecto  a  estos  cuatro  puertos  y  le
+
+(21:51) pongo  a  todas  esas  IPs,  a  todas  esas
+
+(21:53) PCs,  un  mismo  direccionamiento  IP,  192,
+
+(21:57) 168,
+
+(21:58) 11,  1  2,  13  y  14.  Sí,  todas  se  van  a
+
+(22:03) poder  conectar  y  ver  en  sí  porque  es
+
+(22:05) como  si  todas  estuvieran  en  la  misma
+
+(22:06) van.  Sí.  Entonces  ahí  tendría  este  eh
+
+(22:11) cuatro  PCs  conectadas  eh  como  si  fuesen
+
+(22:14) un  switch  de  los  que  vimos  la  clase
+
+(22:16) anterior.
+
+(22:18) Y  en  es  en  esos  cuatro  puertos,  cuando
+
+(22:21) el  equipo  eh  funciona  de  esa  manera,  se
+
+(22:23) dice  que  funciona  en  modo  bridge,  ¿sí?
+
+(22:26) Porque  se  comporta  como  un  eh  como  un
+
+(22:29) switch  de  LAN,  ¿sí?  Y  trabaja  a  nivel
+
+(22:32) capa  2  como  vimos  la  clase  pasada.
+
+(22:35) Por  otra  parte,  sí  tiene  un  puerto  que
+
+(22:38) se  lo  llama  puerto  internet  o  también
+
+(22:41) puerto  one  y  ese  puerto  es  el  que  le
+
+(22:45) permite  al  dispositivo  configurarle  una
+
+(22:49) dirección  IP  cualquiera  sea.  Puede  ser
+
+(22:51) una  una  una  IP  pública,  como  hacían  los
+
+(22:55) proveedores  o  puede  ser  eh  eh  una
+
+(22:58) dirección  IP  privada  eh
+
+(23:02) de  donde  este  ese  puerto  se  conecte
+
+(23:05) contra  otro  router  y  le  permita  al
+
+(23:09) dispositivo
+
+(23:11) eh  conmutar  paquetes  entre  redes
+
+(23:15) distintas,  entre  distintas  LAN  o  o  entre
+
+(23:17) una  LAN  y  lo  que  sea  del  otro  lado,  que
+
+(23:20) es  otra
+
+(23:21) por  ejemplo.  Sí.  Eh,  y  ese  puerto
+
+(23:24) pintado  de  color  celeste  trabaja
+
+(23:27) justamente  en  capa  3,  ¿sí?  O  sea,  hace
+
+(23:31) la  modalidad  de  lo  que  sería  un  router,
+
+(23:34) ¿sí?  O  sea,  se  comporta  como  un  router
+
+(23:36) el  equipo,  ¿sí?  La  diferencia  es  que  no
+
+(23:38) se  le  puede  configurar  cosas  avanzadas
+
+(23:40) como  en  los  routers  que  vamos  a  ver  la
+
+(23:42) clase  que  viene,  pero
+
+(23:44) en  funciona  como  un  router,  le  permite
+
+(23:47) conmutar  paquetes  entre  redes  distintas,
+
+(23:50) digamos,  quédense  con  ese  concepto  por
+
+(23:51) ahora.
+
+(23:53) Eh,  por  eso  se  dice  que  trabaja  en  capa
+
+(23:56) 3.  Eso,  esto  que  acabo  de  decir  es  lo
+
+(23:59) que  tienen  que  saber  desde  el  punto  de
+
+(24:01) vista  conceptual  para  trabajar  hoy  a  lo
+
+(24:05) largo  de  todo  el  trabajo  de  laboratorio
+
+(24:07) que  tiene  la  primera  parte.  Veamos  que
+
+(24:09) es  todo  esto  acá
+
+(24:12) que  es  muy  fácil.  Sí.  Eh,  de  hecho  no
+
+(24:16) tiene  nada  eh  que  ustedes  no  puedan  no
+
+(24:19) entender.  Lo  podrían  hacer  incluso  solo,
+
+(24:21) sin  que  yo  explique  nada  porque
+
+(24:23) simplemente  tienen  que  que  seguir  eh
+
+(24:27) este  PDF,  digamos,  para  entender  lo  que
+
+(24:31) tienen  que  hacer.  Sí,  que  están  hay
+
+(24:33) capturas  de  pantalla,  hay  que  hacer
+
+(24:36) pruebas,  o  sea,  está  todo  bien
+
+(24:38) explicado,  sí,  bastante  simple.  Eh,  pero
+
+(24:42) bueno,  vamos  a  hacer  un  poquito  nosotros
+
+(24:44) de  este  tema  e  para  para  que  vayan
+
+(24:48) entendiendo  eh  los  conceptos.  ¿Hasta  acá
+
+(24:51) hay  alguna  pregunta?
+
+(24:54) Sí,  profe,  estos  estos  dos  modos  de  K2  y
+
+(24:58) K3,  o  sea,  pueden  funcionar  en
+
+(25:00) simultáneo.  Yo  puedo  tener  redes  LAN,
+
+(25:02) eh,  o  sea,  los  puertos  amarillos  usados
+
+(25:05) y  el  puerto  internet  usado.
+
+(25:07) Efectivamente,  pueden  también  eh  ser
+
+(25:10) utilizados  de  manera  simultánea.
+
+(25:12) Perfectamente.  Sí,
+
+(25:14) Joy.
+
+(25:15) E  bien.  A  ver,
+
+(25:19) entonces  voy  a  les  voy  a  compartir  ahora
+
+(25:21) el  simulador,  el  Cisco  Packet  Tracer  en
+
+(25:25) eh  con  el  TP  abierto  y  vamos  a  empezar  a
+
+(25:29) hacer  algunas  cositas  y  otras  las  voy  a
+
+(25:30) dejar  para  que  las  hagan  ustedes.
+
+(25:33) Eh,  profe,
+
+(25:34) sí,
+
+(25:35) sí.  Estos  switches  serían  de  la  capa
+
+(25:37) núcleo,
+
+(25:39) eh,  no,  no  pertenecen  a  ninguna  capa,
+
+(25:41) pero  si  tuviera  que  darles  eh  algún  eh
+
+(25:47) si  tuviese  que  asociarlos,  los  asociaría
+
+(25:49) más  a  la  capa  de  acceso.  Sí.
+
+(25:52) Ah,  bien.
+
+(25:52) Eh,  porque  tienen  un  uso  más  eh  como  les
+
+(25:55) decía,  más  hogareño.
+
+(25:57) Eh,  me  faltó  mostrarles  algo  del  PDF,
+
+(26:00) que  lo  voy  a  mostrar  ahora  de  vuelta
+
+(26:03) para  que  ustedes  vean.  En  el  PDF  les
+
+(26:05) muestra
+
+(26:07) al  final  de  todo  cómo  tienen  que
+
+(26:08) conectar  toda  la  topología,  que  yo  la
+
+(26:10) voy  a  conectar  medio  rapidón  para
+
+(26:13) abajo  de  todo.  En  la  última  hoja,  si
+
+(26:17) ustedes  pueden  ver,  esta  es  la  topología
+
+(26:20) del  trabajo  de  laboratorio  número  dos,
+
+(26:23) eh,  de  cuando  abren  el  archivo.  Ahí  les
+
+(26:26) muestra  las  IP,  les  muestra  les  muestra
+
+(26:29) todo,  que  es  lo  que  dice  el
+
+(26:33) es  lo  que  dice  el
+
+(26:35) trabajo  que  tienen  que  que  tienen  que
+
+(26:37) hacer.  Fíjense,  tienen  una  LAN  que  se  le
+
+(26:39) llama  ventas  que  está  a  la  izquierda.
+
+(26:42) Esa  LAN  tiene  un  direccionamiento  que  es
+
+(26:44) 200  200.0/24.
+
+(26:47) Sí.
+
+(26:50) El  default  gateway
+
+(26:52) de  esa  red  que  se  la  llama  ventas  es
+
+(26:57) este  equipo  que  está  acá  se  llama  1841
+
+(27:01) remoto.  Ese  es  el  default  gateway  de
+
+(27:04) esta  Red  Llan.  ¿Alguien  sabe  que  es  un
+
+(27:06) default  gateway  o  o
+
+(27:09) tiene  dudas  sobre  eso?  O  sea,  si  yo  les
+
+(27:12) pregunto,  ¿qué  es  un  default  gateway?
+
+(27:16) Internet.
+
+(27:19) Sí,  veamos,  esa  sería  una  una  definición
+
+(27:22) un  poco  básica,  pero  está  bien.  ¿Alguien
+
+(27:24) más  sabe?
+
+(27:25) O  sea,  o  sea,  es  cuando  el  paquete,  o
+
+(27:28) sea,  el  prefijo  no  está  dentro  de  su
+
+(27:30) LAN,  va  a  buscar  el  default  gateway,
+
+(27:33) ¿no?
+
+(27:33) Perfecto.  Ahí  me  gustó  más.  Ahí  me  gustó
+
+(27:35) más.  Eh,  eso  mismo  traducido  un  poco  más
+
+(27:39) quiere  decir  que  cuando  el  paquete
+
+(27:42) digamos  que  está  dentro  de  una  redline
+
+(27:43) quiere  salir  hacia  una  dirección  que  que
+
+(27:47) no  es  conocida  dentro  de  la  Red  Llan,  es
+
+(27:49) decir,  no  es  una  dirección  en  este  caso
+
+(27:51) 200  200
+
+(27:54) este  punto  cer,  o  sea,  no  es  no  está
+
+(27:56) dentro  de  esa  de  esa  red  y  quiere  salir
+
+(27:59) hacia  afuera,  por  ejemplo,  a  la  a  la  a
+
+(28:03) la  red  de  la  LAN  de  depósito,  que  es  195
+
+(28:07) 195  195  0,  ¿sí?  Barra24.  O  sea,  quiere
+
+(28:12) ir  a  esta  otra  LAN.
+
+(28:14) La  única  eh  el  único  dispositivo  que
+
+(28:18) tiene  la  capacidad  de  poder  hacer  eso  es
+
+(28:21) el  de  Fall  Gateway  porque  es  el  que
+
+(28:23) conoce  que  hay  del  otro  lado
+
+(28:26) y  si  no  lo  conoce,  digamos,  conmuta  el
+
+(28:29) paquete,  o  sea,  se  lo  reenvía  a  al
+
+(28:32) router  en  el  que  él  esté  conectado  y  le
+
+(28:35) dice,  "Che,  necesito  llegar  acá."  Sí.  y
+
+(28:39) él  veamos,  o  sea,  le  puede  volver  a
+
+(28:42) pasar  esa  información  para  que  después
+
+(28:44) el  paquete  vuelva  y  y  tenga  una
+
+(28:47) respuesta.  Sí.  O  sea,  es  un  equipo  que
+
+(28:50) está  en  el  perímetro  de  de  la  Red  Llan,
+
+(28:52) o  sea,  se  lo  llama  a  este  equipo  que  es
+
+(28:55) que  que  tiene  el  nombre  1841  remoto  en
+
+(28:59) la  jerga  de  networking  se  lo  llama
+
+(29:01) router  de  borde.  Sí,  porque  está
+
+(29:03) justamente  en  el  perímetro  de  la  red  LAN
+
+(29:05) ventas
+
+(29:07) y  se  conecta  con  otro  default  gateway,
+
+(29:10) pero  este  otro  default  gateway,  el  1841
+
+(29:13) local,  es  el  default  gateway,  pero  en  la
+
+(29:15) red  Land  depósito.  Si,  o  sea,  el
+
+(29:19) servidor  este  que  se  llama  servidor
+
+(29:21) pedidos  tiene  como  default  gateway  este
+
+(29:24) equipo  que  está  acá  que  es  el  1841
+
+(29:26) local,  que  es  el  router  de  borde  de  su
+
+(29:30) red  LAN,  o  sea,  de  la  LAN  depósito.
+
+(29:33) Y  lo  mismo  pasa  con  eh  la  LAN  seguridad
+
+(29:36) y  algo  más  particular  pasa  con  la  LAN
+
+(29:39) central.  Sí,  pero  yo  ya  les  voy
+
+(29:42) adelantando  que
+
+(29:45) el  dispositivo  este  wireless  que  está
+
+(29:47) acá  en  el  en  el  medio  de  la  de  la  red
+
+(29:50) Land  ventas,  ese  dispositivo  se  se
+
+(29:53) comporta  como  si  fuese  un  switch.  ¿Sí?
+
+(29:56) ¿Por  qué?  Porque  se  conecta  contra  un
+
+(29:58) switch  y
+
+(30:00) es  como  una  extensión  del  otro  switch.
+
+(30:02) Supongamos  que  yo  tengo  colapsado  el
+
+(30:04) switch  este  ventas,  que  no  tengo  más
+
+(30:06) puertos  para  conectar  nada  y  necesito
+
+(30:09) tener  más  usuarios  que  se  puedan  que
+
+(30:12) puedan  formar  parte  de  esa  red  ventas.
+
+(30:14) Entonces,  tengo  la  posibilidad  de
+
+(30:17) extender  este  switch  conectando  el
+
+(30:20) dispositivo,  este  Wi-Fi,  eh,  a  uno  de
+
+(30:23) esos  a  uno  de  sus  eh  puertos  de  de  LAN
+
+(30:26) de  switching,  de  digamos  de  esos  cuatro
+
+(30:29) que  yo  les  digo  que  son  de  color  eh
+
+(30:33) amarillo.
+
+(30:34) Y  de  esos  cuatro  uso  uno  para  la  PC
+
+(30:37) contador  y  después  puedo  usar  N,
+
+(30:41) digamos,  eh,  Nertos,  digamos,  eh,  y  digo
+
+(30:45) puertos  porque  en  realidad  no  es  un
+
+(30:48) puerto,  pero  eh  cuando  un  dispositivo  se
+
+(30:51) conecta  por  Wi-Fi  a  ese  a  ese  a  ese
+
+(30:55) router  eh eh  o  a  ese  dispositivo,  a  ese
+
+(30:58) a  ese  access  point,  digamos,  puede
+
+(31:00) conectarse  de  manera  inalámbrica,
+
+(31:02) entonces  no  usa  un  puerto,  Pero  digamos
+
+(31:04) se  está  conectando  a  la  Red  Lamp  a
+
+(31:07) través  de  una  conexión  wireless.
+
+(31:11) Entonces  la  PC  esta  laptop  vendedor
+
+(31:14) también  va  a  tener  una  IP  de  ese  de  esa
+
+(31:17) de  ese  de  ese  de  ese  prefijo  200  200.
+
+(31:22) Sí,
+
+(31:23) perdón.  Ahí  como  recién  hizo  una  pausa,
+
+(31:26) le  quiero  hacer  una  pregunta.  Eh,  recién
+
+(31:28) dijo,  "Se  conectan  por  IP  al  router."
+
+(31:31) Eh,  en  este  caso,  en  esa  topología,  en
+
+(31:34) la  LAN  venta  sería  se  conectan  por  Wi-Fi
+
+(31:37) al  eh  switch,  no  al  router,  ¿verdad?
+
+(31:41) se  conectan  por  Wi-Fi  a  este  switch,
+
+(31:44) digamos,  que  tiene  la  capacidad  de  eh  de
+
+(31:48) de  tener  conexiones  a  nivel  K2,  tanto
+
+(31:53) este  en  forma  inalámbrica  como  en  forma
+
+(31:56) eh  eh  o  sea,  cableada.  Sí,
+
+(32:00) por  eso,  pero  digo,  le  pregunto,  parece
+
+(32:03) una  trivialidad,  pero  no,  digamos  es  eso
+
+(32:06) no  es  un  router  ahí,  es  un  switch.
+
+(32:11) Te  respondo,
+
+(32:12) cuando  al  principio  de  la  clase  expliqué
+
+(32:14) que  se  comporta  en  modo  en  modo  bridge  o
+
+(32:17) en  modo  router,  en  este  caso  se  estaría
+
+(32:19) comportando  en  modo  bridge,  o  sea,
+
+(32:21) funciona,  funcionaría  como  un  switch.
+
+(32:24) ¿Te  acordas  que  eh  hace
+
+(32:26) Sí,  sí,  sí,  hace  5  minutos  dijo  que  en
+
+(32:29) modo  switch  es  funciona  en  modo  bridge
+
+(32:31) es  un  switch.
+
+(32:32) Exacto.  Bueno,  en  este  caso  está  seteado
+
+(32:35) o  configurado,  estaría  seteado  o
+
+(32:37) configurado  en  modo  bridge,  por  eso  dice
+
+(32:39) wireless  bridge.  Le  dieron  la  el  nombre
+
+(32:42) ese,  y  va  a  funcionar  como  o  se  va  a
+
+(32:45) comportar  como  si  fuese  un  switch.  En
+
+(32:48) cambio,  veamos  el  otro  router  que  está
+
+(32:53) justamente  entre  en  el  medio  entre  la
+
+(32:57) LAN  seguridad  y  la  LAN  ventas.  Sí,  ese
+
+(33:00) dispositivo  su  función  principal  va  a
+
+(33:04) ser  que  se  va  a  comportar  o  va  a
+
+(33:06) trabajar  en  modo  router.  Sí,  pero  más
+
+(33:10) allá  de  trabajar  en  modo  router,  que  es
+
+(33:12) la  funcionalidad  principal,
+
+(33:15) va  a  tener  la  capacidad  también  de
+
+(33:19) funcionar  en  modo  bridge  para  dar
+
+(33:21) conexión  Wi-Fi
+
+(33:24) a  a  los  dispositivos  que  estén  dentro  de
+
+(33:27) la  LAN  central.
+
+(33:29) Pero  de  vuelta,  la  función  principal
+
+(33:32) para  lo  cual  va  a  estar  seteado  es  para
+
+(33:34) trabajar  en  modo  router.  ¿Por  qué?
+
+(33:36) Porque  va  a  tener  la  la  capacidad  de
+
+(33:39) poder  eh  permitirle  a  los  dispositivos
+
+(33:42) que  están  en  la  LAN  central,  que  están
+
+(33:44) en  este  prefijo,  en  el  172  170,  o  sea,
+
+(33:48) están  en  esa  red  LAN,
+
+(33:50) poder
+
+(33:53) paquetes  desde  esa  LAN  hacia  la  LAN  de
+
+(33:57) seguridad.  que  es  la  192  192  1920  0.  Sí.
+
+(34:01) Entonces,  él  va  a  ser  el  encargado  de
+
+(34:04) enviar  los  paquetes  de  un  lugar  al  otro.
+
+(34:06) ¿Sí?
+
+(34:08) Y  esa  esa  funcionalidad
+
+(34:11) se  la  llama  este  que  trabaja  en  modo
+
+(34:14) router  y  va  y  se  le  va  a  asignar  al
+
+(34:18) puerto  ese  que  yo  les  decía  que  de  color
+
+(34:21) celeste  es  que  dice  puerto  internet  port
+
+(34:24) o  también  denominado  puerto  de  one  en
+
+(34:28) esos  equipos.
+
+(34:30) En  ese  puerto  se  le  va  a  configurar  una
+
+(34:31) IP.  ¿Si?  ¿Y  qué  IP  va  a  ser?  Bueno,
+
+(34:35) justamente  como  dice  acá,  va  a  ser  una
+
+(34:37) IP,  digamos,  que  va  a  pertenecer  al  a  la
+
+(34:40) LAN  seguridad,  a  la  192  192,  192.  Y  en
+
+(34:45) este  caso  se  le  va  a  dar  la  IP  la  253.
+
+(34:48) Es  decir,  que  ese  equipo  va  a  tener  una
+
+(34:51) IP  que  pertenece  a  otra  red,  es  decir,
+
+(34:53) va  a  tener  la  pata  izquierda,  la  va  a
+
+(34:55) tener  contra  la  red  LAN  de  seguridad
+
+(34:59) y  la  pata  de  la  derecha,  vamos  a
+
+(35:02) decirlo,  digamos,  no  va  a  ser  cable,
+
+(35:05) digamos,  va  a  ser  inalámbrica,  pero  esa
+
+(35:07) otra  pata  la  va  a  tener  en  la  otra  red
+
+(35:10) LAN,  la  LAN  central,  que  es  la  172  170.
+
+(35:14) Sí.  Es  decir,  va  a  ser  este  eh  como  una
+
+(35:20) persona  que  tiene  un  brazo  para  un  lado
+
+(35:22) y  un  brazo  para  el  otro  y  con  esos  dos
+
+(35:24) brazos  va  a  conectar  eh  un  extremo  con
+
+(35:27) el  otro  y  va  a  pasar  información  de  un
+
+(35:28) lado  a  otro.  ¿Se  entendió
+
+(35:30) conceptualmente  lo  que  estoy  explicando?
+
+(35:35) Profe,  yo  tengo  una  duda.
+
+(35:37) Sí.
+
+(35:38) Eh,  respecto  a  los  de  Fault  Gateways,
+
+(35:41) todavía  no  llegué  a  eso,  así  que  si  me
+
+(35:43) vas  a  preguntar  algo  que  todavía  no
+
+(35:44) expliqué,
+
+(35:45) tenedme  paciencia.
+
+(35:47) Dale,  dale.
+
+(35:48) Porque  no  expliqué  nada  todavía  de  eso.
+
+(35:49) Estoy  explicando  conceptualmente  cómo
+
+(35:51) funciona  uno  y  por  qué  está  en  ese  lugar
+
+(35:54) y  cómo  funciona  el  otro  y  por  qué  está
+
+(35:55) en  ese  lugar.  Sí,  ya  va  a  llegar  el
+
+(35:57) momento  de  que  tiene  configurado.
+
+(36:01) Sí,
+
+(36:02) bien.
+
+(36:03) A  mí  me  surgió  otra  duda,  disculpa.  Eh,
+
+(36:07) Wi-Fi  es  capa  dos,
+
+(36:12) no  necesariamente,  porque  digamos  en  eh
+
+(36:16) tiene  eh  para  que  realmente  digamos  si
+
+(36:20) si  lo  vemos  del  punto  de  vista  de  de
+
+(36:22) dónde  trabaja  eh  en  el  modelo  OSI,
+
+(36:26) digamos,  si  trabaja  en  modo  bridge,
+
+(36:28) digamos,  o  sea,  cuando  vos  conectás  este
+
+(36:31) en  eh  cuando  vos  conectás  una  PC  o  una
+
+(36:35) laptop  algo  al  switch.  El  switch  trabaja
+
+(36:38) en  capa  dos,  trabaja  con  direcciones
+
+(36:41) físicas,  digamos,  con  macadres.
+
+(36:43) Sí,
+
+(36:43) pero  los  dispositivos,  digamos,  para
+
+(36:46) traficar  paquetes,  digamos,  este,
+
+(36:48) necesitan  trabajar  en  capa  3  y  por  eso
+
+(36:51) se  les  pone  una  dirección  IP.
+
+(36:52) Sí.  Eh,  pero  a  lo  que  a  lo  que  voy  es
+
+(36:55) que  los  switches  a  los  switches  no  se
+
+(36:59) les  puede  a  los  a  los  puertos  de  los
+
+(37:02) switches  no  se  les  puede  poner  una  IP
+
+(37:04) porque  trabajan  en  capa  dos.  Sí,
+
+(37:06) digamos,  después  digamos  trabajan  en
+
+(37:09) capa  3  porque  eh  para  dar  la
+
+(37:12) funcionalidad,  digamos,  eh  de  capas
+
+(37:15) superiores.  Vieron  que  eh  en  la  teoría
+
+(37:18) eh  el  docente  que  ustedes  tengan  les
+
+(37:20) explica  que  una  capa  interactúa  con  una
+
+(37:23) capa  superior  o  una  capa  superior
+
+(37:26) interactúa  con  una  capa  inferior.  Sí,
+
+(37:29) digamos,  no  es  que  son  estancas  las
+
+(37:31) capas.  Sí,
+
+(37:33) digamos,  una  le  proporciona  un  servicio
+
+(37:35) a  la  otra.  ¿Lo  tienen  ese  ese  concepto?
+
+(37:37) Porque  lo  explican  así.
+
+(37:38) Sí,  sí,  sí.
+
+(37:39) Bueno,  entonces,  el  Switch  trabaja  en
+
+(37:42) capa  dos,  el  router  trabaja  en  capa  3,
+
+(37:44) pero  interactúa  brindando  o
+
+(37:47) proporcionando  servicios  a  la  capa
+
+(37:49) inferior  o  superior,  según  cual  sea.  Sí,
+
+(37:52) te  respondí.
+
+(37:54) Sí,  perfecto,  gracias.
+
+(37:56) Bien.  Eh,
+
+(37:58) bien.  Entonces,  eh,  si  esto  se  entendió,
+
+(38:02) ahora  sí  voy  a  detener  esto  y  voy  a  y
+
+(38:05) vamos  a  abrir  el
+
+(38:09) vamos  a  abrir  el  el  archivo  y  lo  primero
+
+(38:12) que  vamos  a  hacer,  vamos  a  conectar  todo
+
+(38:14) rápido  para  para  no  perder  tiempo.
+
+(38:17) Eh,  lo  abrí,  no  tuve,
+
+(38:20) profe.
+
+(38:21) Sí,
+
+(38:23) no,  yo  tengo  una  duda,  ¿eh?
+
+(38:26) digamos,  ahí  en  en  una  de  de  esas  redes,
+
+(38:28) yo  esperaría  ver  también  un  router  en  la
+
+(38:33) red.
+
+(38:34) Hay  rut,
+
+(38:35) pero  nosotros  no  lo  vamos  a  tocar  porque
+
+(38:39) no  lo  vamos  a  tocar  porque  es  un  son
+
+(38:42) conceptos  de  del  del  otro  trabajo  que
+
+(38:45) vamos  a  ver.
+
+(38:46) Este  es  un  router.  Este  es  un  router.
+
+(38:50) Claro,  pero  yo  decía  entre  la  red  eh  la
+
+(38:54) seguridad  y  digamos  el  router  de  la  de
+
+(38:58) la  red  LAN  Central,
+
+(39:03) LAN  seguridad  y  LAN  Central.  Sí,  estos
+
+(39:06) dos.
+
+(39:07) Claro,  no  sé  si  vi  mal,  pero  está
+
+(39:09) conectado  el  router  contra  el  switch
+
+(39:11) este  de  seguridad,  ¿no?
+
+(39:14) Claro,
+
+(39:15) exacto.  Porque  necesita  tener  una  IP  de
+
+(39:17) acá,
+
+(39:19) necesita  tener  una  IP  de  esta.
+
+(39:22) Ah,  okay.
+
+(39:22) ¿Cuál  es  la  pregunta  específica?  así  te
+
+(39:24) la  puedo  responder,
+
+(39:25) ¿no?  Porque,  o  sea,  entiendo  que  digamos
+
+(39:29) los  routeres  los  que  encaminan,  digamos,
+
+(39:31) el  mensaje  eh  y  tenía  la  duda  de  cómo
+
+(39:35) llegaba  de,  por  ejemplo,  de  la  Alan
+
+(39:38) Central  a  la  LAN  de  ventas,  eh,  porque
+
+(39:42) digamos  el  camino  tenés  un  switch  en  el
+
+(39:44) medio,  eh,  y  es  como  que  esperaba  ver
+
+(39:47) una  un  router,  no  sé  si  me  explico.
+
+(39:50) Acá  es  este  que  está  acá.
+
+(39:53) Okay,
+
+(39:54) pero  todavía  no  expliqué  mucho,  entonces
+
+(39:57) por  eso  tenés  esa  duda.
+
+(39:59) Okay.  Okay.
+
+(40:00) Es  este  router  que  está  acá.  Este  router
+
+(40:03) es  el  de  F  Gateway  de  estos  de  estas
+
+(40:05) tres  LAN.
+
+(40:07) Ah,  listo.
+
+(40:08) Sí,  porque  están  todos  conectados  a  él.
+
+(40:11) Sí.  Nada  más  que
+
+(40:13) este  router  está  conectado  a  este  acá  a
+
+(40:16) través  de  de  esta  de  esta  conexión  que
+
+(40:18) se  vea  que  se  va  a  ver  acá  que  todavía
+
+(40:21) no  está  hecha.
+
+(40:22) Sí,  pero  este  es  el  de  Fall  Gateway,  de
+
+(40:25) la  LAN  depósito,  de  la  LAN  seguridad  y
+
+(40:29) de  la  LAN  Central.
+
+(40:31) Sí.
+
+(40:31) Okay.  Gracias,  profe.
+
+(40:33) Okay.
+
+(40:35) Bueno,  eh  voy  a  conectar  todo  medio
+
+(40:37) rapidón  para
+
+(40:39) eh
+
+(40:41) para  no  perdernos  en  el  camino.
+
+(40:45) Lo  voy  a  conectar  tal  cual  en
+
+(40:49) lo  voy  a  conectar  tal  cual.
+
+(40:52) Este  le  voy  a  dar,
+
+(40:55) le  voy  a  dar  la  uno  a  este.
+
+(41:00) A  ver,  a  este  le  voy  a  dar.
+
+(41:04) Bueno,  este  este  lo  vamos  a  tener  que
+
+(41:06) conectar  primero  acá.  Sí,  ahora  les
+
+(41:08) explico  por  qué.  Y  lo  vamos  a  tener  que
+
+(41:10) conectar  a  un  a  un  puerto.  Eh,  estos
+
+(41:14) puertos  que  dicen  Ethernet  son  los
+
+(41:15) puertos  de  LAN  y  este  es  el  puerto  de
+
+(41:18) One.  En  este  caso,  el  puerto  de  One  se
+
+(41:20) va  a  usar.
+
+(41:21) Este  puerto  dice  internet,  que  es  el  de
+
+(41:23) One,  ese  es  el  que
+
+(41:25) lo  le  habilita  al  equipo  a  trabajar  en
+
+(41:28) modo  router,  ¿sí?  Pero  este  este  va  a
+
+(41:30) trabajar  en  modo  switch,  o  sea,  va  a  ser
+
+(41:31) otro  switch,  así  que  lo  voy  a  conectar
+
+(41:33) acá  temporalmente.
+
+(41:36) Después  en  ¿qué  más?
+
+(41:40) Eh,  vamos  a  conectar  este  ahora.
+
+(41:44) En  este  sí  voy  a  conectarlo  en  modo  en
+
+(41:46) el  puerto  de  One.  Sí.  y  lo  voy  a
+
+(41:48) conectar  acá  en  el  puerto
+
+(41:51) 22.
+
+(41:53) ¿Podría  hacerle  un  poco  de  zoom?
+
+(41:56) Sí,  obvio.  A  ver,
+
+(41:59) ahí  está.  Gracias.
+
+(42:04) Bueno,  ahí  está.
+
+(42:06) Eh,
+
+(42:09) y  bueno,  eh,  tengo  que  explicar  algunas
+
+(42:12) cosas  porque  si  no  no  no  puedo  seguir
+
+(42:14) conectando,
+
+(42:16) eh,  así  que  vamos  a  agarrar  y  vamos  a
+
+(42:21) vamos  a  aprovechar  e
+
+(42:27) a  ver  cuál  es  el  tema  acá  en  que  ustedes
+
+(42:31) lo  van  a  lo  van  a  ver  después  eh  más  con
+
+(42:33) detalle.  El  tema  es  así.  Cuando  uno  saca
+
+(42:37) el  equipo  este  que  es  que  es  un  un
+
+(42:41) router  Wi-Fi,  ¿sí?  Lo  saca  de  la  caja,
+
+(42:43) lo  conecta,  ¿sí?  Ese  equipo  tiene  una
+
+(42:47) dirección  IP  que  viene  de  fábrica,  ¿sí?
+
+(42:49) Que  es  la  192  168.1.1.
+
+(42:53) Sí,  la  trae  ya  incorporada  de  fábrica.
+
+(42:57) Eh,  sería  como  la  sería  como  la  IP  de
+
+(43:00) digamos  de  management  del  equipo  y  yo
+
+(43:03) para  poder  eh  digamos  conectarme
+
+(43:07) y  ver  la  pantalla  y  poder  eh  digamos
+
+(43:10) cambiarle  esa  IP  y  poder  configurarlo,
+
+(43:14) lo  primero  que  tengo  que  hacer  es  poder
+
+(43:17) eh  justamente  conectarme  a  él.  Y  para
+
+(43:19) conectarme  a  él  hice  esto,  lo  conecté,
+
+(43:22) digamos,  con  un  cable  de  LAN  de  Red
+
+(43:23) Llan.  Entro  a  mi  PC,
+
+(43:27) ¿sí?  Y  le  configuro  una  dirección  IP  en
+
+(43:30) el  mismo  rango.  Sí.  192  168.1.2.
+
+(43:38) La  como  es  una  clase  C,  esto  es  un  barra
+
+(43:42) 24  y  acá  pongo  198.1.1,
+
+(43:45) que  es  él  el  def  gway  con  esta  IP  que  es
+
+(43:49) la  que  tiene  este
+
+(43:52) configurada.  Sí.
+
+(43:55) Listo,  cierro.
+
+(43:57) Fíjense  que  de  vuelta  yo  lo  saco  de  la
+
+(44:01) caja,  lo  pongo  arriba  del  escritorio,
+
+(44:04) lo  enchufo,
+
+(44:06) pero  para  pero  digamos  lo  enchufo  y  y
+
+(44:09) ¿cómo  hago  para  administrarlo?  No  me
+
+(44:11) puedo  conectar  por  Telnet,  por  SSH
+
+(44:14) porque  es  un  equipo  gareño,  no  es  un
+
+(44:16) equipo  empresarial.
+
+(44:19) Entonces,  bueno,  para  configurarlo  tengo
+
+(44:22) que  conectarle  la  PC,  ponerle  una
+
+(44:24) dirección  IP,  digamos,  de  ese  rango,
+
+(44:26) ¿sí?  Que  es  lo  que  me  dice  el  manual.  Y
+
+(44:29) bueno,  tengo  que  entrar  al  browser,  al
+
+(44:31) navegador,  así  como  como  voy  a  hacer
+
+(44:33) ahora.  Ahí  abro  el  navegador,  ¿sí?  Y  voy
+
+(44:37) a  poner  https
+
+(44:40) 2  pun/  barra
+
+(44:43) o  o  http.  Ahora  vemos.  192  168
+
+(44:47) 168.1.1
+
+(44:52) Okay,  me  pide  la  contraseña,  digamos,  el
+
+(44:55) usuario  y  la  contraseña.  Okay.  A  ver,
+
+(44:58) ¿cómo  era  el  usuario  y  la  contraseña?
+
+(45:00) Que  lo  hice  por  acá.
+
+(45:04) Voy  a  bajar.
+
+(45:19) No  me  acuerdo.  No  sé  si  era  admin  admin
+
+(45:21) o  o  nada  y  admin.
+
+(45:23) Admin,  admin.
+
+(45:25) No,  no  lo  encuentro  acá  en  la  guía.
+
+(45:28) Bueno,  ahí  está.  Admin  admin.
+
+(45:31) Bueno,  y  acá  estoy  adentro,
+
+(45:35) o  sea,  de  es  como  si  estuviese  digamos
+
+(45:38) en  digamos  es  como  si  estuviese  abierto
+
+(45:40) Google  Chrome  y  toda  esta  pantalla  es  la
+
+(45:42) pantalla  de  configuración  del  equipo.
+
+(45:45) ¿Sí?  Entonces  lo  primero  que  tengo  que
+
+(45:48) hacer  yo  acá  es  cambiarle  la  IP.  Eh,
+
+(45:52) ¿por  qué?  Porque  le  tengo  que  poner  una
+
+(45:54) dirección  IP.  Ah,  estaba  más  abajo.  Ahí
+
+(45:56) está.  Este,  yo  me  me  adelanté.  Eh,  le
+
+(46:00) pongo  la  IP.  Acá  estamos  bien.  Está.  Eh,
+
+(46:03) entonces  yo  tengo  que  cambiarle  la  IP
+
+(46:05) esta,
+
+(46:06) y  tengo  que  ponerle  una  dirección  IP  de
+
+(46:08) la  red  en  la  que  está.  En  este  caso,  la
+
+(46:11) red  es  la  200  200.0/24.
+
+(46:15) Entonces,  acá  estoy  en  setup.  Me  vengo
+
+(46:18) acá  donde  dice  router  router  IP,  ¿sí?  Y
+
+(46:21) la  cambio.  Pongo  200
+
+(46:24) 200.
+
+(46:27) Y  en  la  guía  dice  que  hay  que  ponerla
+
+(46:28) 253.
+
+(46:31) Sigue  estando  el  barra  el  barra24  como
+
+(46:33) se  ve  acá.  Sí,  puede  tener  otro  otro
+
+(46:36) barra,  pero  en  este  caso  barra  24.  Y
+
+(46:38) después  tengo  que  bajar.  Bajo  bajo  bajo
+
+(46:41) y  le  pongo  salvar.  En  el  momento  que  le
+
+(46:44) pongo  salvar,
+
+(46:46) el  equipo  va  a  tener  otra  dirección  IP,
+
+(46:49) ya  no  va  a  tener  la  192  168.1.1.
+
+(46:53) Con  lo  cual,  automáticamente  acá  me  dice
+
+(46:56) request  time  out  porque  este  me  estoy
+
+(46:58) queriendo  conectar  a  un  dispositivo  que
+
+(47:01) no  está  dentro  de  la  red  a  la  que  yo
+
+(47:03) quiero  conectarme.
+
+(47:05) Perfecto,  eso  es  lo  primero  que  tengo
+
+(47:07) que  hacer.  Una  vez  que  ya  lo  conecté  y
+
+(47:09) lo  tengo  en  la  red,  lo  que  tengo  que
+
+(47:11) hacer  ahora  es  cambiarle  la  la  dirección
+
+(47:16) IP  a  a
+
+(47:18) la  a  la  PC  con  la  en  la  cual  me  conecté.
+
+(47:22) Sí.
+
+(47:23) Y  bueno,  justamente  lo  que  voy  a  hacer
+
+(47:25) es  eso.  Voy  a  cerrar  acá,  me  voy  a  ir  de
+
+(47:28) vuelta  a  la  configuración  de  la  PC  y
+
+(47:30) ahora  sí  le  voy  a  poner  200  200  punto.
+
+(47:35) No  sé  qué  dirección  IP  le  da  la  guía
+
+(47:38) este  a  esta  PC  ahora  para  poder
+
+(47:41) conectarme.  Déjenme  ver  y  si  no  yo  le
+
+(47:44) pongo  cualquiera  y  y  listo.
+
+(47:52) Bueno,  no  sé,  pero  ahora  le  voy  a  poner
+
+(47:54) cualquiera  porque  100
+
+(47:56) sí,  no  sé  si  la  punto  100  la  usa  para
+
+(47:58) otra  cosa  este,  pero  bueno,  yo  le  voy  a
+
+(48:01) poner,  por  ejemplo,  no  sé,  la  10.  Sí,  la
+
+(48:05) 10  es  un  barra24,  así  que  no  importa  si
+
+(48:08) le  pongo  10,  11,  12,  100,  la  que  sea.  Y
+
+(48:11) acá  voy  a  poner  200.  200  pun.  ¿Qué  IP  le
+
+(48:15) di  yo  a  al  router?  253,  ¿no?  Entonces,
+
+(48:21) porque  ese  va  a  ser  su  default  gateway
+
+(48:22) por  ahora.  Sí.  Y  digo  por  ahora  porque
+
+(48:26) ya  van  a  entender  por  qué.
+
+(48:28) Entonces  cierro,
+
+(48:31) cierro  y  me  fijo  si  tengo,  perdón,
+
+(48:34) cierro  y  me  fijo  si  tengo  conexión,  ¿no?
+
+(48:35) Entonces,  hago  un  pin  200
+
+(48:39) 253.
+
+(48:41) Perfecto,  llego.  Eso  quiere  decir  que  si
+
+(48:44) me  voy  de  vuelta  al  browser,  al
+
+(48:47) navegador,  sí,  lo  abro  y  ahora  pongo
+
+(48:50) https  2  barra  200  200.253,
+
+(48:57) ahora  voy  a  volver  a  conectarme  y  ahora
+
+(49:00) el  dispositivo  está  como  corresponde
+
+(49:03) dentro  de  la  red  eh  dentro  de  la  red  LAN
+
+(49:07) ventas.  Bien,  ahora,  ¿qué  tengo  que
+
+(49:11) hacer?
+
+(49:13) Eh,  voy  a  eh  voy  a  voy  a  configurar  la
+
+(49:18) parte  eh  wireless,  ¿sí?  Para  que  me
+
+(49:21) permita  darle  conectividad,  por  ejemplo,
+
+(49:24) a  la  a  la  a  la  laptop  esta  que  se  llama
+
+(49:28) laptop  laptop  vendedor  1.  Entonces,
+
+(49:32) ¿cómo  hago  eso?  Bueno,
+
+(49:35) lo  que  me  dice  acá  primero  es  que,
+
+(49:38) déjenme  ver  a  ver  si  lo  sigo  de  la  misma
+
+(49:40) manera  y  si  no  lo  hago  a  mi  manera.
+
+(49:46) Ven  que  dice,  "Vuelvo  a  modificar  la
+
+(49:48) configuración  de  la  PC  ventas  admin  para
+
+(49:50) asignarle  transitoriamente  una  IP
+
+(49:52) estática."  Bueno,  este
+
+(49:55) le  puse  le  puse  una  cualquiera
+
+(49:57) transitoriamente  como  como  la  que  yo
+
+(49:58) quise.  Y  comuníquese  con  el  AP  mediante
+
+(50:01) el  browser.  Listo,  eso  ya  está.  Realice
+
+(50:03) la  configuración  de  la  P  como
+
+(50:06) servidor  de  HCP  para  ocho  direcciones
+
+(50:09) asignables.  Perfecto,  era  lo  que  iba  a
+
+(50:10) hacer  ahora.  Entonces,
+
+(50:13) este  dispositivo  ya  tiene  una  dirección
+
+(50:15) IP  para  que  yo  permita  administrarlo,
+
+(50:17) que  es  la  253.
+
+(50:19) Ahora  habilito
+
+(50:21) lo  que  se  llama  el  DHCP.  El  D  HCP  es  el
+
+(50:24) que  permite  asignar  IPs  en  forma
+
+(50:27) dinámica  a  las  a  la  a  los  dispositivos
+
+(50:31) que  se  conecten  a  él,  este,  mediante
+
+(50:34) Wi-Fi
+
+(50:36) y  le  voy  a  decir  que  va  a  tener  un
+
+(50:37) máximo  de
+
+(50:39) de  ocho  y  que  va  a  arrancar  a  partir  de
+
+(50:43) la  de  la  100,  como  dice  acá,  de  la  100.
+
+(50:48) Y  le  voy  a  poner  salvar.  Sí,  no  se
+
+(50:51) desesperen,  siempre  hay  que  ponerle
+
+(50:53) salvar.  Esto  se  va  a  a  refrescar  y  acá
+
+(50:57) me  va  a  aparecer  automáticamente
+
+(51:00) 200  200
+
+(51:02) 100.  O  sea,  que  este  de  HCP  va  a  poder
+
+(51:06) asignar  direcciones  que  van  desde  la  100
+
+(51:09) a  la  107,  ¿sí?  O  sea,  ocho  direcciones
+
+(51:13) en  total,  de  la  cer  a  las  7,  de  las  100
+
+(51:16) a  la  107.  Sí.
+
+(51:19) Bien.
+
+(51:20) Ahora  configuré  el  dispositivo  para  que
+
+(51:24) me  permita  asignar  direcciones  IPs,  pero
+
+(51:28) ¿qué  pasa?  No  configuré  todavía  la  parte
+
+(51:30) Wi-Fi.  Sí.  Entonces,  para  configurar  la
+
+(51:33) parte  Wi-Fi,  subo,  me  voy  acá  donde  dice
+
+(51:35) wireless  y  acá,  bueno,  tengo  que  confiar
+
+(51:38) todos  los  parámetros  que  ustedes  ya
+
+(51:39) conocen,  es  decir,  el  famoso  SSID.
+
+(51:43) Sí.  Eh,  acá  dice  que  lo  dejemos  este  con
+
+(51:48) este  con  esta  información,  que  le
+
+(51:49) pongamos  el  canal  7  dice
+
+(51:53) e  que  no  hagamos  un  broadcast  deamos
+
+(51:56) decir  que  no  se  vea.  Digamos  el  SSID,
+
+(51:59) digamos,  como  ustedes  vieron  cuando
+
+(52:01) ustedes  agarran  y  conectan  el  Wi-Fi  en
+
+(52:04) el  smartphone
+
+(52:05) que  ven  todos  los  Sid  que  están
+
+(52:07) publicados.  Bueno,  si  dice  Sid  Broadcast
+
+(52:10) en  la  configuración  y  está
+
+(52:11) deshabilitado,  no  lo  van  a  ver,  pero
+
+(52:13) ustedes  sabiendo  los  datos  y
+
+(52:16) configurándolo
+
+(52:17) logran  que  funcione.  ¿Sí?  Entonces,
+
+(52:23) hasta  acá  configuro  los  parámetros,
+
+(52:27) digamos,  eh  de  frecuencia  y  el  SID.  Sí.
+
+(52:33) Eh,
+
+(52:36) para  que  ustedes  sepan,  estos
+
+(52:37) dispositivos  trabajan  en  la  frecuencia
+
+(52:39) de  2.4  GHz  y  los  canales  que  no  se
+
+(52:41) solapan,  la  frecuencia  son  el  1,  el  6  y
+
+(52:44) el  11.  Y  acá  no  dice  que  usemos  el  siete
+
+(52:46) porque  es  algo  experimental,  pero  en  la
+
+(52:48) vida  real  se  usa  el  uno,  el  6  y  el  11.
+
+(52:53) Y  no  se  olviden  siempre  de  darle  salvar
+
+(52:55) acá  abajo  porque  si  no  no  toma  la
+
+(52:57) configuración,  no  la  guarda  y  no
+
+(52:59) funciona  nada  después.
+
+(53:01) Entonces,  acá  estoy  en  la  Solapa
+
+(53:03) wireless,  en  la  parte  dice  basic
+
+(53:06) wireless  setting.  Si  yo  me  voy  a  la
+
+(53:08) parte  de  wireless  security,  que  es  la
+
+(53:09) que  me  va  a  importar,
+
+(53:11) ahora  está  deshabilitada,  pero  la  tengo
+
+(53:13) que  habilitar.
+
+(53:15) Y  en  la  guía  dice  que  tienen  que  usar
+
+(53:17) WPA2  personal,  WPA2  personal,
+
+(53:21) la  inscripción  AES.  Y  acá  eh  tienen  que
+
+(53:25) usar  la  contraseña  que  dice  ahí,
+
+(53:27) digamos,  que  sería
+
+(53:30) Cisco  escrita  de  esta  manera.  Un  poco
+
+(53:33) molesto,  pero
+
+(53:36) ahí.  Y  después  le  dan  salvar  acá  abajo.
+
+(53:40) Ahí  está.
+
+(53:42) Después  que  hacen  esto,  se  supone  que
+
+(53:45) como  la  laptop  ya  tiene  configurado
+
+(53:47) todos  esos  parámetros,  fíjense  que  se
+
+(53:49) conectó  automáticamente  acá.
+
+(53:51) Sí,  se  conectó  automáticamente,
+
+(53:54) digamos,  porque  tiene  los  parámetros
+
+(53:56) estos  que  yo  seté  acá,  ya  los  tenía
+
+(53:58) confirmado  la  laptop
+
+(54:00) y  me  doy  cuenta,  veamos  que  voy  a  cerrar
+
+(54:05) un  cachito  acá,
+
+(54:07) lo  voy  a  minimizar  y  me  doy  cuenta  que
+
+(54:09) esa  laptop,  si  la  abro  y  me  voy  al
+
+(54:13) desktop  y  le  hago  un  IP  config,
+
+(54:16) me  asignó  el  DHCP,  una  dirección  IP  del
+
+(54:20) rango
+
+(54:21) que  va  desde  la
+
+(54:24) 100  a  la,
+
+(54:29) a  ver,  déjenme  ver.  Debería  ser  desde  la
+
+(54:32) 100  hasta  la  107,
+
+(54:38) con  lo  cual
+
+(54:40) hay  un  problema  acá.
+
+(54:42) Quizás  quedó  esto.  A  ver,  IP  config
+
+(54:46) barra  release.
+
+(54:51) Esperen,  déjenme  ver  una  cosita.
+
+(54:53) Vendedor  uno.  Me  voy  acá.
+
+(54:58) Me  voy  a  la  interfaz.  Voy  a  irle  cero.
+
+(55:02) Ah,  porque  está  está  puesto  como
+
+(55:03) estático.  Bueno,  ven,  eso  es  lo  que  está
+
+(55:05) mal.  Eh,  fíjense,  está  configurado  acá
+
+(55:09) la  parte,  digamos,  en  la  parte  de
+
+(55:12) configuración,  la  parte  wireless.
+
+(55:14) Acá  tienen  configurado  el  SSID  que  está
+
+(55:16) en  el  router.  Acá  tienen  que  está  WPA2
+
+(55:20) eh  eh  prare  key.  Tiene  la  tiene  la  K
+
+(55:25) escribí  en  el  router,  tiene  la
+
+(55:28) inscripción  que  saes  y  acá  lo  voy  a
+
+(55:29) poner  por  DHCP.
+
+(55:32) Y  fíjense  que  automáticamente  me  asignó
+
+(55:36) una  dirección  que  en  este  caso  es  la  200
+
+(55:38) 200  pun  101.  ¿Se  acuerdan  que  iba  de  la
+
+(55:42) 100  a  la  107?
+
+(55:44) Bien,
+
+(55:46) perfecto.  Impecable.  Entonces,  ahora  sí
+
+(55:49) voy  acá,
+
+(55:52) le  doy  renuew  de  vuelta  porque  le  di  un
+
+(55:55) botonazo.
+
+(55:58) Renew.
+
+(56:00) Ahora  me  va  a  asignar  de  vuelta  la
+
+(56:01) dirección  IP.  Y  fíjense,
+
+(56:04) fíjense  lo  siguiente.
+
+(56:06) 200  200  100  me  asignó  ahora  la  100.
+
+(56:11) La  máscara  es  barra24.  Y  fíjense  este
+
+(56:14) dato,
+
+(56:16) la  dirección  IP  del  default  gateway  es
+
+(56:19) la  dirección  IP  del  propio  dispositivo
+
+(56:23) Wi-Fi.  Lo  hace  automáticamente  porque
+
+(56:26) cuando  él  asigna  una  dirección  IP
+
+(56:29) por  DHCP,  la  dirección  que  asigna
+
+(56:33) es  como  de  Fall  Gateway  él  mismo  la,  o
+
+(56:36) sea,  porque  él  es  el  que  brinda  el
+
+(56:38) servicio  de  HCP.  Entonces,  a  la  a  la  PC
+
+(56:41) que  le  asigna  una  dirección  IP  le  dice,
+
+(56:43) "Yo  soy  tu  default  gateway."  Sí,  hasta
+
+(56:46) acá  se  entendió  todo  lo  que  expliqué.
+
+(56:50) Bien,  entonces,  ¿qué  pasa?  Veamos,  ¿qué
+
+(56:55) pasa  si  yo  quiero,
+
+(56:58) digamos,  hacerle  un  pin  de  acá?
+
+(57:02) Le  hago  un  pin  a  la  200.2.2.10.
+
+(57:08) llego.  ¿Cuál  era  la  200?  200.10.
+
+(57:12) Era  la  PC.
+
+(57:14) ¿Se  acuerdan  que  era  la  PC  esta?
+
+(57:19) Era  la  PC  la  menta,  que  es  la  que  yo  le
+
+(57:22) puse  eh  una  dirección  IP,  digamos,  eh
+
+(57:26) arbitraria,  vamos  a  llamarlo.  Sí.  Bien.
+
+(57:29) Perfecto.
+
+(57:32) Entonces
+
+(57:35) ahora  déjenme  ver  la  guía.  dice,
+
+(57:36) "Modifique  la  configuración  de  la  PC
+
+(57:39) ventas  para  que  reciba  una  dirección  IP
+
+(57:41) dinámica  de  la  P."  Bien,  perfecto.
+
+(57:44) Eh,
+
+(57:46) desconecte  la  PC  de  la  P  y  conéctela  del
+
+(57:49) switch  la  ventas.  Okay,  listo.  Vamos  a
+
+(57:51) hacer  eso.
+
+(57:53) Entonces,  cierro  esto.
+
+(57:59) Fíjense  lo  que  voy  a  hacer  ahora.
+
+(58:01) Voy  a  desconectar  este  cable
+
+(58:05) y  voy  a  hacer  otra  conexión.
+
+(58:08) Voy  a  conectar  ahora  con  un  cable
+
+(58:11) cruzado.
+
+(58:14) Con  un  cable  cruzado  me  voy  a  conectar
+
+(58:16) desde  acá,  por  ejemplo,  el  puerto  cuatro
+
+(58:19) contra  el  puerto  cuatro  de  acá.  ¿Sí?  Es
+
+(58:22) decir,  conecté  dos  switches  porque  este
+
+(58:26) equipo  se  comporta  como  un  switch.  Sí,
+
+(58:29) porque  yo,  fíjense  lo  siguiente.
+
+(58:33) Ah,  una  cosita,  nosotros  podemos  entrar
+
+(58:35) al  equipo  tocando,  digamos,  con  el  mouse
+
+(58:38) eh,  por  encima  de  él  y  lo  vemos.  El
+
+(58:40) equipo  es  este.  Miren,  este  es  el  equipo
+
+(58:43) como  se  ve  de  atrás.  Sí.  Eh,  este  equipo
+
+(58:47) así  como  se  ve  de  atrás  lo  puedo  apagar
+
+(58:49) lo  y  y  puedo  ver  los  sus  puertos,  como
+
+(58:53) les  mostré  en  el  en  el  PDF.  Estos  cuatro
+
+(58:56) puertos  que  son  los  que  vamos  a  usar
+
+(58:58) ahora  en  este  equipo  son  los  que  le  dan
+
+(59:02) la  funcionalidad  como  un  switch,  o  sea,
+
+(59:04) se  lo  conoce  que  funciona  en  modo
+
+(59:06) bridge,  ¿sí?
+
+(59:09) Es  decir,  que  es  como  una  extensión  del
+
+(59:11) switch  este  que  está  acá,  ¿sí?
+
+(59:15) Con  lo  cual,  si  yo  conecto,  como  hice
+
+(59:17) ahora,  desde  este  switch  a  este  switch,
+
+(59:19) lo  conecté  al  puerto  cuatro,  a  este,
+
+(59:23) los  otros  tres  puertos  van  a  comportarse
+
+(59:25) como  si  estuviesen  como  si  fuesen  tres
+
+(59:27) puertos  de  este  otro  switch.  Sí,  es  como
+
+(59:31) una  extensión.
+
+(59:33) Y  ahora  lo  que  yo  voy  a  hacer,  ah,
+
+(59:36) ustedes  cuando  tocan  acá  lo  pueden
+
+(59:38) administrar  desde  acá  el  equipo,  ¿ven?
+
+(59:40) Ya  no  hace  falta  que  se  conecten,
+
+(59:42) digamos,  con  un  cable.  Y  sí,  lo  pueden
+
+(59:46) hacer  desde  el  simulador.  Lo  que  pasa
+
+(59:48) que,  bueno,  como  les  dije,  en  la  vida
+
+(59:50) real  no  se  puede  hacer  esto  porque  no  es
+
+(59:52) que  ustedes  tocan  y  y  abren  la  Wii
+
+(59:54) mágicamente.  Sí,  pero  bueno.  Y  después
+
+(59:58) lo  que  vamos  a  hacer  ahora,  como  dice  la
+
+(60:00) guía,  es  conectar  la  LAN  ventas  esta  que
+
+(60:04) está  acá.  Esta  que  está  acá  la  conecto
+
+(60:07) con  un  cable  a  este  switch.  Sí.  Y  lo  voy
+
+(60:10) a  hacer  al  puerto  dos.
+
+(60:12) Sí.  Bien,  perfecto.  Avanzo  un  poquito  el
+
+(60:16) el  el  tiempo  y  lo  que  voy  a  hacer  ahora,
+
+(60:20) yo  a  esta  le  había  asignado  una
+
+(60:22) dirección,  ¿se  acuerdan?
+
+(60:25) Ahora  voy  a  salir  de  acá.  Yo  le  había
+
+(60:27) asignado  una  dirección  eh  estática.  Lo
+
+(60:31) que  me  dice  el  enunciado  es,  "Che,
+
+(60:34) pasalo  de  HCP."  Okay,  lo  paso  de  HCP.
+
+(60:39) a  través  de  la  conexión  de  capa  2  y  y
+
+(60:42) digamos  eh  y  digamos  le  solicita  por  por
+
+(60:47) protocolos  digamos  de  de  orden  superior,
+
+(60:50) ¿no?  De  los  servicios  que  brindan  las
+
+(60:53) capas  superiores,  capa  3,  4,  5,  todas.
+
+(60:59) el  DHCP  como  este  como  esta  PC  le  está
+
+(61:02) pidiendo  una  dirección,  digamos,  le
+
+(61:05) asigna  la  200  200  101  y  le  dice  y  le
+
+(61:10) dice,  como  les  expliqué  antes,  como  yo
+
+(61:14) te  proporcioné  una  dirección  IP,  tu
+
+(61:16) default  gateway  soy  yo.  Sí.  Y  está
+
+(61:19) escrito  acá,  default  gateway  200  253.
+
+(61:24) Sí.
+
+(61:26) Entonces,
+
+(61:28) hasta  ahora
+
+(61:30) la  PC  Ventas  Admin,  que  es  donde  estoy
+
+(61:34) parado  ahora,  la  laptop  vendedor  uno
+
+(61:38) solamente  tienen,  digamos,
+
+(61:42) como  alcance
+
+(61:44) la  red  LAN  donde  están.  Es  decir,  si
+
+(61:48) alguna  de  estas  dos,  la  laptop  vendedor
+
+(61:50) 1  o  la  o  la  PC  Ventas  Admin,  quisieran
+
+(61:54) llegar  hasta  el  servidor  pedidos  que
+
+(61:58) está  en  otra  redan,  no  lo  van  a  poder
+
+(62:00) hacer  porque  su  default  gateway  es  este
+
+(62:06) dispositivo  que  está  acá  y  ese  no  es  el
+
+(62:08) router  de  borde,  digamos,  de  de  la  red
+
+(62:11) LAN  ventas.  Sí.
+
+(62:14) Entonces  solamente  van  a  tener
+
+(62:15) injerencia  en  la  red  a  la  que
+
+(62:18) pertenecen.  ¿Sí?
+
+(62:21) Y  ahora  les  voy  a  explicar,
+
+(62:23) digamos,  lo  que  vamos  a  seguir  haciendo.
+
+(62:26) ¿Hasta  acá  hay  alguna  duda,
+
+(62:29) profe?  En  el  caso  de  que  alguna  PC  se
+
+(62:31) desconecte,  ¿eh?  ¿Se  le  asigna  otra  vez
+
+(62:34) la  misma  IP  si  se  llega  a  conectar  o  se
+
+(62:36) puede  llegar  a  asignar  otra?
+
+(62:39) Bueno,  en  los  DH,  esto  es  un  algo
+
+(62:43) conceptual  de  los  DHCP.  Los  DHCP  cuando
+
+(62:45) asignan  una  dirección  IP  a  un  a  un
+
+(62:48) dispositivo,  a  un  endpo  eh  tienen  un
+
+(62:52) tiempo,  veamos,  eh  por  default  que  se
+
+(62:56) puede  cambiar  en  que,  por  ejemplo,  si  se
+
+(62:59) desconecta  le  vuelve  a  cuando  cuando  le
+
+(63:02) pide  de  vuelta  ese  mismo  dispositivo  le
+
+(63:05) pide  de  vuelta  una  una  IP  al  DHCP.  el
+
+(63:08) DHCP  por  ese  tiempo  que  tiene,  digamos,
+
+(63:12) eh,  que  se  configura  le,  digamos,  es
+
+(63:15) como  que  le  reserva  la  misma  la  misma
+
+(63:18) dirección  IP  siempre  y  cuando  este  el  se
+
+(63:23) cumpla  ese  tiempo  de  vida,  digamos,  que
+
+(63:26) que  que  la  tiene  como  como  para
+
+(63:28) asignársela  al  mismo  host.  Sí.  después
+
+(63:31) de  un  tiempo  de  vida  que  que  varía  según
+
+(63:34) la  configuración,  puede  ser  un  día,
+
+(63:36) pueden  ser  un  n  días  o  incluso  horas.
+
+(63:40) Este  eh  si  no  le  asignaría  otra,  sí,
+
+(63:43) pero  en  principio  eh  eh  repetidas  veces
+
+(63:47) le  asigna  la  misma  por  ese  tiempo  que  yo
+
+(63:49) les  digo.  Eh  guárdenme  un  segundo,  voy  a
+
+(63:52) conectar  la  laptop  a  la  energía.
+
+(64:41) Bien,  entonces
+
+(64:43) si  venimos  bien  hasta  acá,  veamos,  lo
+
+(64:46) que  quiero  explicarles  conceptualmente
+
+(64:48) que  las  PCs  y  las  laptop  que  están
+
+(64:50) conectadas  en  este  momento  en  la  red,
+
+(64:52) tanto  una  en  forma  inalámbrica  como  esta
+
+(64:55) y  una  en  forma  cableada  como  esta,
+
+(64:59) una  está  conectada  a  través,  digamos,  de
+
+(65:02) de  una  conexión  inalámbrica  al  a  este
+
+(65:05) switch  wireless.  Sí.  Y  esta  está
+
+(65:10) conectada  en  forma  cableada  a  un  switch,
+
+(65:13) digamos,
+
+(65:16) alámbrico,  o  sea,  que  no  sería
+
+(65:18) inalámbrico,  ¿no?  Este,  pero  todo
+
+(65:21) trabaja  en  capa  2  y  todo  está  en  la
+
+(65:23) misma  red  LAN,  que  es  la  200,  200 200,
+
+(65:26) 200.
+
+(65:27) 0/24.
+
+(65:31) Ahora,  fíjense  lo  siguiente.  La  guía
+
+(65:33) estaríamos  en  en  la  parte  7.9
+
+(65:37) y  me  dice  que  conecte  la  PC  contador  y
+
+(65:40) le  ponga  una  PC  y  le  ponga  una  IP
+
+(65:42) estática,
+
+(65:43) ¿sí?  Y  que  la  conecte  al  switch  LAN,  sí,
+
+(65:48) de  la  P,  a  la  parte  a  la  parte  LAN  de  la
+
+(65:50) P.  Entonces,  cierro  esto,
+
+(65:55) agarro  un  cable,
+
+(65:58) le  lo  pongo  digamos  en  el  puerto
+
+(66:00) fasternet  de  la  de  la  de  la  nick  de  la
+
+(66:02) network  card  interface,  de  la  network
+
+(66:05) interface  card,  perdón,  y  voy  a
+
+(66:07) conectarlo  en  forma  cableada.
+
+(66:11) ¿A  qué  puerto  debería  conectarlo
+
+(66:14) de  acá?
+
+(66:16) Internet.
+
+(66:18) Bien,  puede  ser  el  uno,  el  dos.  el  tres,
+
+(66:21) porque  el  cuatro  está  utilizado  para
+
+(66:23) conectarse  contra  el  switch,  que  es  el
+
+(66:25) que  le  da  vida  a  este  equipo  dentro  de
+
+(66:28) esa  red.  Sí,  vamos  a  conectarlo  al
+
+(66:31) puerto  uno.  Sí,  avanza  un  poquito  el
+
+(66:34) tiempo.
+
+(66:37) El  mensaje  parroquial,  archivo  guardar
+
+(66:39) como  y  que  guarden  el  archivo  con  su
+
+(66:42) nombre.
+
+(66:44) Sí,  porque  después  si  se  pierde
+
+(66:48) como  dice  el  dicho,  se  joroban.
+
+(66:51) Eh,  entonces,  bueno,  y  acá  la  PC
+
+(66:53) contador  me  dice,  "Che,  ponele  desktop
+
+(66:57) IP,  ponele  esta  IP  fija,  ponele,  no  lo
+
+(67:01) hagas  por  DHCP,  ponele  esta  IP  fija  con
+
+(67:04) estos  otros  parámetros  y  me  dice,  poner
+
+(67:06) la  200  200
+
+(67:09) 242.
+
+(67:12) La  máscara  es  el  barra24  y  me  dice,
+
+(67:15) "Ponele  como  default  gateway  la  200
+
+(67:18) 200.254.
+
+(67:22) ¿Cuál  es  la  254?
+
+(67:26) La  254  es  el  router  de  borde  que  está
+
+(67:28) acá.
+
+(67:31) Entonces,  ahí  entra  en  juego.  Ahí  entra
+
+(67:34) en  juego  el  concepto
+
+(67:37) importante  de  lo  que  hace  el  default
+
+(67:38) gateway.  ¿Por  qué?
+
+(67:41) Porque  yo  voy  a  abrir  las  dos  PC,  van  a
+
+(67:44) estar  conectadas  en  forma  alámbrica,  o
+
+(67:47) sea,  por  cable,
+
+(67:49) nada  más  que  esta  está  conectada  a  este
+
+(67:52) switch,  que  en  este  caso  es  el  switch
+
+(67:55) wireless,  que  da  conexión  cableada  y
+
+(67:58) conexión  inalámbrica.  Las  dos  sí  me
+
+(68:01) conecte  de  una  manera  o  de  otra,  me  da
+
+(68:04) conectividad.
+
+(68:06) Y  la  otra,  la  PC  LAN  Ventas,  está
+
+(68:08) conectada  también  en  forma  eh  cableada,
+
+(68:10) pero  directamente  al  switch,  digamos,  de
+
+(68:13) al  switch  verdadero  de  la  red.  Entonces,
+
+(68:16) yo  voy  a  abrir  esta  PC,  voy  a  abrir  la
+
+(68:18) terminal  acá,  la  voy  a  poner  así  con
+
+(68:21) para  que  quede  fija.
+
+(68:24) Voy  a  abrir  la  PC  contador  que  la  tenía
+
+(68:26) abierta,  la  voy  a  poner  acá  al  lado.  Voy
+
+(68:28) a  poner  también  acá  y  voy  a  hacer  un  IP
+
+(68:32) config  acá.  Ahí.  Y  voy  a  hacer  un  IP
+
+(68:36) config  acá.
+
+(68:41) Ler,  no.  Ah,  no  anda  esto.  Bueno,  IP
+
+(68:43) config  acá
+
+(68:46) y  voy  a  ver  que  cada  uno  tiene  una
+
+(68:49) configuración  distinta.  Los  dos  están
+
+(68:51) dentro  de  la  misma  Redlan,  la  200
+
+(68:53) 200.0/24.
+
+(68:56) Nada  más  que  la  PC  contador  tiene  como
+
+(68:59) default  gateway  el  router  de  borde
+
+(69:01) porque  yo  le  jcé
+
+(69:05) la  dirección  IP  en  forma  estática,  o
+
+(69:07) sea,  le  puse  una  dirección  IP  estática  y
+
+(69:09) le  puse  en  forma  estática  el  default
+
+(69:11) gateway.
+
+(69:13) En  cambio,  la  PC  la  la  PC  ventas  admin,
+
+(69:18) que  es  la  que  está  acá,
+
+(69:21) tomó  una  dirección  IP  a  través  del  DHCP
+
+(69:24) y  se  la  otorgó  el  router  o  mejor  dicho
+
+(69:28) el  switch  este  Wi-Fi  que  está  en  el
+
+(69:32) medio  de  la  redland,  que  es  este  dice
+
+(69:34) wireless  bridge.
+
+(69:36) Y  ahora  si  yo  hago  un  pin
+
+(69:39) a  la  195,  perdón,  vamos  a  no  un  ping,
+
+(69:42) voy  a  hacer  un  traert
+
+(69:45) 190.  El  trasert  es  un  comando  que  lo  que
+
+(69:49) les  permite  es  ver  cómo  van  saltando  los
+
+(69:51) paquetes,  digamos,  para  llegar  desde  un
+
+(69:55) origen  hasta  un  destino.
+
+(69:59) 195.  195.  Todo  195.  ¿Qué  es  todo  195?
+
+(70:05) es  el  servidor  este  que  está  acá  que  se
+
+(70:07) lo  llama  servidor  pedidos.
+
+(70:10) Sí.  O  sea,  yo  quiero  llegar  a  ese  lugar.
+
+(70:14) Veamos,  desde  dos  PCs  distintas,
+
+(70:18) ¿no?  Voy  a  hacer  lo  mismo  de  dos  PC
+
+(70:21) distintas.  In  195  195  195  195.  Le  doy
+
+(70:27) enter  acá  y  le  doy  enter  acá.
+
+(70:32) Voy  a  adelantar  un  poquito  el  tiempo.
+
+(70:34) No  era  traser  en  la  de  ventas  admin.
+
+(70:39) Está  ejecutado  en  las  dos.  Ah,  sí,
+
+(70:41) perdón.
+
+(70:45) Gracias.  Traser  195  195  195  195
+
+(70:52) por  perfecto.  Repito  acá.
+
+(70:57) Bien.
+
+(70:59) ¿Qué  es  lo  que  está  pasando  acá?
+
+(71:03) Lo  que  está  pasando  acá  es  algo
+
+(71:06) que  está  relacionado  con  el  default
+
+(71:08) gateway,  justamente.
+
+(71:11) Y  lo  que  el  comportamiento  que  muestra
+
+(71:14) esta  prueba  que  acabo  de  hacer  es  que  la
+
+(71:17) PC  Contador  le  está  diciendo,  digamos,
+
+(71:21) está  diciendo,  quiero  llegar  a  la  a  la
+
+(71:24) 195  195  195  195.  Okay,
+
+(71:30) como  esa  dirección  IP  no  tiene  nada  que
+
+(71:32) ver  con  nuestra  red,  lo  primero  que
+
+(71:35) hace,  digamos,  o  sea,  el  paquete  es
+
+(71:38) enviarlo  al  default  gateway,  ¿sí?
+
+(71:40) Porque,  digamos,  eh,  la  LAN  desconoce  la
+
+(71:44) red  LAN,  digamos,  o  sea,  de  acá  para
+
+(71:47) adentro,
+
+(71:48) digamos,  desconoce  esa  dirección.
+
+(71:51) Entonces
+
+(71:53) se  dice  en  la  herger  Networking  se  la
+
+(71:55) escupe  al  al  defult  gateway  y  le  dice,
+
+(71:58) "Vos  arreglate  porque  yo  necesito  llegar
+
+(72:00) acá."  El  default  gateway  la  toma,  ¿sí?
+
+(72:05) se  conecta  con  otro  eh  router,  digamos
+
+(72:08) que  en  este  caso  es  de  remoto  a  local
+
+(72:11) porque  tampoco  conoce  la  195,  sino  que
+
+(72:14) se  la  escupe  al  otro  de  F  gateway  de  él
+
+(72:16) o  o  a  o  a  quien  él  conoce  y  él  le  dice,
+
+(72:21) "Sí,  yo  la  conozco  porque  la  tengo
+
+(72:22) conectada  en  mi  red."  Digamos,  el  router
+
+(72:25) este  local  conoce  la  la  dirección  IPSA
+
+(72:29) porque  él  tiene  conectado  en  su
+
+(72:30) interface  la  195  195  1950.  esa  red.
+
+(72:35) Entonces  le  dije,  "Sí,  yo  la  conozco.
+
+(72:37) manda  el  paquete,  digamos,  al  al
+
+(72:42) servidor  y  después  le  devuelve  la
+
+(72:44) respuesta  a,  digamos,  al  al  router
+
+(72:47) remoto  youter  remoto  se  la  devuelve  a  la
+
+(72:48) PC  contador,  con  lo  cual  yo  puedo
+
+(72:52) llegar,  digamos,  de  la  PC  contador
+
+(72:54) haciendo  este  un  salto  de  acá  hasta  mi
+
+(72:58) default  gateway  y  mi  default  gateway,
+
+(73:00) digamos,  mi  default  gateway,  fíjense,  de
+
+(73:03) PC  contador,  el  primer  salto  es  al
+
+(73:05) default  gateway,  que  es  la  254,  es  esta
+
+(73:07) primera  primera  línea.
+
+(73:09) El  segundo  salto  es  hacia  el  otro
+
+(73:11) router,  o  sea,  hacia  el  router  este  que
+
+(73:13) está  acá,  que  es  el  eh  1841  local.  Y  el
+
+(73:18) tercer  salto  es  del  router  ese  local
+
+(73:21) hacia  el  servidor
+
+(73:23) eh  digamos  eh  servidor  pedidos,  que  es
+
+(73:26) el  que  tiene  esa  dirección  IP.  O  sea,  se
+
+(73:28) producen  tres  saltos.  El  primer  salto  al
+
+(73:30) default  gateway,  el  segundo  salto  al
+
+(73:33) otro  router,  que  es  el  que  conoce  la  red
+
+(73:35) esa,  y  el  tercer  salto  al  propio
+
+(73:39) servidor.
+
+(73:41) ¿Qué  pasa  ahora  con  la  PC  LAN  ventas?  La
+
+(73:45) PC  LAN  ventas  haciendo  ese  mismo
+
+(73:47) procedimiento
+
+(73:50) le  dice  a  su  default  gateway,  "Che,
+
+(73:51) necesito  llegar  a  esta."  se  la  escupe  al
+
+(73:54) default  gateway  y  el  default  gateway  se
+
+(73:56) queda  dando  vueltas  ahí  porque  como  él
+
+(74:00) no  es  un  router,  es  un  switch,  o  sea,
+
+(74:03) está  trabajando  como  un  switch,
+
+(74:06) no  conoce  este  eh  el  camino  para  llegar
+
+(74:09) a  ese  a  esa  otra  dirección  IP.  Entonces
+
+(74:13) el  paquete  muere  dando  vueltas  en  él,
+
+(74:15) que  es  el  default  gateway  de  esa  PC,
+
+(74:18) muere  por  time  out,  o  sea,  este  muere,
+
+(74:22) digamos,  dando  vueltas  ahí,  digamos,  sin
+
+(74:25) que  él  pueda  dar  una  respuesta  y  muere,
+
+(74:28) digamos,  por  time  out,  muere  por  TTL,
+
+(74:31) ¿sí?  O  sea,  se  va  descontando  este  todo
+
+(74:34) el  TTL  hasta  que  lleggaue  a  30  y  la
+
+(74:37) traza  la  completa,  pero  no  pudo  resolver
+
+(74:41) hacia  donde  quiere  llegar.  ¿Por  qué?
+
+(74:43) porque  él  está  trabajando  en  modo
+
+(74:44) switch,  o  sea,  en  modo  bridge,  se
+
+(74:47) comporta  como  un  switch  y  no  pu  no  tiene
+
+(74:50) la  capacidad  de  eh  enrutar  ese  paquete  a
+
+(74:54) otro  lado.  Sí,  porque  él  es  el  default
+
+(74:56) gateway  y  tiene  solamente  injerencia  a
+
+(74:58) nivel  de  la  red  Land  Ventas,  o  sea,
+
+(75:01) muere  en  la  red  200  200.0/24.
+
+(75:07) Se  entendió  hasta  acá  la  la  diferencia
+
+(75:09) entre
+
+(75:11) la  PC  contador  que  tiene  como  default
+
+(75:13) gateway  el  router  de  borde  este  y  la  PC
+
+(75:16) LAN  ventas  que  tiene  como  defult  getway
+
+(75:19) este  se  entendió  la  la  diferencia  entre
+
+(75:23) el  alcance  de  uno  y  el  alcance  de  otro.
+
+(75:27) Sí,  sí,  sí,  profe,  clarísimo.  A  mí  me
+
+(75:30) quedado  una  duda  de  antes  de  la  PC  de
+
+(75:33) ventas  admin,  ¿por  qué  era  que  se  le
+
+(75:36) había  asignado  automáticamente
+
+(75:38) ese  default  gateway,  el  del  wireless
+
+(75:40) bridge?
+
+(75:42) Claro.  Eh,  cuando
+
+(75:45) cuando  un  dispositivo
+
+(75:47) e  como  es  este  que  está  acá,  tiene  eh
+
+(75:52) configurado  el  servicio  de  DHCP,
+
+(75:55) cuando  le  brinda  una  dirección  IP  a  a
+
+(75:58) alguien  en  forma  dinámica  por  DHCP,
+
+(76:01) le  da  todos  los  datos,  le  da  la
+
+(76:03) dirección  IP,  le  da  la  máscara  de  subred
+
+(76:06) y  le  da  también  eh
+
+(76:10) eh  el  default  gatewayight.  que  en  este
+
+(76:11) caso  es  él  mismo,  porque  como  él  es  el
+
+(76:14) que  proporciona  el  servicio  de  HCP,  él
+
+(76:16) mismo  le  dice  que  el  default  gateway  es
+
+(76:19) él.  Sí,
+
+(76:22) se  entendió  hasta  acá.
+
+(76:24) Sí,  perfecto.  O  sea,  más  allá  de
+
+(76:26) conectarlo  al  switch  de  ventas,  el
+
+(76:27) switch  de  ventas  es  como  una  extensión
+
+(76:29) de  del  wireless  bridge,  ¿no?
+
+(76:32) Exacto.  Sí,  en  en  este  comportamiento  es
+
+(76:36) así.
+
+(76:37) Ahora,  bueno,  en  la  guía  después  le
+
+(76:38) dicen  que  se  que  se  contacten  al  FTP,
+
+(76:41) porque  este  en  realidad  es  un  FTP.  Este
+
+(76:43) este  que  está  acá  es  un  FTP  de
+
+(76:45) facilísimo.  Ponen  FTP,  la  dirección  IP
+
+(76:48) esta  y  se  va  a  conectar.  Pero  a  los
+
+(76:51) fines  que  yo  quiero  mostrar,  que  es  lo
+
+(76:52) conceptual,  llegamos  bien.  Sí,  de  un
+
+(76:56) lugar  al  otro.  Ahora  estoy  en  el  punto
+
+(76:58) 710.  Dice,  "Configura  el  laptop  vendedor
+
+(77:00) 1  con  una  dirección  IP  dinámica
+
+(77:03) en  el  segmento
+
+(77:06) vendedor  uno.  Déjenme  ver.  Vendedor  uno
+
+(77:12) en  el  segmento  a  ver.  Tiki  tiki,  me
+
+(77:14) parece  que  ya  me  adelanté  a  esto.
+
+(77:22) Sí,  perfecto.
+
+(77:36) Estoy  mirando,  estoy  mirando  en
+
+(77:41) bien.  Bueno,
+
+(77:43) eh  el  el  concepto  que  quería  explicarles
+
+(77:47) de  Fall  Gateway  creo  que  quedó  claro,
+
+(77:50) digamos,  e  y  ustedes  entendieron  lo  del
+
+(77:54) alcance,  ¿no?  Ahora,
+
+(77:58) supongamos  que  yo
+
+(78:00) e  quiero  que  la  LAN,  que  la  PC  esta  la  o
+
+(78:05) mejor  dicho  vamos  a  hacerlo  más  e  vamos
+
+(78:08) a  hacerlo  más  más  copado  aún.
+
+(78:11) Supongamos  que  esta  laptop  yo  quiero  que
+
+(78:13) llegue  al  servidor  este  FTP,
+
+(78:16) pero  como  esta  eh  se  le  asigna  el  el
+
+(78:20) default  gateway  se  lo  asigna  el  DHCP  y
+
+(78:23) es  el  mismo,
+
+(78:25) yo  lo  que  puedo  hacer  es  usar  esta
+
+(78:28) conexión  inalámbrica  que  me  permite,
+
+(78:30) digamos,  vincularme  con  la  Red  Lan,  pero
+
+(78:33) puedo  jarcodearle,  digamos,  el  el
+
+(78:36) default  gatewayight.  ¿Cómo  lo  hago  eso?
+
+(78:39) Bueno,  me  vengo  acá  a  la  parte  de  la
+
+(78:43) configuración,
+
+(78:45) le  voy  a  decir  yo  te  voy  a  dar  a  vos  una
+
+(78:48) IP  estática,  no  voy  a  usar  el  DCP.
+
+(78:51) ¿Cómo  hago  eso?  Bueno,  acá  le  pongo  200
+
+(78:56) 200.240/24.
+
+(79:01) Es  una  dirección  IP  que  está  dentro  de
+
+(79:03) la  red,  ¿no?
+
+(79:06) ¿Sí  o  no?
+
+(79:09) Sí.
+
+(79:09) Y  le  voy  a  poner  acá  como  de  Fall
+
+(79:12) Gateway,  lo  voy  a  dejar  codear  y  le  voy
+
+(79:14) a  decir  200
+
+(79:17) 200
+
+(79:19) y  le  voy  a  poner  como  de  Fall  Gateway  el
+
+(79:21) router  de  borde  de  mi  red,  que  en  este
+
+(79:24) caso  es  el  254
+
+(79:27) y  lo  voy  a  cerrar  y  me  voy  a  venir  acá  y
+
+(79:30) voy  a  hacer  un  IP  config  ahora  de
+
+(79:32) vuelta.
+
+(79:36) Y  fíjense  que  tiene  la  dirección  IP  que
+
+(79:38) yo  le  puse  a  mano,  no  tiene  nada  que  ver
+
+(79:40) con  la  que  me  asignaba  el  HCP  antes.
+
+(79:43) y  ahora  conectado  a  través  de  del
+
+(79:48) dispositivo  el  wireless  bridge  por
+
+(79:51) wireless,  pero  yo  poniéndole  una  IP,
+
+(79:54) digamos,
+
+(79:56) eh  estática,  digamos,  que  puede  ser
+
+(79:59) podría  haber  sido  la  misma  que  me  asignó
+
+(80:01) el  DHCP,  pero  le  pero  le  yo  le  ponía
+
+(80:04) otro  default  gateway,  que  en  este  en
+
+(80:06) este  caso  le  ponía  el  2  el  254.  Y  ahora
+
+(80:09) fíjense  que  si  yo  hago  un  traser  a  la
+
+(80:12) 195,
+
+(80:15) 195,
+
+(80:17) 195  195  195  al  FTP  server,
+
+(80:23) fíjense  que  yo  ahora
+
+(80:26) también  llego,  veamos  al  servidor  FTP.
+
+(80:29) ¿Sí?  ¿Por  qué?  Porque  le  cambié,  veamos,
+
+(80:32) el  default  gateway,  digamos.  Y  para
+
+(80:35) cambiar  el  default  gateway,  prescindí
+
+(80:37) del  servicio  de  HCP  que  me  asigna  el  el
+
+(80:41) el  wireless  bridge,  o  sea,  el  switch
+
+(80:45) inalámbrico,  vamos  a  decirlo.
+
+(80:49) Y  no  solamente  eso,  sino  que  uso  la
+
+(80:51) conectividad  Wi-Fi,  pero  digamos  le
+
+(80:55) harcodié  el  de  como  default  gateway.
+
+(80:58) Al  no  usar  el  DHCP,  le  jarcodié  una
+
+(81:01) dirección  IP  estática  y  le  jarcodeé  el
+
+(81:05) eh  el  router  de  borde,  digamos.  Es
+
+(81:08) decir,  le  jarcodeé  este  default  gateway
+
+(81:11) porque  si  yo  le  pongo  activo  el  de  HSP,
+
+(81:13) me  toma  como  default  gateway  este  y  me
+
+(81:15) deja  solamente  estar  dentro  de  la  red
+
+(81:17) como  alcance.  En  cambio,  si  lo  jcodeo  en
+
+(81:19) forma  estática,  lo  pongo  yo,  le  pongo
+
+(81:22) que  el  default  Gateway  es  este.  Y  ahora
+
+(81:24) la  laptop  admin,  más  allá  de  que  esté  la
+
+(81:26) laptop  vendedor  uno,  más  allá  de  que
+
+(81:29) esté  conectada  a  este  switch  por
+
+(81:33) wireless,  sí,  me  permite  llegar,
+
+(81:37) digamos,  a  un  contexto  que  estoy  por
+
+(81:39) fuera  de  la  red  L  ventas,  o  sea,
+
+(81:42) llego  a  otro  lado,
+
+(81:45) este,  que  no  es  solamente  el  alcance  de
+
+(81:47) la  red  L  ventas.  ¿Se  entendió  lo  que
+
+(81:49) hice?
+
+(81:51) Sí.
+
+(81:52) O  sea,
+
+(81:53) sí,  sí.  Para  concluirlo,
+
+(81:56) si  yo  quiero  tener  un  alcance  que  está
+
+(81:59) por  fuera  de  mi  Red  Llan,  tengo  que
+
+(82:01) modificar  el  default  gateway.  ¿Sí?  ¿Cómo
+
+(82:03) modifico  el  default  gateway?  En  forma
+
+(82:06) estática.  Sí,  porque  si  yo  uso  el  DHCP
+
+(82:10) solamente  tengo  alcance,  digamos,  en  la
+
+(82:13) Red  Llan.  Pero  así  también  tengo  alcance
+
+(82:16) a  la  Red  Llan  porque  yo  puedo  hacer  un
+
+(82:18) un  pin  desde  laptop  eh  vendedor  uno  a  la
+
+(82:22) PC  contador,  puedo  hacer  un  ping  hacia
+
+(82:25) la  LAN,  puedo  hacer  un  pin  al  default
+
+(82:27) gateway,  puedo  hacer  un  pin
+
+(82:30) a  a a  todo  a  tod  adentro  de  la  LAN,  no
+
+(82:32) tengo  ningún  problema.  Nunca  tuve
+
+(82:34) problemas.  El  problema  era  cuando  quería
+
+(82:35) salir  hacia  otra  Red  Llan  que  tiene  otra
+
+(82:40) otro  prefijo  distinto.
+
+(82:42) Bien,  si  esto  se  entendió,  ¿sí?  Eh,
+
+(82:46) vamos  a  pasar  a  la  segunda  parte.  O  sea,
+
+(82:50) para  concluir,  este  equipo  acá  como  está
+
+(82:53) se  comporta  en  modo  bridge,  o  sea,  como
+
+(82:56) si  fuese  un  switch.  Es  decir,  como  que
+
+(82:58) yo  agarro,  hago  una  expansión  acá,  así,
+
+(83:02) WP,  tengo  tres  puertos  más,  o  sea,  en
+
+(83:05) vez  de  tener  24,  tengo  20  27  puertos
+
+(83:09) porque  uno  lo  usa  para  para  conectarse
+
+(83:11) acá,  o  sea,  tengo  23  puertos  acá,  donde
+
+(83:15) uso  uno  para  esta  conexión  y  puedo  usar
+
+(83:18) tres  puertos  más,  o  sea,  voy  a  tener
+
+(83:21) 26  puertos,  ¿sí?  este  cableados  y  el
+
+(83:27) resto  digamos  en  forma  inalámbrica  para
+
+(83:29) dar  servicio  en  una  red  lant.
+
+(83:34) Si  esto  se  entendió,  vamos  a  ir  a  la
+
+(83:37) segunda  parte  y  vamos  a  explicar  el  otro
+
+(83:40) concepto  que  es  estoy  en  la  página
+
+(83:45) 11  y  vamos  a  explicar  el  otro  concepto
+
+(83:48) que  es  que  este  dispositivo  que  está  acá
+
+(83:53) va  a  trabajar  en  modo  eh  en  modo  router,
+
+(83:57) ¿sí?  ¿Por  qué?  porque  va  a  tener  una
+
+(83:59) pata  en  la  red  LAN  seguridad  que  se  le
+
+(84:02) va  a  asignar  una  IP  como  esta  a  su
+
+(84:04) interface,  que  es  la  interfaz  One  o  la
+
+(84:07) interfaz  internet.
+
+(84:09) Y  por  otro  lado  va  a  brindar
+
+(84:11) conectividad  por
+
+(84:13) eh  por  DHCP  y  en  forma  este  wireless,  o
+
+(84:20) sea,  inalámbrica,  a  estas  dos  este  a
+
+(84:22) estos  dos  a  estos  dos  host  que  son
+
+(84:25) gerente  uno  y  gerente  dos.
+
+(84:28) Sí.  Bien.  Entonces,  lo  primero  que  tengo
+
+(84:32) que  hacer
+
+(84:34) es
+
+(84:36) conectar  el  puerto  internet,  que  ya  lo
+
+(84:38) hice.  Veamos  este  que  está  acá,  el
+
+(84:41) puerto  internet.  Se  los  muestro  cuál  es.
+
+(84:45) El  puerto  internet  es  el  que  está  en
+
+(84:47) celeste.  Lo  conecté  con  un  cable.  Sí.  A
+
+(84:53) eh  el  switch  este  que  está  acá,  el
+
+(84:55) switch  de  la  de  la  red.  la  inseguridad.
+
+(84:58) ¿Por  qué?  Porque  yo  a  ese  puerto,  a  este
+
+(85:01) que  está  acá,  le  tengo  que  asignar  una
+
+(85:03) dirección  IP.  ¿Sí?  Y  por  otro  lado,
+
+(85:07) digamos,  voy  a  configurar  el  equipo  para
+
+(85:10) que  dé  con  estas  antenitas  servicio
+
+(85:12) Wi-Fi  a  la  LAN  central,  que  es  otra  red
+
+(85:16) distinta.  ¿Sí?  Entonces,  para  eso  voy  a
+
+(85:19) la  Wii,  acá  a  la  graphic  user  interface.
+
+(85:22) Y  presten  atención  ahora,
+
+(85:26) presten  atención.
+
+(85:29) ¿Cómo  hacía  yo?  ¿Cómo  hacía  yo  para
+
+(85:34) configurar
+
+(85:35) que  esta  red  de  acá  tome  una  IP  por  DHCP
+
+(85:40) del  del  prefijo  o  de  la  red?  172
+
+(85:45) 17170/24.
+
+(85:48) Venía  la  parte  de  acá  de  setup  y  acá
+
+(85:51) donde  dice  network  setup  le  tengo  que
+
+(85:54) configurar  una  dirección  IP.
+
+(85:57) de  ese  rango  acá.
+
+(86:00) 172
+
+(86:02) 17
+
+(86:05) y  acá  me  dice  que  le  ponga  la  uno.
+
+(86:07) Perfecto,  le  ponemos  la  1  barra  24.
+
+(86:12) Acá  activo  el  DHCP  y  me  dice  que  le
+
+(86:17) ponga  un  rango  de  máximo  cinco
+
+(86:20) direcciones.
+
+(86:22) Cinco  direcciones.
+
+(86:24) Le  voy  a  dar  salvar  acá  abajo.  Le  voy  a
+
+(86:27) dar  salvar  acá  abajo.
+
+(86:30) Y  ahora  que  le  di  salvar,  fíjense  que  la
+
+(86:34) dirección  IP  que  tiene  mi  router  es
+
+(86:39) Ah,  y  acá  tengo  que  darle  la  10  porque
+
+(86:41) va  a  asignar  direcciones  de  la  10  a  la
+
+(86:44) 14.  Ahí  está.  Le  vuelvo  a  poner  salvar.
+
+(86:48) Y  ya  mi  equipo  va  a  tener  para  la  parte
+
+(86:51) de  la  derecha,
+
+(86:53) para  la  parte  de  la  derecha  va  a  tener
+
+(86:55) un  direccionamiento  IP  que  va  a  ser  el
+
+(86:57) de  la  lana  central,  que  es  el  172.  17
+
+(87:00) 170,  o  sea,  donde  para  la  parte  de  la
+
+(87:04) derecha
+
+(87:06) en
+
+(87:07) él  tiene  la  172  171  como  de  Fall
+
+(87:12) Gateway,  ¿no?
+
+(87:15) Como  default  gateway  para  la  para
+
+(87:17) gerente  uno  y  para  gerente  dos.  Sí,
+
+(87:21) pero  por  otro  lado  le  voy  a  tener  que
+
+(87:24) configurar
+
+(87:26) una  dirección  IP  para  que  trabaje  en
+
+(87:28) modo  router.  ¿Y  cuál  es  la  parte  para
+
+(87:30) que  trabaje  en  modo  router?  es  esta  que
+
+(87:32) está  acá,  donde  dice  internet  setup,  que
+
+(87:34) es  como  que  dijera  one,  porque  en
+
+(87:37) realidad  el  nombre  correcto  es  puerto  es
+
+(87:40) un  puerto  de  one.  Este  sí,  nada  más  que
+
+(87:43) en  estos  dispositivos  hogareños  se  lo
+
+(87:45) llama  Internet  port,  pero  en  realidad  si
+
+(87:49) fuese  un  dispositivo  enterprise  o
+
+(87:52) empresarial,  ¿sí?  No  un  dispositivo
+
+(87:54) gareño,  acá  diría  que  este  sería  el
+
+(87:57) puerto  de  One,  el  verdadero  nombre.  Y
+
+(87:59) acá  yo  le  tengo  que  asignar  una
+
+(88:01) dirección  hipestática.  ¿Sí?  ¿Cuál  es  la
+
+(88:04) dirección  hipestática?
+
+(88:06) Va  a  ser  una  dirección  estática  del
+
+(88:09) prefijo  o  de  la  red  de  la  LAN  seguridad.
+
+(88:12) Sí,  porque  yo  quiero  conectar  la  pata  de
+
+(88:15) este  equipo  hacia  el  lado  izquierdo
+
+(88:18) contra  esa  red  que  me  va  a  permitir
+
+(88:20) tener  esa  conectividad  y  y  y
+
+(88:25) fordear
+
+(88:27) o  este  conmutar  paquetes  de  una  red
+
+(88:30) hacia  otra.  ¿Quién  hace  la  funcionalidad
+
+(88:34) de  conmutar  paquetes  de  entre  redes?  un
+
+(88:37) router.
+
+(88:39) Por  eso  se  lo  se  dice  que  trabaja  en
+
+(88:41) modo  router,  porque  el  router  trabaja  en
+
+(88:43) K  3  y  es  el  que  tiene  la  capacidad  de
+
+(88:46) forguardear  paquetes  entre  dos  redes  LAN
+
+(88:49) distintas.  Sí,  los  router  tienen  esa
+
+(88:52) capacidad.  Sí,  los  dispositivos  de  capa
+
+(88:55) 3.
+
+(88:57) Entonces,  bueno,  vamos  a  ponerle  la  a
+
+(88:59) ese  puerto,  o  sea,  a  ese  puerto  que  es
+
+(89:03) este  que  está  acá.
+
+(89:05) Este,  vamos  a  ponerle  una  dirección  IP
+
+(89:08) porque  cuando  un  dispositivo  trabaja  en
+
+(89:10) capa  3  se  le  puede  asignar  a  un  puerto
+
+(89:13) una  dirección  IP,  cosa  que  en  los
+
+(89:15) switches  no  se  podía.  Entonces  ahí  le
+
+(89:17) digo  192
+
+(89:21) 192  192  y  a  él  le  vamos  a  poner  la  253.
+
+(89:28) ¿Cuál  es  la  máscara  del  subred?  la  barra
+
+(89:30) 24  255  255  2550
+
+(89:35) y  quién  es  el  default  gateway  de  él,  o
+
+(89:38) sea,  ¿a  quién  recurre  este  router  que
+
+(89:40) está  acá?  Esperen  que  le  voy  a  poner,  lo
+
+(89:42) voy  a  marcar  así.
+
+(89:44) ¿A  quién  recurre  este  dispositivo
+
+(89:48) para  mandarle  los  paquetes
+
+(89:51) que  él  no  sabe,  digamos,  para  salir  de
+
+(89:54) él  no  sabe  cómo  salir  de  la  LAN
+
+(89:56) seguridad?  Él  llega  a  la  LAN  seguridad
+
+(89:59) porque  tiene  una  IP  configurada  que  es
+
+(90:01) la  192,  192,  192,  253.
+
+(90:05) O  sea,  él  llega  a  la  LAN  seguridad,  va  a
+
+(90:07) llegar  acá  y  va  a  llegar  eh  al  switch  eh
+
+(90:11) también,
+
+(90:12) o  sea,  va  a  tener  como  alcance  la  LAN
+
+(90:15) seguridad  así  de  una.  y  va  a  tener
+
+(90:18) también  visibilidad  con  la  LAN  central
+
+(90:21) porque  él  es  el  DHCP  de  esa  de  esa  red
+
+(90:25) LAN  y  tiene  una  dirección  IP  a  nivel  K2.
+
+(90:30) Sí.  O  sea,  para  la  funcionalidad,
+
+(90:33) ¿no?  De  K2,  para  la  funcionalidad
+
+(90:35) digamos  de  digamos  eh  eh  de  servicio  de
+
+(90:40) de  brindar  servicio  a  la  capa  3  a  través
+
+(90:42) de  la  capa  2  por  DHCP.
+
+(90:46) E
+
+(90:48) entonces,  ¿quién  es  su  a  quién  le  él  le
+
+(90:51) va  a  dar  los  le  va  a  reenviar  esos
+
+(90:54) paquetes  cuando  no  sabe  cómo  llegar  acá?
+
+(90:57) Al  1841  local.
+
+(91:00) Exactamente.  Es  porque  ese,  el  1841  es
+
+(91:03) el  verdadero
+
+(91:06) default  gateway  o  router  de  borde  de
+
+(91:09) esas  dos  redes  que  son  la  LAN  depósito  y
+
+(91:13) la  LAN  seguridad.  Básicamente  porque  a
+
+(91:17) ese  router  de  borde  tiene  están
+
+(91:20) conectados  esas  dos  LAN.  Sí.  Sí.  Así
+
+(91:23) como  también  está  conectado  eh  al  enlace
+
+(91:27) One  que  va  hasta  hasta  la  otra  red  L  que
+
+(91:31) es  la  LAN  ventas,  ¿no?  Pero  que  está  más
+
+(91:32) lejos.  Sí.  Este,  hagamos  de  cuenta  que
+
+(91:35) esto  está  todo  en  un  mismo  edificio  y
+
+(91:38) esto  está  en  otro  lado.  O  sea,  como  que
+
+(91:41) supongamos  que  la  LAN  ventas  está  en
+
+(91:42) Córdoba  y  LAN  seguridad,  LAN  Central  y
+
+(91:46) LAN  depósito  está  todo  en  un  mismo
+
+(91:48) edificio  que  queda  en  Buenos  Aires.  Sí.
+
+(91:52) y  que  bueno  que  la  LAN  depósito  está  en
+
+(91:56) el  piso  cero,  en  plata  baja,  mejor
+
+(91:58) dicho.  La  LAN  seguridad  está  en  el  piso
+
+(92:01) uno  y  la  LAN  central  también  está  en  el
+
+(92:05) piso  uno,  pero  en  otro  lado.  Sí.
+
+(92:08) E  entonces
+
+(92:11) necesito  ponerle  una  IP  al  default
+
+(92:13) gateway  y  el  default  gateway  le  voy  a
+
+(92:15) decir  que  es  la  IP  de  esta  interface  que
+
+(92:18) está  acá,  esta  que  está  acá,  la  que  está
+
+(92:20) conectada  al  switch.  Esta  que  está  acá,
+
+(92:22) miren  esta
+
+(92:24) que  no  sé  a  dónde  estaba  conectada
+
+(92:26) ahora,  pero  la  saqué.  Pero  bueno,  la
+
+(92:27) vamos  a  poner  al
+
+(92:29) 23.
+
+(92:31) Eh,  está  conectada  ahí,
+
+(92:36) eh,  así  que  vamos  a  ponerle  192  192
+
+(92:41) 192.254.
+
+(92:44) Sí.
+
+(92:46) Bien.
+
+(92:48) ¿Hay  alguna  pregunta  hasta  acá  de  lo  que
+
+(92:50) estuvimos?  explicando
+
+(92:54) eh  este  router  eh
+
+(92:58) funciona  eh  tiene  la  ambas  funciones,  o
+
+(93:00) sea,  la  de  router  y  la  de  también  switch
+
+(93:03) o  bridge,  ¿no?  Con  las  PC  de  los
+
+(93:05) gerentes.
+
+(93:06) Sí,  sí,  como  les  dije  al  principio,  eh
+
+(93:09) la  funcionalidad  principal  funciona  en
+
+(93:13) modo  router,  o  sea,  funciona  como  un
+
+(93:15) router
+
+(93:16) básico.  Sí.  Básico,  precario.  Sí.  que
+
+(93:21) solamente  puede
+
+(93:23) forguardear  o  conmutar  paquetes  de  un
+
+(93:26) lado  a  otro.  No  puede  hacer  más  que  eso.
+
+(93:28) No  tiene  la  capacidad  de  hacer  más  nada
+
+(93:30) que  eso.
+
+(93:32) Le  pongo  salvar  acá.  Entonces,
+
+(93:36) eh  lo  que  sí  falta  porque  no  tiene
+
+(93:38) conectividad  esto,  es  configurar  la
+
+(93:39) parte  wireless,  ¿no?  Que  la  parte
+
+(93:40) wireless  es  la  misma  este  que  está.  A
+
+(93:43) ver,  no  sé  si  está  acá  configurado.
+
+(93:44) Vamos  a  ponerle.  Sí,  vamos  a  vamos  a
+
+(93:48) canal  8.  Lo  voy  a  hacer  rápido.
+
+(93:51) Disable
+
+(93:53) mix  Acá  le  voy  a  poner  guardar.
+
+(93:59) La  parte  de  seguridad  hay  que
+
+(94:01) habilitarla.  Wp2  personales.
+
+(94:05) Es  la  contraseña  es  fru
+
+(94:16) 3600.  Listo.  Voy  a  poner  guardar  acá.
+
+(94:19) salvar.  Ahora  van  a  ver  que  se  va  a
+
+(94:21) conectar  en  forma  automática  porque  la
+
+(94:23) las  PC  gerente  deberían  tener
+
+(94:24) configurado  esto.  Vuelvo  acá  setup.
+
+(94:27) Bueno,  ya  estaría  configurado  todo,  ¿eh?
+
+(94:31) Si  no,  vamos  a  revisar  allá  las  PCs  por
+
+(94:33) las  dudas  la  vamos  a  revisar.
+
+(94:36) Guarde  la  configuración.  No  se
+
+(94:38) registraron,  así  que  lo  voy  a  mantener
+
+(94:40) acá  abierto  porque  como  seguramente  me
+
+(94:42) va  a  olvidar.
+
+(94:44) Wireless.
+
+(94:46) Wireless  security.
+
+(94:48) Me  vengo  a  la  PC  gerente,
+
+(94:52) voy  a  la  parte  acá  de  configuración,  voy
+
+(94:55) a  la  parte  wireless,
+
+(94:57) no  está  configurado,  así  que  lo  voy  a
+
+(94:59) configurar.
+
+(95:01) El  SSS  ID  era
+
+(95:05) wireless
+
+(95:09) AP-  Bouter
+
+(95:11) router
+
+(95:15) WPR  aquí  es  fr
+
+(95:19) 84
+
+(95:21) punto
+
+(95:23) U
+
+(95:26) 7N  7N
+
+(95:29) ahí  estamos  a
+
+(95:33) D  HCP
+
+(95:34) habilitar.
+
+(95:39) Ahí  se  conectó,  ¿lo  ven?
+
+(95:42) Y  la  asignó  mal  una  dirección  de  HCP.
+
+(95:46) Fíjense  acá  donde  estoy  con  el  puntero
+
+(95:48) en  el  mouse,
+
+(95:50) así  que  tienen  que  pasarlo  estático  y
+
+(95:52) tienen  que  pasarlo  vuelta  de  HCP  para
+
+(95:54) que  haga  un  IP  renew,  un  IP,  un  IP
+
+(95:59) config/release  y  un  IP  config/  renew.  Y
+
+(96:01) ahí  le  asignó  la  dirección  IP.  ¿La  ven?
+
+(96:04) 172  17  10.
+
+(96:07) Cierro,
+
+(96:09) voy  a  la  otra,  voy  a  revisar  qué  onda
+
+(96:12) acá.
+
+(96:15) Bueno,  lo  mismo.  Esta  está  encendida,
+
+(96:17) pero  no  está  configurado.  Sí,  no
+
+(96:19) importa.  No  la  voy  a  configurar  porque
+
+(96:21) ya  con  una  puedo  hacer  lo  que  les  puedo
+
+(96:23) mostrar.
+
+(96:25) Eh,  pero  bueno,
+
+(96:27) entonces  ahora
+
+(96:31) lo  que  tengo  que  ver  es  si  llego,
+
+(96:35) voy  a  cerrar  esto.  Lo  que  tengo  que  ver
+
+(96:38) es  a  dónde  llego  y  a  dónde  no  llego.  Sí.
+
+(96:44) Bueno,  si  yo  tuviese  conectada  esta
+
+(96:46) otra,  este,  voy  a  llegar  de  acá  hasta
+
+(96:49) acá,  ¿no?  Porque  las  dos  van  a  estar  van
+
+(96:51) a  tener  por  DHCP  una  dirección  IP  cada
+
+(96:54) una.  Sí,  así  que  es  por  eso  no  hay
+
+(96:55) problema.  Ahora,  si  yo  abro  acá,  me  voy
+
+(97:01) al  CMD,
+
+(97:04) lo  voy  a  poner  acá.  Ahí
+
+(97:07) IP  config.
+
+(97:09) ¿Quién  es  mi  default  gateway?
+
+(97:17) el  wireless  router,  el  que  le  da  de  HCP.
+
+(97:22) Bien,  perfecto.  Entonces,  si  yo  hago  ahí
+
+(97:24) un  pin  a  la  172.17.17.1,
+
+(97:32) llegó  perfecto
+
+(97:34) porque  estoy  en  la  está  en  la  misma  red.
+
+(97:37) Ahora  si  yo  hago  un  un  pin
+
+(97:43) a  la  192  168,  perdón,  192  192  192.253,
+
+(97:54) llego.  Perfecto.  ¿Quién  es  ese?
+
+(98:00) El  de  Gateway,  el  router1
+
+(98:06) local.
+
+(98:07) No,  el  253  no  es  el  el  local.  En
+
+(98:11) realidad  es  este  equipo  que  está  acá,
+
+(98:16) pero  es  la  interface
+
+(98:19) de  del  mismo  equipo  que  se  la  llama
+
+(98:22) Internet  Port  y  que  tiene  asignada  una
+
+(98:24) dirección  IP  de  la  LAN  seguridad,
+
+(98:28) o  sea,  este  puerto  que  está  acá
+
+(98:32) o  mejor  dicho,
+
+(98:33) el  azul.
+
+(98:34) el  azul.  Exacto.  O  lo  mejor  dicho  es
+
+(98:37) este  puerto  que  está  acá.
+
+(98:41) Entonces,  pero  ¿qué  pasa  como  el
+
+(98:44) dispositivo  está  configurado  en  modo
+
+(98:46) router?  Es  decir,  que  puedear  paquetes
+
+(98:49) de  un  lugar  a  otro
+
+(98:52) al  yo  con  el  primer  pin  que  ese,  que  es
+
+(98:55) este  desde  la  PC  gerente  1,  no  estoy
+
+(98:57) parado  en  gerente  uno,  tengo  injerencia
+
+(99:00) dentro  de  mi  Red  Llan  porque
+
+(99:03) eh  digamos,  o  sea,  el  equipo  tiene  una
+
+(99:06) pata  en  mi  red  que  es  esta  y  digamos  y  y
+
+(99:09) y  su  IP  es  esta,  la  162  1771.
+
+(99:14) Sí,  pero  si  yo  le  hago  un  ping  a  la  otra
+
+(99:17) pata  de  él,  a  la  que  da  contra  la  otra
+
+(99:20) red  LAN,  que  es  la  LAN  seguridad,  que
+
+(99:23) tiene  otro  prefijo  distinto,  que  es  este
+
+(99:26) que  está  acá,  es  el  192  192  192.0/24.
+
+(99:32) Pero  le  pego  a  la  IP  de  él,  llego
+
+(99:35) perfectamente  porque  él  tiene  conectado
+
+(99:40) su  su  otra  pata  a  esa  red  en  forma
+
+(99:43) cableada  a  través  de  su  porto  LAN  y  como
+
+(99:46) es  se  comporta  como  un  router  y  puede
+
+(99:49) conmutar  paquetes  entre  una  red  y  la
+
+(99:51) otra
+
+(99:53) y  y  la  y  él  mismo  tiene  esas  dos  IPs
+
+(99:55) nada  más  que  están  en  redes  distintas,
+
+(99:59) puedo  llegar  tranquilamente.
+
+(100:03) Ahora  voy  a  ir  más  allá.  Ahora  yo  quiero
+
+(100:06) llegar,
+
+(100:08) quiero  llegar
+
+(100:10) quiero  llegar
+
+(100:12) a  este  servidor  que  está  en  otra  red
+
+(100:14) distinta,  o  sea,  no  está  en  la  192  192
+
+(100:18) 192,  donde  él  tiene  una  pata  y  conoce
+
+(100:24) esa  red.
+
+(100:26) Entonces,  si  yo  hago  un  traser,
+
+(100:29) me  confundí,  perdón.
+
+(100:31) Si  yo  hago  un  trasert  a  la  195,
+
+(100:35) 195,  195,  195,  que  es  el  servidor  este
+
+(100:39) que  está  acá,
+
+(100:41) es  este  servidor  que  está  acá.
+
+(100:44) Vamos  a  ver  qué  pasa.
+
+(100:48) El  primer  salto
+
+(100:51) lo  hace  gerente  uno  al  router,  digamos,
+
+(100:55) e
+
+(100:58) al  router  Wi-Fi  que  él  lo  ve,  digamos,
+
+(101:02) dentro  suyo.
+
+(101:05) Y  fíjense  qué  pasó  después.  Lo  voy  a
+
+(101:06) hacer  varias  veces.
+
+(101:13) A  ver  qué  qué  opinan  ustedes,
+
+(101:18) profe,  puede  ser  porque
+
+(101:22) la  172  17  solo  es  conocida  por  la
+
+(101:25) central.
+
+(101:29) A  ver,  de  vuelta.  No  entendí  la
+
+(101:31) pregunta.  O  sea,  no  sé,  no  sé  cómo
+
+(101:32) formularlo,  pero  entiendo  de  que  en  el
+
+(101:34) medio  se  pierde  porque  no  sabe  de  dónde
+
+(101:37) está  viniendo,  porque  el  router  local  no
+
+(101:41) sabe  cuál  es  la  172  1771.
+
+(101:46) Claro,  lo  que  en  realidad  lo  que  pasa  es
+
+(101:48) así.
+
+(101:50) La  PC  gerente  esta  que  está  acá  quiere
+
+(101:52) ir  acá.
+
+(101:55) Este  equipo  no  sabe  cómo  llegar  acá
+
+(102:00) porque  lo  único  que  conoce  él  es  que
+
+(102:03) tiene  una  pata  en  esta  red  y  la  otra
+
+(102:06) pata  en  esta  red.  Entonces,  él  lo  que
+
+(102:09) tiene  que  hacer  es,  como  no  sabe  llegar
+
+(102:12) acá,  no  tiene  en  su  tabla  de
+
+(102:14) enrutamiento  este  prefijo,
+
+(102:17) lo  único  que  puede  hacer  él  es  decir,  le
+
+(102:20) escupo  el  el  eh  el  paquete  ese  a  mi
+
+(102:24) default  gateway.  O  sea,  es  como  que  yo
+
+(102:26) estoy  hablando  como  si  fuese  este
+
+(102:28) equipo.  No  conozco  este  prefijo,  el  195,
+
+(102:32) y  no  sé  cómo  llegar.  No  tengo  idea.  Así
+
+(102:34) que  te  lo  te  lo  mando  a  vos,  que  vos  sos
+
+(102:37) mi  default  gateway.  O  sea,  le  dice  a
+
+(102:40) este,  "Che,  vos  que  sos  mi  default
+
+(102:41) gateway,  digamos,  encargate  vos  porque
+
+(102:44) yo  no  tengo  ni  idea  cómo  llegar."
+
+(102:46) Entonces  este  le  manda  su  default
+
+(102:48) gateway,  que  es  este,  ese  paquete,
+
+(102:51) digamos,  con  esta  dirección  IP  destino  y
+
+(102:54) con  esta  dirección  IP  origen,  la  de
+
+(102:56) gerente  uno,  que  es  esta  que  está  acá,
+
+(102:59) la  que  la  signó  el  de  HCP,  que  es  la  10.
+
+(103:01) O  sea,  dirección  origen  esta,  dirección
+
+(103:03) destino  esta.
+
+(103:06) Sí.
+
+(103:09) [carraspeo]  E  el  cuando  le  llega  el
+
+(103:11) paquete  ese  en  con  esa  dirección  IP  de
+
+(103:15) origen,  él  la  natea,  le  hace  un  NAT  y
+
+(103:18) cambia  y  dice,  "La  dirección  de  origen
+
+(103:21) ahora  va  a  ser  esta  y  la  dirección
+
+(103:23) destino  va  a  ser  esta."  Pero  él  no
+
+(103:26) conoce  la  195.  Entonces  le  dice  a  su
+
+(103:29) default  gateway,  "Che,  yo  te  mando  esto
+
+(103:31) y  vos  arreglate  porque  yo  no  sé  cómo
+
+(103:33) llegar  ahí."
+
+(103:35) El  paquete  ese  lo  agarra  este.  Sí,  por
+
+(103:38) eso  acá  entre  medio  hay  un  como  una
+
+(103:41) laguna.
+
+(103:42) Sí,  porque  eh  el  router  este  está
+
+(103:45) esperando  una  respuesta,  digamos  que  se
+
+(103:48) la  tiene  que  dar  su  default  gateway.
+
+(103:50) Entonces,  en  esa  laguna  espera  y  hace
+
+(103:53) como  y  digamos  hace  como  que  no  entiende
+
+(103:55) nada,
+
+(103:58) se  lo  manda  a  su  default  gateway.  Él
+
+(103:59) dice,  "Sí,  yo  conozco  ese  prefijo,  es  el
+
+(104:02) 195  porque  lo  tengo  conectado,  así  que
+
+(104:04) aguantame  un  cachito,  veamos."  Llega  el
+
+(104:07) servidor,  el  paquete  vuelve  acá  y  él
+
+(104:10) agarra  y  le  dice,  "Tomá,  te  lo  devuelvo,
+
+(104:13) te  lo  devuelvo  ya  con  la  respuesta.  Este
+
+(104:16) lo  recibe  y  se  lo  y  se  lo  manda  gerente
+
+(104:18) uno."  Entonces,  lo  que  pasa  acá  en  el
+
+(104:21) medio  es  que  queda  enmascarado.  Eso  se
+
+(104:23) dice  así.  se  queda  enmascarado  porque
+
+(104:26) como  este  no  entiende  nada  sobre  eso  y
+
+(104:28) le  dice,  "Tomá,  resolvémelo  vos."  Se  lo
+
+(104:31) resuelven  y  se  lo  dan.  Y  él  lo  y  él  lo
+
+(104:33) que  hace  es  lo  forguardea,  lo  lo  conmuta
+
+(104:36) y  se  lo  devuelve.
+
+(104:38) Eso  es  lo  que  pasa  este  en  e  en  eh  con
+
+(104:42) este  equipo  que  funciona  el  modo  router
+
+(104:46) para  conectar  dos  redes  LAN  distintas,
+
+(104:49) la  de  su  izquierda  y  la  de  su  derecha.
+
+(104:51) Sí,  pero  no  conoce,  no  tiene  una  tabla
+
+(104:54) de  enrutamiento  como  tienen  los  router
+
+(104:56) estos  que  son  routers  de  verdad.  Sí,
+
+(105:01) pero  como  puede  conmutar  paquetes,
+
+(105:03) digamos,  hace  una  funcionalidad  sub
+
+(105:05) recontrail  básica  a  nivel  enrutamiento,
+
+(105:07) puede  conmutar  paquetes  y  hace  uso  del
+
+(105:10) servicio  de  su  default  gateway,  que  es
+
+(105:12) el  que  realmente  es  un  router  de  verdad
+
+(105:14) que  tiene  una  tabla  de  enrutamiento  y  y
+
+(105:16) y  sabe  cómo  llegar  de  origen  a  destino.
+
+(105:20) ¿Se  entendió  todo  lo  que  expliqué  o  hay
+
+(105:22) alguien  que  no  entendió?
+
+(105:27) Sí,  profe,  yo  entendí.  Lo  que  no  me
+
+(105:29) queda  claro  es  por  qué  en  la  otra  la
+
+(105:31) otra  vez  que  hicimos  el  trasertaba  todo
+
+(105:33) sin  time  out.  O  sea,  esto  es  por  el  la
+
+(105:37) conmutación  de  paquetes.
+
+(105:39) Es  por  la  conutación  de  paquetes  y
+
+(105:41) porque  este  equipo  no  tiene  una  tabla  de
+
+(105:42) enrutamiento.  No  sé  si  saben  lo  que  es  a
+
+(105:44) esta  altura.  calculo  que  sí,  pero  lo
+
+(105:46) vamos  a  ver  la  clase  que  viene.  Como  no
+
+(105:48) tiene  una  tabla  de  enrutamiento  y
+
+(105:49) simplemente  puede  conmutar  paquetes
+
+(105:52) entre  interfaces  que  tenga  conectada,  en
+
+(105:55) este  caso  la  que  está  cableada  y  en  este
+
+(105:57) caso  la  que  está  inalámbrica,
+
+(105:59) puede  conmutar  paquetes  entre  redes  que
+
+(106:02) que  él  conoce,  pero  las  redes  que  él  no
+
+(106:04) conoce  depende  de  otro  equipo  que  es
+
+(106:06) este  que  está  acá,  es  su  default
+
+(106:08) gateway,  que  este  sí  es  un  router  de
+
+(106:09) verdad  y  este  router  de  verdad  tiene  una
+
+(106:12) tabla  de  enrutamiento  y  sabe  cómo  cómo
+
+(106:15) hacer  para  llegar  paquetes  de  un  origen
+
+(106:17) a  un  destino
+
+(106:19) y  y  al  igual  que  este,  este  también  es
+
+(106:22) un  router  de  verdad.  Este  tiene  una
+
+(106:23) tabla  enrutamiento  y  sabe  cómo  llegar  de
+
+(106:27) acá  hasta  la  195  más  allá  que  él  no  la
+
+(106:30) tenga  conectada,  porque  las  router  los
+
+(106:34) routers  si  tienen  conectado  eh  si  si  los
+
+(106:38) routers  trabajan  con  tablas  de
+
+(106:40) enrutamiento,  ¿sí?  Esas  tablas  de
+
+(106:42) enrutamiento  se  generan  en  forma
+
+(106:45) dinámica  o  en  forma  estática.
+
+(106:47) Pero  eso  lo  vamos  a  ver  la  clase  que
+
+(106:48) viene.
+
+(106:50) Sí.
+
+(106:52) Eh,  sí,  ahí  entendí.  Entendí  por  qué
+
+(106:53) antes  no  daba  time  out  y  ahora  sí.  Antes
+
+(106:56) no  daba  time  out  porque  este  equipo
+
+(106:58) conoce  esta  red.  Conoce  esta  red  y
+
+(107:01) conoce  esta  red.  ¿Cómo  las  conoce?  las
+
+(107:04) tiene  jarcodeada  porque  usa  enrutamiento
+
+(107:07) estático,  ¿sí?  Que  lo  vamos  a  ver  la
+
+(107:09) clase  que  viene,  ¿sí?  Pero  también
+
+(107:11) existe  el  enrutamiento  dinámico  para  que
+
+(107:13) un  administrador  de  la  red  no  tenga  que
+
+(107:14) poner  todas  las  rutas  de  origen  y
+
+(107:16) destino,  existen  unos  protocolos  de
+
+(107:19) enrutamiento  dinámico  que  hacen  esa
+
+(107:20) magia  en  forma  automática.  Sí,  si  no
+
+(107:24) tienen  protocolo  enrutamiento  dinámico
+
+(107:25) como  estos  cas,  como  lo  tiene  acá  y  acá,
+
+(107:28) esas  rutas  están  escritas  a  mano  para
+
+(107:31) decir,  vos  puedes  llegar  desde  esta  red
+
+(107:35) hasta  esta  red,  vos  puedes  llegar  desde
+
+(107:37) esta  red  hasta  esta  red  y  vos  puedes
+
+(107:39) llegar  de  esta  red  hasta  esta  red.
+
+(107:42) Todo  eso  se  escribe  a  mano,  se  dice,  se
+
+(107:45) hace,  se  hace,  digamos,  o  sea,  lo  que  se
+
+(107:49) llama  en  rutas  estáticas.
+
+(107:53) se  las  rutas  estáticas  se  ponen  la  la
+
+(107:56) las  establece  un  administrador  de  la  red
+
+(107:58) en  forma  manual,  tanto  en  un  router  como
+
+(108:00) en  el  otro,  tanto  en  origen  como  en
+
+(108:02) destino.  Sí,  porque  si  no,  como  les
+
+(108:04) expliqué,  en  realidad  no  se  los  expliqué
+
+(108:07) todavía,  pero  el  paquete  tiene  que  saber
+
+(108:10) ir  a  un  lugar,  pero  también  tiene  que
+
+(108:11) saber  volver.  Sí,  porque  si  sabe  ir,
+
+(108:15) pero  no  sabe  volver,  no  funcionan  las
+
+(108:17) cosas.
+
+(108:18) Sí.
+
+(108:21) Perfecto.
+
+(108:23) ¿Alguna  duda
+
+(108:26) de  lo  que  vimos  hasta  ahora?
+
+(108:30) Cuando  alguien  de  LAN  seguridad,
+
+(108:33) ¿cómo?  Cuando  alguien  de  LAN  seguridad
+
+(108:35) se  quiere  comunicar  con  alguien  de  LAN
+
+(108:36) Central,  eh,  primero  la  IP  router  local
+
+(108:41) porque  no  sabe,  no  es  de  su  dominio  y
+
+(108:43) router  local  le  diría,  "Tenés  que  ir  al
+
+(108:45) wireless  router."
+
+(108:47) Exacto.
+
+(108:49) Okay.
+
+(108:49) Por  ejemplo,  si  abro  esta  PC,  que  no  la
+
+(108:52) abrimos  nunca,  pongo  un  IP  config,  me  va
+
+(108:55) a  dar  una  IP  del  rango  192  y  quiero
+
+(108:59) llegar
+
+(109:02) a  la  PC
+
+(109:04) ventas  un,  que  era  esta
+
+(109:07) que  no  voy  a  eh  no  voy  a  llegar  acá.  A
+
+(109:11) ver,  esta  sí,
+
+(109:14) a  esta  voy  a  llegar  porque  tiene  el
+
+(109:15) default  getway,  a  esta,  la  PC  contador
+
+(109:17) voy  a  llegar,  ¿eh?  Que  esta  tiene  la  200
+
+(109:21) 200  24
+
+(109:24) 200
+
+(109:26) 24.
+
+(109:30) Fíjate,  voy  a  hacer  un  traser.  Te  lo
+
+(109:33) digo  con  lo  que  te  digo  lo  que  va  a
+
+(109:34) pasar.  El  primer  el  primer  salto  lo  va  a
+
+(109:36) hacer  a  su  default  gateway,  que  es  el
+
+(109:38) 1841  local.
+
+(109:41) que  es  el  que  debería  conocer  la  la  red
+
+(109:44) LAN  Ventas.  El  segundo  salto  va  a  ser
+
+(109:46) acá  a  1841  remoto  y  el  tercer  salto  va  a
+
+(109:49) ser  el  APC  contador.  Si  si  están  bien
+
+(109:52) hechas  las  rutas  va  a  pasar  eso.  A  ver,
+
+(109:54) vamos  a  probar.  Perfecto,  pasó  eso.
+
+(109:57) Están  bien  hechas  las  rutas.
+
+(110:01) Se  ve.  Veamos  este.  Eh,  el  paquete  salta
+
+(110:05) desde  acá  hasta  el  su  default  gateway.
+
+(110:08) Su  default  gateway  es  el  que  conoce  la
+
+(110:10) la  red  200  200,
+
+(110:13) se  lo  manda  acá  y  él  que  que que  conoce
+
+(110:16) la  red  200  de  verdad  lo  le  manda  el
+
+(110:19) paquete  a  PC  contado.
+
+(110:22) Sí,
+
+(110:23) claro.  Pero  para  ir  al  central  iría
+
+(110:25) directo  por  el  wireless  bridge  o  tendría
+
+(110:27) que  pasar  por  el  router  local
+
+(110:30) para  ir  al  LAN  Central.  Reformulame  de
+
+(110:33) vuelta  para  ir  al  LAN  Central.  Pero  vos
+
+(110:35) me  preguntaste  a  las  ventas  recién.
+
+(110:37) Dije  ventas.
+
+(110:39) Sí,  me  dijiste  para  para  ir  de  acá.
+
+(110:41) Quería  decir  a  central  para  central.  Ah,
+
+(110:44) entonces
+
+(110:46) no.  Si  tiene  que  ir  de  de  acá  a  LAN
+
+(110:49) Central,  o  sea,  gerente  uno,
+
+(110:52) directamente  va  este  a  este  router  que
+
+(110:54) está  acá,  digamos,  y  este
+
+(110:58) e  que  está  dentro  de
+
+(111:01) en  realidad  no.  En  realidad  él  agarra.
+
+(111:04) En  realidad  no  no  es  así.  Perdón,  voy,
+
+(111:06) voy  de  vuelta.  Este  equipo  que  está  acá
+
+(111:08) no  conoce  esta  red.
+
+(111:11) Entonces,  eh  vamos,  vamos  a  hacerlo.
+
+(111:12) Miren
+
+(111:14) a  ver  cuál  era  la  la  PC  que  tenía.  Eh  el
+
+(111:17) gerente  tenía  la  10.
+
+(111:21) Va  a  ir  a  su  default  gateway  traser
+
+(111:25) porque  ahora  van  a  ver  por  qué.  172.17
+
+(111:30) 17.1
+
+(111:32) 10
+
+(111:34) va  su  default  gateway,  su  default
+
+(111:37) gateway  le  dice,  "Ah,  yo  conozco  esa
+
+(111:39) red,  pero  pará,  la  conozco  de  una  manera
+
+(111:43) muy  particular."
+
+(111:46) O  en  realidad  no  funciona  porque  no  está
+
+(111:47) hecha  la  ruta.  Eso  por  ahí.  Vamos  a  ver.
+
+(111:55) No  funciona  porque  no  está  hecha  la
+
+(111:56) ruta.  No  funciona  en  esa  dirección.  No
+
+(111:59) funciona  porque  no  está  hecha  la  ruta.
+
+(112:00) ¿Por  qué?
+
+(112:02) Porque  este  router  de  acá,  este  router
+
+(112:05) de  acá  tendría  que  tener  una  ruta,  no
+
+(112:07) está  configurada,  de  saber  cómo  llegar
+
+(112:10) de  acá  hasta  acá,  pero  sí  funciona  al
+
+(112:13) revés  porque  este  porque  este  equipo
+
+(112:16) tiene  conectadas  las  dos  las  dos  patas.
+
+(112:18) Sí,  este,  por  eso,  pero  este  equipo  no
+
+(112:22) conoce  eh  conoce  solamente  a  su  def  gway
+
+(112:25) y  acá  no  hay  falta  una  ruta,  falta  una
+
+(112:27) ruta  este  eh  que  que  permita  tener  como
+
+(112:33) origen  esto  y  como  destino  esto.  Falta
+
+(112:37) una  ruta  ahí,  digamos,  que  no  está  no
+
+(112:40) está  no  está  puesta  a  mano.  Sí,  pero  al
+
+(112:42) revés  sí  funciona.  O  sea,  si  yo  hago  así
+
+(112:45) de  acá,
+
+(112:46) al  revés,  sí  funciona  porque  el  que  lo
+
+(112:48) resuelve  es  este.
+
+(112:51) ¿Se  entiende  por  qué  al  revés?  Sí
+
+(112:54) funciona,  porque  el  que  lo  resuelve  es
+
+(112:57) el  que  resuelve  eso  es  este  router  que
+
+(112:59) está  acá,  que  conoce  las  dos,  tiene  una
+
+(113:01) pata  en  cada  lado  y  la  tiene  conectada
+
+(113:03) encima,  con  lo  cual  si  la  tiene
+
+(113:04) conectada  no  necesita  una  ruta.  Sí,
+
+(113:07) porque  eh  porque  está  implícita  porque
+
+(113:09) está  directamente  conectada.  se  dice
+
+(113:12) igual  esto  es  un  tema  de  la  clase  que
+
+(113:13) viene  porque  ya  es  enrutamiento,
+
+(113:17) eh,  así  que  bueno,  lo  explico  mejor  la
+
+(113:19) clase  que  viene,  pero  falta  faltaría  una
+
+(113:21) ruta  en  este  equipo.
+
+(113:25) Bueno,  eh,  ¿hay  alguna  pregunta,  chicos,
+
+(113:27) más?  Eh,
+
+(113:35) tema  tema  grupos.  Me  quedé  pensando  en
+
+(113:38) estos  alumnos  que  no
+
+(113:41) eh  que  no  que  los  nombré  hoy  y  ninguno
+
+(113:46) e  ninguno  respondió.
+
+(113:51) Bueno,  no  fui,  no  pude  leer  el  chat
+
+(113:52) porque  estaba  estaba  explicando,  pero  de
+
+(113:56) lo  que  preguntaron  en  el  chat,  ¿hay
+
+(113:57) algún  alguien  le  quedó  en  alguna  duda?
+
+(114:02) Yo,  profe.
+
+(114:04) Sí,
+
+(114:05) sí,  disculpa,  yo  recién  me  uní  va  hace
+
+(114:07) unos  minutos,  pero  justo  no  estaba
+
+(114:08) cuando  estabas  hablando  de  los  grupos.
+
+(114:10) Yo  no  tengo  grupo,  hice  el  trabajo
+
+(114:11) individual.  Eh,
+
+(114:13) ah,  okay.  Paraá.
+
+(114:15) Entonces,  eh,  espera,  eh,  dame  un
+
+(114:19) segundo.  Vos,  ¿de  qué
+
+(114:22) Dame  un  segundito,  ¿de  qué  curso  serías?
+
+(114:26) ¿Con  qué  curso  estarías?  ¿De  los  dos  o
+
+(114:28) de  los  tres?
+
+(114:32) 45.
+
+(114:33) Estaba  45  75.
+
+(114:35) Bien,  un  cachito.
+
+(114:39) A  ver,
+
+(114:42) eh,
+
+(114:49) sí,  Marcos.  Sí,  a  vos  te  nombré  al
+
+(114:52) principio.  Marcos  Nicolau.  A  ver,
+
+(114:54) es
+
+(114:55) está  por  las  dudas.  Ah,  para.  Puedes
+
+(114:57) hacer  grupo  con  Si  no  tenés  grupo,
+
+(115:00) puedes  hacer  grupo  con  Marcos  Vargas.
+
+(115:03) Fenómeno.
+
+(115:04) Marcos,  Vas,  ¿estás  acá  todavía?  No.
+
+(115:06) Sí,  sí,  estoy  acá.
+
+(115:08) Listo.  Hagan  grupo  juntos.  Si  quieren
+
+(115:10) revisen  el  archivo  que  e
+
+(115:14) ahí  está.  Perfecto.  Ya  los  tengo  los  dos
+
+(115:15) identificados.
+
+(115:18) Eh,
+
+(115:19) revisen  si  quieren  eh  digamos  qué
+
+(115:22) archivo  quieren  entregar,  pónganse  de
+
+(115:23) acuerdo  y  y  si  si  el  que  está  entregado
+
+(115:27) va  bien,  eh  lo  tomamos  como  válido  y  si
+
+(115:30) no  me  avisan  y
+
+(115:33) hacemos  un  un  refresh  a  la  a  la  entrega
+
+(115:37) para  que  entreguen  el  que  los  dos  estén
+
+(115:39) de  acuerdo.  Sí.
+
+(115:40) Eh,  hace  falta  igual  si  no  pueden  quedar
+
+(115:43) individuales  y  ya  hacer  la  siguiente
+
+(115:44) juntos.  No,  no,  no  hacemos  eh  siempre  la
+
+(115:48) entrega  es  de  A2.  Sí.  Con  lo  cual  si  vos
+
+(115:51) lo  entregaste  y  querés  decir,  querés
+
+(115:53) reverlo  con  con  Marcos,  eh,  bueno,  los
+
+(115:58) dos  son  Marcos,  eh,
+
+(116:00) sí,  justo  estamos  los  dos  Marcos.
+
+(116:02) Consultar,  Marcos,  ¿estás  en  el  grupo  de
+
+(116:04) la  comisión?  Así  ya.
+
+(116:05) Sí,  sí.  Ahora,  ahora  mando  un  mensaje.
+
+(116:07) Sí,  sí.  Eh,  intercámbiense  ustedes  ahí
+
+(116:10) la  la  info  y  y
+
+(116:13) trabajen  juntos  y  si  queré  si  quieren
+
+(116:16) modificar  el  archivo  que  entregó  uno  de
+
+(116:18) ustedes  dos,  voy  a  tomar  uno  como
+
+(116:20) válido.  Eh,  mándenme  un  un  mail  y  cuál
+
+(116:24) tomo  como  válido,  pónganse  de  acuerdo  o
+
+(116:26) si  quieren  resubirlo  me  avisan,  ¿eh?  Y
+
+(116:30) bueno,  y  ya  está.  Ahora  me  quedó  colgado
+
+(116:34) Federico  Lamas,  Nicolás  Lazo,  Joaquín
+
+(116:38) Mariosa  y  Cristian  Medrano.
+
+(116:41) No  me  fijé  en  lo  si  entregaron  algo,
+
+(116:44) pero  bueno,  son  cuatro  alumnos  que
+
+(116:46) podrían  estar  agrupados  obviamente  de  a
+
+(116:49) dos,
+
+(116:51) no  hay  ninguno  de  ellos  acá,  así  que
+
+(116:54) bueno,  voy  a  ver  porque  por  ahí  se
+
+(116:56) notaron  y  no  están  o  no  pudieron  venir
+
+(116:58) algo.  Vamos  a  ver  después,  pero  en
+
+(117:00) principio  ya  están  todos  los  que  estamos
+
+(117:02) acá  en  la  meeting  eh  creo  que  agrupados.
+
+(117:06) Voy  a  volver  a  rechear  el  otro  curso  e  y
+
+(117:11) los  vuelvo  a  nombrar  eh  cortito
+
+(117:14) antes  de  irnos.
+
+(117:16) Todavía  tengo  del  K4574,
+
+(117:22) tengo  a  Roberto  Cuevas,  a  Lautaro
+
+(117:25) Iglesias,  a  Ignacio  Nobel  y  a  Valentín
+
+(117:28) Vallejos.  De  vuelta  también  son  cuatro
+
+(117:30) alumnos  que  pueden  estar  agrupados  de  a
+
+(117:32) dos,  pero  no  puedo  decir  quién  con  quién
+
+(117:35) porque
+
+(117:37) no  creo  que  no  están,
+
+(117:41) eh,  así  que  bueno,  ya  está  prácticamente
+
+(117:45) resuelto  el  tema  de  los  grupos.  Faltan
+
+(117:47) estos  cuatro  alumnos  de  cada  curso  que
+
+(117:50) pueden  que  no  estén  o  pueden  que  no  se
+
+(117:52) hayan  podido  conectar  hoy.  [resoplido]
+
+(117:55) Eh,  Rafael,  ¿querés  agregar  algo?
+
+(117:58) ¿Querés  decir  algo  sobre  el  TP,  algo  de
+
+(118:00) los  grupos,  algo  del  curso  4773?
+
+(118:04) Profe,  disculpate.
+
+(118:05) Eh,  sí,  reiterar  lo  del  curso  4773
+
+(118:10) e  que  va  a  quedar  habilitada  la  elección
+
+(118:13) de  grupos  hasta  mañana  a  las  19  horas.
+
+(118:18) Así  que  eh  si  se  ponen  de  acuerdo  entre
+
+(118:20) ustedes  mejor  y  si  no  yo  después  este  ya
+
+(118:24) los  armo  directamente  para  que  puedan
+
+(118:26) completar  los  trabajos  y  subirlos.
+
+(118:29) También  la  parte  de  la  tarea  también
+
+(118:32) queda  habilitada  durante  esta  semana
+
+(118:34) para  los  que  no  lo  pudieron  no  pudieron
+
+(118:38) formar  grupo  y  demás  para  que  la  lo
+
+(118:40) puedan  subir.  Así  que  bueno,  solo  eso.
+
+(118:46) Alguien  quería  hablar
+
+(118:48) porque  en  el  aula  dice  subir  de  forma
+
+(118:50) individual  y  que  el  formato  es  apellido
+
+(118:52) nombre.  Eh,  habíamos  quedado  en  que  sube
+
+(118:54) uno  para  los  dos  y  con  apellido,
+
+(118:55) apellido,  tipo  apellido  de  uno  y
+
+(118:56) apellido  del  otro,  ¿no?  Sí.  Bueno,  eso
+
+(119:00) eso  porque
+
+(119:02) está  como  en  el  modo  predeterminado
+
+(119:05) que  que  es  cuando  trabajamos  individual,
+
+(119:08) pero  ustedes  que  son  un  cursos  de  muchos
+
+(119:11) alumnos,  eh  se  permite  hacer  esta
+
+(119:14) metodología  que  explicamos  el  primer
+
+(119:16) día,  o  sea,  trabajar  de  a  dos  y  subirlo
+
+(119:19) un  archivo  solo  con  con  el  apellido  de
+
+(119:22) los  dos.  Sí,
+
+(119:24) sí,  profe,  yo  tenía  la  consulta.  Sí.  Eh,
+
+(119:26) no  nos  acordábamos  de  esto,  que  era  solo
+
+(119:28) una  persona  lo  subía,  lo  subimos  los  dos
+
+(119:30) con  el  mismo  nombre,  mismo  archivo.
+
+(119:32) Está  bien,  no  hay  problema.  No  hay
+
+(119:34) problema.  Ya  veamos,  para  los  próximos
+
+(119:37) ya  saben  cómo  es.
+
+(119:39) Dale,  gracias.
+
+(119:41) Bueno,  chicos,  no  sé  si  hay  alguna  duda
+
+(119:43) más.  Si  no,  por  hoy,
+
+(119:46) del  tele  2,  ¿hasta  qué  punto  podemos
+
+(119:48) avanzar?  ¿O  ya  se  termina
+
+(119:50) todo  completo?  Ah,  perfecto.
+
+(119:53) Está  todo
+
+(119:53) se  entregaría  la  semana  que  viene  o
+
+(119:56) sí  lo  pueden  entregar  hasta  el  jueves
+
+(119:59) que  viene  inclusive.
+
+(120:01) Sí,
+
+(120:03) es  fácil.  Este  trabajo  es  el  de  los
+
+(120:05) cuatro  es  el  más  fácil,
+
+(120:08) digamos.  No,  no  tiene  ningún  tipo  de
+
+(120:10) dificultad.  Es  el  más  fácil  de  todos
+
+(120:13) para  darles  para  darles  una  buena
+
+(120:16) noticia,  digamos.
+
+(120:19) Así  que  después  le  voy  a  habilitar  el
+
+(120:21) recurso  o  o  le  vamos  a  habilitar  con
+
+(120:23) Rafael  el  recurso  que  va  a  decir  Tele2
+
+(120:25) entregar  aquí.
+
+(120:28) Una  consulta.
+
+(120:29) Sí,
+
+(120:30) las  entregas  se  configuraron,  eh,  o  sea,
+
+(120:33) si  está  en  modo  borrador,  pero  yo  tengo
+
+(120:35) un  archivo  adjunto,  ya  si  se  caduca  el
+
+(120:38) tiempo,  se  envía  lo  adjunto,  ¿no?
+
+(120:40) Sí,  sí,  no  hay  problema.  O  sea,  o  sea,
+
+(120:43) nosotros  lo  vemos  como  borrador  pero
+
+(120:45) entregado.
+
+(120:46) Veamos.  Listo,  perfecto.  Si  le  das
+
+(120:48) correctamente  antes  que  se  termine  el
+
+(120:51) tiempo,  si  le  das  enviar  me  aparece  como
+
+(120:53) entregado,  pero  si  no  me  aparece  como
+
+(120:54) borrador.  O  sea,  lo  veo  igual,  digamos.
+
+(120:56) Si  lo  subiste,  lo  veo  igual.
+
+(120:58) Listo,  profe.  Gracias.
+
+(121:00) No,  no  por  qué.  Bueno,
+
+(121:03) si  si  no  hay  ninguna  pregunta  más,  eh,
+
+(121:06) los  liberamos  para  que  vayan  a
+
+(121:07) descansar.  Eh,  esta  clase  es  un  poco  más
+
+(121:10) cortita  porque  el  trabajo  es  más  fácil.
+
+(121:12) Así  que  eh  nada,  los  saludamos  y  les
+
+(121:15) deseamos  buen  fin  de  semana.  Nos  vemos
+
+(121:16) la  semana  que  viene.
