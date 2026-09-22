@@ -1,0 +1,6181 @@
+Title: TL3 | Redes de Datos UTN | 17/9/2026
+
+(0:01) Buenas  tardes,  profe.  Sí,  todo  bien.
+
+(0:03) Buenas  tardes,  profe.
+
+(0:04) Hola,  buenas  tardes.
+
+(0:05) Hola,  buenas  tardes.
+
+(0:07) Me  alegro.
+
+(0:09) E
+
+(0:11) hoy  vamos  a  ver  el  trabajo  de
+
+(0:12) laboratorio  número  tres.  E
+
+(0:16) ahí  me  llegaron  un  par  de  correos.  Eh,
+
+(0:21) después  en  todo  caso  se  los  voy  a
+
+(0:24) responder,  pero  traten  de  de  escribirme
+
+(0:26) por  el  aula  virtual  a  menos  que  sea  eh
+
+(0:30) algo  personal  eh  digamos  de  de  de  algo
+
+(0:35) personal  de  cada  uno.  Eh,  si  no
+
+(0:37) canalicemos  las  consultas,  los  que  me
+
+(0:39) quieran  consultar  a  través  del  aula
+
+(0:41) virtual.  No  se  preocupen  si  no  llegamos
+
+(0:45) a  al  día  anterior  o
+
+(0:48) o  al  último  día  y  que  no  esté  habilitado
+
+(0:50) algún  recurso  del  aula  virtual,  porque
+
+(0:52) ya  va  a  llegar,  no  se  desesperen,  no
+
+(0:54) sean  ansiosos,  porque  ¿qué  pasa?  A  veces
+
+(0:58) quedan  mal  puestas  las  fechas  o  o  algo  y
+
+(1:01) el  recurso  no  se  habilita
+
+(1:02) automáticamente  y  lo  tengo  que  corregir.
+
+(1:04) Sí.  Eh,  pero  no  se  preocupen  porque  todo
+
+(1:07) eso  nada  se  va  se  va  corrigiendo.
+
+(1:12) E  no  sé  si  si  alguien  tiene  alguna  duda,
+
+(1:16) tampoco  se  se  impacienten  por  saber  cómo
+
+(1:20) va  el  tema  de  los  trabajos  de
+
+(1:22) laboratorio,
+
+(1:23) este,  si  está  bien,  está  mal,  porque
+
+(1:26) nada,  son  muchos  alumnos  y  lleva  tiempo
+
+(1:29) revisar  un  poco  e
+
+(1:34) eh  el  los  trabajos  de  laboratorio  que
+
+(1:37) hacen.
+
+(1:39) Así  que  bueno,  eso  es  lo  que  le  quería
+
+(1:42) comentar.  Eh,  hoy  la  clase  va  a  ser  eh
+
+(1:47) voy  a  tratar  de  que  sea  no  tan  extensa
+
+(1:48) como  las  anteriores,  así  que  voy  a  ir
+
+(1:50) con  una  velocidad  eh  un  poco  más  eh  ya
+
+(1:54) ya  que  hemos  pasado  en  estas  últimas
+
+(1:58) clases  dándolas  con  más  detalle  como
+
+(2:00) para  que  vayan  tomando  un  poco  más  de
+
+(2:02) ritmo.  Bueno,  ahora  voy  a  voy  a  avanzar
+
+(2:05) un  poco  más  rápido
+
+(2:08) y  bueno,  no  sé  si  alguien  me  quería  este
+
+(2:11) decir  algo.
+
+(2:12) Sí,  una  consulta,  profe.  E  yo  fui  uno  de
+
+(2:17) los  que  contactó  por  mail  eh  porque
+
+(2:19) nada,  revisando  el  TL  que  había
+
+(2:21) entregado,  el  Tele1,  eh,  me  di  cuenta
+
+(2:24) que  había  adjuntado  un  punto  BAC  en  vez
+
+(2:26) del  punto  eh  PKT.  Eh,  si  se  renombra  el
+
+(2:31) punto  AK  PKT  se  abre  normalmente  y  es  el
+
+(2:33) TL  que  quería  entregar  simplemente,  eh,
+
+(2:35) pero  nada,  yo  dejé  ese  comentario  la
+
+(2:37) entrega  por  las  dudas  de  que  había
+
+(2:39) entregado  mal,  eh,  que  servía  el
+
+(2:40) archivo,  pero  hay  que  renombrarlo  para
+
+(2:42) poder  abrirlo.
+
+(2:43) Tranqui,  no  hay  problema.  Ya  lo  había
+
+(2:44) leído.  Este,
+
+(2:46) muchas  gracias.
+
+(2:48) Bueno,  e  no  sé  si  Rafael  querés  hacer
+
+(2:52) algún  comentario,  creo  que  estás  por
+
+(2:54) ahí.  Eh,  si  no  ya  eh  arranco  a
+
+(2:59) hacer  una  pequeña  reseña  teórica  y
+
+(3:02) después  ya  arranco  fuerte  para
+
+(3:06) para  el  trabajo  laboratorio.
+
+(3:09) Sí,  acá  estoy.  Este,  bueno,  saludo  a
+
+(3:11) todos  también.  Este  y  no  lo  mismo  con
+
+(3:14) los  trabajos.  Estamos  estamos
+
+(3:17) trabajando,  corrigiendo  y  bueno,  lleva
+
+(3:19) tiempo.  Eh,  no  obstante,  cualquier  duda
+
+(3:22) para  cada  uno  de  los  cursos,  este
+
+(3:25) también  en  mi  caso,  eh,  sigan  utilizando
+
+(3:29) el  web  el  web  campus.  Es  preferible  al
+
+(3:32) correo  electrónico,  porque  el  correo
+
+(3:33) electrónico  muchas  veces  uno  revisa
+
+(3:36) correo  y  dice,  "Esto  lo  voy  a  atender
+
+(3:38) después."  Y  se  pasa,  entre  otros
+
+(3:40) correos.  En  cambio,  el  web  campus  cada
+
+(3:42) vez  que  entramos  revisamos  y  ahí  está
+
+(3:44) todo.  Así  que  eso  es  lo  mismo  que  que
+
+(3:48) dijo  Leonardo  recién.  Así  que  nada,  nada
+
+(3:51) más.
+
+(3:53) Bueno,  gracias,  Rafael.  Bueno,  como  les
+
+(3:55) decía,  hoy  vamos  a  ver  el  trabajo
+
+(3:57) laboratorio  número  tres.  Eh,  ahora
+
+(3:59) empiezan  los  conceptos  más  que  digamos
+
+(4:02) que  en  la  medida  que  ya  pasó  la  parte  eh
+
+(4:06) de  más
+
+(4:08) simple,  empieza  a  aparecer  temas  un  poco
+
+(4:11) más  complicados.
+
+(4:13) Eh,  este  no  es  el  tema  más  complicado.
+
+(4:15) El  tema  más  complicado  viene  en  el  la
+
+(4:18) semana  que  viene  o  en  el  próximo  TL  que
+
+(4:21) está  relacionado  con  con  access  listas
+
+(4:24) de  control  de  acceso,  que  es  un  tema  que
+
+(4:26) voy  a  explicar  específicamente  la  semana
+
+(4:28) que  viene  y  este  y  en  este  trabajo  no  le
+
+(4:30) vamos  a  dar  importancia  porque  eh  lo  voy
+
+(4:34) a  explicar  directamente  la  semana  que
+
+(4:36) viene  o  no  sé  si  tenemos  si  la  fecha  hay
+
+(4:40) finales  o  qué,  pero  bueno,  tengo  que
+
+(4:42) revisar  el  calendario.  Bueno,
+
+(4:45) eh  vamos  a  arrancar  con  un  tema
+
+(4:47) fundamental  de  la  materia  que  es
+
+(4:50) enrutamiento.  Sí,  ya  estuvimos  viendo  lo
+
+(4:54) que  es  capa  2  eh  a  nivel  switching.  Eh
+
+(4:58) vimos  la  parte  de  wireless  eh  y  y  hice
+
+(5:02) una  pequeña  unos  pequeños  comentarios
+
+(5:04) sobre  enrutamiento  de  la  clase  anterior.
+
+(5:07) Hoy  vamos  a  entrar  directamente  en  lo
+
+(5:08) que  es  enrutamiento.  digamos,  es  uno  de
+
+(5:10) los  temas  eh,  como  les  decía,  pilares  o
+
+(5:13) fundamentales  de  la  materia,  con  lo  cual
+
+(5:16) que  entiendan  este  tema  es
+
+(5:18) imperioso.
+
+(5:20) Así  que  bueno,  voy  a  hacer  una  pequeña
+
+(5:23) introducción  teórica.  Eh,  no  me  voy  a
+
+(5:25) demorar  tanto  ni  voy  a  detenerme  tanto
+
+(5:27) como  les  dije,  porque  si  no  la  clase  se
+
+(5:29) hace  muy  densa.
+
+(5:31) Entonces,  dicho  esto,  eh  bueno,  los
+
+(5:34) objetivos  que  son  los  que  están  en  la
+
+(5:36) del  trabajo  de  laboratorio  es  eh  esto  es
+
+(5:39) comprender  cómo  funciona  la  conmutación
+
+(5:41) de  de  paquetes  en  capa  3,  digamos  en  en
+
+(5:45) las  redes,  digamos,  TCP,
+
+(5:48) digamos,  nosotros  vemos  el  modelo  OSI,
+
+(5:50) pero  el  modelo  OSI  machea  con  el  modelo
+
+(5:53) TCP,  ¿sí?  que  el  modelo  TCP  es  el  que
+
+(5:56) digamos  hace  referencia  a  la  realidad  de
+
+(5:59) cómo  funcionan  las  redes.  El  otro  es  un
+
+(6:00) modelo  teórico  para  aprendizaje.
+
+(6:03) Eh,  entonces  tienen  que  entender  cómo
+
+(6:05) funciona,  digamos,  la  conutación  de
+
+(6:07) paquetes  en  capa  tres.  Acá  ya  eh,
+
+(6:09) digamos  se  habla  de  de  IP,  ¿sí?  Cuando
+
+(6:15) estábamos  en  capa  dos  hablábamos  a  nivel
+
+(6:17) de  macadres,  o  sea,  direccionamiento
+
+(6:19) físico.  Acá  es  direccionamiento  ya
+
+(6:21) lógico.
+
+(6:22) Eh,  tienen  que  entender  muy  bien,  pero
+
+(6:26) muy  bien  este  tema  de  lo  que  es  el  el
+
+(6:29) subneting,  o  sea,  ¿qué  es  el  subnet?
+
+(6:32) ¿Para  qué  se  usa?  ¿Para  qué  sirve?
+
+(6:34) Digamos,  qué  tipos  de  subnetic  existen.
+
+(6:37) Sí,  porque  eh  sin  entender  eso  hay  un
+
+(6:41) montón  de  cosas  que  no  se  van  a
+
+(6:43) entender.  Sí.  Y  tienen  que  entender
+
+(6:44) también  qué  significa  esto,  que  en
+
+(6:48) inglés  se  pronuncia  cider,  ¿si?  Y
+
+(6:51) significa  classless  interdoma  routing,
+
+(6:55) ¿sí?
+
+(6:56) O  sea,  que  es  no  es  más  ni  nada  menos
+
+(6:58) que  el  enrutamiento  sin  clase.  Por  eso
+
+(7:00) se  llama  classless
+
+(7:02) interdoma  routing.
+
+(7:05) Eh,  y  el  subneteo,  bueno,  existen
+
+(7:07) distintos
+
+(7:09) formas  de  hacer  subneting.  Uno  es  el
+
+(7:11) subnet  clásico,  donde  todas  las  subredes
+
+(7:16) se  hace  un  subneteo  y  todas  las  subredes
+
+(7:18) van  a  tener  la  misma  cantidad  de  host.
+
+(7:22) Sí,  más  allá  de  que  voy  a  tener  n
+
+(7:24) subredes,  pero  dentro  de  cada  subred,
+
+(7:27) cada  subred  tiene  la  misma  cantidad  de
+
+(7:28) host.  Y  después  está  el  subnet  avanzado,
+
+(7:32) ¿sí?  Que  es  el  que  se  lo  conoce  como
+
+(7:34) BLSM,  ¿sí?  Que  es  este  que  está  acá.
+
+(7:38) Las  siglas  de  BLSM  significan  esto  y  en
+
+(7:41) la  traducción  al  español  es  máscara  de
+
+(7:44) longitud  variable,  es  decir,  que  van  a
+
+(7:46) tener  eh  un  subnetting  donde  la  máscara
+
+(7:49) de  subred  va  a  ir  variando,  no  va  a  ser
+
+(7:51) siempre  la  misma.  Sí,  porque  en  el
+
+(7:53) subnet  clásico  ustedes  van  a  tener  n
+
+(7:55) cantidad  de  subredes  y  todas  las
+
+(7:58) subredes  van  a  ser  con  el  mismo  barra,
+
+(8:00) ¿sí?  O  sea,  pueden  ser  ocho  subredes  y
+
+(8:02) las  ocho  subredes  con  son  con  barra27,
+
+(8:05) por  ejemplo.  En  cambio,  si  hablamos  del
+
+(8:08) de  digamos  del  subnet  avanzado  con  BLSM,
+
+(8:11) pueden  tener  tres  subredes  que  son
+
+(8:13) barra27,
+
+(8:15) pueden  tener  dos  subredes  que  son  barra
+
+(8:17) 30,  o  sea,  y  esa  máscara  de  longitud
+
+(8:21) variable  es  la  que  le  da  a  la  red  una
+
+(8:25) mejor  performance,  ¿sí?  Entre  otras
+
+(8:28) cosas.
+
+(8:30) Hasta  acá  lo  que  dije  se  entendió.
+
+(8:32) ¿Alguien  no  sabe  lo  que  es  una  subred  o
+
+(8:35) lo  que  es  el  subnet?
+
+(8:39) Sin,  díganlo  sin  ningún  tipo  de
+
+(8:41) vergüenza  porque  estamos  para  aprender  y
+
+(8:43) lo  puedo  repetir,  lo  puedo  decir  o  lo
+
+(8:46) puedo  explicar.
+
+(8:53) Bueno,  calculo  entonces.  Sí,  todo  bien.
+
+(8:55) Listo.  Calculo  entonces  que  todos  a  esta
+
+(8:57) altura  saben  lo  que  es  todo  eso.  Bueno,
+
+(9:01) este  es  estas  imágenes  que  están  acá
+
+(9:03) hacen  en  referencia  a  lo  que  es  un
+
+(9:05) router,  ¿sí?  Que  se  parece  también  a  un
+
+(9:08) switch  porque  son  todos  equipos  de  una
+
+(9:10) unidad  de  RAC,  dos  unidades  de  RAC,  tres
+
+(9:12) unidades  de  RAC.  Esto  es  una  unidad  de
+
+(9:14) RAC,  esto  es  dos  unidades  de  RAC,  esto
+
+(9:18) tres  unidades  de  RAC,  o  sea,  según  la
+
+(9:20) potencia  eh  que  que  necesite  el  el
+
+(9:25) router,  digamos,  tiene,  digamos,  o  sea,
+
+(9:29) este  distintas  dimensiones,  ¿sí?
+
+(9:33) Eh,
+
+(9:35) es  como  si  fuese  un  switch,  digamos,  a
+
+(9:37) simple  vista,  pero  la  funcionalidad  es
+
+(9:39) distinta  y  es  de  capa  3.
+
+(9:46) Bueno,  nosotros  hoy  lo  que  vamos  a  ver
+
+(9:49) hoy  es  la  parte  esta  de  configuración
+
+(9:51) básica,  ¿sí?  No,  esto  lo  vamos  a  dejar
+
+(9:54) la  parte  de  configuración  avanzada  de
+
+(9:56) Access  List  la  vamos  a  dejar
+
+(9:57) directamente  para  la  clase  que  viene,
+
+(9:59) que  el  trabajo  de  la  clase  que  viene,
+
+(10:02) digamos,  necesita  esto  sí  o  sí.  El
+
+(10:05) trabajo  este  es  como  se  usa  un  poquito,
+
+(10:08) pero  no  tiene  sentido  porque  como  lo
+
+(10:10) tengo  que  explicar  bien,  no  lo  voy  a
+
+(10:13) explicar  bien  ahora  a  última  hora  que
+
+(10:15) estamos  todos  quemados,  incluso  yo
+
+(10:18) también.  Entonces  siempre  lo  explico  en
+
+(10:20) el  trabajo  de  la  tro  número  cuatro.  Eso
+
+(10:22) es  algo  mío.  Sí,  en  otros  cursos  por  ahí
+
+(10:24) se  manejan  de  otra  manera,  pero  yo
+
+(10:26) prefiero  explicar  esto  que  es  complicado
+
+(10:29) en  la  clase  que  viene  al  principio  y  no
+
+(10:31) explicar  esto  que  es  complicado  al  final
+
+(10:33) de  la  clase  donde  estamos  todos  quemados
+
+(10:35) y  algunos  se  van.
+
+(10:37) Entonces,  de  la  configuración  básica
+
+(10:40) vamos  a  ver  en
+
+(10:43) eh  esto,  cómo  configurar  las  interfaces
+
+(10:46) de  un  router,  cómo  configurar  en  un
+
+(10:48) router  el  enrutamiento  estático  y  el
+
+(10:51) enrutamiento  dinámico  y  y  qué  son  y  para
+
+(10:54) qué  se  usan  las  rutas  por  defecto,  que
+
+(10:57) también  es  algo  importante  al  igual  que
+
+(10:59) estas  rutas  estáticas.
+
+(11:05) Eh,  bueno,  los  routers  para  conectarse
+
+(11:09) entre  sí,  ¿sí?  Eh,  porque,  ¿qué  pasa?
+
+(11:11) Ustedes  tienen  eh  un  router  que  es  el
+
+(11:13) que  se  les  el  que  les  da  el  proveedor,
+
+(11:15) es  un  router  chiquitito,  digamos,  que  es
+
+(11:17) este  que  está  acá  eh  dibujado  con  eh  eh
+
+(11:22) de  esta  manera  y  que  dice  proveedor  de
+
+(11:23) servicio.  El  proveedor  de  servicios  a
+
+(11:26) ustedes  les  deja  un  router  en  una
+
+(11:27) empresa,  no  estoy  hablando,  le  deja  un
+
+(11:29) router,
+
+(11:31) pero  ustedes  como  empresa,  ese  router
+
+(11:33) que  les  deja  lo  tienen  que  conectar  al
+
+(11:35) router  de  ustedes  que  está  dentro  de  su
+
+(11:38) de  su  compañía  y  lo  administran  ustedes
+
+(11:40) porque  este  lo  administra  el  proveedor,
+
+(11:42) el  que  les  brinda  el  servicio.  Sí.  a
+
+(11:45) este  eh  router  chiquitito  que  le  que  se
+
+(11:49) los  entrea  al  proveedor  y  se  los  deja
+
+(11:50) instalado  en  su  en  su  oficina  y  después
+
+(11:54) este  ustedes  lo  conectan  al  router  de
+
+(11:56) ustedes,  a  este  se  lo  llama  DCE,  ¿sí?  El
+
+(12:00) que  les  deja  el  proveedor.  DCE  significa
+
+(12:03) data  circuit  equipment,  ¿sí?  También
+
+(12:06) denominado  equipo  de  última  milla  para
+
+(12:09) digamos  des  el  punto  de  vista  del
+
+(12:10) proveedor,  ¿sí?  O  sea,  para  el  proveedor
+
+(12:12) cuando  les  dice  a  ustedes  eh  el  equipo
+
+(12:16) de  última  milla  que  que  te  dejé  a  vos
+
+(12:19) tiene  digamos  tal  número  de  serie,  está
+
+(12:21) el  modelo  y  eh  tiene  asignada  tal
+
+(12:23) dirección  IP  si  es  estática
+
+(12:27) y  ustedes  conectan  ese  router  que  les
+
+(12:30) deja  el  proveedor  al  router  de  ustedes,
+
+(12:33) eh,  y  ese  router  de  ustedes  que  que  que
+
+(12:36) les  pertenece,  digamos,  porque  lo  compró
+
+(12:38) la  empresa,  lo  instaló  y  lo  administra
+
+(12:40) la  empresa.
+
+(12:41) recibe  el  nombre  de  DTE,  ¿sí?  Que
+
+(12:43) significa  data  terminal  equipment,  ¿sí?
+
+(12:48) En  reciben  esos  nombres  porque  el  cable
+
+(12:51) que  se  usa  para  conectar  estos  dos
+
+(12:53) equipos,  ¿sí?  Es  un  cable  especial
+
+(12:58) y  ese  cable  especial  eh  es  un  cable
+
+(13:00) serial.  ¿Sí?  o  digamos  para  conectar  dos
+
+(13:03) router  entre  sí,  se  utiliza  o  se
+
+(13:05) utilizaba  un  cable  serial
+
+(13:07) eh  que  existen  de  distinto  tipo.  Todo  lo
+
+(13:10) que  está  acá  a  la  parte  en  la  parte
+
+(13:12) derecha  ya  lo  vimos,  es  el  cable  de
+
+(13:14) consola  que  se  usa  para  administrar  el
+
+(13:16) equipo.  No  lo  voy  a  repetir  porque  ya  lo
+
+(13:17) vimos  y  es  lo  mismo  que  los  switches.
+
+(13:23) Esto  que  está  acá  es  una  topología,
+
+(13:27) digamos,  de  una  conexión  one,  digamos,  o
+
+(13:30) sea,  que  tiene  eh  esto  en  el  medio  que
+
+(13:34) está  acá  en  el  medio  donde  está  la  guan,
+
+(13:36) donde  está  este  rayito  de  color  rojo,
+
+(13:37) acá  entre  medio  están  los  equipos  del
+
+(13:39) proveedor.  Sí,  pero  para  conectar  los
+
+(13:42) equipos,  los  router  entre  sí,  se  usan
+
+(13:44) conexiones  seriales,  que  son  todas  estas
+
+(13:46) que  están  acá,  que  fueron  mutando  tanto
+
+(13:49) de  estándares,  digamos,  como  de
+
+(13:51) conectores,  digamos,  digamos,  fue  fue
+
+(13:54) variando  esto  a  lo  largo  de  la  historia.
+
+(13:56) Sí,  estos  son  algunos  ejemplos,  ¿sí?  O
+
+(13:58) sea,  para  conectar  router  1  con  router  2
+
+(14:02) se  usaba  una  conexión  serial.  Sí.
+
+(14:09) Y  acá  viene  más  o  menos  eh  eh  lo  que  les
+
+(14:13) quería  eh  comentar.  Nosotros  en  el
+
+(14:15) laboratorio  antiguamente  cuando  eh  se
+
+(14:18) usaba  se  usaba  el  simulador  eh  para
+
+(14:21) algunas  cosas,  pero  después  se  usaban
+
+(14:23) equipos  reales  para  conectar  las  cosas,
+
+(14:27) digamos,  se  ponían  los  equipos  en  la
+
+(14:30) mesa,  se  conectaban  y,  bueno,  se  ponía
+
+(14:33) un  equipo,  un  router  en  en  un  extremo  de
+
+(14:35) la  mesa,  otro  router  en  el  otro  extremo
+
+(14:37) de  la  mesa,  estoy  hablando  en  el
+
+(14:38) laboratorio  de  redes,  se  agarraba  este
+
+(14:41) un  cable  serial,  digamos,  que  podía
+
+(14:43) hacer  como  este  que  está  acá  o  como  este
+
+(14:46) que  está  acá,  el  de  la  derecha  o  el  de
+
+(14:48) la  izquierda,  según  el  modelo  del
+
+(14:49) router,  la  marca  y  todo  y  todo  eso.
+
+(14:52) Detrás  del  equipo  hay  una  conexión  así
+
+(14:54) que  dice  serial  y  tenía  esta  esta  forma
+
+(14:57) o  decía  conexión  serial  y  tenía  esta
+
+(14:59) otra  forma.  Sí,  podía  ser  un  conector  de
+
+(15:02) este  tipo  o  podía  ser  un  conector  de
+
+(15:03) este  tipo  y  se  enchufaban,  se  conectaban
+
+(15:07) sí,  los  dos  router  entre  sí  a  través  de
+
+(15:09) un  cable  serial.  Sí.
+
+(15:11) y  después  al  router  se  conectaba  el
+
+(15:13) switch  o  los  switches  y  se  conectaban
+
+(15:15) después  las  la  PCs.  Sí.
+
+(15:19) Eh,  así  que  bueno,  esta  es  la  forma  de
+
+(15:21) conectar  dos  equipos  y  y  hacer  una  one,
+
+(15:24) sí,  a  través  de  una  conexión  serial
+
+(15:26) entre  ellos.
+
+(15:28) Bueno,  esto  ya  lo  conocen,  el  modo  el
+
+(15:30) modo  usuario,  el  modo  privilegiado,  el
+
+(15:32) modo  configuración  global,  esto  es  lo
+
+(15:34) mismo  que  que  en  los  switches.
+
+(15:37) Así  que  bueno,  dicho  esto  de  cómo  eran
+
+(15:39) las  conexiones  y  mostrando  un  poquito  la
+
+(15:42) la  las  imágenes  para  que  tengan  una  idea
+
+(15:45) en  sus  cabezas,  vienen  en  la  parte  del
+
+(15:47) concepto  de  enrutamiento.
+
+(15:51) ¿Qué  se  les  ocurre  a  ustedes  que  es
+
+(15:56) el  enrutamiento,  digamos,  qué  función
+
+(15:58) cumple,  digamos?  Acá  acá  lo  dice  bien.
+
+(16:01) Sí,  este  dice,  o  sea,  las  dos  funciones
+
+(16:04) principales,  digamos,  que  que  hace  un
+
+(16:07) router,  que  es  un  dispositivo  capa  3,  eh
+
+(16:10) hace  determina  cuál  es  la  mejor  ruta
+
+(16:13) para  llegar  de  un  lugar  hacia  otro  y
+
+(16:17) después,  ¿cuál  es  el  direccionamiento
+
+(16:18) que  se  usa,  digamos?  O  sea,  para  para
+
+(16:21) ello,  ¿sí?  Eh,  yo  les  pregunto,  leyendo
+
+(16:26) esto,
+
+(16:27) ¿a  qué  podrían  hacer  una  analogía  de  la
+
+(16:30) vida  real  eh  eh  con  un  router
+
+(16:34) a  un  GPS?
+
+(16:36) Bien,  perfecto.  Bueno,  el  router  es  como
+
+(16:40) digamos  si  tuviésemos  que  hacer  una
+
+(16:42) analogía,  es  como  un  GPS,  digamos,  donde
+
+(16:45) cuando  ustedes  ponen  ir  del  destino  A  al
+
+(16:47) destino  B,  el  GPS  les  muestra  distintas
+
+(16:50) rutas.  Le  pone  una  ruta  que  es  la  que
+
+(16:52) prefiere  usar,  que  la  ponen  en  colores  y
+
+(16:55) después  le  aparecen  varias  rutas
+
+(16:56) grisadas.  ¿Es  así?  ¿Es  correcto?
+
+(17:00) Sí,
+
+(17:00) sí,  sí.
+
+(17:01) O  sea,  entonces,  ¿qué  hace  el  GPS?  en
+
+(17:04) base  a  ciertos  parámetros  que  toma  y
+
+(17:07) cómo  esté  configurado,  elige  cuál  es  la
+
+(17:10) mejor  ruta  para  llegar  desde  el  del
+
+(17:12) origen  al  destino  y  esa  ruta  la  instala.
+
+(17:16) Sí.  Y  cuando  digo  que  la  instala  es  como
+
+(17:18) que  en  el  caso  del  GPS  la  pone  en
+
+(17:20) colores  y  las  otras  rutas  están  en  la
+
+(17:23) tabla  de  enrutamiento.  Sí.  Eh,  pero  esas
+
+(17:26) tablas  de  enrutamiento  las  tiene  ahí,
+
+(17:27) las  tiene  en  la  tabla,  pero  están  eh  sin
+
+(17:31) ser,  o  sea,  están,  pero  no  es  la  que
+
+(17:33) usa,  digamos,
+
+(17:35) esa  tabla  de  enrutamiento  que  tiene  el
+
+(17:37) router  es  muy  importante  porque  ahí  es
+
+(17:39) donde  guarda  e  indica  cuáles  son  los
+
+(17:42) mejores  caminos  para  alcanzar  un
+
+(17:43) destino,  digamos,  de  origen  a  destino,
+
+(17:46) ¿sí?  O  sea,  cómo  llegar  al  destino  sería
+
+(17:49) las  rutas  esas  las  usa  todas,  nada  más
+
+(17:51) que  eh  y  y  si  están  en  la  tabla
+
+(17:54) rutamiento  porque  las  va  a  usar  eh
+
+(17:57) dependiendo  lo  que  pase  en  la  red.  Sí.
+
+(18:01) Eh,  pero  bueno,  siempre  hay  una  tabla
+
+(18:03) que  es  la  que  él  instala.  Después  vamos
+
+(18:06) a  llamar.
+
+(18:20) Eh,  se  cortó,  profe.
+
+(18:23) De  de  esa  tabla  de  enrutamiento.  Eh,  el
+
+(18:26) router  obtiene  información  de  cuáles  son
+
+(18:30) las  rutas  que  están  conectadas
+
+(18:31) directamente.  Porque,  ¿qué  pasa?  Si  yo
+
+(18:33) tengo  dos  router,  tres  router  conectados
+
+(18:35) todos  entre  sí,
+
+(18:37) si  el  cable  está  conectado  y  esas  y  esas
+
+(18:40) interfaces  obviamente  que  tienen
+
+(18:42) direcciones  IPs,  porque  estamos  hablando
+
+(18:44) de  K3  ahora,  entonces  cada  interface  va
+
+(18:47) a  tener  una  dirección  IP  ahora  comparado
+
+(18:49) con  los  switches  que  los  puertos,  vamos
+
+(18:51) a  decirle,  no  tenían  eh  no  tenían  IP
+
+(18:55) porque  estábamos  hablando  de  capa  2  y  la
+
+(18:57) única  IP  que  tenía  el  switch  era  la  IP
+
+(18:59) de  management.  Sí,  pero  ahora  no.  para
+
+(19:02) las  interfaces  de  los  routers,  los
+
+(19:04) puertos,  ya  sea  una  interfaz  serial  o
+
+(19:06) una  interfaz,  digamos,  que  no  es  serial,
+
+(19:11) van  a  tener  una  dirección  IP,  ¿sí?  Eh,  y
+
+(19:14) el  router  va  a  conmutar,  digamos,  los
+
+(19:16) paquetes  eh  entre  esas  redes  que  tiene
+
+(19:19) en  esa  tabla  de  enrutamiento,  pero  esa
+
+(19:20) tabla  de  enrutamiento  distingue  cuáles
+
+(19:22) son  las  redes  que  tiene  directamente
+
+(19:23) conectadas,  cuáles  son  las  redes  que
+
+(19:26) ustedes  escriben  a  mano,  digamos,  para
+
+(19:29) hacer  esto  que  se  llama  enrutamiento
+
+(19:30) estático  o  cuáles  son  las  rutas  que  que
+
+(19:33) el  router  aprende.
+
+(19:37) Y  digo  las  aprende  porque  los  protocolos
+
+(19:39) de  enrutamiento  dinámico
+
+(19:41) generan  ese  comportamiento,  si,  de
+
+(19:44) aprenderse  dinámicamente  las  rutas
+
+(19:48) e  y  esa  tabla  tiene  una  estructura
+
+(19:50) jerárquica,  digamos  que  la  vamos  a  ver
+
+(19:53) ahora.
+
+(19:57) Eh,  pero  bueno,
+
+(19:59) antes  de  antes  de  mostrar  la  tabla  de
+
+(20:01) enrutamiento,  yo  les  tengo  que  decir  que
+
+(20:03) existe  el  enrutamiento  estático  y  el
+
+(20:05) enrutamiento  dinámico.  Sí,  el
+
+(20:07) enrutamiento  estático,  ambos  tienen
+
+(20:10) ventajas  y  desventajas.  Sí,  el
+
+(20:12) enrutamiento  estático  tiene  esta  ventaja
+
+(20:15) que  no  consume  mucho  procesamiento  del
+
+(20:17) del  router  porque  este  ustedes  los
+
+(20:21) administradores  de  la  red  son  los  que
+
+(20:23) las  escriben  y  le  dicen  al  router,  "Vos
+
+(20:26) para  ir  desde  esta  IP,  que  es  el  origen
+
+(20:29) a  esta  IP  que  es  el  destino,
+
+(20:31) e  tenés  que  eh  digamos  tenés  que  ir  por
+
+(20:35) este  lugar,  o  sea,  tenés  que  salir  por
+
+(20:37) acá,  ¿sí?  y  se  se  escribe  eso,  se  se
+
+(20:41) jarcodea,  vamos  a  decirlo,  pero  en
+
+(20:43) realidad  se  escribe,  se  establece
+
+(20:47) e  y  bueno,  es  fácil  de  configurar  y
+
+(20:50) comprender,  pero  ¿qué  pasa  en  la  medida
+
+(20:52) que  la  red  crece?  Si  yo  tengo  una  red
+
+(20:55) que  tiene  800,000  sucursales  y  cosas,  ya
+
+(20:59) eh  el  usar  enrutamiento  estático  deja  de
+
+(21:01) ser  una  buena  opción  porque,  bueno,
+
+(21:05) digamos,  es  difícil  eh  tener  todo  bien
+
+(21:07) documentado  y  todo  bien  este  para  que
+
+(21:11) nada  falle  y  que  cuando  hay  algún
+
+(21:12) problema  encontrar  la  falla  rápido.
+
+(21:16) Entonces,  bueno,  este  ahí  es  donde
+
+(21:18) aparece  el  enrutamiento  dinámico,  donde
+
+(21:22) los  routers  a  través  del  uso  de  estos
+
+(21:25) enrutamiento,  de  estos  tipos  de
+
+(21:26) protocolo  enrutamiento  dinámico,
+
+(21:29) digamos,  que  son  todos  estos  que  están
+
+(21:30) acá  y  otros,
+
+(21:32) eh  si  están  bien  configurados  y  todo
+
+(21:35) funciona  armónicamente,
+
+(21:37) eh,  no  voy  a  tener  la  necesidad  de  de
+
+(21:40) escribir  las  rutas  estáticamente,  sino
+
+(21:42) que,  digamos,  eh,  los  routers  se  pasan
+
+(21:45) estas  rutas,  digamos,  gracias  a  la
+
+(21:47) colaboración  eh  que  brindan  los
+
+(21:50) protocolos  enrutamiento  dinámico  y  con
+
+(21:52) eso  el  administrador  de  la  red  tiene
+
+(21:54) menos  intervención  para  el  mantenimiento
+
+(21:55) de  esas  rutas,  obviamente  que  hay  menos
+
+(21:58) probabilidades  de  errores,  facilita  el
+
+(22:00) crecimiento  de  la  red,  digamos,  si  la
+
+(22:02) red  crece,  el  enrutamiento  dinámico  me
+
+(22:04) ayuda  y  me  facilita  todo  ese  crecimiento
+
+(22:07) y  esas  actualizaciones  de  las  rutas  que
+
+(22:09) se  la  pasan  los  equipos  entre  sí  son
+
+(22:11) automáticas,  con  lo  cual,  como
+
+(22:13) administrador  de  red  me  sentí  entiendo
+
+(22:15) de  eso  que  es  la  administración  y  me
+
+(22:18) ocupo  más  de  la  parte  de  eh  lo  que  se
+
+(22:22) llama  travel  shooting  de  la  red,
+
+(22:23) digamos,  o  resolver  problemas.
+
+(22:25) Profe,
+
+(22:26) hasta  acá  sí,
+
+(22:27) ¿no?  Justo  le  iba  a  consultar,  o  sea,
+
+(22:29) que  digamos  lo  en  el  enrutamiento
+
+(22:31) dinámico  los  propios  routers  se
+
+(22:33) comunican  entre  sí  actualizándose  las
+
+(22:35) direcciones  que  manejan,  digamos.
+
+(22:38) Sí,  es  así,  es  algo  así  que  después  lo
+
+(22:41) voy  a  explicar  un  poco  más  en  detalle,
+
+(22:42) pero  es  así  conceptualmente  es  así.
+
+(22:45) O  sea,  cada  uno  tiene  su  tabla  de
+
+(22:47) enrutamiento,  digamos  que  que  digamos
+
+(22:50) que  que que  donde  conoce  cosas  que  el
+
+(22:52) otro  router  del  otro  extremo  no  conoce  y
+
+(22:54) se  las  y  se  comparten.  Uno  le  comparte
+
+(22:57) su  su  información,  el  otro  le  comparte
+
+(22:59) su  información  y  con  eso  se  forma  lo  que
+
+(23:02) se  llama  la  convergencia  en  la  red.  Y
+
+(23:05) gracias  a  esa  convergencia  es  como  que
+
+(23:07) este  eh  ambos  router  que  están  en  los
+
+(23:11) extremos  conocen  eh  todas  las  rutas,
+
+(23:14) digamos  eh  de  la  misma  manera.  Sí.  Y  con
+
+(23:18) y  de  esa  forma  pueden  eh  enrutar  los
+
+(23:21) paquetes  y  hacer  la  conutación  eh
+
+(23:25) automáticamente  gracias  a  al
+
+(23:27) conocimiento  de  la  de  de  las  tablas.
+
+(23:32) Bueno,
+
+(23:32) y  alguna  desventaja  del  dinámico,
+
+(23:36) alguna  desventaja  del  dinámico  que
+
+(23:38) consume  más  procesamiento  en  los  equipos
+
+(23:41) porque  porque  según  el  protocolo  que  sea
+
+(23:44) corren  unos  algoritmos  que  que  calculan
+
+(23:47) cuál  es  la  mejor  ruta,  digamos,  en  base
+
+(23:49) a  métricas  y  eso  hace  que  que  que  el
+
+(23:52) consumo,  digamos,  el  procesamiento  del
+
+(23:54) equipo  sea  más  elevado,  porque  tiene  que
+
+(23:56) procesar  eh  eh  las  métricas,  digamos,  de
+
+(24:02) la  y  elegir  la  mejor  ruta  para
+
+(24:05) instalarla  en  la  en  la  tabla.
+
+(24:08) Perfecto.
+
+(24:12) Bueno,  vamos  a  empezar  rapidito  con
+
+(24:14) enrutamiento  estático.
+
+(24:17) Cuando  yo  tengo  una  red  así  como  esta
+
+(24:19) que  está  acá,  donde  digamos  el  extremo
+
+(24:21) A,  eh,  está  el  router  1.  Esto,  por
+
+(24:24) ejemplo,  podría  ser  la  oficina  de
+
+(24:25) Córdoba  y  la  de  la  derecha,  la  oficina
+
+(24:27) de  Rosario.  Sí,  la  oficina  de  Rosario
+
+(24:30) tiene  esta  esta  este  prefijo  192  168.2
+
+(24:35) punto  esa  red.
+
+(24:37) 2/24.
+
+(24:39) En  cambio  la  en  Córdoba  el  enrutamiento,
+
+(24:41) si  bien  es  parecida,  es  otra  red  porque
+
+(24:43) es  la  la  1.0/24.
+
+(24:46) Son  redes  distintas,  las  dos  son  clase  C
+
+(24:49) y  entre  ellos  los  router  están
+
+(24:51) conectados  a  través  de  una  conexión
+
+(24:53) serial  donde  eh  la  la  red  que  conecta  a
+
+(24:59) ellos  dos  es  la  10  10  eh0/30.
+
+(25:05) Si  ustedes  saben  que  el  barra  30,
+
+(25:08) digamos,  eh  lo  que  les  permite  tener  son
+
+(25:11) cuatro  direcciones  IPs,  dos  direcciones
+
+(25:13) IP  utilizables,  la  uno  y  la  dos,  y
+
+(25:16) después  la  cero  es  la  red  y  la  y  la  tres
+
+(25:20) es  la  dirección  de  broadcast.  Sí.
+
+(25:24) Ahora,  ahora  bien,
+
+(25:28) si  yo  me  paro  en  router  uno  acá  en  el
+
+(25:31) router  de  la  de  la  de  la  izquierda  y
+
+(25:35) tiro  el  comando  show  IP  route,  con  ese
+
+(25:37) comando  puedo  ver  la  tabla  enrutamiento.
+
+(25:39) La  tabla  de  enrutamiento  es  como  esta
+
+(25:41) que  está  acá  abajo,  ¿sí?  donde  la  primer
+
+(25:45) parte  de  la  tabla  de  enrutamiento  son  es
+
+(25:47) la  nomenclatura  que  usa  el  router  para
+
+(25:49) decir  si  la  red  está,  digamos,  está
+
+(25:52) directamente  conectada.  Eso  lo
+
+(25:54) identifica  con  la  letra  C.  Si  es  una
+
+(25:56) ruta  estática,  lo  identifica  con  la  S.  Y
+
+(25:59) bueno,  y  así  son  otros  este
+
+(26:04) parámetros  que  hacen  referencia  a  lo  que
+
+(26:06) con  esta  nomenclatura,  ¿sí?  Por  ejemplo,
+
+(26:10) si  yo  me  fijo  en  la  tabla  de
+
+(26:11) enrutamiento  así  como  está  en  la,  o  sea,
+
+(26:14) en  la  parte  izquierda,  me  fijo  la  la  así
+
+(26:17) como  está,  ¿no?
+
+(26:20) Me  fijo  así  como  está  en  la  parte
+
+(26:22) izquierda  y  le  pongo  en  el  router  uno
+
+(26:25) show  IP  route,  me  muestra  que  la  tabla
+
+(26:27) de  enrutamiento  es  esto  que  está  acá  y
+
+(26:29) me  dice  que  la  dirección  de  red,  la
+
+(26:32) 1000/30
+
+(26:35) está  subneteada.  ¿Por  qué  me  la  pone
+
+(26:38) así?  10000/30?
+
+(26:41) Porque  la  red  10  es  una  red  de  clase  A.
+
+(26:44) Sí,  este,  estamos  de  acuerdo.  Y  acá  está
+
+(26:48) subneteada  para  que  quede  de  esta  manera
+
+(26:50) con  un  barra  30  y  que  la  dirección  es  la
+
+(26:53) 10  10.0
+
+(26:55) es  la  red  barra  30.
+
+(26:57) y  dice,  "Esta  ruta  está  directamente
+
+(27:00) conectada."  Y  fíjense  que  pone  la
+
+(27:03) dirección  de  la  red  de  de  esa  de  este
+
+(27:07) prefijo  que  está  subneteado.  ¿Cuál  es?
+
+(27:09) La  10  10.
+
+(27:11) Sí,  esa  es  la  dirección  de  la  red.  Y
+
+(27:14) abajo  dice  que  tiene  directamente
+
+(27:17) conectada,
+
+(27:18) veamos,  en  la  interfaz  serial.  Bueno,
+
+(27:22) fíjense  una  cosa,  la  10  10.0,  cer  que  es
+
+(27:26) la  red  está  directamente  conectada  a
+
+(27:29) través  de  la  interfaz  serial  00,  o  sea,
+
+(27:31) está  hablando  de  esto  que  tiene
+
+(27:34) conectado  en  esta  interfaz  en  la  seral
+
+(27:36) 00
+
+(27:37) una  red  que  la  identifica  como  10  10  0
+
+(27:42) más  allá  que  después  la  interface  tenga
+
+(27:44) la  punto  uno,  ¿se  entiende?  La  interface
+
+(27:46) es  esta,  la  serial  00.
+
+(27:49) Y  después  dice  la  tabla  de  rutamiento,
+
+(27:51) dice,  "También  tengo  otra  red  conectada
+
+(27:54) que  es  esta  que  esta  conexión  que  está
+
+(27:56) acá  en  en  punteado."
+
+(27:59) Bueno,  porque  esta  vendría  a  ser  la  LAN
+
+(28:01) interna,  la  red  LAN  interna.  Y  esto
+
+(28:02) sería  la  One  en  esa  red  interna  el
+
+(28:05) router  dice,  "Yo  tengo  conectado  porque
+
+(28:07) tengo  un  cable  conectado."  No  es  que
+
+(28:10) dice  conectado  porque  porque  se  le  dio
+
+(28:11) la  gana,  tiene  un  cable  conectado  a  esa
+
+(28:14) interface  y  esa  interface  es  la  fase
+
+(28:16) Ethernet  00  y  dice,  "Tengo  directamente
+
+(28:19) conectada  esta  red,  la  192  168  10."
+
+(28:24) Sí,  o  sea,  conoce  la  red.
+
+(28:28) En  los  dos  casos  conoce  la  red.  Después
+
+(28:31) la  interface,  la  serial  tiene  la  10  10  1
+
+(28:34) y  la  fase  00  tiene  la  192  168  1  algo  que
+
+(28:39) no  sé  porque  no  lo  no  lo  sé  pero  tiene
+
+(28:42) la  uno  algo.
+
+(28:45) Ahora,
+
+(28:47) si  todo  esto  que  dije  les  entendió,
+
+(28:50) así  como  está,  no  anda  nada.
+
+(28:53) O  sea,  mi  router
+
+(28:56) no  conoce  lo  del  otro  extremo.  Mi  router
+
+(28:58) no  conoce  la  red  192  168.
+
+(29:03) No  la  conoce.
+
+(29:05) Entonces,  ¿cómo  hace  para  conocerla  si
+
+(29:08) estamos  hablando  de  enrutamiento
+
+(29:09) estático?  Yo,  como  administrador  de  la
+
+(29:11) red,
+
+(29:14) la  tengo  que  poner  adentro  de  la  de  la
+
+(29:16) tabla  enrutamiento.  Yo  la  tengo  que
+
+(29:18) escribir.  ¿Cómo  se  escribe?  De  esta
+
+(29:20) manera.  Hay  dos  formas  de  escribirla.
+
+(29:22) Sí,  el  comando  es  IP  route.  Sí,  como
+
+(29:27) está  acá.  IP  route.  Y  después  hay  que
+
+(29:30) poner  la  dirección  de  destino,  ¿a  dónde
+
+(29:33) quiero  llegar?  ¿Y  a  dónde  quiero  llegar?
+
+(29:36) Yo  quiero  llegar  a  la  red  del  otro  lado,
+
+(29:39) que  es  esta  de  color  naranja.  ¿Cuál  es?
+
+(29:42) Pongo  la  dirección  de  la  red.  192  168  20
+
+(29:47) y  su  máscara  255  55  0  porque  acá  es  un
+
+(29:51) barra24,  ¿lo  ven?  Y  acá  viene  la
+
+(29:54) diferenciación  para  que  para  que  ustedes
+
+(29:56) entiendan  porque  hay  dos  formas  de
+
+(29:58) escribir  una  una  ruta  estática.
+
+(30:01) Una  es  decirle  que  este  último  parámetro
+
+(30:04) de  acá  sea  o  la  dirección  IP,  digamos,
+
+(30:09) del  próximo  salto,  que  en  este  caso,
+
+(30:12) ¿cuál  es  el  si  yo  estoy  parado  acá  en
+
+(30:14) router  1,  ¿cuál  es  el  próximo  salto?
+
+(30:17) Salto  de  acá  hasta  el  otro  router.
+
+(30:19) Entonces,  mi  próximo  salto,  ¿cuál  es?  La
+
+(30:22) interfaz  sería  el  01  del  router  vecino.
+
+(30:25) ¿Y  cuál  es  la  IP?  la  10  10  2.  Entonces
+
+(30:29) acaba  10  10  2.  ¿Si?  Entonces,  como  para
+
+(30:33) resumir,  si  yo  quiero  llegar  de  la  de  la
+
+(30:35) red  verde  a  la  red  naranja,  le  tengo  que
+
+(30:40) decir  a  mi  router  que  para  llegar  de  la
+
+(30:41) red  verde  a  la  red  naranja,  digamos,  la
+
+(30:45) ruta  es  esta,  digamos,  la  ruta  de
+
+(30:47) destino  es  la  192  168  20  con  esa  máscara
+
+(30:52) y  llego  a  través  de  el  próximo  salto.
+
+(30:55) ¿Cuál  es  el  próximo  salto?  la  dirección
+
+(30:57) IP  del  router  vecino,  que  yo  la  conozco
+
+(31:00) porque  lo  tengo  conectado,  ¿ven?  Está
+
+(31:02) conectada  esa  red,  es  esta  que  está  acá.
+
+(31:07) ¿Sí?  O  sea,  voy  a  Si  yo  le  hago  un  ping
+
+(31:09) desde  mi  router,
+
+(31:11) que  es  la  101  a  la  102,  tengo  conexión
+
+(31:15) porque  está  está  conectada.
+
+(31:18) Sí.  Y  cuando  yo  le  diga  que  esta  es  la
+
+(31:20) ruta,  va  a  saber  llegar  acá  gracias  a
+
+(31:24) esto  que  yo  le  puse,  porque  estos  dos
+
+(31:26) router  se  conectan  entre  sí
+
+(31:29) y  yo  en  este  escribí  la  ruta  y  el
+
+(31:32) paquete  sabe  ir  de  acá  hasta  acá.  Pero
+
+(31:36) hay  un  tema.
+
+(31:38) Cuando  ustedes  hacen  una  ruta,  la  ruta
+
+(31:41) la  tienen  que  hacer  de  los  dos  lugares.
+
+(31:44) ¿Si?  Porque,  ¿qué  pasa  si  no?  El  paquete
+
+(31:46) sabe  ir,  pero  no  sabe  volver.  Y  si  el
+
+(31:49) paquete  sabe  ir,  pero  no  sabe  volver,  no
+
+(31:52) funciona.  Le  va  a  dar  eh  destination
+
+(31:56) unichable  o  no  encuentro  el  destino,  que
+
+(32:00) en  realidad  el  destino  sí  lo  encuentra
+
+(32:01) porque  sabe  ir,  pero  como  no  sabe
+
+(32:03) volver,  ahí  es  donde  eh  produce  eh  ese
+
+(32:07) como  que  el  destino  es  desconocido.  ¿Y
+
+(32:10) cómo  hago  eso  entonces?  Bueno,  si  acá
+
+(32:12) estoy  parado  en  router  1  y  le  estoy
+
+(32:14) diciendo  que  para  llegar  de  acá  hasta
+
+(32:16) acá,
+
+(32:18) esta  esta  es  tu  ruta,  cuando  vaya  a
+
+(32:21) pararme  en  el  router  2,  tengo  que  decir
+
+(32:24) hacer  exactamente  lo  mismo,  pero  tengo
+
+(32:26) que  decirle  que  para  llegar  de  esta
+
+(32:28) ruta,  que  es  la  2.0,  que  es  la  naranja,
+
+(32:32) tengo  que  decirle  cuál  es  el  destino.  ¿Y
+
+(32:34) cuál  es  el  destino?  Si  estoy  parado  en
+
+(32:35) router  dos  y  en  vez  de  acá  ser  un  uno,
+
+(32:39) en  vez,  en  vez  de  acá  ser  un  dos,  va  a
+
+(32:40) ser  un  uno  porque  es  la  red  esta  de
+
+(32:42) color  verde.  Si  es  como  que  me  paro  en
+
+(32:45) el  otro  lado  y  tengo  que  hacer  lo  mismo,
+
+(32:46) pero  al  revés,  ¿si?  ¿Y  cuál  sería  la
+
+(32:49) dirección  del  próximo  salto  si  estoy
+
+(32:51) parado  en  router  2?
+
+(32:59) Perfecto.  Bien.
+
+(33:01) Bueno,  si  esto  se  entendió.
+
+(33:05) Vuelvo  a  estar  parado,  vuelvo  a  estar
+
+(33:07) parado  dentro  de  router  1  y  cuando
+
+(33:11) después  de  haber  hecho  esta
+
+(33:12) configuración,  es  decir,  que  yo  instalé
+
+(33:15) una  ruta  estática,  vuelvo  a  correr  el
+
+(33:17) comando  show  IP  route  y  fíjense  que
+
+(33:20) automáticamente  en  en  la  tabla  de
+
+(33:23) enrutamiento  me  apareció  una  línea,  ¿sí?
+
+(33:27) Que  tiene  adelante  de  todo  una  S,  es
+
+(33:30) esta  que  está  acá.  Miren,
+
+(33:32) me  apareció  una  S.  Adelante.  La  S
+
+(33:34) significa  static,  es  decir,  que  yo  esa
+
+(33:36) ruta  la  puse  estáticamente,  la  escribí
+
+(33:39) yo  como  administrador  de  la  red  y  le
+
+(33:42) dice  al  router,  la  se  lee  de  esta
+
+(33:45) manera,  el  router  la  mira  y  dice,  "Yo
+
+(33:47) conozco  la  red  192  168  2.0/24
+
+(33:52) y  la  conozco  a  través  de  la  10  102."
+
+(33:56) ¿Qué  es  la  10  102?  es  la  dirección  de
+
+(33:59) próximo  salto  del  router  vecino.  Es
+
+(34:01) decir,  yo  le  mando  el  paquete  al  router
+
+(34:04) vecino  y  él  se  encarga  de  resolver  esto
+
+(34:07) de  cómo  llegar  a  la  a  la  a  la  198.2.0
+
+(34:13) y  después  me  devuelve  el  paquete.
+
+(34:16) ¿Sí  se  entendió?
+
+(34:18) Eh,  profe,  esto  es  lo  que  pasaba  con  el
+
+(34:21) 1841  local  sobre  el  NAT  que  no  tenía  la
+
+(34:25) dirección  inversa.
+
+(34:29) Exacto.
+
+(34:31) Okay.
+
+(34:32) Me  estás  hablando  de  la  clase  pasada,
+
+(34:33) ¿no?
+
+(34:34) Sí,  sí,
+
+(34:35) sí.  Exacto.  Eso  es  lo  que  pasaba.
+
+(34:38) Entonces,  e
+
+(34:42) una  hay  dos  formas  entonces  de  escribir
+
+(34:44) una  ruta  estática.  De  acá  hasta  acá  es
+
+(34:47) igual  IP  route,  la  dirección  IP  destino,
+
+(34:52) o  sea,  el  lugar  hacia  donde  quiero
+
+(34:53) llegar.
+
+(34:55) Y  acá  varía.  Puede  ser  o  la  dirección  de
+
+(34:58) próximo  salto  o  si  no  puede  ser  la
+
+(35:01) interfaz  de  salida  del  router.  Sí,  si  yo
+
+(35:04) la  escribiera  de  la  otra  manera  que  es
+
+(35:06) posible  porque  a  veces  no  conozco  cuál
+
+(35:08) es  la  dirección  IP.  Esta  sí,  a  veces  no
+
+(35:11) la  conozco.
+
+(35:13) Yo  sé  que  la  mía  es  la  uno.  Bueno,  acá
+
+(35:15) la  puedo  extraer,  ¿no?  Pero  porque  son
+
+(35:17) son  dos  direcciones,  pero  ponle  que
+
+(35:18) fuese  un  barra27,
+
+(35:21) cosa  que  estaría  mal  porque  estoy
+
+(35:23) desperdiciando  direcciones  IP.  Pero
+
+(35:25) pongamos  que  sea  un  barra  27.  Con  barra
+
+(35:28) 27  tengo  un  montón  de  direcciones
+
+(35:30) utilizables,
+
+(35:31) ¿sí?  No  solamente  dos.  Entonces,  si  yo
+
+(35:34) sé  que  donde  estoy  parado  la  mía  es  la
+
+(35:36) uno,  pero  de  la  del  otro  lado  no  sé  cuál
+
+(35:38) es.  debería  usar  la  otra  forma  de
+
+(35:40) escribir  una  ruta  estática  y  es  escrib
+
+(35:42) con  barra  5  son  32,  ¿no?
+
+(35:45) No,  no  me  acuerdo,  pero  eh  ponerle  que
+
+(35:47) sí.  E
+
+(35:52) entonces  eh
+
+(35:56) entonces  la  otra  forma  de  escribir  la
+
+(35:58) ruta  es  de  esta  manera.  O  sea,  fíjense
+
+(36:01) que  paso  de  esta  imagen  a  esta  imagen  y
+
+(36:04) uso  la  interfaz  de  salida  del  router.
+
+(36:06) Sí,  lo  voy  a  agrandar  acá.  ¿Cuál  es  la
+
+(36:08) interfaz?  Si  estoy  parado  en  R1,  ¿cuál
+
+(36:10) es  la  interfaz  sería  del  router?  Bueno,
+
+(36:12) la  serial  00.  Entonces,  escribo  IP  route
+
+(36:17) 192  118  255,  que  es  la  dirección  de  la
+
+(36:22) red  destino  a  la  que  a  la  cual  quiero
+
+(36:24) llegar
+
+(36:26) y  voy  a  llegar  a  través  de  mi  interfaz
+
+(36:29) de  salida  del  router  que  es  la  seral  00.
+
+(36:32) ¿Si?  Y  cuando  vuelvo  a  escribir  show  IP
+
+(36:35) route,  se  muestra  de  esta  manera.  O  sea,
+
+(36:38) en  vez  de  aparecer  la  IP  ahí  dice,
+
+(36:41) "Tengo  una  ruta  estática  porque  tiene
+
+(36:43) una  S  adelante  y  yo  llego  a  esa  ruta  a
+
+(36:45) través  de  mi  interfaz  de  salida  y  mi
+
+(36:48) interfaz  de  salida,  como  sé  que  se
+
+(36:49) conecta  con  el  otro  extremo,
+
+(36:52) viaja  por  ahí."
+
+(36:54) Bueno,  esas  son  las  dos  formas  de
+
+(36:58) escribir  una  ruta  estática.
+
+(37:01) Ahora,  algo  importante  y  no  menor  es  la
+
+(37:04) ruta  por  defecto  o  gateway  por  defecto.
+
+(37:08) Sí,  que  cuándo  se  usa  el  gateway  por
+
+(37:12) defecto  cuando  yo  tengo  mi  router
+
+(37:14) también  conectado  hacia  internet.  Sí.
+
+(37:18) Eh,
+
+(37:20) y  yo  tengo  que  eh  digamos  porque  uno
+
+(37:24) digamos  eh  en  la  tabla  enrutamiento
+
+(37:27) eh  se  conocen  cuáles  son
+
+(37:30) los  prefijos,  las  direcciones  IP,  la
+
+(37:33) digamos  y  la  y  las  redes
+
+(37:36) dentro  de  eh  un  contexto  eh  digamos  de
+
+(37:41) una  red  propia,  pero  cuando  uno  quiere
+
+(37:44) salir  a  internet  y  pone,  no  sé,
+
+(37:46) infobe.com  com.  Sí,  el  router  no  sabe
+
+(37:50) que  es  infobe.com,  o  sea,  eso  lo  va  a
+
+(37:53) traducir,  digamos,  a  una  dirección  IP,
+
+(37:55) ¿no?  Eh,  y  esa  dirección  IP,  digamos,
+
+(37:59) tiene  que  salir  hacia  afuera  y  tiene  que
+
+(38:00) salir  por  un  lugar.  ¿Sí?
+
+(38:03) Entonces  tiene  que  haber  un  lugar  por
+
+(38:06) default  por  donde  salga  lo  que  no  sé  que
+
+(38:09) está  dentro  de  mi  contexto  o  dentro  de
+
+(38:11) mi  sistema  autónomo.  Y  eso,  digamos,  es
+
+(38:15) lo  que  la  funcionalidad  que  la  ruta  por
+
+(38:17) defecto.  Sí.  Y  se  escribe  de  esta
+
+(38:19) manera,  usando  el  mismo  concepto  que
+
+(38:21) antes,  nada  más  que  se  escribe  todo
+
+(38:25) cero.  Se  escribe  la  dirección  IP  es  toda
+
+(38:28) cero  y  la  máscara  de  subred  es  toda
+
+(38:30) cero.  Eso  significa  que
+
+(38:34) lo  que  no  sé  que  está  en  la  tabla  de
+
+(38:36) enrutamiento,  o  sea,  si  si  hacia  donde
+
+(38:39) yo  quiero  llegar  no  aparece  en  mi  tabla
+
+(38:42) de  enrutamiento  en  ninguna  de  la  de  los
+
+(38:45) prefijos,  sacalo  por  la  ruta  por
+
+(38:47) default.
+
+(38:48) que  esto  quiere  decir  que  que  vaya  a
+
+(38:50) cualquier  lado,  que  vaya  a  cualquier
+
+(38:52) lado  a  través  de  mi  interfaz  de  salida  o
+
+(38:54) me  o  eh  que  es  esta  o  a  través  de  la  eh
+
+(38:59) a  través  de  la  dirección  de  próximo
+
+(39:01) salto  y  ahí  yo  le  delego  la
+
+(39:04) responsabilidad  al  otro  extremo,  que  en
+
+(39:06) este  caso  es  el  router  del  proveedor  de
+
+(39:08) servicio,  y  que  él  me  resuelva
+
+(39:10) infobe.com.
+
+(39:13) está.
+
+(39:16) Eh  eh
+
+(39:18) yo  tengo  una  duda.  Esto  así  funciona  el
+
+(39:20) default  gateway  es  lo  mismo.
+
+(39:23) Claro,  por  eso  se  llama  este  gateway  por
+
+(39:26) defecto,
+
+(39:27) digamos,  o  también  se  lo  llama,  como
+
+(39:30) dice  acá  en  inglés,  gateway  of  last
+
+(39:33) resort  y  aparece  así.  Y  eso  quiere  decir
+
+(39:37) que  este  mi  gatewayight  last  resort,  en
+
+(39:41) este  caso  si  estoy  parado  en  router  1,
+
+(39:44) es  la  dirección  del  del  IP  del  otro
+
+(39:47) extremo  que  es  la  10  102.  Sí.  Y  la  red
+
+(39:51) es  cuando  dice  todo  cero  es  cualquier
+
+(39:54) cosa,  o  sea,  hacia  cualquier  lado.  Sí.
+
+(39:58) Perfecto.
+
+(40:00) Y  cuando  en  la  tabla  enrutamiento,
+
+(40:03) cuando  existe  una
+
+(40:06) cuando  existe  una  ruta  por  default,  se
+
+(40:09) queda  se  aparece  en  la  tabla  de
+
+(40:10) enrutamiento  con  una  S  y  un  asterisco.
+
+(40:13) Sí,  porque  si  fuera  una  S  sola  es  una
+
+(40:16) ruta  estática,  pero  como  tiene  un
+
+(40:18) asterisco,  el  asterisco  significa  que  es
+
+(40:21) la  ruta,  es  una  ruta  por  defecto.
+
+(40:24) Está  lo  dice  acá.
+
+(40:28) Eh,  ahí  dice  asterisco,
+
+(40:31) ahí  candidato  a  hacer  una  ruta  por
+
+(40:33) defecto,  dice.
+
+(40:36) Bueno,
+
+(40:38) hasta  ahí  enrutamiento  estático,  o  sea,
+
+(40:40) hay  que  escribirlo  a  mano,  digamos,
+
+(40:43) este,  y  hay  que  ocuparse,  administrar
+
+(40:46) las  rutas.
+
+(40:48) enrutamiento  dinámico.
+
+(40:51) Existen  distintos  tipos  de  protocolo  de
+
+(40:53) enrutamiento  dinámico  e  y  hay  una
+
+(40:56) clasificación.
+
+(40:58) Sí,  nosotros  hoy  acá  en  el  en  este
+
+(41:01) trabajo  de  laboratorio  vamos  a  ver  RIP
+
+(41:04) versión  2,  que  es  un  protocolo
+
+(41:06) enrutamiento  dinámico
+
+(41:08) que  entra  dentro  de  la  categoría  de  eh
+
+(41:13) protocolos  de  enrutamiento  dinámico
+
+(41:16) de  lo  que  se  la  llama  vector  distancia.
+
+(41:19) Sí.
+
+(41:20) E
+
+(41:22) así  se  llama  la  categoría  en  la  que
+
+(41:24) entra  el  el  este  este  protocolo
+
+(41:27) enrutamiento  dinámico,  ¿sí?  Vector
+
+(41:29) distancia.  ¿Por  qué  se  llama  vector
+
+(41:31) distancia?  Porque  la  métrica  que  usa,
+
+(41:34) digamos,  para  elegir  la  mejor  ruta
+
+(41:37) es  la  cantidad  de  asaltos.  ¿Sí?
+
+(41:40) Es  decir,  si  yo  tengo  una  topología  como
+
+(41:43) la  que  vamos  a  ver  después  o  en  otro
+
+(41:45) momento,  eh,  para  llegar  de  un  lugar  a
+
+(41:48) otro  tengo  que  saltar  de  un  router  a
+
+(41:50) otro.  Sí,  si  me  voy  a  esto  que  estaba
+
+(41:54) acá,  para  llegar  de  R1  a  R2,  tengo  un
+
+(41:57) salto  solo.  Sí,  o  sea,  salto  de  R1  a  R2
+
+(42:01) una  vez  sola,  salto  de  acá  a  acá.  Pero
+
+(42:03) si  tuviese  un  router  en  el  medio,
+
+(42:05) tendría  dos  saltos.  saltaría  al  router
+
+(42:07) del  medio  y  después  saltaría  al  router
+
+(42:10) R2.  ¿Sí  se  entiende  lo  que  es  cantidad
+
+(42:13) de  saltos?
+
+(42:16) Sí.  Sí.  O  sea,  podría  haber  muchos
+
+(42:18) routers  entre  R1  y  R2.
+
+(42:20) Sí,  correcto.  Bueno,  entonces  la  métrica
+
+(42:24) usa  un  protocolo  de  enrutamiento  que  es
+
+(42:28) clasificado  dentro  de  la  de  la
+
+(42:31) clasificación,  vale  la  redundancia,
+
+(42:33) vector  distancia,  es  la  cantidad  de
+
+(42:35) saltos.
+
+(42:36) Y  este  protocolo  de  enrotamiento,  que  es
+
+(42:38) el  que  vamos  a  usar,  que  es  el  más  fácil
+
+(42:41) y  el  más  eh  básico  de  todos,  que  se
+
+(42:44) llama  RIP,  en  este  caso  versión  2,
+
+(42:48) admite  a  que  haya  como  mucho  16  saltos
+
+(42:51) entre  un  extremo  y  el  otro.  ¿Sí?  O  sea,
+
+(42:54) esa  es  la  máxima.  Si  si  hay  ya  17
+
+(42:57) saltos,  ya  no  funciona,  no  sirve,
+
+(43:00) no  pasa  nunca.
+
+(43:02) E
+
+(43:04) y  bueno,  la  se  usa  la  versión  dos  porque
+
+(43:06) la  versión  dos  tiene  unas  mejoras  con
+
+(43:09) respecto  a  la  versión  uno  porque  permite
+
+(43:11) usar  direccionamiento  sin  clase  y
+
+(43:14) soporta  autenticación,  pero  la
+
+(43:15) autenticación  nosotros  no  la  usamos  acá,
+
+(43:18) pero  sí  es  importante  que  use
+
+(43:21) direccionamiento  sin  clase.
+
+(43:26) Los  otro  protocolo  enrutamiento  dinámico
+
+(43:29) es  olvidémonos  de  este  porque  ya  quedó
+
+(43:32) obsoleto  también.  Digamos  usemos,  vamos
+
+(43:35) a  usar  este  que  es  la  versión
+
+(43:39) mejorada  de  la  anterior  porque  la  E  que
+
+(43:41) acá  delante,  fíjense  que  lo  que  cambia
+
+(43:43) es  la  E.  Eh,  y  la  Eh,  hace  referencia  a
+
+(43:48) que  es  una  versión  extendida  mejorada  de
+
+(43:51) la  anterior  y  se  lo  conoce  como  IGRP.
+
+(43:55) Este  protocolo  en  particular
+
+(43:58) no  está  clasificado  en  100%  ni  como  si
+
+(44:03) fuese  un  protocolo  de  enrutamiento  de
+
+(44:05) vector  distancia,  ni  tampoco  entra  100%
+
+(44:09) en  la  clasificación,
+
+(44:11) en  la  segunda  clasificación  que  no  se
+
+(44:13) las  dije,  que  se  lo  llama  eh  estado  de
+
+(44:16) enlace.  Sí.
+
+(44:18) El  otro  protocolo  de  enrutamiento
+
+(44:20) dinámico  que  es  muy  conocido,  digamos,  y
+
+(44:22) es  muy  utilizado  se  llama  OSPF.  OSPF  sí
+
+(44:27) es  un  protocolo  puro  dentro  de  esa
+
+(44:28) clasificación  que  yo  les  digo,  se  llama
+
+(44:31) estado  de  enlace.  Sí,  el  estado  de
+
+(44:34) enlace,  digamos,  esa  clasificación
+
+(44:36) recibe  ese  nombre  porque  el  router
+
+(44:40) eh  lo  que  hace  es  corre  adentro  un
+
+(44:43) algoritmo
+
+(44:44) que  que  fue  diseñado  para  para
+
+(44:48) en  base  a  las  métricas  que  usa
+
+(44:50) correr  ese  algoritmo
+
+(44:52) y  elegir  cuáles  son  las  mejores  rutas  en
+
+(44:54) base  al  resultado  de  que  que  arroja  ese
+
+(44:56) algoritmo.  Sí.
+
+(44:59) Eh,  lo  que  pasa  con  IGRP  es  que  es  un
+
+(45:02) protocolo,  se  lo  conoce  como  híbrido
+
+(45:04) porque  funciona
+
+(45:07) eh  un  poco  como  eh  como  vector  distancia
+
+(45:11) y  funciona  un  poco  como  este  estado  de
+
+(45:14) enlace  y  usa  varias  métricas  para  hacer
+
+(45:17) eso.  Y  el  algoritmo  que  utiliza  acá
+
+(45:20) dentro,  que  este  lo  desarrolló  Cisco,  es
+
+(45:23) un  protocolo  desarrollado  por  por  este
+
+(45:26) fabricante,  eh,  y  es  muy  bueno  el  el
+
+(45:30) este  protocolo  enrutamiento  IGRP,  eh,
+
+(45:34) corre  un  algoritmo  que  se  llama
+
+(45:35) algoritmo  dual  y  ese  algoritmo  es  el  que
+
+(45:38) en  base  a  las  métricas  que  usa,  que  son
+
+(45:40) el  ancho  de  banda,  el  delay,  eh  la  carga
+
+(45:43) del  enlace  y  usa  otro  parámetro  más  que
+
+(45:46) es  la  confiabilidad  en  Base  a  esas
+
+(45:48) cuatro  métricas,
+
+(45:50) el  algoritmo  dual  hace  un  cálculo  y
+
+(45:53) dice,  "De  estas  cinco  rutas  que  tengo,
+
+(45:55) la  mejor  es  esta."  Sí,  porque  el  router
+
+(45:59) cuando  tiene  conectada  las  cosas  y
+
+(46:01) conoce  las  rutas  o  se  comparte
+
+(46:04) información  con  los  router  vecinos,
+
+(46:06) ¿sí?  Eh,  con  esa  con  esa  con  esa
+
+(46:09) información  hace  los  cálculos  y  dice,
+
+(46:12) "De  estas  cinco  rutas,  la  para  llegar  de
+
+(46:13) acá  a  acá,  la  mejor  es  esta."
+
+(46:16) y  OSPF  hace  lo  mismo,  por  eso  entra
+
+(46:19) dentro  de  la  categoría  de  eh  estado  de
+
+(46:23) enlace.  Sí.
+
+(46:25) Y  bueno,  eh  si  leyeron  acá  la  la
+
+(46:27) diapositiva  e  esto  es  lo  importante  que
+
+(46:30) tiene  este  este  protocolo.
+
+(46:34) Ese  protocolo  después  eh  a  lo  largo  del
+
+(46:36) tiempo  se  liberóamos  Cisco  que  fue  el  el
+
+(46:40) el  que  lo  diseñó,  lo  liberó  y  ahora  lo
+
+(46:42) pueden  usar  eh  los  routers  de  otros
+
+(46:45) fabricantes.  Pero  eh  hace  muchos  años
+
+(46:49) este  protocolo  que  era  excelente  porque
+
+(46:51) es  fácil  de  utilizar  y  y  es  es  muy
+
+(46:55) bueno,  solamente  lo  podían  usar  las
+
+(46:57) empresas  que  compraban  Router  Cisco.  Las
+
+(47:00) otras  tenían  que  usar  o  RI  versión  2,
+
+(47:02) que  es  muy  básico  y  lento,
+
+(47:06) o  tenían  que  usar  OCPF,  que  es  complejo.
+
+(47:09) Sí.
+
+(47:10) Eh,  algo  que  no  les  dije  de  esto,
+
+(47:12) digamos,  de  de  RIP  versión  2  y  estos
+
+(47:16) protocolos  de  enrutamiento  dinámico  que
+
+(47:18) que  funcionan  con  esa
+
+(47:21) eh  con  esta  este  métrica  denominada
+
+(47:25) cantidad  de  saltos,  es  que  para  pasarse
+
+(47:29) las  tablas  de  enrutamiento  unos  y  otros
+
+(47:32) lo  hacen  cada  30  segundos  o  cada  un
+
+(47:35) determinado  tiempo  que  no  me  acuerdo
+
+(47:37) exactamente  cuánto  es  y  le  pasa  la  tabla
+
+(47:39) enrutamiento  completa.  O  sea,  si  yo  me
+
+(47:42) paro  acá
+
+(47:44) y  los  dos  están  configurados  con  RION  2,
+
+(47:47) Router  1,  le  pasa  toda  la  tabla  de
+
+(47:48) enrutamiento  completa  cada  tanto  tiempo
+
+(47:51) a  este  a  Router  2  y  Router  2  hace  lo
+
+(47:54) mismo  al  revés.  Pero,  ¿qué  pasa  si  la
+
+(47:57) tabla  de  enrutamiento  es  gigante?
+
+(48:00) ese  pasaje  de  tablas  de  enrutamiento,
+
+(48:03) como  se  pasa  completa  cada  una
+
+(48:04) determinada  una  determinada  cantidad  de
+
+(48:07) tiempo,  resulta  ser  ineficiente  porque,
+
+(48:09) bueno,  eh  está  todo  el  tiempo
+
+(48:11) compartiéndose
+
+(48:13) mucha  información,  si  y  si  si  son  muchas
+
+(48:16) rutas  se  hace  un  poco  pesado.  En  cambio,
+
+(48:19) los  protocolos  de  enrutamiento  que  son
+
+(48:23) estado  enlace  pueden  hacer
+
+(48:25) actualizaciones  de  rutas  parciales,  es
+
+(48:27) decir,  e  divulgan,  digamos,  las  rutas  de
+
+(48:31) manera  parcial.  O  sea,  si  si  se  produce
+
+(48:34) un  cambio  le  notifica  el  cambio,  no  le
+
+(48:36) notifica  toda  la  tabla  completa.  Por  eso
+
+(48:39) son  es  más  eficiente.
+
+(48:42) Y  además  cada  uno  cuando  recibe  la
+
+(48:45) información
+
+(48:47) aplica  el  algoritmo  dual  por  porque  es
+
+(48:51) él  el  que  el  que  dice  cuál  es  la  mejor
+
+(48:54) ruta  para  dónde  está  parado.  Sí.
+
+(48:58) Y  bueno,  cuando  ustedes  ven  una  tabla
+
+(49:00) enrutamiento,  ven  esto  que  está  acá,
+
+(49:02) digamos,  eh  dentro  del  router,  tiran  el
+
+(49:06) comando  show  IP  route  y  se  ve  la  tabla
+
+(49:08) enrutamiento  así  con  distintas
+
+(49:10) direcciones  de  red  y  que  cada  una  tiene
+
+(49:13) una  letrita  al  costado,  puede  ser
+
+(49:15) directamente  conectada.  La  D  es  que
+
+(49:18) aprendió.  Y  acá  viene  lo  que  les  quería
+
+(49:20) decir.  La  D,
+
+(49:22) la  D  hace  referencia  al  protocolo  de
+
+(49:25) rutamiento  dinámico  IGRP.  Sí.  Y  esa  D
+
+(49:29) está  diciendo  en  esta  tabla  de
+
+(49:31) enrutamiento  que  estas  dos  rutas  que
+
+(49:32) están  acá  las  aprendió,
+
+(49:36) digamos,  haciendo  uso  de  ese  protocolo
+
+(49:39) de  enrutamiento  dinámico  IGRP.  Sí.  Y  la
+
+(49:43) y  acá  les  dice  cómo  la  aprendió,  que  la
+
+(49:44) aprendió  vía  la  209  165
+
+(49:48) 200  226.
+
+(49:50) A  través  de  esa  de  esa  red  se  aprendió
+
+(49:54) esta  esta  red.  Sí.
+
+(49:57) Bien.
+
+(49:59) Y  bueno,  y  acá  eh  si  quieren  sacarle  una
+
+(50:02) captura  de  pantalla  a  esto,  eh  digamos
+
+(50:05) las  rutas  tienen,  o  sea,  cada  línea  que
+
+(50:07) es  de  esta  que  está  acá,  cada  una  de
+
+(50:09) esas  líneas  responde  a  esta
+
+(50:11) nomenclatura.  Así  que  si  quieren  para
+
+(50:14) tenerlo  eh  eh  así  presente,  hagan  una
+
+(50:18) captura  de  pantalla  de  eso  y  guárdensela
+
+(50:20) y  y  lean  después  con  detalle  qué
+
+(50:23) significa  cada  cosa.
+
+(50:33) Bien,
+
+(50:36) hasta  acá  es  donde  vamos  a  a  ver  en  la
+
+(50:39) parte  teórica  y  perdí  una  hora  para
+
+(50:41) esto.  No  es  poco.
+
+(50:44) Y  después  la  clase  que  viene  vamos  a  ver
+
+(50:46) listas  de  control  de  acceso.  Sí.  Bien.
+
+(50:49) Bueno,
+
+(50:52) no  voy  a  hablar  de  esto  de
+
+(50:53) direccionamiento  y  pay  subnet  porque  lo
+
+(50:55) tienen  que  ver  ustedes  y  es  parte  de  la
+
+(50:56) teoría.
+
+(50:59) No  voy  a  hablar  de  esto  porque  ya  lo
+
+(51:01) saben  por  la  teoría  también,  pero  acá
+
+(51:02) están  los  estos  son  los
+
+(51:04) direccionamientos  con  clase.
+
+(51:07) Acá  están  las  clases  ABC,  que  significa
+
+(51:10) cada  una,  la  parte  red  con  la  parte  de
+
+(51:12) host.
+
+(51:13) Acá  habla  de  cómo  es  el  direccionamiento
+
+(51:15) classful,  digamos  que  es  justamente  esto
+
+(51:18) con  clase,  con  estas  clases,  con  estas
+
+(51:20) clases  sin  variar.
+
+(51:22) Si  es  una  clase  A,  le  pone  barra  barra
+
+(51:25) barra8.  Si  es  una  clase  B,  barra  16.  Es
+
+(51:27) una  clase  C/24.
+
+(51:29) Sí,  usa  completo.  ¿Ven  acá?  Barra24/24.
+
+(51:35) Sí,  todo,  todo  es  barra  eh  acá  esta  red
+
+(51:39) es  un  barra6
+
+(51:41) barra  16.  Bueno,  eh,  así  que  bueno,  esto
+
+(51:46) no  eh  después  esto  se  esto  habla  del
+
+(51:50) desperdicio  de  direcciones.  ¿Por  qué  es
+
+(51:52) ineficiente?  No,  porque  bueno,  si
+
+(51:54) ustedes  tienen  24,  digamos,  si  ustedes
+
+(51:56) tienen  200
+
+(51:58) 54  direcciones  y  solamente  usan  dos,
+
+(52:01) están  desperdiciando  un  montón.  Bueno,
+
+(52:03) habla  de  esto.  Eso  acá  habla  de  lo  de
+
+(52:07) máscara  de  longitud  variable,  que  yo  no
+
+(52:08) lo  voy  a  explicar  porque  como  les  digo,
+
+(52:10) esto  se  los  tienen  que  haber  explicado
+
+(52:12) en  la  teoría.  No  es  difícil,  simplemente
+
+(52:14) es  robarse  la  porción  de  host,  la
+
+(52:18) cantidad  de  bits  que  ustedes  requieren
+
+(52:20) para  hacer  la  cantidad  de  subnet  de  sus
+
+(52:22) redes  que  quieren.  Supongamos  que  el
+
+(52:24) enunciado  les  pide  eh  digamos  hacé  ocho
+
+(52:28) subredes.  ¿Listo?  ¿Cuántos  bit  necesito
+
+(52:30) afanar  de  de  la  parte  de  host?  Tres,
+
+(52:32) porque  dos  a  la  tr  es  ocho.  Sí.  y  tengo
+
+(52:35) ocho  subredes.
+
+(52:37) O  le  pueden  decir  e  que  necesitan  tanta
+
+(52:42) cantidad  de  host  por  subred.  Y  bueno,
+
+(52:46) hacen  la  cuenta,  si  necesitan  30  host
+
+(52:49) por  subred,  2  a  la  5  es  32  -  2,  30.  O
+
+(52:53) sea,  con  5  bit  que  me  quedo  la  parte  de
+
+(52:55) de  host  me  alcanza.  Sí.
+
+(53:00) Eh,  bueno,
+
+(53:02) así  es  la  la  máscara  de  la  longitud
+
+(53:04) variable,  que  en  realidad  esto  es  así
+
+(53:08) como  está  acá,
+
+(53:10) así  como  está  acá,
+
+(53:12) que  dice  barra27  ta  ta ta  ta ta.  Esto  es
+
+(53:15) un  subnetting
+
+(53:17) clásico.
+
+(53:19) Se  convierte  en  blcm  cuando  acá  hacen
+
+(53:22) esto
+
+(53:24) que  tiene  tienen  una  red  barra27  y  la
+
+(53:27) vuelven  a  subnetear.
+
+(53:29) con  un  con  un  eh  con  un  barra  más  chico.
+
+(53:34) Ejemplo,
+
+(53:37) tengo  todos  barra  30  acá,  pero  hay  un
+
+(53:40) barra  30  eh  que  que  es  más  chiquito,
+
+(53:44) digamos.  Eh,  bueno,  no  es  el  ejemplo  más
+
+(53:47) feliz  que  quiero.  Esperen,
+
+(53:50) acá  está,
+
+(53:52) acá  está.  Parto  de  un  barra  8,
+
+(53:56) lo  subneteo  en  barra16.  Tengo  todas
+
+(54:00) estas  direcciones  que  son  barra  barra  16
+
+(54:03) 0  1  2  3  4  5  hasta  255  barra  16.  Me  quedo
+
+(54:09) con  una  de  las  barras  16  esta  que  está
+
+(54:11) pintada  en  de  color  celeste.  Me  quedo
+
+(54:14) con  esa  y  la  vuelvo  a  subnetear  en  un
+
+(54:17) barra24.
+
+(54:19) ¿Sí?  Y  ahora  voy  a  tener  todas  estas
+
+(54:22) subredes  de  la  subred  anterior  con  un
+
+(54:24) barra24.  Es  decir,  como  que  yo  voy
+
+(54:27) achicando
+
+(54:28) paso  de  tener  una  red  muy  grande  a  tener
+
+(54:32) redes  más  chiquitas  y  darle  el  uso  según
+
+(54:34) lo  que  necesito.
+
+(54:38) Y  así  es  como  nace  en  una  red  bien
+
+(54:42) dimensionada  esto  que  está  acá.  Por
+
+(54:43) ejemplo,  en  Córdoba  necesito  25  host,  o
+
+(54:47) sea,  listo,  subneteo  para  tener  25  host.
+
+(54:51) En  Rosario  necesito  20  host,  subneteo
+
+(54:54) para  tener  20  host.  En  Mendoza  necesito
+
+(54:57) 15  host,  subneteo  para  tener  15  host.  Y
+
+(55:01) en
+
+(55:03) Tucumán  necesito  28  host.  Subneteo  para
+
+(55:06) tener  28  host.  Sí,  todo  eso,  todo  ese
+
+(55:10) análisis.
+
+(55:11) Si  uso  el  mismo  prefijo,  por  ejemplo,  la
+
+(55:14) 10000  o  o  como  está  acá  o  como  dice  acá
+
+(55:17) esta  red,
+
+(55:20) ¿verdad?
+
+(55:22) Ahí  si  si  uso  esto,  bueno,  tengo  que  ir
+
+(55:25) respetando.  Recuerden  que  el  subnet  es
+
+(55:28) del  de  la  red  e
+
+(55:33) de  la  red  con  mayor  cantidad  de  host  a
+
+(55:35) la  red  a  la  red  con  menor  cantidad  de
+
+(55:37) host.  ¿Es  así?  ¿Quién  me  corrige?
+
+(55:45) Eh,  no  entendí.  De  la  mayor  cantidad  a
+
+(55:47) la  menor  cantidad.
+
+(55:49) Claro,  si  a  vos  te  dan  un  prefijo,  te
+
+(55:51) dan  una  red,
+
+(55:54) te  dan  una  red
+
+(55:56) y  necesitas
+
+(55:58) eh eh  en  una  red,  te  dan  un  prefijo,  te
+
+(56:02) dan  este,  el  10,  este  que  está  acá,  te
+
+(56:05) dan  el  10000.
+
+(56:10) barra  8
+
+(56:12) y  te  dicen,  "Necesito  50  host,  después
+
+(56:15) necesito  100  host,  después  necesito  dos
+
+(56:17) y  después  necesito  20."
+
+(56:21) Tenés  que  poner  un  orden  a  eso.  Tenés
+
+(56:23) que  agarrar  primero,  si  necesitas  100
+
+(56:25) host,  haces  la  de  100.  Si  necesitas  20
+
+(56:28) host,  haces  20.  Si  necesitas  10,  haces
+
+(56:30) 10.  Si  necesitas  dos,  dos.  No  puede  ser
+
+(56:32) mezclado
+
+(56:34) porque  si  no  hay  hay  superposición
+
+(56:36) después.
+
+(56:37) ¿Se  entendió?  ¿Vieron  subnet?
+
+(56:40) Sí,  sí.
+
+(56:42) Y  lo  que  digo  es  correcto  o  o  no  está
+
+(56:44) bien.
+
+(56:46) Es  correcto.
+
+(56:48) Bien,
+
+(56:49) no  es  al  revés,  no  es  del  menor  al
+
+(56:51) mayor,  porque  si  hacen  eso  está  mal  y  se
+
+(56:54) y  se  superponen  la  la  las  subredes  y  y  y
+
+(56:59) está  todo  mal.
+
+(57:01) Sí,  me  siguieron  hasta  ahí.  O  sea,
+
+(57:03) ténganlo  en  cuenta  eso,  porque  eso  se
+
+(57:05) toma  en  los  parciales  y  en  los  finales.
+
+(57:08) Le  van  a  dar  una  red  y  le  van  a  decir,
+
+(57:09) "Subnetéala  con  BLCM  y
+
+(57:13) bueno,  y  tienen  que  hacerlo  ahí
+
+(57:16) como  esto  que  está  acá."  O  sea,  ¿qué
+
+(57:18) haría  yo  acá?  Primero  hago  la  de  28,
+
+(57:21) después  hago  la  de  25,  después  hago  la
+
+(57:23) de  20  y  por  último  la  de  15  cuando  hago
+
+(57:25) el  subneting.
+
+(57:28) ¿Se  entiende?
+
+(57:31) Sí.  Sí.
+
+(57:33) Por  ahora  veo  que  solamente
+
+(57:36) Bencardino  entendió  porque  el  resto  no
+
+(57:38) me  dijo  nada.
+
+(57:40) Bueno,  dos
+
+(57:42) de  mayor  a  menor.  Hay  hay  lugar  para  la
+
+(57:45) honestidad  o  no.
+
+(57:48) Sí,  obvio.  Siempre.
+
+(57:51) No,  no  sé  si  siempre.  Por  eso  pregunto.
+
+(57:53) Eh,  la  verdad  que  esto  en  lo  teórico,  al
+
+(57:55) menos  hablo  por  mí,  lo
+
+(57:57) recontraobrevolamos.
+
+(57:59) O  sea,  lo  estoy  lo  estoy  entendiendo
+
+(58:01) ahora.
+
+(58:02) Eh,  pero  bueno,  no  sé  si  hablo  solo  por
+
+(58:04) mí,  puede  ser,  a  mí  es  un  tema  que  no  me
+
+(58:06) no  me  es  muy  fácil,  pero  bueno,  eh,  lo
+
+(58:09) estoy  entendiendo  ahora.
+
+(58:11) Sí,  no  es  no  es  un  tema  tan  fácil  de  de
+
+(58:13) una.  Eh,  por  eso  digamos  les  digo  que  el
+
+(58:17) lugar  para  la  honestidad  siempre  está,
+
+(58:19) digamos,  e  bueno,  todo  también  tiene
+
+(58:22) dependencias,  ¿no?  De  de  de  entenderlo,
+
+(58:26) ¿no?  No,  no  es  no  es  solamente  de  de de
+
+(58:29) uno,  así  que  está  bien.
+
+(58:32) Por  eso  me  tomo  el  tiempo  de  más  o  menos
+
+(58:34) explicarlo.  Yo  no  debería  explicar  esto.
+
+(58:36) debería  ir  directamente  al  simulador  y
+
+(58:38) empezar  a  hacer  el  trabajo  que  tengo  que
+
+(58:40) hacer,  pero  bueno,  me  parece  que
+
+(58:42) se  agradece  igual  el  tiempo.
+
+(58:45) Sí,  las  clases  que  yo  doy  son  un  poco
+
+(58:47) más  largas,  un  poco  más  plomo,  por  así
+
+(58:48) decirlo.  Pero  bueno,  e  siempre  les  digo
+
+(58:52) a  los  alumnos,  eh,  si  quieren  invertir
+
+(58:55) un  poco  más  de  tiempo,  tal  vez  aprendan
+
+(58:58) un  poco  más.  Y  si  no,  eh,  si  voy
+
+(59:01) directamente  al  al  a  lo  a  lo  a  lo  que
+
+(59:04) hay  que  hacer,  digamos,  eh  no  me
+
+(59:07) gustaría  que  les  pase  que  no  entiendan
+
+(59:10) algo,  por  eso  me  tomo  este  tiempo.
+
+(59:14) Bueno,  está  bien,  está  bien.  Yo  yo  lo
+
+(59:15) que  personalmente  siento  cuando  por  ahí
+
+(59:16) decís,  "¿Se  está  entendiendo?"  Ya  lo
+
+(59:18) vieron,  ya  lo  saben.  Y  la  verdad  que
+
+(59:20) viste,  abrir  el  micrófono  para  decir  no,
+
+(59:23) no  creo  que  sea  algo  muy  muy  grato  para
+
+(59:25) vos  tampoco,  pero
+
+(59:26) no  no  me  molesta,  pero
+
+(59:27) la  estoy  luchando.
+
+(59:28) Lo  pregunto  porque  lo  pregunto  porque
+
+(59:33) justamente  porque  eh  me  interesa  saber
+
+(59:36) primero  si  lo  que  explico  se  entiende,
+
+(59:38) porque  por  ahí  si  me  dicen  sí  o  no,  eh
+
+(59:41) si  no  se  entiende  lo  vuelvo  a  repetir  y
+
+(59:43) si  me  dicen  que  sí  eh  seguimos  adelante.
+
+(59:47) Y  si  no,  bueno,  si  si  sirve,  sirve,  pero
+
+(59:51) digo  porque,  ¿qué  pasa?  Por  ahí  uno  no
+
+(59:53) lo  entendió  cuando  se  explicó  en  la
+
+(59:55) teoría  y  lo  entiende  ahora.  Entonces,
+
+(59:58) este,  digo  si  lo  cuando  digo  si  lo
+
+(60:01) vieron  es  porque  por  ahí  eh  a  veces  por
+
+(60:04) algún  feriado  o  a  veces  por  algún
+
+(60:08) inconveniente  que  haya  surgido
+
+(60:10) cualquiera,  es  un  tema  que  por  ahí  hoy
+
+(60:14) estamos  en  el  laboratorio,  pero  no  se
+
+(60:15) llegó  a  ver.
+
+(60:17) Ahí  apunto.  Sí.  Eh  eh  cuando  digo  se
+
+(60:20) entendió,  lo  vieron  en  la  teoría  porque
+
+(60:23) porque  ha  pasado  que  yo,  por  ejemplo,
+
+(60:24) voy  más  adelantado  de  lo  que  de  lo  que
+
+(60:26) se  vio  en  teoría,  porque  se  perdió  una
+
+(60:28) clase  por  un  feriado  y  justo  esto  no  lo
+
+(60:29) vieron.  A  eso  apunto  cuando  pregunto.
+
+(60:34) Con  lo  cual  siempre  hay  lugar  para  la
+
+(60:37) honestidad.
+
+(60:41) Bien,  entonces  y  bueno,  acá  viene  un
+
+(60:44) poco  esto  lo  del  eh  lo  del  lo  del
+
+(60:47) direccionamiento  sin  clase,  digamos,  eh,
+
+(60:52) que  que  dice  que  es  eh  que  es  eficiente,
+
+(60:55) ¿sí?  Eh,  ¿por  qué?  Porque  cuando  ustedes
+
+(60:59) tienen,  cuando  el  router  trabaja  con
+
+(61:01) direccionamiento,  con  clase  y  todo  lo
+
+(61:02) que  entiende  es  o  barra8  o  barra16  o
+
+(61:06) barra24,  que  son  las  tres  clases  que
+
+(61:08) conocemos,  A,  B  o  C,  eso  se  vuelve
+
+(61:11) ineficiente  porque  si  imagínense  si  yo
+
+(61:14) para  un  enlace  entre  dos  router  que
+
+(61:16) necesito  dos  direcciones  IP,  uso  un
+
+(61:19) barra24  que  tiene  250
+
+(61:23) tres  direcciones  eh  utilizables  porque
+
+(61:27) Una  es  para  broadcast  y  otra  para  la  red
+
+(61:29) y  estoy  desperdiciando  252,
+
+(61:32) 251  porque  solamente  estoy  usando  dos,
+
+(61:35) por  eso  se  vuelve  ineficiente.  Si,  y  por
+
+(61:38) eso  la  conexión  entre  dos  router  que  es
+
+(61:40) un  enlace
+
+(61:42) siempre  es  un  casi  siempre  es  un  barra
+
+(61:44) 30  porque  necesito  dos  direcciones  IP
+
+(61:47) nada  más.
+
+(61:48) Entonces  van  a  ver  que  es  muy  común  que
+
+(61:50) en  un  enlace  de  una  red  bien
+
+(61:52) dimensionada  el  enlace  sea  un  barra  30.
+
+(61:55) Y  entonces  ahí  viene  esto  de  que  el  este
+
+(61:58) el  el  uso  del  cider,  el  classless
+
+(62:02) interdoma  routing,  o  sea,  ruteo  usando
+
+(62:06) eh  dominio  sin  clase,  es  más  eficiente
+
+(62:09) porque  fíjense  que  está  tachado,  clase
+
+(62:12) A,  clase  B,  clase  C  y  uso  esta  ruedita
+
+(62:14) que  tiene  muchos  colores.  uso  todo,
+
+(62:16) todos  estos  colorcitos  son  direcciones
+
+(62:18) IPs  eh  eh
+
+(62:20) perdón  eh  direcciones  más  chiquitas,  ya
+
+(62:23) muchas  muchas  subredes  hay  acá  dentro.
+
+(62:27) Y  después  viene  el  concepto  que  viene  eh
+
+(62:30) como  de  la  mano  de  de  del  cider,  la
+
+(62:33) sumarización  de  rutas.
+
+(62:35) Lo  explico  a  nivel  conceptual.  ¿Qué
+
+(62:37) significa  la  sumarización  de  rutas?  Yo
+
+(62:39) acá  tengo
+
+(62:41) cuatro  sucursales,  Rosario,  Mendoza,
+
+(62:43) Tucumán  e  y
+
+(62:47) Buenos  Aires.
+
+(62:48) E  y  cada  una  tiene  eh  su  red,
+
+(62:53) son  todas  eh  prácticamente  iguales,  ¿no?
+
+(62:56) 1928  00
+
+(62:59) eh  20  40  y  80.  Pero,  ¿qué  tienen  todas
+
+(63:03) en  común?  el  192  168
+
+(63:07) y  algunos  bits
+
+(63:10) que  comparten.
+
+(63:13) Si  yo  el  estos  estos  números  que  están
+
+(63:15) acá,  el  0,  el  2,  el  4  y  el  8  los  paso  a
+
+(63:19) a  binario,
+
+(63:20) va  a  haber  algunos  bits  que  comparten  y
+
+(63:23) otros  que  no  y  otros  que  cambian.  ¿Me
+
+(63:25) siguen  hasta  ahí?
+
+(63:27) Sí.
+
+(63:28) Entonces  uso  una  subredito  más  grande  y
+
+(63:32) cuando  yo  soy  el  proveedor  de  servicio
+
+(63:35) que  recibo
+
+(63:37) eh  recibo  en  mi  tabla  de  enrutamiento
+
+(63:40) todos  estos  prefijos  de  red,  1/23,  1/2,
+
+(63:45) 1/22,  1/2
+
+(63:47) y  yo  le  tengo  que  con  le  tengo,  yo  soy
+
+(63:50) telecentro  y  le  tengo  que  pasar  esa
+
+(63:52) información  a  a  a
+
+(63:57) IPLAN.
+
+(63:58) Entonces,  no  le  voy  a  mandar  todos  estos
+
+(64:00) cuatro,  le  mando  una  sola  dirección
+
+(64:03) sumarizada.  ¿Qué  quiere  decir?  Que  esta
+
+(64:05) dirección  que  yo  le  mando  con  un  barra
+
+(64:08) 20  me  incluye  el  barra23,  me  incluye  el
+
+(64:11) barra23,  el  barra22  y  el  barra21.  Le
+
+(64:14) mando  una  sola  dirección  IP  que
+
+(64:17) sumariza,  es  decir,  que  contiene  adentro
+
+(64:21) todas  estas  y  se  la  mando.  Sí.  O  sea,
+
+(64:25) mando  algo  un  poquito  más  grande  y  yo  sé
+
+(64:27) que  eso  que  mando  incluye  todo  esto,
+
+(64:31) pero  no  le  mando  un  barra24  porque  no
+
+(64:33) hace  falta.  Yo  ya  sé  que  barra24  entra
+
+(64:36) todo  esto.  Le  mando  un  barra  20  porque
+
+(64:38) yo  hice  un  estudio  de  esto  y  sé  que
+
+(64:40) todas  estas  entran  en  un  barra  20.  Sí,
+
+(64:45) así  a  simple  vista  no  parece,  pero  si  se
+
+(64:48) hace.  Eh,  bueno,  y  eso  se  hace  de  esta
+
+(64:51) manera,  ¿no?  Este,  hago  una  ruta
+
+(64:53) estática,  IP  route  162  y  le  mando  este
+
+(64:58) se  lo  mando  eh  eh  de  esta  manera,  ¿sí?  O
+
+(65:03) sea,  si  esto  está  hecho  con  rutas
+
+(65:04) estáticas,  anulo  todas  las  rutas  eh  que
+
+(65:07) son  un  montón  y  pongo  una  sola  ruta  que
+
+(65:10) incluye  todas.
+
+(65:13) Conceptualmente  hablando.  Sí.
+
+(65:16) Eh,  bueno,  no  me  quiero  detener  mucho  en
+
+(65:17) esto,  pero  así  es  como  se  calcula  eh  una
+
+(65:21) sumarización  de  rutas  y  está  con  el
+
+(65:23) ejemplo  que  que  este  este  PDF  ustedes  lo
+
+(65:26) tienen  eh  está  con  la  información  que
+
+(65:28) bajaron  de  este  trabajo.
+
+(65:31) Fíjense  qué  bits,  qué  bits  comparten  las
+
+(65:36) 17200,
+
+(65:38) 172  2100,  2200  2300.  Lo  paso  todo  a
+
+(65:42) binario  a  cada  una  de  estas.  ¿Y  qué  bits
+
+(65:46) comparten?  Comparten  todos  los  que  están
+
+(65:48) acá  sombreados  en  naranja.  Sí.  Los
+
+(65:53) cuentos.  ¿Cuánto  es?  14.  O  sea,  va  un
+
+(65:56) barra  14  hace  referencia  a  esta  a  esta  a
+
+(65:59) esta  red.  Entonces,  claro,  cuando  yo  voy
+
+(66:02) a  pasar  la  la  dirección  esta  que  está
+
+(66:05) acá,
+
+(66:08) sería  como  este  ejemplo,  si  quieren  lo
+
+(66:10) pueden  hacer  ustedes,  lo  hacen  después
+
+(66:13) hacen  lo  mismo  que  hizo  acá,  este  mismo
+
+(66:15) procedimiento  de  pasarlo  a  binario  y  y
+
+(66:17) se  fijan  que  coincide  y  después  se  van  a
+
+(66:19) dar  cuenta  que  va  a  ser  este  barra  20  de
+
+(66:21) acá.  ¿Se  entiende  lo  que  les  quise
+
+(66:24) mostrar
+
+(66:26) de  cómo  se  llega  a  eso?
+
+(66:29) Esto,  profe,  es  cuando  se  pasan  las
+
+(66:31) tablas  entre  routers.
+
+(66:33) Claro,  digamos,  porque  se  pueden  pasar
+
+(66:36) las  rutas  sumarizadas.  Le  pasas  solo
+
+(66:38) esta  y  ya  está,
+
+(66:40) porque  esta  es  como  que  incluye  todo
+
+(66:42) esto.
+
+(66:42) En  cambio,  si  no  están  sumarizadas,  se
+
+(66:44) pasan  todas.  Y  en  la  tabla  de
+
+(66:46) enrutamiento  se  ve  esta,  se  ve  esta,  se
+
+(66:48) ve  esta,  se  ve  esta,  se  ven  estas
+
+(66:49) cuatro.  Y  si  si  está  sumarizado,  si  no
+
+(66:52) ve  una  sola.
+
+(66:54) Total,  sabe  que  esta  ruta  incluye  todas
+
+(66:56) estas  porque  te  das  cuenta  por  esto,  si
+
+(66:58) haces  este  análisis  de  acá,
+
+(67:01) se  llega
+
+(67:03) eh eh  vos  vos  ves  todos  los  bits  que
+
+(67:06) coinciden
+
+(67:07) y  después  armás  la  ruta  viendo  todos  lo
+
+(67:10) que  coinciden.  Sabes  que  te  queda  un
+
+(67:13) barra  es  un  barra  14  porque  acá  hay
+
+(67:15) siete,  perdón,  hay  8,  9,
+
+(67:19) 14.  O  sea,  hasta  el  barra  14  coinciden
+
+(67:22) todos.  Entonces,  bueno,  te  armas  un  la
+
+(67:25) red  con  un  barra  14.  ¿Cuál  es  la  red?  La
+
+(67:29) 20/1.
+
+(67:32) ¿Ven?
+
+(67:35) Bueno,  e
+
+(67:38) esto  después  mírenlo  en  detalle,  pero  eh
+
+(67:40) así  como  un  pantallazo  rápido  es  así.
+
+(67:44) Total,  este  lo  tienen  Ah,  termina  acá.
+
+(67:47) Bueno,
+
+(67:49) en  ahora  vamos  a  ir  a  eh  voy  a  parar
+
+(67:54) esto.
+
+(67:57) Eh,  bueno,  mientras  ustedes  miran  esto  y
+
+(68:00) lo  siguen  analizando  un  poco,  leyéndolo,
+
+(68:03) digamos,  como  para
+
+(68:05) asimilarlo,  yo  paso  un  segundo  al  baño  y
+
+(68:09) vengo.  Y  ahora  sí  arrancamos  a
+
+(68:11) configurar  y  arrancamos,  pero  a  full,
+
+(68:12) ¿eh?
+
+(72:39) central,  que  esa  casa  central  tiene  tres
+
+(72:41) routers  distintos.  Sí.
+
+(72:43) Eh,  vamos  a  hacer  de  cuenta  que  la
+
+(72:45) sucursal  1,  como  les  digo,  es  Rosario,
+
+(72:47) la  sucursal  2s  Mendoza,  la  sucursal  3
+
+(72:49) Tucmán,  por  ejemplo,  y  esto  es  Buenos
+
+(72:51) Aires  y  que  cada  router  el  que  va  para
+
+(72:56) ha  el  proveedor  de  servicio,  hay  un
+
+(72:58) proveedor  de  servicio  que  que  brinda
+
+(73:00) servicio  de  acá  hasta  Rosario,  de  acá
+
+(73:03) hasta  hasta  Mendoza  y  de  acá  hasta
+
+(73:05) Tucumán.  Sí.  Y  ustedes  tienen  que  usar
+
+(73:08) el  direccionamiento  este  que  está  acá,
+
+(73:11) 192  168.1.
+
+(73:14) 132/30.
+
+(73:17) ¿Qué  dos  direcciones  eh  les  va  a  dar  acá
+
+(73:22) para  una  va  a  ir  en  una  se  va  a  poner  en
+
+(73:24) este  router  y  la  otra  se  va  a  poner  en
+
+(73:26) este  router  en  sus  interfaces  para  que
+
+(73:28) se  puedan  conectar  entre  sí?
+
+(73:33) Son  dos  direcciones  nada  más.
+
+(73:37) Una  es  la  133,
+
+(73:39) que  la  vamos  a  poner  abajo,  y  la  134  la
+
+(73:43) vamos  a  poner  arriba.
+
+(73:46) Después,  eh,  en  esto  lo  mismo  se  usa  la
+
+(73:49) 192  168.1.168/30.
+
+(73:53) Vamos  a  poner  la  169  acá  abajo  y  la  170
+
+(73:58) arriba,  ¿sí?  La  IP.  Y  acá  esto  se  lo  voy
+
+(74:01) a  dejar  para  que  lo  piensen  ustedes,
+
+(74:03) ¿sí?  Porque  les  dice  que  para  usar  el
+
+(74:08) resultado  de  esto  que  está  acá  tiene  que
+
+(74:11) ser  una  dirección  como  esta  192  168
+
+(74:15) punto
+
+(74:17) 1  punto  algo.  Seguramente  va  a  ser.  Sí.
+
+(74:20) Y  sale  de  acá  o  192,  78  uno,  algo  va  a
+
+(74:24) ser  acá  tienen  que  hacer  esto  que  está
+
+(74:28) relacionado  con  esto  de  acá  abajo.
+
+(74:31) Eh,  y  después  toda  la  casa  central  tiene
+
+(74:34) este  direccionamiento,  la  192  168.0/24.
+
+(74:41) Es  decir,  que  cada  router  de  acá,  este
+
+(74:43) va  a  tener  la  la  21,  este  la  22,  este  la
+
+(74:46) 23  y  este  la  2  254.  Todo  barra  24  acá
+
+(74:50) arriba  y  en  cada  sucursal  lo  que  dijeron
+
+(74:54) es  para  no  desperdiciar  las  direcciones
+
+(74:56) IP  vamos  a  usar  lo  mismo.  92  681  32/27,
+
+(75:04) después  la  164/27
+
+(75:06) y  de  acá  se  van  a  dar  cuenta  cuál  es  la
+
+(75:08) otra  que  está,  porque  cuando  yo  tengo  un
+
+(75:12) barra27,
+
+(75:14) cuando  yo  tengo  un  barra27,
+
+(75:16) las  direcciones  de  red  saltan,  escuchen
+
+(75:20) bien,  las  direcciones  de  red,  o  sea,  las
+
+(75:23) subredes,
+
+(75:25) saltan  cada  32
+
+(75:29) eh
+
+(75:31) cada  32  eh,
+
+(75:34) ¿cómo  decirlo?
+
+(75:36) Saltan  cada  32.  No  sé  cómo  explicarles
+
+(75:39) el  por  qué,  pero  el  por  qué  es  porque
+
+(75:41) cuando  hacen  las  cuentas  se  van  a  dar
+
+(75:43) cuenta  que  si  este  es  un  estas  es  la
+
+(75:47) esta  es  la  subred  y  esta  es  la  subred,
+
+(75:51) la  es  la  1.32/27,
+
+(75:54) es  la  subred.  La  subred  es  la  1.64.
+
+(75:58) ¿Cuánto  saltó  de  32  a  64?
+
+(76:01) 32  direcciones.
+
+(76:02) 32.
+
+(76:04) Perfecto.  Pero  eso  tienen  que  hacer  la
+
+(76:05) cuenta,  ¿sí?  Ustedes  para  para  entender
+
+(76:07) esto  que  estoy  diciendo.  Y  en  base
+
+(76:12) en  base  a  eso  que  les  acabo  de  decir,
+
+(76:15) que  es  una  reglita  nemotécnica  o  algo
+
+(76:18) que  me  dio  la  experiencia,
+
+(76:21) ¿cuánto  creen  que  va  a  ser  la  dirección
+
+(76:23) que  se  va  a  usar  acá?  Y  también  es  una
+
+(76:25) 192  68.1
+
+(76:29) barra  digamos  punto  X/27.  ¿Cuánto  sería
+
+(76:32) el  X?  O  sea,  ¿cuál  sería  la  dirección  de
+
+(76:34) acá?
+
+(76:37) Perfecto.
+
+(76:38) Excelente.  O  sea,  que  la  red  de  acá  va  a
+
+(76:42) ser  que  es  es  la  subred.  Fíjense  que
+
+(76:44) dice  la  subred  de  esta  dirección  de  red.
+
+(76:49) Si  esta  es  la  subred,  32.
+
+(76:53) La  subred  2  es  esta  que  saltó  32
+
+(76:56) direcciones  es  64.  La  tercer  subred  que
+
+(77:00) salta  32  más  es  96.  Perfecto.
+
+(77:05) Bueno,  y  después  con  esa  9.96  que  está
+
+(77:08) acá  tienen  que  hacer  la  magia  esta  que
+
+(77:10) está  acá.  Sí,  tienen  que  convertirla
+
+(77:13) una  de  ellas  en  un  barra  30.  ¿Se
+
+(77:15) entendió?
+
+(77:19) Bueno,  no  voy.  Ustedes  tendrían  que
+
+(77:21) hacer  todo  esto,  completar  todo  esto.  Es
+
+(77:24) algo  un  trabajo  interno  de  ustedes.  Yo
+
+(77:26) no  lo  necesito.  Yo  necesito  solamente  el
+
+(77:28) PKT  subido.
+
+(77:31) Pero  para  aprender  deberían  más  o  menos
+
+(77:33) hacerlo  y  para  tener  la  guía,  ¿no?
+
+(77:35) Bueno,  yo  no  voy  a  seguir  esto,  yo  lo
+
+(77:37) voy  a  hacer  directo.  Sí.  Este
+
+(77:41) eh  y  lo  voy  a  hacer  y  lo  voy  a  hacer
+
+(77:43) rápido.  Tienen  que  asignarle  direcciones
+
+(77:46) IP  a  la  a  la  interfazfas  internet,  a  la
+
+(77:48) serial.
+
+(77:50) Este  tienen  que  ponerle  eh  configurar  el
+
+(77:52) SSH.
+
+(77:54) Este  tienen  que  hacer  todo  esto  que  está
+
+(77:57) acá.  Lo  que  yo  voy  a  hacer  es  configurar
+
+(78:00) las  cosas  para  que  anden  después  el  SSH,
+
+(78:03) este,  digamos,  el  host  name  y  todo  eso
+
+(78:07) lo  van  a  hacer  ustedes.  Yo  les  voy  a
+
+(78:08) mostrar  cómo  se  resuelve  para  que
+
+(78:11) funcione  y  cómo  se  cómo  funciona  el
+
+(78:13) enrutamiento,  que  es  lo  que  me  interesa
+
+(78:15) explicar  acá.  ¿Sí?  Con  lo  cual,  ah,  una
+
+(78:19) cosa  más,
+
+(78:23) el  punto
+
+(78:25) van  a  resolver  hasta  el  punto  H,
+
+(78:29) inclusive
+
+(78:31) el  punto  I  en  adelante  no  hay  que  hacer
+
+(78:33) más  nada.  ¿Sí?  O  sea,  el  punto  I  no.  El
+
+(78:36) punto  I  no  porque  explico  directamente
+
+(78:38) esto  en  el  trabajo  número  cuatro,  así
+
+(78:39) que  el  punto  I  no.  Tienen  que  hacer
+
+(78:41) hasta  el  H  inclusive.  Está
+
+(78:45) bueno.  Listo.  Entonces,  me  voy  a  lanzar,
+
+(78:48) me  voy  a  lanzar
+
+(78:51) a  a  que  presten  mucha  atención  porque
+
+(78:55) voy  a  ir  con  velocidad  con  la  pinto,  no
+
+(78:57) voy  a  hacer  eh
+
+(79:00) eh  blando  eh  como  las  otras  clases.  Eh,
+
+(79:04) el  escenario  es  este,  así  pelado.  Cuando
+
+(79:07) abren  el  archivo  es  así.  Entonces,  ¿qué
+
+(79:09) era  lo  primero  que  tenía  que  hacer?
+
+(79:11) archivo.  Guardar  como
+
+(79:14) me  voy  al  esto,  le  pongo,  en  mi  caso,  le
+
+(79:16) pongo  así  en  ese  después  ustedes  ya
+
+(79:18) saben  cómo  es  la  nomenclatura  que  usamos
+
+(79:20) y  voy  a  empezar  a  con
+
+(79:22) Sí,
+
+(79:22) disculpe,  ¿podría  hacer  un  poco  de  zoom?
+
+(79:25) Sí,  ¿por  qué  no?  A  ver,
+
+(79:27) muchas  gracias.
+
+(79:29) Se  me  va  mucho,  eh.  Ah,  okay.
+
+(79:32) Eh,  hay  un  Sí,  se  me  va  mucho  y  pierdo
+
+(79:35) pierdo  visibilidad,  eh,  porque  no  sé  si
+
+(79:38) puedo  hacerlo  intermedio.  A  ver,  esp
+
+(79:40) view  zoom
+
+(79:43) no  directamente  me  permite  hacer  y  me  lo
+
+(79:46) hace,  perdón,  me  lo  hace  mucho  zoom  y
+
+(79:48) pierdo  visibilidad  abajo.
+
+(79:51) Bueno,
+
+(79:51) okay,
+
+(79:52) voy  a  conectar  todo  rápido  e  para  eh
+
+(79:57) para  empezar  a  configurar.  Eh,  total
+
+(80:00) ustedes  ya  saben  que  que  lo  tienen  que
+
+(80:02) que  conectar  así.  Sí,  yo  voy  a  conectar
+
+(80:05) todo,  eh,  pero  no  voy  a  configurar,  por
+
+(80:08) ejemplo,  la  sucursal  3,  voy  a  configurar
+
+(80:10) la  sucursal
+
+(80:13) eh  la  uno  y  la  dos  para  mostrar  la
+
+(80:14) funcionalidad.
+
+(80:16) Y  bueno,  y  ustedes  hacen  la  magia  con  lo
+
+(80:18) otro.  Sí.
+
+(80:30) Este  lo  conecto  en  la  uno.
+
+(80:34) Este  lo  conecto  en  la  dos.
+
+(80:37) Simplemente  como  para  seguir  un  orden,
+
+(80:39) ¿no?  1,  dos  y  3.  Ahí.  Y  este  lo  voy  a
+
+(80:43) conectar.
+
+(80:46) Este  voy  a  conectar  en  la  24.  Ahí  está.
+
+(80:50) Bien,  ahí  ya  conecté  todo.  Ahora  voy  a
+
+(80:53) conectar  los  enlaces  seriales.
+
+(80:55) Ustedes  sigan  lo  que  dice  la  guía.  Sí,
+
+(80:57) yo  lo  voy  a  hacer  porque,  ¿qué  pasa?  ¿Se
+
+(81:00) acuerdan  que  les  expliqué  que  uno  de
+
+(81:01) estos  dos  es  el  DTE  y  el  otro  es  el  DCE?
+
+(81:06) Bueno,  el  router  que  asuma  el  router  que
+
+(81:10) asuma  el  rol  de  DCE,  en  este  caso,  es  el
+
+(81:14) que  tiene  el  clock,  porque  las
+
+(81:17) interfaces  seriales,  si  es  que  cursaron
+
+(81:20) la  materia  comunicaciones  y  si  no  se  los
+
+(81:22) digo  yo,  aunque  ya  se  los  dije  antes,
+
+(81:25) las  interfaces  seriales  necesitan  para
+
+(81:28) la  transmisión  de  datos  un  clock  que  le
+
+(81:31) marque  el  tiempo,  ¿sí?  O  sea,  que  le
+
+(81:34) marque  el  sincronismo.  Sí,  porque  si  no
+
+(81:37) tienen  una  sincronización,  las
+
+(81:39) interfaces  no  funcionan  correctamente.
+
+(81:44) El  clock,  ese  clock  lo  maneja  uno  de  los
+
+(81:47) dos  router  y  lo  maneja  el  router  que
+
+(81:49) está  que  tiene  el  extremo  del  cable  que
+
+(81:52) dice  DCE.  Y  cuando  se  le  enchufa  el
+
+(81:55) extremo  de  ese  cable  serial  que  dice
+
+(81:57) DCD,  el  equipo  asume  ese  rol  y  es  el  que
+
+(82:00) maneja  el  clock.  Sí.
+
+(82:03) Fíjense  en  los  cables,
+
+(82:06) que  acá  tenemos  dos  cables.  Uno  que
+
+(82:08) tiene  un  relojito,  ese  es  el  que  dice
+
+(82:10) serial  DCE,  y  otro  que  no  tiene  el
+
+(82:11) relojito,  que  dice  serial  DTE.
+
+(82:14) Si  usan  el  cable  del  relojito,  lo  hace
+
+(82:17) automático.  Si  usan  el  cable  común,  el
+
+(82:20) que  no  tiene  el  relojito,  quiere  decir
+
+(82:22) que  estoy  usando  el  cable  que  que  que
+
+(82:25) tiene  el  extremo  que  dice  DTE.  Si  toco
+
+(82:28) ahí,  entonces  quiere  decir  que  si  toco
+
+(82:30) acá  y  elijo  la  conexión  serial,  la  eh
+
+(82:34) voy  a  usar  en  todos  la  11,  que  no  sé,  me
+
+(82:38) gusta  la  1.  A  ver,  tiene  la  11.  Sí,
+
+(82:41) listo.  Entonces,  fíjense  lo  siguiente.
+
+(82:46) ¿Cuál  tiene  el  relojito?
+
+(82:48) la  de  arriba,  ¿no?
+
+(82:52) Eso  quiere  decir  que  como  yo  toqué  acá
+
+(82:55) el  cable  que  dice  DTE,  dice  sería  el
+
+(82:57) DTE,
+
+(82:59) el  primer  router  al  que  le  conecto  el
+
+(83:01) cable  es  un  DTE.  Entonces,  si  toco  acá
+
+(83:05) primero,  este  se  va  a  convertir  en  el
+
+(83:06) DTE  y  este  va  a  ser  el  DCE.
+
+(83:09) Entonces,  el  DCE  es  el  que  tiene  el
+
+(83:11) clock.  ¿Lo  ven  ahí?  que  tiene  el
+
+(83:12) relojito  al  lado  donde  dice  seral  eh  eh
+
+(83:17) 01  1.
+
+(83:19) Bueno,
+
+(83:20) sí,  sí.
+
+(83:21) Entonces,
+
+(83:24) ahí  estamos.  Bien.  Y  ahora  tengo  que
+
+(83:26) poner  el  direccionamiento  IP  que  le
+
+(83:28) corresponde  a  cada  PC.  Bueno,  listo.
+
+(83:30) Vamos  a  empezar  a  configurarlo  rápido.
+
+(83:31) Entonces,  desktop
+
+(83:34) es  el  que  está  en  la
+
+(83:34) Tengo  una  duda.
+
+(83:36) Puede  ser  que  están  con  cables  cruzados
+
+(83:38) las  PC  a  los  routers.
+
+(83:42) Sí.
+
+(83:44) Y  está  bien.
+
+(83:47) ¿Por  qué  era  eso?
+
+(83:49) Porque  es  el  caso  particular.  ¿Se
+
+(83:52) acuerdan  que  yo  les  había  dicho  que
+
+(83:53) cuando  los  equipos  tienen
+
+(83:54) funcionalidades  distintas
+
+(83:57) usan  un  cable  derecho.
+
+(83:59) Sí.  El  switch  y  el  router  tienen
+
+(84:01) funcionales  distintas,  usan  un  cable
+
+(84:02) derecho.  Una  laptop  y  un  Switch  tienen
+
+(84:05) funcionales  distintas,  usan  un  cable
+
+(84:07) derecho.  El  router  y  una  PC  tienen
+
+(84:10) funcionalidades  distintas,  pero  es  un
+
+(84:11) caso  particular.  Necesitan  funcionar  con
+
+(84:15) un  cable  cruzado  porque  el  puerto  que
+
+(84:20) tiene  el  router
+
+(84:22) eh  no  tiene  la  capacidad  que  tiene  el
+
+(84:25) switch  de  hacer  lo  que  yo  les  conté,
+
+(84:27) MDI,  MDX.
+
+(84:29) Y  es  como  si  tuviese  una  placa  de  red  y
+
+(84:33) si  vos  en  la  placa  de  red  de  una  PC
+
+(84:35) contra  otra  PC,  porque  el  router  se
+
+(84:37) comporta  como  una  PC.
+
+(84:38) Claro.
+
+(84:39) La  conexión.  Entonces  vos  tenés  que
+
+(84:41) cruzar  el  cable  porque  un  extremo  es  RX
+
+(84:43) y  el  otro  TX.  Un  extremo  es  TX  y  el  otro
+
+(84:46) RX.  Por  eso  está  cruzado  porque  RX  con
+
+(84:49) TX  y  TX  con  RX.  ¿Se  entiende?
+
+(84:53) Sí.  Sí.
+
+(84:54) Es  como  conectar  dos  peces  entre  sí.
+
+(84:57) Eh,  es  un  caso  particular.  Sí.  Bueno,
+
+(85:00) entonces  le  vamos  a  poner  la  dirección
+
+(85:01) IP  a  la
+
+(85:04) 192  168
+
+(85:06) pun  1  pun3  porque  era  un  barra27.
+
+(85:11) ¿Quién  se  acuerda  cuánto  es  un  barra27?
+
+(85:16) 255
+
+(85:18) 25.
+
+(85:21) ¿Cuánto?
+
+(85:24) Acá  falta  un  número.
+
+(85:26) ¿Alguien  sabe  qué  es  un  barra27?  O  sea,
+
+(85:29) el  barra27
+
+(85:31) cuando  se  pasa  a  a
+
+(85:33) profe,  si  está  mostrando  algo,  no  se  ve.
+
+(85:36) 223  sería  el  número.
+
+(85:39) Casi  es  224.
+
+(85:40) 24.
+
+(85:41) Pero  estuviste  cerca.  Muy  bien.  Si  estoy
+
+(85:43) mostrando  algo,  no  se  ve  y  es  cierto,  no
+
+(85:45) se  ve  porque  compartí.
+
+(85:48) Gracias  por  avisarme.  Porque  compartí.
+
+(85:53) Ahí  está.  Ahora  se  debería  ver
+
+(85:56) barra24.  Bien,
+
+(85:59) perfecto.
+
+(86:01) Les  pregunto,  ¿cuál  sería  si  yo  estoy  en
+
+(86:05) la  PC  esta,  la  PC  admin  1,  ¿cuál  sería?
+
+(86:11) ¿Cuál  sería  mi  default  gateway  si  soy  la
+
+(86:14) PC1?
+
+(86:20) El  remoto  un  remoto  un
+
+(86:22) y  cuál  sería  la  IP  de  remoto  1
+
+(86:26) que  tengo  que  asignársela,  ¿no?
+
+(86:28) Obviamente  se  la  tengo  que  asignar
+
+(86:29) viendo  la
+
+(86:30) la  131,
+
+(86:33) la  192  1681131
+
+(86:36) habíamos  dicho  barra  30  en  68.1  1  punto
+
+(86:42) no  sería  la  223,
+
+(86:45) ¿no?  Si  es  un  barra  27,
+
+(86:50) si  es  un  barra  27,  si  esta  tiene  la  30,
+
+(86:53) si  la  PC  le  pongo  la  33,  a  esta  le  puedo
+
+(86:55) poner  la  34.
+
+(87:00) Están  en  la  misma  red,  son  iguales.  Este
+
+(87:03) cable  que  está  conectado  acá.  Si  a  esta
+
+(87:06) le  pongo  la  33,  que  es  la  primera
+
+(87:07) dirección  utilizable,  porque  la  red  es
+
+(87:10) punto  32,
+
+(87:13) puedo  poner  varias  direcciones  IP  acá,
+
+(87:15) pero  si  las  puedo  poner  contigua,  pongo
+
+(87:17) la  33,  le  pongo  la  PC  porque  la  32  es  la
+
+(87:20) red,  le  pongo  a  la  PC  la  33  y  al  router
+
+(87:23) le  pongo  la  34.
+
+(87:26) Le  podría  poner  la  última  utilizable  por
+
+(87:28) la  por  el  barra27.  Sí,  pero
+
+(87:33) vamos  a  hacerlo  así  que  es  más  fácil,
+
+(87:34) ¿no?
+
+(87:37) Bueno,  entonces  listo  esta  a  esta  otra,
+
+(87:40) a  esta  otra  PC  que  está  en  la  otra
+
+(87:41) sucursal.
+
+(87:45) ¿Qué  IP  me  dice  la  guía?  192
+
+(87:49) 168.
+
+(87:51) punto
+
+(87:53) 1  punto  y  si  la  red  de  es  la  64/27,
+
+(87:56) ¿qué  le  puedo  poner  acá?
+
+(88:01) 65.
+
+(88:02) Perfecto.  65  barra  27  de  vuelta.
+
+(88:05) Entonces  acá  es  224.  ¿Y  cuál  sería  la  el
+
+(88:08) default  gateway  de  esta  red  de  esta
+
+(88:12) sucursal  que  sería  Mendoza?
+
+(88:17) 66.  Hay  que  definirla,  pero
+
+(88:20) perfecto.  ¿Cuál  le  ponemos  entonces?
+
+(88:22) 66.
+
+(88:23) 66.  Perfecto.  Impegable.
+
+(88:27) Y  bueno,  y  acá  hay  que  ya  sabemos  que  es
+
+(88:29) 96,  así  que  va  a  ser  97  y  98.  No  se  los
+
+(88:32) digo,  pero  no  lo  voy  a  hacer  porque
+
+(88:35) yo  voy  a  mostrar  la  funcionalidad.
+
+(88:37) Listo,  ya  tengo  la  PC.  Ahora  esta  a  esta
+
+(88:39) PC  también  le  tengo  que  poner  una  IP.  Ya
+
+(88:42) la  tiene.  Buenísimo.  Pero  no  tiene  el
+
+(88:44) def  gway.
+
+(88:46) Ahora,  ¿qué  pasa  acá?
+
+(88:49) ¿Cuál  es  el  default  que  tuve  acá  que  no
+
+(88:51) está  configurado  todavía?
+
+(88:57) Sería  el  switch,
+
+(89:00) no
+
+(89:01) sería
+
+(89:04) no  debería  ir  al  va
+
+(89:08) ahí  debería  ir  un  router,  la  dirección
+
+(89:10) IP  de  uno  de  los  routers.
+
+(89:12) ¿Cuál  iría,  digamos?  Puede  ser,  tiene
+
+(89:15) que  ser  uno  en  particular.
+
+(89:18) tiene  que  ser  eh  cualquiera
+
+(89:22) o  puede  no  ser  ninguno.
+
+(89:25) No  debería  ser  el  que  salga  el  ISP.
+
+(89:30) No  hay  ninguno  que  salga  un  ISP.  Todos
+
+(89:32) van  a  distintas  sucursales.  Este  router
+
+(89:35) es  el  router  de  borde  de  Rosario.  Este
+
+(89:38) es  el  router  de  borde  de  de  Mendoza.
+
+(89:41) Este  es  el  router  de  borde  de  Tucumán.  O
+
+(89:43) sea,  cada  uno  de  ellos,  o  sea,  va  a  un
+
+(89:47) lugar,  no  hay  ningún  IS.  Bueno,
+
+(89:50) supongamos  que  el  ISP  es  este  es  el
+
+(89:52) ISP1,  este  es  el  ISP2  y  este  es  el  ISP3.
+
+(89:56) Vamos,  vamos  a  poner,  pero  bueno,  está
+
+(89:58) bien.  Ahí  me  corregí  lo  que  quise
+
+(89:59) decirles.
+
+(90:02) Los  tres  son  routers  de  borde.
+
+(90:04) No  importa  cuál  usas.
+
+(90:07) Exacto.  Esa  es  la  mejor  respuesta  de
+
+(90:09) todas.  No  importa  cuál  usas.  Y  alguien
+
+(90:12) sabe  por  qué,  cuál  sería  la
+
+(90:13) justificación,
+
+(90:16) porque  todos  los  routersen  comunicarse
+
+(90:18) con  todos,  así  que  da  igual.  ¿Cuál  le
+
+(90:19) dijas?
+
+(90:21) Perfecto.  Es  así.
+
+(90:23) Pero  va  a  ser  así  cuando  esté
+
+(90:25) funcionando  el  enrutamiento  dinámico  que
+
+(90:27) vamos  a  configurar  después,  porque
+
+(90:30) cuando  configuremos  el  enrutamiento
+
+(90:32) dinámico,  este  router  local  uno,  va  a
+
+(90:35) tener  la  misma  tabla  enrutamiento  que
+
+(90:37) local  dos  y  la  misma  tabla  enrutamiento
+
+(90:39) que  local  tres.  O  sea,  los  tres  van  a
+
+(90:41) compartir
+
+(90:43) una  tabla  enrutamiento  casi  igual,  nada
+
+(90:45) más  que  por  ahí  la  usan  en  distinto
+
+(90:48) orden,  peroamos,  o  sea,  la  información
+
+(90:51) que  tienen  los  tres  va  a  ser  más  o  menos
+
+(90:53) la  misma,  ¿sí?  Con  lo  cual  si  uso  como
+
+(90:57) defg  el  2  que  vamos  a  hacer  eso  para
+
+(91:00) para  que  vean  192  168.2
+
+(91:05) 2  punto2.
+
+(91:08) Podría  haber  sido  el  uno  o  podría  haber
+
+(91:09) sido  el  tres.  Sí,  pero  si  no  está  bien
+
+(91:12) configurado  el  enrutamiento,  solamente
+
+(91:15) este  equipo,  la  laptop  va  a  poder  llegar
+
+(91:16) a  la  PC  admin  2  y  no  va  a  poder  llegar
+
+(91:18) ni  admin  1  ni  admin  3
+
+(91:21) si  no  está  bien  configurado  el
+
+(91:22) enrutamiento,  porque  como  su  default
+
+(91:24) gateway  es  este  router  de  acá  que  va  a
+
+(91:26) ser  el  dos,
+
+(91:28) entonces  si  no  tiene  que  salir  para  acá
+
+(91:31) para  donde  está  para  Mendoza  y  tiene  que
+
+(91:33) salir  o  para  Rosario  o  para  Tucumán,  no
+
+(91:35) va  a  andar.
+
+(91:37) Sí.  En  cambio,  si  está  bien  configurado
+
+(91:38) el  enrutamiento,
+
+(91:40) digamos,  este  router  le  va  a  decir,  "No,
+
+(91:42) yo  no  soy,  tenés  que  ir  acá."  Y  el
+
+(91:44) paquete  va  a  y  va  a  bajar  por  acá.
+
+(91:46) Entonces  vas  a  tener  para  una  subred  vas
+
+(91:48) a  tener  un  salto  más,  ¿no?  Para  dos  vas
+
+(91:50) a  tener  un  salto  más  que  para  la  que
+
+(91:52) elijas  como  default  gateway,  ¿no?
+
+(91:56) Eh,  no  necesariamente,  pero  ahora
+
+(91:59) después  lo  vemos.
+
+(92:01) Bueno,  e
+
+(92:04) entonces,  o  sea,  vas  a  tener  un  salto
+
+(92:06) más  estando  en  la  laptop,  pero  si  no
+
+(92:09) entre  estos  va  a  haber  este  de  acá  acá
+
+(92:12) un  salto,  de  acá  acá  un  salto,  de  acá  un
+
+(92:14) salto,  salvo  que  vos  quieras.
+
+(92:16) Claro,  claro.  Me  refería  a  la  laptop.
+
+(92:17) Recién  dijiste  que  si  ponías  el  default
+
+(92:20) gatewayight  en  la  dos,  ponerle  en  el
+
+(92:22) router  de  borde  2  y  el  y  estaba  todo  mal
+
+(92:25) configurado,  solo  ibas  a  poder  acceder  a
+
+(92:27) la  sucursal  2.  Pero  digo,  si  te  pones
+
+(92:30) ese  default  gateway  y  está  todo  bien
+
+(92:32) configurado  y  querés  acceder  a  la  uno,
+
+(92:33) vas  a  tener  un  salto  más  ahí,  ¿no?  Del
+
+(92:36) borde  uno  al  borde.  Listo,  perfecto.
+
+(92:38) Gracias.
+
+(92:38) Es  correcto.
+
+(92:40) Eh,  bueno,  entonces  listo,  ya.  Eh,  ahora
+
+(92:43) vamos  ahora  vamos  ahora  tenemos  que
+
+(92:44) empezar  a  configurar  los  routers.  Ya
+
+(92:46) todas  las  PCs  tienen  su  su  dirección  IP.
+
+(92:48) Bueno,  no  voy  a  trabajar  con  las  con  la
+
+(92:50) tres,  ¿no?  Porque  con  hacer  estas  dos  ya
+
+(92:53) puedo  mostrarle  la  la  funcionalidad.
+
+(92:56) Eh,  la  laptop  tiene  su  IP.  Ahora  tengo
+
+(92:59) que  configurar  todas  las  IPs  a  los
+
+(93:00) routers  y  tengo  que  configurar  el
+
+(93:02) enrutamiento  también.  Así  que  vamos  a
+
+(93:04) empezar  haciendo  eso  con  el  router
+
+(93:07) remoto,
+
+(93:09) remoto  1  y  remoto  2,  que  son  los  dos  que
+
+(93:11) vamos  a  configurar
+
+(93:14) y  lo  vamos  a  hacer  todo
+
+(93:18) al  compás  de  de  lo  que  tenemos  que  hacer
+
+(93:23) para
+
+(93:25) hacerlo  bien.  Entonces
+
+(93:29) voy  eh  enable,  creo  que  es  UTN.  Sí,  ya
+
+(93:32) tiene  configurado  eso.  Así  que  acá  le
+
+(93:33) voy  a  poner  conf
+
+(93:38) y  acá  voy  a  poner  rosario
+
+(93:41) simplemente  porque  como  yo  estoy
+
+(93:44) host  name  rosario,  simplemente  como  para
+
+(93:47) ponerle  nombres  bien  descriptivos  y
+
+(93:49) cuando  hablo  de  algo  ustedes  ya
+
+(93:50) entienden.  Enable  UTN,  el  password  con  T
+
+(93:55) para  entrar  modo  configuración  global.
+
+(93:57) Hostname
+
+(94:00) Mendoza
+
+(94:03) WR
+
+(94:05) WR  para  que  guarde  el  host  name.  Bien,
+
+(94:08) ahora  vamos  a  ver  cómo  está  la
+
+(94:09) configuración.  Do  show  run.  A  ver  qué
+
+(94:11) hay.  Do  show  run.
+
+(94:17) A  mí  me  importa  acá  configurar  la
+
+(94:20) interfaz  serial  0  1  y  me  interesa
+
+(94:25) configurar  la  interfaz  face  esta  que
+
+(94:29) está  acá  que  es  la  00.  Para  todos  los
+
+(94:33) casos,  por  un  tema  de  facilidad,  hice  lo
+
+(94:35) mismo.  Sí.
+
+(94:39) Y  después  tengo  que  configurar  el
+
+(94:40) enrutamiento  dinámico,  que  por  lo  que
+
+(94:44) veo  acá  ya  está  configurado  aunque  sea
+
+(94:47) algo.  Fíjese  que  acá  dice  router  rip
+
+(94:51) versión  2.  Dice  redistribuí  las  rutas
+
+(94:55) estáticas.  Esto  está  mal.  Habría  que
+
+(94:58) habría  que  borrarlo  porque  esta  ruta,
+
+(95:00) esto  no  es  destino  de  nada.  Hay
+
+(95:04) instalada  una  ruta  por  default  que  se
+
+(95:07) llama  00
+
+(95:10) con  un  próximo  salto  de  una  dirección
+
+(95:12) que  nadie  sabe  quién  es.  O  sea,  está  mal
+
+(95:15) esto.  Hay  que  quitarlo.
+
+(95:18) ¿Cómo  quito  esa  línea?  Si  pongo  acá
+
+(95:20) copiar.
+
+(95:21) ¿Alguien  me  dice  cómo  quito  esa  línea?
+
+(95:24) Que  está  mal.
+
+(95:25) Hay  que  poner  el  no  adelante.
+
+(95:28) Perfecto.  No,  la  pego.
+
+(95:31) Listo,  ya  la  borré.  Flechita  hacia
+
+(95:33) arriba.
+
+(95:37) Chao.  No  existe  más.  O  sea,  quité  algo
+
+(95:39) que  estaba  mal.  Quité  algo  que  estaba
+
+(95:42) mal  porque  yo  sé  que  la  dirección  del
+
+(95:43) próximo  salto,  la  del  router  que  está
+
+(95:45) acá,  la  interfaz  que  le  voy  a  poner  acá,
+
+(95:49) no  era  253.
+
+(95:51) Debería  ser  192  161.
+
+(95:55) 168.1.134
+
+(95:58) esta  de  acá  y  la  de  acá  es  la  133
+
+(96:02) porque  estoy  mirando  la  guía.  Hoy  tengo
+
+(96:04) doble  monitor,  eh,  hoy  soy  hoy  estoy
+
+(96:06) afilado.
+
+(96:08) Bien,
+
+(96:10) entonces  vamos  a  configurar  rápidamente
+
+(96:12) todo  eso.  ¿Cómo  lo  configuro?  Bueno,
+
+(96:15) pongo  interface.
+
+(96:17) Voy  a  configurar  primero  la  interfaz
+
+(96:21) eh  serial.
+
+(96:24) S0/1/1
+
+(96:28) IP  address.
+
+(96:30) ¿Qué  dijimos  recién?  192  168.1.133.
+
+(96:35) Acá  arriba
+
+(96:37) 255  255  255.  Si  es  un  barra  30,  ¿alguien
+
+(96:41) sabe  cuánto  es?  2  5
+
+(96:49) dos
+
+(96:50) 251
+
+(96:52) 252
+
+(96:55) 252
+
+(96:56) Bien,  le  configuré  la  dirección  IP.  No
+
+(96:59) tengo  que  configurar  el  clock  rate
+
+(97:00) porque  el  clock  rate  es  para  arriba,
+
+(97:03) pero  si  puedo  poner  encapsulation  PPP
+
+(97:08) para  decirle  cuál  es  el  tipo  de
+
+(97:09) encapsulamiento  y  pongo  no  shutdown.
+
+(97:13) Y  acá  pongo  una  description
+
+(97:16) hacia
+
+(97:18) local  1.
+
+(97:21) Wr  para  guarda  exit
+
+(97:26) do  show  run.
+
+(97:29) Vamos  a  buscar  las  interface.  Ahí  está,
+
+(97:30) ya  está  configurada.
+
+(97:33) Bien,
+
+(97:34) ahora  tengo  que  configurar  la  interface
+
+(97:36) Ethernet,  ¿sí?  que  en  este  caso  era  la
+
+(97:39) 00,  si  mal  no  recuerdo.  Me  voy  a  parar
+
+(97:41) acá.  Es  la  00.  Listo,  ya  había
+
+(97:44) configurado  la  IP  de  la  de  la
+
+(97:48) eh  de  la  PC.  Entonces,
+
+(97:53) interface  FAS  Ethernet  0/0,
+
+(97:59) IP  address
+
+(98:01) 192  168.1  Punto,
+
+(98:06) ¿cuál  era  el  de  F  Gateway  de  admin  1?
+
+(98:09) 34.  Gracias.  255  255  255  1/7  era  224,
+
+(98:14) ¿no?
+
+(98:16) Perfecto.
+
+(98:16) Sí.
+
+(98:18) Description
+
+(98:21) PC  admin  uno
+
+(98:26) no  shutdown.
+
+(98:29) Perfecto.  Ahí  levantó  do  R  para  guardar.
+
+(98:33) Aprovecho  para  guardar  mi  proyecto
+
+(98:35) porque  estoy  en  el  medio  de  un  parcial.
+
+(98:37) Guardo
+
+(98:40) do  show  run  para  ver  si  se  plasmó  mi
+
+(98:42) configuración.
+
+(98:48) Perfecto,  está  mi  mi  IP,  mi  interfaz,
+
+(98:50) todo  eso.  Tengo  la  la  cosa  listo.
+
+(98:53) Perfecto,
+
+(98:56) ya  tengo  conectividad.  Voy  a  dejar  esto
+
+(98:58) un  ratito  acá  y  me  voy  al  otro.  Me  voy  a
+
+(99:01) Mendoza.
+
+(99:03) Lo  dejo  de  este  lado  y  me  había  Mendoza.
+
+(99:05) Acá  tic,  lo  pongo  ahí.  Interface  serial
+
+(99:09) 0/1/1
+
+(99:12) description  hacia
+
+(99:16) local  dos.
+
+(99:19) IP  address
+
+(99:22) 192  168.1
+
+(99:25) pun.
+
+(99:28) ¿Quién  se  acuerda  que  decía  ahí?
+
+(99:31) 63.  Puede  ser.
+
+(99:35) Estoy  en  la  serial.
+
+(99:39) Ah,  e
+
+(99:43) eh  no  es  66,  profe.
+
+(99:47) Y  a  ver,  me  voy  a  fijar  porque  no  me
+
+(99:49) acuerdo.
+
+(99:51) Era  167,  169,
+
+(99:53) no  es  169.
+
+(99:56) 169  porque  la  red  es  la  192.  168.1.168.
+
+(100:02) Entonces,  en  realidad  es  la
+
+(100:05) 69.  Sí.
+
+(100:08) 169  255
+
+(100:11) 255.252
+
+(100:14) porque  es  un  barra  30,  ¿no?  Sí,  barra
+
+(100:16) 30.  Listo.  198.1.169.
+
+(100:19) Perfecto.  Listo.
+
+(100:21) Encapsulation  PPP,
+
+(100:24) no  shutdown.
+
+(100:31) Perfecto.  WR  do  show  run.
+
+(100:35) A  ver  si  mi  interfaz  seral  quedó.  Quedó
+
+(100:39) perfecto.
+
+(100:41) La  voy  a  comparar  con  la  de  mi  otro  eh
+
+(100:44) configuración  para  ver  si  no  me  olvide
+
+(100:45) nada.  Aunque  son  es  para  es  para  seguir
+
+(100:48) la  misma.  Perfecto.  Listo.  Exit.
+
+(100:51) Interface  FAS  Ethernet  0/0
+
+(100:56) description
+
+(100:59) hacia
+
+(101:01) no  eh  PC
+
+(101:03) admin  2
+
+(101:07) IP  address
+
+(101:09) esta  es  la  de  la  LAN  192  168.1.65
+
+(101:13) no,  66
+
+(101:17) porque  64  65  era  la  PC.  Entonces  66  el
+
+(101:21) router  255  255  255.224
+
+(101:25) no  era  1/27.
+
+(101:27) Perfecto.
+
+(101:29) No  shutdown.
+
+(101:31) Ahí  levantó  WRR
+
+(101:33) do  show  run.
+
+(101:36) Fijemos,  ¿no?  A  ver  si  la  fase  está
+
+(101:37) bien.  Y  como  soy  regroso,  la  comparo  con
+
+(101:42) la  de  la  lo  mismo  que  hice  con  el  otro
+
+(101:44) router  y  se  ve  que  está  todo
+
+(101:46) perfectamente  bien  configurado,  ¿no?
+
+(101:50) Este  también  tiene  una  ruta  por  default
+
+(101:51) que  es  cualquier  cosa,  así  que  la  copio
+
+(101:56) y  le  pongo  exit  a  la  interface.  No
+
+(102:00) pegar.  Quito  la  ruta  por  default,  que
+
+(102:02) está  mal  puesta,  que  no  sé  quién  la
+
+(102:03) puso,  pero  la  quito  porque  soy  un  buen
+
+(102:05) administrador  de  la  red  y  lo  que  veo  que
+
+(102:07) está  mal,  lo  corrijo.  Bien,  ya  tengo
+
+(102:10) configurada  la  parte  de  abajo.  Los  dos
+
+(102:12) routers  de  abajo  están  funcionando
+
+(102:13) perfectamente.  Sí.  Y  los  voy  a  dejar  ahí
+
+(102:17) porque
+
+(102:19) falta  configurar  la  parte  de
+
+(102:20) enrutamiento  dinámico  que  todavía  no  lo
+
+(102:22) hice.
+
+(102:24) Voy  a  configurar  los  routers  de  arriba.
+
+(102:28) Agarro  el  router
+
+(102:30) de  local  uno  y  agarro  el  router  de  local
+
+(102:33) dos.
+
+(102:37) Agarro  el  router  de  local  uno,  agarro  el
+
+(102:38) local  dos.
+
+(102:40) Me  voy  a  correr  un  poquito  para  acá.
+
+(102:42) Este  lo  corrocho  para  acá.  Ahí.
+
+(102:45) Enable
+
+(102:48) utn
+
+(102:52) host  name  a1.  Le  pongo  a  este  Buenos
+
+(102:55) Aires  uno
+
+(102:58) eh
+
+(103:01) Do  WR  do  show  run  para  ver  la
+
+(103:04) configuración  que  tiene  este  equipo.
+
+(103:07) Mira  la  configuración  que  tiene  este
+
+(103:08) equipo.
+
+(103:10) Perfecto.  No  tiene  nada.  Está  pelado.
+
+(103:13) Entonces  voy  al  otro  enable  UTN.
+
+(103:19) Estoy  en  local  dos,  que  a  este  le  voy  a
+
+(103:21) poner
+
+(103:23) host  name  ba  Buenos  Aires  2,  Google  BR.
+
+(103:29) Vamos  a  configurar  las  interfaces
+
+(103:31) seriales.  Sí,  si  no  me  acuerdo  cuáles
+
+(103:34) eran,  me  paro  acá  arriba  y  me  fijo  cuál
+
+(103:36) era  la  interfaz  serial,
+
+(103:41) la  S01  también.  Y  esta  es  la  que  tien
+
+(103:43) estas  son  las  que  tiene  el  club
+
+(103:48) R.  Sí.  Interface  se  0/1/1
+
+(103:53) enter.  Description  hacia
+
+(103:59) Rosario.
+
+(104:00) Ya  tiene  nombre.  Hacia  Rosario.
+
+(104:05) Voy  a  copiar.  Así  hago  más  rápido.
+
+(104:07) Copiar.  Pegar  description  hacia  Mendoza.
+
+(104:14) Y  bueno,  y  acá  tengo  poner  la  IP.  IP
+
+(104:16) address.  ¿Cuál  era  la  IP  address  de  la
+
+(104:19) dirección  de  de de  esta  de  esta
+
+(104:23) interface?  192  168  punto  porque  si  va
+
+(104:26) hacia  hacia  Rosario  pun  1.134
+
+(104:31) no  255  255  255.252  252  porque  es  un
+
+(104:36) barra  30
+
+(104:39) encapsulation  PPP
+
+(104:44) capsulation  PPP  no  shutdown  y  ahí
+
+(104:47) automáticamente  se  va  a  ver  que  levanta
+
+(104:50) du
+
+(104:52) me  voy  a  Mendoza  IP  address
+
+(104:56) 192  168.1  un  punto
+
+(105:00) si  169  era  la  del  router  de  Mendoza,
+
+(105:04) esta  tendría  que  ser  la  170,  ¿no?
+
+(105:07) 255  255  255.252
+
+(105:10) porque  es  un  barra  30  description  hacia
+
+(105:14) Mendoza  ya  le  había  puesto
+
+(105:17) encapsulation  PPP
+
+(105:21) y  no  shutdown.
+
+(105:26) Eso  quiere  decir  que  también  levantó  esa
+
+(105:27) interface.  Ahí  está.  ¿La  ven  levantada
+
+(105:29) ahí?
+
+(105:36) Sí.  Sí.
+
+(105:38) Gracias.  Entonces,  ya  tengo  configurado
+
+(105:42) los  enlaces.  Me  falta  configurar  en  los
+
+(105:45) router  la  conexión  hacia  el  switch.  En
+
+(105:47) ese  caso  eran  las  interfaces  WR  acá,  las
+
+(105:51) interfaces  fase  terrenal.
+
+(105:54) Exit.
+
+(105:57) Interface  FA0/0
+
+(106:04) interface  FA0/0
+
+(106:10) description.
+
+(106:14) ¿Qué  les  gustaría  que  le  pongamos
+
+(106:15) descripción
+
+(106:18) hacia  switch  o
+
+(106:21) B1-  switch?  Le  pongo
+
+(106:25) y  a  esta  le  pongo  description  PA2  GU-
+
+(106:29) switch.  Ay,  BA2  switch.
+
+(106:32) BA2-  switch.  Ahí  va.  Y  bueno,  vamos  a
+
+(106:36) poner  la  dirección  IP.  IP  address.  ¿Qué
+
+(106:39) dirección  IP  es  acá?  192  68.  ¿Cuál  es  la
+
+(106:42) red  de  ahí?
+
+(106:44) Punto
+
+(106:46) dos.
+
+(106:47) Dos
+
+(106:51) para  BA1.
+
+(106:52) punto  1  la  máscara  barra24.
+
+(106:57) Si  es  barra  24  triple  2550
+
+(107:01) copio.
+
+(107:03) Así  no  escribo  tanto.  Pego  acá  esta  es
+
+(107:06) la  22  porque  es  ba
+
+(107:09) 2
+
+(107:11) perfecto.  No  shutdown.
+
+(107:14) No  shutdown.
+
+(107:21) WR
+
+(107:23) Perfecto.  Bien,  entonces  ahora  exit  do
+
+(107:29) show  run.  Miro  la  configuración  y  tengo
+
+(107:32) todas  las  interfaces  levantadas.  Ahora
+
+(107:34) tengo  todo  todo
+
+(107:37) supuestamente
+
+(107:38) funcionando.
+
+(107:42) Pero,  ¿qué  pasa?
+
+(107:45) Vamos  a  mirar  las  tablas  de  enrutamiento
+
+(107:46) porque  hasta  ahora  qué  puedo  hacer  yo?
+
+(107:48) Miren,  borro  acá.  Puedo  hacer  un  ping.  A
+
+(107:53) ver,  puedo  hacer  un  ping  desde  mi  de  la
+
+(107:55) PC  estando  en  Rosario.  Puedo  hacer  un
+
+(107:56) pin  de  Rosario  al  al  default  Gateway.  Sí
+
+(108:00) funciona.  Puedo  hacer  un  pin  desde
+
+(108:02) Mendoza  su  default  gateway.  Sí,
+
+(108:04) funciona.  Puedo  hacer  un  pin  desde
+
+(108:07) laptop  admin  de  Buenos  Aires  a  su
+
+(108:09) default  gateway  que  está  configurado  que
+
+(108:11) es  el  el  BA2.  Sí,  puedo  llegar  desde  la
+
+(108:16) laptop  eh  admin  de  Buenos  Aires  a  al
+
+(108:21) BA1.
+
+(108:23) Sí.  ¿Por  qué?  Porque  están  todos  en  la
+
+(108:26) misma  Red  Llan.
+
+(108:27) Acá  este  tiene  la  uno,  este  tiene  la  dos
+
+(108:30) y  este  tiene  la  254,  pero  todos  están
+
+(108:33) adentro  conectados  por  un  switch  y  todo.
+
+(108:36) Ahora  bien,
+
+(108:38) puedo  llegar  desde  admin,  la  PC  que  está
+
+(108:43) en  Rosario,  adentro  de  la  LAN  hacia
+
+(108:50) el  router  de  BA1  si  está  conectado.  A
+
+(108:54) ver.
+
+(108:57) falla.  Voy  a  hacer  de  vuelta  la  prueba.
+
+(109:01) Puedo  llegar  desde  la  laptop  admin  1
+
+(109:03) hasta
+
+(109:05) falla.  ¿Por  qué  falla?
+
+(109:08) A  ver,  vamos  a  hacer  otra  prueba.  ¿Puedo
+
+(109:10) llegar  desde  el  router  remoto  de  Rosario
+
+(109:14) a  BA1?  Sí,  obvio  que  puede  llegar  porque
+
+(109:17) están  los  dos  conectados  entre  sí  con  un
+
+(109:19) cable.  ¿Y  por  qué  no  puedo  llegar  desde
+
+(109:21) la  la  PC  admin  1  hacia  el  router  de
+
+(109:26) ambos  de  BA1  si  está  todo  conectado?
+
+(109:31) ¿Por  qué  no  puedo  llegar?
+
+(109:32) Puse,  profe,  que  no  tenga  la  ruta
+
+(109:34) inversa.
+
+(109:36) CL  no  sabe  cómo
+
+(109:37) no  solamente  no  solamente  no  tiene  la
+
+(109:39) ruta  inversa,  sino  que  tampoco  tiene  la
+
+(109:41) ruta  directa.
+
+(109:46) O  sea,  vamos  a  ver  la  tabla  de
+
+(109:47) enrutamiento  de  remoto  1  y  de  local  1.
+
+(109:55) Enable  UTN  show  IP  route.
+
+(110:04) Show  IP  route.  Ay,  show  IP  route.  Okay.
+
+(110:11) Si  estoy  parado  en  remoto  uno,  la  parte
+
+(110:14) de  abajo,  y  tengo  que  llegar  a  algún
+
+(110:16) lado,  la  tabla  de  enrutamiento  me  dice,
+
+(110:17) "Bueno,  mira,  vos  tenés  conectadas,
+
+(110:21) tenés  una  un  tenés  una  dirección
+
+(110:26) eh  clase  C  que  está  subneteada  en  tres
+
+(110:30) subnet,  tres  tres  tres  redes  y  vos  tenés
+
+(110:33) conectada
+
+(110:34) la  32,
+
+(110:37) perdón,  eh,  sí,  tenés  conectada  la  32,
+
+(110:40) la  132  que  es  la  la  interfaz  Fethernet
+
+(110:45) este  00.
+
+(110:47) Sí,  tenés  conectada  la  barra  30  que  es
+
+(110:51) 132  y  al  mismo  tiempo  conocés  la  IP  de
+
+(110:56) tu  propia  interfaz  que  es  la  134.
+
+(111:00) Okay,  perfecto.  Pero  en  ningún  momento
+
+(111:03) supe  que  cuál  es  la  red  para  llegar
+
+(111:09) acá.
+
+(111:10) a  la  a  la  PC  en  perdón,  a  la  PC,  no,  a  a
+
+(111:17) local  uno,  no  estoy  parado  acá  en  remoto
+
+(111:20) uno,  o  sea,  sé  llegar  acá  y  sé  llegar
+
+(111:22) acá,  pero  la  tabla  esa  de  enrutamiento
+
+(111:24) no  le  dice  a  la  a  la  a  la  a  la  PC  admin
+
+(111:28) 1  cómo  saltar  eh  de  un  extremo  al  otro.
+
+(111:32) Es  decir,  no  hay  ninguna  ruta  ni
+
+(111:35) estática  ni  dinámica
+
+(111:38) que  me  permita  que  el  router  remoto  uno,
+
+(111:42) es  decir,  que  el  router  este,  el  router
+
+(111:44) este,  me  conmute  el  paquete  desde  acá
+
+(111:47) hasta  acá,  porque  no  hay  no  hay  una  ruta
+
+(111:51) que  me  diga  cómo  llegar  desde  la  PC1
+
+(111:53) hasta  la  hasta  local,  que  es  el  router
+
+(111:57) de  arriba.  No  hay,  simplemente  tengo
+
+(112:00) cosas  conectadas  y  en  la  tabla  de
+
+(112:03) enrutamiento  se  aparecen  esas  cosas  que
+
+(112:05) están  conectadas,  pero  no  hay  una  ruta.
+
+(112:08) No  me  dice,  como  les  mostré  en  la
+
+(112:10) teoría,  que  llego  de  acá  a  este  destino
+
+(112:15) a  través  de  la  interfaz  de  salida  de
+
+(112:16) este  router  o  a  través  del  próximo
+
+(112:18) salto.  No  hay,  eso,  no  existe,  no  está
+
+(112:20) hecho.  Entonces,  no  anda.
+
+(112:24) Bueno,
+
+(112:24) yo  leo  tengo  una  duda.  Sí,
+
+(112:27) si  admin  1  tiene  como  default  gateway  a
+
+(112:30) remoto  1,
+
+(112:32) ¿por  qué  no  llega  a  local  uno?
+
+(112:35) porque  no  tiene  eh  no  sabe  el  router,  no
+
+(112:40) sa  router  remoto  un  eh  si  bien  él  tiene
+
+(112:44) conectadas  las  cosas  este  no  sabe  cómo
+
+(112:48) eh  llegar  desde  una  red  porque  tiene
+
+(112:51) conectadas  direcciones  IPs.  Fíjate  que
+
+(112:54) dice  tiene  conectada  la  198.1.32.
+
+(113:00) Eso  es  una  IP,  no  es  una  red,  es  una  IP.
+
+(113:03) tiene  conectada  abajo  otra  IP,  la  que
+
+(113:06) digamos  la  132  y  tiene  conectado  o
+
+(113:10) reconoce  como  conectada  su  propia  eh  su
+
+(113:13) propia  eh
+
+(113:15) interfaz,  ¿entendés?  eh  que  es  la  la  34,
+
+(113:20) o  sea,  no  conoce  cómo  llegar  al  otro
+
+(113:23) extremo  y  si  lo  conociera,  que  no  es
+
+(113:26) así,  el  paquete  puede  ir,  pero  no  sabe
+
+(113:28) volver  porque  no  está  establecida  eh  no
+
+(113:31) está  establecido  cuál  es  la  dirección  de
+
+(113:33) próximo  salto  o  cuál  es  la  dirección  de
+
+(113:35) la  no  está  explícito.  Sí.  Entonces,  no
+
+(113:39) puede  conmutar  el  paquete,  que  lo  que
+
+(113:42) hace  el  router  es  conmutar  el  paquete
+
+(113:45) conociendo  la  ruta,  así  como  les
+
+(113:47) expliqué  en  la  teoría  al  principio  de  la
+
+(113:49) clase.  No  sabe  hacer  eso  porque  no
+
+(113:51) tiene.
+
+(113:52) ¿Cómo  solucionamos  eso?  Bueno,  gracias  a
+
+(113:56) que  existe  un  protocolo  de  enrutamiento
+
+(113:58) dinámico  que  se  llama  RI  versión  2,
+
+(114:02) nosotros  y  ahora  lo  voy  a  hacer  primero
+
+(114:04) entre  remoto  1  y  local  uno.  Si,  por  eso
+
+(114:07) les  estaba  mostrando  las  tablas  de
+
+(114:09) enrutamiento  de  los  dos,  que  me  gustaría
+
+(114:11) que  se  las  graben  en  sus  cabezas  o  vean
+
+(114:14) que  hay  en  cada  una  que  hay  solamente
+
+(114:16) tres
+
+(114:18) cosas  conectadas,  tres  redes  conectadas,
+
+(114:21) pero  fíjense,  abajo  por  ahí  es  menos
+
+(114:24) notorio,  pero  vamos  a  ver  lo  de  arriba.
+
+(114:26) Voy  a  correr  así.  Voy  a  voy  a  quedarme
+
+(114:28) con  el  router  local  1.  Estoy  acá  arriba.
+
+(114:31) Local  1  tiene  conectado
+
+(114:35) la  red  esta,  la  192  1682,
+
+(114:41) o  sea,  conoce  la  red  nada  más,  pero  no
+
+(114:44) sabe  cómo  ir  de  la  red  2  a  la  red  uno
+
+(114:47) porque  no  tiene  una  ruta  eh  que  diga,
+
+(114:50) "Vos  podés  llegar  a  esta  otra  red  que  es
+
+(114:52) la  1928  10  a  través  de  esta  interface  o
+
+(114:57) a  través  de  esta  IP."  No  tiene  eso.
+
+(115:00) Entonces  tiene  cosas  conectadas,  pero  no
+
+(115:03) tiene  algo  que  le  diga  para  llegar  de
+
+(115:05) origen  a  destino,  puede  salir  por  acá.
+
+(115:08) Ese  salir  por  acá  es  o  la  dirección  IP
+
+(115:11) del  próximo  salto  o  la  interfaz  de
+
+(115:13) salida  del  propio  router.  ¿Se  acuerdan
+
+(115:15) cuando
+
+(115:17) les  expliqué  rutas  estáticas  al
+
+(115:18) principio?  No  tiene  eso,  no  lo  tiene,
+
+(115:21) entonces  no  sabe  cómo  ir.  O  sea,  tiene
+
+(115:25) cosas  conectadas.  Es  como  que  en  el  GPS,
+
+(115:28) digamos,  tiene  todas  las  callecitas
+
+(115:30) conectadas.  El  GPS  les  muestra,  porque
+
+(115:32) ustedes  ven  el  mapa,  están  todas  las
+
+(115:33) calles  y  todas  las  calles  están
+
+(115:35) conectadas,
+
+(115:37) pero  no  sabe  cómo  ir  de  acá,  de  A  B,  no
+
+(115:40) les  muestra  el  trazo  ese  de  la  ruta.
+
+(115:43) Ahora  se  entiende  la  analogía  con  eso.
+
+(115:45) Sí,  sí.
+
+(115:46) O  sea,  tiene  todas  las  calles
+
+(115:48) conectadas,  los  dos  router.  Sí.  Eh,  pero
+
+(115:52) no  tiene  marcada  la  ruta  que  o  las
+
+(115:55) grises  que  no  se  usan  o  la  o  la  o  la  o
+
+(115:58) la  o  la  que  está  coloreada  que  es  la  que
+
+(116:00) te  dice  cómo  ir  de  A  hasta  B.  Ya  está.
+
+(116:02) Con  esa  analogía  me  parece  que  tienen
+
+(116:04) que  haberlo  entendido.
+
+(116:07) Eh,  entonces,  bueno,  nosotros  lo  que
+
+(116:09) vamos  a  hacer,  vamos  a  hacer  uso  un
+
+(116:10) protocolo  de  enrutamiento  dinámico  que
+
+(116:12) es  reversión  2,  donde  vamos  a  explicitar
+
+(116:16) esas  eh  digamos  vamos  a  explicitar
+
+(116:18) dinámicamente
+
+(116:20) las  direcciones  IP  de  la  red,  de  de
+
+(116:23) desde  qué  red  a  qué  red  tiene  que
+
+(116:24) llegar.
+
+(116:25) Sí,  en  realidad  no  pongo  de  qué  red  a
+
+(116:28) qué  red  tiene  que  llegar,  pero  el
+
+(116:29) protocolo  enrutamiento  dinámico  lo  va  a
+
+(116:32) saber  transmitir  para  que  el  otro  el
+
+(116:35) otro  le  llegue  y  lo  meta  en  su  tabla.
+
+(116:38) ¿Sí?  Con  lo  cual  acá  va  a  aparecer  una
+
+(116:40) línea  más  que  diga  una  R  que  hace
+
+(116:44) referencia  a  RIP,
+
+(116:47) donde  RIP
+
+(116:49) le  va  a  pasar  esa  información.
+
+(116:53) Este,  gracias  a  que  se  la  contó  el
+
+(116:56) router  vecino,  que  en  este  caso  es  el  de
+
+(116:58) arriba,  local  uno.  Bueno,  vamos  a  hacer
+
+(117:01) eso.  Entonces,  vamos  a  poner  confes
+
+(117:06) en  Buenos  Aires  y  en  Rosario.
+
+(117:10) Y  ahora  yo  voy  a  usar  este  comando
+
+(117:13) router
+
+(117:15) y  digo  qué  protocolo  de  enrutamiento  voy
+
+(117:17) a  activar  el  proceso,  porque  lo  que  hago
+
+(117:21) con  esto  es  activar  un  proceso  adentro
+
+(117:23) del  router.  Router  RIP.  Acá  podría  ser
+
+(117:26) routerp,
+
+(117:28) podría  ser  router  OSPF.
+
+(117:32) Sí,  con  esto  yo  lo  que  estoy  diciendo  es
+
+(117:34) le  estoy  diciendo  al  router  activar  el
+
+(117:36) proceso.  ¿Se  acuerdan  de  sistemas
+
+(117:37) operativos?
+
+(117:39) Les  dio  una  puntada  en  el  estómago.  No,
+
+(117:42) no,  pero  sí,  sí.
+
+(117:43) Bueno,  lo  que  estoy  haciendo  es
+
+(117:44) instaurar  un  proceso  que  es  el  proceso
+
+(117:46) de  RIP.  Listo.  Le  voy  a  decir  que  use  la
+
+(117:49) versión  dos  de  RIP  porque  si  no  lo  ponen
+
+(117:51) usa  la  versión  uno  y  eso  digamos  está
+
+(117:54) mal  porque  no  funcionaría  porque  no
+
+(117:56) funciona  con  subnet  el  eh  funciona
+
+(117:59) solamente  con  direccionamiento  classwol.
+
+(118:01) En  cambio,  la  versión  dos  funciona  con
+
+(118:03) el  froncionamiento
+
+(118:06) Classless,  sin  claset.
+
+(118:08) Me  voy  al  otro  router,  lo  mismo,
+
+(118:11) router
+
+(118:13) RIP.  Estoy  diciéndole  usá  o  instaurá  o
+
+(118:18) levantá  el  proceso  de  RIP.  Versión  dos.
+
+(118:23) Ay,  versión  dos.
+
+(118:25) Vuelvo  al  router  1  y  ahora  presten
+
+(118:28) atención  a  esto.  El  comando  network
+
+(118:35) antes  de  poner  voy  signo  de  pregunta.
+
+(118:38) Fíjense  lo  que  dice  el  comando  network.
+
+(118:41) Habilita  el  enrutamiento  sobre  una
+
+(118:43) dirección  IP.
+
+(118:46) Habilita  el  enrutamiento  sobre  una
+
+(118:48) dirección  IP.
+
+(118:51) Entonces,  el  comando  network,  yo  tengo
+
+(118:53) poner  network.  y  una  dirección  IP.
+
+(118:57) Esa  dirección  IP  que  pongo  acá  es  la  que
+
+(119:00) el  router  mío  donde  estoy  parado  ahora
+
+(119:03) se  la  va  a  tomar,  la  va  la  va  a  tener  en
+
+(119:06) cuenta  y  esa  este  información  que  va  que
+
+(119:11) toma  ahí  después  la  va  a  redistribuir  al
+
+(119:13) router  vecino,  que  en  este  caso  es  local
+
+(119:16) uno,  o  el  router,  como  le  digo,  el  de
+
+(119:18) arriba.  Sí.
+
+(119:21) ¿Qué  qué  dirección  IP  va  acá?  Bueno,  en
+
+(119:25) este  caso  particular,
+
+(119:28) y  digo  caso  particular,
+
+(119:31) la  dirección  IP  que  se  pone  acá  es  una
+
+(119:32) dirección  classful,  es  decir,  una
+
+(119:35) dirección  de  red
+
+(119:37) completa,  ¿sí?  1/8,  1/16  o  1/2.
+
+(119:44) La  dirección  de  red  que  se  pone  acá
+
+(119:46) tiene  que  ser  la  dirección  IP  de  cada
+
+(119:48) una,  la  dirección  de  red,  mejor  dicho,
+
+(119:51) de  cada  una  de  las  interfaces  a  las  que
+
+(119:53) el  router  tiene  algo  conectado.
+
+(119:56) ¿Qué  tiene  conectado  el  router?  Hacia
+
+(119:59) abajo  tiene  conectada  una  dirección  IP,
+
+(120:01) una  red  que  es  192,  168.1
+
+(120:04) punto  y  es  la  es  la  eh,  perdón,  es  la
+
+(120:08) red  32,  ¿no?  Esa  es  la  red  que  es  un
+
+(120:11) barra27.
+
+(120:13) Sí.
+
+(120:14) Bueno,  no  tengo  que  poner  punto  32
+
+(120:18) porque  el  comando  network  espera,
+
+(120:21) presten  atención,  el  comando  network
+
+(120:23) espera  una  dirección  de  red  tipo
+
+(120:26) Classful.  Si  esta  es  una  dirección  de
+
+(120:29) tipo  clase  C,  ¿cuál  es  la  red  classful
+
+(120:31) de  esta  de  esta?
+
+(120:34) La  punto  cero.
+
+(120:36) La  punto  cero.  Perfecto.
+
+(120:39) Enter.
+
+(120:41) Pero,  ¿qué  pasa  en  este  caso  particular?
+
+(120:44) Y  digo  particular  porque  da  la
+
+(120:46) casualidad  que  tanto  la  interfaz  serial
+
+(120:48) que  va  hacia  arriba  como  la  interfaz  que
+
+(120:51) va  hacia  la  PC,  las  dos  son  192  168  10.
+
+(120:56) Es  decir,  que  tendría  que  correr  este
+
+(120:57) comando  dos  veces.  Sí,  pero  no  tiene
+
+(121:01) sentido  porque,  bueno,  una  vez  que  lo
+
+(121:02) corra  ya  está,  porque  las  dos  son  eh
+
+(121:05) clase  C,  nada  más  que  como  está
+
+(121:07) subneteada  una  es  punto  32  y  la  otra  es
+
+(121:10) punto  132.  Sí.
+
+(121:13) Ahora  guardo  la  configuración  y  voy  a
+
+(121:16) ver  el  showround.  Do  showrun.
+
+(121:21) Bajo,  bajo,  bajo,  bajo  y  me  fijo  y  me
+
+(121:24) doy  cuenta  que  acá  aparece  la
+
+(121:26) configuración  de  RIP.
+
+(121:29) que  dice
+
+(121:31) eh  lo  que  yo  hice  justamente,  pero
+
+(121:34) aparecen  dos  cosas  más  que  no  deberían
+
+(121:36) estar  porque  yo  se  las  debería  explicar
+
+(121:38) que  son  estas  dos  líneas,  pero  bueno,  no
+
+(121:39) sé  por  qué  están.  Están.
+
+(121:43) Y  acá  viene  un  concepto  importante.
+
+(121:47) El  protocolo  enrutamiento  RIP  como  así
+
+(121:50) otros  cuando  redistribuye  su  tabla  de
+
+(121:53) enrutamiento,  las  redistribuye  para  todo
+
+(121:55) lado.  O  sea,  si  tiene  conectadas  dos
+
+(121:59) interfaces,  5  20,  distribuye  esa
+
+(122:01) información  para  todos  lados.  Pero,  ¿qué
+
+(122:04) pasa?
+
+(122:07) Lo  que  tengo  abajo  del  router  es  una  PC.
+
+(122:10) ¿Vale
+
+(122:12) la  pena  que  yo  a  la  PC  le  mande
+
+(122:14) información  de  la  tabla  enrutamiento?
+
+(122:17) Si  no  entiende  eso,
+
+(122:19) bueno,  entonces  este  comando  que  se
+
+(122:22) llama  passive  interface  y  se  le  pone  la
+
+(122:25) interfaz  que  yo  quiero  pasivar,
+
+(122:28) le  está  diciendo  a  RIP,  "Che,
+
+(122:31) eh,  pasívame  la  interfaz  fase  internet
+
+(122:34) 00  para  no  mandar  información  de  de
+
+(122:37) actualizaciones  de  tabla  en  rutamiento
+
+(122:39) por  ahí,  porque  como  abajo  tengo  una  PC,
+
+(122:41) no  entiende  eso  y  por  un  tema  de
+
+(122:43) seguridad  no  voy  a  andar  desparramando
+
+(122:46) la  tabla  en  rut  para  todos  lados,  porque
+
+(122:48) si  acá  me  desconectan  la  PC  y  me
+
+(122:49) conectan  eh  un  analizador  de  protocolos,
+
+(122:53) pueden  ver  el  tráfico  que  está
+
+(122:55) redistribuyendo  mi  router.  Sí.  Así  que
+
+(122:57) por  un  tema  de  seguridad,  pasivo  esa
+
+(122:59) interface.
+
+(123:01) Solamente  se  pasiva  la  interfaz  cuando
+
+(123:04) hay  algo  que  no  es  otro  router  del  otro
+
+(123:06) lado.  En  este  caso  es  una  PC.
+
+(123:09) Pero  el  error  que  cometen  todos  los
+
+(123:11) alumnos  es  que  cuando  van  al  router  de
+
+(123:13) arriba  también  pasivan  la  interfaz  fase
+
+(123:16) Ethernet  00.  Pero,  ¿qué  pasa?  Esa
+
+(123:18) interfaz  se  va  a  conectar  contra  un
+
+(123:19) switch.  Sí,  pero  ese  switch  me  conecta
+
+(123:23) con  otro  router.  Si  yo  pasivo  su
+
+(123:26) interfaz,  la  actualización  que  manda  de
+
+(123:27) la  rotamiento  para  acá  nunca  le  va  a
+
+(123:30) llegar  ni  a  router  2  ni  a  router  3
+
+(123:33) porque  yo  estoy  pasivando  esa  esta
+
+(123:35) interface,  entonces  no  tengo  que  hacerlo
+
+(123:37) arriba.  Está  se  entiende  por  qué
+
+(123:42) sí  lo  pasivo  pensando  que  no  quiero  que
+
+(123:46) le  llegue  la  información  a  la  laptop
+
+(123:47) esta,  cometo  el  error  de  que  no  le  va  a
+
+(123:51) llegar  ni  a  este  router  ni  a  este
+
+(123:52) router.  Sí,  está  hecho  a  propósito.
+
+(123:56) Bueno,  listo.
+
+(123:56) Eso  ya  viene  preconfigurado  para  este
+
+(123:58) ejercicio  o  es  automático  no  debería
+
+(124:01) estar.  Está,  pero  no  debería  estar.  Y
+
+(124:03) este  comando  que  está  acá,  que  se  llama
+
+(124:05) redistribute  static,  es  si  ustedes
+
+(124:08) tuvieran  configurada  una  ruta  estática,
+
+(124:11) eh,  ya  sea  una  ruta  por  default  gateway
+
+(124:14) o  algo,  ese  comando  la  redistribuye
+
+(124:17) eh  a  donde  haga  actualizaciones  de  eh  de
+
+(124:21) la  tabla,  ¿sí?  O  sea,  también  pasa  las
+
+(124:23) rutas  estáticas,  pues  si  no  está  ese
+
+(124:25) comando,  solamente  redistribuye  las
+
+(124:27) rutas  dinámicas  y  lo  que  uno  escribe  a
+
+(124:29) mano  como  un  default  gateway  no  lo  no  lo
+
+(124:30) pasaría.  Pero  bueno,  este  está  ahí,  no
+
+(124:35) no  no  pasa  nada.  A  veces  sí,  pero  bueno,
+
+(124:37) en  este  caso  no,  porque  no  hay  ninguna
+
+(124:38) ruta  estática.
+
+(124:41) Entonces,  si  no  hay  que  quitarlo,  se
+
+(124:42) pone  un  no  rebute  static  y  se  saca.  E
+
+(124:47) bueno,  listo,  ya  configuré  remoto  uno
+
+(124:51) y  ahora  voy  y  pongo  do  show  IP  route.
+
+(124:57) Todavía  no  veo  nada,  veo  todo  igual,  ¿no
+
+(124:59) es  cierto?  No  veo  ninguna  actualización
+
+(125:01) acá  porque  tengo  que  activar  el
+
+(125:05) enrutamiento
+
+(125:06) dinámico  de  RIP  en  el  otro  extremo.
+
+(125:09) Entonces  agarro  el  router  local  1  y
+
+(125:12) vengo  acá  y  digo  network,
+
+(125:16) ¿qué  rout?  ¿Qué  qué  direcciones  quiero
+
+(125:19) pasar  yo  al  otro  lado?  O  sea,  le  quiero
+
+(125:22) pasar  a  mi  vecino,  es  decir,  al  router
+
+(125:24) que  está  abajo,  al  remoto  un,  ¿qué  tengo
+
+(125:27) configurado  en  mis  interfaces  para  yo
+
+(125:29) poder  compartir  la  información  dentro  de
+
+(125:31) esas  redes?
+
+(125:35) 192  168
+
+(125:41) dos
+
+(125:43) 2  punto
+
+(125:45) cer.
+
+(125:46) Perfecto.  Ahí  le  estoy  diciendo  a  RIP
+
+(125:51) dentro  de  mi  de  mi  Red  Llan  está  esta
+
+(125:54) red.
+
+(125:55) Entonces  yo  quiero  que  vos  la  compartas.
+
+(125:58) ¿Qué  otra  red  tiene  conectada  el  router?
+
+(126:02) Porque  el  router  tiene  conectada  dos
+
+(126:03) patas.  Entonces,  cuando  distribuya
+
+(126:07) o  intercambie  tablas  de  enrutamiento,
+
+(126:10) todo  lo  que  tiene  conectado  en  su
+
+(126:11) interface  se  tiene  que  en  sus  interfaces
+
+(126:13) se  tiene  que  compartir.  ¿Cuál  es  la  otra
+
+(126:15) red?
+
+(126:17) La  1.0.
+
+(126:19) La  1.0.
+
+(126:23) Entonces,  a  partir  de  ahora,  como  los
+
+(126:25) dos  router  tienen  configuradas
+
+(126:28) sus  su  el  protocolo  de  enrutamiento
+
+(126:31) dinámico  y  está  activado  el  proceso  y
+
+(126:33) corriendo  y  yo  ya  le  compartí  la
+
+(126:35) información  que  tiene  que  divulgar.
+
+(126:38) Si  yo  ahora  pongo  WR  para  guardar  la
+
+(126:39) configuración  de  acá  y  WR  para  guardar
+
+(126:41) la  configuración  de  acá  y  ahora  miro  sus
+
+(126:44) tablas  de  enrutamiento,  do  show  IP
+
+(126:46) route.
+
+(126:47) Me  voy  a  dar  cuenta,
+
+(126:50) show  IP  route.  Me  voy  a  dar  cuenta  que
+
+(126:53) en  ambos  equipos  los  voy  a  poner  al
+
+(126:55) revés  para  que  porque  el  de  la  izquierda
+
+(126:58) es  el  de  abajo  y  el  de  la  derecha  es  el
+
+(126:59) de  arriba.
+
+(127:01) ¿Qué  aparece  acá  en  el  de  abajo?  No,
+
+(127:03) fíjense
+
+(127:05) abajo  que  es  acá  en  sería  en  Rosario.
+
+(127:09) Rosario  no  conoce  la  red,  no  conocía  la
+
+(127:11) red  de  Buenos  Aires  que  es  la  2.0,  ¿se
+
+(127:13) acuerdan?
+
+(127:15) Entonces,  mágicamente,  gracias  a  RIP,
+
+(127:17) dice,
+
+(127:19) "Estoy  parado  en  el  router  de  Rosario.
+
+(127:23) Yo  conozco  ahora  cuando  yo  puse  y  P
+
+(127:25) route,  yo  digo  yo  y  leyendo  esta  tabla
+
+(127:28) digo,  yo  conozco  la  192  168  2.0/24.
+
+(127:33) Conozco  esa  red  porque  me  la  contó,  me
+
+(127:37) la  contó  el  192  168.1.134,
+
+(127:42) 134,  o  sea,  la  conozco  a  través  de  ese
+
+(127:44) de  esa  de  esa  vía,  se  dice,
+
+(127:49) y  la  prendí  a  través  de  las  la  interfaz
+
+(127:52) serial  011,
+
+(127:55) porque  la  134
+
+(127:57) este,  o  sea,  es  el  router  de  arriba,
+
+(128:01) ¿sí?  O  sea,  la  aprendí  vía  ese  router
+
+(128:04) que  es  el  de  arriba.  La  134  es  la  de
+
+(128:05) arriba,  el  router  de  arriba,  porque  el
+
+(128:07) de  acá  era  133,  el  donde  estoy  parado.  Y
+
+(128:10) la  prendió  por  la  interfaz  serial  011,
+
+(128:13) que  esa  es  la  interfaz  de  salida  del
+
+(128:15) router  de  Rosario  que  se  conecta  contra
+
+(128:16) arriba.  Se  se  ve  bien,  se  entiende  lo
+
+(128:20) que  expliqué,  cómo  se  lee?
+
+(128:22) Sí.
+
+(128:24) ¿Cuál  era
+
+(128:25) cuál  era?  134,  perdón,
+
+(128:28) el  router  de  arriba.  La  la  mira
+
+(128:33) esta  donde  tengo  parado  el  puntero  del
+
+(128:35) mouse,
+
+(128:37) o  sea,  este  este  router.
+
+(128:40) Bien.
+
+(128:41) Y  este  es  el  133.  Ahora,  si  yo  me  voy  al
+
+(128:45) router  de  arriba,  cierro  acá  y  me  quedo
+
+(128:48) con  el  router  de  arriba,
+
+(128:50) pasa  lo  mismo.
+
+(128:53) Le  el  router  de  arriba  le  dice,
+
+(128:56) "Yo  conozco
+
+(128:58) la  red
+
+(129:00) 192  168.1.32/27,
+
+(129:03) 32/27,
+
+(129:06) o  sea,  conozco  la  red  de  Rosario,  la  LAN
+
+(129:09) de  Rosario,  lo  de  adentro,  y  lo  aprendí
+
+(129:12) vía  la  133,  que  yo  estoy  parado  arriba
+
+(129:16) ahora,  ¿no?  Lo  aprendí  vía  el  router  de
+
+(129:18) Rosario  y  lo  aprendí  gracias  a  mi
+
+(129:21) interfazal  de  salida,  que  también  es  la
+
+(129:23) 01  1.  ¿Se  entiende?
+
+(129:28) Entonces,  entonces,
+
+(129:31) aunque  no  va  a  funcionar  todavía,
+
+(129:34) yo  voy  a  Sí,  o  sea,  va  a  funcionar  esto
+
+(129:36) que  les  voy  a  mostrar,  pero  no  va  a
+
+(129:37) funcionar  otra  cosa  todavía.  Si  ahora  yo
+
+(129:40) estoy  parado  en  mi  PC,  quiero  llegar  de
+
+(129:42) mi  PC  al  default  gateway,  ¿funciona?  Sí,
+
+(129:45) perfecto,  ese  ya  andaba  de  antes.  Ahora,
+
+(129:47) si  quiero  llegar  desde  la  PC  hasta  el
+
+(129:50) atro  router,  el  de  el  de  BA1.  A  ver,  sí,
+
+(129:54) llego.  Perfecto.  ¿Por  qué  llegué?  Porque
+
+(129:57) mi  router  pudo  conmutar  el  paquete  entre
+
+(130:00) Milan  y  la  otra  red  gracias  a  que  tiene
+
+(130:04) en  su  tabla  enrutamiento  la  ruta  para
+
+(130:06) saber  hasta  dónde  o  cómo  llega.  Ahora
+
+(130:10) puedo  llegar  desde  acá  hasta  la  punto
+
+(130:13) dos.
+
+(130:15) Mm.  No.  A  ver,  voy  a  probar  de  vuelta.
+
+(130:19) M,  no.  ¿Por  qué  no  llega?
+
+(130:26) Porque  el  paquete  sabe  ir,  pero  no  sabe
+
+(130:29) volver.  Porque  para  la  laptop  2  el  de
+
+(130:32) Fall  Gateway  es  este.  Y  yo  todavía  no
+
+(130:35) configuré  RIP  en  este.  Entonces  el
+
+(130:37) paquete  sabe  llegar  hasta  acá,  hasta  la
+
+(130:39) laptop,  porque  sabe  cuál  es  la  red  10,
+
+(130:43) perdón,  la  198.2.0,
+
+(130:45) 0  porque  esta  es  la  pun  2.254,
+
+(130:49) pero  como  este  tiene  como  default  getway
+
+(130:51) este  este  router  que  está  acá  que
+
+(130:52) todavía  no  está  configurado,  no  puede
+
+(130:55) llegar  a  este  router  porque  no  lo
+
+(130:57) conoce,  digamos,  lo  lo  o  sea,  lo  conoce,
+
+(131:00) pero  no  es  su  default  gateway.  Entonces,
+
+(131:02) cuando  él  quiere  llegar  a  un  lugar,
+
+(131:04) tiene  que  usar  su  default  gateway  para
+
+(131:05) llegar  afuera  de  ese  lugar.  Y  afuera  de
+
+(131:08) ese  lugar  es  esta  red,  esta  que  está
+
+(131:10) acá.  Eso  es  afuera  de  su  lugar,  afuera
+
+(131:12) de  su  ámbito  de  de  su  land.
+
+(131:15) No  puede  porque  su  default  gateway  es
+
+(131:17) este  y  este  no  sabe  cómo  llegar  acá
+
+(131:20) todavía.
+
+(131:22) ¿Se  entiende?
+
+(131:24) Entonces  lo  que
+
+(131:25) Claro,  porque  no  tiene  no  tiene  la  tabla
+
+(131:27) de  enrutamiento  local  dos,
+
+(131:29) o  sea,
+
+(131:31) local  dos  todavía,  local  dos  todavía  no
+
+(131:34) tiene  nada  configurado,  no  tiene
+
+(131:35) configurado  RIP,  entonces  su  tabla
+
+(131:38) enrutamiento  no  tiene  esa  red,  fíjate.
+
+(131:40) Mirá.  Perfecto.
+
+(131:42) Show  IP  route
+
+(131:47) no  la  tiene.  Ven,  ven  que  no  la  tiene.
+
+(131:51) Entonces,  ¿qué  tengo  que  hacer  allá?
+
+(131:53) Conf
+
+(131:54) router  RIP
+
+(131:57) versión  2,
+
+(131:59) igual  que  el  otro  network  1928.1.2.0
+
+(132:03) cer  porque  es  la  red  que  la  red  LAN  que
+
+(132:06) tiene  conectada  la  pata  hacia  dentro  y
+
+(132:08) network
+
+(132:10) 10  porque  es  la  pata  que  tiene  conectada
+
+(132:12) contra  la  red  este  eh  contra  la  one
+
+(132:16) sería  perfecto
+
+(132:20) este  router  ya  debería  haber  aprendido
+
+(132:22) la  ruta  de  donde  está  Rosario  a  través
+
+(132:25) de  RIP  vamos  a  fijarnos  show  IP  route
+
+(132:28) con  un  dúo  adelante
+
+(132:31) porque  si  no  no  va  a  andar
+
+(132:34) Fíjense,
+
+(132:41) conoce
+
+(132:43) la  red
+
+(132:45) 192  168.1.0/24
+
+(132:50) vía  la  21.  ¿Cuál  es  la  21?
+
+(132:57) El  router  local  1,  que  está  acá.  O  sea,
+
+(133:00) él  aprendió  esta  red  que  la  hizo  en
+
+(133:03) sentido  amplio,  o  sea,  barra24,
+
+(133:07) la  conoce  gracias  a  este,  porque  este  se
+
+(133:09) la  pasó.
+
+(133:11) Este  conoce  la  red  eh  la  la  un  la  10.32
+
+(133:16) la  conoce  subneteada.  Este,  este  la
+
+(133:18) conoce  subneteada,  pero  este  la  conoce
+
+(133:20) también,  digamos,  gracias  a  este  que  se
+
+(133:22) la  pasó  completa,  se  la  pasó  con  un
+
+(133:25) barra24.  Listo.  Entonces  ahora  lo  que
+
+(133:27) debería  pasar,
+
+(133:29) déjenme  ver  acá  du  show  run,  una  cosita.
+
+(133:38) Perfecto,  ahí  están  las  redes.  Miren,
+
+(133:43) lo  que  debería  pasar  ahora  es  que  sí,  si
+
+(133:45) yo  hago  un  pin  desde  la  laptop  a  la  PC
+
+(133:49) de  Rosario,  ¿ven  que  ahí  llega?  Miren.
+
+(133:53) Y  si  lo  hago  al  revés  de  ven  que  llega
+
+(133:58) y  lo  vamos  a  hacer  más  interesante.
+
+(134:02) Vamos  a  poner  un  comando  trasert  para
+
+(134:05) que  vean  la  cantidad  de  saltos  cómo
+
+(134:06) salta.
+
+(134:08) 192  168.2.254.
+
+(134:15) El  primer  salto  de  acá.  Oy,  no  debería
+
+(134:18) haber  pasado  eso.  El  primer  salto  de  acá
+
+(134:22) de  la  PC  es  el  router  34,  que  es  la
+
+(134:25) interfaz  paset  00  del  router  este
+
+(134:30) que  está  configurada  como  la  punto  34.
+
+(134:33) Después  salta  de  acá  al  router  local  1
+
+(134:37) que  tiene  la  134.
+
+(134:40) Ese  es  el  segundo  salto.  Y  el  tercer
+
+(134:43) salto  va  directo  ya  a  la  PC,  a  la  laptop
+
+(134:46) admin.  ¿Lo  ven  que  son  tres  altos?
+
+(134:49) Vamos  a  hacerlo  al  revés.  A  ver,  vamos  a
+
+(134:50) ver  de  acá  de  la  laptop.
+
+(134:54) Traser  192  168.1  punto  eh  33.
+
+(135:03) Alguien  de  ustedes  me  había  preguntado
+
+(135:04) si  eran  cuatro  saltos  y  yo  le  dije  que
+
+(135:06) sí.
+
+(135:08) Acá  están  los  cuatro  saltos.
+
+(135:14) Se  entiende  por  qué  están  los  cuatro
+
+(135:16) saltos.
+
+(135:17) Sí,  por  el  default  guideway,
+
+(135:19) porque  la  laptop  va  a  su  default  guide,
+
+(135:22) que  es  este.  Este  router  conoce  la  ruta
+
+(135:25) porque  se  la  pasó  este.  Entonces  el  este
+
+(135:28) es  el  primer  salto,  este  es  el  segundo
+
+(135:30) salto,  o  sea,  viene  de  laptop  a  local
+
+(135:33) dos,  de  local  dos  salta  local  uno,  de
+
+(135:35) local  uno  salta  a  remoto  uno  y  después
+
+(135:37) llega  la
+
+(135:40) Sí.
+
+(135:41) O  sea,  1  2  3  4.
+
+(135:45) Impecable.
+
+(135:48) Bueno,  y  por  último  para  que  funcione
+
+(135:53) para  llegar
+
+(135:55) a  la  PC  admin,  que  es  esta  que  está  acá,
+
+(135:57) que  tenía  la  IP,  la  65,  que  no  va  a
+
+(136:01) andar,
+
+(136:03) tenemos  que  configurar.
+
+(136:06) ¿Por  qué  no  anda?
+
+(136:09) Ven  que  el  remoto  2  no  tiene
+
+(136:11) remoto  2  no  tiene  configurado  el  el
+
+(136:14) enrutamiento  dinámico  de  RIP,  con  lo
+
+(136:17) cual  remoto  2  no  conoce  las  rutas  porque
+
+(136:20) no  se  las  pasó  nadie,  no  se  las  pasó
+
+(136:22) local  2.  Entonces  el  paquete  queda
+
+(136:25) saltando.  Fíjense  que  yo  hice  un  eh
+
+(136:29) estoy  acá  en  la  laptop  y  hice  un  tracer
+
+(136:31) acá.
+
+(136:33) El  paquete  va  saltando  entre  el  default
+
+(136:36) gateway  y  este  otro  router  de  acá  para
+
+(136:38) ver  si  alguno  de  los  dos  conoce  el
+
+(136:40) camino  para  llegar  acá.  Como  ese  paquete
+
+(136:43) va  saltando  entre  estos  dos  y  ninguno  le
+
+(136:46) dice  cómo  llegar  acá,  el  paquete  muere
+
+(136:50) por  time  out,  o  sea,  llega  a  un  TTL  30  y
+
+(136:53) muere,  muere  por  TTL  sería.
+
+(136:58) Sí  se  entiende.
+
+(137:00) Okay.  Entonces  vamos  a  abrir  remoto  2
+
+(137:05) y  ya  con  esto  cierro  y  y  nos  vamos  a
+
+(137:07) casa.  Uno  show  run.
+
+(137:15) Ahí  se  ve  que  está  confiado  RIP,  pero  no
+
+(137:18) tiene  nada,  no  tiene  las  rutas.
+
+(137:22) Entonces,  conf
+
+(137:25) router  rip  router  rip
+
+(137:29) network.
+
+(137:32) Tengo  que  configurar  una  sola  porque  en
+
+(137:34) sus  dos  interfaces,
+
+(137:37) tanto  la  de  entrada  como  la  de  salida,
+
+(137:39) son  la  misma  red  grande,  por  así
+
+(137:41) decirlo,  nada  más  que  está  subneteada,
+
+(137:43) una  barra  27,  otra  barra  30.  Sí,  pero  la
+
+(137:46) red,  porque  acá  se  pone  la  red  tipo
+
+(137:47) classful,  ¿sí?  No  se  pone  si  si  ustedes
+
+(137:50) le  ponen  subneteada  lo  va  a  convertir  a
+
+(137:53) esto
+
+(137:55) porque  él  eh  se  queda  con  la  red
+
+(137:58) classful.  Miramos,  si  yo  hubiese  puesto
+
+(138:00) eh  así  y  acá  le  hubiese  puesto,  creo  que
+
+(138:03) es  64  y  arriba  le  hubiese  puesto  168.
+
+(138:09) Después  cuando  ustedes  pongan
+
+(138:11) tu  show  run  acá  en  RIP  les  va  a  mostrar
+
+(138:16) esta  red  así  como  está  acá.
+
+(138:19) porque  él  espera  que  le  pongas  una  red
+
+(138:22) eh eh  classful  y  si  no,  bueno,  agarra  la
+
+(138:25) red  que  vos  le  mandaste,  le  recorta  con
+
+(138:27) el  con  el  barra24  este  eh  lo  que  le
+
+(138:31) pongas  en  el  último  octeto  y  la
+
+(138:33) convierte  en  eso  que  es  eh  es  la  red
+
+(138:36) classful,  ¿se  entiende?
+
+(138:40) Bueno,  y  listo.  Entonces  ahora  yo
+
+(138:42) debería  poder  llegar  a  la  65.  ¿Ven  que
+
+(138:45) llegó  con  tres  altos?  Porque  de  acá  va
+
+(138:48) su  default  gateway  y  después  salta.  Este
+
+(138:51) es  1  2  3
+
+(138:55) y  colorín  colorado.  Este  cuento  se  ha
+
+(138:57) acabado.
+
+(138:59) Obviamente  que  todo  lo  que  yo  hice
+
+(139:00) tienen  que  hacerlo  también  para  la  parte
+
+(139:01) de  la  sucursal  3.  ¿No
+
+(139:05) se  entendió  todo?
+
+(139:08) Eh,  profe,  una  consulta.  En  el  remoto
+
+(139:11) uno,  eh,  si  usted  pone  show  IP  route,  el
+
+(139:16) remoto  uno,  perdón,  profe,  en  la
+
+(139:17) izquierda  abajo,  eh,
+
+(139:21) si  dice  que  conoce  a  la  C  92  168.0,
+
+(139:27) eh,
+
+(139:29) ahí  se  refiere  que  reconoce  a  la  red
+
+(139:31) interna  suya.
+
+(139:34) Punto  uno
+
+(139:36) de  vuelta
+
+(139:37) o  era  en  local  uno.  Me  quedó.  Sí.
+
+(139:41) Acá  tr  en  remoto  uno.  Vos  a  cuál  querías
+
+(139:43) entrar?
+
+(139:44) Eh,  puede  ser  que  sea  local  uno,
+
+(139:46) entonces  eh  no  me  acuerdo  cuál  era,
+
+(139:48) profe,  pero  es  como  que
+
+(139:51) Claro,  las  tres  sucursales.  Sí,
+
+(139:53) fíjense  una  cosa,  como  ahora  las  dos
+
+(139:56) sucursales
+
+(139:58) y  la  oficina  de  Buenos  Aires,
+
+(140:01) digamos,  las  dos  sucursales  y  Buenos
+
+(140:03) Aires,  están  todas  conectadas.  Si  yo  veo
+
+(140:06) en  alguno  de  los  routers  la  tabla
+
+(140:07) enrutamiento,  fíjense  que  RIP  ya  me
+
+(140:10) muestra  más  información  porque  al  haber
+
+(140:13) habilitado  este  el  digamos  el  proceso  de
+
+(140:17) RIP  en  las  sucursales  y  y  ahí  en  o  sea
+
+(140:20) aparece  más  información  que  se  pasa  y  se
+
+(140:23) conoce.  ¿Ven?
+
+(140:25) Se  podrían  conectar  entre  esos  cursales.
+
+(140:28) Hay  claro,  esa  prueba  la  tienen  que
+
+(140:30) hacer  ustedes.  Miren,  yo  no  la  hice
+
+(140:31) porque  me  olvidé,  pero  eh  ahora
+
+(140:34) obviamente  que  admin  uno  debería  poder
+
+(140:36) llegar  admin.
+
+(140:38) Trasert
+
+(140:39) 118.1.65.
+
+(140:44) Fíjense  todos  los  saltos  que  hace.  Va  al
+
+(140:47) router.  Esperen,  perdón,  no  lo  no  lo
+
+(140:51) lo  seguimos.  Bien,  va  al  router  remoto
+
+(140:53) 1,  que  es  su  default  gateway,  que  es
+
+(140:55) ustedes  fíjense  esto,  mientras  yo  le
+
+(140:56) explico,  fíjense  esto,  lo  voy  nombrando.
+
+(140:59) Fíjense  lo  que  está  en  el  en  el  CMD.
+
+(141:03) Salta  a  eh  su  default  gateway,  que  es  el
+
+(141:06) 34.  Del  34  va  a  local  1,  que  es  el  134.
+
+(141:11) del  134  va  al  22,  que  es  este  local  2.
+
+(141:16) De  local  2  salta  al  169  que  es  remoto  2,
+
+(141:20) y  de  remoto  2  salta  a  las  a  la  a  la  65
+
+(141:23) que  es  la  PC.  Hace  toda  esta  vuelta  así
+
+(141:26) como  una  herradura,  como  una  U
+
+(141:28) invertida.  ¿Lo  ven?  Todos  esos  saltos
+
+(141:31) hace.  Sí,  justamente  las  sucursales  se
+
+(141:33) tienen  que  ver  todas  contra  todas.
+
+(141:36) Sí,  obviamente  que  la  tres  no  va  a  andar
+
+(141:37) nada  porque  no  hay  nada  configurado,
+
+(141:39) pero  cuando  hagan  este  mismo  trabajo  que
+
+(141:40) yo  hice  acá,
+
+(141:42) eh,  todo  va  a  funcionar  armónicamente  y
+
+(141:45) todo  se  tiene  que  ver  con  todo.  Sí,  si
+
+(141:47) todo  se  ve  con  todo,  quiere  decir  que
+
+(141:49) resolvieron  bien  el  escenario.
+
+(141:53) Y  ahora  sí,
+
+(141:53) fue  desde  la  PC  admin  1  hasta  el  remo  2
+
+(141:57) o  hasta  la  PC  admin.
+
+(141:58) Desde  la  PC  admin  1  a  la  PC  admin  2
+
+(142:01) y  punto  65  era  la  IP  del  admin  2.
+
+(142:05) Sí.
+
+(142:06) Ah,  okay.
+
+(142:07) Y  la  66  es  la  del  router.
+
+(142:09) Perfecto.
+
+(142:11) Bueno,  e
+
+(142:14) no  dejé  nada  librado  al  azar,  creo  que
+
+(142:16) les  expliqué  todo.  Eh,  no  sé  si  hay
+
+(142:19) alguna  duda  y  si  no,  hasta  que  llegamos.
+
+(142:22) en  disculpe  en  local  uno  podría  tirar  un
+
+(142:25) show  IP  route.
+
+(142:27) Sí,  obvio.
+
+(142:29) Local  uno  acá.
+
+(142:38) Ahí  está.
+
+(142:41) No  sé  cuál  es  tu  duda.
+
+(142:42) Sí.  Cuando  dice  que  conoce  a  la  168.1,
+
+(142:45) un  eh  eso  lo  infiere  porque  tiene  el
+
+(142:49) seral  conectado,  o  sea,  para  la  sucursal
+
+(142:51) uno.
+
+(142:56) Eh,
+
+(142:59) eso  lo  infiere  porque  vos  cuando  eh
+
+(143:02) tirás  el  comando  network  eh  le  estás
+
+(143:05) pasando  una  red  classful.
+
+(143:08) Después  él  cuando  recibe  las
+
+(143:11) actualizaciones  por  RIP,  este  eh  muestra
+
+(143:15) eh  las  redes  del  las  subredes  sería,
+
+(143:19) pero  si  vos  te  fijas  acá  arriba,  ¿qué
+
+(143:22) dice  ahí  arriba?
+
+(143:26) Esto,  eso  que  te  estoy  mostrando  es  para
+
+(143:27) evacuar  la  duda  que  me  lo  que  me
+
+(143:28) preguntaste.
+
+(143:33) Lo  que  tiene  la  máscara  dinámica.  Puede
+
+(143:37) ser,
+
+(143:38) ¿no?  Lo  que  te  está  diciendo  ahí  es
+
+(143:41) la  red  192  168.1.0
+
+(143:46) es  la  que  está  eh  la  que  yo  conozco  y
+
+(143:50) está  subneteada  eh  con  una  máscara
+
+(143:53) longitud  variable  y  como  resultado  de
+
+(143:55) eso  tengo  cinco  subnets
+
+(143:58) y  y  conozco  de  esas  cinco  subnet  cuatro
+
+(144:00) cuatro  máscaras.
+
+(144:02) Eso  dice.  ¿Cuáles  son  las  cuatro
+
+(144:04) máscaras?
+
+(144:06) la  barra  27
+
+(144:09) en  la  barra  30,  la  barra  32  y  la  propia
+
+(144:13) barra,  bueno,  y  la  barra  24.
+
+(144:19) Ahora  es  como  que  infiere  las  Sí,
+
+(144:21) sí  se  da  cuenta  de  todo.  Se  da  cuenta  de
+
+(144:23) todo.  Después  si  yo  a  esta  configuración
+
+(144:26) le  tiraría  el  comando  ese  que  sería  no
+
+(144:28) autosmary
+
+(144:30) o  mejor  dicho,  perdón,  auto  summary,  no
+
+(144:31) mostraría  todo  este  detalle.  No  te
+
+(144:33) mostraría  esto,
+
+(144:37) no  mostraría,  no  las  mostraría  así
+
+(144:39) subneteada,  la  mostraría  este  así.  Pero
+
+(144:44) eh
+
+(144:45) manejémoslo  así.
+
+(144:47) para  que  ustedes  entiendan  bien  todo  el
+
+(144:49) concepto.
+
+(144:52) Bien,  profe,  gracias.
+
+(144:54) Bueno,  eh  hasta  acá  llegamos,  eh,  así
+
+(144:58) que  nada,  trabajen  tranquilos,
+
+(145:01) practiquen  todo,  háganlo  bien,  no  dejen
+
+(145:04) nada  sin  configurar
+
+(145:07) y  bueno,  y  después  ya  saben  cómo  cómo  es
+
+(145:09) el  procedimiento  para  subirlo.  Sí,
+
+(145:12) sí,  profe,  el  jueves  que  viene  se
+
+(145:14) subiría  el  TL3,  entonces.
+
+(145:17) El  jueves  que  viene,  eh,  claro,  se
+
+(145:19) subiría  este  el  Tele3.  Después  lo  voy  a
+
+(145:22) después  voy  a  habilitar  el  recurso  de
+
+(145:24) vuelta,  no  se  pongan  nerviosos.  Y  eh,
+
+(145:28) nada,  ya  después  no  sé  si  hay  finales  la
+
+(145:30) semana  que  viene,  no,  algún  día,  pero
+
+(145:33) este  me  tengo  que  fijar  en  el
+
+(145:34) cronograma,  pero  bueno,  creo  que  tenemos
+
+(145:36) clases  normales,  me  parece.
+
+(145:38) Se  reprogramaron,  pero  es  martes  y
+
+(145:41) miércoles.
+
+(145:42) Ah,  okay.
+
+(145:44) Bueno,  sí,  le  iba  a  preguntar  entonces
+
+(145:46) el  Tele  3  sin  el  punto  I  para  el  jueves
+
+(145:49) que  viene.
+
+(145:50) Sin  el  punto  I,  exactamente,  el  punto  I
+
+(145:52) eh  queda  afuera.  Así  que  bueno,
+
+(145:57) listo.  E  si  no  hay  nada  más  para
+
+(145:59) preguntar  y  nadie  más  quiere  hacer
+
+(146:01) ningún  comentario,  incluso  también  no  sé
+
+(146:03) si  Rafael  si  querés  comentar  algo  más,
+
+(146:05) si  no  ya  estaríamos.
+
+(146:10) Bueno,
+
+(146:12) les  deseo  buen  fin  de  semana  y  nos  vemos
+
+(146:14) la  próxima,  que  no  sé  si  es  la  semana
+
+(146:16) que  viene  o  la  otra.  Me  tengo  que  fijar
+
+(146:18) bien  en  el  cronograma  por  las  dudas.  En
+
+(146:20) en  principio,  nos  vemos  la  semana  que
+
+(146:21) viene.
+
+(146:22) Bien,  igualmente,  buen  fin  de
+
+(146:25) Chao,  chicos.
+
+(146:27) Gracias.
