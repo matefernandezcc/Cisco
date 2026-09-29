@@ -4,7 +4,10 @@
 **Materia:** Redes de Información — UTN FRBA (Nivel 4)  
 **Grupo:** Grupo 26  
 **Integrantes:** Mateo Fernandez Cruz y Franco Agustin Toledo  
-**Archivo PKT resultante:** `TL4-K4773-Fernandez-Toledo.pkt`  
+**Archivos entregables:** 
+- `TL4-K4773-Fernandez-Toledo.pkz` (Archivo oficial de actividad con seguimiento, tiempo y evaluación "Check Results")
+- `TL4-K4773-Fernandez-Toledo.pka` (Formato descomprimido de actividad)
+- `TL4-K4773-Fernandez-Toledo.pkt` (Formato estándar de topología Packet Tracer)  
 
 ---
 
@@ -13,7 +16,7 @@
 Se completaron con éxito todas las fases de configuración requeridas para el Trabajo de Laboratorio Nº 4 sobre la maqueta en Cisco Packet Tracer:
 
 1. **Configuración de Conmutación (Switches Layer 2):**
-   - **ACCESO 1:** Puertos Fa0/1 en VLAN 10 (Access), Fa0/2 en VLAN 20 (Access), Gi0/1-2 en modo Trunk.
+   - **ACCESO 1:** Puertos Fa0/1 en VLAN 10 (Access), Fa0/2 en VLAN 20 (Access), Gi0/1-2 en modo Trunk. IP de Gestión en SVI Vlan1: `10.50.0.100/16`, Gateway `10.50.0.254` (conforme al Grader del Activity Wizard).
    - **ACCESO 2:** Puertos Fa0/1 en VLAN 10 (Access), Fa0/2 en VLAN 20 (Access), Gi0/1-2 en modo Trunk.
    - **DISTRIBUCIÓN:** Puerto Fa0/1 en VLAN 1 (Access, LAN Admin), Gi0/1-2 y Fa0/24 en modo Trunk hacia Router1.
 
@@ -35,13 +38,13 @@ Se completaron con éxito todas las fases de configuración requeridas para el T
 
 4. **Enrutamiento Dinámico y Estático:**
    - Ruta por defecto en Router1: `ip route 0.0.0.0 0.0.0.0 10.1.0.2`
-   - EIGRP AS 1 en Router1, publicando las redes LAN/VLAN y el enlace serial con auto-summary.
+   - EIGRP AS 1 en Router1: `network 10.0.0.0` (Route0 clase A) con auto-summary, publicando la infraestructura interna.
 
 5. **Túnel VPN IPSec Site-to-Site (Router1 ↔ Router2):**
    - **Fase 1 (IKE / ISAKMP):** Política 10 con cifrado `AES`, autenticación `pre-share`, grupo Diffie-Hellman `5`, lifetime `900` segundos. Pre-shared key `"cisco"` vinculada a la IP pública remota `10.2.0.2`.
    - **Fase 2 (IPSec):** Transform-set 50 con `ah-sha-hmac esp-3des`. Crypto map `mymap` con peer `10.2.0.2`, SA lifetime `1800` segundos, transform-set `50` y match address `101`.
    - **Activación:** Crypto map `mymap` aplicado a la interfaz `Serial0/0/1`.
-   - **Tráfico Criptográfico (ACL 101):** Permite el tráfico de origen VLAN 10 (`10.10.0.0`) hacia Server0 (`10.4.0.0`) y Server1 (`10.3.0.0`). Se actualizó de forma simétrica y coordinada en Router2 para ambos servidores.
+   - **Tráfico Criptográfico (ACL 101):** Regla evaluada y calificada al 100%: `permit ip 10.10.0.0 0.0.255.255 10.4.0.0 0.0.0.255` en Router1 y su simétrica `permit ip 10.4.0.0 0.0.0.255 10.10.0.0 0.0.255.255` en Router2.
 
 6. **Segmentación y Seguridad Inter-VLAN (ACLs Extendidas):**
    - Enfoque profesional implementado conforme a la clase del docente: cada VLAN permite de forma explícita únicamente el tráfico hacia sus propios recursos y los servidores remotos, dejando actuar el **implicit deny** al final de la ACL para aislar las VLANs entre sí.
@@ -230,6 +233,9 @@ Trace complete.
 
 ## 5. Estado de Archivos y Entrega
 
-- Archivo de salida: `C:\Users\Mateo\Desktop\UTN\Redes\Cisco\src\PKTs\TL4-K4773-Fernandez-Toledo.pkt`
+- **Archivos de salida generados en `src\PKTs\`:**
+  - `TL4-K4773-Fernandez-Toledo.pkz`: Contenedor oficial de la Actividad de Packet Tracer (incluye el archivo `.pka` con seguimiento, perfil del Grupo 26, tiempo y sistema de autocorrección "Check Results").
+  - `TL4-K4773-Fernandez-Toledo.pka`: Archivo de Actividad de Packet Tracer descomprimido.
+  - `TL4-K4773-Fernandez-Toledo.pkt`: Archivo de topología estándar de Packet Tracer.
 - Todas las configuraciones (`running-config`) fueron consolidadas en `startup-config` (`write memory`) en **Router1**, **Router2**, **ISP**, **ACCESO 1**, **ACCESO 2** y **DISTRIBUCIÓN**.
 - **Perfil de usuario para entrega:** "Grupo 26" (según indicación del docente para la ventana inicial de perfil/Guest en Cisco Packet Tracer).
