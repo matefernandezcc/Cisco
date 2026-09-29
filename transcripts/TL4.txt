@@ -1,0 +1,6535 @@
+Title: TL4 | Redes de Datos UTN | 24/9/2026
+
+(0:02) 00
+
+(0:03) 255  sería  0  0
+
+(0:08) 2
+
+(0:11) Deja  pasar  todos  los  paquetes  que
+
+(0:12) coincidan  con  esto.  2  10  45  32  y  no  me
+
+(0:16) importaría  este  acá  podría  ser  1  2  3  4  e
+
+(0:20) hasta  254.
+
+(0:22) Sí,  pero  bueno,  se  pone  porque  el  ni  se
+
+(0:27) usa  cuando  se  usa  un  acces  lis  extendida
+
+(0:30) que  evalúa  origen  y  destino.  Y  a  mí  me
+
+(0:32) podría  me  podría  importar  solamente
+
+(0:35) evaluar  el  origen  y  el  destino  que  sea
+
+(0:37) cualquier  cosa.  Entonces,  si  el  destino
+
+(0:38) es  cualquier  cosa,  pongo  n  porque  no
+
+(0:40) evalúo  la  dirección  IP  destino,  se
+
+(0:42) entiende,
+
+(0:44) o  no  evalúo  el  origen.  No,  puede  ser
+
+(0:46) cualquiera  cualquier  condición.
+
+(0:50) Así  que  bueno,  conceptualmente  es  esto,
+
+(0:52) facilísimo.
+
+(0:54) Y  acá  vienen  los  ejemplos  de  cómo
+
+(0:56) definir  la  access  list,  que  yo  lo  fui
+
+(0:57) diciendo,  y  cómo  y  y  cómo  se  escriben  en
+
+(1:03) el  router.  Sí.
+
+(1:05) Paso  uno,  ¿cómo  configurar  un  access
+
+(1:08) listar?
+
+(1:10) Se  hace  de  esta  manera,  se  pone  access
+
+(1:13) list,  ese  es  el  comando,  el  número  del
+
+(1:16) access  list,  si  es  un  access  list
+
+(1:17) estándar,  como  dice  acá  arriba,  va  a
+
+(1:20) oscilar  entre  1  y  99  el  ID  de  esa  de  esa
+
+(1:23) access  list.  Después  se  pone  la  palabra
+
+(1:26) permit  o  deny,  si  yo  quiero  permitir  el
+
+(1:29) tráfico  o  lo  quiero  denegar.  Y  después
+
+(1:30) se  pone  cuál  es  la  la  dirección  IP  de
+
+(1:32) origen,  ¿sí?  que  se  espera  que  que
+
+(1:34) digamos  que  que  que  con  la  que  el  access
+
+(1:38) list  va  a  machear  algo,  ¿sí?  porque  va  a
+
+(1:39) llegar  un  tráfico  y  el  tráfico  que  llega
+
+(1:42) lo  va  a  machear  con  todas  estas,
+
+(1:45) todas  estas  líneas  que  están  acá  abajo,
+
+(1:47) que  es  un  ejemplo,  es  una  sola  access
+
+(1:50) list  que  se  la  denomina  con  el  ID  número
+
+(1:54) 10  y  evalúa  todas  estas  condiciones.  Si
+
+(1:58) estas  cuatro  condiciones  se  evalúa,  o
+
+(2:00) sea,  es  una  sola  access  list  que  evalúa
+
+(2:02) cuatro  condiciones  distintas
+
+(2:05) y  a  modo  ejercicio  la  vamos  a  ir
+
+(2:08) diciendo  qué  hace.
+
+(2:10) viene  un  paquete,  digamos,  de  la  redan,
+
+(2:13) entra  por  la  interfaz  del  router,
+
+(2:16) el  router  ve  que  es  una  dirección
+
+(2:18) enrutable,  digamos,  porque  la  la
+
+(2:20) reconoce  que  en  su  tabla  de  enrutamiento
+
+(2:23) la  puede  eh  forwarddear  o  la  puede
+
+(2:25) conmutar  y  se  fija,  tiene  una  access
+
+(2:28) listada  a  esa  interface,  entonces  dice,
+
+(2:31) "Bueno,  voy  a  evaluar  la  acces  10  con
+
+(2:32) este  tráfico  que  me  llegó  y  ahí  dice,
+
+(2:35) voy  a  ir  con  la  primera
+
+(2:38) y  de  así  Denégame
+
+(2:42) el  tráfico  que  venga  de  esta  dirección
+
+(2:44) IP  específica.
+
+(2:46) O  sea,  evalúa  el  paquete  de  entrada  y  se
+
+(2:49) fija  el  paquete  de  entrada  tiene  esta
+
+(2:51) dirección  IP,  la  210  541.
+
+(2:55) Si  tiene  esa  IP  y  es  exactamente  la
+
+(2:57) misma  y  coincide  porque  acá  la  ACEL
+
+(2:59) tiene  la  palabra  host  adelante,  que  es
+
+(3:01) lo  mismo  que  poner  210.5.4.0
+
+(3:04) espacio  00,
+
+(3:06) ¿sí?  O  sea,  la  WHCard  acá  es  la  palabra
+
+(3:09) host.
+
+(3:11) Si  coincide  con  esta,  ¿qué  hace?  Deniega
+
+(3:15) el  tráfico,  o  sea,  no  lo  deja  pasar  y
+
+(3:17) sale  del  sale  de  digamos  del  access  list
+
+(3:20) y  ya  está.  Muere  ahí.
+
+(3:23) Ahora,  si  la  dirección  IP  no  es  esa,
+
+(3:26) pasa  a  evaluar  la  segunda  condición  y
+
+(3:28) dice,  "Permitime
+
+(3:31) el  tráfico  que  venga  de  la  dirección  IP
+
+(3:34) que  coincida  con  210.
+
+(3:37) 54,  o  sea,  210.5.4.
+
+(3:41) Y  no  me  importa  cuál  es  el  último  es
+
+(3:44) decir,  ejemplo,  permitime  el  tráfico  que
+
+(3:47) venga  por  la  IP  210.5.4.4,
+
+(3:51) 210.5.4.20
+
+(3:55) 210.5.4.253.
+
+(3:59) Lo  va  a  dejar  pasar.
+
+(4:01) Ahora,  si  viene  un  tráfico  que  es,  por
+
+(4:04) ejemplo,  210.5  5.5
+
+(4:08) estaría  violando  el  cuatro  este  que  está
+
+(4:10) acá,  porque  el  tiene  el  cuatro  tiene  que
+
+(4:13) coincidir  porque  el  cuatro  tiene  un
+
+(4:14) cero,  o  sea,  tiene  que  coincidir  sí  o  sí
+
+(4:17) el  cuatro,  como  no  coincide  porque  yo
+
+(4:20) digo  que  viene  un  cinco.  Okay.  Este,
+
+(4:24) pasa  y  evalúa  la  siguiente
+
+(4:27) condición.  Sí,  porque  ese  paquete  no
+
+(4:32) está
+
+(4:33) [carraspeo]  eh  dentro  del  del  rango  que
+
+(4:36) que  que  el  Access  List  decía.
+
+(4:39) Es  otro  es  otro  es  otra  dirección  IP.
+
+(4:43) Después,  bueno,  viene  otro  otro  paquete
+
+(4:45) que  puede  ser  con  este  con  este  prefijo,
+
+(4:48) ¿no?  Esta  esta  línea  dice,  "Denegame  el
+
+(4:53) tráfico  que  viene  de  la  192  168.1  1.0
+
+(5:00) donde  tiene  que  coincidir  el  192,  tiene
+
+(5:03) que  coincidir  el  168,  tiene  que
+
+(5:04) coincidir  el  1.  ¿Y  qué  pasa  con  esto?
+
+(5:09) Que  es  un  15  ahí.  Y  ahí  es  donde  viene,
+
+(5:13) ahí  es  donde  viene
+
+(5:15) el  trabajo  fino  que  hay  que  hacer  con
+
+(5:17) las  access  list.  ¿Cuál  es  el  trabajo
+
+(5:20) fino  que  hay  que  hacer  con  las  Access?
+
+(5:22) Bueno,  hay  que  convertir  ese  15  o  hay
+
+(5:24) que  pasar  ese  15  a  binario,  ¿sí?
+
+(5:29) Y  fijarse  en  la  dirección  IP  que  viene.
+
+(5:32) Por  ejemplo,  podría  venir  192,  168.1.20.
+
+(5:37) ¿Sí?  Y  hay  que  fijarse  si  la  1968.1.20
+
+(5:43) 20  pasando  el  20  a  decimal  y  pasando  el
+
+(5:46) 15,  perdón,  a  binario  y  pasando  el  15  a
+
+(5:49) binario  y  fijarse  con  los  bits  si  dentro
+
+(5:54) de  este  15  que  está  puesto  como  la
+
+(5:56) WHCard  está  la  la  dirección  punto  20
+
+(5:59) dentro  del  rango  ese  que  permite  este
+
+(6:01) punto  15  que  está  acá.
+
+(6:04) Si  yo  hago  255  -  15  es  como  que
+
+(6:10) si  yo  sería  como  la  inversa  de  la
+
+(6:12) máscara  de  subred,  ¿no?  La  máscara  de
+
+(6:14) subred  sería  255  255  255.240
+
+(6:19) porque  255  -  15  es  240.  ¿Sí?
+
+(6:25) Y  les  digo  esto  para  que  entiendan,  eh
+
+(6:28) porque  bueno,  que  acá  haya  que  que  en
+
+(6:31) una  dirección  IP  sea  un  barra27,
+
+(6:35) creo  que  el  barra27  era  240,  es  240.  ¿Se
+
+(6:38) acuerdan  que  algunas  direcciones  IP
+
+(6:39) están  dentro  de  de  esa  de  esa  subred  y
+
+(6:42) otras  quedan  afuera  porque  está
+
+(6:43) subneteada?
+
+(6:45) Bueno,  con  la  Wilcard  pasa  lo  mismo.  Si
+
+(6:48) llega  una  llega  a  una  dirección  IP  y  con
+
+(6:51) esta  WHCard  lo  que  llega  acá  no  está
+
+(6:55) dentro  de  esta  Willcard.  Sí.  Y  digo  no
+
+(6:58) está  dentro  por  este  15  que  en  vez  de
+
+(6:59) ser  255  o  en  vez  de  ser  pasa  todo,
+
+(7:03) machea  todo.  Pasa  pasa  una  porción.  Sí.
+
+(7:07) Este  15  lo  que  significa  acá  es  que  pasa
+
+(7:09) una  porción  de  las  direcciones  IP.  No
+
+(7:11) pasa  la  no  pasa  de  la  1  a  la  254,
+
+(7:15) pasan  algunos,  por  ejemplo,  pasa  de  la  1
+
+(7:19) a  la  30,  de  la  de  de  la  31  a  la  253  no
+
+(7:23) pasan.
+
+(7:24) ¿Se  entiende?  Lo  lo  puse  con  un  ejemplo
+
+(7:26) general  porque  no  sé,  lo  tendría  que
+
+(7:28) calcular  también,
+
+(7:30) pero  se  entiende  el  concepto.
+
+(7:32) Sí,  lo  que  no  entiendo  es  cuáles
+
+(7:33) exactamente  no  pasarían,  pero  se
+
+(7:35) entiende  que  es  una
+
+(7:36) bueno  pero  eso  pero  eso  yo  tampoco  lo
+
+(7:38) tengo  que  hacer,  no  me  lo  sé  de  memoria.
+
+(7:41) O  sea,  okay,  okay.
+
+(7:42) O  sea,  yo  no  sé  con  un  15  acá  si  pasan
+
+(7:44) de  la  1  a  la  20  y  las  otras  quedan
+
+(7:47) afuera.  Hay  que  hacerlo,  digamos,  si
+
+(7:49) viene  un  20,  hay  que  hacer.  Bueno,  ahora
+
+(7:50) lo  van  a  ver.  Eh,  abajo  hay  un  ejemplo.
+
+(7:54) Bueno,  y  con  ese  mismo  criterio  se
+
+(7:55) evalúa  esto.  Permitimme  el  tráfico  que
+
+(7:57) viene  de  la  1928.1.
+
+(8:01) Sí.  Y  no  me  importa  eh  que  venga
+
+(8:03) después.  Por  eso  acá  hay  un  255  a
+
+(8:05) comparación  de  lo  anterior  que  que  era
+
+(8:07) un  15.  Acá  pasan  todas.  Acá  pasa  la
+
+(8:09) dirección  de  IP  de  la  1  a  la  253.  ¿Se
+
+(8:13) entiende  la  diferencia  para  que  eh  o  la
+
+(8:16) importancia  de  la  WHCard?  Sí.  Después,
+
+(8:19) bueno,  hay  que  mirar.  Sí.
+
+(8:24) Bien.
+
+(8:26) Y  acá  viene
+
+(8:28) lo  mismo  que  antes,  pero  el  mismo
+
+(8:30) análisis  que  antes,  pero  viene  con  la
+
+(8:33) configuración  de  una  access  l  extendida,
+
+(8:36) donde  acá  ya  no  se  evalúa  solamente  una
+
+(8:38) dirección  IP.  Se  evalúa  la  dirección  IP
+
+(8:40) de  origen,  la  dirección  IP  de  destino  y
+
+(8:43) se  evalúa  protocolo  con  puerto.  Sí.
+
+(8:47) Y  el  formato  es  este,  el  siguiente  es
+
+(8:49) esto  que  está  acá,  ¿sí?  Que  no  es  más  ni
+
+(8:52) menos  que  cuando  uno  lo  escribe  en  un
+
+(8:54) router,  se  escriben  todas  de  esta
+
+(8:55) manera.  Sí,  si  quieren  sáquenle  una
+
+(8:59) captura  a  esto.  A  la  anterior  no  vale  la
+
+(9:01) pena  porque  es  muy  simple,
+
+(9:03) recontrabásico  y  las  que  más  vamos  a
+
+(9:05) usar  son  estas,  las  extendidas  y  y
+
+(9:07) sáquenle  una  captura  acá  para  tener  un
+
+(9:09) un  ejemplo
+
+(9:11) eh  eh  sobre
+
+(9:14) cómo  se  cómo  se  escribe  en  qué  es  cada
+
+(9:17) cosa.  Yo  lo  voy  a  decir  conceptualmente
+
+(9:19) esto.
+
+(9:21) Entonces,  ¿cómo  se  configura  un  access
+
+(9:23) list?
+
+(9:25) Bueno,  el  ID  de  esa  access  list  para  que
+
+(9:27) el  router  entienda  que  es  una  extendida
+
+(9:30) y  no  es  un  estándar  es  con  el  ID.  Y  se
+
+(9:34) acuerdan  que  del  100  al  199  el  router
+
+(9:37) entiende  que  es  una  access  listida
+
+(9:40) porque  si  era  de  si  esta  ID  es  de  1  a
+
+(9:42) 99,  el  router  entiende  que  le  estás
+
+(9:45) escribiendo  una  access  listar.
+
+(9:49) Entonces,  ¿cómo  se  evalúa  esto?  ¿Qué
+
+(9:51) significa?
+
+(9:53) Dice  access  list  definida  con  el  con  el
+
+(9:56) ID  100.  Denégame  el  tráfico
+
+(10:00) TCP,  ¿sí?
+
+(10:03) Cuyo  origen  sea  esta  dirección  IP.  Por
+
+(10:07) eso  acá  adelante  dice  host.  O  sea,  tiene
+
+(10:10) que  coincidir  exactamente  esa  dirección
+
+(10:12) IP  de  origen  y  que  el  tráfico  saliente  o
+
+(10:16) que  el  destino  donde  vaya  sea  cualquier
+
+(10:18) dirección  IP,  siempre  y  cuando  estemos
+
+(10:22) hablando  del  protocolo  Telnet,  ¿sí?
+
+(10:26) O  sea,  TCP,
+
+(10:28) veamos,  es  el  protocolo  y  dentro  del
+
+(10:31) protocolo  TCP,  que  es  una  GAM,  una  suit
+
+(10:33) de  protocolos,  está  el  protocolo  Telnet.
+
+(10:35) Entonces  está  acá  está  le  está  diciendo,
+
+(10:38) evalúame  que  sea  un  protocolo  TCP  y
+
+(10:41) específicamente  que  sea  una  conexión  por
+
+(10:43) Telnet.
+
+(10:44) Entonces  cuando  yo  haga  Telnet  espacio
+
+(10:50) 210.5.4.4,
+
+(10:54) que  sería  el  destino,  ¿sí?  Y  la  PC  mía
+
+(10:58) tenga  esta  dirección  IP,  en  ese  caso  me
+
+(11:01) va  a  denegar  el  tráfico.  ¿Por  qué?
+
+(11:04) Porque  mi  mi  mi  PC  que  tiene  esta
+
+(11:08) dirección  IP  está  tratando  de  efectuar
+
+(11:12) una  conexión  hacia  cualquier  lado,  hacia
+
+(11:14) cualquier  servidor,  que  yo  lo  llamé
+
+(11:17) 210.5.4.4.
+
+(11:20) Ese  sería  mi  serviol  que  está  del  otro
+
+(11:22) lado,  que  no  lo  evalúa  porque  acá  dice
+
+(11:24) any,  o  sea,  cualquier  cosa,
+
+(11:27) pero  sí  eh  me  evalúa,  digamos,  quién  es
+
+(11:31) el  que  está  tratando  de  hacer  esa
+
+(11:32) conexión  y  la  IP  es  esta  y  además
+
+(11:35) coincide  que  le  estoy  tratando  de  hacer
+
+(11:38) un  telnet,  digamos,  a  esa  dirección
+
+(11:41) destino  que  sería  cualquier  cosa  por
+
+(11:42) este  eni,  pero  en  realidad  yo  tengo  que
+
+(11:45) decir  cuál  es  cuando  estoy  haciendo  el
+
+(11:47) telnet  hacia  algún  lugar.  Entonces  me
+
+(11:50) deniega  automáticamente  esa  conexión  si
+
+(11:52) coincide  que  este  CP  que  es  tipo  Telnet
+
+(11:55) y  que  viene  esta  y  que  viene  este  de
+
+(11:57) esta  PC.  ¿Se  entiende?
+
+(12:01) Lo  expliqué  recontraalento  y  completo.
+
+(12:05) Profe,
+
+(12:06) sí.
+
+(12:07) Eh,  ahí  si  Telnet  cambiaría  de  protocolo
+
+(12:10) por  algún  motivo,  o  sea,  de  puerto,
+
+(12:13) perdón,  por  algún  motivo  igual  lo
+
+(12:16) machearía,  ¿no?
+
+(12:18) Eh,  sí,  lo  que  pasa  que  el  eh,  digamos
+
+(12:21) el  Tennet  es  uno  de  los  puertos  que  está
+
+(12:24) en
+
+(12:26) eh  está  dentro  de  los  puertos  bien
+
+(12:29) conocidos,  se  lo  llaman  los  wellort,  que
+
+(12:32) son  los  primeros  1024  puertos,  ya  están
+
+(12:34) definidos  y  el  y  cuando  vos  pones  la
+
+(12:37) palabra  telnet  acá  sabe  que  es  el  puerto
+
+(12:38) 21.
+
+(12:41) Si  no  fuese  el  telnet,  acá  se  le  escribe
+
+(12:43) el  puerto,  se  le  pone  equal  22  o  acá  en
+
+(12:48) vez  de  telnet  podrías  poner  en  vez  de
+
+(12:50) telnet  podrías  haber  puesto  equal.  EQ
+
+(12:52) significa  equal,  o  sea,  decir  igual  a  21
+
+(12:55) y  acá  pones  21  como  esto.  Miren  lo  que
+
+(12:58) pasa  no  llegué  al  ejemplo.
+
+(12:59) Poner  un  rango  de  puertos,
+
+(13:01) no  se  pone  así.  Eh,  quizás  hay  acá  una
+
+(13:05) palabra  que  es  un  rango,  pero
+
+(13:07) generalmente  no.  Generalmente  se  pone
+
+(13:09) específicamente  cuál  es  el  puerto.  Si
+
+(13:12) querés  poner  más  puertos,  hacés  en  eh
+
+(13:16) otra  otra  línea  en  la  access  list.
+
+(13:18) Habría  que  ver  si  este  equal  eh  eh
+
+(13:21) admite  en  vez  de  equal  eh  otra  palabra
+
+(13:24) que  haga  referencia  a  un  rango,  pero  no
+
+(13:26) me  acuerdo
+
+(13:28) porque  no  se  usa  así.  Eh,  generalmente
+
+(13:30) se se  la  las  ah  esto  no  les  dije,  las
+
+(13:33) accessitas,
+
+(13:35) tienen  que  ser,  o  sea,  tienen  que  ser  lo
+
+(13:38) que  vos  querés  hacer  que  estar
+
+(13:40) explicitado.
+
+(13:42) Ese  es  el  fuerte  del  access  list,  por
+
+(13:43) eso  se  se  usa  de  esa  manera.  Tiene  que
+
+(13:45) ser  explícito.  Sí,  si  vos  querés  ir  de
+
+(13:49) acá  a  acá,  tenés  que  ponerlo.  Tenés  que
+
+(13:50) ser  explícito.  Si  vos  querés  denegar  de
+
+(13:52) acá  a  acá,  tenés  que  ser  explícito.  Pero
+
+(13:54) ojo  con  los  denegar.  Ahora  vamos  a  ver
+
+(13:56) algo  más.
+
+(13:58) Bueno,  y  si  hacemos  ese  mismo  análisis,
+
+(14:01) eh,  acá  digo  en  la  segunda  línea  digo
+
+(14:04) access  list  permit  100  permit  IP
+
+(14:08) y  pongo
+
+(14:10) 2  210.5.4.0.
+
+(14:15) La  WHCAR  es  esta  y  el  destino  es
+
+(14:18) cualquier  cosa.  O  sea,  ¿qué  significa
+
+(14:22) esta  segunda  access  list?  ¿Alguno  se
+
+(14:24) anima  a  decirlo?
+
+(14:27) traducir  eso  todas  las  verdades  cuatro
+
+(14:31) en  cualquier  eh  puerto  protocolo.
+
+(14:37) Voy  a  decirlo  un  poco  más  en  detalle.
+
+(14:39) Dice,  "Permitime
+
+(14:42) el  tráfico  que  venga  de  la  dirección  IP
+
+(14:44) de  origen  210.5.4.
+
+(14:48) No  me  importa  cuál.  Si  es  la  de  la
+
+(14:51) 210.5.4.1
+
+(14:54) 1  o  la  pun  253  dentro  de  todas  esas
+
+(14:59) direcciones  IP  están  eh  admitidas,
+
+(15:02) permitidas  y  que  vaya  a  cualquier  lado.
+
+(15:06) O  sea,  no  importa  si  acá  dice
+
+(15:09) 192,  168.1.0
+
+(15:11) cer  eh  y  la  Willcar  es  00255
+
+(15:16) o  dice  otra  otra  cosa,  no  importa,  hacia
+
+(15:18) cualquier  lado.  Sí,  lo  que  está  diciendo
+
+(15:21) es  evaluame  que  venga  de  esta  de  esta  de
+
+(15:23) este  prefijo  de  la  21  540.
+
+(15:27) Sí,  eso  dice  la
+
+(15:29) Y  acá  viene  de  vuelta  un  access  list  que
+
+(15:32) tiene  la  la
+
+(15:37) parte  más  fina,  vamos  a  decirle,  donde
+
+(15:40) hay  que  entender  qué  significa  esta
+
+(15:42) Willcard  para  ver  qué  porción  de  los
+
+(15:44) host  que  son  de  la  1928.1.0
+
+(15:47) son  los  que  pasarían.  Sí.
+
+(15:51) Eh,  y  lo  que  dice  esta  access  list  es
+
+(15:53) denegame  el  tráfico,  digamos,  que  viene
+
+(15:56) del  protocolo  ICMP  desde  cualquier  host
+
+(16:01) de  origen  y  que  van  con  destino  a  la
+
+(16:04) dirección  IP,  a  las  direcciones  IP  que
+
+(16:08) están  dentro  de  esta  WHCard,  o  sea,  que
+
+(16:10) sería  1928.1
+
+(16:13) y  un  rango,  digamos,  dece  de  esas  que  va
+
+(16:16) de  1  a  254,  algunas  las  va  a  dejar
+
+(16:18) pasar,  otra  otra  las  va  a  denegar.
+
+(16:22) Y  el  protocolo  es  el  digamos  es  el  eco,
+
+(16:26) digamos,  del  del  protocolo  IMP,  es
+
+(16:29) particularmente  el  el  eco,
+
+(16:33) ¿sí?  Eh,  que  básicamente  el  PIN,  ¿sí?
+
+(16:37) Digamos  eh  el  ISMP  es  eh  digamos  es  el
+
+(16:40) PIN,  o  sea,  lo  que  está  diciendo  es
+
+(16:42) denegame  el  pin  que  viene  de  cualquier
+
+(16:45) origen  y  que  va  hacia  hacia  este  rango
+
+(16:47) de  destinos.
+
+(16:49) Y  bueno,  esto  último  también  ya  saben
+
+(16:51) cómo  es  el  puerto  53  es  el  puerto  del
+
+(16:55) protocolo  DNS.  Como  para  dar  otro
+
+(16:57) ejemplo,  acá  dice,  "Permitime  el  tráfico
+
+(16:59) UDP  que  venga  de  cualquier  origen  y  que
+
+(17:04) vaya  con  destino  a  esta  a  a  esta
+
+(17:09) a  este  rango  de  de  de  IPs  de  ese  prefijo
+
+(17:13) cuyo  puerto  sea  el  53."  O  sea,  por  eh
+
+(17:17) evalúame  el  puerto  UDP  53  que  nosotros
+
+(17:20) como  sabemos  cuáles  son  los  wellnow
+
+(17:22) port,  los  primeros  1094,  sabemos  que  es
+
+(17:24) el  DNS.  Sí.
+
+(17:27) Bueno,  si  esto  se  entendió  con  algunos
+
+(17:30) ejemplitos.
+
+(17:33) Acá  viene  el  ejemplo  de
+
+(17:35) Sí,
+
+(17:36) solo,  perdón,  solo  muy  breve,  la  diapo
+
+(17:38) anterior.
+
+(17:40) Eh,  puede  ser  que  ahí  donde  dice  número
+
+(17:42) IPTCP  permit  arriba  esté  al  revés
+
+(17:45) protocolo  y  acción,
+
+(17:50) ¿no?
+
+(17:51) Donde  dice  router  config  access  list.
+
+(17:56) Ah,  sí,  esto  está  al  revés.
+
+(17:57) ¿Cuál  es  el  que  está  al  revés?  ¿El  de
+
+(17:58) arriba  o  el  de  abajo?
+
+(18:01) No,  lo  que  está  bien  son  los  ejemplos
+
+(18:02) estos  que  están  acá.
+
+(18:03) Ah,  listo.  Perfecto.  Gracias.
+
+(18:08) Sí,  esto  quedó  eh  esto  tiene  un  error,
+
+(18:10) está  mal  definida.  O  sea,  lo  correcto  es
+
+(18:15) en  esto  que  está  acá  arriba  sería  lo  que
+
+(18:17) está  en  negro.  Sí.  Abajo  quisieron
+
+(18:19) escribirlo  eh  cuando  hicieron  la
+
+(18:22) diapositiva  y  lo  escribieron  mal,  pero
+
+(18:24) igualmente  lo  que  vale  es  lo  que  está  en
+
+(18:27) negro,  todo  lo  que  está  en  negro.  Y  acá
+
+(18:28) están  los  ejemplos.  Sí.
+
+(18:32) Bien,
+
+(18:35) y  acá  viene  el  ejemplo  este  de  los  bits,
+
+(18:38) ¿sí?
+
+(18:40) O  sea,
+
+(18:42) access  list  10  permit.
+
+(18:45) Bueno,  esta  facilísimo,  ¿no?  No,  no  hace
+
+(18:48) falta  que  me  detenga,  ¿no?  Esta  es  una
+
+(18:50) access  listar
+
+(18:52) porque  es  una  10.  permitirme  el  tráfico,
+
+(18:54) digamos,  que  venga  de  de  esta  de  este
+
+(18:59) prefijo,  o  sea,  de  esta  red  y  no  importa
+
+(19:02) el  último.  Sí,  el  último  no  importa
+
+(19:04) porque  tiene  255.  Entonces,  hace  esto,
+
+(19:07) viene,  viene  este  paquete  200.1.10
+
+(19:16) le  aplica  la  WHCard  que  está  acá  abajo,
+
+(19:18) fíjense,  00  255.
+
+(19:24) 210  210.
+
+(19:29) Eh  eh  lo  que  está  arriba  vendría  a  ser
+
+(19:32) como  la  access  lista,  o  sea,  lo  que
+
+(19:34) haría  esta  access  list,  lo  que  está
+
+(19:35) arriba,  esto  lo  de  arriba  y  lo  que  está
+
+(19:38) acá  abajo  es  el  paquete  que  viene,
+
+(19:41) dirección  de  paquete  a  controlar.  O  sea,
+
+(19:43) el  paquete  que  viene  es  el  200.1.21
+
+(19:50) 21,  no  es  10,  es  21.160.
+
+(19:54) Entonces,  ¿qué  pasa?  La  WHCard  es  0  255.
+
+(19:59) Entonces,  ¿qué  me  qué  dice  la  Willcar
+
+(20:01) esta?
+
+(20:02) Lo  que  viene,
+
+(20:04) lo  que  viene  de  arriba  tiene  que
+
+(20:06) coincidir  exactamente  con  lo  que  yo
+
+(20:07) estoy  esperando.  ¿Qué  estoy  esperando?
+
+(20:09) Yo  estoy  esperando  la  210  110.  ¿Qué
+
+(20:12) vino?  La  dos,  perdón,  estoy  esperando  la
+
+(20:15) 200  110.  ¿Qué  paquete  vino?  200.  Está
+
+(20:19) bien.  100  está  bien  porque  lo  verifica
+
+(20:21) con  la  Willcard,  con  el  cero.  Vino  el
+
+(20:24) 21.  Okay.  Se  fija  los  bits,  ¿no?  ¿Cuál?
+
+(20:28) ¿Qué  es  el  10?  Es  00
+
+(20:31) 10.  Eso  es  el  binario  del  10.  Y  acá  se
+
+(20:35) fija  00  101.
+
+(20:39) No  coinciden  los  bits.  O  sea,  si  yo
+
+(20:42) macheo,  quiero  matar
+
+(20:44) exactamente  con  estos  bits  que  son  10,
+
+(20:46) que  es  el  10,  si  yo  macheo  esto,  estos
+
+(20:49) bit  que  son  el  10  con  estos  bit  que  son
+
+(20:51) el  uno,  no  machean  porque  el  uno  este
+
+(20:54) que  está  acá,  el  uno  este  que  está  acá
+
+(20:57) en  el  10  de  arriba  es  un  cero.  ¿Lo  ven?
+
+(21:00) Entoncesa,  entonces  el  paquete  lo
+
+(21:02) descarta.  Por  eso  dice,  "No  concuerdan
+
+(21:05) los  bits  a  controlar."  ¿Se  dan  cuenta
+
+(21:07) cómo  es  esto  de  la  Willcard?  Si  acá
+
+(21:10) hubiese  sido  en  Bueno,  ahora  lo  vemos.
+
+(21:17) Fíjense,  este  es  el  ejemplo,  digamos,
+
+(21:19) donde  no  concuerdan  los  bits  y  este  es
+
+(21:21) el  ejemplo  donde  sí  concuerdan  los  bits,
+
+(21:23) donde  la  parte  de  abajo,  el  paquete  que
+
+(21:25) viene  es  un  es  un  10.  Acá  es  un  10.  En
+
+(21:28) vez  de  ser  el  21  es  un  10.  Ahí  hace  el
+
+(21:32) macheo  a  nivel  de  bits  y  pasa.  Sí.  ¿Se
+
+(21:36) entiende  cómo  hace  el  macheo  con  los
+
+(21:37) bits?  Que  era  lo  que  les  explicaba.
+
+(21:40) El  el  macheo  con  los  bits,  eh,  hay  que
+
+(21:44) hacerlo  cuando  no  es  ni  cer  ni  255,
+
+(21:47) cuando  es  15  o  cuando  es  otra  cosa,
+
+(21:49) porque  hay  que  entender  qué  bits,
+
+(21:51) digamos,  porque,  ¿qué  pasa?  Miren,  miren
+
+(21:53) lo  siguiente.
+
+(21:55) Supongamos  que  en
+
+(21:59) supongamos  que  e  bueno,  acá  no  puedo
+
+(22:02) mostrarlo  porque  son  es  es  255.
+
+(22:05) Vamos  con  otro  ejemplo.
+
+(22:08) Eh,  21.  Bueno,  esto  ya  estaba.
+
+(22:13) Esto  también.
+
+(22:15) Ah,  no,  acá  son.  A  ver,  déjenme  ver.  No
+
+(22:17) está  dos  veces  esto.
+
+(22:22) Ah,  es  es  otro  ejemplo,  pero  con  es  otro
+
+(22:25) ejemplo,  pero  con  160.  O  sea,  un  ejemplo
+
+(22:28) es  con  160  y  el  otro  ejemplo  es  con  210.
+
+(22:31) Está  bien,  es  lo  mismo,  pero  bueno,
+
+(22:33) ¿entendieron  cómo  es  el  macheo  con  los
+
+(22:35) bits?  Supongamos  que  acá  todo  como  pasa
+
+(22:38) acá  que  está  en  verde,  pero  el  último
+
+(22:40) número,  este,  el  210,  si  yo  acá  hubiese
+
+(22:43) tenido  el  15,  si  hubiese  tenido  el  15,
+
+(22:46) no  son  todos  los  bit  de  acá  abajo  en
+
+(22:47) uno.
+
+(22:50) No  son  todos  los  bit  en  uno.  Si  yo
+
+(22:52) hubiese  tenía  un  15  acá,
+
+(22:55) que  vendría  a  ser  en
+
+(22:57) los  últimos  cuatro,
+
+(22:59) los  últimos  cuatro.
+
+(23:02) ¿Qué  machearía?  Machearía  eh  machearía
+
+(23:05) los  primeros  los  primeros  4  bits
+
+(23:07) estarían  en  cero  y  los  los  siguientes
+
+(23:09) bit  estarían  en  uno.  Ahora,  ¿qué  pasa  si
+
+(23:11) acá  justamente  el  210  como  es  un  número
+
+(23:14) grande  con  el  si  acá  hubiese  sido  un  15
+
+(23:18) no  machea  porque  acá  tengo  1  1 1
+
+(23:22) 001  1  y  si  hubiese  tenido  el  15  acá
+
+(23:26) sería  00
+
+(23:28) 1?  No.
+
+(23:30) Sí.
+
+(23:31) O  sea,  la  primera  mitad  serían  ceros  y
+
+(23:33) la  segunda  mitad  sería  uno.  O  sea,
+
+(23:35) tendrían  que  machear  estos  primeros
+
+(23:36) cuatro.  Tendrían  que  ser  en  en  el  bit
+
+(23:41) que  quiero  controlar  tendría  que  ser  1
+
+(23:44) sí.  Tendrían  que  machear  eso  sí  o  sí.  Y
+
+(23:46) lo  que  viene  después  no.  Sí.  Y  lo  que
+
+(23:49) viene  después  que  podría  haber  sido  un
+
+(23:50) número  que  podría  haber  sido,  digamos,
+
+(23:53) eh,  1  2  4  8.  1  2  4  8  8  y  4  12  13  14  15
+
+(24:02) Claro,  podrían  hacer,  perdón,  como  cómo
+
+(24:05) Joel
+
+(24:06) el  63,  profe,  que  tiene  dos  ceros  y
+
+(24:10) después  dos  todos dos  todos  unos  los
+
+(24:12) últimos  seis.
+
+(24:14) Perfecto.  Bien.  Y  sería  de  ahí  para
+
+(24:16) abajo,  ¿verdad?
+
+(24:18) Sí,  desde  el  cuar  Claro,  desde  el
+
+(24:20) cuarto,  profe.  Sí,
+
+(24:21) exacto.  Entonces,  bueno,  entonces  ese  es
+
+(24:23) el  eso.  Lo  que  hay  que  hacer  cuando
+
+(24:25) aparece  un  número  que  no  es  ni  cer  ni
+
+(24:27) 255,  porque  ya  sabemos  que  cer  en  eh
+
+(24:31) deja  pasar  todo  y  todo  en  uno,  perdón,
+
+(24:35) cero  evalúa  todo.  O  sea,  el  cero  evalúa
+
+(24:38) todo  y  el  uno  deja  pasar  eh  todo  sin
+
+(24:41) importar.
+
+(24:43) Bueno,  entonces
+
+(24:46) y  por  último,  digamos,  o  sea,  el  paso
+
+(24:48) dos,  una  vez  que  ya  están  definidas  las
+
+(24:50) access  list,  digamos  que  que  que  ya
+
+(24:53) aparece  en  el  show  running  config  todo
+
+(24:55) por  último,  ¿cómo  se  aplica  a  la
+
+(24:58) interfaz?  Sí,  yo  tengo  que  entrar  al
+
+(25:01) modo  configuración  global  y  después
+
+(25:02) tengo  que  entrar  a  la  interfaz  y  ahí
+
+(25:05) pongo  este  comando  IP  Access  Group  y  el
+
+(25:09) número  del  access  list,  que  en  este  caso
+
+(25:12) podría  ser,
+
+(25:15) en  este  caso  sería  Access  eh,  perdón,  el
+
+(25:19) el  número  sé  que  es  la  10,  ¿no?  el  ID,
+
+(25:23) si  sigo  la  eh  eh  digamos  acá  ya  estoy
+
+(25:26) adentro  de  la  interfaz,  por  ejemplo,  la
+
+(25:29) FAS  Ethernet
+
+(25:31) o  mejor  dicho  la  serial  que  es  la  más
+
+(25:33) cercana  al  destino.  Sí,  porque  en  las
+
+(25:35) Access  List
+
+(25:37) eh  en  las  Access  List  e
+
+(25:41) estándares  se  aplica  en  en  la  interfaz
+
+(25:45) más  cercana  al  destino.  Supongamos  que
+
+(25:48) mi  router  es  el  router  de  borde,  lo  más
+
+(25:50) cercano  al  destino  sería  la  interfaz
+
+(25:52) serial.  ¿Si?  Entonces  esta  if  que  dice
+
+(25:54) acá  sería  la  interfaz  serial  0/0/1,  por
+
+(25:57) ejemplo.  Y  yo  acá  le  digo  a  IP  Access
+
+(26:01) Group  10,  el  número  del  access  list  y
+
+(26:05) acá  le  pondría,  por  ejemplo,  la  palabra
+
+(26:07) out.  ¿Sí?
+
+(26:09) Fíjense,  esto,  asigna  la  access  list
+
+(26:11) indicada  a  la  interfaz,  ya  sea  para  que
+
+(26:13) verifique  los  paquetes  entrantes  o  los
+
+(26:16) salientes,
+
+(26:18) en  caso  de  no  indicar  por  defecto  a  los
+
+(26:22) paquetes,  digamos,  en  caso  de  que  uno  no
+
+(26:24) ponga  ni  out,  por  defecto  le  asigna  acá,
+
+(26:28) digamos,  la  palabra  out,  ¿sí?  O  sea,
+
+(26:31) evalúa  los  paquetes  una  vez  que  pasan
+
+(26:33) por  el  router  y  ya  irían  para  la  para  eh
+
+(26:37) considerándose  como  de  salida.  ¿Por  qué
+
+(26:40) es  importante  esto  in  out?  Porque  si
+
+(26:42) nosotros  usamos  en  si  nosotros  usamos
+
+(26:45) access  listas,
+
+(26:48) aparece  la  IP  de  origen  y  la  IP  de
+
+(26:50) destino.  ¿Se  entiende?
+
+(26:52) No  es  como  las  Axel  List  estándares  que
+
+(26:54) aparece  solamente  la  dirección  IP  de
+
+(26:56) origen.  Entonces  acá  toma  más  relevancia
+
+(26:59) este  concepto  de  in  y  out.  En  cambio,
+
+(27:02) las  access  listares
+
+(27:04) poner  in  o  out
+
+(27:06) la  ecuación,  pero  acá  puede  cambiar  el
+
+(27:10) comportamiento.  Sí,  porque  acuérdense
+
+(27:12) como  decía  al  principio  en  una  en  una
+
+(27:16) en  una  de  las  diapositivas  del
+
+(27:18) principio,  usted  tienen  que  empezar  como
+
+(27:20) que  están  adentro  del  router  y  el  y  es
+
+(27:23) como  que  hay  un  un  politicista  de
+
+(27:25) tránsito  adentro  del  router  que  tiene
+
+(27:28) los  dos  brazos  donde  o  evalúa  con  el
+
+(27:30) brazo  izquierdo  o  evalúa  con  el  brazo
+
+(27:32) derecho.  condición,  este,  cuando  pasa  de
+
+(27:36) un  lado  al  otro,  ¿sí?  La  puede  evaluar
+
+(27:39) al  toque  cuando  entra  el  paquete  o  la
+
+(27:41) puede  evaluar  al  final,  digamos,  eh,  por
+
+(27:44) eso  entrante  o  saliente.  Sí.
+
+(27:49) Bueno,
+
+(27:51) e  y  acá  una  forma  de  ver  las  Axel  que
+
+(27:54) están  configuradas  en  el  router.  show  IP
+
+(27:57) interface
+
+(28:01) eh  y
+
+(28:03) y  la  interface  y  el  número  del  access
+
+(28:06) list  o  show  access  list  y  el  número  de
+
+(28:09) la  access  list  o  show  access  list  solo  o
+
+(28:13) como  me  gusta  hacerlo  a  mí  para  para  no
+
+(28:15) yo  pongo  show  running  config  y  veo
+
+(28:17) dentro  de  la  configuración  todas  las
+
+(28:19) list  que  hay  definidas  a  mí  me  es  más
+
+(28:21) fácil  eso  antes  que  usar  esto  o  esto.
+
+(28:25) Así  que  les  conviene  agarrar  y  decir,
+
+(28:28) poner  show  running  config  y  se  fijan  al
+
+(28:32) final  del  archivo  configuración  que
+
+(28:34) aparecerían  todas  las  AC  list  que  fueron
+
+(28:36) definidas.
+
+(28:38) Y  bueno,  hasta  acá  llegó  la  explicación
+
+(28:41) de  todo  este  tema  de  Acelist,  que  no  es
+
+(28:42) fácil,  ¿sí?
+
+(28:45) Eh,  es  algo  que  tienen  que  practicar,  es
+
+(28:47) algo  que  tienen  que  que
+
+(28:50) que  revisar  para  para  poder  entenderlo
+
+(28:52) bien,  porque  bueno,  es  un  tema
+
+(28:56) es  el  más  difícil  de  de  todos  los
+
+(28:58) conceptos  que  que  barrimos  desde  el
+
+(29:00) principio  hasta  el  día  de  hoy.  es  el  más
+
+(29:03) difícil  de  todos  para  entender,  para
+
+(29:05) para  aplicarlo,  para  para  hacer  que  las
+
+(29:07) cosas  funcionen,  porque  lo  que
+
+(29:09) generalmente  pasa  es  que  cuando
+
+(29:11) configuran  las  access  list
+
+(29:14) o  perdón,  antes  de  que  configuren  las
+
+(29:16) access  el  tráfico  va  de  un  lado  para  el
+
+(29:19) otro,  funciona  todo  mágicamente  y  no  hay
+
+(29:22) ningún  problema  y  y  todo  anda  y  todo  es
+
+(29:25) bonito,  pero  cuando  aplican  las  access
+
+(29:27) listas,
+
+(29:30) o  sea,  mal  definidas  o  o  mal  aplicadas,
+
+(29:34) empieza  a  haber  comportamientos  como  que
+
+(29:35) hay  paquetes  que  pasan  y  otros  que  no,
+
+(29:37) cuando  en  realidad  deberían  pasar  ambos
+
+(29:40) y  así  y  así  sucesivamente.
+
+(29:44) No  sé  si  tienen  alguna  duda,  pero  e
+
+(29:48) hasta  acá  es  la  explicación  teórica.  Lo
+
+(29:51) que  voy  a  hacer  ahora  es  voy  a  empezar  a
+
+(29:52) abordar  el  trabajo.  Así  que  bueno,
+
+(29:55) díganme
+
+(29:56) si  quieren  preguntar  alguna  cosita
+
+(29:58) cortita.
+
+(30:00) Por  ahí  no  es  tanto  duda,  pero  me  hizo
+
+(30:01) acorrar  mucho  a  como  el  concepto  de
+
+(30:03) whildist  y  black  list.  Por  ahí  esto  que
+
+(30:04) vimos  recién  es  como  más  bajo  nivel  de
+
+(30:07) eso.
+
+(30:09) Eh,  ese  concepto,  eh,  ¿dónde  se  usa
+
+(30:12) básicamente?
+
+(30:14) O  sea,  como  yo  no  sé  por  en  AWBS  vos
+
+(30:17) podías  configurar  para  los  servidores
+
+(30:19) tipo  qué  IPS  dejas  pasar  o  que  no.
+
+(30:23) Es  lo  mismo.  Termina  siendo  un  access
+
+(30:25) list,  digamos.  O  sea,  nada  más  que  eh
+
+(30:28) las  access  list  al  digamos  estas  son  a
+
+(30:31) nivel  K3  y  K4  y  digamos  las  access
+
+(30:35) listernas
+
+(30:37) son  e  a  nivel  más  de  capa  de  aplicación
+
+(30:41) donde  se  directamente  se  pone  eh  por
+
+(30:45) ejemplo,  no  sé,  en  un  firewall  se  puede
+
+(30:48) en  un  firewall  se  puede  por  un  access
+
+(30:51) list  eh  ya  a  nivel  de  capa  de  aplicación
+
+(30:54) se
+
+(30:56) Se  puede  bloquear  la  aplicación,  por
+
+(30:57) ejemplo,  Torrent.  Ponés  Torrent  y  ya  el
+
+(31:01) el  firewall  de  capa  7,  digamos,  que  son
+
+(31:04) los  Next  Generation  Firewall,  se  lo
+
+(31:06) llamaba,  o  se  lo  llama,  ya  evalúan  que,
+
+(31:09) digamos,  si  si  el  tráfico  va  a  pasar  por
+
+(31:11) ahí  viene  de  un  torrent  o  ya  tienen
+
+(31:14) cargado
+
+(31:15) eh  a  nivel  aplicación,  ¿qué  puertos  usa
+
+(31:18) el  Torrent,  por  ejemplo,  o  qué  puertos
+
+(31:21) usa  el  Microsoft  Teams?  O  qué  puertos
+
+(31:23) usa  el  Zoom.
+
+(31:25) Los  firewall  de  capa  7  ya  tienen  eso
+
+(31:27) definido  y  se  va  actualizando.  Entonces
+
+(31:29) yo  vos  ya  directamente  no  tenés  que
+
+(31:31) saber  qué  puerto  usa  el  Zoom  para
+
+(31:33) bloquearlo  porque  es  a  nivel  capa  7.
+
+(31:35) Ponés  Zoom  el  nombre  de  la  aplicación  y
+
+(31:37) ya  ya  lo  bloquea.  ¿Se  entiende?
+
+(31:41) Sí.  Sí.
+
+(31:42) Profe,  una  consulta.  Yo  puedo  hacer  una
+
+(31:44) consulta  o  puedo  armar  esto  y  después
+
+(31:46) pasárselo  por  el  foro  o  lo  que  sea,  como
+
+(31:48) usted  diga.
+
+(31:51) No  entendí.  Claro,  digo,  hago  la
+
+(31:53) pregunta  ahora  o  lo  dejo  que  siga  y
+
+(31:54) después  pregunto  por  el  foro,  como  usted
+
+(31:56) quiera.
+
+(31:57) No,  no
+
+(31:57) es  concreta  igual.
+
+(31:59) Preguntame.
+
+(32:00) Dale.  E,  ¿puedes  volver  un  cerraste
+
+(32:04) ahora  la  diapositiva  que  tenías  antes  o
+
+(32:05) la  tenés?
+
+(32:06) No,  la  tengo  acá.
+
+(32:07) Ah,  puedes  volver  donde  decía  configurar
+
+(32:09) la  ACL  estándar.  Fue  donde  vimos  los
+
+(32:12) primeros  cuatro  ejemplitos  de  de  ACL.
+
+(32:14) Ahí,  ahí  te  pasaste,  me  parece.
+
+(32:18) Acá,
+
+(32:19) ahí.
+
+(32:20) Consulta.
+
+(32:22) La  la  cuarta  línea,  digamos,  estaría  de
+
+(32:25) más.  O  sea,  si  ya  no  lo  atajaste  con  el
+
+(32:27) den  arriba,  permitir  eso  de  abajo  es
+
+(32:29) bueno,  todo  lo  que  pasó,  permitilo.
+
+(32:31) Digo,  estaría  de  más  o  hay  que
+
+(32:32) aclararle,  "Che,  permitilo."
+
+(32:35) No  está  de  más  porque  acá  hay  un  15  y  si
+
+(32:39) no  cae  acá  dentro  del  rango  de  los  host
+
+(32:42) que  están  dentro  de  este  15,  digamos,  o
+
+(32:44) sea,  e  no  les  expliqué  algo  importante,
+
+(32:49) eh,
+
+(32:50) por  default,  ¿qué  hace?  ¿Permite  o  o  de
+
+(32:52) digamos?
+
+(32:54) Claro,  eso  es  lo  que  eso  es  lo  que  lo
+
+(32:55) que  me  faltó  comentarles.
+
+(32:57) Ah,  okay.
+
+(32:58) E  que  seguramente  lo  iba  lo  iba  a  decir
+
+(33:01) en  la  medida  que  vayamos  eh
+
+(33:03) configurando,  pero  está  bien  que  me  lo
+
+(33:06) que  me  lo  que  me  lo  consultaste  porque
+
+(33:07) lo  debería  haber  dicho  antes.  Las  Access
+
+(33:10) List,  digamos,  por  definición,
+
+(33:14) vieron  que  en  un  momento  yo  les  dije  que
+
+(33:16) tenían  que  ser  explícitas,  o  sea,  que  lo
+
+(33:18) que  ustedes  quieren  que  pase  lo  tienen
+
+(33:20) que  poner  en  forma  explícita,  lo  tienen
+
+(33:21) que  escribir  lo  que  quieren  que  pase,  o
+
+(33:24) sea,  lo  que  quieren  que  pase  en  Me
+
+(33:26) refiero  al  comportamiento,  ¿sí?  E  de  lo
+
+(33:29) que  pase  con  el  tráfico,  lo  tienen  que
+
+(33:31) escribir,  lo  tienen  que  tienen  que  ser
+
+(33:33) explícitos.  ¿Por  qué?  Porque  las  access
+
+(33:35) list  tienen  abajo  de  todo  una  línea
+
+(33:39) invisible,  ¿si?  Que  que  se  lo  llama
+
+(33:44) access  list  implicite.  Es  decir,  que
+
+(33:47) todo  lo  que  evaluó  acá,  si  el  tráfico
+
+(33:50) que  viene  no  machea  con  nada  de  esto,  lo
+
+(33:53) deniega.
+
+(33:56) Eso  se  llama  implicit  denai.  Es  como  si
+
+(33:59) fuese  acá  abajo  una  línea  que  dice  como
+
+(34:03) un  else  y  y  denegar.  Listo.  Si  si  no
+
+(34:06) entró  en  alguno  de  las  de  arriba,
+
+(34:08) bloqueéalo,  denégalo.
+
+(34:09) Exactamente.  Digamos,  para  hacer  para
+
+(34:12) como  para  hacer  una  analogía  vendría  a
+
+(34:14) ser  así.  Es  como  que  if  todo  esto,
+
+(34:16) buenísimo.  Els,  denégalo.
+
+(34:19) Gracias  por  el  por  el  ejemplo.  Sería
+
+(34:21) no  por  nada.  Y  y  ahí  mismo  también
+
+(34:23) arriba  en  la  de  Nay  que  es  198  1.0.
+
+(34:29) Eh,  si  después  tenés  una  máscara,  no  me
+
+(34:32) acuerdo  el  Wildcard,  perdón,  la  máscara,
+
+(34:35) ese  cero  primero  en  el  en  la  dirección
+
+(34:37) de  origen,  digamos,  es  como  definir  un
+
+(34:40) clase  C.  Esa  dirección,
+
+(34:42) esta  dirección  es  una  dirección  IP  de
+
+(34:44) clase  C.  Ahí  está  listo.
+
+(34:47) Y  y  lo  que  está  diciendo  esta  esta
+
+(34:49) WHCard  de  acá  es  de  este  prefijo,  o  sea,
+
+(34:53) de  esta  dirección  IP
+
+(34:55) donde  tendría  que  coincidir  el  1928.1  un
+
+(34:59) hasta  el  punto  uno  tiene  que  coincidir
+
+(35:01) todos  porque,  o  sea,  tiene  tres  ceros,  o
+
+(35:04) sea,  que  estos  tres  primeros  tienen  que
+
+(35:05) coincidir.  Lo  que  está  diciendo  con  el
+
+(35:08) 15  de  acá  es  de  la  de  los  254
+
+(35:12) host  eh  o  direcciones  que  yo  puedo  tomar
+
+(35:15) de  acá,
+
+(35:17) una  porción  acotada  que  estar  asociada
+
+(35:20) con  este  15  que  está  acá,  por  ejemplo,
+
+(35:22) puede  ser  de  la  1  hasta  la  60,  de  la  1
+
+(35:25) hasta  la  62.  con  L.  O  sea,  si  acá  yo
+
+(35:28) pongo
+
+(35:29) pero  ahí  el  ahí  la  clave,  vos  recién
+
+(35:31) dijiste  de  las  254,
+
+(35:33) eso  es  porque  pusiste  un  cero  ahí,
+
+(35:35) porque  si  no  fuera  un  cero  ya  no  serían
+
+(35:37) las  254.  El  cero  es  lo  que  actúa  como
+
+(35:40) como  comodín.
+
+(35:42) Es  No,  no,  no.  Esta  es  la  esta  es  una
+
+(35:45) dirección  de  red.
+
+(35:47) Es  la  es  la  es  una  dirección  de  red.  Es
+
+(35:49) una  dirección  de  red  clase  C.
+
+(35:51) Nada  más  que  vos  de  de  esa  clase  C  que
+
+(35:55) que  que
+
+(35:57) permite  tener  host  del  del  1  hasta  el
+
+(35:59) 254,  solamente  estás  denegando  eh  los
+
+(36:03) que  entran  dentro  la  porción  de  que  la
+
+(36:06) Wircar  los  identifica  con  un  15,  que  no
+
+(36:09) hice  la  cuenta  con  los  bit  ni  nada,  pero
+
+(36:11) creo  que  es  del  por  lo  que  estuve
+
+(36:13) hablando  ahí  recién  con  un  compañero  de
+
+(36:15) ustedes,  es  del  de  la  1  hasta  la  62.  Si
+
+(36:18) acá  dice  de  la  1  a  la  62,  lo  que  venga
+
+(36:22) después  de  la  63  hasta  la  254  los  va  los
+
+(36:25) va  a  dejar  pasar.  Va  a  denegar  los  que
+
+(36:27) vienen  de  la  1  a  la  60  a  la  62  por  este
+
+(36:31) 15,  por  culpa  de  este  15  que  está  acá.
+
+(36:33) Pero  si  yo  no  pongo  para  para  si  yo  no
+
+(36:36) pongo  abajo  esta  línea  de  acá,  los  que
+
+(36:38) son  de  la  63  a  la  264,  lo  los  descarta
+
+(36:42) por  ese  implicit  de  night  que  ahí  abajo
+
+(36:44) de  todo.
+
+(36:45) Claro,  descartaría  a  todos.  descartaría
+
+(36:47) los  que  machean  la  regla  y  lo  de  abajo
+
+(36:49) los  descartaría  también.
+
+(36:51) Claro.  Entonces,  poniendo  esta  esta  este
+
+(36:53) permit  más  amplio  abajo,  lo  que  me
+
+(36:56) denegó  la  de  arriba,  que  son  de  la  1  a
+
+(36:58) la  62,  la  de  abajo  que  me  dejaría
+
+(37:02) permitir  los  que  van  de  la  de  la  de  la
+
+(37:05) 63  a  la  254.
+
+(37:06) O  sea,  si  no  pusieras  la  cuarta  regla,
+
+(37:08) solamente  pasaría  el  permit  de  la  línea
+
+(37:10) dos  y  todo  el  resto  lo  bloquearía.
+
+(37:13) Exacto.
+
+(37:14) Listo.  Gracias.  Muy  claro.
+
+(37:15) Y  y  y  denegaría  cualquier  otra  cosa,
+
+(37:18) denegaría,  digamos,  o  sea,  una  dirección
+
+(37:20) que  sea,  no  sé,  172.16.0.5.
+
+(37:25) Denegaría  cualquier  otra  cosa  también,
+
+(37:28) no  solamente  lo  que  dice  acá.  O  sea,
+
+(37:31) denegaría  también  cualquier  otra  cosa
+
+(37:33) que  no  esté  escrita  acá  porque  entraría
+
+(37:36) dentro  de  ese  implicit  o  dentro  de  ese
+
+(37:39) dearme  cualquier  cosa  que  no  sea  todo
+
+(37:41) esto,  que  no  sea  nada  de  lo  que  esté
+
+(37:43) acá.
+
+(37:44) Este,  porque  eso  es  lo  que  hace  el
+
+(37:47) implicit  de  night.  Algunos  alumnos  a  lo
+
+(37:50) largo  de  los  de  los  cuatrimestres  hacen
+
+(37:53) algo  que  no  está  bien.  Y  digo  que  no
+
+(37:55) está  bien  porque  es  violar  el  principio
+
+(37:57) de  seguridad,  digamos,  o  sea,  de  de  un
+
+(38:00) firewall,  de  cómo  opera  un  firewall,  que
+
+(38:03) es  en  la  última  línea  le  ponen  lo
+
+(38:05) siguiente,  le  ponen  access  list
+
+(38:09) permit
+
+(38:10) n
+
+(38:12) y  si  hacen  eso  están  invalidando  el
+
+(38:17) implicit,  o  sea,  lo  que  están  diciendo
+
+(38:19) es  si  nada  de  lo  que  está  acáa
+
+(38:23) con  el  tráfico,  que  viene,  permitirme
+
+(38:26) cualquier  cosa  y  eso  está  mal,  o  sea,
+
+(38:29) hace  que  funcione  el  escenario  y  y  el  y
+
+(38:32) el  parcial  y  todo  eso  porque  cumple  con
+
+(38:36) el  tráfico  que  ustedes  hacen.  Sí,  pero
+
+(38:39) en  realidad  está  mal  conceptualmente
+
+(38:41) porque  están  permitiendo  todo,  están
+
+(38:43) filtrando  las  cositas  como  ustedes
+
+(38:45) quieren  para  que  funcione  y  después
+
+(38:48) permiten  todo.  Es  como  una  forma  de
+
+(38:50) decir,  "Che,  si  me  comí  algo  de  acá,
+
+(38:52) digamos,  después  permití  todo  y  ya
+
+(38:54) está."
+
+(38:56) O  sea,  conceptualmente  está  mal  porque,
+
+(38:59) eh,  digamos,  si  vos  estuvieses
+
+(39:00) trabajando  en  una  compañía  y  hacés  eso,
+
+(39:03) dejas  abierto,  digamos,  el  el  campo  para
+
+(39:07) que  cualquier  cosa  que  no  sea  lo  que  vos
+
+(39:09) definiste  acá,  eh,  pase  desde  lado  a
+
+(39:12) lado.
+
+(39:15) O  sea,  estaría  mal.  Es  como  que  en  un  es
+
+(39:18) como  que  una  cámara  de  seguridad  dice,
+
+(39:21) "Bueno,  solamente  digamos  denegame  las
+
+(39:24) personas  que  tienen  remera  amarilla  y  y
+
+(39:26) permitime  las  que  tengan  eh  remera  azul,
+
+(39:30) pero  después  viene  una  que  es,  no  sé,
+
+(39:32) remera  negra  y  pasa  derecho  porque  vos
+
+(39:35) abajo  pusiste,  no  me  importa  la  gente
+
+(39:37) que  venga  con  otra  remera  que  no  sea  ni
+
+(39:39) amarilla  ni  azul,  ¿se  entiende?
+
+(39:45) O  sea,  no  le  da  bola,  pasa  pasa  directo.
+
+(39:48) La  persona  que  tiene  la  remera  amarilla,
+
+(39:50) la  la  verifica,  la  deja  pasar.  La
+
+(39:53) persona  viene  con  una  remera  azul,  la
+
+(39:54) deniega.  Pero  después  si  viene  otra  que
+
+(39:56) viene  con  remera  negra,  es  como  que  la
+
+(39:58) cámara  hace  eh eh  se se  ciega  y  deja
+
+(40:02) pasar.  Y  eso  está  mal,  digamos.  O  sea,
+
+(40:05) digamos,  yo  no  lo  no  lo  puedo  invalidar
+
+(40:08) eso  en  un  en  un  parcial,  porque  mientras
+
+(40:10) cumpla  con  lo  que  con  lo  que  el
+
+(40:12) enunciado  diga  y  funcione  armónicamente
+
+(40:15) todo  lo  que  pide  el  enunciado,
+
+(40:17) buenísimo,  pero  si
+
+(40:19) digamos  conceptualmente,  digamos,  si
+
+(40:21) vamos  a  lo  conceptual,  estaría  mal  eso.
+
+(40:24) Así  que  bueno,  e  es  como
+
+(40:28) seguramente  si  si  cursaron
+
+(40:32) la  materia  paradigmas  con  con  un
+
+(40:34) profesor  que  se  llama  Dodino,  no  sé  si
+
+(40:37) es  paradigmas  o  diseño  de  sistemas,  hay
+
+(40:40) un  concepto  en  en  desarrollo  que  se
+
+(40:42) llama  badmel.
+
+(40:45) ¿Lo  tienen?
+
+(40:45) Sí,  sí.
+
+(40:47) Bueno,
+
+(40:48) pasaría  algo  parecido  a  eso.
+
+(40:52) Bueno,  e  vamos  a  arrancar  entonces  con
+
+(40:55) el  trabajo  de  laboratorio  número  cuatro.
+
+(40:59) E  el  escenario  es  este  que  está  acá,  lo
+
+(41:02) tienen  que  conectar  de  esta  manera.  Sí,
+
+(41:05) van  a  tener  tres  van.  Van  a  tener  la  van
+
+(41:08) 20,  la  van  10  y  la  vila  en  uno.  La  van  1
+
+(41:12) y  la  van  nativa,  cuya  dirección  IP  es  la
+
+(41:15) 10500.
+
+(41:17) La  van  10  es  la  10100.  La  vilan  20  es  la
+
+(41:20) 10200.  Sí.  Acuérdense  que  el  segundo
+
+(41:24) octeto  o  el  tercer  octeto  de  cada
+
+(41:26) prefijo  hace  referencia  a  la  vilan  que
+
+(41:29) tiene  asociado.  Por  eso  acá  es  10.10.  El
+
+(41:33) segundo  10  hace  referencia  que  la  vilan
+
+(41:35) 10.  La  10.20  hace  referencia  a  que  el  20
+
+(41:39) se  refiere  a  que  es  la  bilan  20.  Y  este
+
+(41:41) es  un  caso  particular  porque  es  la  vanan
+
+(41:43) 1  que  se  definió  como  1050,  pero  en
+
+(41:47) realidad  la  van  un  que  es  la  vilan
+
+(41:48) nativa  en  eh  puede  tener  cualquier
+
+(41:52) dirección  IP.  Sí.  Eh  si  se  quiere  esto
+
+(41:56) se  puede  ajustar  a  que  la  vila  nativa
+
+(41:58) sea  la  50.  Sí,  pero  son  temas  de
+
+(42:02) configuración  aparte  que  no  nos  vamos  a
+
+(42:03) complicar  la  vida.  Y  después  ustedes
+
+(42:06) tienen  eh  tienen  tienen  que  poder  llegar
+
+(42:09) a  estos  dos  servidores,  al  103
+
+(42:13) eh  03  creo  que  es  y  al  10404.
+
+(42:18) Sí,  esos  servidores  tienen  esa  IP,  la
+
+(42:20) 1030  y  la  10404  o  o  1030  o  103040,  no  me
+
+(42:25) acuerdo,  pero  tiene  una  dirección  IP.  ya
+
+(42:29) establecida.  ¿Y  qué  va  a  pasar?  Esto  que
+
+(42:32) está  acá,  eh,  que  está  en  amarillo  que
+
+(42:34) dice  túnel  IPSC,  eso  en  realidad  no
+
+(42:36) existe.  Es  es  como  algo  ficticio.
+
+(42:41) ¿Por  qué?  Porque  cuando  ustedes
+
+(42:44) aprenden  lo  que  es  un  túnel  IPSC,  el
+
+(42:47) camino  que  hace  el  paquete,  viene  el
+
+(42:50) paquete  de  acá,  va  al  router  uno,
+
+(42:52) físicamente  hablando  va  al  router  ISP,
+
+(42:55) físicamente  hablando  va  al  router  2  y
+
+(42:58) después  va  o  a  un  servidor  o  a  otro.
+
+(43:01) Pero  cuando  ustedes  hacen  un  túnel  IPSC
+
+(43:04) que  quieren  que  el  tráfico  pase  desde  el
+
+(43:07) router  1  al  router  2,
+
+(43:10) ¿sí?  Esto  es  algo  ficticio,  o  sea,  va  a
+
+(43:13) ser  como  que  esto  es  un  túnel  y  el
+
+(43:15) tráfico  pasa  directo  por  acá  y  no  se  va
+
+(43:17) para  arriba  y  para  y  hasta  el  ISP.
+
+(43:20) Es  algo  ficticio  porque  en  realidad  el
+
+(43:22) paquete  queda  enmascarado,  digamos,
+
+(43:24) dentro  de  este  concepto  que  es  el  túnel,
+
+(43:27) pero  en  realidad  el  paquete  físicamente
+
+(43:29) hablando  va  para  arriba  y  baja,  ¿no?  Oc,
+
+(43:32) digamos,  la  conexión  está  hecha  así,  no
+
+(43:34) es  que  esto  es  una  conexión,  esto  es
+
+(43:36) algo  ficticio  que  se  pone  para  que
+
+(43:38) entiendan  que  es  un  se  arma  un  túnel
+
+(43:39) IPSC  entre  esos  dos  router  y  que  el
+
+(43:42) paquete,  digamos,  viaja  directo  y  como
+
+(43:45) que  no  se  ve  queda  enmascarado  el  salto
+
+(43:47) que  hace  por  acá.  ¿Se  entiende
+
+(43:49) conceptualmente  lo  que  dije?
+
+(43:54) Sí.  Sí.
+
+(43:55) Bien.
+
+(43:57) Entonces,  lo  que  va  a  pasar  es  que
+
+(43:59) ustedes  van  a  hacer  lo  siguiente.
+
+(44:03) Hay  una  de  estas  dos  van  que  no  sé  si  es
+
+(44:05) la  10  o  la  20,  que  no  importa  cuál  sea,
+
+(44:07) pero  después  lo  vemos.  Conceptualmente,
+
+(44:10) una  vilan  va  a  tener  que  llegar  a  los
+
+(44:11) dos  servidores  de  acá  a  través  del  túnel
+
+(44:14) y  las  otras  dos  vilan,  la  20  y  la  y  la
+
+(44:17) un,  por  ejemplo,  tienen  que  llegar  a
+
+(44:19) estos  dos  servidores  por  fuera  del
+
+(44:20) túnel.  ¿Sí?  ¿Qué  significa  eso?  El
+
+(44:24) tráfico  que  va  por  el  túnel  va  a  tener
+
+(44:26) simplemente  tres  saltos.  va  a  saltar
+
+(44:28) desde  el  router  uno  al  router  2  y
+
+(44:30) después  va  a  saltar  al  al  servidor.  O
+
+(44:33) sea,  desde  la  PC  de  la  PC1  va  a  ir  al
+
+(44:36) router.  Primer  salto  router  un.  Segundo
+
+(44:38) salto  router  2  porque  se  mete  por  el
+
+(44:40) túnel  y  viene  por  acá  y  después  tercer
+
+(44:43) salto  va  al  servidor.  En  cambio,  lo  que
+
+(44:47) está  en  la  van  20  y  en  la  van  1  tienen
+
+(44:50) que  ir  por  fuera  del  túnel.  ¿Qué  es  por
+
+(44:52) fuera  del  túnel?  Como  veníamos  visto,
+
+(44:54) normalmente  viene  el  paquete,  salta
+
+(44:56) router  1,  después  salta  el  router  10p,
+
+(44:59) después  salta  al  router  2  y  por  último
+
+(45:02) salta  a  uno  de  los  dos  servidores  al  que
+
+(45:03) yo  quiero  llegar.  ¿Sí?  Ahora  la  pregunta
+
+(45:08) del  millón  es,  ¿cómo  hacemos  para  que  el
+
+(45:10) tráfico  entre
+
+(45:13) por  entre  y  vaya  por  el  túnel?  Bueno,
+
+(45:16) ahí  entra  el  concepto  de  las  Access
+
+(45:18) List.  Las  Access  List  se  usan  para  dos
+
+(45:20) propósitos.  Más  allá  de  todo  lo  que
+
+(45:23) vimos  en  la  teoría  hace  un  ratito,
+
+(45:26) el  primer  propósito  es  para  filtrar
+
+(45:28) tráfico,  porque  si  yo  quiero  después
+
+(45:30) dentro  de  mi  Red  Llan  que  el  tráfico  de
+
+(45:33) la  vilan  20  no  se  vea  con  el  de  la  10  y
+
+(45:35) no  se  vea  con  el  de  la  van  1  y  viceversa
+
+(45:38) o  decir  que  ninguno  se  vea  con  ninguno
+
+(45:40) acá  sí
+
+(45:44) eso  se  hace  con  access  list  y  si  es  un
+
+(45:46) filtrado  a  nivel  LAN  internamente  dentro
+
+(45:49) de  la  LAN  y  quién  lo  hace  eso  lo  hace  el
+
+(45:50) router.
+
+(45:51) Lo  hace  el  router  con  la  interfaz  esta
+
+(45:53) que  está  acá,  digamos,  que  sería  una
+
+(45:55) fase  Ethernet,  que  es  la  que  mira  hacia
+
+(45:57) adentro  de  la  LAN,  y  es  el  router  el  que
+
+(46:00) filtra  o  permite  eh eh  pasar  esos
+
+(46:03) paquetes  para  que  vayan
+
+(46:06) eh  enrotándose  dentro  de  la  dentro  de
+
+(46:08) las  van.  Eso  se  llama  ruteo  intervilan.
+
+(46:11) Sí.  Cuando  ustedes  ¿Cómo  cómo  hacía  eso
+
+(46:14) yo  a  nivel  K2?  Bueno,  a  nivel  K2,  ¿qué
+
+(46:16) hacía?
+
+(46:18) Eh,  a  nivel  K2  el  filtrado  era  por  vans,
+
+(46:21) o  sea,  lo  que  estaba  en  la  van  20  no  se
+
+(46:23) veía  con  la  van  10  y  no  se  veía  con  la
+
+(46:25) vanan  1  porque  estaban  en  van  distintas.
+
+(46:28) Pero  cuando  ustedes  activan  la
+
+(46:31) funcionalidad  de  enrutamiento,  que  es  a
+
+(46:33) nivel  capa  3,  las  vils  quedan
+
+(46:36) invalidadas,  o  sea,  esa  segmentación
+
+(46:39) queda  invalidada  porque  el  router  en
+
+(46:42) ruta  paquetes  o  con  muta  paquetes
+
+(46:45) Intervilan.  hace  lo  que  llama  el  routero
+
+(46:47) intervilan,  o  sea,  si  el  router  no  está,
+
+(46:50) perfecto,  está  todo  segmentado  porque  es
+
+(46:53) ya  porque  es  a  nivel  cap  dos,  pero  si  el
+
+(46:56) router  aparece  en  el  medio  y  empieza  a
+
+(46:58) jugar,  veamos  este  se  pone  la  10  y
+
+(47:02) empiezan  a  rutar  los  paquetes  de  de  de
+
+(47:05) una  van  hacia  la  otra  si  él  no  tiene
+
+(47:08) ninguna  restricción  hecha  y  esas
+
+(47:11) restricciones  se  hacen  con  las  access
+
+(47:12) list.  Sí,  por  ejemplo,  si  yo  quiero  que
+
+(47:17) el  tráfico  de  la  Vilan  20  no  vaya  ni  a
+
+(47:19) la  vanan  10  ni  a  la  van  1,  tengo  que
+
+(47:22) hacer  un  access  list  de  na,  digamos,  eh
+
+(47:27) en  Access  list  101  de  N,  le  pongo  el
+
+(47:31) origen  y  le  pongo  el  destino.  Sí.  Y  ahí
+
+(47:34) ya  voy  filtrando  que  no  vaya  ni  para  acá
+
+(47:37) ni  para  acá.  Sí.  o
+
+(47:40) simplemente  uso  la  cabeza  y  soy  más
+
+(47:44) inteligente  y  digo,  permitirme  el
+
+(47:47) tráfico  desde  la  vilan  20  hasta  hasta  la
+
+(47:50) Vilan  20,  veamos,  eh,  o  de  la  y  de  la
+
+(47:54) vila  20  hasta  la  vila  hasta  la  hasta  el
+
+(47:57) destino  que  es  la  10300  y  la  10400
+
+(48:01) y  no  pongo  más  nada.
+
+(48:04) Y  si  no  pongo  más  nada,  el  tráfico  entra
+
+(48:07) en  el  implicit  de  night  y  lo  deniega,
+
+(48:10) porque  para  eso  está  el  implicit  de
+
+(48:12) night.
+
+(48:13) Entonces,  son  dos  formas  de  hacerlo.  O
+
+(48:15) lo  pongo  bien  explícito  o  también  lo
+
+(48:18) escribo.
+
+(48:21) Eh,  y  tienen  que  ser  cuidadosos  porque
+
+(48:24) hay  dos  formas  de  aplicar  access  list,
+
+(48:26) porque  acá  yo  tengo  una  interfaz  sola
+
+(48:29) o  aplico  un  access  list  con  todas  las
+
+(48:32) reglas  que  yo  quiero  en  esa  interface  o
+
+(48:36) hay  otra  forma  de  hacerlo,  mucho  más
+
+(48:38) fácil,  digamos,  pero  tienen  que  hacer
+
+(48:41) más  de  un  access  list.
+
+(48:44) Entonces
+
+(48:46) vamos  a  eh  ya  conociendo  cómo  es  este
+
+(48:48) escenario  y  lo  que  les  dije,  lo  que
+
+(48:50) tenemos  que  hacer  realizar  la
+
+(48:52) configuración  de  las  interfaces  del
+
+(48:53) router  1  y  el  enrutamiento  dinámico  por
+
+(48:56) IGRP
+
+(48:58) para  el  sistema  autónomo  1  más  una  ruta
+
+(49:00) por  defecto  a  la  IP  del  ISP,
+
+(49:03) respectivamente  y  probar  conectividad  a
+
+(49:06) través  del  ISP.  Entonces  vamos  a  hacer
+
+(49:08) eso  primero.  Sí.
+
+(49:12) Voy  a  tener  esto  acá,
+
+(49:19) compartir
+
+(49:21) y  vamos  a  empezar  a  configurar  esto.
+
+(49:24) Bueno,  acá  tenemos  el  escenario.  ¿Qué  es
+
+(49:26) lo  primero  que  debería?  Ya,  ya  estos
+
+(49:28) deberían  tener  IPs.  Por  ejemplo,  esta
+
+(49:30) tiene  la  10,  la  101,  este  tiene  la  102,
+
+(49:35) o  sea,  esas  cosas  están  configuradas.
+
+(49:38) Lo  que  sí  tienen  que  chequear  ustedes
+
+(49:41) porque  el  escenario  tiene  un  problema  y
+
+(49:43) está  hecho  a  propósito
+
+(49:47) y  es  lo  siguiente.
+
+(49:50) Lo  primero  que  voy  a  hacer  es  así  como
+
+(49:52) está  todo  este  esta  conexión  con  el
+
+(49:55) router  está  eh  cortada.  Sí,  yo  tengo  pin
+
+(50:00) de  acá  hasta  acá  de  la  van  20  a  la  van
+
+(50:03) 20.  Perfecto.  Está  en  la  misma  vila,
+
+(50:07) ¿no?  20  20.
+
+(50:10) Tengo  pin  de  acá  acá  de  la  a  la  10  in
+
+(50:13) progress.  Falla,
+
+(50:15) falla.
+
+(50:18) Eso  quiere  decir  o  que  hay  algún
+
+(50:20) problema.
+
+(50:22) Ah,  la  esta  esta  PC  no  tiene  puesta  la
+
+(50:25) IP.  Bueno,  vamos  a  ponérsela.
+
+(50:28) Vamos  a  ponerle
+
+(50:30) 10.50  50  punto
+
+(50:36) 1050
+
+(50:38) 0.  Vamos  a  ponerle  50.  Así  ya  nos
+
+(50:40) acordamos.  La  máscara  de  la  D.  Y  de  get,
+
+(50:44) ¿qué  de  le  podemos  poner  acá?
+
+(50:50) El  router  1
+
+(50:52) 10  50
+
+(50:54) 0.
+
+(50:58) ¿Qué  le  ponemos  acá?  Una  IP.
+
+(51:02) Todavía  no  la  hice,  no  la  configuré
+
+(51:03) todavía.  ¿Les  parece  que  le  pongamos  la
+
+(51:06) 254,
+
+(51:08) la  última  IP  disponible  en  ese  rango?
+
+(51:13) Okay.
+
+(51:14) Bueno,
+
+(51:15) la  IA  dice  algo  o
+
+(51:17) cómo
+
+(51:18) si  la  IA  dice  algo  respecto  a  eso  o  ya
+
+(51:21) fue.
+
+(51:21) Eh,  creo  que  no,  pero  bueno,  yo  le  voy  a
+
+(51:23) poner  esto.  Sí.  Entonces,  cierro  a  ver
+
+(51:26) si  las  otras  PCs  tienen  de  Fall  Gway.
+
+(51:30) Bueno,  fíjense,  miren  la  la
+
+(51:34) tiene  tiene  la  10254.
+
+(51:37) Bueno,  listo.  Entonces,  los  getway  van  a
+
+(51:40) ser  las  254.
+
+(51:42) A  ver,
+
+(51:45) falla.  No  hay  conexión  tampoco.  ¿Qué
+
+(51:47) puede  pasar  si  no  hay  conexión  entre
+
+(51:49) estas?  Quiere  decir  que  está  en
+
+(51:51) configuradas  las  van  y  está  todo
+
+(51:52) segmentado  a  nivel  K2,  ¿no?  O  sea,  que
+
+(51:55) el  equipo  el  equipo  de  acá  debería  tener
+
+(51:57) configuradas  las  vilan,  ¿no?  Nael.
+
+(52:01) Show  van.
+
+(52:04) Perfecto.  Miren,
+
+(52:07) ven  ahí
+
+(52:09) en  el  puerto  tienen  que configurar  las
+
+(52:11) dos  vilan,  la  10  y  la  20.  Un  puerto  está
+
+(52:13) en  la  van  10,  el  otro  en  la  20.  Estamos
+
+(52:15) bien  ahí.
+
+(52:18) Y  vamos  a  ver  los  vamos  a  ver  los
+
+(52:19) puertos.  Show  run.
+
+(52:23) Los  puertos  están  mal  configurados.
+
+(52:26) ¿Quién
+
+(52:28) me  dice  por  qué
+
+(52:34) este  puerto  está  mal  configurado  y  el
+
+(52:35) otro  también?
+
+(52:39) Conf.
+
+(52:42) ¿Qué  le  falta?
+
+(52:44) Eh,  la  seguridad
+
+(52:48) así  como  está  no  va  a  andar.
+
+(52:50) Ya  lo  dije,  lo  dije  la  vez  pasada.
+
+(52:55) No  va  a  andar  porque  el  puerto  tiene  una
+
+(52:58) dirección  IP,  una  vilan  asociada,  pero
+
+(53:00) no  está  definido  como  acceso,  o  sea,
+
+(53:04) está  Switchport.
+
+(53:07) Ah,  esperen,  interface,
+
+(53:10) no  entré  a  la  interface,  perdón.
+
+(53:12) Interface  pas  Ethernet  01.
+
+(53:16) La  01  tiene  la  van  10,  o  sea,  está
+
+(53:19) configurada,  sería  la  Bueno,  voy  a  poner
+
+(53:21) el  description
+
+(53:23) PC1  PC1
+
+(53:27) switch  port  mode  access
+
+(53:32) do  show  run.
+
+(53:35) No  iba  a  andar  nunca.
+
+(53:37) Yo  ya  se  lo  había  dicho  esto.
+
+(53:39) No  iba  a  andar  nunca  porque  el  puerto
+
+(53:41) tenía  definido  solamente
+
+(53:44) eh  la  van.  Pero  no  estaba,  digamos,
+
+(53:47) definido  como  acceso  100%.  Tiene
+
+(53:50) definido  ahí  le  le  dice  en  eh,  digamos,
+
+(53:53) dale  bola  a  la  van  10.  Perfecto,  pero  no
+
+(53:57) está  definido  concretamente  si  es  un
+
+(53:58) puerto  de  acceso  o  un  puerto  eh  troncal.
+
+(54:02) Entonces,  eso  tiene  que  estar  explícito,
+
+(54:04) tiene  que  estar  bien  puesto.  Está,  no
+
+(54:05) iba  a  andar  nunca  esto.
+
+(54:09) Exit.
+
+(54:12) Vamos  a  poner  en  la  otra.  Lo  voy  a  hacer
+
+(54:14) para  porque  si  no  no  va  a  andar  y  y
+
+(54:15) después
+
+(54:17) Twitch
+
+(54:19) mode  access.
+
+(54:22) ¿Se  acuerdan  que  yo  esto  se  los
+
+(54:23) expliqué?  Eh,  yo  me  acuerdo  que  se  los
+
+(54:25) expliqué.  Buowan,  lo  vimos  incluso.
+
+(54:27) Sí,  en  el  Tele  1.
+
+(54:29) Bien,  el  puerto  Gigabit  Ethernet,  que  es
+
+(54:33) el  puerto  que  eh  supuestamente  se
+
+(54:36) conecta  contra  acá,  contra  el  otro
+
+(54:38) switch,  está  como  troncal.  Eso  está
+
+(54:40) bien.  ¿Lo  ven?
+
+(54:44) O  sea,  ustedes  no  se  tienen  que  confiar,
+
+(54:46) ustedes  tienen  que  que  chequear  estas
+
+(54:47) cosas.  Voy  a  hacer  lo  mismo  acá  en  este
+
+(54:50) otro  porque  después  yo  empiezo  a  avanzar
+
+(54:52) con  el  escenario  y  no  va  a  andar  nada.
+
+(54:54) Show  run.
+
+(54:56) Acá  lo  mismo,  ¿ven?  El  puerto  está  el
+
+(54:59) puerto  troncal.  Sí.  Y  acá  lo  mismo.  No
+
+(55:01) iba  a  funcionar  nunca.  no  iba  a
+
+(55:03) funcionar  nunca  porque  porque  está  a
+
+(55:06) propósito  puesto  eso  hecho  eh  digamos
+
+(55:08) hecho  eso  e  para  que  ustedes  lo
+
+(55:12) verifiquen.
+
+(55:15) Switch  port.
+
+(55:17) Switch  port  es  switch  port  mode  access.
+
+(55:28) Switch  for  mode  access.  Do  show  run.
+
+(55:33) O  sea,  tenían  configuradas  las  vilan,
+
+(55:35) pero  no  tenía  configurado
+
+(55:37) e  que  el  puerto  es  un  puerto  de  acceso,
+
+(55:41) con  lo  cual  estaba  pésimo,  pero  pésimo,
+
+(55:43) pésimo,  pésimo.  Y  ahora  acá  vamos  a
+
+(55:45) revisar.  Acá  tienen  que  estar  todos  como
+
+(55:47) troncales,  salvo  el  puerto  que  va  a  la
+
+(55:50) laptop,  que  no  sé  cuál  es.  A  ver,
+
+(56:00) es  el  uno
+
+(56:03) show.
+
+(56:05) El  uno  no  tiene  configurado  nada.  Miren,
+
+(56:09) como  este  caso  eh  la  van  es  la  van
+
+(56:12) nativa,
+
+(56:14) los  gigabit  eh  sí  están  los  gigabit  y  el
+
+(56:19) porto  24,  que  son  los  gigabit  son  los
+
+(56:22) que  van  contra  los  switches  y  el  24  es
+
+(56:24) el  que  va  contra  el  router.  Tienen  que
+
+(56:26) estar  como  troncales  y  eso  está  bien.
+
+(56:29) Pero  el  primero,
+
+(56:31) este  que  está  acá  no  está  configurado
+
+(56:34) como  acceso.
+
+(56:36) Conf  no  va  a  andar  nunca.
+
+(56:40) Y  acá  pongo  switch  port  mode  access.
+
+(56:44) No  tengo  que  poner  acá.  Ah,  vamos  a  ver
+
+(56:46) si  tiene  las  van.  Do  show  van.
+
+(56:49) Las  van  las  tiene  configuradas.  Están
+
+(56:51) bien.  Tiene  la  10  y  la  20.  ¿Lo  ven?  Acá
+
+(56:54) están  activas  y  están  bien.  Ahora  no
+
+(56:57) tengo  que  poner  eh  switch  por  eh  access
+
+(57:01) van  1  porque  como  la  van  un  la  van  por
+
+(57:03) default  no  hace  falta  que  eso  se  se
+
+(57:06) escriba  en  en  o  se  se  establezca  en  el
+
+(57:10) puerto.  Sí,  porque  es  la  vila  nativa.  Si
+
+(57:12) hubiese  sido  otra  van  eh  que  no  hubiese
+
+(57:16) sido  la  nativa,  sí  tenía  que  ponerlo.
+
+(57:18) Bien,  entonces
+
+(57:21) guardamos  exit.
+
+(57:25) Archivo  guardar  como
+
+(57:33) Tele4
+
+(57:38) guajs.
+
+(57:43) Listo.  Bien.  Entonces,
+
+(57:47) dicho  esto,  está  todo  el  tráfico
+
+(57:49) segmentado,  entonces  no  a  nivel  capa  2,
+
+(57:52) entonces  no  hay  conectividad  entre
+
+(57:54) entrece,  que  es  el  mismo  comportamiento
+
+(57:57) que  tiene  que  pasar  al  final  del
+
+(57:59) ejercicio.  Ahora,  ¿qué  pasa?  Ahora  vamos
+
+(58:02) a  empezar  a  a  explicar  el  concepto  de
+
+(58:04) enrutamiento,  eh,  o  o  mejor  dicho,
+
+(58:08) afianzar  el  concepto  de  enrutamiento  que
+
+(58:09) vimos  eh  al  principio.  ¿Qué  interfaz  es
+
+(58:12) esta?  la  interfaz  pasternet  00.  Bien,
+
+(58:18) ¿qué  pasa?  Yo  tengo  acá  un  cable  solo,
+
+(58:23) un  cable  solo,  pero  yo  tengo  que
+
+(58:25) configurar  tres  direcciones  IPs  como
+
+(58:28) default  gateway.  Tengo  que  configurar  el
+
+(58:29) default  gateway  para  esta  para  la  PC2  y
+
+(58:31) la  PS4  que  está  en  la  van  20.  Necesito
+
+(58:34) un  default  gway  para  la  PC1  y  la  PS3  y
+
+(58:37) necesito  un  default  para  la  para  la
+
+(58:39) laptop.  Son  tres  direcciones  IP
+
+(58:41) distintas  y  yo  tengo  un  cable  solo,  por
+
+(58:44) lo  tanto  tengo  una  interfaz  sola.  No,
+
+(58:47) debería  tener  tres  cables  acá  para  poder
+
+(58:50) a  cada  interfaz  del  router  ponerle  una
+
+(58:52) dirección  B  para  cada  una  de  sus  eh  de
+
+(58:55) sus  van  de  digamos  de  de  porque  tengo
+
+(58:58) tres  van,  tengo  tres  tres  tres,  necesito
+
+(59:01) tres  de  F  getway  para  el  para  para
+
+(59:03) Milan,  ¿no  es  así?
+
+(59:09) Eh,  suena  a  que  no
+
+(59:13) me  suena  a  que  sí.
+
+(59:16) Veamos,  si  yo  tengo  que  configurar  el
+
+(59:18) default  gateway,  que  ya  lo  hice  en  las
+
+(59:20) PCs,
+
+(59:22) según  lo  que  vimos  la  clase  pasada  en  el
+
+(59:25) en  el  trabajo  de  laboratorio  número
+
+(59:27) tres,  en  las  PCs  de  la  sucursal,  ¿quién
+
+(59:29) era  el  de  Fall  Gateway?  La  interfaz  de
+
+(59:32) la  red  LAN  de  la  pata  del  router,  o  sea,
+
+(59:35) esta  que  está  acá.
+
+(59:36) Pero  yo  tengo  una  sola  interfaz.
+
+(59:38) [carraspeo]
+
+(59:39) Tengo  una  sola  interfaz  que  es  la  en
+
+(59:41) este  caso  conectada  que  es  la  fase
+
+(59:43) ethernet  que  creo  que  dije  la  01.  A  ver,
+
+(59:45) no,  la  00.  Entremos.  Miren,
+
+(59:50) enable  show  run  para  mirar  la
+
+(59:53) configuración.
+
+(60:00) Miren  acá  en  esta  en  esta  interfaz  yo
+
+(60:04) tengo  que  ponerle  una  dirección  IP.
+
+(60:06) Pero,  ¿cómo  hago  si  tengo
+
+(60:09) necesito  poner  necesito  poner  tres  IPs,
+
+(60:11) ¿qué  elijo?  Una  y  las  otras  chao.
+
+(60:15) O  sea,  ¿cómo  se  resolvería  esto?  Hay  dos
+
+(60:18) formas  de  resolverlo.
+
+(60:21) No  puedo  hacerlo  porque  tiene  dos
+
+(60:23) interfaces  eh  fase  Ethernet  porque
+
+(60:26) tendría  que  conectar  tres  cables  yo  acá.
+
+(60:29) Sí,  el  switch  tiene  24  puertos,  con  lo
+
+(60:32) cual  puedo  conectar  tres  cables,  pero  el
+
+(60:34) router  no.  El  router  tiene  dos
+
+(60:36) interfaces  nada  más,  eh  fase  Ethernet.
+
+(60:40) Lo  que  puedo  hacer  es  apagar  el  router,
+
+(60:42) ponerle  una  placa  más  acá  atrás,
+
+(60:45) ponerle  una  placa  más  acá  atrás,  su  min,
+
+(60:49) una  placa  más  acá  atrás  y  en  esa  placa,
+
+(60:52) sí,  pero  que  acá  podría  ser  que  tenga
+
+(60:55) más  puertos  estos  de  lo  de  los  que  son
+
+(60:58) eh  de  tipo  fast  etthernet  y  con  eso
+
+(61:00) tengo  más  puertos  y  conecto  en  vez  de  un
+
+(61:02) cable  tres.  Pero  esa  sería  una  solución
+
+(61:05) cara,  ¿sí?  no  puedo  invertir  más  dinero
+
+(61:08) en  en  la  infraestructura  que  tenga.
+
+(61:11) Entonces,  entonces
+
+(61:14) existe  un  concepto  que  se  llama
+
+(61:16) subinterfaces.
+
+(61:18) Sí,  el  concepto  de  subinterfaces  me
+
+(61:21) permite  usar  una  interfaz  física  donde
+
+(61:24) yo  tengo  conectado  el  cable  y  usarlo  o
+
+(61:27) crearle  usar  esa  interfaz  física  y  a
+
+(61:30) través  de  esa  interfaz  física  crear  tres
+
+(61:32) tres  interfaces  lógicas.  Sí.  Es  decir,
+
+(61:37) voy  a  usar  un  caño  grande  y  por  ese  caño
+
+(61:40) voy  a  poner  tres  caños  chiquititos  donde
+
+(61:42) va  a  ir  el  tráfico  de  cada  una  de  las
+
+(61:44) van.  ¿Sí?  Entonces,  bueno,  voy  a  hacer
+
+(61:47) eso.  Conf  T
+
+(61:49) y  voy  a  poner  interface
+
+(61:52) F  Ethernet  0/0,  que  es  la  interfaz
+
+(61:54) física.  Y  para  convertir  o  para  crear
+
+(61:57) una  interfaz  lógica  dentro  de  esa
+
+(62:00) interfaz  física,  lo  voy  a  hacer  de  la
+
+(62:02) siguiente  manera.  FAS  Ethernet  00  punto
+
+(62:06) y  por  ejemplo  pongo  el  10  que  va  a  hacer
+
+(62:08) referencia  a  la  van  10,  ¿no?  Acá
+
+(62:12) entonces  acá  voy  a  poner  description  y
+
+(62:14) voy  a  poner  van  10
+
+(62:17) y  yo  voy  a  saber  que  a  través  de  esa
+
+(62:20) interface  van  va  a  viajar  el  tráfico  que
+
+(62:24) viene  de  la  vilan  10.  Ahora,  ¿cómo  hago
+
+(62:27) para  que  eso  ocurra?  Bueno,  lo  primero
+
+(62:30) que  tengo  que  hacer,  ¿se  acuerdan
+
+(62:32) ustedes  que  existe
+
+(62:34) que  existe  un  protocolo  que  es  el
+
+(62:36) 802.1Q,
+
+(62:38) ¿se  acuerdan  de  eso?
+
+(62:42) 802.1Q
+
+(62:43) van  tagc
+
+(62:46) 802.1Q  1Q  me  permite,  digamos,  como  ya
+
+(62:50) saben  ustedes,  que  el  router  entienda,
+
+(62:54) digamos,  que  eh  el  paquete  viene,
+
+(62:57) digamos,  con  un  con  un  tagueado  con  una
+
+(62:59) vilan,  ¿sí?  Entonces,  lo  que  venga  por
+
+(63:02) esa  interfaz  lo  va  a  tomar,  va  a  abrir
+
+(63:04) el  paquete  y  se  va  a  fijar  el  ID  de  esa
+
+(63:06) vila,  que  en  este  caso  va  a  ser  la  10.
+
+(63:08) Entonces,  ¿cómo  hago  eso?  Signo
+
+(63:10) pregunta,  hay  un  comando  que  se  llama
+
+(63:13) encapsulation,  que  es  este  que  está  acá,
+
+(63:16) donde  yo  explicito  eso  en  en  mi
+
+(63:18) subinterface.  Encapsulation,
+
+(63:21) signo  de  pregunta,  D1Q,  signo  de
+
+(63:24) pregunta  y  me  dice,  "Bueno,  ahora  poné
+
+(63:26) cuál  es  la  vanan  ID  que  querés  que  por
+
+(63:28) esta  interface  entre  el  tráfico  o  que  se
+
+(63:31) entienda
+
+(63:33) la  10,  porque  yo  acá  quiero  que  se
+
+(63:36) entienda  que  el  tráfico  que  viene  es  el
+
+(63:38) de  la  van  10.
+
+(63:40) Listo.  Una  vez  que  tengo  eso  este
+
+(63:42) configurado,  ahora  a  esta  subinterface
+
+(63:45) le  puedo  configurar  la la  IP  address.
+
+(63:49) ¿Cuál  era  la  IP  del  default  gateway  para
+
+(63:51) la  van  10?  La  10.10.0
+
+(63:56) 254.
+
+(63:59) ¿Y  cómo  era  el  la  máscara?  255  255
+
+(64:03) 255.0.
+
+(64:05) Si  no  me  acuerdo,  lo  verifico  acá.  Entro
+
+(64:07) a  una  PC.
+
+(64:10) Me  fijo
+
+(64:12) 255  255  25.  Sí.  Y  es  perfectamente  esa
+
+(64:17) es  su  dirección  IP.  Enter.
+
+(64:20) Entonces  ahora  yo  ya  tengo  definida
+
+(64:24) dentro  de  mi  interfaz  física  una
+
+(64:26) interfaz  lógica  y  esa  interfaz  lógica  va
+
+(64:30) a  recibir  el  tráfico  que  venga  de  la
+
+(64:33) vilan  10.
+
+(64:35) Esto  mismo  que  yo  hice  acá  ahora  debería
+
+(64:38) hacerlo  para  las  otras  van.  Sí.  Entonces
+
+(64:44) voy  a  hacer  lo  siguiente.
+
+(64:47) Voy  a  agarrar  y  voy  a  decir
+
+(64:51) do  para  guardar  la  configuración.  Do
+
+(64:53) show  run  para  mostrarles  cómo  aparece
+
+(64:56) ahora  la  subinterface.
+
+(64:59) Y  fíjense,  esta  es  la  interfaz  física
+
+(65:03) que  todavía  está  down  y  no  tiene  nada.  Y
+
+(65:06) esta  es  la  interfaz  lógica,
+
+(65:09) ¿sí?  que  es  parte  de  la  interfaz  física
+
+(65:11) y  que  entiende  que  lo  que  va  a  ir  lo  va
+
+(65:14) lo  que  va  a  venir  por  ahí  es  un  tráfico
+
+(65:16) que  pertenece  a  la  van  10  y  tiene  esa
+
+(65:19) dirección  IP  que  va  a  ser  la  dirección
+
+(65:22) IP  del  router  que  va  a  actuar  como
+
+(65:25) default  gateway  para  esa  para  esa  vilan,
+
+(65:27) para  ese  prefijo.  Entonces  ahora  hago  un
+
+(65:30) exit  acá  y  tengo  que  hacer  lo  mismo,
+
+(65:34) pero  para  la  van  20.  Entonces  digo
+
+(65:37) interface  fase  ethernet  00  pun  20  que  va
+
+(65:41) a  ser  la  bilan  20  flechita  para  arriba  y
+
+(65:45) digo,  ¿cuál  va  a  ser  la  dirección  IP?
+
+(65:48) Ah,  antes  hay  que  hacer  el  encapsulation
+
+(65:50) porque  si  ustedes  ponen  la  dirección  IP
+
+(65:52) no  se  las  va  a  tomar.  Entonces  ponen
+
+(65:54) encapsulation  do1q  espacio  20  porque  va
+
+(65:57) a  ser  la  van  20  y  después  flechita  hacia
+
+(65:59) arriba  y  definen  la  IP  del  default
+
+(66:01) gateway  de  la  van  20
+
+(66:04) que  va  a  ser  10  20  0  254  y  acá  todo  255.
+
+(66:09) Perfecto,  hasta  acá  se  entendió.
+
+(66:13) Ahora  tengo  que  hacer  lo  mismo  para  la
+
+(66:15) última  interface
+
+(66:17) que  vendría  a  ser  la
+
+(66:19) 50  en  realidad.  Eh,  vamos  a  ponerle  en
+
+(66:29) vamos  a  ponerle
+
+(66:31) acá,
+
+(66:35) eh,  vamos  a  ponerle  50
+
+(66:42) y  acá  vamos  a  ponerle,
+
+(66:45) ya  estoy  dentro  de  la  50.  Flechita  para
+
+(66:47) arriba.  Encapsulation1Q.
+
+(66:51) Uno.  Sí,  porque  todo  eso  está  en  la  vila
+
+(66:54) en  uno.
+
+(66:57) IP  address.
+
+(66:59) Igual  déjenme  ver  una  cosa,  eh,  que  me
+
+(67:01) surgió  una  duda.  A  ver,  50.
+
+(67:04) Ahí  va.
+
+(67:06) Perfecto.  A  ver,  DWR  do  show  run.  Do
+
+(67:11) show  run.
+
+(67:14) Vamos  a  mirar.
+
+(67:18) Entonces,  yo  tengo
+
+(67:21) mi  interfaz
+
+(67:23) física,  que  es  la  interfaz  fase  eterna
+
+(67:25) 00  y  después  tengo  mis  tres  interfaces
+
+(67:27) lógicas  cada  una.  Ah,  fíjense,  ahí  está.
+
+(67:31) Fíjense,  el  router  se  dio  cuenta  que  la
+
+(67:34) van  uno  es  la  nativa.  ¿Ven  que  puso  1Q?
+
+(67:36) Cuando  yo  puse  que  es  la  vil,  ya  sabe
+
+(67:38) que  es  la  vila  nativa,  entonces  le  puso
+
+(67:40) automáticamente  la  el  native.  Sí,  yo
+
+(67:43) podría  cambiar  eso  por  50,  pero  no  lo
+
+(67:45) voy  a  hacer  porque  lleva  unas
+
+(67:47) configuraciones  más  que  no  son  muchas,
+
+(67:48) pero  este  porque  yo  puedo  cambiar  la  yo
+
+(67:51) puedo  decirle  al  al  router  que  la  van
+
+(67:55) nativa  es  la  50  en  vez  de  la  uno,  pero
+
+(67:58) no  lo  vamos  a  hacer  para  no  complicar
+
+(67:59) las  cosas.
+
+(68:03) Profe,  esa  es  la  que  no  viaja  tagueada,
+
+(68:05) ¿no?
+
+(68:07) Esa  es  la  que  no  viaja  tagueada.
+
+(68:09) Bien.
+
+(68:10) Esa  es  la  que  no  viaja  tagada.
+
+(68:11) Exactamente.
+
+(68:13) Entonces,
+
+(68:15) lo  que  tengo  que  hacer  ahora  es  lo
+
+(68:17) siguiente.
+
+(68:19) la  interfaz  física,  que  es  esta  que  está
+
+(68:21) acá,  que  ahora  está  baja,  por  eso  está
+
+(68:23) todo  esto  en  rojo,  tengo  que  primero
+
+(68:27) activarla,  pero  segundo  la  tengo  que
+
+(68:29) definir  como  troncal  porque  como  tiene
+
+(68:32) subinterfaces  adentro,  entonces  yo  voy  a
+
+(68:34) hacer  exit
+
+(68:36) interface  fase  ethernet  00
+
+(68:40) switch  port.
+
+(68:43) Ah,  es  que  no  la  tengo  que  definir  como
+
+(68:45) troncalador.  Déjenme  mirar.  Me  lo  voy  a
+
+(68:47) me  lo  voy  a
+
+(68:49) Eso  es  en  los  switches,  acá  en  el  router
+
+(68:51) no  porque  no  hace  falta,
+
+(68:53) ¿eh?  Sí,  lo  que  tengo  que  hacer  es
+
+(68:55) levantarla.  Y  déjenme  ver  una  cosita.
+
+(68:58) Vanwich.
+
+(69:01) Bueno,  vamos  a  hacer  una  description
+
+(69:04) e
+
+(69:08) hacia
+
+(69:11) LAN,
+
+(69:13) hacia  la  LAN.
+
+(69:17) Eso  está  bien.  Listo.  Entonces,  lo  que
+
+(69:19) tendría  que  hacer  acá  es  un  no  shutdown
+
+(69:22) y  automáticamente
+
+(69:24) automáticamente
+
+(69:28) automáticamente  el  comando  switch  por  es
+
+(69:30) un  comando  de  a  nivel  switches,  ¿sí?  No
+
+(69:32) es  a  nivel  router.  Por  eso  por  eso  dudé
+
+(69:36) eh  en  el  momento  que  estaba  configurando
+
+(69:38) y  quise  revisar  para  no  confundirme
+
+(69:44) a  partir  de  ahora.
+
+(69:46) El  router,  si  se  acuerdan  ustedes,
+
+(69:49) ¿se  acuerdan  lo  que  vimos  de
+
+(69:51) enrutamiento?
+
+(69:53) Do  show  IP  route  para  ver  la  tabla
+
+(69:56) enrutamiento.
+
+(69:58) ¿Qué  tiene  la  tabla  enrutamiento  acá?
+
+(69:59) ¿Quién  me  dice  si  quién  quién  lo  puede
+
+(70:01) leer  o  qué  significa  lo  que  tiene  y  y  lo
+
+(70:04) que  va  qué  es  lo  que  va  a  entender  el
+
+(70:05) router?  No
+
+(70:08) entiende  como  si  tuviese  tres  cables
+
+(70:10) conectados.
+
+(70:12) Perfecto.  Y  cada  cable  tiene  una
+
+(70:15) dirección,  un  prefijo.  Digamos  que  en
+
+(70:18) este  caso  es  la  10100,  la  10  10200,  la
+
+(70:22) 10500.  O  sea,  que  va  a  entender  todo  lo
+
+(70:25) que  tiene  conectado  por  ahí  y  lo  tiene
+
+(70:27) conectado  a  través  las  subinterfaces.
+
+(70:30) ¿Sí?
+
+(70:32) Entonces,  con  esto  logré  con  un  cable
+
+(70:34) solo  poder  usar  ese  cable  usando  tres
+
+(70:39) subinterfaces  lógicas,  que  es  como  que
+
+(70:41) haya  tres  cablecitos  más  finitos  adentro
+
+(70:43) del  cable  grande  y  que  va  a  fluir
+
+(70:49) el  tráfico  que  venga  de  cada  eh  van  por
+
+(70:53) donde  corresponde.
+
+(70:54) Pero  el  router,  aunque  así  no  tenga  nada
+
+(70:57) configurado,  tiene  la  tiene  la
+
+(71:00) funcionalidad  más  básica  que  hace  es
+
+(71:02) hacer  lo  que  se  llama  ruteo  intervance  o
+
+(71:04) ruteo  entre  vance  que  tiene  él
+
+(71:07) conectadas.  O  sea,  no  hace  falta  que
+
+(71:10) tenga  definido  nada,  ¿sí?  Porque  como  él
+
+(71:12) tiene  las  rutas  conectadas  hacia  adentro
+
+(71:14) y  todo  lo  que  trabaja  hacia  adentro  lo
+
+(71:17) tiene  conectado,  entonces  él  va  a  saber
+
+(71:19) enrutar  los  paquetes  entre  estas  tres
+
+(71:21) direcciones  de  red  porque  las  tiene
+
+(71:24) directamente  conectadas.
+
+(71:26) Sí.  Y  todas  corresponden  a  una  red  que
+
+(71:29) está  subneteada  también.  Entonces  ahora
+
+(71:32) si  yo  hago  un  pin,  voy  a  borrar  esto.  Si
+
+(71:34) yo  hago  un  pin  desde  la  van  20  hacia  la
+
+(71:37) van  10,
+
+(71:42) ahí  no  anduvo  y  ahí  anduvo.  Sí,  el
+
+(71:46) primer  paquete  se  pierde  siempre.  ¿Ven
+
+(71:47) que  ahí  dice  successful?
+
+(71:50) Es  decir,  que  si  yo  entro  a  la  PC2
+
+(71:57) y  hago  un  traser,
+
+(72:01) hago  un  tracer  a  la  10.10.1,
+
+(72:10) primero  va  el  default  gateway,  que  es  la
+
+(72:11) 102  01  0254,  que  es  su  default  gateway.
+
+(72:15) Acuérdense  que  estoy  en  la  estoy  parado
+
+(72:17) en  la  PC  eh  en  la  PC  de  la  Vilan  20.  Le
+
+(72:20) lo  manda  su  default  gateway  porque  él  no
+
+(72:22) conoce  la  10  la  101.
+
+(72:25) Él  conoce  la  la  las  direcciones  1020.
+
+(72:31) Entonces  le  manda  su  paquete  al  default
+
+(72:33) gateway  y  le  dice,  "Vos  arreglate  y
+
+(72:34) devuélveme  la  respuesta."  El  default
+
+(72:37) gateway  es  el  10254  que  es  el  router.  El
+
+(72:40) router  conoce  digamos  esa  red  que  es
+
+(72:43) interna  y  la  tiene  directamente
+
+(72:44) conectada  y  manda  el  paquete  a  la  PC,
+
+(72:47) digamos,  que  que  en  este  caso  es  la  10.
+
+(72:49) Si  lo  mando  a  la  tres,
+
+(72:51) ¿era  la  tres  la  otra?
+
+(72:55) No,  debe  tener  la  tres.  Ah,  sí  tiene  la
+
+(72:56) tres.  Ahí  está.
+
+(72:58) El  primer  paquete  siempre  lo  pierde
+
+(73:00) porque  tiene  que  hacer  todo  el  proceso
+
+(73:03) de  reconocimiento  de  las  macadres  y
+
+(73:04) todo.  ¿Se  entendió  hasta  ahora?  Ahora,
+
+(73:08) este  comportamiento  no  es  el
+
+(73:10) comportamiento  que  el  enunciado  requiere
+
+(73:12) que  esté,  pero  lo  lo  que  tenemos  que
+
+(73:14) lograr  después  usando  las  access  list
+
+(73:17) aplicadas  a  la  interfaz  fase  ethernet
+
+(73:22) 00  o  a  la  fase  ethernet  00.1,  un  fase  a
+
+(73:27) la  punto  10  y  a  la  punto  20  es  que  con
+
+(73:30) las  access  list  no  se  vean  estas  van
+
+(73:32) entre  sí,  es  decir,  que  funcione  como
+
+(73:34) funcionaba  a  nivel  K2,  pero  ahora  que
+
+(73:38) conecte  el  router,  como  el  router  enruta
+
+(73:40) los  paquetes,  porque  esa  su
+
+(73:41) funcionalidad  y  no  hay  ninguna
+
+(73:43) restricción,  enruta  para  todos  lados  lo
+
+(73:45) que  está  dentro  de  la  LAN,  no  enruta
+
+(73:47) hacia  afuera  porque  no  hay  ninguna  ruta
+
+(73:51) estática  definida  acá  dentro.  Es  decir,
+
+(73:53) yo  lo  que  tengo  que  lograr  después  es  de
+
+(73:55) la  PC1  esta  que  está  acá.
+
+(74:00) Si  hago  un  tracer,  tendría  que  llegar  yo
+
+(74:02) a  la  10.
+
+(74:04) 4.0.40.
+
+(74:08) Como  no  sabe  cuál  es  la  104040,
+
+(74:11) lo  manda  al  default  gateway  que  es  la
+
+(74:13) 10254.  El  default  gateway  no  sabe  porque
+
+(74:16) en  su  tabla  enrutamiento  no  tiene  nada
+
+(74:18) de  eso.  No,  ven  que  acá  no  sabe  eso,
+
+(74:21) entonces  no  sabe  qué  hacer.
+
+(74:22) y  no  hace  nada,  no  llega  a  ningún  lado.
+
+(74:27) Pero  el  enunciado,  el  enunciado  dice,
+
+(74:29) hacete.  El  enunciado  dice,  a  ver,  vamos
+
+(74:34) a  ver  si  llegamos  de  acá  hasta  acá  con
+
+(74:35) un  ping.  A  ver,  de  acá  hasta  acá
+
+(74:39) de  vuelta.  De  acá  hasta  acá.
+
+(74:42) Bueno,  no  están  configuradas  las
+
+(74:44) interfaces  seriales  tampoco.
+
+(74:46) A  ver,  do  show  run,
+
+(74:50) ¿cuál  es  la  interfaz  serial  que  se
+
+(74:52) conecta  contra  el  router  del  ISP?
+
+(74:56) Ah,  perfecto,  no  está  configurada.
+
+(74:58) Quedamos  así.  Bueno,  me  fijo
+
+(75:02) la  serial  00/1
+
+(75:07) del  router  el  ISP  no  me  debería  calentar
+
+(75:10) porque  eso  lo  tiene  que  resolver  el  ISP,
+
+(75:12) pero  yo  de  mi  lado  sí  lo  tengo  que
+
+(75:13) hacer.
+
+(75:14) Interface
+
+(75:17) serial  00/1.
+
+(75:20) Esta
+
+(75:23) description
+
+(75:26) hacia
+
+(75:27) ISP.
+
+(75:29) Lo  que  sí  tengo  que  saber  es  de  los  dos
+
+(75:34) quién  es  el  eh  el  DCE  y  quién  es  el  DTE.
+
+(75:38) Me  paro  acá  arriba  y  como  el  DCE,  el  que
+
+(75:42) maneja  el  clock  es  el  ISP,  porque  yo  me
+
+(75:44) paré  acá  y  ven  el  relojito  que  tiene  la
+
+(75:46) interface  del  del  ISP.
+
+(75:50) ¿Lo  vieron?
+
+(75:51) Sí,  sí.
+
+(75:52) Bueno,  el  que  maneja  el  clock  es  el  ISP,
+
+(75:54) entonces  yo  me  me  desentiendo  de  eso,
+
+(75:56) pero  sí  lo  que  tengo  que  darle  es  la
+
+(75:57) dirección  IP.  IP  address.
+
+(76:00) IP  address.
+
+(76:03) ¿Cuál  es  la  IP?  La  dice  ahí.  10.0,  no,
+
+(76:06) 10.1.
+
+(76:08) 0.1  espacio  255  255  255  punto
+
+(76:16) podría  decir  que  es  la  cero,  pero  vamos
+
+(76:17) a  fijarnos  en  el  ISP  por  las  dudas.
+
+(76:24) Enable  show  run  porque  como  puede  ser
+
+(76:28) una  barra  30.
+
+(76:30) Bueno,  listo.  Es  una
+
+(76:33) es  una  es  una  clase  C,  es  un  barra  24,
+
+(76:37) pero  podría  haber  sido  un  barra  30,  por
+
+(76:38) eso  me  fijé.
+
+(76:41) Enter.
+
+(76:43) No,  no,  shutdown.
+
+(76:48) Y  ahí  automáticamente  levantó  el  enlace.
+
+(76:52) Adelanto  un  poquito  esto.
+
+(76:55) Adelante  un  poquito  esto.  Tu  show  run  a
+
+(76:57) mi  router  de  vuelta.  Do  show  run.
+
+(77:01) Me  fijo  ahora  que  está  todo  bien
+
+(77:03) conectado  y  configurado.
+
+(77:06) Acá  está  mi  mi  interfaz  serial.  En  mi
+
+(77:09) interfaz  serial  el  clock  lo  maneja  el
+
+(77:11) ISP,  así  que  por  eso  acá  no  dice  clock
+
+(77:13) rate.  Eh,  tanto.
+
+(77:16) Voy  a  guardar  mi  archivito  por  si  se  me
+
+(77:18) cuelga  la  máquina  o  se  me  cierra  el
+
+(77:20) packet  tracer.
+
+(77:22) Acuérdense  de  eso  porque  cuando  esté  el
+
+(77:25) parcial  no  voy  a  aceptar  que  nadie  me
+
+(77:28) diga,  "Profe,  se  me  crashó  el  el  packet
+
+(77:31) tracer,  se  me  cerró."  Bueno,  tomaste  los
+
+(77:34) recaudos.  Como  en  otras  materias  le
+
+(77:36) enseñé,  calculo  que  como  me  pasó  a  mí,
+
+(77:38) les  enseñaron  que  ustedes  tienen  que
+
+(77:40) tomar  recaudos  porque  cuando  van  a  hacer
+
+(77:42) una  presentación  a  un  lugar  tienen  que
+
+(77:45) tener,  por  ejemplo,  llevan  la
+
+(77:47) presentación  en  un  en  un  penrive.  Si  el
+
+(77:49) pendrive  no  funciona,  le  pasa  algo,  se
+
+(77:51) pierde,  lleven  dos  pendrive.  ll  copien
+
+(77:54) la  appt  en  en  también  en  en  el  Google
+
+(77:57) Drive,  o  sea,  tienen  que  tomar  recaudos
+
+(77:59) cuando  van  a  hacer  algo,  siempre.
+
+(78:04) Bien,
+
+(78:06) entonces  ahora  sí  debería  tener  un  ping
+
+(78:08) de  acá  hasta  acá.
+
+(78:11) Perfecto,  ahora  sí  tengo  conectividad.
+
+(78:14) Entonces,  el  enunciado  me  dice,
+
+(78:18) el  enunciado  me  dice  que  haga,  si  se
+
+(78:21) acuerdan,  me  dice  que  haga  una  ruta
+
+(78:23) estática
+
+(78:26) o  una  ruta  por  default.
+
+(78:30) Realizar  la  configuración  de  las
+
+(78:32) interfaces  del  router  1  y  el
+
+(78:33) enrutamiento  dinámico  con  IGRP,  sistema
+
+(78:35) autónomo  1.  Ahora  lo  vamos  a  hacer.  más
+
+(78:37) una  ruta  por  default  a  la  IP  del  ISP
+
+(78:42) respectiva  y  probar  conectividad  con  los
+
+(78:43) mismos.  Listo,  probé  conectividad  con
+
+(78:46) los  mismos,  pero  me  falta
+
+(78:49) hacer  la  ruta  estática,  que  vendría  a
+
+(78:51) ser  la  ruta.  ¿Cómo  se  llamaba  la  ruta
+
+(78:54) por  default?  ¿Alguien  se  acuerda  la  que
+
+(78:57) debería  aparecer  acá?
+
+(79:00) 00.
+
+(79:03) ¿Cómo  se  llama?
+
+(79:07) era  eh  de  borde  o  de
+
+(79:11) Bueno,  tenía  ese  nombre,  Gateway  of  Last
+
+(79:13) Resort  en  inglés  y  si  no  era  la  llamada
+
+(79:17) ruta  por  default.  ¿Cómo  es  así?  ¿Alguien
+
+(79:19) me  la  dicta?
+
+(79:30) ¿Alguien  me  dicta  cómo  era  la  para  hacer
+
+(79:31) la  ruta  por  default?
+
+(79:35) default  gateway,  o  sea,  IP.
+
+(79:39) ¿Cómo  hacía  una  ruta  estática?
+
+(79:42) IP
+
+(79:48) root
+
+(79:51) IP  route.
+
+(79:55) ¿Cómo  era  la  ruta  estática?
+
+(79:57) La  la  Gway  Resort.
+
+(80:02) 0.0.0.
+
+(80:04) espacio  0.0.0.0,
+
+(80:07) o  sea,  and  desde  este  origen  hasta  este
+
+(80:13) hasta  este  destino.  ¿Y  qué  tenía  que
+
+(80:15) poner  acá?
+
+(80:19) No  estudiaron  nada,  boludo.
+
+(80:23) 10.1.0
+
+(80:26) pun  debería  ser  la  dos,  ¿no?  A  ver,  a
+
+(80:29) mirar.
+
+(80:31) Yo  me  acuerdo  de  memoria  esto,  eh,
+
+(80:32) digamos,
+
+(80:37) a  ver,
+
+(80:40) 10.1.0.2
+
+(80:42) es  la  dos.  Ahí  está.  Está  bien.  Listo.
+
+(80:45) Entonces  hago  d
+
+(80:49) do  IP  route  otra  vez
+
+(80:51) y  ahí  automáticamente  me  aparece  la  ruta
+
+(80:54) estática  que  yo  puse  y  me  aparece  que
+
+(80:58) esa  es  la  dirección  del  gateway  of
+
+(81:00) resort.  Ahora,  así  sin  entender  nada,
+
+(81:05) solamente  entendiendo  eso,  vamos  a  ver
+
+(81:08) si  yo  puedo  llegar  al  otro  lado,  porque
+
+(81:11) es  como  que  si  yo  hago  esto  y  el  router
+
+(81:13) en  su  tabla  de  enrutamiento  no  tiene
+
+(81:15) esto  y  y  tiene  una  ruta  por  default,
+
+(81:17) vamos  a  ver  qué  pasa.
+
+(81:25) No  pasa  nada,
+
+(81:30) no  pasa  nada  porque  no  no  es  que  le  tira
+
+(81:34) al  digamos  no  es  que  usa  el  salvavida  de
+
+(81:38) usar  esta  la  ruta  por  default  le  tira  la
+
+(81:41) responsabilidad  al  ISP,  el  ISP  le
+
+(81:42) resuelve  todo,  ¿no?
+
+(81:45) en  la  tabla  enrutamiento,  digamos,  del
+
+(81:47) router  de  borde  donde  yo  estoy  parado  en
+
+(81:50) mi  red,  tiene  que  entender,  digamos,  que
+
+(81:53) el  paquete  que  yo  quiero  mandar  a  esta
+
+(81:55) IP,  la  ruta  tiene  que  tiene  que  saber,
+
+(81:58) tiene  que  haber  una  ruta  acá,  digamos,
+
+(82:01) para  que  me  enrute  ese  paquete  con  ese
+
+(82:03) prefijo.
+
+(82:04) Nosotros  como  no  vamos  a  configurar
+
+(82:08) e  las  rutas  por  default  acá,  o  sea,
+
+(82:12) perdón,  no  vamos  a  configurar  rutas
+
+(82:14) estáticas,  el  enunciado  nos  dice  que  use
+
+(82:19) sin  saber,  sin  meterme  en  el  ISP,  sin
+
+(82:22) meterme  en  el  ISP  porque  no  me
+
+(82:24) corresponde  hacerlo.
+
+(82:26) sin  meterme  en  el  ISP,  me  está  diciendo
+
+(82:32) realizar  la  configuración  de  las
+
+(82:33) interfaces  del  router  1  y  el
+
+(82:35) enrutamiento  dinámico  con  IGRP  para  el
+
+(82:37) sistema  autónomo  1.  me  está  diciendo
+
+(82:39) cómo,  o  sea,  eso  quiere  decir  que  el  ISP
+
+(82:42) tiene  configurado  el  protocolo  de
+
+(82:43) enrutamiento  dinámico  IGRP
+
+(82:47) con  lo  que  se  le  llama  el  sistema
+
+(82:49) autónomo  uno.  Y  el  sistema  autónomo  es
+
+(82:51) que  es  el  que  le  da  entidad,  digamos,  a
+
+(82:55) ese  contexto  de  enrutamiento  que  es
+
+(82:59) entre  mi  red  y  la  del  ISP.  O  sea,
+
+(83:03) ¿alguien  sabe  la  definición  del  sistema
+
+(83:05) autónomo?  Si  yo  le  pregunto  qué  es  un
+
+(83:07) sistema  autónomo,
+
+(83:15) no  no  me  suena.
+
+(83:17) Bueno,  el  sistema  autónomo  es  un  mismo,
+
+(83:20) o  sea,  la  definición  es  como  que  es  un
+
+(83:22) contexto  que  representa  un  mismo  dominio
+
+(83:26) de  eh
+
+(83:28) es  como  el  mismo  dominio  de
+
+(83:30) administración  de  una  red,  el  eh  donde
+
+(83:34) todas  las  las  componentes  que
+
+(83:37) pertenezcan  a  ese  sistema  autónomo  que
+
+(83:39) se  define  con  una  ID,  que  en  este  caso
+
+(83:40) es  el  uno,  están  bajo  el  mismo  dominio
+
+(83:43) de  administración.  Entonces,  yo  ahora
+
+(83:46) tengo  que  decir  que  voy  a  iniciar  un
+
+(83:50) proceso  de  enrutamiento  con  el  protocolo
+
+(83:52) IGRP  a  través  del  sistema  autónomo  1  y
+
+(83:55) todos  los  routers  que  estén  conectados
+
+(83:57) dentro  de  esta  red  bajo  el  sistema
+
+(84:00) autónomo  1  por  IGRP  van  a  compartir  ese
+
+(84:03) mismo  dominio  de  administración  y  se  van
+
+(84:05) a  compartir  las  rutas  eh  como  vimos  la
+
+(84:08) clase  pasada  con  el  otro  protocolo
+
+(84:10) enrutamiento  que  es  RIP
+
+(84:12) y  yo  activando  el  proceso  Soy  GRP  con  el
+
+(84:16) sistema  autónomo  1.  Le  tengo  que  decir,
+
+(84:19) le  tengo  que  decir,
+
+(84:23) le  tengo  que  decir  a  mi  router  cuáles
+
+(84:27) son  las  direcciones  IP  que  él  conoce  o
+
+(84:30) que  él  debería  conocer
+
+(84:32) dentro  de  su  sistema  autónomo  donde  él
+
+(84:35) está  en  este  momento  para  que  las  pueda
+
+(84:38) publicar  y  se  las  pueda  pasar  al  router
+
+(84:40) que  está  conectado  del  otro  lado  de  él,
+
+(84:42) que  en  este  caso  es  el  ISP.  ¿Cuáles  son
+
+(84:45) las  rutas  que  yo  debería  publicar?
+
+(84:48) ¿Cuáles  conozco  dentro  de  mi
+
+(84:53) dentro  de  mi  red?  Veamos
+
+(84:58) las  vilan,
+
+(85:00) las  vilan,
+
+(85:02) eso  uno.
+
+(85:04) Y  se  acuerdan  que  yo  les  dije  que
+
+(85:05) ustedes  tienen  que  poner  las  direcciones
+
+(85:07) IPs  que  se  corresponden  con
+
+(85:12) lo  que  tienen  conectado  sus  interfaces.
+
+(85:15) Sí.
+
+(85:15) Y  hay  un  Sí.  Y  hay  un  tema  particular.
+
+(85:20) El  protocolo  de  IGRP,  a  diferencia  a
+
+(85:23) diferencia  de  RIP,  que  es  el  protocolo
+
+(85:26) que  vimos  la  clase  anterior,  sí  tenemos
+
+(85:28) que  informar  cuál  es  eh  su  dirección  eh
+
+(85:35) o  sea,  la  dirección  de  red  completa.
+
+(85:37) ¿Sí?  ¿Qué  digo  completa?  En  el  otro  era
+
+(85:40) con  solo  informar  la  dirección  IP
+
+(85:42) Classless,  perdón,  classful,  o  sea,
+
+(85:45) ponía  si  era  una  clase  A,  clase  B  o
+
+(85:47) clase  C,  ya  estaba.
+
+(85:49) En  el  en  cambio  IGRP  eh  sí  pide  que  le
+
+(85:53) informemos  si  esa  subred  si  esa  red  está
+
+(85:55) subneteada,  cuál  es  eh  eh  cuál  es  esa
+
+(86:00) subred  y  se  informa  con  la  con  la  con  la
+
+(86:03) máscara  Willcard.  Sí,
+
+(86:06) nosotros  ya  sabemos  que  la  máscara
+
+(86:08) WHCard  es  la  a  priori  es  la  inversa  de
+
+(86:11) la  máscara  de  subred.  Entonces,  si  yo
+
+(86:13) tengo  que  decir  que  network,  el  comando
+
+(86:15) es  el  mismo  network,  ¿cuál  es  mi  red?  Es
+
+(86:19) la  10.10.0
+
+(86:21) pun  0,
+
+(86:25) ¿no?  La  10.10.0.0.
+
+(86:31) Si  yo  tuviese  que  poner  cuál  es  la
+
+(86:33) WHCard  que  hace  referencia  a  esta  red,
+
+(86:36) sería  la  0.0.0.255.
+
+(86:40) Porque  si  yo  me  fijo  cuál  era  la  red
+
+(86:42) esa,  la  red  esa  es  la  10/24,
+
+(86:48) ¿se  acuerdan?
+
+(86:53) Sí.  Sí.
+
+(86:55) Entonces,  ¿cuál  es  la  inversa  de  la
+
+(86:57) máscara  subred  que  yo  la  tengo  que  poner
+
+(86:59) en  formato  Willcard  en  el  en  el  IGRP?
+
+(87:03) 00  255,  como  escribí  ahí.
+
+(87:07) ¿Lo  ven?
+
+(87:10) Sí,
+
+(87:10) sí,  sí.
+
+(87:11) Okay.  Entonces,  lo  informo  de  esa
+
+(87:13) manera.
+
+(87:16) O  sea,  va  la  Willcard,  no  va  la  máscara
+
+(87:18) de  subred  porque  IGRP  lo  espera  así.  Es
+
+(87:22) como  está  eh  e
+
+(87:26) es  como  está  él.  Y  y  fíjense,  lo  voy  a
+
+(87:28) poner  de  vuelta  ahora.  Voy  a  poner  la
+
+(87:29) otra,  la  10  20,000  espacio  signo  de
+
+(87:32) pregunta.
+
+(87:35) Y  fíjense  lo  que  dice.  A,  B,  C,  D.
+
+(87:39) Wilcar  bits.  Entonces,  0.0.0.255.
+
+(87:45) Así  lo  espera  esa  es  la  manera  correcta.
+
+(87:48) De  todos  modos,  de  todos  modos,  si  no  lo
+
+(87:51) ponen,
+
+(87:53) va  a  funcionar  igual  porque  toma  por
+
+(87:56) default  que  la  que  que  si  que  la
+
+(87:59) ausencia  de  la  WHCard  es  la  Willcard  que
+
+(88:02) hace  referencia  a  la  a  a  la  a  la  clase.
+
+(88:05) Si,  en  este  caso  sería  más  amplio  porque
+
+(88:07) si  si  ve  que  adelante  hay  un  10,  va  a
+
+(88:10) tomar  que  la  WHCard  es  una  clase  eh  es
+
+(88:14) una  clase  A,  o  sea,  va  a  tomar  lo  más  lo
+
+(88:16) más  amplio.  Sí,  pero  bueno,  lo  correcto
+
+(88:19) es  esto.  Si  yo  quiero  hacerlo  bien  bien
+
+(88:21) es  esto.  Y  acá  tengo  que  poner  la  1050
+
+(88:27) 0.0.0.255.
+
+(88:30) Ahí  estamos.
+
+(88:34) Muy  bien.
+
+(88:36) Ahora
+
+(88:37) tengo  una  duda,  Leonardo,  disculpa,  o
+
+(88:40) sea,  esto  último  lo  entendí,  pero  me
+
+(88:42) perdí  con  lo  de  sistema  autónomo.
+
+(88:45) Sistema  autónomo  tiene  algo  que  ver  con
+
+(88:47) estas  que  estamos  configurando  estas  eh
+
+(88:51) van  en  el  EIG  RP,
+
+(88:55) ¿no?  El  sistema  autónomo,  por
+
+(88:57) definición,  es  un  mismo  dominio
+
+(89:01) dentro  de  un  contexto  de  red  que  se  basa
+
+(89:05) en  la  misma  en  la  misma  administración.
+
+(89:09) Es  decir,  que  si  vos  querés  el  ISP  se
+
+(89:12) conecta  contra  acá  se  conecta  contra  dos
+
+(89:14) routers  que  son  míos,  el  de  la  sucursal
+
+(89:17) de  CAB  y  el  de  la  sucursal  [carraspeo]
+
+(89:18) de  de  Rosario,  pero  el  ISP  se  conecta
+
+(89:21) con  otros  clientes.  Sí,  tiene  otros
+
+(89:23) clientes,  otros  cables  que  van  por  acá,
+
+(89:25) para  allá.
+
+(89:27) Entonces,  si  yo  soy  un  cliente,  mi
+
+(89:29) sistema  autónomo  es  el  uno,  pero  otro
+
+(89:31) cliente  puede  tener  el  sistema  autónomo
+
+(89:32) 20,  50.  Sí.  O  sea,  cada  uno  tiene  un
+
+(89:37) número  asignado  que  es  su  dominio.  Sino
+
+(89:39) el  router  DSP,  ¿cómo  administra  este  el
+
+(89:42) elp?
+
+(89:45) Claro.  Okay.
+
+(89:46) Sí.  O  sea,  tiene  que  tener  un  dominio  de
+
+(89:49) eh
+
+(89:51) de  administración  que  es  único  para  ese
+
+(89:54) contexto  donde  el  router  se  intercambia
+
+(89:57) información  de  enrutamiento.  ¿Sí?  O  sea,
+
+(90:00) lo  del  sistema  autónomo  1  no  se  ve  con
+
+(90:01) el  sistema  autónomo  60  de  otro  cliente.
+
+(90:05) Bueno,  y  por  último  me  falta  la  la  que
+
+(90:09) yo  tengo  conectado  en  la  interfaz  serial
+
+(90:11) es  la  10.1.0
+
+(90:14) pun
+
+(90:15) eh  0,  que  es  la  red.  Y  en  ese  caso  la
+
+(90:20) Wilcar  es  nos  fijamos  que  era  un  barra24
+
+(90:22) también  de  podría  haber  sido  eh  podría
+
+(90:25) haber  sido  un  barra  un  barra  30.  Si  es
+
+(90:28) un  barra  30,  tienen  que  hacerle  la
+
+(90:30) inversa  al  barra  30.  ¿Cuánto  era  el
+
+(90:31) barra  30?  Era  255,  255,  255.252.
+
+(90:37) Hacen  255  -  252  y  le  da  el  valor  de  la
+
+(90:41) Willcard  de  acá.  ¿Se  entiende?
+
+(90:46) Lo  repito.
+
+(90:48) Si  mi  si  mi  máscara  de  subred  era  255
+
+(90:53) 255  255.252  252  donde  252  es  barra  30,
+
+(90:58) como  yo  lo  tengo  que  poner  en  formato
+
+(91:00) Willcard,  agarraría  y  y  diría  255  -  252
+
+(91:05) igual  y  acá  debería  haber  puesto,  si
+
+(91:08) esto  si  hubiese  sido  un  barra  30  debería
+
+(91:10) puesto  un  3  acá,  ¿se  entiende?
+
+(91:15) Porque  es  00.3
+
+(91:18) es  la  inversa  del  de  la  252  que  vendría
+
+(91:21) a  ser  un  bar  30.  Enter.
+
+(91:24) Fíjense  que  automáticamente  cuando  yo
+
+(91:27) puse,  le  dije  a
+
+(91:31) primero  hice  a  propósito  lo  otro.  A
+
+(91:33) propósito  hice  lo  otro.  Primero
+
+(91:35) configuré  todas  las  los  con  el  comando
+
+(91:38) network,  todas  las  las  redes  que  están
+
+(91:40) del  lado  interno  mío  de  la  LAN.
+
+(91:43) Y  por  último  hice  network  y  puse  la
+
+(91:47) dirección  IP  con  la  Willcard
+
+(91:49) correspondiente  de  la  interfaz  de  mi
+
+(91:52) router  que  da  contra  el  ISP  y
+
+(91:54) automáticamente  tiró  este  mensaje  que
+
+(91:57) dijo,
+
+(91:58) "A  partir  de  ahora  yo  levanté  una  nueva
+
+(92:03) adyacencia  porque  en  IGRP  se  llama  así.
+
+(92:06) Cuando  dos  routers  se  conectan  entre  sí
+
+(92:09) a  través  de  un  mismo  sistema  autónomo,
+
+(92:11) se  produce  una  adyacencia.  Ella  es  a
+
+(92:14) partir  de  esa  adyacencia  los  routers  se
+
+(92:16) comunican  y  se  pasan  las  tablas  de
+
+(92:19) enrutamiento
+
+(92:21) eh
+
+(92:22) eh  para  para  después  poder  enrutar  los
+
+(92:25) paquetes.  Ahora  si  yo  hago  do  show  IP
+
+(92:30) route  para  ver  la  tabla  de  enrutamiento,
+
+(92:34) automáticamente  me  doy  cuenta  que  el
+
+(92:36) router
+
+(92:38) de  mi  de  mi  borde  se  aprendió  todas
+
+(92:41) estas  direcciones  porp.  ¿Y  cuáles  son
+
+(92:43) esas  direcciones?
+
+(92:50) La  de  los  servidores,
+
+(92:53) la  de  la  red  de  los  servidores  y  la  de
+
+(92:55) la  red  del  enlace  que  conecta  el  ISP  con
+
+(92:58) el  router  2.
+
+(93:00) Ah,  claro.
+
+(93:01) Es  el  que  me  da  el  camino  para  llegar  al
+
+(93:03) otro  lado.  Ahora  bien,
+
+(93:06) entonces  ahora  con  esto  funcionando  como
+
+(93:08) corresponde,  yo  sí  debería  llegar,  yo  sí
+
+(93:12) debería  llegar  a  este  servidor.
+
+(93:16) Fíjense  los  saltos  que  da.  Ya  saben  cuál
+
+(93:19) es  la  IP  de  cada  uno.  La  primera  es  la
+
+(93:21) de  F  Gateway.
+
+(93:31) Hay  algo  que  no  le  gustó.  A  ver,  vamos  a
+
+(93:33) ver  si  llego  a  la  103
+
+(93:36) 030.
+
+(93:43) Perfecto.
+
+(93:46) Hay  una  cosita  de  por  qué  esto  no
+
+(93:48) funciona,  que  yo  se  las  voy  a  decir,
+
+(93:50) pero  después  ustedes  la  van  a  resolver.
+
+(93:53) En  el  router  de  acá,  en  el  router  2,
+
+(93:57) hay  puestas  unas  access  list  que
+
+(93:59) permiten  el  tráfico  desde  esta  van  hasta
+
+(94:03) la  1030,
+
+(94:05) que  es  el  route,  es  el  es  el  servidor
+
+(94:07) este  de  acá.
+
+(94:09) Pero  como  no  hay  puesta  otra  access  list
+
+(94:12) que  permita  el  tráfico  acá,  ¿qué  pasa?
+
+(94:18) No  vuelve.
+
+(94:20) Deniega.
+
+(94:20) Lo  deniega.
+
+(94:22) Lo  deniega  porque,  ¿qué  pasa?  Entra  la
+
+(94:25) esta  dirección  IP  que  yo  puse  acá,  este,
+
+(94:29) o  sea,  yo  quiero  ir  acá,  que  la  104040,
+
+(94:32) que  es  este  server,
+
+(94:34) viene  todo  por  acá.  cuando  evalúa  esa  eh
+
+(94:38) pasa  cuando  evalúa  la  vuelta  a  la  vuelta
+
+(94:41) tiene  puesta  un  access  list  que  permite
+
+(94:42) solamente  la  10  la  10  30030
+
+(94:48) hacia  hacia  esta  red.
+
+(94:50) Sí,  es  access  list,  digamos,  no  me  deja
+
+(94:55) como  como  no  tiene  una  línea  explícita,
+
+(94:58) se  los  voy  a  mostrar,  como  no  tiene  una
+
+(95:00) línea  explícita  para  que  vuelva  a  a  la  a
+
+(95:04) la  10
+
+(95:05) 030,
+
+(95:07) entra  en  lo  que  se  lo  conoce  como  el
+
+(95:09) implicit  de
+
+(95:12) show  run  y  no  me  deja  pasar  la
+
+(95:15) información,  no  me  deja  pasar  el
+
+(95:17) paquete.  ¿Ven?  Hay  una  sola  access  list.
+
+(95:21) que  me  dice  que  solamente  pase  el
+
+(95:24) tráfico  que  es  de  la  104  a  la  1010.
+
+(95:28) No  me  deja  pasar  el  otro  paquete,  sino
+
+(95:30) acá  abajo  debería  decir  access  list  101
+
+(95:33) permit  IP  10300
+
+(95:37) todo  55  y  acá  debería  ser  10,  o  sea,  lo
+
+(95:40) mismo,  pero  nada  más  que  acá  un  tres.
+
+(95:45) ¿Se  entiende
+
+(95:48) por  qué  el  primer  traser  no  funcionó?
+
+(95:51) Bueno,  está  bloqueado  del  otro  lado,
+
+(95:55) o  sea,  del  lado  de  mi  router  no  hay
+
+(95:58) ninguna  access  list,  pasa  todo  para
+
+(96:00) cualquier  lado  porque  todavía  no  lo
+
+(96:02) hicimos.  del  otro  lado
+
+(96:05) tiene  la  restricción  puesta,  entonces  el
+
+(96:06) tráfico  va,  pero  no  puede  volver  porque
+
+(96:09) a  la  vuelta
+
+(96:11) entra  en  esa  access  list  que  tiene
+
+(96:13) definida  y  cae  en  algo  que  no  está
+
+(96:16) explícitamente  escrito  y  entonces  cae  en
+
+(96:18) el  implicit  de  y  deniega  el  tráfico.  ¿Sí
+
+(96:21) se  entiende  hasta  ahora?  Bien.
+
+(96:25) Bueno,  ya  tenemos  configurado  el  eh
+
+(96:27) todo.  Lo  que  nos  falta  ahora  es  hacer  el
+
+(96:30) túnel  IPSC,  ehamos  y  después  las  access
+
+(96:33) list.  Fíjense  que  si  yo  hago  ahora  hago
+
+(96:36) esto  mismo  de  la  vilan  20
+
+(96:40) traer  10.4.0.40
+
+(96:52) para  la  van.  Para  la  van.
+
+(96:54) Eh,  20  no  hay  restricción.  ¿Por  qué?
+
+(97:00) Según  lo  que  les  mostré  ayer,  eh,  recién
+
+(97:02) digo,
+
+(97:06) o  sea,  de  la  vilan  20  yo  llego  a  los  dos
+
+(97:08) servidores  eh  sin  ningún  problema
+
+(97:18) y  porque  es  lo  que  les  mostré  recién,  o
+
+(97:21) sea,  vuelvo  a  abrir  acá.
+
+(97:24) Hay  un  access  list.
+
+(97:27) La  access  list  tiene  como  dirección
+
+(97:29) destino  la  1010.
+
+(97:31) Entonces,
+
+(97:33) no  hay  una  una  no  hay  algo  que  que
+
+(97:37) genere  un  problema  para  la  1020.
+
+(97:44) Perdón,  profe,  pero  ahí
+
+(97:46) ese  permit
+
+(97:48) qué  orígenes  está  permitiendo?  Eso  es  lo
+
+(97:51) que  no  entiendo.
+
+(97:52) Ese  permit,  ese  permit  permite  desde  la
+
+(97:55) 104
+
+(97:57) de de  toda  la  red  104  con  destino  con
+
+(98:00) este  destino
+
+(98:03) y  esa  101  está  aplicado.  Vamos  a  ver
+
+(98:11) ese  101  está  aplicado  en  algo.  Todavía
+
+(98:14) no  expliqué  esto.  Todavía  no  expliqué  lo
+
+(98:15) del  túnel,  pero  está  aplicado  en  el
+
+(98:17) túnel.
+
+(98:18) Entonces,  déjenme  revisar  si  el  túnel
+
+(98:28) está  bien,  listo.
+
+(98:30) Eh,  ese  tráfico  va  a  viajar  por  el
+
+(98:32) túnel.  Sí.  Eh,  pero  no,  como  no  puede
+
+(98:36) entrar  por  el  túnel  porque  no  hay  ningún
+
+(98:37) túnel
+
+(98:39) armado,  entonces  directamente  no.
+
+(98:43) A  ver,
+
+(98:45) esta,  ¿se  acuerdan  que  yo  le  dije  que  el
+
+(98:46) access  list  es  para  hacer  que  el  tráfico
+
+(98:48) ingrese  por  el  túnel  o  es  para  filtrar
+
+(98:50) tráfico  interno  dentro  de  una  red  LAN?
+
+(98:55) Sí,
+
+(98:55) este  esta  IP  esta  esta  Axel  que  está  acá
+
+(98:58) lo  que  está  diciendo  es  que  ingrese  por
+
+(99:01) el  túnel  eh  que  ahora  lo  voy  a  explicar
+
+(99:05) en  lo  que  venga  de  este  origen,  que  en
+
+(99:07) este  caso  es  un  servidor  el  que  está  en
+
+(99:09) la  104  y  vaya  contra  este  destino.
+
+(99:12) Sí,  como  no  hay  ningún  túnel  armado  o
+
+(99:15) establecido  todavía  entre  estos  dos
+
+(99:17) router,  no  hay  un  túnel  establecido
+
+(99:19) porque  yo  del  lado  del  lado  nuestro  no
+
+(99:21) lo  hice.
+
+(99:23) Entonces,  como  no  hay
+
+(99:25) ese  tráfico,  no  no  puede  no  puede  fluir.
+
+(99:28) Pero,  ¿qué  pasa?  El  tráfico  de  la  103
+
+(99:32) no  está  afectado  por  esa  access  list.
+
+(99:34) Entonces,  por  eso  funciona.
+
+(99:37) Sí,  por  eso  e  por  eso  eh  hay  tráfico.
+
+(99:41) Sí.  E  a  ver,  no  sé  si  me  expliqué.  A
+
+(99:45) ver,  miren,  lo  vamos  a  abrir  de  vuelta.
+
+(99:51) El  de  el  que  va  hacia  la  103  funciona
+
+(99:53) bien,  no  tiene  ningún  tipo  de
+
+(99:55) restricción.  Sí,  pero  el  otro  quería  el
+
+(99:58) otro  es  un  tráfico  que  debería  estar  el
+
+(100:00) de  la  104  debería  estar  es  un  tráfico
+
+(100:03) que  debería  viajar  a  través  del  túnel,
+
+(100:05) pero  como  el  túnel  no  está  definido,
+
+(100:06) entonces  no  sabe  cómo  mandarlo  por
+
+(100:08) dentro  del  túnel.  Esa  es  la  función  que
+
+(100:10) hace  esta  Access  List.  Sí,  no  está
+
+(100:12) filtrando  los  paquetes  e
+
+(100:16) eh  en  origen  y  en  destino.  Está
+
+(100:19) filtrándolo  porque  no  entra  dentro  del
+
+(100:20) túnel.
+
+(100:22) Ahora,  ahora  lo  vamos  a  ver  de  vuelta.
+
+(100:25) En  cambio,  para  la  Vilan  20,  incluso
+
+(100:28) para  la  Vilan  50,
+
+(100:31) no  está  afectado  el  tráfico.  Miren,
+
+(100:32) Trasert  10.4.0.40.
+
+(100:38) No  está  afectado  el  tráfico  acá.
+
+(100:41) Lo  ven  o  sea,  el  tráfico  va  y  viene,  va
+
+(100:46) y  viene,  pero  porque  no  está  afectado
+
+(100:48) por  ningún  access  list.  En  cambio,  para
+
+(100:50) la  Vilan  10  sí  está  afectado  porque  ese
+
+(100:53) tráfico  debería  entrar  por  este  túnel.
+
+(100:55) Entonces,  ahora,  ahora  que  ya  me  fijé  el
+
+(100:57) escenario  sin  leer  sin  leer  el
+
+(100:58) enunciado,
+
+(101:01) lo  que  tiene  que  pasar  eh  para  cuando
+
+(101:04) esto  esté  terminado,  todo  el  tráfico  que
+
+(101:07) vaya  de  la  Vilan  10  hacia  estos  dos
+
+(101:10) servidores
+
+(101:11) debería  ir  por  el  túnel,  o  sea,  debería
+
+(101:13) ir  por  acá.  Y  todo  el  tráfico  que  vaya
+
+(101:16) por  la  vilan  20  y  por  la  vilan  50  va  a
+
+(101:21) ir  por  fuera  del  túnel.  ¿Qué  es  lo  que
+
+(101:22) está  pasando?  ¿Está  funcionando  así?
+
+(101:24) Porque  yo  se  lo  mostré  recién  de  la  vila
+
+(101:27) 20.  Llego  a  los  dos  lugares.  Llego  a  la
+
+(101:31) 103  y  a  la  10.  Llego  a  la  103  y  a  la  10
+
+(101:35) 40.  Por  fuera  del  túnel  viene,  viene  al
+
+(101:37) ISP,  viene  al  router  1,  salta  al  ISP,
+
+(101:40) del  ISP  salta  router  2  y  de  ahí  va  al
+
+(101:43) servidor  que  yo  quiera  ir.  O  sea,
+
+(101:45) perfecto
+
+(101:47) eso.  Anda  perfecto.  Desde  la  desde  la  PC
+
+(101:52) eh  adminice
+
+(101:54) lo  mismo  y  funciona  por  va  por  fuera  del
+
+(101:57) túnel,  salta  el  router  1,  salta  el  ISP,
+
+(102:00) salta  el  router  2  y  después  llega  al
+
+(102:02) servidor  que  yo  le  pegue.
+
+(102:05) ¿Hasta  acá  se  entiende?  Todo  eso  anda
+
+(102:06) perfecto,  o  sea,  que  hasta  ahora  toda  la
+
+(102:08) red  anda  bien.  Lo  que  no  anda  y  lo  que
+
+(102:11) tengo  que  corregir  es  primero  que  todo
+
+(102:14) el  tráfico  de  la  Vilan  10  vaya  por  este
+
+(102:16) túnel  que  todavía  no  está  configurado  y
+
+(102:18) no  está  establecido.
+
+(102:22) Y  lo  que  después  tengo  que  hacer  es
+
+(102:24) hacer  diseñar  un  access  list  para
+
+(102:26) filtrar  el  tráfico  dentro  de  la  misma
+
+(102:28) redland.  Sí,  esas  son  las  dos  cosas  que
+
+(102:30) faltan.
+
+(102:32) Bánquenme  un  segundo  que  voy  a  pasar  al
+
+(102:33) baño  y  por  otro  lado,  miren  la  pantalla
+
+(102:36) y  miren  esto  que  les  expliqué  porque  te
+
+(102:39) tienen  que  entender  todo  esto  que
+
+(102:40) expliqué  para  poder  continuar.  Está
+
+(102:45) genial.
+
+(105:27) Voy  a  acelerar  un  poco  y  ahora  les  voy  a
+
+(105:29) explicar  el  tema  del  túnel.
+
+(105:31) ¿Cómo  se  configura  un  túnel  IPSC?  Eh,  se
+
+(105:34) hace  de  la  siguiente  manera.  Eh,  la
+
+(105:37) forma  Después  ustedes  hagan,  vean  la
+
+(105:39) guía  tranquilos,  lean  lean  lo  que  es
+
+(105:41) cada  cada  cosa,  porque  si  sigo
+
+(105:44) explicando  con  el  nivel  de  detalle  que
+
+(105:46) vengo,  nos  vamos  a  ir  a  las  11.
+
+(105:48) Entonces,
+
+(105:50) para  que  se  establezca  un  túnel  IPSEC
+
+(105:52) entre  origen  y  destino,  en  este  caso
+
+(105:54) entre  router  1  y  router  2,  todos  los
+
+(105:57) parámetros  que  necesita  el  túnel  tienen
+
+(106:00) que  ser  exactamente  iguales.  La
+
+(106:02) diferencia  es  que  hay  dos  parámetros
+
+(106:05) específicos  que  tienen  que  tener  las  IPs
+
+(106:06) cruzadas.  Es  decir,
+
+(106:09) los  parámetros  de  este  router  tienen  que
+
+(106:11) tener  la  IP  de  este  router  de  acá,  que
+
+(106:14) en  este  caso  es  la  de  la  interfaz  serial
+
+(106:16) 10,  eh,  sería  la  101,
+
+(106:19) porque  es  la  interfaz  que  da  contra  la
+
+(106:20) conectividad.  ¿Sí?  Y  en  este  caso,  eh,
+
+(106:24) el  router  1  debería  tener  como
+
+(106:26) parámetro,  digamos,  eh  el  destino  que
+
+(106:30) que  vendría  a  ser  la  dirección  IP  de
+
+(106:32) este  otro  router,  la  de  la  interfaz
+
+(106:34) serial  00  del  router  2.  Sí,  porque  es  el
+
+(106:40) que  es  el  parámetro  que  que  hace  que
+
+(106:42) sean  eh  compañeros  o  o  en  inglés  sería
+
+(106:46) peers.  ¿Sí?  Entonces,  ¿cómo  configuro  yo
+
+(106:50) esto  y  cuál  es  la  mejor  manera  de
+
+(106:51) hacerlo?  para  que  en  los  dos  extremos
+
+(106:54) esté  la  misma  configuración  y  no  haya
+
+(106:55) ningún  parámetro  eh  que  genere  alguna
+
+(106:58) discrepancia.
+
+(106:59) Abro  la  configuración  de  este  router,  la
+
+(107:01) pongo  a  la  izquierda.
+
+(107:04) Abro  la  configuración  de  este  router,  la
+
+(107:06) pongo  a  la  derecha
+
+(107:08) y  lo  voy  a  hacer  más  chiquito.  Ahí
+
+(107:13) ya  sé  cuál  es  la  IP  de  uno.  Me  falta
+
+(107:16) saber  cuál  es  la  IP  del  otro,  que  ahora
+
+(107:18) lo  vamos  a  ver.
+
+(107:20) Lo  pongo  más  chiquito,  así.
+
+(107:22) Y  acá  voy  a  hacer  enable.  Lo  primero
+
+(107:25) hacer  es  un  show  run  para  ver  para  ver
+
+(107:27) esa  configuración  que  ya  está  hecha  en
+
+(107:29) este  en  este  lugar,
+
+(107:33) que  es  esta  configuración  que  está  acá.
+
+(107:36) Y  si  se  fijan,  el  parámetro  que  les  digo
+
+(107:40) que  tiene  que  tener  la  dirección  IP  del
+
+(107:41) destino,  o  sea,  del  otro  extremo  del
+
+(107:44) túnel,  son
+
+(107:46) esta  que  está  acá,
+
+(107:48) que  tiene  esta  dirección  IP,  que  es  la
+
+(107:50) del  otro,  la  del  otro  destino,  es  la
+
+(107:53) 101.
+
+(107:55) Y  esta  dirección  de  acá  que  es  la  del
+
+(107:56) set  pier,  o  sea,  su  compañero,  tengo  que
+
+(107:59) setear  cuál  es  el  pier  para  que  se
+
+(108:00) establezca  el  túnel.  La  teoría  del  túnel
+
+(108:03) IPSEC  ustedes  lo  van  a  ver  en  teoría  y
+
+(108:05) si  no  lo  van  a  leer  en  la  guía  esta  que
+
+(108:08) está  acá.  Se  los  muestro.
+
+(108:15) Tienen  que  leer  todo  esto  que  está  acá.
+
+(108:17) configurar  la  VPN,  el  router  1.  Van  a
+
+(108:19) ver  que  la  configuración  de  una  de  una
+
+(108:21) de  una  VPN  eh  con  un  tunel  IPS  se  hace
+
+(108:24) en  dos  fases.  La  fase  uno,  que  es  la
+
+(108:26) configuración  del  del  Ike  y  la  fase  dos,
+
+(108:29) que  es  la  configuración
+
+(108:31) eh  eh  vendría  a  ser  como  la  I2  e  en  e
+
+(108:36) que  es  la  es  la  segunda  parte,  ¿sí?  E  es
+
+(108:41) todo  esto  que  está  acá,  ¿sí?  lo  que
+
+(108:43) tienen  que  leer.  Yo  lo  voy  a  hacer
+
+(108:45) rápido  porque  acá  está  recontrail
+
+(108:47) explicado  que  es  cada  cosa,  digamos,
+
+(108:48) para  que  entiendan.  ¿Sí?  Entonces,
+
+(108:51) leyendo  esto  lo  van  a  entender  y  va  y
+
+(108:54) van  a  saber  qué  es  cada  cosa.
+
+(108:58) Entonces,  la  forma  práctica  de  hacerlo
+
+(109:00) es  poniendo  los  dos  los  dos  routers  uno
+
+(109:02) al  lado  del  otro,  ¿sí?  y  eh  copiando  la
+
+(109:07) misma  configuración,  eso  es  lo  más  fácil
+
+(109:09) y  lo  más  robado,  o  eh  escribiéndolo.  Lo
+
+(109:12) primero  que  tienen  que  hacer  es  definir
+
+(109:15) lo  que  se  llama  en  eh  los  parámetros  que
+
+(109:19) va  a  usar  en  eh  el  famoso  cryptomap,
+
+(109:24) ¿sí?  Eh  que  es  que  es  lo  que  necesita  eh
+
+(109:27) para  poder  establecerse  ese  túnel.  Sí.
+
+(109:30) Entonces,  esto  mismo  que  está  acá  lo
+
+(109:33) tengo  que  escribir  acá.  ¿Cómo  hago?
+
+(109:34) Bueno,  conf  y  pongo  crirypto
+
+(109:39) MP
+
+(109:40) policy.  Necesito  definir  una  política.
+
+(109:43) Esa  política  le  tengo  que  dar  un  ID,  que
+
+(109:45) en  este  caso  va  a  ser  el  10,  es  la  misma
+
+(109:46) que  el  otro  lado.  Le  pongo  encryption  y
+
+(109:50) y  elijo  el  tipo  de  encripción,  que  en
+
+(109:51) este  caso  es  AS,  la  misma,  digamos.
+
+(109:55) Después  le  digo,  "La  autenticación  que
+
+(109:56) vas  a  usar  es  preser  key.
+
+(110:01) Vas  a  usar  el  grupo  de  dif  Helman,  que
+
+(110:04) es  lo  que  le  da  seguridad  o  o  potencia  o
+
+(110:07) o
+
+(110:09) sí,  potencia  criptográfica  a  ese
+
+(110:12) cryptomap.  Sí,  el  grupo  de  Diffi  Helman
+
+(110:15) puede  ser  eh  creo  que  hasta  el  14.
+
+(110:17) Cuanto  más  grande  es  el  número,  más
+
+(110:19) fuerte  es  eh  el  cifrado  y  más  más
+
+(110:23) procesamiento  requiere  el  router.  En
+
+(110:25) este  caso  se  usó  el  grupo  cinco.
+
+(110:28) Entonces  yo  de  este  lado  pongo  el  grupo
+
+(110:29) cinco  y  pongo  lifetime,  este  parámetro
+
+(110:33) conocido  900,  el  mismo  que  allá.
+
+(110:35) Entonces  ahora  yo  pongo  do  show  run  y  me
+
+(110:39) fijo  y  comparo,  uso  el  criterio  de
+
+(110:41) comparación.  Si  e  lo  mismo  que  yo  puse
+
+(110:46) acá  es  lo  mismo  que  está  del  otro  lado  y
+
+(110:48) efectivamente  es  así.
+
+(110:51) Ahora  lo  que  yo  tengo  que  definir  es  una
+
+(110:54) clave  privada.  Sí,  esa  clave  privada
+
+(110:58) tiene  que  ser  la  misma  clave  privada  en
+
+(111:01) los  dos  lugares.  Sí,  la  clave  privada
+
+(111:03) que  se  definió  acá  se  llamó  la  llamaron
+
+(111:06) Cisco,  pero  podría  haber  sido  cualquier
+
+(111:08) cosa.  ¿Sí?
+
+(111:10) Eh,  entonces  yo  tengo  que  definir  esa
+
+(111:12) clave  privada  porque  esto  es  e
+
+(111:17) esto  es  una  eh  una  conexión  que  usa  un
+
+(111:20) cifrado  se  dice  simétrico.  ¿Sí?
+
+(111:23) Entonces,  yo  digo  crio.
+
+(111:25) HiceMP  de  vuelta,  antes  puse  exit,  ¿no?
+
+(111:29) Porque  yo  estaba  dentro,  le  hice  KMP  y
+
+(111:31) tenía  que  definir  todos  esos  parámetros
+
+(111:33) del  cryptomap  que  ya  lo  hice.  Ahora  digo
+
+(111:35) crypto  MPQ,
+
+(111:37) le  pongo  cuál  es  la  clave.  En  este  caso,
+
+(111:39) Cisco  es  la  misma  que  antes  y  digo  addr
+
+(111:42) y  le  tengo  que  poner  la  dirección  IP  del
+
+(111:46) otro  extremo,
+
+(111:48) digamos,  del  digamos  con  el  que  yo  voy  a
+
+(111:50) establecer  el  túnel,  que  en  este  caso,
+
+(111:53) si  no  si  mal  no  recuerdo,  toco  acá  y
+
+(111:55) creo  que  es  la  102
+
+(111:58) 10202,
+
+(112:00) ¿sí?  Que  la  interfaz  sería  el  00,  ¿sí?
+
+(112:03) Entonces  es  la  102.
+
+(112:05) Entonces,  acá  pongo  10  202.
+
+(112:10) Estamos  bien  hasta  ahí.
+
+(112:13) Sí,  sí.
+
+(112:13) Esos  esos  parámetros  que  yo  usé  eran  la
+
+(112:18) política  que  iba  a  usar,  la  clave
+
+(112:21) privada  que  iba  a  usar.
+
+(112:24) Ahora  tengo  que  definir  si  yo  voy  a
+
+(112:26) usar,  esto  lo  van  a  ver  en  la  teoría
+
+(112:28) después,  si  voy  a  usar  el  modo  túnel  o
+
+(112:31) el  modo  eh  cuando  uno  hace  un  túnel  a
+
+(112:34) IPSC,  hay  dos  modos.  Uno  se  llama  modo
+
+(112:36) túnel  y  el  otro  tiene  otro  nombre  que  no
+
+(112:38) me  acuerdo  ahora,  ¿eh?
+
+(112:41) Pero  la  diferencia  es  que  uno  cifra  todo
+
+(112:44) el  el  paquete  completo  y  el  otro  cifra
+
+(112:47) solamente  el  payload,  ¿sí?  O  sea,  la
+
+(112:50) parte  de  datos.
+
+(112:52) O  sea,  uno  uno  cifra,  no  digan  en  cripta
+
+(112:56) porque  está  mal,  se  dice  cifrar.  El
+
+(112:58) tráfico  va  cifrado,  no  va  encriptado.  La
+
+(113:01) palabra  correcta  es  cifrado.  El  el
+
+(113:04) tráfico  va  cifrado.
+
+(113:06) Todo  el  paquete  completo.  Todo  el
+
+(113:08) paquete  completo,  ¿qué  implica?  El
+
+(113:10) payload,  o  sea,  los  datos  y  todo  el
+
+(113:12) encabezado.
+
+(113:14) Ese  creo  que  es  el  modo  túnel.  Y  después
+
+(113:16) el  otro  modo  que  no  me  acuerdo  el  nombre
+
+(113:18) cifra  solamente  el  payload.  ¿Sí?
+
+(113:23) Entonces  con  este  con  esto  que  está
+
+(113:25) sombreado  ahora  hago  eh  eh  digamos  este
+
+(113:29) eh  eh
+
+(113:31) seteo  configuro  eso.  ¿Sí?  Entonces  como
+
+(113:35) tiene  que  ser  exactamente  lo  mismo,  en
+
+(113:38) este  caso  yo  lo  voy  a  copiar.  Sí,  pero
+
+(113:41) lo  importante  es  este  valor  de  acá,  que
+
+(113:43) también  lo  define  con  un  número,  en  este
+
+(113:45) caso  50,  ¿sí?  Pero  podría  haber  sido
+
+(113:48) otro  número,  podría  haber  sido  60,  20,
+
+(113:51) cualquiera,  pero  ustedes  tienen  que  usar
+
+(113:54) los  mismos  parámetros  en  ambos  extremos.
+
+(113:56) Entonces,  si  yo  lo  pego,  digo  crypto  ISA
+
+(114:01) crypto  IPSC  transfor
+
+(114:05) y  dice  definilo  con  el  número  50  y  usa
+
+(114:09) esto  que  está  acá,  estos  parámetros  que
+
+(114:11) están  acá,  el  ahya  Hac  y  el  ESP3Ds,
+
+(114:15) hablan  de  el  tipo  de  de  túnel  que  se  va
+
+(114:18) a  usar  y  el  cifrado  que  se  va  a  usar.
+
+(114:21) Sí,  después  lo  van  a  leer  en  la  guía.
+
+(114:23) Sí,  le  doy  enter.
+
+(114:28) Do  show  run  de  vuelta  para  verificar.  Do
+
+(114:30) show  run  de  vuelta  para  verificar  y  usar
+
+(114:32) el  criterio  de  comparación.
+
+(114:37) Ya  definí  todos  esos  parámetros.  Definí
+
+(114:40) la  política,  definí  la  clave  privada  y
+
+(114:42) definí  el  tipo,  digamos,  de  de  modo  que
+
+(114:46) y  cifrado  que  voy  a  usar.  Creo  que  es  el
+
+(114:48) modo  túnel,  si  mal  no  recuerdo.  Ahora  lo
+
+(114:51) que  tengo  que  hacer  es  definir  el  crypto
+
+(114:52) mapap.  ¿Qué  es  el  cryptoMap?  Esto  que
+
+(114:55) está  acá,  el  cryptomap  es  el  que  va  a
+
+(114:59) tener  toda  la  información,
+
+(115:02) o  sea,  va  a  contener  todo  lo  que  está
+
+(115:03) arriba,  que  ya  definí  antes.  Va  a  tener
+
+(115:05) la  política,  va  a  tener  el  el  la  clave
+
+(115:09) privada  del  cifrado  simétrico  y  va  a
+
+(115:11) tener  la  información  del  tipo  de  de
+
+(115:14) digamos  de  cifrado  que  se  va  a  usar,  el
+
+(115:16) modo  del  tipo  en  el  IPSC,  el  modo  túnel
+
+(115:18) o  el  otro  modo.  Y  eso  se  va  a  encapsular
+
+(115:22) en  lo  que  se  lo  llama  el  crypto  mapap.  Y
+
+(115:23) el  cryptoap  tiene  que  tener  un  nombre.
+
+(115:26) Sí,  acá  se  lo  llamó  myap,  mi  mapa.  Sí,
+
+(115:30) en  ambos  extremos  tiene  que  tener  el
+
+(115:31) mismo  nombre.  Sí.  Y  y  fíjense  que  ese
+
+(115:35) cryptomap  va  a  hacer  referencia  con  este
+
+(115:37) 10  a  la  política  que  yo  definí  acá
+
+(115:39) arriba.  Después  le  va  a  decir,  "Mi
+
+(115:42) compañero,  el  set  piero
+
+(115:45) armar  el  túnel."  Se  define  acá  la
+
+(115:47) dirección  IP  del  otro  extremo.
+
+(115:51) Define  este  parámetro.  y  acá
+
+(115:54) dice,  "Seteéame  el  transfor  set,  que  va
+
+(115:57) a  ser  el  50,  que  yo  lo  definí  más
+
+(115:59) arriba.  Acá  lo  definí  el  50,  ¿lo  ven?
+
+(116:03) Y  esto  que  dice  acá,  match  address  101,
+
+(116:07) esa  va  a  ser  la  access  list  que  está
+
+(116:11) definida  en  el  router  dos  estoy  parado,
+
+(116:14) está  definida  más  abajo  y  tiene  que  ser
+
+(116:17) la  access  list  donde  se  defina  cuál  es
+
+(116:20) el  tráfico  que  va  a  entrar  por  el  túnel.
+
+(116:23) ¿Si?
+
+(116:25) Entonces  vamos  a  este  lado  y  vamos  a
+
+(116:26) configurar  todo  esto.
+
+(116:29) Entonces  voy  a  copiar.  Yo  puedo  empezar
+
+(116:31) a  copiar  la  información,  pero  en  el
+
+(116:33) copiar  podés  cometer  el  error.  Pueden
+
+(116:35) cometer  el  error,
+
+(116:39) pueden  cometer  el  error  de  copiar  esta
+
+(116:41) línea  así  como  lo  estoy  haciendo  yo
+
+(116:43) ahora
+
+(116:45) y  va  a  ser  el  error  más  grande  que
+
+(116:48) cometan  en  sus  vidas,  porque  acá  va  la
+
+(116:50) dirección  IP  del  otro  extremo  que  es  la
+
+(116:52) 10202.
+
+(116:54) 10202.
+
+(116:59) ¿Se  entiende?  Porque  ustedes  acá  le
+
+(117:01) están  diciendo  cuál  es  el  set,  cuál  es
+
+(117:03) el  pier,  cuál  es  su  compañero  y  su
+
+(117:04) compañero  es  el  del  otro,  el  el  del  otro
+
+(117:06) lado,  el  que  tiene  la  IP  de,  digamos  de
+
+(117:08) su  interfaz  serial  contra  el  ISP,  que  la
+
+(117:11) 10202.
+
+(117:13) Listo.  Ahora  esto  sí,  si  quieren  lo
+
+(117:16) pueden  copiar  todo.  Así,  copio  y  pego
+
+(117:19) acá
+
+(117:22) porque  eso  es  lo  mismo,  ¿sí?  Que  ya  lo
+
+(117:24) definí  arriba.  En  los  dos  lugares  la
+
+(117:26) política  se  llama  10  y  en  los  dos
+
+(117:28) lugares  el  transfor.
+
+(117:31) Do  show  run  de  vuelta.  Y  ahora  sí,  ahora
+
+(117:34) sí,  ahora  sí.
+
+(117:40) Fíjense  que
+
+(117:43) ahora  hay  una  cosita  que  no  estaría  del
+
+(117:48) no  estaría  bien  y  ahí  aparece  la  palabra
+
+(117:51) incomplete.
+
+(117:55) Falta  el
+
+(117:55) alguien  se  le  ocurre
+
+(117:57) bien.  Muy  bien.
+
+(117:59) Excelente,
+
+(118:01) excelente.  no  está  definida  la  access
+
+(118:04) list,  digamos,  101  en  mi  router,  en
+
+(118:07) este,  entonces  como  no  está  definida,
+
+(118:12) como  no  está  definida,
+
+(118:14) aparece  como  incomplete  ahí  porque  yo  le
+
+(118:17) estoy  pasando  un  parámetro  que  no
+
+(118:18) existe.  Entonces  me  dice,  "Está  bien,
+
+(118:21) vos  lo  pusiste,  pero  yo  no  lo  puedo.  Yo
+
+(118:23) para  yo  para  para  completar  el  cryptomap
+
+(118:26) lo  necesito  y  voy,  vos  me  pusiste  que  es
+
+(118:28) la  101  y  no  la  encuentro.  Si  yo  pongo
+
+(118:30) show  run  acá,
+
+(118:33) do  show  run  y  me  voy  al  final,  no  hay
+
+(118:36) ninguna  access  list  definida  acá.  La
+
+(118:39) access  list  debería  estar  por  acá  y  no
+
+(118:41) está.
+
+(118:44) Entonces,  ¿qué  hago  ahora?  Me  voy  al
+
+(118:47) otro  router  y  digo  show  run.
+
+(118:51) Porque,  ¿qué  pasa?
+
+(118:53) Y  presten  atención  a  esto  que  voy  a
+
+(118:55) decir.  Me  voy  al  final.
+
+(118:58) Miren  esa  access  list.  ¿Cómo  cómo  se
+
+(119:00) definía  un  access  list?  Se  ponía  access
+
+(119:02) list,  el  ID  del  access  list  que  de  100
+
+(119:06) para  arriba  le  hacía  referencia  que  era
+
+(119:08) una  axel  extendida.  Permitir  la  IP.
+
+(119:11) Permitir  en  este  caso  la  IP  y  le  dice  el
+
+(119:14) origen  y  el  destino.
+
+(119:16) Si  soy  parado  en  el  router  2,  o  sea,
+
+(119:19) acá,
+
+(119:21) ¿cuál  es  el  origen?
+
+(119:23) Bueno,  el  origen  es  el  servidor  mío,
+
+(119:25) este  de  acá,
+
+(119:27) el  servidor  cero.  Y  y  a  dónde  tiene  que
+
+(119:31) llegar  el  tráfico  que  entra  por  ese
+
+(119:33) túnel,  digamos,  y  tiene  que  ir  para  el
+
+(119:35) otro  lado.  Bueno,  el  destino,  ¿cuál  es
+
+(119:37) el  destino?  La  vilan.  La  vilan,  digamos,
+
+(119:41) de  de  donde  están  las  PC  1  y  3.  La  van
+
+(119:44) 10.
+
+(119:46) Okay,
+
+(119:48) ahora  yo  tengo  que  hacer  eso  mismo,  pero
+
+(119:51) en  el  router  1  donde  estoy  parado.
+
+(119:54) Entonces  digo  IP  access  list,  la  voy  a
+
+(119:58) llamar  101  también  porque  arriba  en  el
+
+(120:00) cryptomap  la  definí  así.  Podría  haberla
+
+(120:02) llamado  105,  pero  en  el  cryptomap
+
+(120:05) tendría  que  haber  puesto  105.  Sí.
+
+(120:09) Access  permit.
+
+(120:13) Permit
+
+(120:15) IP.  ¿Cuál  es  mi  origen?
+
+(120:20) Esté  parado  en  router  1
+
+(120:23) 10.
+
+(120:25) El  router  2  sería  tu  origen,
+
+(120:28) ¿no?  ¿Cuál  es  mi  origen?
+
+(120:32) El  primero  que  lo  dijo,  está  bien.  La  10
+
+(120:34) 10
+
+(120:34) es  lo  que  es  el  destino  en  el  router  2,
+
+(120:36) ¿no?
+
+(120:38) Sí,  pero  eh  Sí,  pero  ustedes  si  estoy
+
+(120:42) parado  acá  y  les  estoy  preguntando  cuál
+
+(120:43) es  el  origen,  estoy  parado  acá  y  les
+
+(120:45) estoy  preguntando  cuál  es  el  origen,  me
+
+(120:47) tienen  que  decir  que  es  la  bilan  10.  Sí,
+
+(120:50) pero  a  propósito  puse  esto  para  que  vean
+
+(120:52) que  es  cruzado.  Sí.  Entonces,  access
+
+(120:55) list  101  permit  10  00.  ¿Cuál  es  la
+
+(121:00) Willcard  de  acá?
+
+(121:05) Tiene  que  machar  el  10  con  un  cero.
+
+(121:07) Tiene  que  marchar  el  10
+
+(121:09) y  después  puede  ser  cualquier  cosa,  ¿no?
+
+(121:12) 255  255  porque  si  bien  es  10  10  00  pero
+
+(121:17) en  realidad  es  la  la  la  PC  están  en  la
+
+(121:20) 10  algo,  no  importa  con  que  mache  la  la
+
+(121:24) 1010  para  mí  está  bien  porque  es  es  la
+
+(121:27) van.  Lo  puedo  hacer  más  restrictivo,  sí,
+
+(121:29) pero  así  está  del  otro  lado,  así  que
+
+(121:33) puedo  respetar  eso  mismo.  ¿Y  cuál  es  el
+
+(121:36) destino?  ¿Hacia  dónde  quiero  llegar  yo?
+
+(121:41) A  la  10.4.
+
+(121:43) 10  pun  4.0.0.
+
+(121:48) O  sea,  pongo  la  red,
+
+(121:51) pongo  la  red  por  si  hay  más  de  un
+
+(121:52) servidor,  digamos,  porque  si  no  hubiese
+
+(121:54) podría  poner  directamente  la  la
+
+(121:56) dirección  IP  del  servidor  y  listo.
+
+(121:59) Entonces  es  10  400.  ¿Y  cuál  es  la
+
+(122:02) willcard  de  este?
+
+(122:07) Maché  al  10,
+
+(122:09) macho,
+
+(122:11) dos  y  cualquier  cosa,  cualquier  cosa.
+
+(122:14) Enter.
+
+(122:16) Hay  algo  que  no  le  gustó.
+
+(122:25) tiene  que  ser  una  interfaz  específica.
+
+(122:27) Puede  ser.
+
+(122:31) No  necesariamente
+
+(122:36) el  principio.
+
+(122:38) Exacto,  exacto.  Lo  escribí  mal.  Es  es
+
+(122:42) access  list  101  permit  IP  de  origen  y  p
+
+(122:45) de  destino.  Enter.
+
+(122:48) Y  fíjense  que  si  ahora  yo  hago  un  do
+
+(122:50) run,  un  du  run,
+
+(122:53) ya  no  me  va  a  aparecer  acá  más
+
+(122:55) incomplete.
+
+(122:57) ¿Lo  ven  que  desapareció  el  incomplete?
+
+(123:00) Porque  yo  ya  definí  la  access  list.
+
+(123:04) Y  ahora,  ahora
+
+(123:07) como  yo  ya  definí  los  parámetros  del
+
+(123:09) túnel  y  definí  la  access  list,  la  access
+
+(123:12) list  tiene  que  estar  definida  en  los  dos
+
+(123:13) lugares  y  si  se  fijan  está  cruzada.
+
+(123:17) Es  la  misma  Axel  Lad,  nada  más  que  se
+
+(123:20) cambia  origen  por  destino  en  ambos
+
+(123:21) lugares.  ¿Lo  ven  que  es  la  misma?
+
+(123:25) Eso  es  otro  truquito  para  que  tengan
+
+(123:26) presente.  ¿Lo  ven  que  es  la  misma?  Nada
+
+(123:28) más  que  están  cruzados.  O  sea,  si  estoy
+
+(123:30) parado  en  un  lado,  el  origen  es  uno  y  el
+
+(123:32) destino  el  otro.  Si  estoy  parado  en  el
+
+(123:34) otro  extremo,  el  origen  es  uno  y  el
+
+(123:36) latino  es  otro.  Es  un  poco  de  sentido
+
+(123:38) común.  No  les  estoy  pidiendo  nada,  nada
+
+(123:41) extravagante.
+
+(123:43) Eh,
+
+(123:44) profe,  puede  ser  que  la  wild  card  esté
+
+(123:45) distinta.  en  una  y  en  otra  del  de  la
+
+(123:49) 10.4.0.0.
+
+(123:52) Sí,  puede  ser.  Digamos  la  la  de  la  la  de
+
+(123:55) acá  es  un  poco  más  la  de  acá  es  un  poco
+
+(123:58) más  restrictiva.
+
+(123:59) Sí.  E  y  si  yo  me  siento  incómodo  frente
+
+(124:03) a  eso,  selecciono  esta  esta  línea,  la
+
+(124:07) copio,
+
+(124:08) pongo  no,  la  pego.  Acabo  de  anular  la
+
+(124:13) que  escribí.  Ahora  la  pego  de  vuelta.
+
+(124:17) y  la  corrijo
+
+(124:19) y  pongo  que  la  la  pongo  la  misma  que  del
+
+(124:21) otro  lado  si  la  quiero  hacer  más
+
+(124:22) restrictiva.  Ahí  está.
+
+(124:27) Está  bien.
+
+(124:29) Y  ahoraable
+
+(124:30) ahora  lo  que  va  lo  que  du  para  guardar
+
+(124:34) la  configuración.  Ahora  lo  que  va  a
+
+(124:36) pasar  es  lo  siguiente.  El  tráfico  que
+
+(124:38) vaya  de  esta  PC  y  de  esta  PC  y  de  otra
+
+(124:42) PC  que  esté  acá  dentro  y  que  vaya  a  este
+
+(124:45) servidor,  va  a  ir  por  dentro  del  túnel  y
+
+(124:48) van  a  ver  que  el  tráfico  va  a  saltar
+
+(124:50) directamente  de  acá  hasta  acá.  Sí,  vamos
+
+(124:54) a  hacer  eso.  Miren.
+
+(124:59) Ah,  uso  uso  flechita  hacia  arriba.  Antes
+
+(125:01) yo  le  pegaba  a  la  104040,  el  paquete
+
+(125:04) iba,  pero  no  sabía  volver  porque  el
+
+(125:06) túnel  no  estaba  hecho,  no  estaba
+
+(125:08) establecido.  Si  yo  ahora  hago  flechita
+
+(125:10) hacia  arriba  y  le  pego,  fíjense  lo
+
+(125:13) siguiente.
+
+(125:14) El  primer  salto  va  al  default
+
+(125:15) gatewayight.
+
+(125:18) El  segundo  salto
+
+(125:21) primero  está  tratando  de  entender  lo  que
+
+(125:23) está  haciendo,  ¿no?  Siempre  el  primer
+
+(125:25) paquete  lo  pierde.
+
+(125:27) Uy,  algo  no  le  gustó.
+
+(125:31) Profe,  perdón,  no  falta  asignarle  la  CL
+
+(125:35) al  la  interfaz.  Bien,  bien,  muy  bien,
+
+(125:38) muy  bien.  Exactamente.
+
+(125:41) Gracias  por  gracias  por  recordármelo.
+
+(125:45) E  si  se  fijan  la  configuración  de  acá
+
+(125:48) y  si  se  recuerdan  lo  que  expliqué  en  la
+
+(125:50) teoría  en  show  run,
+
+(125:54) la  interfaz  sería  el  de  salida  del
+
+(125:56) router.  En  este  caso  está  por  acá  abajo.
+
+(126:03) Es  esta  que  está  acá.
+
+(126:07) tiene  asignado  el  cryptomap
+
+(126:11) y  el  cryptomap  era  el  que  tenía  toda  la
+
+(126:13) información  para  hacer  que  el  tráfico
+
+(126:17) entre  al  túnel,  porque  si  no  está
+
+(126:19) asignado  el  cryptomap  al  tráfico,
+
+(126:22) no  entra
+
+(126:23) no  entra  el  tráfico  por  ahí,  ¿sí?  O  sea,
+
+(126:28) el  cryptomap  aplicado  a  la  interfaz,
+
+(126:30) cuando  el  router  mira  lo  que  tiene
+
+(126:32) dentro  de  su  interfaz,  agarra  y  dice,
+
+(126:34) "Che,  tengo  un  cryptomap."  Va  y  se  fija
+
+(126:36) en  el  cryptomap  y  se  fija  toda  la
+
+(126:37) información  que  tiene,  el  cifrado,  este,
+
+(126:39) cuál  es  el  pier,  digamos,  cuál  es  la
+
+(126:42) cuál  es  la  la  access  list  que  tiene
+
+(126:44) asignada.  Y  cuando  ve  la  acces  list  la
+
+(126:45) va  a  buscar,  se  fija  la  access  list  y
+
+(126:48) cuando  el  tráfico  entra  lo  evalúa  con
+
+(126:50) esa  access  list  y  dice,  "Ah,  este
+
+(126:52) tráfico  es  el  tráfico  que  eh  debería
+
+(126:56) entrar  por  el  túnel."  Entonces
+
+(127:00) eh eh  y y  efectivamente  hace  eso.
+
+(127:04) Entonces,  si  yo  pongo  acá  do  show  run,
+
+(127:06) me  voy  a  fijar  que  en  mi  interfaz  serial
+
+(127:09) de  salida  donde  está  configurado  todo,
+
+(127:10) no  está  asignado  el  cryptomap.
+
+(127:14) que  en  este  caso  es  esta  que  dice  hacia
+
+(127:16) el  ISP.
+
+(127:18) Entonces,  lo  que  tengo  que  hacer  es
+
+(127:19) entrar  a  la  interfaz  y  poner  ese  comando
+
+(127:23) que  está  ahí,  cri.
+
+(127:26) Y  acá  si  yo  pongo  signo  de  pregunta  me
+
+(127:28) dice,  "Okay,  decime  cuál  es  el  tag  o  el
+
+(127:30) nombre  que  le  diste  a  tu  cryptomap."
+
+(127:32) Bueno,  se  llama  igual  que  el  otro,  Myap.
+
+(127:35) Y  fíjense  que  automáticamente  acá  les
+
+(127:37) dice
+
+(127:39) crypto  y  MP  on  off.  Y  en  este  caso  lo
+
+(127:43) pone  como  ISAKMP  en  on.
+
+(127:46) Sí,  eso  quiere  decir  que  ahora  sí  está
+
+(127:49) establecido  el  túnel,  ¿sí?  Que  antes  no
+
+(127:51) estaba  hecho.
+
+(127:53) Y  ahora  cuando  yo  entro  acá  a  la  PC  y
+
+(127:56) vuelvo  a  entrar  acá
+
+(127:59) y  vuelvo  a  hacer  un  traert,  fíjese  que
+
+(128:02) primero  va  al  router.  El  router  se  toma
+
+(128:05) su  tiempo  porque  tiene  que  hacer  toda
+
+(128:07) esa  evaluación.  Evalúa  todo  eso  que  les
+
+(128:09) dije  y  que  vimos  en  la  teoría.  Y  fíjense
+
+(128:11) que  el  paquete  viene  al  Router  1,  que  es
+
+(128:14) la  1010254,
+
+(128:16) que  es  el  de  Fall  Gateway  de  la  PS1  y  la
+
+(128:18) PS3.
+
+(128:20) Automáticamente  salta,
+
+(128:23) automáticamente  salta  el  router  2,
+
+(128:26) digamos,  que  está  en  las  eh  digamos  que
+
+(128:28) tiene  esta  IP,  la  10202
+
+(128:32) y  por  último  hace  el  tercer  salto  al
+
+(128:35) servidor  de  acá.
+
+(128:37) Este  salto  que  está  acá,  que  si  yo  lo  lo
+
+(128:41) quiero  ver,  lo  voy  a  lo  voy  a  ver  con  la
+
+(128:42) 1030,
+
+(128:46) queda  enmascarado,  ¿lo  ven  que  queda
+
+(128:48) enmascarado?  O  sea,  no  aparece.
+
+(128:51) Esa  es  la  funcionalidad  que  da  el  túnel
+
+(128:53) la  IPSEC.  enmascara  el  tráfico,  digamos,
+
+(128:56) y  hace  un  tráfico  cifrado  de  origen  a
+
+(128:58) destino,
+
+(129:00) donde  se  estableció  el  origen  del
+
+(129:02) destino,  lo  otro  queda  encofrado,  queda
+
+(129:04) cifrado  y  no  se  ve  y  es  como  que  el
+
+(129:07) paquete  pasara  directamente  de  router  1
+
+(129:10) a  router  2  desde  el  punto  de  vista
+
+(129:13) lógico,  porque  queda  enmascarado.  Del
+
+(129:15) punto  de  vista  físico,  del  punto  de
+
+(129:16) vista  real,  el  tráfico  va  hacia  arriba  y
+
+(129:20) después  baja,  porque  esto  no  existe.
+
+(129:22) ¿Ven  esto?  Esto  sería  así,  la  red  sería
+
+(129:24) así,
+
+(129:26) ¿se  entiende?
+
+(129:29) Sí.  Sí.
+
+(129:31) Y  para  mostrarles  la  diferencia  entre  el
+
+(129:34) tráfico  que  va  por  el  túnel  y  el  tráfico
+
+(129:36) que  va  por  fuera  del  túnel,  el  tráfico
+
+(129:38) que  va  por  dentro  del  túnel  es  el  el  que
+
+(129:40) va  por  la  10  a  la  10  4040.
+
+(129:44) Sí.  Y  son  tres  saltos.  El  tráfico  que
+
+(129:46) está  yendo  por  fuera  del  túnel  hace
+
+(129:49) cuatro  saltos.  Sí.  Bien.  Ven  a  router  1,
+
+(129:53) se  va  a  router  ISP,  va  a  router  2  y
+
+(129:55) después  salta  al  servidor  10,  al  103.
+
+(130:00) Esto  ustedes  lo  tienen  que  corregir
+
+(130:03) porque  todo  el  tráfico  que  debe  que
+
+(130:06) pertenece  a  la  Vila  10  tiene  que  ir  por
+
+(130:08) adentro  del  túnel.  ¿Cómo  lo  corrigen?
+
+(130:11) haciendo
+
+(130:13) o  agregando  en  la  access  lista,
+
+(130:17) veamos,  que  haga  referencia  al  servidor
+
+(130:19) este  con  este  prefijo.
+
+(130:23) No  les  estoy  pidiendo  ninguna  magia,
+
+(130:25) ¿no?  Porque  lo  que  tienen  que  hacer  es
+
+(130:27) entrar  acá.
+
+(130:31) Entrar  acá.
+
+(130:41) Do  show  run.
+
+(130:45) Tiene  que  haber  una  línea  muy  parecida  a
+
+(130:48) esta
+
+(130:50) que  tenga  las  IPs  correspondientes,  ¿no?
+
+(130:53) Que  tenga  la  IP  correspondiente  y  acá  y
+
+(130:55) no  la  tienen  que  hacer  solamente  acá
+
+(130:56) porque  si  la  hacen  acá  y  no  la  hacen  del
+
+(130:58) otro  lado,  el  paquete  va  a  saber  ir  pero
+
+(131:00) no  va  a  saber  volver.  Entonces,
+
+(131:04) listo,  ya  saben  cómo  hacer  eso.  Eso  no
+
+(131:07) está  en  la  guía,  pero  yo  se  los  se  los
+
+(131:09) acabo  de  enseñar.
+
+(131:12) Por  último,
+
+(131:14) por  último  y  para  cerrar,
+
+(131:21) está  mal,
+
+(131:23) está  mal  que  pase  esto,  que  el  paquete
+
+(131:26) va  de  acá  hasta  acá  y  funciona,  que  el
+
+(131:28) paquete  va  de  acá  hasta  acá  y  funciona,
+
+(131:31) que  el  paquete  va  de  acá  hasta  acá  y
+
+(131:33) funciona.  Está  pésimo  eso  porque  quiere
+
+(131:36) decir  que  no  hay  segmentación  entre  van
+
+(131:39) dentro  de  la  red.  O  sea,  la  segmentación
+
+(131:40) de  van  está  nivel  hecho  a  nivel  capados,
+
+(131:42) pero  con  la  presencia  del  router  que
+
+(131:44) hace  routeo  intervilan,  todo  se  ve  con
+
+(131:47) todo  y  eso  está  mal.
+
+(131:50) Entonces,  lo  que  tenemos  que  hacer  es
+
+(131:53) arreglarlo  y  para  arreglarlo,  la  vilan
+
+(131:56) 20  no  se  tiene  que  ver  con  la  bilan  10  y
+
+(131:58) la  vilan  20  no  se  tiene  que  ver  con  la
+
+(132:01) vilan  1  y  viceversa.
+
+(132:03) ¿Cómo  hago  eso?
+
+(132:05) filtrar  el  tráfico  por  access  list.  Sí.
+
+(132:08) ¿Cómo  hago  eso?  Bueno,  tengo  que  crear
+
+(132:10) un  access  list.
+
+(132:14) Esto  se  puede  hacer  de  dos  maneras.
+
+(132:17) La  interfaz  donde  hay  que  aplicarlo,  no
+
+(132:20) hay  dudas  que  es  la  fase  Ethernet  00  del
+
+(132:22) router,
+
+(132:24) porque  es  la  interfaz  que  mira  del
+
+(132:26) router  hacia  adentro  y  es  la  que  y  es
+
+(132:29) por  la  que  pasa  el  tráfico  que  va,  o
+
+(132:31) sea,  el  tráfico  viene  de  la  van  10,
+
+(132:33) viene  al  default  gateway  y  después
+
+(132:34) vuelve  y  va  a  donde  yo  quiera.  Entonces,
+
+(132:36) no  hay  duda  que  el  tráfico  que  hay  que
+
+(132:38) aplicarlo  acá  en  la  fase  Ethernet,
+
+(132:41) en  la  fase  Ethernet,  en  en  la  fase
+
+(132:44) Ethernet  00  del  router.  Ahora  hay  dos
+
+(132:47) formas  de  hacer  esto.
+
+(132:50) O  hago  la  forma  más  pro,  que  es  crear
+
+(132:53) una  sola  access  list  y  poner  todas  las
+
+(132:56) líneas  que  me  permitan  hacer  eso.
+
+(133:00) O  como  yo  en  realidad  tengo
+
+(133:03) subinterfaces,
+
+(133:05) le  aplico  a  cada  una  de  las
+
+(133:07) subinterfaces,
+
+(133:09) le  aplico  a  cada  una  de  las
+
+(133:11) subinterfaces
+
+(133:14) la
+
+(133:16) dirección,  perdón,  la  access  list  que  yo
+
+(133:20) quiero
+
+(133:22) que  haga  la  funcionalidad  del  del
+
+(133:25) permitir  el  tráfico  de  donde  yo  quiero
+
+(133:28) hasta  donde  yo  quiero.
+
+(133:31) Entonces,  esas  son  las  dos  eh  formas  de
+
+(133:33) hacerlo.  O  una  hago  un  Axel  list  para
+
+(133:36) todo
+
+(133:38) o  hago  tres  access  listas  y  chiquititas
+
+(133:42) y  se  la  aplico  a  las  subinterfaces.
+
+(133:45) O  sea,  lo  vuelvo  a  repetir,  do  show  run.
+
+(133:49) Yo  puedo  hacer  un  access  list  grande  que
+
+(133:52) involucre  todas  las  líneas,
+
+(133:55) digamos,  que  que  involucre  seis  líneas  o
+
+(133:58) la  cantidad  que  sean  y  aplicarlo  a  la
+
+(134:00) interfaz  esta  que  es  la  fase  ethernet  00
+
+(134:02) que  es  la  física.  O  puedo  hacer  tres
+
+(134:06) access  listas,  102,  103  y  104,  por
+
+(134:09) ejemplo,  aplicar  una  acá,  aplicar  una
+
+(134:13) acá  y  aplicar  una  acá,  una  en  cada
+
+(134:16) subinterface.
+
+(134:19) Entonces,  yo  les  voy  a  mostrar  la  fácil,
+
+(134:24) digamos,  si  ustedes  se  pueden  animar
+
+(134:27) después  a  probar  en  sus  casas,  porque
+
+(134:29) esto  es  prueba  y  error,
+
+(134:32) en  hacer  la  access  list  grande  si
+
+(134:34) quieren.
+
+(134:36) Sí,  denme  un  segundito  que  ya  vengo  y
+
+(134:39) hacemos  eso  y  ya  cerramos.
+
+(134:42) Bueno,
+
+(135:10) aquí  volvimos.  Hemos  estaba  muteado
+
+(135:12) justo.  Estoy  acá  en  el  router  de  borde
+
+(135:14) nuestro,  en  el  router  uno.  Sí.
+
+(135:19) Vamos  a  crear,  por  ejemplo,  la  access
+
+(135:21) list.
+
+(135:24) Access  list.  Vamos  a  llamarla  120  para
+
+(135:27) hacer  referencia  a  la  van  20,  ¿les
+
+(135:29) parece?
+
+(135:31) Access
+
+(135:33) 120  permit  IP.
+
+(135:37) Lo  primero  que  tengo  que  hacer  para  no
+
+(135:39) cometer  un  error
+
+(135:41) es
+
+(135:43) lo  siguiente.
+
+(135:45) Ustedes  recuerdan  que  la  van  20  tiene
+
+(135:49) que  seguir  conectándose  a  estos  dos
+
+(135:52) servidores,  al  1030  y  al  10400,  ¿no?
+
+(135:58) Entonces,  lo  primero  que  yo  tengo  que
+
+(135:59) hacer  en  la  access  list,  hacer  que  no  se
+
+(136:01) pierda  esa  conexión,  porque  si  ustedes
+
+(136:04) solamente  ponen  las  IPs  que  están  acá
+
+(136:05) dentro,
+
+(136:07) voy  a  perder  eh  la  conexión  contra  los
+
+(136:10) servidores  del  otro  lado.  Entonces,
+
+(136:13) Access  List
+
+(136:15) IP,  ¿cuál  es  la  dirección  de  origen?
+
+(136:18) 10.20.0.0.
+
+(136:22) ¿Cuál  es  la  Willcard?  cer  eh  0
+
+(136:26) 255  255.  Esa  es  la  dirección  de  origen.
+
+(136:30) ¿Cuál  es  la  dirección  de  destino?  La
+
+(136:32) 10.3.0.0.
+
+(136:36) Llamémosle.  Podría  ser  la  dirección  del
+
+(136:38) server,  ¿no?  Pero  podría  acá  podría  ser
+
+(136:41) 30  si  quiero.  Vamos  a  poner  cer.
+
+(136:47) 255.
+
+(136:50) Con  eso  estoy  haciendo  que  en  mi  access
+
+(136:53) listada
+
+(136:57) a  la  vilan  20  que  no  me  haga  perder  la
+
+(136:59) conectividad  contra  el  servidor  del  otro
+
+(137:02) lado.  Lo  mismo  tengo  que  hacer  con  la
+
+(137:04) 104.
+
+(137:06) Cambio  por  un  cuatro  acá.
+
+(137:09) Access  list  permit  origen,  la  van  20,
+
+(137:12) destino  la  104  al  otro  lado.
+
+(137:15) Y  ahora,  ahora,
+
+(137:19) ahora  lo  que  tengo  que  hacer  es
+
+(137:23) que  solamente  se  permita  el  tráfico  este
+
+(137:28) dentro  de  la  vilan  20.  Entonces,  ¿qué
+
+(137:30) hago?  Access.  ¿Cuál  es  el  origen?
+
+(137:35) La  10200.
+
+(137:37) ¿Cuál  es  el  destino?  La  misma  IP,  la  10
+
+(137:40) 20  00
+
+(137:44) 0.0.255.255.
+
+(137:50) Entonces,  ¿qué  hago?  Me  permito  el
+
+(137:52) tráfico  dentro  de  la  misma  van  y  como
+
+(137:55) abajo  de  todo  hay  un  denay  n,  lo  que
+
+(137:59) vaya  para  la  1010,  lo  que  vaya  para  la
+
+(138:02) 1050
+
+(138:04) lo  va  lo  va  a  denegar  y  lo  que  vaya  para
+
+(138:06) otra  IP  que  no  sea  esta  la  la  103  o  la
+
+(138:09) 104  lo  va  a  denegar
+
+(138:13) porque  está  hecho  el  implicit  de  y  voy  a
+
+(138:15) fijarme  si  lo  que  hice  está  bien  porque
+
+(138:18) puedo  equivocarme  también.  Entonces  voy
+
+(138:20) a  ir  a  la  interfaz  del  router  interface
+
+(138:24) fase  ethernet  0/0.20.
+
+(138:28) Entro  a  la  subinterface
+
+(138:30) y  utilizo  el  comando  que  se  usa  para
+
+(138:32) filtrar  tráfico  dentro  de  una  interface,
+
+(138:35) no  dentro  de  un  cripto,  no  dentro,  no
+
+(138:38) considerando  la  VPN,  es  IP
+
+(138:42) Access  Group,
+
+(138:44) el  número  de  la  de  la
+
+(138:47) de  la  access  list  que  es  120  y  le  voy  a
+
+(138:49) poner  tráfico  entrante.  Sí.  Enter.
+
+(138:55) Do  show  run.  Para  revisarlo.
+
+(138:59) Voy  a  ver  la  subinterface.
+
+(139:05) Acá  está  la  subinterface.  ¿Lo  ven?  Ahí
+
+(139:08) ven  que  dice  IP  Access  Group  120  in.
+
+(139:12) O  sea,  va  a  evaluar  el  tráfico  de
+
+(139:13) entrada  considerando  la  Access  Le  120.
+
+(139:18) Sigo  bajando  para  ver  la  AC  L  120.
+
+(139:21) Fíjense  que  acá  está  primero  está  la
+
+(139:23) Access  Le  101,  que  es  la  que  me  hace
+
+(139:25) entrar  al  tráfico  por  el  túnel,  que  eso
+
+(139:27) es  eso  es  eso  es  exclusivamente  para  el
+
+(139:29) túnel,  no  tiene  nada  que  ver  con  lo  que
+
+(139:31) estoy  haciendo  ahora.  Y  cree  un  access
+
+(139:33) list  llamada  120
+
+(139:36) que  me  permita  todo  eso  y  lo  que  no  está
+
+(139:40) permitido  ahí  va  a  caer  en  el  implicit
+
+(139:42) de
+
+(139:44) y  digamos  lo  va  lo  va  a  denegar.
+
+(139:46) Entonces  ahora  vengo  acá,  lo  voy  a  hacer
+
+(139:49) más  gráfico,
+
+(139:52) voy  a  venir  a  la  PC
+
+(139:55) que  es  la  la
+
+(139:58) PC2.  Primero  voy  a  hacer  un  pin  a  la
+
+(140:01) 330.  Funciona,  pasa.  No  me  bloquea  nada
+
+(140:04) el  Axelis  que  acabo  de  crear  y  que  y  que
+
+(140:06) activé.  A  ver  si  me  deja  la  cuatro.
+
+(140:09) Perfecto,  llego  a  la  cuatro.  A  ver  si  me
+
+(140:12) deja  a  la  van  10.  10.
+
+(140:16) 0.1  es  la  PC1.
+
+(140:21) El  tráfico  queda  clavado  en  el  en  el  de
+
+(140:24) Fault  Gateway,  que  es  el  router
+
+(140:28) de  borde  de  toda  la  red  LAN.  Y  fíjense
+
+(140:31) que  el  paquete  queda  clavado  ahí,  no
+
+(140:33) sale  de  ahí.  El  paquete  va  al  default
+
+(140:35) Gateway  y  el  default  Gateway  lo  mata
+
+(140:38) porque  no  lo  porque  lo  deniega  y  lo  deja
+
+(140:42) ahí  hasta  que  muere  por  por  Timeout  o
+
+(140:44) por  TTL.
+
+(140:46) Lo  mismo  debería  pasar  con  la  1050.
+
+(140:49) 1050
+
+(140:53) 0  pun  eh  le  habíamos  puesto  50,  ¿no?  A
+
+(140:56) la  laptop  50.  A  ver,  queda  clavado  hoy.
+
+(141:04) Y  lo  mismo  debería  pasar.  Control  Z.  Y
+
+(141:07) lo  mismo  debería  pasar  si  le  quiero
+
+(141:08) pegar  la  10,
+
+(141:11) que  es  la  otra  la  otra  la  otra  PC  que  es
+
+(141:14) la
+
+(141:17) la  tres.
+
+(141:20) Queda  clavado  el  paquete.  Ahí
+
+(141:23) se  entendió  lo  que  hice.
+
+(141:27) Sí,  sí,
+
+(141:27) sí.
+
+(141:29) O  sea,  puse  explícitamente  lo  que  quiero
+
+(141:31) que  pase,  que  permita  el  tráfico
+
+(141:35) de  origen  hacia  destino,  de  origen  hacia
+
+(141:38) destino  y  de  origen  hacia  destino.
+
+(141:43) ¿Se  entiende?  No  denegué  acá  y  acá
+
+(141:47) porque  es  una  forma  de  hacerlo  más
+
+(141:50) profesional  que  hacer  la  berretada  esa
+
+(141:53) de  ponerle  un  denay  acá,  un  denay  acá.
+
+(141:58) y  después  hacer  un  permit  eni.  Eso  es
+
+(142:01) una  berretada  total.
+
+(142:04) Es  una  berretada  total.  Y  encima  eh
+
+(142:07) encima  genera  un  agujero  de  seguridad
+
+(142:09) importante  en  toda  la  red.  Miren,  ahí
+
+(142:11) va.  Les  voy  a  mostrar  la  berretada.
+
+(142:15) Se  las  voy  a  mostrar  para  que  vean  que
+
+(142:16) es  una  berretada  porque  está  mal  y  no,  o
+
+(142:19) sea,  lo  he  visto  que  lo  hacen.  Sí,
+
+(142:23) funciona.  Sí,  pero  es  una  berretada.
+
+(142:26) Es  una  berretada  que  que  lamentablemente
+
+(142:30) digamos  eh  se  valida  porque  el
+
+(142:32) funcionamiento  lo  lo  genera.  Pero  la
+
+(142:34) verdad  que
+
+(142:37) miren.  Ah,  no,  bueno,  después  e  me
+
+(142:40) equivoqué.  Exit.  Y  bueno,  access  listan
+
+(142:47) 10.
+
+(142:50) Eh,  denai.
+
+(142:54) Bueno,  ah,  una  cosa,  si  arriba  de  todo
+
+(142:57) hay  un  denay  tiene,  o  sea,  el  orden  de
+
+(143:01) que  tiene  el  access  l  es  importante
+
+(143:02) porque  si  lo  de  arriba  denega  más  a  lo
+
+(143:04) de  abajo,  está  en  el  horno.  Entonces,
+
+(143:08) lo  primero  que  vamos  a  hacerlo  así,
+
+(143:10) vamos  a  hacer  la  verretada  para  para  que
+
+(143:12) vean.  Deni,
+
+(143:15) denegame  el  tráfico  que  va  de  la  10
+
+(143:19) origen,  ¿no?  0.0.
+
+(143:22) 0.255
+
+(143:24) 255.  Ese  es  el  origen.  Denegámelo  a  la
+
+(143:27) vanan  20.  A  la  10  20
+
+(143:31) 00.0.255
+
+(143:36) 255.
+
+(143:39) Denegame  ese  tráfico.  Enter.  ¿Hay  algo
+
+(143:42) que  le  pifé?
+
+(143:46) Access  L  110
+
+(143:48) de  Night
+
+(143:50) 10  00255.
+
+(143:55) Ah,  me  faltó  el  IP.  Accessai
+
+(143:59) IP.
+
+(144:01) Enter.
+
+(144:02) La  otra  línea  de  la  berretada  lo  tengo
+
+(144:05) que  lo  tengo  que  a  la  a  la  vanan  50
+
+(144:07) tampoco.  De  origen  la  10  eh  destino  la
+
+(144:11) 50.  Listo.  Y  ahora  acá  viene  la
+
+(144:14) berretada.  Access  110.  Permit
+
+(144:19) IP
+
+(144:21) Ni.
+
+(144:25) Do  showrun.
+
+(144:27) Do  show.
+
+(144:35) Acá  está  la  acá  está  la  solución
+
+(144:36) Berreta.  Miren,
+
+(144:39) y  ahora  que  está  hecha  la  solución
+
+(144:40) Berreta,  la  vamos  a  a  poner
+
+(144:44) a  la  interfaz  a  la  10.  IP  access  group
+
+(144:49) 110  in.  Ahí,  eh,  ahí  activé  el  access
+
+(144:53) list  en  la  en  la  subinterface.
+
+(144:57) Vamos  a  ver  cómo  anda  la  berreteada.
+
+(145:03) Le  voy  a  pegar  la  1030.
+
+(145:05) Funciona  la  1030.  Sí,  perfecto.
+
+(145:09) Funciona  la  1040
+
+(145:11) que  va  por  el  túnel.  Sí,  perfecto.
+
+(145:14) Funciona  a  la  1020
+
+(145:17) 0  2.  Creo  que  es  la
+
+(145:22) que  ha  clavado  en  el
+
+(145:25) que  ha  clavado.  Funciona  a  la  1050
+
+(145:30) que  es  la  laptop.  Funciona
+
+(145:34) perfecto.  Ahora
+
+(145:38) si  yo  quiero  pegarle
+
+(145:43) a  otra  IP.
+
+(145:45) No  hay  acá,  pero  pongámosle  que  quiero
+
+(145:47) pegarle  a  otra  IP.
+
+(145:51) Supongamos  que  quiero  cómo  pegarle  la  a
+
+(145:53) la  a  la  a  la  interfaz  serial  en  Vamos  a
+
+(145:58) pegarle  la  10.
+
+(146:02) a  la  102.0.1
+
+(146:08) es  la  dirección  IP  del  router  esta  que
+
+(146:10) está  acá,  la  del  10p.  Vamos  a  hacer  eso
+
+(146:13) a  la
+
+(146:15) eh  desde  la  20.  A  ver,  vamos  a  probar.
+
+(146:22) Traser
+
+(146:24) 10.2.0.1.
+
+(146:30) Ahí  tienen  la  diferencia  entre  una
+
+(146:32) berretada  y  y  algo  que  está  bien  hecho.
+
+(146:36) Desde  la  PC  20  yo  solamente  llego  a
+
+(146:40) donde  necesito  llegar  y  está  todo
+
+(146:41) segurizado.  Desde  la  PC1  que  está  hecha
+
+(146:45) la  berretada  llego  a  la  dirección  IP  del
+
+(146:48) del  router  del  ISP,  esta  que  está  acá.
+
+(146:52) La  ven  la  diferencia  entre  una  cosa,  o
+
+(146:55) sea,  está  permitiendo  llegar  a  un  lado
+
+(146:57) donde  no  tiene  nada  que  ver  con  lo  que
+
+(147:00) con  lo  que  hay  que  hacer.
+
+(147:03) Miren,
+
+(147:05) solución  bien  y  solución  berreta.
+
+(147:10) ¿Qué  tiene  que  ver  la  10201
+
+(147:13) que  es  la  IP  de  de  digamos  de  de  un  ISP
+
+(147:16) con  con  mi  red  y  hasta  y y  que  yo  quiero
+
+(147:20) que  el  router  deje?  O  sea,  no  tiene  nada
+
+(147:22) que  ver.  ¿Se  entiende  la  diferencia
+
+(147:25) entre  algo  que  está  bien  hecho  y  algo
+
+(147:26) que  no?
+
+(147:28) Sí,  totalmente.
+
+(147:30) Bien.  Bueno,  son  las  10:05.  Hasta  acá
+
+(147:34) llegó  la  clase  de  hoy,
+
+(147:37) ¿eh?  Así  que  bueno,  eh  no  sé  si  queda
+
+(147:40) alguna  duda  de  algo.
+
+(147:44) Eh  está  aproximando  el  parcial.  Eh
+
+(147:48) quería  consultar  si  nos  puedes  contar  un
+
+(147:51) poco,  o  sea,  más  o  menos  de  de  qué  se
+
+(147:55) trata,  qué  tendríamos  que  esperar,
+
+(147:57) porque  los  TPS,  por  ejemplo,  tienen
+
+(147:58) todos  una  duración
+
+(148:00) abajo  recomendada,
+
+(148:02) pero  o  sea,  no  no  sé  qué  como  qué
+
+(148:06) esperar  para  un  parcial.  de  laboratorio.
+
+(148:08) Sí,  lo  voy  a  contar  e  le  voy  a  comentar
+
+(148:11) la  clase  que  viene,  eh,  que  vamos  a
+
+(148:13) hacer  una  clase
+
+(148:15) en  donde  se  va  se  va,
+
+(148:20) bueno,  lo  cuento  rápido  ahora.  El
+
+(148:22) parcial  es  un  parcial  integrador.  Lo
+
+(148:23) cuento  rápido.  El  parcial  es  un  parcial
+
+(148:25) integrador  que  involucra  un  escenario
+
+(148:27) donde  barren,  se  barren  los  temas  del
+
+(148:31) trabajo  1,  2,  3  y  4.  O  sea,  va  a  haber
+
+(148:35) seguro  algo  de  wireless,  va  a  haber  esto
+
+(148:37) de  enrutamiento  que  vimos  en  va  a  haber
+
+(148:40) en
+
+(148:42) en  configuración  de  switches,  digamos,
+
+(148:45) todo  lo  que  vimos  en  los  cuatro  trabajos
+
+(148:48) prácticos  se
+
+(148:51) convergen  en  un  solo  escenario.  Sií,  que
+
+(148:55) tiene  mucho  mucho  parecido  a  este  porque
+
+(148:57) este  ya  incluye  en
+
+(149:02) esp
+
+(149:07) tiene  mucho  que  ver  con  con  algo  así.
+
+(149:11) Tiene  que  ver  con  algo  así  donde  van  a
+
+(149:14) tener  separación  de  vans,  o  sea,  tienen
+
+(149:16) que  hacer  este  trabajo  que  hicimos
+
+(149:17) recién,  que  el  tráfico  no  se  vea  entre
+
+(149:19) las  van.  Va  a  haber  un  túnel  IPSC  para
+
+(149:21) llegar  de  un  lado  a  otro,  de  una  vila
+
+(149:23) hacia  el  otro  lado.  Va  a  haber  algo
+
+(149:25) wireless.  Tiene  que  configurar  todos  los
+
+(149:27) switches,  la  las  access  list,  eh,
+
+(149:29) perdón,  la  eh  todas  las  vance,  o  sea,
+
+(149:32) todo  lo  que  se  hace  acá  va  a  estar.  Y  a
+
+(149:35) esto  se  le  suma  seguramente  lo  del
+
+(149:37) trabajo  de  la  número  dos,  que  es  algo
+
+(149:38) wireless.  Pero  acá  está  todo  porque  acá
+
+(149:41) se  configurance,
+
+(149:43) se  configuran  los  switches,  se
+
+(149:45) configuran  las  IPs,  digamos,  no  se
+
+(149:48) configura  spaning  tre,  no  se  configura,
+
+(149:50) por  ejemplo,  el  por  security,  eh,  pero
+
+(149:52) después  todo  lo  otro  está  enrutamiento,
+
+(149:55) todo.  Entonces  es  algo  digamos  que  que
+
+(149:59) tiene  todo  esto
+
+(150:01) para  resolverlo.  tienen  más  o  menos
+
+(150:04) eh  creo  que  2  horas,  o  sea,  que  es  de
+
+(150:07) las  19  hasta  las  21:30  o  una  cosa  así.
+
+(150:11) Eh,  bueno,  en  realidad  2  horas  y  media  e
+
+(150:15) eh  y  bueno,  después  no  mucho  más,  o  sea,
+
+(150:19) no  sé  si  hay  algo  que  se  me  escapa,  pero
+
+(150:22) eh  básicamente  es  eso,  o  sea,  incluye
+
+(150:25) todo  lo  que  se  vio  en  los  trabajos  de  la
+
+(150:27) del  uno  al  cuatro,  todos  los  temas,  eh,
+
+(150:31) y  nada.  Este,  tienen  que  configurar  todo
+
+(150:37) y  es  requerido  eh,  por  ejemplo,  no  sé,
+
+(150:39) configurar  ese  SH  en  cada  dispositivo  o
+
+(150:42) la  seguridad  de  los  puertos  por  Mac  o
+
+(150:44) cosas  así  que  quizás  vimos  en  el  primer
+
+(150:47) trabajo  práctico,  pero  después  no
+
+(150:49) seguimos  haciendo,
+
+(150:50) ¿no?  Bueno,  todo  lo  que  vieron  en  los
+
+(150:53) trabajos  del  uno  al  cuatro,  todo  eso
+
+(150:56) puede  eh  puede  puede  entrar.  Sí,  por  ahí
+
+(150:58) le  piden  configurar  la  seguridad  del
+
+(151:00) puerto  en  una  sola  PC,  en  esta,  no  en
+
+(151:02) todas,  porque  no  tiene  sentido.  ¿Qué
+
+(151:04) sentido  tiene  configurarlo  en  todas?  Por
+
+(151:06) ahí  se  lo  piden  en  una  sola  que  lo  hagan
+
+(151:09) simplemente  para  demostrar  que  tienen  el
+
+(151:10) conocimiento.  Sí.  Eh,  para  decirles
+
+(151:13) algo,  ¿no?  No  se  lo  van  a  pedir  en  las
+
+(151:15) cuatro  porque  es  perder  tiempo  eso,
+
+(151:17) digamos.  No  se  no  se  evalúa  la  cantidad,
+
+(151:20) sino  la  calidad.
+
+(151:22) Eh,  sí.  Bueno,  en  los  switches  tienen
+
+(151:24) que  hacerlo  porque,  bueno,  las  van
+
+(151:25) tienen  que  estar  en  todos  los  switches,
+
+(151:26) esas  cosas  ya  saben.  Eh,  pero  bueno,  es
+
+(151:29) eso,  ¿no?  Digamos  es  como  eh  agarrar  y
+
+(151:33) hacer  un  escenario  que  es  muy  parecido  a
+
+(151:35) este  o  tiene  cierto  cierta  similitud  en
+
+(151:38) algunas  cosas  a  esto  que  esto  incluye
+
+(151:40) todo.  Incluye  configurar  van  en  todos
+
+(151:42) los  switches,  incluye  configurar  un
+
+(151:44) túnel  IPSC,  incluye  configurar
+
+(151:46) enrotamiento  en  en  para  que  pasen  eh
+
+(151:50) para  los  paquetes  Fre  y  incluye  lo  de
+
+(151:52) las  Access  List.  Son  lo  que  está  acá,  lo
+
+(151:55) que  oímos  hoy  es  son  los  temas  más
+
+(151:56) importantes  del  del  parcial.  El  tema
+
+(151:59) wireless,  la  verdad  que  no  mueve  mucho
+
+(152:00) la  aguja,  pero  lo  que  se  hizo  todo  acá
+
+(152:02) hoy  que  es  un  barrido  de  lo  que  vimos  en
+
+(152:07) en  el  trabajo  de  laboratorio,
+
+(152:09) en  los  otros  trabajos  de  laboratorio,
+
+(152:11) eso  sí  incluye  todo.
+
+(152:15) Bueno,  no  quiero  retrasarlos  más  ni  a
+
+(152:18) ustedes  ni  a  nosotros  los  docentes,  pero
+
+(152:20) perdón,  le  puedo  hacer  dos  consultas.  El
+
+(152:23) entonces  el  trabajo  este  práctico  cuatro
+
+(152:25) es  para  la  semana  que  viene,  ¿no?
+
+(152:27) Sí.
+
+(152:28) Y  después  en  términos  de  digamos  la
+
+(152:31) modalidad  del  parcial,  eh,  ¿es
+
+(152:34) presencial  o  virtual?  Eso  no  me  quedó
+
+(152:36) claro.
+
+(152:38) Todavía  no  no  lo  terminamos  de  decidir
+
+(152:40) eh  porque  son  muchos  alumnos.  Eh,  pero
+
+(152:43) si  llegara  a  ser  eh  virtual  está  buena
+
+(152:47) la  pregunta.  eh  va  a  ser  como  se  hacía
+
+(152:49) en  la  pandemia,  o  sea,  tienen  que  tener
+
+(152:51) la  cámara  activada  en  donde  digamos  se
+
+(152:56) ve  que  ustedes  están  trabajando  y  y
+
+(153:00) bueno,  nada,  este  eh  como  tener  en
+
+(153:03) cuenta  lo  mismo,  la  misma  modalidad  que
+
+(153:05) usó  en  la  pandemia,  ¿sí?  Donde  se
+
+(153:08) tomaban  los  exámenes  virtuales,  ¿se
+
+(153:09) acuerdan?
+
+(153:11) Sí,  sí,  sí.  Okay,  eso  se  lo  vamos  a
+
+(153:13) informar  después  eh eh  obviamente  por  el
+
+(153:16) aula  virtual  como  como  hicimos  siempre.
+
+(153:21) Está
+
+(153:25) bueno.
+
+(153:25) Perfecto.
+
+(153:27) Eh,  Rafael,  ¿querés  agregar  algo  eh
+
+(153:29) adicional  a  todo  esta  limada  de  cabeza
+
+(153:33) que  hicimos?
+
+(153:35) No,  no,  nada.  este,  no,  ya  después
+
+(153:37) durante  la  semana  o  y  más  adelante  vamos
+
+(153:41) a  aclarar  estos  temas  sobre  cómo  va  a
+
+(153:43) ser  el  parcial  y  por  ahí  orientar  un
+
+(153:46) poco  más,  ¿no?  Así  que  creo  que  ya  está.
+
+(153:50) E  por  lo  pronto  estamos  corrigiendo  los
+
+(153:52) trabajos,  así  que  ya  van  recibiendo
+
+(153:55) eh  si  está  aprobado,  no  está  aprobado  y
+
+(154:00) bueno,  nada  más.  Cualquier  consulta
+
+(154:02) estamos  atentos.
+
+(154:09) Bueno,  chicos,  buen  fin  de  semana,  eh,  y
+
+(154:12) bueno,  en  breve  ya  le  pasaremos  las
+
+(154:14) novedades,  ¿sí?  No,  algo  importante,  no
+
+(154:18) manden  mails  todo  el  tiempo,  digamos,
+
+(154:20) profe,  no  está  en  eh eh  habilitado  tal
+
+(154:24) cosa,  te  mando  el  TP  por  acá.
+
+(154:27) usen  el  aula  virtual  con  que  uno  nos  nos
+
+(154:30) haga  saber  si  hay  algo  que  quedó  mal  en
+
+(154:32) un  recurso  para  entregar  algo,  ya  estáía
+
+(154:35) bien,  pero  usen  el  aula  virtual  porque
+
+(154:37) los  mails  se  nos  se  nos  eh  traspapelan.
+
+(154:41) Así  que  bueno,  eh  salvo  como  les  digo,
+
+(154:43) alguien  que  tenga  un  problema  muy
+
+(154:45) específico  que  un  tema  específico,  no  un
+
+(154:47) problema  eh  y  sea  algo  personal  y  que  no
+
+(154:50) se  tengan  por  qué  entrenar  al  resto  de
+
+(154:51) los  compañeros,  eso  sí  lo  lo  manejamos
+
+(154:54) por  mail.  Sí.  Bueno,  buen  fin  de  semana
+
+(154:57) entonces.
