@@ -1,0 +1,137 @@
+y es una técnica para acelerar el encaminamiento de paquetes. Inela los niveles dos y tres, combinando las ventajas que tiene el enrutamiento de nivel tres y el de conmutación rápida que tiene el nivel dos.
+
+eh funciona sobre cualquier tipo de tecnología de nivel dos, sobre ATM, sobre el FR relé en redes LAN,
+
+etcétera.
+
+Nos brinda estas clases de servicios, las cinco clases de servicios conocidas como post quality of service. Primero el video, una clase de video para transportar eh el servicio del video es de mayor prioridad que las clases de servicio de datos estas. ¿Por qué? Pues no tiene que tener delay, no tiene que tener saltos, nada. El segundo es la voz. Transportavoz con nivel de prioridad equivalente al del video, es decir, más alto que las clases de servicio de datos. Los datos ya sabemos, llega ahora dentro de un segundo, no pasa nada, pero un delay de un segundo entre una comunicación de voz o de video es problemático. El de uno son datos de alta prioridad, es el nivel de prioridad más alto de para datos.
+
+Después tenemos el D2, que en aplicaciones que no son críticas y tienen requisitos particulares en cuanto al ancho de banda y los no prioritarios son las clases de servicio de prioridad más baja, el nivel de tres.
+
+E características básicas, el MPLS ofrece un servicio orientado, un servicio orientado a conexión. [resoplido] mantiene un estado de comunicación entre dos nodos, mantiene circuitos virtuales, tiene todas las funciones de capa 3 con el rendimiento de capa 2. Hace un roteo más criterioso independiente de la arquitectura de red. Permite hacer túneles más eficientes que IP. mejora precio, desempeño, escalabilidad
+
+y soporta, como ya dijimos, calidad de servicio y además ingeniería de tráfico.
+
+Acá tenemos el problema del QOS, Quality of Service.
+
+Me entran 100, me entran 100, me entran 100. Tengo buffer y acá si tengo salida 155 ya tengo problema,
+
+con lo cual voy a tener ya primer delay de procesamiento que no lo puedo predecir, después un delay del enlace que puede predecirse, pero es nada. Este vaferio, me va a generar pérdida de paquetes con gestión y voy a tener punto de de principio al final. latencia, ¿qué quiere decir? Que va a demorar mucho más que lo que yo puedo manejar.
+
+¿Qué pasa en las redes IP? Aparecen usuarios que tienen distintas aplicaciones que demandan una calidad de servicio y una red IP tiene retardos variables y pierde paquetes. Hay latencias, hay variables por congestión y poramiento de los nodos. Los enlaces tienen, como vimos acá, esto una capacidad fija, no tiene, no es extendible.
+
+Hay redes con distinta tecnología y calidad de servicios y la calidad de servicio entre dos extremos depende de cada salto.
+
+Acá tenemos el problema del ruteo.
+
+El enrutamiento no está optimizado. Si pueden analizar acá de dónde va directo, pues lo mirarán tranquilos. Pero fíjense que el enrutamiento no está optimizado y todo se procesa por software. En cada nodo se repite el cálculo. Cuando llevo acá, repite el cálculo, llevo acá, repite el cálculo. Y se analizan el encabezamiento y se aplican algoritmos. Los protocolos de ruteo mantienen las tablas de ruteo que son estas. Para esto va directo, para esta otra dirección sale por este lado, para esta otra dirección sale por otro lado. Lo que yo les hablaba eh seguramente la redes anteriores del por default, ¿no? Lo que no puedo resolver, lo mando para ese lugar.
+
+El camino óptimo no siempre el más corto y el principal problema es que exponencialmente aumenta la cantidad de usuarios y el volumen de tráfico.
+
+El problema es el camino más corto. Goismo en la clase anterior. El camino más corto en internet es este de acá a acá, pero en MPLS es este otro.
+
+¿Por qué? Porque MPLS lo que busca es el camino más óptimo. ¿Por medio de qué? de la ingeniería tráfico, traffic engineering, ¿no? Bueno, por [carraspeo] TE ingeniería de tráfico, traffic engineering, lo que busca es el no es el más corto, sino el óptimo.
+
+Conceptos de MPLS.
+
+A cada paquete se le agrega una etiqueta.
+
+Y el enrutamiento es basado en la etiqueta del paquete y en los protocolos de enrutamiento. El LSP es la ruta que se asigna a cada etiqueta, o sea, cada etiqueta tiene un level switch pad, o sea, que es el camino conmutado, la etiqueta de camino conutado. La ruta es una secuencia de router que se negocia en forma distribuida entre los vecinos. Después tenemos el Labor Information Base. Cada router almacena la información que conoce. Los router de borde, ¿qué hacen? Analiza el encabezado IP para decidir la LSP, para decidir el camino que va a marcar la etiqueta. agregan una etiqueta a los paquetes entrantes y retiran la etiqueta de los paquetes salientes. Los otros routers en el backboard encaminan el paquete según la etiqueta esta, el LSP, y hacen un roteo según el protocolo OSPF, SuperJob.
+
+Componentes
+
+componentes de una red MPLS, ¿verdad? LSR Levil Switching Router es un router de alta velocidad especializado en el envío de paquetes etiquetados por MPLS.
+
+Es capaz de enviar paquetes de capa 3 nativos y los LSR pueden ser internos o externos, o sea, de entrada y de salida. La etiqueta es un identificador
+
+corto de longitud fija o significado local empleado para identifar identificar un FEC. Uno de nuestro sabemos qué es. Un paquete puede tener una o más etiquetas apiladas según la jerarquía. El FEC es una agrupación de paquetes que comparten los mismos atributos, dirección, destino, red privada virtual o requiere un mismo servicio, multicadas, calidad de servicio, etcétera. Y se asigna el FEC en el momento que el paquete entra a la red, todos los paquetes que forman parte de la clase siguen un mismo LSP. Elpar es la ruta a través uno o más lr
+
+es asignado a un paquete que tenga un FE particular.
+
+Formato de encabezamiento depende de la capa de enlace. Friend relé y ATM llevan la etiqueta dentro del encabezamiento en los campos DLSI o BPI BCI y en otras redes se agrega encabezamiento MPLS.
+
+Acá tenemos un este la cabecera genérica. No, tenemos el campo etiqueta que identifica una FEC, tiene 20 bits. Una PE, recordamos que era por acá por Warden Equivalence Class, la clase. Tenemos un campo X que es para uso experimental, puede llevar información de div ser de distintos servicios. El campo S vale uno si es la primera entrada de la pila y el campo TTL time to lip es el control número de saltos. Acuérdense que lo tenemos ya en el header IP, donde cada vez que pasa por un router este TTL que parece como un un tiempo va decrementando en uno.
+
+Entonces teníamos como dice 20 bit para MPLS. Tres para la calidad de servicio, para el ex, uno para la pila, para la pilar etiqueta en forma genérica y 8 bit para el TTL Time to LIP, que es el time to lip de las redes IP.
+
+Acá tenemos el el este un esquema general de funcionamiento del MPLS.
+
+Tenemos LSR, habíamos dicho que está al ingreso y son router de alta velocidad.
+
+Cuando entra un paquete en la red, vamos a ingresar por acá, el campo TTL toma el mismo valor de la cabecera IP y durante el viaje va disminuyendo de a uno por cada salto, pero el de la cabecera IP no se modifica, solo se modifica el de la etiqueta. A la salida se coloca acá. Salió un to la vueltaun
+
+el SR de salida se coloca en la cabecera IP el valor del TTL que tenía en la etiqueta -1. Si en algún momento el TTL vale cer el paquete es descartado, como decíamos.
+
+Acá tenemos un poquito más de explicaciones dónde se construyen las tablas de encaminamiento, el LSR cola, le quita el paquete del destino, creación de ruta, los LSP, después analícenlo, vean que no es tan difícil y bueno, y hay que seguir esto para entender cómo funciona el tema, que no es más que eso. FEC. Habíamos dicho que el forward Equivalence Class es un conjunto paquete que comparten la ruta, pero tienen distintos destinos. Una FEC se asigna al entrar en la red de MPLS. Una etiqueta
+
+representa una feca asignada y cada router solo se analiza la etiqueta y se procesa por hardware. Un paquete puede lar etiquetas en una pila ifo. Piral ifo es ahí está una espiral info es las infertimo en entrar primero en salir para atender varios circuitos virtuales.
+
+Bueno, disculpen una pequeña interrupción acá tenía que hacer algo. Bueno, esto ya está, profe. Sí, perdón. Un paquete podía tener varios FEC, ¿no? Varios paquetes van una sola FEC. Ah, perfecto. Te llama eso. Es como el camino general que me amontona ahí este eh cada lo que tiene cada paquete es una etiqueta, una LSP, Level Switch pad. Este, y el prefijo de la FE coincide con la elección destino. La FEC como que junta y manda. Acá se pueden ver, fíjense que tienen acá tengo tres paquetes de datos. Justo salimos esta pregunta. Tenemos la FE, ¿ves v? mete todos hacen y asignan la etiqueta el LSR a la entrada los armó el camino el LSP level switch padamino va a la salida y acá salen todos todo por hardware. Solo analiza la etiqueta solo analiza la etiqueta.
+
+A ver,
+
+esto la Sí. [tos][carraspeo]
+
+Bueno, ¿qué es esto? Sperhop behavor es el comportamiento por salto. La calidad de servicio entre extremos impone ciertos cier ciertos comportamientos de encolado, o sea, de encolar, hacer cola con paquetes y planificar en cada salto. Hay varios modelos a seguir. Tener un nuevo FEC en cada salto llega un router y de ahí sale con otro FEC. y llega el otro router y sale con otro efect distinto. De hecho, se puede usar el campo este X, este, ¿dónde estamos? Este de 3 bit para ocho comportamientos. 2 a la 3 me da 8, o sea, que puedo tener ocho comportamientos distintos.
+
+Este, para el mismo FEC, este puede ser para el modelo dos, el modelo uno, eh, un F para cada salto, el modelo, el este dos dijimos para el mismo FEC, independiente del FEC, modelo 3, acá tenemos modelo uno, un FEC para cada salto.
+
+Entonces, regalía de servicio de nuevo esta etiqueta acá lo ignora porque va a poner uno nuevo en el salto que viene. En cambio, el modelo que sigue el dos va,
+
+pero acá hay que hacer en cola. Esto, esto poliside es vigilancia, eh encolado el shed planificación, esto es calificación el merking. Este es el modelo cuando tengo modelo dos
+
+y el modelo tres más o menos parecido.
+
+Tenemos eso lspiquetas
+
+que que contiene establecen los circuitos virtuales entre cualquier origen y cualquier destino para empezar a conmutar tablas de envío que se asocian a fe determinado que pueden ser comunicad otros routas. Esta instrucción de FEC y esto puede ser hecha forzado o a pedido y la distribución se hace por medio de los protocolos BGP, Border, Guyway Protocol, ¿recuerdan? RSBP, LDP, etcétera. Operan de manera diferente, tienen defensores y la gente que le gusta y gente que no le gusta. LDP, la etiqueta de distribución, el protocolo para distribución de etiquetas es para distribuir las etiquetas mlps en la red, sirve para que los rout armen los caminos. Mapea un ruteo de capa 3 en redes conutadas de capa 2 y permite sesiones TCP entre pares para intercambiar tablas. ¿Qué tablas? las tablas de ruteo, obviamente.
+
+Tipos de mensajes. Descubrimiento. Un router anuncia su presencia, su presencia. Manda un mensaje de descubrimiento.
+
+Mensaje de sesión es para comunicarse entre pares, eso sea solo entre router. Publicidad para publicar tablas. Notificación para avisar errores.
+
+Los mensajes de cubrimiento reducen las tablas necesarias, envían mensaje tipo hello sobre UDP y se pueden trabajar a nivel local o remoto. Los identificadores eh LDP, Label Distribution Protocol o protocolo de distribución de etiquetas son seis obtetos que identifican el espacio etiqueta en un router. Cuatro para dirección IP y dos para el espacio. Hay varios modelos de distribución de etiquetas.
+
+Eh, hay manejo de caminos múltiples, eso sí, un camino para cada nodo de entrada y varios caminos para el balance de carga. Y este balance de carga es para no sobrecargar una sola ruta. Entonces van trabajando inteligentemente.
+
+Ingeniería de tráfico.
+
+La senalización se hace por el resource reservation protocol. Hay un roteo restringido. Estado intermedio. Estado intermedio. Oppfed Pf. Hay ruteo de túneles, el algoritmo estado intermedio, estado intermedio o SPF extendido para manejar los túneles.
+
+El ancho de banda de cada enlace es un tema físico que se a nivel de capa 2, como dice ahí L2. Para la capa 3 hay un enlace lógico entre nodos, como se ve acá. físico es esto, la capa dos, pero para capa 3 se ve de esta manera porque son enlaces lógicos.
+
+Inconvenientes, tenemos elementos de red adicionales, obviamente más costoso. Hay poca coordinación entre las capas dos y 3,
+
+pero uno más importante es que el ruteo del interior protocol a mallas. Y si nosotros miramos acá, esto es una red maya, entonces eso puede dar este algún tipo de complicación.
+
+Eh, otro inconveniente,
+
+¿no? Los túneles son mecanismo ingeniería de tráfico. Los pedidos de formación de un túnel se hacen por el LSP. Hay reoptimización de túneles por LSP. Se usa IGP para notificar cuando un túnel se establece y cuando se cae.
+
+Utiliza el protocolo RSBP con extensiones para formar el túnel. Se inicia por un nodo fuente que está en camino del mensaje. Las etiquetas se establecen como reserva, como respuesta, perdón. Y el flujo de tráfico es unidireccional, o sea, que el túnel va de un lado al otro, no va y vuelve.
+
+Acá tenemos un ejemplo de formación de un túnel. Este es el camino de los mensajes. Este es el mensaje de reserva.
+
+Cuando ahí fallan los enlaces, como en este caso, el SP1 se cortó, va a venir un LSP2 para seguir completando ahí.
+
+Entonces, cuando el router este de cabecera detecta la falla, inicializa el LSP2 y el túnel se rutea automáticamente.
+
+Optimización de rutas debido a la computación por fallas. Cada 60 minutos se verifica si está utilizando el camino óptimo.
+
+Esta comunicación se puede inhibir para mantener el estado del camino y múltiples túneles al mismo destino puede compartir el ancho de banda y hacer balance de carga. Es lo que le decía, si tengo muchos túneles, voy sacando por distintos caminos, no mando todo por uno solo para hacer una congestión.
+
+Control de información en MPLS. Las tablas de envío establecen las se generan esas tablas y se envían este se envían las se establecen por los LSP. usa protocolos enrutamiento internos del tipo IGP interior Gway Protocol
+
+y usa LDP Lev distribution protocol que mapea los destinos IP para etiquetas y para la parte externa usa el BGP borderway protocol
+
+Conclusiones. Maneja calidad de servicio QOS ingeniería de tráfico por una red global que soporte todo tipo de tráfico. Es una solución que tiene muchas posibilidades de éxito. Vi la facilidad de emigrar a una red actual. cualquier redpls, ya sea una red Ethernet ATM FR relé es el primer paso a esta coexistencia entre estas redes mediante software añadido los equipos actuales, porque uno tiene un sistema ATM, funciona bien, carga MPLS y va a funcionar mucho mejor.
+
+Eh, bueno, y tiene altas velocidades y fabrica eh y permite acortar la distancia entre un nivel de red IP y un nivel de red de fibra.
+
+Y como ven, esto ha sido muy rápido, muy tranquilo.
+
+Bueno, ahí tiene la dirección de de Rafael para eso. Este, el martes que viene, recuerden que hay examen final, así que yo voy a andar por el campus. No sé que me va a tocar armar, pero seguramente el lunes a la tarde o el martes a la mañana me dias, eh, vos tenés que tomar de esta materia que será esta comunicaciones o teoría de control que llama tecnologías para no sé qué cosa. Este, bueno, esa mañana, esa después de la hora de la siesta, preparar el examen y a las 19 horas empezaremos en el campo. Voy a subir ahora la clase que viene las 7, que es para dentro de 15 días. y todo más cerca del A ver, sería la próxima clase del parcial, ¿no? El 29. Exactamente. Eso es lo que me voy a fijar. El 22 la que no hay y la que sigue. Sí, el 29 primer parcial. Sí, sí, sí. Así que nos vemos para el parcial en el en Medrano. Yo ya pedí aula, así que supongo que me van a dar un aula como la gente. Entremos todos las preguntas teóricas y y corregimos ahí. Nos vamos cada uno para su casa. Excelente, profesor. Y una duda, el 6 de el 6 de octubre no figura como clase en el cronograma. ¿Tendremos clase o no? No sé. Déjame fijar. A ver. Dale, calendar mío.
+
+Sí, yo lo tengo. No figura en dónde, en qué cronograma. En el cronograma del aula virtual. Eh, no, no lo puso No, me lo habré comido. No, no está está previsto. Ah, okay. 6 de octubre hay de clase. Perfecto. Sí, sí. Bueno, má que no miraron a uno porque eso lo hice y después me cambiaron de materia, me cambiaron de día. Este, a mí los viernes mucho me entusiasman y tengo que dar clase los viernes, pero bueno. Rubén Fusario, el director de cáter, es amigo de hace más de 40 años, así que este no tenemos problema, che, mirá, hacemos cambiar. Bueno, listo, ya está.
+
+Así que estamos. Bueno chicos, este nos vemos entonces en en 15 días para hacer el parcialito ahí en Medrano y el parcial es hasta lo que entraría hoy, ¿no? Hasta hoy. Y gracias. Bueno, nos vemos. Gracias. Chao, profe.

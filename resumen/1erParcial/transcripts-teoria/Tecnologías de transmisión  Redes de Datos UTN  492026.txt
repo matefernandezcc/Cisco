@@ -1,0 +1,167 @@
+Bueno, chicos, buenas tardes. Las 19 horas vamos a arrancar. Es viernes y estamos todos cansados.
+
+Ya dice, ya cayó el profesor este, el tipo este, pueden pensar lo que quiero. Vamos a ver inalámbrica.
+
+las aplicaciones dentro la generalidad de las LC. las aplicaciones. [carraspeo] Eh, antes una pequeña pequeño comentario, eh, no es simple mantener una red del aire inalámbrica en un edificio grande, en un este en en lugares con varios pisos y demás, la red que está bien hecha, si no es un fracaso. Me remito al ejemplo más cercano nuestro. Vamos a Medrano y Wi-Fi que hay carteles por ahí que escaneo, que tomo el QR en la vida. Yo lo que hago cuando voy en Medrano desconecto el Wi-Fi, entonces con la red 5G que hay ahí o 4G y me da el prestador de de comunicación, las arreglo, pero este no es fácil. Pero bueno, eso es [carraspeo] para las lineámica. Bueno, ¿para qué podemos aplicar? Para ampliar redes haciendo puntos de acceso inalámbricos, que puede ser de una celda o de varias celdas que se denomina multicelda. Otro es para interconexión de edificios, para radioenlaces punto a punto que unan router o bridge. Otro para acceso nómade permite el acceso a una computadora móvil o portátil. Salgo con mi notebook, voy al piso arriba y tendría que tener
+
+conexión wifi directamente, que no es tan simple. y también para trabajo en red tipo ADOC sin servidor central del tipo peer to. Acá tenemos una inalámbrica de celda única, una celda. Están todos por esta celda.
+
+Acá tenemos con varias celdas sobre la lá, varias celdas inalámbricas, la frecuencia uno, frecuencia 1, 2, 3, etcétera, [carraspeo]
+
+para interconexión de edificios radioenlace.
+
+Acá hay algo que que aclarar que después tengo a veces olvidarme. E esta frecuencias, estas que uso yo acá dentro del edificio y todo son frecuencias este libres, no preciso nada. ¿Por qué? 2.4, 5.8, 900 meg, 950, no prediso nada porque estoy trabajando con baja potencia. Pero yo voy a poner esto para conectar un router desde Medrano al campus y voy a necesitar otra potencia y ahí necesito pedir autorización a lo que hoy se llama Enacom, Nacional de Comunicaciones, para que me autoricen el uso de esa frecuencia. Todo un trámite con un Vieron acá han inventado el cuento matriculado. Entonces, [carraspeo] ah, no, si no es electricista matriculado no puede tocar. Uno a veces se mucho más que un matriculado y esto es lo mismo para hacer un trámite un par de frecuencias y mostrar lugar y todo. Si no es ingeniero y tiene el por ahí técnico superior y está con el consejo profesional y demás, no este no es autorizado cuando la frecuencia que habilita el ENACOM no siempre están en en lo cierto. Te lo conté el martes, por eso todo presente hace [carraspeo] unos cuantos años, varios varios, varios, varios, varios. Yo le hice por una empresa de seguridad, tenía que tener una frecuencia de radio que con la antena muy alta en la zona de Villa Marteli, la abrían de la zona de de Mawich, por ahí, Mawich, este, Benavide. Bueno, lo instalamos todo. Se dice el duplexor porque saben que las frecuencias cuando es una repetidora yo transmito una frecuencia y sale por otra. Eso las pruebas de campo que hicimos anduvieron listo. Muy bien con la autorización en ese momento se llamaba CNC, Comisión Nacional de Comunicaciones. Listo, ahora lo va a andar. ¿Qué sé yo, empezó a mandar? ¿Quién salía? Una una empresa colectivos que iba todo lo largo de la Panamericana, de Olivos, a a Tazar a T. Osis, no me acuerdo la la línea, el número la línea que había que tenía la misma frecuencia y yo me fui más joven y con menos tolerancia que la que tengo ahora o al revés, no sé, pero me fui en la com hecho una ahí a la CNC en la calle Perú, hecho una furia y les dije de todo ahí, ¿no? No, bueno, pero búsquese una y me avisa por teléfono cuál quiere. Y yo fui a la ahí avisa Martel, empecé a buscar a buscar cuál estaba libre. Cuando encontré una que estaba libre les avisé por teléfono y listo, est autorizada esa. Pero es una vergüenza todo eso, ¿no? Pero bueno, funciona así.
+
+Después este a lo largo de la vida uno tenido gerente de ingeniería de la ENACOM, sabe menos que yo, pero bueno, son puestos políticos que lo ocupa cualquiera. Este es el acceso a nómade. Estoy conectado a esto, me voy a esta otra y esto es para conectar peer to.
+
+Requisito para inalámbrica. Me interesa el rendimiento. Por eso les digo, si yo quiero poner en el medrano, lo menos que puedo hacer es que funcionen todos. Yo insisto, podemos hacer una apuesta quién se comunica por medio del wifi de la facultad. El número de nodos es importante también. Si yo tengo distribuyo por cobre y tengo x cantidad de nodos, siempre va a ser
+
+y anda con problemas, siempre va a ser mejor este distribuir con fibra tener más ancho de banda para misma cantidad de nodo. ¿Cómo es la conexión a la red troncal? el área de servicio que me va a cubrir cada router. Resulta que hay una oficina donde hay 80 y yo tengo un routercito medio medio medio medio y van a andar todos lentos y y la oficina al lado, si no hice bien la ingeniería, hay cinco personas y el router es de 300 meg. Entonces, todas esas cuestiones hay que tenerlas en cuenta, tomarse el tiempo, discutirla, conversarla con los compañeros. Che, mira, ¿qué te parece acá? Porque uno a veces llega a un lugar y dice, "No, acá, ¿cuántos son?" 10. No hay problema, pero hay espacio. Y a la semana siguiente a ese lugar le caen 20, ponen mesas y le caen 20 personas más. Entonces, siempre hay que prever la escalabilidad de lo que yo instalé. [carraspeo]
+
+Bueno, el consumo de baterías, robustez en la transmisión y seguridad, que sea funcionamiento sin licencia para que sea todo más fácil, la itinerancia que es el ROM,
+
+el handof es el traspaso del handof. Se los hago un ejemplo más fácil con el teléfono celular. Yo voy a mitad de cuadra, me suena el teléfono, me llama un amigo. Hola, ¿qué tal? ¿Cómo andá? Sigo caminando, doblo una esquina y se cortó la comunicación por el handof de la celda donde yo tomé la llamada a la celda que me ubica este después doblar una esquina, esa s está completa, te corta la llamada. Sí, son cuestiones que también lo tengo que pensar. Si voy a ser una persona que se muda de la punta de un piso a la punta del otro, voy a tener siempre comunicación. Las tecnologías para la inalámbrica, infrarrojos, cada vez se usa menos. una época que parecía que venía con todo el infrarrojo, se ponía un un este se transmitía la señal desde infrarrojo y todo tienen que apuntarle a eso. Se usó también con las notebook en un portito infrarrojo apuntada el puerto infrarrojo de la impresora, pero
+
+eso prácticamente [resoplido] ya no existe más. Habrá quien lo tiene. Sí, perfecto. Y pueden decir, "No, yo lo vi. Sí, estoy de acuerdo." Pero nada nuevo se instala con eso. Radio espectro expandido que tiene dos técnicas, salto de frecuencia y secuencia directa. Esto funciona para la banda de 900 MHz, 2.4 GB y 5.8 GB.
+
+No necesita licencia en la com. Estas se llaman este eh eh lavandas estas permitidas llaman ISM de investigación científico y médico, pero siempre hablando de potencias bajas. Yo voy a transmitir con con 100 W la cosa cambia. Esto para transmitir los centésimos que manda el router. Bueno, y el último es radio microondas de banda estrecha, también conocida como radio enlaces. Este sí necesita licencia de la compor potencia. Y este la banda que trabaja anda en el orden de 18 GHz. Puede llegar a usarse sin este licencia en banda de 5.8. Pero siempre con baja potencia. Como yo levanto la potencia, tuviera permiso para usar esa licencia. Y en cierta medida, más allá que yo lo critique y los resultados de la vida profesional es para este que me hagan ver nunca me gustó y hasta partido menos este pero está bien el tema de pedir autorización. Primero les pase lo que me pasó a mí y no se una anarquía total el el el el en la el el espectro electromagnético, pero este para no interferir uno sobre otro, pues fíjense, yo les di en las las este
+
+la para radio espectro expandido, les dije las frecuencias 900 MHz, 900 MHz tienen los celulares o algunas bandas de celulares. Moraleja, yo puedo con un radioenlace, nadie más habla por celular o estoy metiendo ruido a la antena de celulares, en la radio base. Entonces, por esa razón está bien que se haga, que acá lo hagamos a lo argento y lo hagamos en mi cara. Bueno, es otra historia, pero no. Este, en la clase del martes un alumno me pidió que no interesa el título, decía, le mandé el mail a él, me había llegado de Copiteca, Consejo Profesional de ingeniería electrónica, telecomunicaciones y computación también [carraspeo] allí en la calle Perú, que Elena hizo una resolución y después que la hizo y la alargó, reconoce que no podía implementar esa resolución, entonces para qué la hicieron. Pero bueno, es lo que tenemos, donde los puestos técnicos los ocupan gente que viene de la política, de técnica sabe nada, más allá que tenga un cuadrito que diga ingeniero, técnico o no sé, manos alta. Bueno, continuamos. Espectro expandido. Esper usa una secuencia de expansión pseudo aleatoria o pseudoruido en el transmisor y en el receptor. Tiene más inmunidad distintos ruidos, es más segura para las comunicaciones, permite varios usuarios en el mismo ancho de banda con pocas interferencias. tiene como
+
+eh tecnología de multiplicación CDM, que es Code division multiplexion, o sea, división por división de código
+
+y CDMA, que es división de eh multiplicación por división de código aleatorio y de dos tipos con salto de frecuencia Sí, con secuencia directa. Acá tenemos la secuencia directa, una forma onda ensanchada. Esta es la señal original en banda estrecha. Cuando yo transmito, se usa la secuencia de expansión y pasan, fíjense, bajo el nivel de ruido, [carraspeo] con lo cual es mucho más seguro.
+
+Y el frequency hoping, este fíce que esta es frecuencia y esto es tiempo. Entonces, como transmite la primer ráfaga, transmite en esta frecuencia. La segunda ráfaga, que es esta, la transmite en esta frecuencia. La tercera, la cuarta, la quinta, así, así, así, así, así. Les puedo asegurar que para comunicaciones por radio esto es brillante porque no se interfiere una a otra. Únicamente cuando una de estas frecuencia, la misma del otro equipo que está por ahí cerca, van a escuchar algo así como un timbre dind nada más y sigue. No le va a interferir una a la otra.
+
+Acá tenemos la secuencia directa, el espectro ensanchado que les decía
+
+codal. El espectro ensanchado es una técnica de codificación que utiliza un código de pseudorido para modular digitalmente una portadora de tal forma que aumente el ancho de banda de la transmisión.
+
+Lo vemos acá. Acá tengo este ancho de banda y fíjense el ancho de banda que marqué acá.
+
+Y esto también hace que se reduzca la densidad de potencia espectral, es decir, que a nivel de potencia en cualquier frecuencia dada se reduce. La señal resultante tiene un espectro muy parecido al del ruido. Esto muy parecido al del ruido. De tal forma de todos los redores le aparecerá ruido menos el que va dirigido a la señal. Ambas son buenas. Yo si me toca elegir elegiría esta porque la secuencia aleatoria que tiene esto, esto puede poner equipos muy sofisticados que pueden llegar a a escuchar esto. Pero la secuencia yo la puedo cambiar. Pongo cuatro cuatro dígitos, pongo 999 91 300 y me cambia la secuencia cómo salen las y vaya a seguirlo uno. Eso es prácticamente es imposible. Imposible. No, siempre se puede, pero es muy difícil. Además, supongamos que alguien graba los ruidos estos y después empieza. Bueno, pero yo para poder interferir y hacer uso de una comunicación y todo, necesito que sea el momento. Cuando están transmitiendo yo enterarme lo que quieren, si no es imposible, no me sirve para que mañana me digan, "Ah, lo que quiso decir, lo que quiso transmitir o vimos cómo podemos entrar." Por el otro día cambiaron la secuencia esta de la secuencia de transmisión y va a empezar todo de nuevo. Eh, estos dos este el DSS como el Frequency Hoping están definidos por el triple para el estándar 802.11 para las redes de área local inalámbricas las llan.
+
+[carraspeo] Acá tenemos las tecnologías para transmisión de datos. Ejemplo, la norma tiene el nombre a norma como es la banda, el alcance máximo,
+
+modulación. Acá van a encontrar algo que no hablamos hasta ahora, que es esto, FSK. Eso es Gausan Gusano frequency shift can shift can es alternando, llave si uno lo hace, pero es eso y es una frecuencia, un cambio de frecuencia gauciano, este, donde unol lógico es representado una
+
+unológico es representado con una desviación positiva, incremento de la frecuencia de onda es lo que vemos acá. El uno incrementa y el cero es una desviación negativa
+
+o decremento de la misma. Acá ti un ejemplo del GFS Gausan frequency Shift K. Y acá tenemos, fíjense, la frecuencia a + 288 y a -28 una frecuencia central. Estos son los datos. El filtro GFSKano.
+
+Bueno, acá hay un ejemplo. Pu tranquilos.
+
+Es lo que tenemos en las frecuencias 2.4 5 2.4 69 GB. La norma,
+
+el tipo de de red, el rango de alcance, el estándar europea, el alcance en la industria. Bueno, un resumencito de esta foto, no sé dónde se mueblo de capas. y triple 802.11, donde IR es infrarrojo,
+
+SF es salto de frecuencia y SD es secuencia directa. K dos se divide esta forma.
+
+Los canales inalámbricos, ¿cómo funcionan? [carraspeo] Hay una mínima interferencia entre canales y puede haber otras interferencias por el Bluetooth, por un horno a microondas, por parlantes, etcétera, porque todo lo que sale del espectro electromagnético puede generar interferencias. Acuérdense que nosotros podemos, yo puedo transmitir la frecuencia de 2 me, también tengo los productos de intermulación, que es 2 * 2 me, 2* 2 meg sobre 4 y todas esas cuestiones que las hemos visto en comunicaciones es lo que puede hacer que que me interfiera una cosa sobre la otra. El canal tiene que ser ajustado perfectamente en las frecuencias de wifi.
+
+Te comparten frecuencias de las bandas de 2.4 y 5.8 no regener licencia. Es más usada la de 2.4, tiene canales para wifi, 14 canales y la 5.8 se congestiona menos, pero la pesa a que tiene menor velocidad, la de 2.4 tiene menos alcance y la 5.8 tiene más velocidad, pero este, perdón, menos velocidad pero más alcance.
+
+Acá tenemos la banda 2.4. Esto es lo que quería mostrar. Acá están las 14, los 14 canales
+
+de que de dónde a dónde van. El ancho del canal es de 22 MHz. Las ventajas de la banda 2.4 son mayor alcance, más compatibilidad, menos sensible a paredes o muros. Ustedes en una casa que tienen cuatro habitaciones, ponen 2.4 y pasa para todos sin sin problemas. En cambio, la 58, a la última seguro ya no llega o llega con una potencia muy pequeña. Las desventajas es menor velocidad con respecto al 5.8, más interferencias y menos canales disponibles, dado que tiene, como ven acá, 14 canales. [carraspeo] Banda de 5 GB, ventajas, mayor velocidad, menor interferencia y más canales porque tiene 25.
+
+Múltiple transmisión de información, no es detectado por la mayoría de los dispositivos comunes, tiene poco rango de alcance y no genera interferencias. Y las desventajas que es más sencillo a la distancia, las paredes y muros afectan mucho más.
+
+Acá tenemos
+
+2.45 6 el WiFi 6C. El WiFi 6 este o Wi-Fi 6 no es la utilización de la banda de 6 GB, sino la utilización de la banda de 2.4 y la de 5 GB para aprovechar las ventajas de de ambas. [tos] La de [carraspeo] 2.4 tiene mayor cobertura y la de 5 tiene mayor velocidad.
+
+El cambio que se produce con la introducción de wifi 6e es que agrega la banda de 6 GB al wifi 6. Acá tenemos, fíjense, van de 2.4 3 más un canal más. Los canales asignados de 5 GB tiene 25 canales más 12 canales más 6 canales más 2 y después de 6 GB fíjense tiene 59 29 14 y 7
+
+59 canales asignad 25 asignado y tres canales asignados esta le cargó cantidad de canales muy rosa la capa física bueno allá por el 97 es la MAC y tres capas físicas, dos, una banda de radio de 2.4 y otra en infrarrojo. Todos operan entre 1 y 2 megbit. Fíjense las velocidades, ¿no? 1 y 2 megbit allá por el año 97. Ya para 99 ya estamos hablando de 54 meg para la E5 y para la de 2.4 entre 5.5
+
+y 11 meg, o sea, 2002 hasta 54 meg y después cuando salen 2007 la 802.11N 11N. La velocidad llega a 600 MB por segundo. Esto es el or de WiFi 4, WiFi 5, WiFi 66.
+
+Banda de 6 GB. Bueno, ya ya hablamos lo que tiene este que hace uso de la de 2.4 y la de C a la vez, aprovechando las fortalezas de cada uno.
+
+Acá tenemos una evolución. Mir, la N fue la última, 300 megbit, la frecuencia que utiliza. Y acá tenemos el wifi NAC hasta 1 gig.
+
+Los servicios 802.11 tenemos servicios básicos y extendidos y sistema de distribución. Algún ejemplo de estos servicios. Asociación, Reoción, autenticación y fin de la autenticación privacidad, integración y distribución de mensajes. Lo que hace privacidad se utiliza mucho el web wired equivalent equivalent privacy. El web cuando pregunta cómo quiere este poner, ya no pregunta mal, lo toma directamente. Antes preguntaba si quería la seguridad web o como sea. [carraspeo] Ay, disculpen, pero estoy con la garganta a la miseria. [resoplido]
+
+La subcapa MAC 802.11.
+
+Funciones entrega confiable de datos, control de acceso y seguridad. Esas son las principales funciones que tiene la subcapa 802.11.
+
+La arquitectura. Bueno, acá tenemos la capa MAC, la capa LLC y esto tiene que ver de acuerdo al tipo de capa física que la capa física tiene que ver con el tipo de red que use. Esto habla, esto habla, esto habla, esto habla. Acá están los distintos [carraspeo] sistemas. La capa, [carraspeo] la el formato de la trama MAC 802.11. Tipos de trama que este cartel que yo puse acá hay tres tipos de trama de 802.11: trama de control, trama de datos y trama de gestión.
+
+Bueno, los obtetos este FC es control de trama. Frame control indica el tipo de trama. Eh, control, gestión o datos. Es trama de control, de gestión o de datos. Fíjate que teníamos tres tipos de tramas que van acá abajo. Control, gestión y datos. Bueno, D/ I es la duración. Eh, duración conexión indica el tiempo de reserva del canal para una transmisión satisfactoria o identificación de una conexión. El los campos de direcciones odres depende del contexto. Tenemos dirección fuente, dirección destino, dirección de la estación transmisora y dirección de la estación receptora.
+
+SC es la el control de frecuencia de secuencia implica si hay fragmentación, si hay reensamblado y el número de tramas enviadas. Los tipos de tramas ya las dijimos. Control, datos y gestión. Acá tenemos un routercito inalámbrico bastante antiguo.
+
+Acá tenemos este una placa para una notebook que ya hoy por hoy, chicos, esto es parece un libro antiguo. Ya una viene todo integrado. Yo no es preciso cambiar la placa de esto. La madre de la nodo adentro. Ustedes han de haber cursado arquitectura computadoras y se lo han mostrado que están los buses ahí y sobre el bus va todo y va todo soldado. Ya no tengo que sacar uno y poner otro y más cuestiones. Bueno, lo que es no la saqué porque la vi el martes pasado y seguramente el año pasado la vi también, pero me acordé de esto. El mismo es múltiple usuario y múltiple entrada y múltiple salida, o sea, múltiple input, múltiple output. Esto le permite a un router Wi-Fi comunicarse con múltiples dispositivos en forma simultánea.
+
+Este es el router que tiene mimo.
+
+Bueno, acá tenemos otro router wireless. Esto va en la computadora, no la escritorio. Esto sí va sobre el bus de datos. La antita fuera.
+
+Esto es un acceso wireless también que se instalan un USB de una PC. Esta es la antena de otro router, el enfrente. Este es el la parte posterior. Permite el acceso [tos][carraspeo] con placa wireless. Tiene cuatro puertos de PC para el UTP para LAN y un puerto One para el acceso a internet. Usted esto ya lo ha visto 1000 veces en la vida, la práctica diaria. Bueno, ahí tenemos un un wireless Nano 300 adaptado a USB. Miren este paquetito va al puerto USB. Y acá está la descripción también. Este con USB lo conecto a una máquina de escritorio y ya no dependo del cable de red. Ahora ustedes me preguntan y sí, para salir del paso y para trabajar y por ahí si no son muchos y no son muchos pisos. Sí, convengamos que en la parte inalámbrica anda. Ahora, si es un edificio de 10 pisos, este, a 50, 60, 100 personas por piso, pues son pisos grandes y te vas a tener cableado. Si no puede estar complicado, es más cara la obra. Sí. la obra civil de pasar el cable y todo, pero una vez que yo cableé que está todo este identificado que dónde va tal cosa y tal cosa y tal cosa si de vez en cuando se puede llegar a romper algún elemento de hardware, pero normalmente andan años sin problema. Eso sí, tengo que asegurarme que el aire acondicionado, sobre todo en verano, funcione. El del RAC para que me mantenga fresco los porque la temperatura para la electrónica es matadora.
+
+Bueno, esto estamos más cerca ya uso de esto el wifi en vuelo directamente desde una estación manda un satélite y de ahí al avión que viaja, no sé, 10 12000 km porh de velocidad y llega. ¿Por qué? Porque la onda electromagnética anda en el orden de 300000 km por así que no hay problema.000 300,000 km por segundo, perdón. O sea, que va a llegar siempre por más el avión. Lo que tengo que tener la aeronave que le permita apuntar una antena a la zona donde va a pasar el avión, una o varias este satélite. Usa la banda K 26,5 a 40 GB.
+
+Eh, normalmente pagando le dan 75 meg por pasajero, no es ilimitado, pero bueno, es lo que hay. Ha estado mucho mejor que estas tarifas tienen un par de años. Europa, el Francia, flota, Italia, la nuestra no figura, por supuesto, pero los demás KLM, Iberia, British todo funciona.
+
+12 km porh 10 km de altura. Pero bueno, el Y Max es para dar una zona muy grande. Fíjense que tenemos acá un café. Alguien que está en su portátil. Acá hay tiene wifi, donde tiene computadora, al edificio departamentos y demás. Eso es Y Max. Los protocolos de MAN para Max. Acá tenemos las características de cada uno. Después los miran. Esto ya está subido.
+
+Vamos a ver.
+
+Ahí está. Estoy un gráfico. Este lo que yo quería. Los elementos tengo los teléfonos, obviamente, unidades móviles. C teléfono tengo unidad de control, un transceptor, un sistema de antena. Tenemos las celdas. Las celdas hace unos años eran todo. Hubo una celda. Ahora en cualquier lugar este no en la capital porque hay muchos edificios. Entonces a los que montaron le ponen más antenas arriba y listo. Pero yo he visto en el en el cono urbano un poste de estos como si fuera una este un poste de luz que tiene tres antenas arriba. Sí, tres antenas de estas largas y le entra una fibra desde abajo. Se acaba el problema. Una cajita acá con una batería. Esas son las celdas o radiobases, que es una interface entre el meto y las unidades móvil. O sea, que el móvil se comunica con la radio base y el radio base con el meto. Metso es móvil teléfono, switching, office,
+
+o sea, oficina de teléfonos de oficina de conmutación de teléfonos móviles, controlamiento y tarificación de llamada. Yo me conecto a la celda, pero cuando llega el meto dice, este teléfono no tiene crédito, este teléfono está inhabilitado. Todo eso pasa por acá. Las mets se comunican entre ellas y si hay llamadas a la red fija se comunica la central telefónica y ahí se hace todo el se termina la comunicación y por supuesto todos los conexiones o enlaces que conectan los tres sistemas, tanto el teléfono móvil como los enlaces estos. suele ocurrir ya que esto ya no sea más radioenlace para estos nuevos postes, sino que venga fibra enterrada y le mandan la fibra ahí y con eso ya tienen comunicación.
+
+Las técnicas de acceso al medio. FDMA, acceso múltiple por división de frecuencias, TDMA, acceso múltiple por división de tiempo y CDMA, acceso múltiple por división de código. Son las tres técnicas para compartir un canal de radiofrecuencia y un sistema celular.
+
+F DMA comparten frecuencia. Entonces, dentro del rango de frecuencia que tiene 384 256 también, pero viene de otro lugar 256
+
+está multiplexando por división de frecuencia.
+
+Por división de tiempo transmite uno a la vez el que tiene asignado el tiempo. Lo van a ver a eso como ranura de tiempo, puas traducciones que hay, ¿no? El tiempo, la ranura, la ranura, la ranura es el espacio de tiempo que tiene para transmitir. Tiene 10 segundos, plup, sale la ráfaga, se va el problema. Y si no hay un time out y le pasa el pase a otro para que transmita por tiempo también. Y por división de código [carraspeo]
+
+es una codificación y bueno, va pasando uno al otro.
+
+acceso a la red de radios bases, este, a internet, a las comunicaciones, etcétera.
+
+Generación del teléfono móvil. Tenemos la primera con FDMA, la segunda 2G con TDMA y CDMA. [tos] [carraspeo] La 3G aumenta la transmisión utilizando redes de conotación de paquetes, la 4G a 100 meg y ya estamos con un uso común 5G. En las ciudades grandes ya hay 5G por todos lados. No pueden pedir en el campo que haya 5G, pero en las ciudades todos tienen 5G. Y de hecho, si ustedes miran la televisión en la mañana, está la motocam, tiene un casquito en la moto conectado al teléfono y no tiene más nada. llega el canal perfectamente. Además a las antes de las 6 de la mañana cuando pasa o a las 6 hay poca gente usando en la calle la red de 5G. Entonces está la red más libre y funciona bien.
+
+Las estaciones base pueden ser picoelda, microcelda y macro celda. A ver, todo tiende a esto, a la pico Zelda, porque es preferible tener estar más cerca de los teléfonos celulares. La microcelda es donde que yo hay un par de edificios grandes y yo el resto es todo bajo. Ahí meto uno arriba y tengo para mayor cobertura y en grandes áreas ya en el medio del campo y ponen macrocelda que me cubra una gran zona.
+
+Bueno, acá tenemos ejemplos. Es indoor, pueden ser un subte o en un shopping
+
+un micro. Estas son macroceldas y en un microcelda, un edificio de oficina, si es adentro, si son afuera, enterrasa un lacota cero. La cota cero que ser el principio de algo. Y si es micro en la entrada subte o en las marquesinas.
+
+Acá tenemos este algunos
+
+estos son internos. WiFi en indoor, acá en este piso, en este otro piso. Acá sale Y Mac, sale para fuera. planta interna, planta externa,
+
+5G, que es el futuro
+
+y Arsat tuvo una licitación, pero se espera que estas no solo van a ser como ya son para telefonía móvil, sino otras aplicaciones como internet las cosas también para este cualquier este cualquier otra aplicación que hagan falta datos a distancia, porque esta red de 5G reduce una latencia a 1 milisegundo. Y para tener una idea de la latencia que tiene latencia es cómo demora la comunicación, cómo se procesa inclusive en el teléfono, desde que entra el teléfono hasta que sale. Y para dar una idea, para dimensionar la rapidez de del 5G que demora 1 milisegundo, una persona demora 40 milisegundos en sentir que se quemó el dedo con agua hirviendo. Yo apoyo 40 milisegundos y siento el calor. Esto en un milisegundo sacan la información. Por esa razón, insisto, si ustedes algún día se levantan temprano por ahí todos los días y ven la tele, van a ver el motocam. Anda el motocam ahí. El día que anda lluvia llaman autocampo que anda dentro del auto por el parabrisa, pero si no es una persona en moto con una este una camarita conectada al celular, el celular en un bolsillo y andan con 5G, llegan los canales perfectamente.
+
+Satélites. [carraspeo] El satélite es muy utilizado para áreas alejadas de difícil acceso. permite transmitir múltiples servicios de voz, datos y video a velocidades de megabit por segundo y hace posible la comunicación donde otros no pueden penetrar por alto costo.
+
+Acá tenemos las bandas de frecuencia, esto es solo para datos. Banda KA y KU, estas dos y este otro KU. Esta es la que usa Directa TV. Pero esta y otra, esta K y KU, este lo utilizan los móviles de televisión. La banda C, sobre todo la C, es para subir o bajar datos del satélite. [carraspeo] Por ejemplo, para que el canal 13 se vea en la patagoña, suben al satélite seal del 13 y un señor en la Patagonia por una antena y baja ahí y lo baja con banda C.
+
+Eh, esto que yo dije que era Direct TV BSS es broadcasting satellite service, servicio de difusión por satélite.
+
+Tipo de satélite geoestacionarios a 36000 km, una órbita a 36000 km superficie la Tierra. Dan comunicaciones fijas para aplicaciones de voz, datos y videos las bandas CU. Fundamentalmente satélites de órbitas bajas Leo, low hair orbit y medias Meo medium hair orbit. dan varias vueltas a la Tierra y están agrupados en constelaciones de satélite. Proveen este aplicaciones móviles de voz, sensado remoto de sistemas tipo escada, meteorología, determinación de la posición en GPS y trabajen en la banda móvil L. [carraspeo] ¿Qué anda con este las leo? Starlink. Link es una constelación de satélites que va pasando y el usuario que lo va teniendo, que tiene en un vehículo, en el techo o en la casa, tiene este la antena de ahí, toma el satélite A, al ratito viene, se desconecta de S y pasa al B, se desconecta de S y pasa al C y así sucesivamente.
+
+Esto acceso inalámbrico físico fijo también se llama Wess Local Loop. Está basado en celdas y conecta usuarios a la red pública telefónica utilizando sees de radio, sustituyendo el cableado de cobra entre la central y el labonado. Estos sistemas incluyen sistema radiofijo, sistema celulares fijos y sistema de acceso sin alambres.
+
+Los servicios del WLL, tenemos servicio de voz, PCM, PS code modulation, servicio de datos en banda de voz a 56 KB por segundo, servicio de datos a 155 kbit por segundo, por ejemplo, para internet y servicios ISDN para líneas 2B+ D a 144 K por segundo.
+
+LMDS. Esto quiere decir local multipoint distribution service. Es una tecnología que amplía eh que permite eh comunicaciones punto multipunto que y que tiene capacidad de transportar grandes cantidades de información a muy altas velocidades. Eran las bandas de 28, 38 y 40 GB con velocidad hasta 38 MB por segundo y en distancias cortas menos de 8 km.
+
+Sí, a grandes velocidades, pero a distancias cortas. para video digital, voz, televisión interactiva, música multimedia, internet de altas velocidades,
+
+mmds las redes, estas son las multichannel multipoint distribution service. Se caracterizan por limitado número de canales disponibles en las bandas asignadas. Solo 200 MHz de espectro ancho de banda entre 2,5 GB y 2,7 GB. El uso principal es la televisión restringida inalámbrica. Como el ancho de banda de un canal de televisión tiene 6 meg, solamente 33 canales caben en el espectro eh asignado.
+
+Esto consiste en un centro de control, como vemos acá, una estación base, un radio transmisor y una antena transmisora, que lo tenemos acá arriba, receptoras y convertidores de frecuencia y un receptor de codificador. Puede alcanzar hasta 55 km dependiendo de la altura de la antena. ¿A qué a qué les suena esto? Se lo digo yo para que no piensen más. a la TDH, la televisión directa al lugar, esa que maneja SAT, que uno normalmente tiene cable, no la usa, pero cuando los amigos de de sur o de nor nos cortan la luz y uno tiene una un grupo electrógeno, conecta y al televisor le pone la esa estación este la TDAH, la televisión y va a tener unos canales noticias. tiene, como ven, 33 canales. Tampoco es para hacer este una fiesta, pero ya no están aislados porque las los que llegan con fibra ahí tiene una una batería y normalmente está vencida la batería, dura 10 minutos y se acaba. Bueno, esas cuestiones propias de Argentina. Y por último vamos a Sí, tiene que hacer esto. Sí, esto es lo que viene, internet de las cosas. Ustedes han de saber mucho mejor que yo que cada vez tenemos más aplicaciones para manejar con el teléfono, todo por sistemas inalámbricos. Están por llegar a su casa dentro de una hora, dice, "Uy, hace frío, prendamos la caldera y la prenden con el teléfono." Quieren hacer otra cuestión poner la ropa lavar, lo ponemos el teléfono. Prender un aire acondicionado, prender un robot que barra, qué sé yo, cualquier cosa lo podemos hacer todos con el teléfono.
+
+Eso es lo que tenemos ahora.
+
+Bueno, gente, no han preguntado nada. Se ve que o fue muy claro o están muy aburridos, pero es lo que tenemos. No tienen nada. Buen fine y nos veremos el el viernes próximo. Perfecto, profe. Nos vemos, profe. Gracias, profe. Nos vemos. No.

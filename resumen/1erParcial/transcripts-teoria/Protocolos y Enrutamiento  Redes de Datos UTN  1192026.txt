@@ -1,0 +1,237 @@
+Este, calculo que antes las 8 terminamos para empezar a disfrutar el fin de semana que viene. Parece que fin de semana al fin. Como siempre, cualquier cosa me atajan en el momento y preguntan sin ningún tipo de inconveniente.
+
+Esto es lo que vamos a ver, los protocolos de soporte de TCP MPS. Vamos viviendo de cuál es nuestra situación, porque arranca esto con el NAT. Vamos a ver bien qué es. Es la escasez de las direcciones públicas. Entonces tenemos estamos obligados siempre hablando de eh direcciones IP públicas, ¿no? Utilizar direcciones privadas, IP privadas, la LAN propia y usar una sola dirección IP pública para el acceso a internet de todos los equipos de la red local. Yo tengo una empresa y tengo 20 máquinas y viene personal o telefónica o claro o metrotel y me me tira a mí una sola dirección, pero todo salir por esa.
+
+¿Y por qué tengo que trabajar con esto del NAT? Porque en internet solo son válidas las direcciones públicas para que un dispositivo con una dirección privada pueda acceder a internet, o sea, una como las 20 computadoras que yo les decía el ejemplo, para eso tiene que enmascarar su dirección privada con una dirección pública.
+
+Este enmascaramiento de direcciones IP privadas se realiza utilizando el protocolo NAT. NAT es network es translation. Este NAT
+
+este nos permite usar la red IP con direcciones distintas a las que realmente se utiliza. Permite convertir el espacio IP no en ruteable en direcciones enrutables y permite también cambiar de ISP del Internet Service Provider. El NAT hace corresponder un rango de direcciones privadas dentro de una red de local con una dirección pública de internet. Acá tenemos conectamos nuestra LAN con direcciones privadas de internet. Las privadas son del rango 192, 1680. Sí, esta de acá 010 en este caso la que sea. y el ISP, o sea, el proveedor de internet, me da una dirección de este tipo, pero larga está genérico, WX, Y para poder acceder a internet, para que los equipos que están acá con direcciones privadas puedan acceder a internet. El NAT, este NT le e realiza la traducción de las direcciones privadas de la red 192 6800 a la pública.
+
+Esto X1 W1 y1.
+
+Si hay llegara a existir varias direcciones privadas en una sola dirección pública, NAT utiliza los puertos de TCP y UDP elegidos dinámicamente. Por eso acá pone TCP 1025, TCP 5000, TCP 80. Utiliza puertos TCP elegidos dinámicamente para distinguir entre distintos equipos de la LAR. En los paquetes salientes del NAT, la dirección IP privada de origen se asigna a la pública. esto
+
+y con un número de puerto TCP UDP, como vemos acá en los paquetes entrantes del protocolo NAT, o sea, lo que viene de internet en elcción pública de destino se asigna la elección original dentro de red local y el puerto TCP yUDP se vuelve a asignar a su número de puerto TCPUDP original. NA traduce correctamente estos paquetes que contienen la dirección IP únicamente en el encabezado IP. Este protocolo no traduce los paquetes que contiene elción IP dentro de los datos como son el caso de las VPN ni demás. solo el la IP del encabezado,
+
+que es lo que tiene que traducir para que esta dirección se haga con este formato y cuando lo que entra con este formato vaya a la máquina que tiene esta dirección.
+
+Posibles uso de NAT. Bueno, cuando hay que conectar a internet y no hay espacio asignado, se puede usar un direccionamiento privado, como dijimos. ¿Dónde se configura el NAT? El dibujito
+
+dónde se configura el NAT. Este es el símbolo en el router de borde, creando una red interna, la propia LAN mía y una red externa que sería internet.
+
+El NAT traduce dirección interna, dirección global y única.
+
+Acá tenemos las direcciones de las LAN. Estas tres no son rutables, pero por medio del NAT salen internet, se lo reacceso internet.
+
+Pero esta traslación puede ser aplicada solo algunos segmentos, la LAN 1, 2 y 3 que no son enrutable este espacio IP, pero sí tiene que ser enrutable y no precisan Nat el servidor web, el servidor de nombres de dominio, el servidor de correo electrónico, por ejemplo, estos tres. Puede haber otro también. ¿Qué tenemos acá? Inside local. Dirección inside locales.
+
+La dirección IP asignada a un host de la red interna. Esa es una dirección inside local. Esta inside odres está asignada a este host. No es una dirección que pueda enrotarla directamente a internet.
+
+Inside global esta odres
+
+en una dirección IP legítima
+
+que representa una o más inside local IP para el mundo exterior, o sea, que es lo que va a salir para allá esta esta de acá. Después tenemos el outide local. en la dirección IP de un host externo
+
+y el outside global en la dirección IP de un host asignado
+
+a esa a ese a ese direccionamiento asignado por el propietario de host.
+
+Bueno, acá están los términos repasamos y acá tienen un articulito de Cisco donde pueden tener un poco más de de información si tienen ganas. eh tipos de NATO, traslación estática y traslación dinámica con un vínculo también de Cisco. La estática es tal vez un mapeo uno a uno entre una dirección de red inside local y una dirección
+
+[carraspeo] una dirección inside global. Es útil cuando un host debe ser accesible desde el exterior mediante una dirección fija. Y después está la traslación dinámica. donde se un mapeo entre direcciones inside local y un pull de direcciones globales y con eso trabaja.
+
+Acá tenemos la red local, sale por el ISP1 con direcciones propias.
+
+La red del Ethernet 1, esta otra red que está acá abajo del router C. sale por el ISP2, o sea, por este lado, haciendo NAT con el router B. En los router A, B y C tiene correr un protocolo que se llama de ruteo, se llama interior Gway Protocol, un IGP. El router C tiene que tener una ruta dinámica de último recurso apuntando es el router B. Esta ruta dinámica o o de último recurso también se denomina eh Gway por default, o sea, que todo lo que él no puede rotear lo va a mandar ahí que se lo solucione este otro.
+
+Capa tres de computación.
+
+Acá tenemos el protocolo MPLS, multiprotocol switching
+
+o el tag switching, que es propietario de disco de Cisco, perdón. El MLS Multilayyer Switching es propietario de Cisco. También tenemos un MPOA multiprotocol ATM, Line ATM y un IP switching ATM propietar una empresa llamada Yil.
+
+El primero que vimos de estos dijimos MPLS tag switching,
+
+que nos permite escalar, nos permite ingeniera de tráfico, incrementar la dinamic la demanda de output, que es la trase de transferencia efectiva, incremento de la funcionalidad de enrutamiento IP, simplifica la integración de ATM. La idea básica del MPLS es integrar la capa 3 del OSI con la capa 2 ATM y el beneficio de la rapidez de mover datos en ATM con hardware optimizado y ventajas de los protocolos de enrotamiento y pesca.
+
+en en un este lyer 3 convencional, cada vez que un paquete através una red, el cada router extrae la información de forwarddeo del encabezado de nivel 3. Esta análisis se repite cuántas veces un paquete atraviese este un router. En cambio, en MPLS, el encabezado nivel 3, solo es analizado una vez y es mapeado a un pequeño perfil llamado etiqueta, el tag level. De ahí viene TAC, este con mutación por tag, por tiquetas. En cada salto de decisión de forardeo es hecha solamente por el valor de la etiqueta. No hay necesidad de reanalizar el encabezado de nivel tres, dado que la etiqueta es tamaño fijo y por esa manera es muy rápido y muy simple.
+
+DHCP,
+
+el Dynamic Host Configuration Protocol es un servidor
+
+es un servidor de es un es un servidor que usa el protocolo de red tipo cliente servidor una lista de direcciones hipinámicas y las va asignando a los clientes conforme esta quedando libre, sabiendo que esto es importante en todo momento. ¿Quién ha estado en posición de esa IP? ¿Cuánto tiempo la tuvo y a quién se le ha asignado después? De esta manera, los clientes de la Red IP sus parámetros de configuración automáticamente. Si yo me conecto a la red, tengo un servidor de HCP, automáticamente va a asign y demás. Por eso ustedes habrán visto, si han estudado por ahí un poco más de seguridad, lo sabrán mejor, pero han visto las noticias, dice, "No, esa IP estuvo en la dirección este Medrano 951 tercero A B asignado a esa a ese cliente y saben que estuvo ahí y estuvo de las 10 tras 10:30, por decirles algo, porque el de HCP confirma todo.
+
+Otro protocolo HDLC. Sí, DHCP es un este es de HDLC.
+
+High level datalink control, protocolo de enlace de la ISO. Es un protocolo sincrónico orientado al bit con RQ de ventana deslizante y me establece tres tipos de estaciones, primaria, secundaria y combinada.
+
+Acá tenemos el formato de la trama, este HDLC.
+
+utiliza acá relleno de bit y tenemos el campo de inicio y el campo de final, o sea, un tag y otro tag que tienen este formato.
+
+El campo de control es quien realiza las tareas propias del protocolo. El CRC puede ser 16 o de 32 bit y tiene un tamaño máximo 1080 bit que son 135 bytes. El campo de control nosotros acá dijimos recién acá en esto que teníamos tres tipos de estaciones. El campo de control tiene acá están de los ocho de los ocho bit que tengo acá están divididos de esta manera. La de información que empieza con cero tiene 3 bit para número de secuencia. Uno pull o final, un bit y número de registro de la secuencia de envío. Número de registro de la secuencia de envío y de la recepción, perdón. Trama de supervisión 10 tiene 20 de función de supervisión, el de pul final, el número de registro de recepción y las noeradas 11. tiene funciones no numeradas acá y acá. Esto es cuando es de 8 bits. Sí, este 8 que puede llegar a ser de 16. Bueno, acá tenemos el formato de 16.
+
+¿Cómo funciona? A ver, ahí está. ¿Cómo funciona esto del primario secundario? Este, este manda la primaria, le manda un comando y este da una respuesta.
+
+Primaria es el que manda, secundaria el que obedece. Es muy simple, es una no balanceador. Ahora vamos un detall balanceador, no balanceado, pero estas dos pueden ser combinadas, o sea, que en un momento pueden ser primarias y otro momento pueden ser este secundarias.
+
+Las configuraciones, las órdenes van de primaria, o sea, los comandos de primaria a secundaria, las respuestas van de secundaria a primaria. Comando de respuesta, la balanceada entre dos primarias y la no balanceada una primaria. Los modos de operación tenemos respuesta normal. NRM es no balanceada. Todo se transmite cuando la primaria indica
+
+que es un enlace punto a punto o multipunto y half duple, o sea, semiduple. La respuesta síncrona también es no balanceada, pero se transmite sin permiso de la primaria. El enlace es punto a punto y duplex. Y el balanceado síncrono ABM, cada estaciones, primaria y secundaria, enlace punto a punto y comunicación duplex.
+
+Tipos de tramas hablamos no numeradas, se utilizan para establecimiento y desconexión. No llevan número de secuencia. Las de información sí tienen número de secuencia. La de supervisión se utilizan para control de errores y de flujo y tien número de secuencia.
+
+Los límites cuando es el flag de entrada va esto, pero si la línea está inactiva o está cortado tiene algún problema, no van 0 61 y un sino va 71 directamente. Y la transparencia es la inserción, iluminación de un bit en secuencia similar a la bandera, también se llama bit stffy. ¿Por qué? A ver, fíjense esto con esto
+
+acá en los datos, ¿cuántas veces se puede repetir esto o algo parecido? Y entonces si yo inicié con esto y se repite de vuelta otro igual acá entre medios datos, se corta porque ya sabemos que que este que es un flag, ¿no? Y no es un flag. Entonces el transmisor cuando detecta cinco unos seguidos inserta un cero
+
+y el receptor cuando detecta cinco unos seguidos y después un cero se elimina el cero en el receptor. Acá podría ser que venga también un cero, pero no interesa. Después los 51 le pone un cer y acá va a llegar 51 00. Si fuera un cero que venía de allá y saca un cero y queda
+
+este el el mensaje limpio porque sabemos que no se va a cortar antes de de iniciar
+
+el FCS, un CRC16. Las direcciones es uno para cada única para cada secundaria de grupo cuando hay enlace multipunto o de difusión para enlace multipunto también. Y el bit P/F es de escrutin o de final. Full final. Full de escrutinio. Si es uno en una orden. Orden. Esta el comando. Esto es si es orden. Estamos para acá. Si es orden en una orden indica que el receptor debe confirmar. Si es un uno va en una respuesta indica que el receptor está confirmando.
+
+Acá tenemos un ejemplo de funcionamiento. Sme. Hay un le mando un subme. Después le conecta este SAME quiere decir establecimiento valenciado asíncrono ABM. [carraspeo][tos]
+
+Este y este UA que le contesta después de un time out manda el sambe de nuevo, llega el el UA, que es una confirmación no numerada, se produce una comunicación,
+
+el A le dice desconectamos y este le da la confirmación también UA.
+
+Ahora bien, le mando una trama de información
+
+00 y este le manda de información cer y el número que este número de secuencia de envío y este número de secuencia de recepción le dice cero, quiere decir que el cero recibió y que está esperando el uno. Entonces manda este el uno trampa de información, el uno 1 nuevamente manda el 2 1 y este le manda ese eh le manda una trama de información 1 3
+
+y este le manda 1 3 2. Este le manda 1 2 4. Así succesivamente hasta que el resultado listo cuatro. Ese es el intercambio. Esto puede ser este otro donde hay una línea eh eh ocupada, como dice acá, basic condition. RNR es receptor no preparado, así como RR es receptor listo, preparado. Este no preparado, le manda el 130. Este le dice que no está preparado para la cuatro. Este le contesta OP lo que sea, le vuelve a cruce ahí hasta que está ocupada, no hay comunicación prácticamente.
+
+Acá tenemos otra historia, algo más que tratar, que es el re o rechazo. 1 30
+
+1 Pero el cuatro no le llegó. Este le manda res 4 para que le mande el cu 150
+
+y este le dice que está listo para que receptor listo para el tres. Este lo mandó, se cortó antes.
+
+Receptor listo cero preguntas un full. Receptor listo para el 3 1 3. Y le dice que está esperando el cu. Pero lo importante que sepan que existe esto que es el reg de rechazo.
+
+Bueno, esto algo ya nombramos. La manual o estática asigna una dirección IP, una máquina,
+
+este y pero sobre todo también sirve para que no se conecten clientes no identificados. la asignación automática a una máquina cliente, eh, la primera vez que lo solicitó de HCP hasta el cliente libera, lo suele utilizar número de cliente, no varía demasiado. Y la dinámica es el único método que permite reutilizar dinámicamente las direcciones IP. El administrador de la red un rango de dirección IP y cada dispositivo conectado a la red está configurado para solicitar su propia dirección IP al servidor. ¿Cuándo lo hace? cuando se inicia la tarjeta de red
+
+y facilita esto la instalación de nuevas máquinas clientes.
+
+Acá tenemos el cliente al servidor Discovery, que es una solución DHCP realizada por un cliente para que este servidor de HCP le asigna una dirección IP al cliente.
+
+Eh, el DHCP, el otro que viene, que es el segundo offer, es el paquete. Esto es el paquete de respuesta del server HCP a un cliente de HCP. ante la asignación de los parámetros de HCT. Esto implica la dirección o involucra la dirección MAC de el cliente y DHCP request, el cliente selecciona la configuración de los paquetes recibidos y una vez más el cliente solicita una dirección IP específica que indicó el servidor y el normer es también se escribe ACK, que es lo que le dice que está aceptado, está funcionando.
+
+Parámetros configurable del DNS, el servidor nombres de dominio. Primero que nada, la dirección del servidor, [carraspeo] después el nombre, después la puerta de enlace, la dirección IP, la máscara de su red,
+
+el MTU, la unidad de transferencia máxima, los servidores de información de la red, servidores NIS
+
+y los nombres los servidores de Windows, en los nombres del servidor SMTP TFTP, MTP, todas esas cuestiones es lo que tengo que configurar en el exterior DNS. Enrutamiento IP. Bueno, esto es un ejemplo de cómo funcionaría esto. Aplicación, transporte. Acá corren protocolos, acá corren interfaces de aplicación, transporte, internet, red. va a la red,
+
+sale y entra al otro lado y que el rutamiento podemos definirlo con el proceso a través de cuál, dos estaciones
+
+se que se comunican, se encuentran y usan la mejor trayectoria de una redip sin importar la complejidad. Los componentes del rutado, como vemos acá, son determinar las trayectorias posibles, seleccionar la mejor trayectoria y enviar el paquete por una mejor ruta.
+
+El principio de enrutamiento tenemos tres procesos principales. El nodo final necesita saber cómo y cuándo comunicarse con un rutador, con un router. El router necesita saber cómo detener una ruta adecuada, ha una red remota. Eso es lo que yo decía, por default. Todo lo que el router no puede resolver lo mandaway por default y el router que sigue va o va a ser lo mismo o va a tener una solución para lo que necesita el router original. También el otro proceso es el rutador de la red destino. Necesito saber cómo conectarse al nodo final.
+
+Estos son los primeros protocolos de enrutamiento. Fue el routing information protocol, el RIP. Después salió el RIP B2, que no escala a cosas más importantes, más extensas, pero para las redes más amplias existen estos dos Open Shortes Pf
+
+y Intermediate System. intermedio sistema, intermedio, sistema intermedio. Y después el que figura í abajo, el último es el interior Gway Routing Protocol, que son el enhancet son los ambos de Cisco que también escala bien para eh la implementación de redes más grandes. [carraspeo] los protocolos dinámicos ya dijimos que es va asignando de acuerdo a una un paquete de de direcciones IP que tiene, facilitan el intercambio de función de los protocolos de enrutamiento y permiten al router compartir esa información en forma dinámica sobre redes remotas y agregar esta información automáticamente en su propias tablas de enrutamiento.
+
+Los enrutamientos dinámicos, los protocolos de enrutamiento dinámico. La el propósito es descubrir redes remotas, mantener la información de enrutamiento actualizada, seleccionar las mejor rutas en las redes de destino y tener una capacidad de encontrar una mejor ruta si la ruta actual deja estar disponible. Se cortó un cable, se cortó una fibra y bueno, los routers van a tratar de los protocolos de enrutamiento dinámico van a tratar de solucionar el tema.
+
+Eh, el rodamiento estático igual se usa en las redes de actuales. Si bien el dinámico tiene múltiples ventajas en comparación con el estático. Pero si yo tengo eh una red que comunica Medran 951 con el campus y la tengo con rutamiento estático, ya no puede nadie entrar ni salir nada, todos entran por el mismo lugar y es una forma de de mantener la seguridad. Pero de hecho las redes usan una combinación de rutamiento estático y dinámico.
+
+Acá tenemos un ejemplo un resumencito, la complejidad de la configuración, los recursos, más seguro, menos seguro, bueno, lo verán después.
+
+Los protocolos en rutamiento dinámico, tenemos el RIP,
+
+es interior por distancia. Después vamos a a ver qué es esto de vector distancia.
+
+Eh, el IGRP enamorio interior productor instancia rellada por Cisco, ya prácticamente no se usa el OSPF, enrotamiento interior
+
+del estado del enlace LIGRP, protocolo avanzado en rotamiento interior por vector de distancia desarrollado por Cisco y BGP. P protocolo de enrutamiento exterior,
+
+este desarrollado con vector de ruta
+
+IGP y EGP, interior gway protocol, exterior gateway protocol. Un sistema autónomo o un dominio enrutamiento es un conjunto router que se encuentra una administración en común. Ejemplos típicos de la red interna de una empresa y la de un proveedor de servicio de internet. Como internet se basa en ese concepto de sistema autónomo, requiere dos protocolos de enrutamiento, uno enrutamiento interior y otro enrutamiento exterior. Estos son IGP se usan para el rutamiento sistemas intrautón enrutamiento dentro de un sistema autónomo y el EGP para enrutamiento de sistemas intrautón enrutamiento de sistemas autónomos.
+
+Bueno, comparación entre los protocolos de enrutamiento IGP y EGP. Acá tenemos un sistema autónomo, acá tenemos otro sistema autónomo. Acá dentro corre un IGP, ¿ves? Que hay interior, como dice acá abajo, cualquiera de estos. Y hay un BGP que comunica ambos sistemas autónomos.
+
+Las características, los IGP se utilizan para las redes bajo el control de una única eh organización.
+
+Un sistema autónomo está compuesto por varias redes individuales y el IGP se utiliza para enrutar dentro del sistema autónomo. Esto acá dentro
+
+y también se usa para enrutar dentro de las propias redes individuales. Los EGP [carraspeo] están diseñados para el uso entre diferentes sistemas autónomos. están controlados por distintas administraciones. El BGP es el único actualmente viable y es el protocolo de rotamiento que uso internet. [carraspeo] El BGP es un protocolo de vector de ruta que puede utilizar muchos atributos diferentes para medir las rutas.
+
+Vctor distancia y estado de enlace. Los protocolos eh de interiores IGP se pueden clasificar de dos tipos: protocolos de enrutamiento o vector distancia y protocolo de enrutamiento de estado de enlace.
+
+El primero, protocolo de enrutamiento por vector de distancia. [resoplido] El vector de distancia significa que las rutas son publicadas como vectores de distancia y dirección. La distancia se define en términos de una métrica como el conteo de saltos. Así, ¿qué es salto? Los saltos, cantidad de router que pasa. Y la dirección es simplemente el router el siguiente salto o la interfaz de salida. Los protocolos por vector instancia generalmente utilizan el algoritmo Belman Ford para determinar la la mejor determinación de ruta, determinación de la ruta. Eso lo van a ver con el jefe de trabajo práctico en su momento. El ver algunos protocolos por vector distancia envían en forma periódica tablas de enrutamiento completas a todos los vecinos conectados.
+
+[carraspeo] En las redes muy extensas, estas actualizaciones enrutamiento pueden llegar a ser enormes y provocar tráfico importante entre los enlaces. Protocolos de enrutamiento de estado en enlace. Un router configurado de esta forma puede crear una vista completa, una topología completa de red. al reunir información proveniente de todos los demás rutas. Para continuar la este la analogía esta, el uso de un protocolo en rutamiento est enlace como un mapa completo y la topología de red como si tuviera letrero a lo largo de la ruta el origen de destino hasta el final.
+
+un router de estar enlace. Usa la información de est enlace para crear la topología y selecciones de destino en la topología determinada.
+
+Protocolo de enrutamiento con clase.
+
+No envían información de la máscara de sus red en las actualizaciones de enrutamiento. Los primeros protocolos de enrutamiento en clase fueron el RIP. Las direcciones de red se asignaban en función de las clases clase A, B o C de las Recuerdan las clases de direcciones IP. No era necesario que un protocolo de enrutamiento incluyera una máscara de sub en la actualización de enrutamiento, porque la máscara de red podía terminarse en función del primer obteto en la dirección de red. Los protocolos enrutamiento con clase aún pueden usarse en alguna de las redes actuales.
+
+Protocolo sin clase. Los protocolos sin clase incluyen la máscara de subred con la dirección de red en las declaraciones de enrutamiento. Las redes de la actualidad ya no se asignan en función de las clases y la máscara de su red no puede asignarse, no determinarse según el primer obeto. La mayoría de las redes de la actualidad requieren protocolo de emprotamiento sin clase porque admiten BLSM.
+
+Bueno, acá tenemos sin clase la máscara sobre la misma en toda la topología. Fíjense que todo es barra24 y sin clase barra 27/3 27 30 puede variar la máscara de su red. Una métrica, ¿para qué usamos una métrica nosotros? para seleccionar la mejor ruta, dado que el protocolo de enrutamiento tiene que poder evaluar y diferenciar entre las rutas disponibles. Métrica es un valor utilizado por los protocolos de enrutamiento para asignar costos a fin de alcanzar las redes remotas. La métrica se utiliza para determinar qué ruta es más preferible cuando existen múltiples rutas hacia la misma red remota.
+
+Acá tenemos para R3, este, la red 17216 30 se encuentra
+
+a dos saltos, dos rutas de distancia. Esta es la ruta
+
+1 2. Esta es la red.
+
+Podría ser acá. Bueno, pero lo tengo a dos porque la cabecera lo tengo, la primera que tiene lo tengo ahí. Esta está sola un salto, pero acá tengo un salto acá y otro salto acá. Dos saltos.
+
+Los protocolos estos de enrutamiento IP incluyen esto, cono de saltos, ancho de banda, también tiene para seleccionar la ruta, carga, según como este la ruta, retardo, el tiempo que tiene el paquete en atravesar una ruta, la confiabilidad
+
+y el costo que puede ser determinado por el Cisco iOS o por el aderiador de la red para indicar la preferencia de una ruta. Acá hay un apuntecito también, distancia administrativa y métrica para que amplí un poquito. La métrica para cada protocolo de enrutamiento para el RIP es con todo de salto para el IGRP EGRP
+
+ancho de banda, retardo confiabilidad y carga, aunque por defecto solo se usa el ancho de banda y el retardo para estado este ISIS, ISIS y OSPF, el costo, la mejor ruta según el costo más bajo.
+
+Y los protocolos de rutamiento lo que buscan es la mejor ruta en base a la ruta con la métrica más baja. El costo acá puede estar varias formas, eh, anchos de banda, cantidad de routers, etcétera.
+
+Acá tenemos que R2 tiene una ruta hacia la red eh 80 acá a esta
+
+que se encuentra a dos altos de distancia uno dos porque ya no tiene el otro ro Síutando
+
+el protocolo de enrutamiento RIP.
+
+La métrica asociada a una ruta terminada se puede visualizar utilizando el comando y hiper routad. El valor de la métrica es el segundo valor en los corchetes para una entrada de la tabla en rotamiento. Y en la figura, como vemos ahí, acá
+
+R2 acá y una ruta que se encuentra a dos altos de distancia. Este último está a dos altos de distancia.
+
+Acá tengo una métrica entre RIP y OSPF. Para RIP dice, "Uh, tengo a un salto, mando por acá. Resulta que esto es 128 Kbit enchu de banda. Acá tengo 100, 100. Paraf es preferible hacer tres veces que voy a mandar mucho mayor volumen de información.
+
+Paso del A C, al D y al B reciente. Si paso por acá y es un volumen eh información muy grande, va a demorar mucho más.
+
+Rutas estáticas. Bueno, cuando un administrador quiere configurar que sea la que siempre salga por ahí, se pone este utilizando un una ruta, se asigna esa ruta para ese para ese servicio y listo.
+
+Bueno, ustedes ya vieron algo se acordar de arquitectura de computadoras. Tenemos la CPU, una unidad central de proceso, ejecuta operaciones del sistema operativo, inicializa el sistema, funciona enrutamiento, control de interfaz de red. La CPU propiamente he dicho es un microprocesador. Los random router pueden tener varias CPU. La memoria RAM, memoria de acceso aleatorio para la información de las rutas de las tablas de enrutamiento.
+
+La RAM proporciona espacio de tiempo de ejecución para el software y el contenido de la RAM se pierde cuando se apaga la unidad. La RAM es una memoria de acceso aleatori dinámica y puede utilizarse agregando más módulos de memoria en línea.
+
+Eh, lo otro ya los buses, la interface. Acá tenemos un ejemplo de la de una madre. Acá tenemos también la flash estaba en el listado anterior, la flash, la NB RAM, la memoria eh no aleatoria, perdón, de acceso aleatorio, pero no volátil.
+
+los buses, estos negros que vemos acá, la memoria ROM,
+
+las distintas interfaces, cómo se va a comunicar con quién ahí.
+
+Y acá tenemos un ejemplo, un switch POE que es power over Ethernet, o sea, que no preciso mandarle un cable de corriente ahí, sino que al llegarle por el el RJ45, por un par de conductores tiene alimentación eléctrica. Acá está lo que permite este flex y acá está el el
+
+la hoja de datos.
+
+Y bueno, gente, con esto con esto último de la hemos visto un poquito más
+
+este lo vamos ya ver.
+
+Bueno, no hay ninguna consulta ni nada, será hasta la próxima. Nos vemos el viernes próximo. Misma hora 15 7 18. El viernes 18 a las 19 horas. Y nada, hay algo eh, ahora que me parece que veo,
+
+bueno, me llegó por ahí un rebote de me parece que la pell era rama. Entonces yo dije, bueno, este estará se fue cambió de curso, qué sé yo, este, pero me parece que están listado. Acabo acabo de mirar el chequero listado y lo veo. Si es así, mandame un mail, Rama, si estás escuchando, que te cargue de nuevo, porque si no, si no entra igual por el vínculo no va a cambiar. Pero yo para que no te lleguen ver al cohete, recordándote, te saqué el listado de alumnos. Sí. No del aula, sino del en el aula estoy todavía. No.

@@ -1,0 +1,345 @@
+Estamos prácticamente en 10 minutos, así que ya vamos a empezar. Este Yo se lo subí a esto, está en la página del PowerPoint este. Esta presentación, por si quieren anotar algo, y bueno. Mañana o el lunes voy a subir la de la clase propia. No voy por ahí que se sube.
+
+Bueno, 19:00 en punto. Vamos a dedicarnos a lo nuestro, así después disfrutamos el fin de semana.
+
+Stack de protocolos TCP/IP. Internet corre sobre esto. Vamos a hablar de la arquitectura TCP/IP, del protocolo IP, direccionamiento con y sin clase.
+
+Definiciones, como para ir acotando las cuestiones. Internet es un conjunto de redes heterogéneas, dispersas e interconectadas vía TCP/IP. TCP/IP es un conjunto de protocolos, también se dice stack de protocolos. Conjunto de protocolos que permiten la interconexión entre estas redes heterogéneas que hablamos en el punto anterior. Y los protocolos son quienes proporcionan las reglas de comunicación sin depender del hardware de la red.
+
+Acá tenemos el modelo OSI, el modelo TCP/IP, y los protocolos, algunos de los protocolos que corren a nivel de las aplicaciones, FTP, File Transfer Protocol, Telnet, SMTP, Simple Mail eh
+
+Transfer Protocol, el correo electrónico, el servidor de nombres de dominio DNS, Simple Network Management Protocol, que es el el protocolo de gestión, TCP y UDP a nivel de la capa de transporte, IP, ICMP y GMP, que lo vamos a ver, y a nivel de la capa 2, ARP y RARP.
+
+Modelo cliente-servidor, es una aplicación distribuida, las tareas se reparten entre proveedores de servicio llamados servidores y los demandantes llamados clientes. Un cliente Un cliente realiza peticiones a otro programa y el servidor el servidor es quien da la respuesta.
+
+Acá tenemos un poco más de de protocolos, el login, el Trivial FTP, el boot, que nombramos antes, el ping, bueno, TCP y UDP, los que vimos en la capa 3, los que vimos en la capa 2.
+
+El Internet Protocol, protocolo de Internet,
+
+¿qué nos define?
+
+La unidad básica para la transferencia de datos, la selección de rutas, o sea, el ruteo, y nos define un conjunto de reglas para la entrega de paquetes no confiables, ¿sí? Es sumamente no confiable, de best effort, así es el
+
+protocolo IP. Toma los datos del nivel superior, TCP o UDP, los inserta
+
+en Internet como datagramas o paquetes, datagrama y paquete para nosotros es lo mismo, y usa ICMP para reportar errores.
+
+Se basa en un servicio eh no orientado a conexión y no confiable, es sin validación.
+
+No se garantiza que el datagrama llegue a a destino.
+
+Es un servicio de entrega de mejor esfuerzo, best effort. Los datagramas son independientes, no hay relación entre ellos. Los datagramas viajan por distintas redes, Ethernet, FDDI, redes, etcétera.
+
+Podemos simplificar esto. Cuando yo hice enter y salió el paquete, pensando que son es uno, son varios paquetes, obviamente, de acuerdo al volumen de información que yo vaya a enviar, yo ya perdí todo el control de ese paquete. ¿Por dónde va, cómo va? Ese es un problema de los routers y cómo llega.
+
+Para eso los paquetes tienen un número, ahora vamos a ver cómo es la estructura, número de secuencia para poder el receptor de todos esos paquetes ir organizándolos.
+
+Bueno. Hay una relación entre el datagrama, que tiene dirección IP, y la trama, la que tiene dirección MAC. La dirección IP está manejada por software, en cambio, las direcciones MAC es reconocida por hardware, es la dirección de la placa de red.
+
+Hay que ver el tamaño del datagrama y el tamaño de la trama según el tipo de LAN. La adaptación más más confiable para la comunicación es la fragmentación. ¿Qué es eso? Yo tengo un volumen de información, lo corto en tantos pedacitos sea necesario para poder enviarlos. A ver.
+
+Acá es lo que ocurre. Tengo una ideal, encabezado, todos los datos, baja, le coloco el encabezado y sale. Bueno. En lo real no. Porque si este volumen no va a pasar por la red, por cuestiones que ya las vamos a ver, esto hay que fragmentar, contarlo en tantos pedazos para que pueda pasar.
+
+MTU. Es otro problema que hay también por lo cual exige se exige una fragmentación. El MTU es la máxima unidad de transferencia de una red. Maximum transfer unit. Es el tamaño máximo del campo de datos que la PDU de la red
+
+de la PDU de la red donde se que se encapsula el datagrama. ¿Sí? O sea que si esto es mayor que la PDU, se va a cortar en tantos pedazos como pueda ser para que entre. Para Ethernet tenemos 1500 bytes, estos son bytes. FDI 4000 470. Token bus y token ring esas cantidades, X25 olvídense. Pero existía también. Frame relay 4090 bytes y ATM 48 bytes. El datagrama IP o paquete IP más común son 65 515 bytes.
+
+La fragmentación es que el tamaño del datagrama es un problema por los MTU de las distintas redes y la solución a esto es la fragmentación. Insisto, es dividir el datagrama en partes, o sea, datagramas más pequeñas que pueden encapsularse en en MTU más pequeñas.
+
+Acá tenemos el formato del datagrama.
+
+Vamos acá a la versión. La versión del IP, si es IP versión 4, versión 5, versión 6.
+
+Esto que sigue
+
+es la longitud del encabezado. También en palabras de 32 bits. Máximo 16 palabras de 64 bytes. Más de 16 palabras son 64 bytes, pues son palabras de 32 bits.
+
+Eh, el tipo de servicio
+
+nos implica los servicios diferenciados y dos bits reservados para notificación explícita de congestión. O sea, que tenemos seis bits de estos ocho para marcar distintos tipos de servicio, pero hay dos para notificar si hay congestión. La longitud total se mide en octetos, incluye encabezado y datos. El máximo es de, como dijimos, 600, que acá abajo está, 65,535 bytes. El encabezado del datagrama son 20 bytes, como lo van también viendo acá.
+
+Bueno, la identificación es identificar e identificar al datagrama por el tema de la fragmentación. Todo lo que tiene el mismo número son todos pertenecen al mismo volumen de información original.
+
+Desplazamiento de fragmento.
+
+El 13 bit indica la ubicación del fragmento. Miren un pequeño ejemplito ahí. Ubicación del fragmento en el datagrama IP original de los datos ya cargados en el fragmento. Es un múltiplo de byte. Los flag
+
+Estas banderas, tres, controlan la fragmentación, dando información. No fragmentar o más fragmentos.
+
+El Es importante el bit no fragmentar.
+
+El DF, que llamamos don't fragment,
+
+ya que determina si se permite la fragmentación de un paquete. Hay un bit cero que está reservado y siempre se define en cero. El bit uno es el bit DF cero, puede fragmentar, more fragment, o no fragmentar. El bit dos, MF cero, último fragmento, o un uno, no fragmentar.
+
+La fragmentación de IP Bueno, a ver, esto, los campos ya los vimos, son los campos de estos. En la fragmentación de IP y ensamblado.
+
+Reensamblado. El protocolo IP se utiliza una variedad de enlaces de transmisión unidireccionales. La longitud máxima del datagrama es 64 K, como vimos ya, 65 y 500 y pico, 64 para poder este eh hacer el cálculo más fácil. Pero la mayoría de los enlaces tienen un límite más pequeño, pues tiene una MTU más pequeña también. El valor del MTU depende de los enlaces de transmisión. El diseño IP tiene en cuenta las diferencias de MTU al permitir que los routers fragmenten el datagrama IP como sea necesario. La estación receptora se encarga de ensam- reensamblar los fragmentos del datagrama IP al tamaño completo original.
+
+La fragmentación IP implica una división del datagrama en diferentes partes puestas a ensamblarse más adelante.
+
+No. Me fui.
+
+Espera un poquito. Los campos IP source, el IP de origen, el destino, la identificación, longitud total, desplazamiento de fragmento, los indicadores no fragmento, el encabezado IP que se usan para fragmentar y reensamblar el IP.
+
+Estos son.
+
+El fragmento, viene acá,
+
+destino,
+
+source destination address, o sea, el el el originador y el destinatario, el protocolo y demás. Esto es el encabezado IP.
+
+Eh, profe. Sí. Disculpe, ahí Por favor. Eh, sí, ahí la la subcapa eh, que es la de MAC eh vendría después a ser otro No, esto esto es lo que tengo de datagrama IP. Baja y tengo header y tráiler de de capa 2. Esto es MAC y el tráiler de capa 2, que normalmente es un CRC. Ah, okay. Okay. ¿Está bien? Bien. Lo que yo quiero mostrar es que estos 20 bytes cuando nosotros después cortemos y eso, tengo una un información de eh, no sé, 100 bytes. Y la máxima unidad de transferencia es de 10. Ah, listo, son No, no, es muy poco feliz este es de 1000 bytes y la máxima unidad de transferencia es de 10 bytes. Bueno, yo lo corto en en tantos pedazos de 100. No, porque cada pedazo de 100 va a ser de 80, porque yo voy a poner los 20 de encabezado.
+
+¿Sí?
+
+Yo corto en pedacitos de 100 pues no voy a poder si tengo 100 de de MTU. Voy a tener que mandar pedazos de 80 más los 20 de encabezado. ¿Se entiende?
+
+Sí, profe. Bueno, parémoslo. Acá tenemos un ejemplo de fragmentación en lo que es el IP fragment.
+
+Este ejemplo. Yo tengo esto
+
+y voy a tener eh, que mandar esto fragmentado en en fragmentos de 1500 como máximo. En realidad esto no son 1500 de información de acá. Son 1480 porque 20 son de encabezado. Sí.
+
+Y uno suma la longitud de los fragmentos, supera los 5140. ¿Por qué? Porque acá le tengo que sacar los 80 que son los los 20 * 4 de cada de cada header que le que le agregué.
+
+Ahora bien, el primero no tiene desplazamiento de offset fragmento porque es el primero. Y acá él me dice en los bits eso me dice que
+
+eh puede fragmentar o no, pero acá me dice que viene otro más. Es cero. Al segundo, 1500
+
+185. ¿Qué es esto 185?
+
+Que es 185 * 8 = 1480. Quiere decir que lo que realmente va acá son 1480 por estos 1520 de header.
+
+Si bien la longitud del fragmento es 1500, acá va 1480 y 185 * 8.
+
+El tercer fragmento tiene desplazamiento 370. 370 * 8 es 2960. La porción de datos de este fragmento comienza en los 2960 bytes en el datagrama IP original. O sea, que del IP original tenemos uno que es
+
+este comienza a los 1480 a partir de los 1480 comienza este. Cuando este termina entra al este 2960.
+
+Y el cuarto tiene 555, que es 555 * 8 = 4440. Que significa que la porción de datos de este fragmento comienza en los 4440 bytes
+
+Del en del eh datagrama original. Profe, no me queda claro por qué hay que multiplicar por 8. Pues son bytes.
+
+Un 8 bits es un byte.
+
+Y es la forma que lo arman el protocolo. Bueno. Todo fíjense tiene la misma la misma Lo que me va a decir esto es dónde va agregado. Este como es el primero va a partir de 0. 1480. Este otro 1480 pero
+
+Este Entra 2960, estoy haciendo la cuentita acá en un papel. Porque 1480 más los 1480 de acá. Eso más 2960, ya perdí 40 bytes De los 3000 estos.
+
+¿Sí? El otro También son 1500 pero Si yo saco acá ya le estoy sacando 60 bytes en total. Con lo cual me da de los 4500 Menos 60 4440.
+
+Y el último Que son nada más que 700.
+
+700 menos 20 me queda Este 680, bueno si lo calculo así me va a quedar este Eh 555 para el número que va a poner ahí. El protocolo está armado así. Perfecto, gracias. Bueno, por favor.
+
+Bueno. Descripción de los campos.
+
+Esto. Acá. TTL, time to live, tiempo de vida. Es el tiempo en segundos que el datagrama tiene permitido permanecer en la internet y luego se elimina. Este TTL se coloca como un tiempo, pero esto va disminuyendo en uno cada vez que pasa por un router. Porque la idea es que no quede un paquete dando vueltas en la red y pase y pase y no sale nunca. Llega un momento que el TTL se viene a cero, el cuando le llega en cero a un este o en uno a un router, ¡plack! Lo anula y se acabó el problema. Deja de dar vueltas por toda la red.
+
+Este protocolo del header del IP, lo que me está marcando es el protocolo de la capa superior. Protocolo de capa superior, como el dibujito este, puede ser TCP o UDP.
+
+Que son los números para el protocolo que va a colocar en ese lugar.
+
+El header checksum, checksum del header, es la suma de verificación del encabezado, es todo otro. Detecta errores.
+
+Las opciones no se emplea, solo se usa para pruebas de red o depuración y tiene longitud variable. Por eso van a encontrar que muy alegremente se dice el header de IP sin opciones son 20 bytes, que es lo que tiene acá. Y después pad o relleno asegura que la cabecera tenga un múltiplo de 32 bits. Normalmente no se usan, pero están en el protocolo, están pensados de esa manera.
+
+Esto de dejarle Acá tienen la parte el router en encapsulación y demás, este, después van a tener más información sobre estas cosas. Lo de submeteo y demás van a tener el otro. Direcciones IP. Son las direcciones para internet que las administra un NIC, el Network Information Center. ¿Alguien sabe de quién depende en Argentina el Network Information Center? ¿De qué organismo?
+
+Bueno, cortito, de la Cancillería. Uno diría, pero del Enacom. Bueno, no no pertenece al Enacom, ni al Ministerio de Comunicaciones, que no hay en la Secretaría de Comunicaciones, lo que sea, no está. Bueno. Las direcciones IP utilizan 4 bytes, o sea, 32 bits, se representa en binario con cuatro números en decimal separados por puntos, es la forma más común, 192 168 124, por decir algo. Se compone de un identificador de clase, un número de red y un número de host. Cada dirección de red debe ser única. La dirección de host debe tener debe ser única dentro de la red.
+
+Si todos los bits del campo de host son uno, es una difusión dirigida a una determinada red.
+
+Hay que con colocar la parte de red. Ya vamos a ver más ejemplos un poquito enseguida. Si todos los bits, este, del campo de red o de host son cero, es el loopback. Uno usado mucho, ahora en las redes andan muy bien, pero uno ponía 127 eh {punto} 0 {punto} 0 {punto} 0 y probaba a andaba el loop con con el mismo servidor.
+
+Ya prácticamente no se usa. Eh, práctica para manejo de direcciones. Acá tenemos, eh, esto es pero no sé cómo se van a arreglar con el jefe de trabajos prácticos y demás cuestiones. Yo cuando me ha tocado hacer de para mi cabeza todo lo que ocupa lo que es si lo tengo en a mano en otro lado y me puedo probar en la cabeza de la memoria no tiene sentido. Uno con esto puede tener una idea de cosas y hacer cálculos y demás, decir, le voy la dirección IP 124 de 68.4.20.
+
+¿A qué red pertenece o cómo subnetea? Puedes tú poner 10 host y dos Sí, es muy lindo. Viene el IP calculator, viene software que hay ahí gratis. También uno va y dice, "Tírame la dirección de red." Le pide las condiciones y se lo dan en un momento. Es muy loable empezar a hacerlo a mano y calcularse, sí, es muy lindo, pero yo no estoy de acuerdo en eso porque creo que ocupa tiempo y esfuerzo cuando alguien me lo soluciona. Y no es guía.
+
+Tipo de direcciones IP. Tipo A, comienzan con cero. Tenemos esto estos ocho primeros para el número de red, el resto para el host. Tipo B, donde tenemos uno cero y nos quedan
+
+eh, seis que son cuatro y cuatro. Eh, perdón, ocho y cuatro 12 para para la dirección de red y seis para host. Acá tenemos para red. Multidifusión para uso posterior el tipo E. La red del primer octeto en decimal si es de 1 al 126 es clase A.
+
+De 128 a 190 y 1 clase B, 192 y acá está escrito, bueno, las clases de las cosas.
+
+Cuadro comparativo en clase A por tener cantidad de redes, cantidad de host, menor dirección, mayor dirección. Repásenlo a esto. Yo saber todas estas cosas de memoria para mí es este es perder el tiempo y que yo nunca lo voy a preguntar, pero arréglenselo en el jefe de trabajos prácticos.
+
+Este, bueno, ahí tienen esto.
+
+¿Qué más? ¿Algo más? Sí. Una dirección de red identifica a una conexión de red. Si un host se mueve de una red a la otra, su dirección IP debe cambiar. A ver, ¿cómo es esto? Yo llego a la oficina
+
+y de ahora vieron que ya no son más escritorios para como era antes y demás, después de la cuarentena son especie de de filas largas donde uno llega y enchufa la notebook, se loguea con el teléfono y tiene el horario que está ahí, te está logueado con el ese es el su teléfono, el que ya el número que tiene asignado y la conexión es Pero vienen y me dicen, "Che, no, nos vamos a reunir en la en el segundo piso porque voy a la otra mesa que está más atrás." Desenchufé mi notebook, cuando lo enchufo en el otro lugar, automáticamente me de me da otra el servidor me asigna otra dirección IP.
+
+El router maneja una tabla de direcciones para enrutamiento. Cada puerto LAN y WAN del router tiene su propia dirección IP.
+
+Puede existir algo que se llama host multihome. Es aquel host, aquella computadora que tiene más de una conexión física. Y esto implica una dirección IP por cada una.
+
+Acá tenemos este Ethernet 128 10 0 0. Acá están seteadas las direcciones de red para cada una. A partir de esta otra cómo sale por el otro.
+
+Subredes. Esto es lo que les digo, diseño de subredes, determinar la cantidad de subredes, cantidad de host por subred, máscara de subred, dirección única para cada subred, el rango de direcciones de host variable. Muy lindo. Esto es para el mejor aprovechamiento de las grandes redes, dividiendo en redes más pequeñas.
+
+Bueno, el tema de máscara es similar a la dirección IP, tienen 32 bits. Los unos de la máscara son de red y de subred y los ceros de la máscara son de host.
+
+O sea, que los unos de red, subred, acá también, y el cero de host.
+
+Acá tenemos ejemplo con red y con subred. ¿Por qué cómo funciona esto de la máscara? Le da, lo enmascara, dice. Llega un paquete con una dirección IP, el router le aplica la máscara y sabe para qué dirección interna de él viene. Porque viene eso con la dirección del router. Pero dentro de la red de ese router está en la punta, tiene otra dirección y para eso se aplica la máscara.
+
+Acá tenemos la subneteada.
+
+Los pasos. Determinar la cantidad de subredes, la cantidad de host por subred, la máscara de subred, dirección única por cada subred, dirección de host válida. Muy bien. Eso a mano lleva tiempo, posibilidades de equivocarse, todo. El tema es que ustedes bajan el IP Calculator, les hace todo de un saque y supongo que si ustedes si alguno está trabajando con la red me dice, "Ah, yo estoy usando tal cosa y tal cosa", que existen, que yo por ahí no las conozco o las vi alguna vez y no las vi más, pero para mi cabeza es preferible hacerlo con una maquinitas, un un software de cálculo que me lo haga bien y y no correr riesgo de equivocarme y además perder tiempo, pero bueno, es cuestión de cada uno.
+
+Bueno, acá dice qué máscara va a tener, un ejercicio, estos son ejercicios típicos que lo van a hacer en el en en el en el trabajo práctico. Tenemos la máscara variable. La BLSM
+
+permite un uso más eficiente asignando distintas máscaras a las interfaces del router. Acá tenemos Acá hay otro, ¿eh? Calculadora de subredes BLSM.
+
+Que este, como está puesto ahí con otra letra y demás, en alguna clase me dice, "Ah, yo uso esto", bueno, yo lo agregué ahí para que vaya quedando. Insisto, para mí es más fácil hacerlo bien así y no estar una hora con papel y lápiz haciéndolo. Pero son criterios de cada uno. Bueno. Direccionamiento sin clase CIDR. Están asignando asignan bloques de direcciones sin perder en ese ninguna clase. La máscara en notación de serie eh CIDR es A ver.
+
+La máscara Acá está la máscara. Esto, máscara de máscara de red, barra N.
+
+Que ese N son los
+
+este los bits que yo cambié para poder hacer la máscara. También lo van a hacer en el ejercicio, pero bueno, eh sepan que van a poner barra tanto. Barra 24, pues tomé 24 bits. Barra 16, tomé 16 bits. Barra 4, pues tomé 4 bits. Para modificar las direcciones.
+
+Eh bueno, nada, esto.
+
+El resumen de la técnica de subred permite que una misma dirección de red identifique a varias redes físicas. Por eso, es la la la red física es la que viene y a partir de ahí van a todas las redes que están atrás de esa misma red, ¿no?
+
+Eh exige algoritmos modificados de ruteo que contengan tablas con máscara de subred. Cambia la interpretación de la dirección IP, red, subred y host. Y nos permite una mayor flexibilidad ya que puede ser independiente de cada red física.
+
+El concepto de direccionamiento jerárquico es igual al ruteo jerárquico porque facilita el proceso de ruteo.
+
+Después tenemos algo más que es el concepto de superred que ven acá. Usa varias direcciones de red por la misma organización, varias clases C.
+
+Y el ruteo se hace por medio de dirección IP y número de conteo, o sea, direcciones contiguas.
+
+De esto hablamos. Miren, protocolos para resolución de direcciones, ARP y RARP. El ARP es Address Resolution Protocol y el RARP es Reverse Address Resolution Protocol. El ARP permite conocer la dirección MAC a través de su dirección IP. Se manda un broadcast MAC o la dirección IP destino para que el destino responda con su dirección MAC y se registra en la tabla ARP de host.
+
+Y el RARP permite que una máquina conozca su dirección IP mediante su dirección MAC. Transmite una solicitud para que el servidor RARP correspondiente a la máquina le responda dándole la dirección MAC. Para un lado o para el otro.
+
+Datagrama UDP. Fíjense que es muy simple, tiene un puerto origen, así como IP usa direcciones IP, las el UDP y el TCP utilizan puertos. Puerto origen es opcional, puede valer cero si no se utiliza. Puerto destino tiene una longitud del mensaje UDP.
+
+Cuenta la misma, la cuenta la cantidad de octetos en cabezado y datos. El valor mínimo es de ocho y el máximo 65,515. Y una suma de verificación que no se usa vale cero, pero normalmente se usa, incluye la IP origen, la IP destino, lo saca eso, obviamente, del datagrama IP, el encabezado y los datos del datagrama UDP.
+
+Transmission Control Protocol, TCP.
+
+Es un protocolo de transferencia confiable, así como decíamos que IP es de extremo a extremo, si no confiable, no, este es confiable y es de extremo a extremo. Use IP como nivel 3, recibe en la capa de transporte, la PDU se denomina segmento TCP, con esto repetimos, tengo segmentos TCP, paquetes o datagramas IP y tramas de este, de capa MAC o de capa 2.
+
+Realiza multiplexado y multiplexado, eh, multiplexado y demultiplexado de puertos, maneja conexiones full dúplex, usa una suma de verificación y un número de secuencia para seguridad y ordenamiento. La suma incluye direcciones IP, el datagrama, el encabezamiento y los datos del segmento.
+
+Es orientado a la conexión.
+
+Hace control de flujo por medio del método de ventana deslizante. El parámetro de unidad de ventana es variable, la ventana deslizante que vimos en comunicaciones, y también maneja el timeout para retransmisión y para retrasos variables.
+
+Acá tenemos puerto origen, puerto destino, número de secuencia, número de acuse de recibo.
+
+Las opciones son variables.
+
+Eh, la suma de verificación incluye control del de dirección IP de origen y destino.
+
+El código de bit, este es el propósito y contenido del segmento.
+
+Y la longitud de la cabecera es múltiplo de 32 bits.
+
+Acá tenemos los puertos
+
+más conocidos. Para el correo es el puerto 25, para el internet el 23, para el FTP 21, DNS 53, 69, 50, ahí tienen para lo que sea. Utilizan un número de puerto para identificar el destino final.
+
+En una conexión TCP se identifica por un par de puntos extremos. Cada punto extremo está definido por una dirección IP y un número de puerto. El número de puerto de una máquina puede ser compartida por varias conexiones.
+
+Acá tenemos los eh well known, algo así, en los puertos más conocidos. Después lo miran cuando tomen esto para ver si lo tenían inclusive cuál para qué se usan todos esos puertos.
+
+Control de errores para IP, UDP y TCP, una comparación. El IP solo detecta en el header. El UDP en el datagrama UDP y la dirección IP. Y el TCP en el segmento completo TCP más la dirección IP. El IP no hace corrección ni recuperación, el UDP tampoco. Y el TCP sí, del segmento TCP y la dirección IP.
+
+Acá tenemos lo que sale en la LAN.
+
+Llega al router. Este X25 ha quedado de clases anteriores, olvídense que se ha muerto, ya no se usa más, pero es válido un protocolo de capa 3.
+
+Sale por la red.
+
+Sube.
+
+Y da la vuelta. Y acá están los tiempos que ocurren cada tiempo, T1, T2, lo que dice ahí. Para que no estén aburridos el fin de semana.
+
+Esto ya lo vimos, está repetido. Bueno, las distintas aplicaciones ya las nombramos.
+
+Pero podemos este, a ver. El Telnet es una conexión remota a través de internet con autenticación. Ahora prácticamente yo no he visto que se use ni nada ni lo he usado yo. Pero antes yo quería conectarme con una máquina, me conectaba con Telnet. Pedía permiso que el dueño de la máquina arreglase una reparación, a ver qué le hará algo al software, alguna cosa. A ver si dentro por Telnet autorizaba, el dueño de la máquina autorizaba, yo hacía lo que quería y después salía.
+
+Telnet con TCP obviamente, el FTP, transferencia archivos, copiado archivos con autenticación. El trivial es más económico y menos sofisticado que el que el FTP. Y es sin autenticación.
+
+El T, la T esta primera es trivial. El servidor de nombres de dominio, el DNS traduce la dirección IP a un nombre significativo de alto nivel.
+
+El ping con el ICMP envía una solicitud de eco, captura la respuesta y realiza una estadística.
+
+El boot es para mejorar el RAR. Especifica aspectos de arranque como dirección IP de máquina, ruteador, servidor, etcétera. DHCP que sale con UDP es protocolo para la confección de host dinámica. Asigna direcciones IP por servidor a cliente.
+
+SMTP transferencia de correo simple, Simple Mail Transfer Protocol. Especifica el formato de mensajes y utiliza el el lenguaje ASCII. SNMP es protocolo de administración de red simple. Define relación administrativa entre routers, formas, significado de los mensajes, entre otros aspectos.
+
+IP IP versión 6 ¿Por qué? Eh, una nueva generación de IP. Y porque las las direcciones se agotaron. Cuando esto salió eran computadoras. Ahora no hay aparatos que tengan dirección IP. Todos los teléfonos, los televisores, las tablets, las computadoras, este eh, cualquier aplicación en una máquina de estas, robot redondo que que barre, demás cuestiones. ¿Cuáles son las mejoras que permitió esto? Bueno, el IP dijimos que, no sé si lo dije, son un campo de direcciones de 32 bits.
+
+Este, la mejoras son espacio de direcciones empleados, son 128 bits para dirección contra los 32 del IP versión 4. Formato de encabezado flexible, mecanismo de opciones mejorado.
+
+Funcionalidad para asignación de recursos.
+
+La estructura.
+
+La PDU sigue siendo paquete y sigue siendo sin conexión. La longitud física sí es de 40 octetos como dice acá.
+
+Y las cabeceras de extensión en orden según recomendación de estándar.
+
+Tenemos opciones de salto a salto, opciones para el destino. Encaminamiento, fragmentación, autenticación, encapsulado de la carga de seguridad, opciones para el destino destino final.
+
+Acá tenemos un ejemplo.
+
+Tenemos el header de 40 octetos. 40 bytes.
+
+Tenemos cabeceras de extensión opcionales, estas.
+
+Tenemos el cuerpo del paquete TCP. El campo de cabecera siguiente identifica y la cabecera que viene.
+
+Este header de
+
+este el paquete IP, acuérdense que en la versión 6, en la versión 4 teníamos 20 bytes, o sea, 20 octetos. Este tiene el doble, tiene 40.
+
+Tiene menos campos. Fíjense que acá hay menos campos que el estos campos de dirección, después son menos campos que que el IP versión 4. ¿Qué nos genera esto? ¿Qué nos facilita? Menos procesamiento por paquete, con lo cual hay mayor velocidad. Como la versión es un número, puede ser un 6. Clase de tráfico, lo cual hay 8 bytes, de 4 a 12.
+
+Eh identifica y distingue entre clase o prioridad del paquete.
+
+Hay 6 para, igual que el otro, 6 para servicios financiados y dos para notificación de de congestión. El flow label, la etiqueta de flujo, de 20 bytes. Etiqueta paquetes con tratamiento especial de encaminamiento. Flujo es la secuencia de paquetes de origen con iguales requisitos de tratamiento.
+
+La longitud, payload length, longitud de la carga útil, 16 bytes. En los textos de todas las cabeceras de extensión y la PDU de transporte. Next header, la cabecera siguiente. Puede ser extensión de TC, extensión o bien de TCP o UDP.
+
+Límite de saltos permitidos para el paquete que se cuenta uno en cada nodo que lo reenvía. Es similar al time to live, al TTL. Cada vez que pasa por un router, tac, se va este se va decrementando en uno hasta que llega un momento que se acabó. La dirección de origen y destino tiene 128 bytes cada una.
+
+Este, el destino puede ser que no sea el último deseado, si está en la cabecera de encaminamiento, si va a otro lado después, ¿no? Es un destino intermedio.
+
+Bueno, esta dirección de IP ya hablamos.
+
+Las direcciones IP tenemos eh tres tipos, unidifusión, o sea, a ver, uno bien identificado, monodifusión, enicast, identificador de de conjunto de interfaces individuales, se entrega a una interfaz la más cercana según el protocolo de enrutamiento, y multidifusión o multicast, identificador para un conjunto de interfaces individuales, se entrega a todas las interfaces individuales.
+
+Las direcciones no no eh tienen notación hexadecimal con dos puntos para facilitar el manejo, como dijimos, 16 bytes.
+
+Y la simplificación puede ser donde son todos ceros se coloca uno solo, entonces se hace aparentemente más chica. O bien, de esta otra forma. O sea, que esto dirección IP versión 6 quiere decir que todos estos ceros están al medio.
+
+Algo más sobre TCP IP.
+
+Request for comment, son RFC, publicaciones que este especifican aspectos de TCP IP. Van a leer por ahí que dicen, sí, la RFC 2840 habla de listo. Son publicaciones que hace la fuerza de tareas de internet, internet task force. El point to point protocol permite transferir información de distintos protocolos y controla el estado de las distintas opciones de enlace, utiliza encapsulamiento PPP, incluye autenticación, compresión, detección de errores,
+
+y multienlace y el socket es una abstracción como mecanismo de acceso a archivos del sistema operativo relaciona aplicación y protocolos TCP/IP sobre detalles del sistema operativo.
+
+DHCP protocolo de configuración dinámica de host
+
+protocolo de tipo cliente-servidor extensión del protocolo BOOTP permite al administrador supervisar y distribuir en forma centralizada las direcciones IP necesarias y automáticamente de asignar y enviar la nueva IP si el dispositivo conectado en lugar diferente de la red. Lo que les decía, están en la me- en la línea de mesas uno y dice, "No, nos juntamos en la tres." Y uno se enchufa a la máquina, vale, enchufa allá este y no hay ningún problema.
+
+Bueno.
+
+Con esto, gente
+
+hemos terminado la clase de hoy.
+
+Espero que hayan comprendido.
+
+Y nada más, si no tienen nada, ninguna consulta, nada, buen fin de semana. Y nos veremos, Dios mediante, el próximo viernes.
+
+Vale, profe. Perfecto, profe, muchas gracias. Bueno.
