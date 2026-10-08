@@ -1,0 +1,991 @@
+=============================
+ REDES DE DATOS - UTN
+ 1er PARCIAL - RESUMEN
+ Prof. Ing. V.R. Alsina
+=============================
+
+====== CLASE 1 ======
+CONCEPTOS BASICOS Y
+ARQUITECTURA DE REDES
+========================
+
+* RED: conjunto de recursos
+de comunicacion e
+informatica p/ transporte
+de informacion.
+
+* CONVERGENCIA: antes redes
+separadas (voz,video,datos)
+Ahora red unica IP integrada
+(ISDN).
+
+* EVOLUCION:
+Mainframes c/terminales ->
+PC -> LAN c/servidores ->
+Redes cableadas/inalambricas
+
+--- FIBRA OPTICA ---
+FTTN: Fiber to the
+ Neighborhood (~300m)
+FTTC: Fiber to the Curb
+ (cordon vereda)
+FTTB: Fiber to the Building
+FTTH: Fiber to the Home
+ (directo, sin cobre)
+HFC: Hibrido Fibra-Coaxil
+ (usa redes cobre existentes)
+
+--- CLASIFICACION REDES ---
+Segun area geografica:
+ LAN: Local Area Network
+ MAN: Metropolitan Area Net
+ WAN: Wide Area Network
+ GAN: Global Area Network
+
+LAN: corta distancia,
+ bajo BER, canales difusion
+WAN: gran distancia,
+ alto BER, canales pto-pto
+
+Segun modo operacion:
+ Circuito Virtual (conexion)
+ Datagramas/Paquetes (s/con)
+
+--- ORIENTADO A CONEXION ---
+- Entrega ordenada
+- Libre de errores
+- Circuito virtual
+- Ej: llamada telefonica
+Fases: establecimiento,
+ transferencia, cierre
+
+--- NO ORIENTADO CONEXION ---
+- Sin orden de llegada
+- Encaminamiento independ.
+- Best effort (mejor esfzo)
+- Ej: sistema postal / IP
+- Sin control una vez enviado
+
+--- TOPOLOGIAS ---
+Estrella, Malla, Anillo, Bus
+N enlaces = n(n-1)/2 (malla)
+
+--- ACCESO AL MEDIO ---
+DETERMINISTICO:
+ Token Passing (testigo)
+ Una terminal transmite
+ cuando recibe el token.
+ Evita colisiones.
+
+CONTENCIOSO:
+ CSMA/CD (Carrier Sense
+ Multiple Access / Collision
+ Detection)
+ - Escucha antes de Tx
+ - Si canal libre: Tx
+ - Si canal ocupado: espera
+ - Si colision: JAM 32 bits
+
+--- BACKOFF EXPONENCIAL ---
+Algoritmo de postergacion
+binaria exponencial:
+ Colision i: random entre
+ 0 y (2^i - 1) ranuras
+ i=1: 0 a 1
+ i=2: 0 a 3
+ i=4: 0 a 15
+ Hasta i=10: se duplica
+ i=10 a 16: se mantiene
+ Despues 16: notifica capas
+ superiores (red ocupada)
+
+--- PROTOCOLOS ---
+Reglas y procedimientos que
+regulan comunicaciones.
+
+Modelo OSI (7 capas):
+ 7-Aplicacion
+ 6-Presentacion
+ 5-Sesion
+ 4-Transporte (intermedia)
+ 3-Red (IP)
+ 2-Enlace de datos (MAC)
+ 1-Fisica (bits)
+
+Capas iguales: protocolos
+Capas adyacentes: interfaces
+Capa inferior da servicios
+a capa superior.
+
+PDU por capa:
+ Capa 4: Segmento TCP
+ Capa 3: Paquete/Datagrama
+ Capa 2: Trama/Frame
+ Capa 1: Bits
+
+--- FUNCIONES PROTOCOLOS ---
+- Control de flujo
+- Control de errores
+- Segmentacion y ensamblado
+- Encapsulamiento (agregar
+  headers en cada capa)
+- Sincronismo
+- Control de conexion
+
+--- ARQ ---
+Automatic Repeat Request
+- Stop-and-Wait (inactiva,
+  half duplex)
+- Sliding Window (continua,
+  full duplex, ej: HDLC)
+ACK: confirmacion positiva
+NACK: confirmacion negativa
+Timeout: se reinicia
+
+--- VENTANA DESLIZANTE ---
+Control de flujo software.
+RR3 = Receptor listo p/
+ recibir trama 3.
+No inundar receptor.
+Mayor eficiencia de Tx.
+
+--- SONDEO/SELECCION ---
+Procesador central controla
+Sondeo: quien tiene p/ Tx?
+Seleccion: autoriza a Tx
+
+--- SISTEMAS SIN SONDEO ---
+XON/XOFF: control flujo
+ dentro de banda
+RTS/CTS: Ready to Send /
+ Clear to Send. Fuera banda
+TDMA: Acceso multiple por
+ division de tiempo
+
+====== CLASE 2 ======
+CAPA DE ENLACE,
+CONMUTACION LAN Y VLANs
+========================
+
+--- DIRECCION MAC ---
+48 bits (6 bytes)
+6 grupos hexadecimales
+Ej: AA:BB:CC:DD:EE:FF
+Primeros 24b: OUI fabricante
+ (asignado por IEEE)
+Ultimos 24b: N serie fabric.
+Broadcast: FF:FF:FF:FF:FF:FF
+Unica por dispositivo.
+Ver con: ipconfig /all
+
+--- IEEE 802 ---
+Divide capa enlace en:
+ LLC (Logical Link Control)
+  - IEEE 802.2
+  - Interfaz capas superiores
+  - Control errores (retx)
+  - Control de flujo
+  - Similar a HDLC
+ MAC (Medium Access Control)
+  - Ensamblado/desens. tramas
+  - Deteccion de errores
+  - Control acceso al medio
+
+--- HUB vs SWITCH ---
+HUB (repetidor):
+ - Capa 1 (fisica)
+ - Repite por TODAS las bocas
+ - Comparte ancho de banda
+   (100Mb/4bocas=25Mb c/u)
+ - Propaga colisiones
+ - 1 dominio colision = todo
+ - 1 dominio broadcast= todo
+
+SWITCH (conmutador):
+ - Capa 2 (enlace)
+ - Conmuta: manda solo por
+   el puerto correcto
+ - 100Mb en CADA boca
+ - Cada puerto = 1 dominio
+   de colision separado
+ - 1 dominio broadcast=todo
+ - Aprende MACs via flooding
+   (inundacion/descubrimien)
+ - Arma tabla direccionam.
+   (MAC <-> Puerto)
+
+BRIDGE:
+ - Capa 2
+ - Separa dominios colision
+ - NO separa broadcast
+
+ROUTER:
+ - Capa 3
+ - Separa dom. broadcast
+ - Direccionamiento IP
+
+--- DOMINIOS ---
+Dom. Colision: donde se
+ propagan colisiones.
+ Hub: todo es 1 dominio
+ Switch: 1 por puerto
+Dom. Broadcast: donde se
+ propagan tramas broadcast
+ Limitado por routers.
+
+--- CABLEADO ESTRUCTURADO ---
+Normas EIA/TIA 568A y 568B
+UTP categorias:
+ Cat3: hasta 16 MHz
+ Cat4: hasta 20 MHz
+ Cat5: hasta 100 MHz
+ Cat5e: Fast Ethernet
+ Cat6: Gigabit Ethernet
+Conector: RJ45
+Unidad de rack:
+ 1U = 1.75 pulg = 44.45mm
+
+--- ETHERNET VELOCIDADES ---
+10Base2: coaxil fino 185m
+10Base5: coaxil grueso 500m
+10BaseT: 10Mb UTP
+100BaseTX: 100Mb Cat5e
+1000BaseT: 1Gb Cat6
+10GbE: fibra optica
+
+--- TRAMA ETHERNET ---
+Preambulo: 8 bytes
+ (7 bytes patron + 1 SFD)
+Dir Destino: 6 bytes
+Dir Origen: 6 bytes
+Tipo/Longitud: 2 bytes
+Datos: 46-1500 bytes
+FCS: 4 bytes (CRC)
+
+--- VLANs ---
+LAN Virtual: segmentacion
+logica del switch.
+- Seguridad por areas
+- Cada VLAN = 1 broadcast
+  domain separado
+- IEEE 802.1Q: estandar
+  de tramas etiquetadas
+- Trunk: enlace troncal
+  que transporta multiples
+  VLANs entre switches
+
+--- STP (802.1D) ---
+Spanning Tree Protocol
+Previene bucles en capa 2.
+Selecciona:
+ - Root Bridge (puente raiz)
+ - Root Port (puerto raiz)
+ - Designated Port
+ - Blocked Port
+Sin STP: bucles -> red
+se colapsa.
+
+--- FDDI ---
+Fiber Distributed Data
+Interface.
+Doble anillo de fibra:
+ - Un anillo cada sentido
+ - 500 estaciones
+ - 100 km
+ - 100 Mbps
+Token passing.
+
+====== CLASE 3 ======
+ARQUITECTURA TCP/IP,
+DATAGRAMA IP, TRANSPORTE
+========================
+
+--- MODELO TCP/IP vs OSI ---
+Aplicacion (5-6-7 OSI)
+Transporte (4) - TCP/UDP
+Internet (3) - IP/ICMP
+Red (1-2) - Ethernet etc.
+
+Protocolos por capa:
+ Aplicacion: FTP,Telnet,
+  SMTP,DNS,SNMP,HTTP
+ Transporte: TCP, UDP
+ Internet: IP,ICMP,ARP
+ Red: Ethernet,WiFi...
+
+--- PROTOCOLO IP ---
+- No orientado a conexion
+- No confiable
+- Best effort
+- Usa datagramas (paquetes)
+- Cada paquete independiente
+- Usa ICMP p/ reportar error
+
+--- DATAGRAMA IP ---
+Header IP: 20 bytes (min)
+Campos principales:
+ Version: 4 (IPv4) o 6
+ IHL: longitud header
+ ToS: tipo servicio (6b+2b)
+ Longitud total: header+datos
+  Max: 65535 bytes
+ Identificacion: p/ fragment
+ Flags (3 bits):
+  0: reservado
+  DF: Dont Fragment
+  MF: More Fragments
+ Offset: desplazamiento
+  del fragmento (x8 bytes)
+ TTL: Time to Live
+  -1 en cada router
+  Si llega a 0: descartado
+ Protocolo: TCP(6)/UDP(17)
+ Checksum: verif. header
+ IP Origen: 32 bits
+ IP Destino: 32 bits
+
+--- FRAGMENTACION IP ---
+MTU: Maximum Transfer Unit
+Tamanio max del campo datos
+
+MTU por red:
+ Ethernet: 1500 bytes
+ FDDI: 4470 bytes
+ Token Ring: 4464 bytes
+ ATM: 48 bytes
+
+Si datagrama > MTU:
+se fragmenta.
+Cada fragmento tiene
+header IP propio (20 bytes)
+=> datos utiles = MTU - 20
+
+EJEMPLO:
+Datagrama 5140 bytes,
+MTU = 1500
+Frag1: 1500B (datos=1480)
+ offset=0, MF=1
+Frag2: 1500B (datos=1480)
+ offset=185 (185x8=1480)
+Frag3: 1500B (datos=1480)
+ offset=370 (370x8=2960)
+Frag4: 700B (datos=680)
+ offset=555 (555x8=4440)
+ MF=0 (ultimo)
+
+--- DIRECCIONAMIENTO IPv4 ---
+32 bits = 4 octetos
+Ej: 192.168.1.24
+Componentes: Clase+Red+Host
+
+CLASES:
+ A: 1-126 (0xxxxxxx)
+   Masc: 255.0.0.0 (/8)
+   Host: 2^24-2=16M
+ B: 128-191 (10xxxxxx)
+   Masc: 255.255.0.0 (/16)
+   Host: 2^16-2=65534
+ C: 192-223 (110xxxxx)
+   Masc: 255.255.255.0 (/24)
+   Host: 2^8-2=254
+ D: 224-239 (multicast)
+ E: 240-255 (reservada)
+
+Broadcast dirigido:
+ todos bits host = 1
+Loopback: 127.0.0.0/8
+
+--- SUBNETTING ---
+Dividir red grande en
+subredes mas chicas.
+Mascara: 1s=red/subred
+         0s=host
+VLSM: mascaras de longitud
+ variable (distintas en
+ cada interfaz del router)
+CIDR: notacion /N
+ Ej: /24 = 255.255.255.0
+
+--- ARP y RARP ---
+ARP: IP -> MAC
+ Broadcast MAC con IP dest
+ Destino responde con su MAC
+ Se guarda en tabla ARP
+
+RARP: MAC -> IP
+ Maquina pide su IP al
+ servidor RARP usando su MAC
+
+--- TCP ---
+Transmission Control Protocol
+- Orientado a conexion
+- Confiable
+- Full duplex
+- Control flujo: ventana
+  deslizante (variable)
+- Numeros de secuencia
+- ACK y retransmision
+- Timeout
+- Header: 20 bytes min
+- PDU: Segmento TCP
+
+Puertos conocidos:
+ FTP: 21
+ Telnet: 23
+ SMTP: 25
+ DNS: 53
+ HTTP: 80
+
+Socket = IP + Puerto
+
+--- UDP ---
+User Datagram Protocol
+- NO orientado a conexion
+- NO confiable
+- Sin ACK
+- Bajo overhead
+- Header: 8 bytes
+ (PtoOrig,PtoDest,Long,Chk)
+- Max: 65535 bytes
+
+--- COMPARACION ERRORES ---
+IP: solo detecta en header,
+ no corrige
+UDP: detecta en datagrama
+ UDP + dir IP, no corrige
+TCP: detecta en segmento
+ completo + IP, SI corrige
+
+--- DHCP ---
+Dynamic Host Configuration
+Protocol. Cliente-servidor.
+Asigna IPs automaticamente.
+Pasos:
+1.Discovery (cliente busca)
+2.Offer (server ofrece IP)
+3.Request (cliente acepta)
+4.ACK (server confirma)
+Registra quien tuvo cada IP
+y por cuanto tiempo.
+
+--- IPv6 ---
+128 bits de direccion
+(vs 32 bits de IPv4)
+Header: 40 bytes (fijo)
+Menos campos = menos
+procesamiento = mas rapido.
+Campos:
+ Version(4b), Clase Trafico
+ (8b), Flow Label(20b),
+ Payload Length(16b),
+ Next Header(8b),
+ Hop Limit(8b, =TTL),
+ IP Origen(128b),
+ IP Destino(128b)
+Tipos dir: Unicast,
+ Anycast, Multicast
+Notacion hexadecimal con :
+Simplificacion: :: = ceros
+
+====== CLASE 4 ======
+REDES INALAMBRICAS
+(WLAN) Y TX INALAMBRICA
+========================
+
+--- APLICACIONES WLAN ---
+- Ampliar redes (AP WiFi)
+ Celda unica o multicelda
+- Interconexion edificios
+ (radioenlace pto a pto)
+- Acceso nomade (notebook
+ movil con WiFi)
+- Red Ad-Hoc (peer-to-peer
+ sin servidor central)
+
+--- IEEE 802.11 (WiFi) ---
+CSMA/CA (Collision Avoidance)
+ - Escucha antes de Tx
+ - Si libre: espera DIFS
+ - Envia RTS (reserva canal)
+ - Recibe CTS (canal libre)
+ - Transmite
+ - Espera ACK
+A diferencia de CSMA/CD,
+EVITA colisiones (no detecta)
+
+--- ESPECTRO EXPANDIDO ---
+Tecnicas de modulacion:
+
+DSSS (Secuencia Directa):
+ Senal se ensancha con
+ codigo pseudoaleatorio.
+ Queda bajo nivel de ruido.
+ Mas segura.
+
+FHSS (Salto de Frecuencia):
+ Cambia frecuencia en cada
+ rafaga segun secuencia
+ pseudoaleatoria.
+ Dificil de interceptar.
+
+OFDM: Orthogonal Frequency
+ Division Multiplexing.
+ Multiples subportadoras.
+ Usado en 802.11a/g/n/ac/ax
+
+--- BANDAS WiFi ---
+2.4 GHz:
+ + Mayor alcance
+ + Mejor penetra paredes
+ - Menor velocidad
+ - Mas interferencia
+ - 14 canales (22MHz c/u)
+ - Solo 3 no se solapan
+   (1, 6, 11)
+
+5 GHz:
+ + Mayor velocidad
+ + Menos interferencia
+ + 25 canales
+ - Menor alcance
+ - Paredes afectan mas
+
+6 GHz (WiFi 6E):
+ + Agrega 59+ canales
+ + Mayor velocidad
+ + Menor congestion
+
+--- ESTANDARES WiFi ---
+802.11  (1997): 1-2 Mbps
+802.11a (1999): 54Mb, 5GHz
+802.11b (1999): 11Mb, 2.4GHz
+802.11g (2003): 54Mb, 2.4GHz
+802.11n (2007): 600Mb, WiFi4
+ 2.4+5 GHz, MIMO
+802.11ac: 1Gbps+, WiFi5
+ 5 GHz
+802.11ax: WiFi6/6E
+ 2.4+5+6 GHz
+
+MIMO: Multiple Input
+ Multiple Output
+Router se comunica con
+multiples dispositivos
+simultaneamente.
+
+--- SEGURIDAD WLAN ---
+WEP: Wired Equivalent
+ Privacy (debil, obsoleto)
+WPA/WPA2: Wi-Fi Protected
+ Access (AES cifrado)
+Ocultamiento de SSID
+
+--- TRAMA MAC 802.11 ---
+3 tipos:
+ - Control
+ - Datos
+ - Gestion
+Campos: Frame Control,
+ Duracion, 4 Direcciones,
+ Sequence Control, Datos,
+ FCS
+
+--- TELEFONIA MOVIL ---
+Componentes:
+ Unidad Movil (telefono)
+ Radio Base (celda/antena)
+ MTSO: Mobile Telephone
+  Switching Office
+  (conmutacion y tarificac)
+
+Handoff: traspaso entre
+ celdas al moverse.
+Si celda destino llena:
+se corta la llamada.
+
+Tecnicas acceso medio:
+ FDMA: division frecuencia
+ TDMA: division tiempo
+ CDMA: division codigo
+
+Generaciones:
+ 1G: FDMA, analogica
+ 2G: TDMA/CDMA, digital
+ 3G: paquetes, datos
+ 4G: 100 Mbps
+ 5G: latencia 1ms!
+ (40ms siente quemadura)
+
+Tipos celda:
+ Picocelda: indoor/shopping
+ Microcelda: edificio
+ Macrocelda: area grande
+
+--- SATELITES ---
+GEO: geoestacionario 36000km
+ - Fijo sobre un punto
+ - Voz, datos, video
+ - Bandas C, Ku
+ - Ej: DirecTV (BSS)
+
+LEO: orbita baja
+ - Varias vueltas a Tierra
+ - Constelaciones
+ - GPS, meteorologia
+ - Ej: Starlink
+ - Banda L
+
+MEO: orbita media
+ - Intermedio
+
+--- IoT ---
+Internet of Things
+Dispositivos conectados:
+ Electrodomesticos, sensores
+ camaras, etc. controlados
+ remotamente via internet.
+
+====== CLASE 5 ======
+PROTOCOLOS AUXILIARES
+TCP/IP Y ENRUTAMIENTO
+========================
+
+--- NAT ---
+Network Address Translation
+Traduce IP privada<->publica
+Porque IPs publicas escasas.
+
+Funcionamiento:
+ LAN usa IPs privadas
+ (192.168.x.x, 10.x.x.x,
+  172.16-31.x.x)
+ Router de borde traduce a
+ 1 IP publica para internet.
+
+PAT (Port Address Transl):
+ Multiples IPs privadas ->
+ 1 IP publica + distintos
+ puertos TCP/UDP dinamicos.
+ Ej: PC1->TCP1025,PC2->5000
+
+Tipos NAT:
+ Estatico: mapeo 1 a 1
+  (IP fija, servers accesib)
+ Dinamico: pool de IPs
+  publicas, asigna segun
+  disponibilidad.
+
+Terminos:
+ Inside Local: IP priv host
+ Inside Global: IP pub que
+  representa al host afuera
+ Outside Local: IP ext vista
+  desde dentro
+ Outside Global: IP real ext
+
+Limitacion: NAT traduce solo
+IP del header, NO dentro de
+los datos (problema con VPN)
+
+Se configura en router borde
+(interfaz inside/outside)
+
+--- ICMP ---
+Internet Control Message
+Protocol.
+Mensajes de diagnostico.
+ ping: solicitud/resp. eco
+ tracert: traza ruta salto
+  a salto hasta destino
+
+--- ARP ---
+Address Resolution Protocol
+IP -> MAC (ya visto en C3)
+Broadcast: Quien tiene IP X?
+Respuesta unicast con MAC.
+
+--- DNS ---
+Domain Name System
+Traduce nombre dominio ->
+direccion IP.
+Ej: google.com -> 142.x.x.x
+Puerto: 53
+
+--- ENRUTAMIENTO ---
+Router: determina trayectoria
+selecciona mejor ruta y
+reenvia paquetes.
+
+3 procesos principales:
+1. Host sabe como comunicarse
+   con su router (gateway)
+2. Router determina ruta a
+   red remota
+3. Router destino entrega
+   al host final
+
+--- ESTATICO vs DINAMICO ---
+ESTATICO:
+ + Simple configuracion
+ + Mas seguro
+ + Sin overhead protocolo
+ - No se adapta a fallas
+ - Admin manual
+
+DINAMICO:
+ + Se adapta automaticamente
+ + Descubre redes remotas
+ + Actualiza tablas
+ - Mas complejo
+ - Consume recursos
+ - Menos seguro
+
+En practica: se combinan
+ambos tipos.
+
+--- IGP vs EGP ---
+Sistema Autonomo (AS):
+ Conjunto de routers bajo
+ una misma administracion.
+ Ej: red empresa, ISP
+
+IGP (Interior Gateway Prot):
+ Enrutamiento DENTRO del AS
+ Protocolos:
+  RIP: vector distancia,
+   metrica=conteo de saltos
+   Max 15 saltos
+  IGRP: Cisco, vect. dist.
+  EIGRP: Cisco avanzado,
+   vect. distancia mejorado
+  OSPF: estado de enlace,
+   metrica=costo
+  IS-IS: estado de enlace
+
+EGP (Exterior Gateway Prot):
+ Enrutamiento ENTRE ASs
+ BGP: Border Gateway Protocol
+  Unico viable actualmente
+  Protocolo de internet
+  Vector de ruta
+
+--- VECTOR DISTANCIA ---
+Rutas como vector: distancia
+(metrica) + direccion (next
+hop). Ej: RIP, EIGRP
+Algoritmo: Bellman-Ford
+Envian tablas completas
+periodicamente a vecinos.
+Problema en redes grandes:
+mucho trafico de actualiz.
+
+--- ESTADO DE ENLACE ---
+Router crea vista completa
+de la topologia de red.
+Ej: OSPF, IS-IS
+Como tener mapa completo.
+Mas eficiente en redes
+grandes.
+
+--- METRICAS ---
+Valor p/ seleccionar mejor
+ruta. Menor metrica = mejor.
+ RIP: conteo de saltos
+ OSPF/ISIS: costo
+ EIGRP: ancho banda+retardo
+  (confiab y carga opcional)
+
+Ej: RIP elige 1 salto(128Kb)
+OSPF prefiere 3 saltos(100Mb
+c/u) xq mayor ancho de banda
+
+--- CON CLASE vs SIN CLASE --
+Con clase: no envia mascara
+ en actualizaciones. Mascara
+ se deduce del 1er octeto.
+ Ej: RIPv1
+
+Sin clase: incluye mascara.
+ Admite VLSM (mascaras
+ variables). Ej: RIPv2,OSPF,
+ EIGRP,BGP
+
+--- ARQUITECTURA ROUTER ---
+CPU: microprocesador
+ (operaciones SO, ruteo)
+RAM: tablas ruteo activas,
+ buffers. VOLATIL.
+NVRAM: config. startup
+ NO volatil.
+Flash: Cisco IOS (SO)
+ NO volatil.
+ROM: bootstrap, POST
+Interfaces: LAN (Ethernet)
+ y WAN (Serial, etc)
+Buses: interconectan todo.
+
+====== CLASE 6 ======
+QoS E IP/MPLS
+========================
+
+--- QoS (Quality of Service)-
+Parametros de degradacion
+en redes IP:
+
+Latencia/Delay: retardo
+ extremo a extremo.
+ Delay procesamiento: CPU
+  del router (impredecible)
+ Delay de enlace: propag.
+  (predecible)
+
+Jitter: variacion del
+ retardo entre paquetes.
+ Afecta voz y video.
+
+Congestion de buffers:
+ Entran mas paquetes de los
+ que salen -> se llenan
+ buffers -> perdida paquetes
+
+Perdida de paquetes:
+ Por buffer overflow o
+ TTL expirado.
+
+Video y voz: NO toleran
+ delay ni jitter.
+Datos: toleran retardo.
+
+--- MPLS ---
+Multi-Protocol Label
+Switching.
+
+IDEA CENTRAL:
+ En IP normal: cada router
+ analiza header IP completo
+ y recalcula ruta (software,
+ lento).
+ En MPLS: se agrega ETIQUETA
+ de longitud fija. Routers
+ solo leen la etiqueta y
+ conmutan por hardware
+ (rapido). Header IP solo
+ se analiza 1 vez (al entrar)
+
+--- HEADER MPLS ---
+32 bits total:
+ Label: 20 bits (etiqueta,
+  identifica FEC)
+ Exp/TC: 3 bits (QoS,
+  uso experimental)
+ S: 1 bit (Bottom of Stack,
+  1=ultima etiqueta en pila)
+ TTL: 8 bits (Time to Live,
+  -1 por salto, =0 descarta)
+
+Se inserta entre header
+capa 2 y header IP (capa 3).
+Capa 2.5
+
+--- COMPONENTES MPLS ---
+LSR: Label Switching Router
+ Router interno de alta vel.
+ Lee etiqueta -> conmuta.
+
+LER/PE: Label Edge Router
+ (Provider Edge)
+ Router de BORDE del dominio
+ MPLS.
+ Ingress LER: analiza IP,
+  asigna etiqueta, mete paq
+  en LSP.
+ Egress LER: quita etiqueta,
+  reenvia como paquete IP.
+
+LSP: Label Switched Path
+ Ruta/camino conmutado por
+ etiquetas. Secuencia de LSRs
+ desde origen a destino.
+
+--- FEC ---
+Forwarding Equivalence Class
+Grupo de paquetes que:
+ - Comparten mismos atributos
+   (dest,VPN,QoS,multicast)
+ - Siguen el mismo LSP
+ - Se les asigna misma etiq.
+Se asigna al ENTRAR a la red.
+
+--- LDP ---
+Label Distribution Protocol
+Protocolo para distribuir
+etiquetas MPLS en la red.
+Los routers negocian y
+arman los LSPs.
+Mensajes:
+ Discovery: anuncia presencia
+ Session: comunicacion pares
+ Advertisement: publica tablas
+ Notification: avisa errores
+Usa UDP p/ descubrimiento
+y TCP p/ sesiones.
+
+--- LABEL STACKING ---
+Apilamiento de etiquetas.
+Un paquete puede tener
+MULTIPLES etiquetas apiladas
+en pila LIFO (Last In First
+Out). Permite:
+ - Tuneles MPLS
+ - VPNs
+ - Jerarquia de caminos
+Bit S=1 marca la ultima
+etiqueta de la pila.
+
+--- TTL EN MPLS ---
+Al entrar: TTL etiqueta =
+ TTL del header IP.
+En cada salto: TTL etiq -1
+ (header IP NO se modifica)
+Al salir: TTL header IP =
+ TTL etiqueta - 1
+Si TTL=0: paquete descartado
+
+--- INGENIERIA DE TRAFICO ---
+Traffic Engineering (TE)
+MPLS busca camino OPTIMO
+(no siempre el mas corto)
+Balance de carga entre
+multiples caminos/tuneles.
+Reoptimizacion cada 60 min.
+Tuneles: unidireccionales,
+ si falla LSP1 -> LSP2
+ automatico.
+Protocolo: RSVP-TE
+
+--- CLASES DE SERVICIO ---
+Prioridad (mayor a menor):
+ Video: maxima prioridad,
+  sin delay
+ Voz: igual que video
+ Datos D1: alta prioridad
+ Datos D2: apps no criticas
+ Datos D3: best effort,
+  minima prioridad
+
+--- VENTAJAS MPLS ---
+- Conmutacion por hardware
+  (rapido vs software IP)
+- QoS integrado
+- Ingenieria de trafico
+- VPNs eficientes
+- Escalabilidad
+- Funciona sobre cualquier
+  capa 2: Ethernet, ATM,
+  Frame Relay
+- Facilidad de migracion
+
+=============================
+ FIN DEL RESUMEN
+ 1er PARCIAL REDES UTN
+=============================

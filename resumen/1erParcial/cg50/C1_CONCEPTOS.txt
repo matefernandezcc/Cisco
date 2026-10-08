@@ -1,0 +1,157 @@
+========================
+ C1 - CONCEPTOS BASICOS
+ ARQUITECTURA DE REDES
+========================
+
+* RED: conjunto de recursos
+de comunicacion e
+informatica p/ transporte
+de informacion.
+
+* CONVERGENCIA: antes redes
+separadas (voz,video,datos)
+Ahora red unica IP integrada
+(ISDN).
+
+* EVOLUCION:
+Mainframes c/terminales ->
+PC -> LAN c/servidores ->
+Redes cableadas/inalambricas
+
+--- FIBRA OPTICA ---
+FTTN: Fiber to the
+ Neighborhood (~300m)
+FTTC: Fiber to the Curb
+ (cordon vereda)
+FTTB: Fiber to the Building
+FTTH: Fiber to the Home
+ (directo, sin cobre)
+HFC: Hibrido Fibra-Coaxil
+ (usa redes cobre existentes)
+
+--- CLASIFICACION REDES ---
+Segun area geografica:
+ LAN: Local Area Network
+ MAN: Metropolitan Area Net
+ WAN: Wide Area Network
+ GAN: Global Area Network
+
+LAN: corta distancia,
+ bajo BER, canales difusion
+WAN: gran distancia,
+ alto BER, canales pto-pto
+
+Segun modo operacion:
+ Circuito Virtual (conexion)
+ Datagramas/Paquetes (s/con)
+
+--- ORIENTADO A CONEXION ---
+- Entrega ordenada
+- Libre de errores
+- Circuito virtual
+- Ej: llamada telefonica
+Fases: establecimiento,
+ transferencia, cierre
+
+--- NO ORIENTADO CONEXION ---
+- Sin orden de llegada
+- Encaminamiento independ.
+- Best effort (mejor esfzo)
+- Ej: sistema postal / IP
+- Sin control una vez enviado
+
+--- TOPOLOGIAS ---
+Estrella, Malla, Anillo, Bus
+N enlaces = n(n-1)/2 (malla)
+
+--- ACCESO AL MEDIO ---
+DETERMINISTICO:
+ Token Passing (testigo)
+ Una terminal transmite
+ cuando recibe el token.
+ Evita colisiones.
+
+CONTENCIOSO:
+ CSMA/CD (Carrier Sense
+ Multiple Access / Collision
+ Detection)
+ - Escucha antes de Tx
+ - Si canal libre: Tx
+ - Si canal ocupado: espera
+ - Si colision: JAM 32 bits
+
+--- BACKOFF EXPONENCIAL ---
+Algoritmo de postergacion
+binaria exponencial:
+ Colision i: random entre
+ 0 y (2^i - 1) ranuras
+ i=1: 0 a 1
+ i=2: 0 a 3
+ i=4: 0 a 15
+ Hasta i=10: se duplica
+ i=10 a 16: se mantiene
+ Despues 16: notifica capas
+ superiores (red ocupada)
+
+--- PROTOCOLOS ---
+Reglas y procedimientos que
+regulan comunicaciones.
+
+Modelo OSI (7 capas):
+ 7-Aplicacion
+ 6-Presentacion
+ 5-Sesion
+ 4-Transporte (intermedia)
+ 3-Red (IP)
+ 2-Enlace de datos (MAC)
+ 1-Fisica (bits)
+
+Capas iguales: protocolos
+Capas adyacentes: interfaces
+Capa inferior da servicios
+a capa superior.
+
+PDU por capa:
+ Capa 4: Segmento TCP
+ Capa 3: Paquete/Datagrama
+ Capa 2: Trama/Frame
+ Capa 1: Bits
+
+--- FUNCIONES PROTOCOLOS ---
+- Control de flujo
+- Control de errores
+- Segmentacion y ensamblado
+- Encapsulamiento (agregar
+  headers en cada capa)
+- Sincronismo
+- Control de conexion
+
+--- ARQ ---
+Automatic Repeat Request
+- Stop-and-Wait (inactiva,
+  half duplex)
+- Sliding Window (continua,
+  full duplex, ej: HDLC)
+ACK: confirmacion positiva
+NACK: confirmacion negativa
+Timeout: se reinicia
+
+--- VENTANA DESLIZANTE ---
+Control de flujo software.
+RR3 = Receptor listo p/
+ recibir trama 3.
+No inundar receptor.
+Mayor eficiencia de Tx.
+
+--- SONDEO/SELECCION ---
+Procesador central controla
+Sondeo: quien tiene p/ Tx?
+Seleccion: autoriza a Tx
+
+--- SISTEMAS SIN SONDEO ---
+XON/XOFF: control flujo
+ dentro de banda
+RTS/CTS: Ready to Send /
+ Clear to Send. Fuera banda
+TDMA: Acceso multiple por
+ division de tiempo
