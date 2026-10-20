@@ -1,0 +1,5461 @@
+Title: TL5 | Redes de Datos UTN | 15/10/2026
+
+(0:01) Buenas  tardes.
+
+(0:03) Buenas  tardes.
+
+(0:05) Bueno,  ante  todo,  disculpen  la  demora,
+
+(0:07) hoy  fue  un  día  complicado.  Eh,  creo  que
+
+(0:10) los  fui  uniendo  a  todos  en  la  medida  que
+
+(0:12) que  pasó
+
+(0:15) que  pasaron  los  minutos,  eh,  así  que
+
+(0:19) bueno,
+
+(0:21) esperen  que  les  voy  a  compartir  la
+
+(0:23) pantalla.
+
+(0:26) minuto.
+
+(0:31) Bien.
+
+(0:47) Bueno,  a  ver,  díganme  si  están  viendo
+
+(0:49) ahí.  Creo  que  sí.
+
+(0:51) Sí,  sí,
+
+(0:52) sí.
+
+(0:53) Bueno,
+
+(0:54) sí,  sí.
+
+(0:55) Hoy  vamos  a  ver  eh  el  trabajo  de
+
+(0:57) laboratorio  5  y  no  sé,  dependiendo  del
+
+(1:00) tiempo  eh  vamos  a  ver  si  avanzamos  un
+
+(1:03) poco  más.
+
+(1:05) Eh,  supuestamente  eh  tendríamos  eh
+
+(1:11) el  parcial  TL56
+
+(1:14) eh  la  semana  que  viene,  pero  es  muy
+
+(1:17) probable  que  hagamos  una  modificación  eh
+
+(1:20) y  que  en  lugar  de  que  el  parcial  sea  el
+
+(1:23) jueves  que  viene  sea  el  otro.  Sí,  pero
+
+(1:27) bueno,  vamos  lo  vamos  a  ir  notificando
+
+(1:29) eso  en  los  próximos  días.  Sí,  por  ahora
+
+(1:32) focalicemos  focalicémosnos  en  esto  y
+
+(1:36) avancemos.  Sí.
+
+(1:39) Eh,  hoy  vamos  a  ver  el  trabajo  de  la  TR
+
+(1:41) número  cinco  y  vemos  si  avanzamos  un
+
+(1:44) poco  más.  Eso  va  a  depender  de  del
+
+(1:46) tiempo.  Como  les  decía,  eh  el  enfoque
+
+(1:49) que  vamos  a  hacer  eh  tanto  en  el  trabajo
+
+(1:53) 5  como  el  seis  es  eh  con  respecto  al
+
+(1:57) análisis  de  digamos  de  de  tramas.
+
+(2:01) eh  con  el  software  que  se  utiliza  para
+
+(2:05) esto,  que  es  el  conocido  Wirk,  ¿sí?  Que
+
+(2:09) es  un  analizador  de  protocolos
+
+(2:11) eh  que  realmente  se  utiliza  mucho  en
+
+(2:15) toda  la  industria  eh  nuestra  de
+
+(2:17) sistemas.  eh  es  un  es  un  software  que  se
+
+(2:22) utiliza  para  hacer  un  un  sniffing  o  un
+
+(2:24) análisis  de  del  tráfico  analizando  este
+
+(2:28) los  distintos  protocolos  eh  eh  que  hay
+
+(2:31) en  en  una  comunicación  entre  un  punto  A
+
+(2:35) y  B  que  sea  interceptada.
+
+(2:37) Eh,  la  principal  área  que  utiliza  eh
+
+(2:42) esta  herramienta  es  seguridad
+
+(2:44) informática.  Sí,  pero  eh  las  otras  áreas
+
+(2:49) eh  que  también  trabajan  en  las  áreas  de
+
+(2:51) sistemas  tienen  que  tener  el
+
+(2:52) conocimiento  tanto  eh  las  áreas  de  que
+
+(2:55) trabajan  en  la  parte  de  networking  eh
+
+(2:58) como  como  otras  áreas  como  base  de
+
+(3:00) datos,  como  desarrollo  de  software,  como
+
+(3:02) DevOps,  o  sea,  la  todas  las  áreas  de
+
+(3:06) sistemas  que  están  eh  relacionadas  a  a
+
+(3:11) lo  que  nosotros  este  estudiamos  y  sobre
+
+(3:14) lo  que  trabajamos.
+
+(3:15) deberían  tener  el  conocimiento  de  esta
+
+(3:17) herramienta  más  allá  que  algunas  la
+
+(3:18) utilicen  eh  en  el  día  a  día.
+
+(3:22) ¿Esto  por  qué?  Porque
+
+(3:25) cuando  ustedes  tienen  una  red  y  esa  red
+
+(3:27) está  segmentada,  ya  sea  porque  tiene  un
+
+(3:29) firewall  en  el  medio,  porque  digamos  eh
+
+(3:32) adentro  de  una  red  LAN  tienen  políticas
+
+(3:35) eh  aplicadas  a  nivel  capa  7  de  un
+
+(3:38) firewall,  ¿sí?  o  porque  digamos  hay  una
+
+(3:41) parte  de  la  aplicación,  por  ejemplo,  el
+
+(3:43) frontend  que  está  en  una  DMZ  que  está
+
+(3:46) expuesto  en  una  zona  que  tiene  mayor
+
+(3:48) riesgo  que  la  Red  LAN,  que  y  en  el  medio
+
+(3:50) de  la  DMZ  y  la  Red  Llan  hay  un  firewall
+
+(3:53) que  también  hace  filtrado  de  tráfico.
+
+(3:56) Entonces,  cuando  hay  comunicación  entre
+
+(3:58) ese  frontend  que  está  en  esa  DMZ
+
+(4:02) con  un  servidor  de  base  de  datos  o  un
+
+(4:04) servidor  de  backend  que  está  dentro  de
+
+(4:06) la  red,  esa  comunicación,
+
+(4:09) digamos,  puede  tener  determinadas
+
+(4:12) fallas,  ¿sí?  Por  lo  cual  algo  que
+
+(4:14) debería  funcionar  no  funciona  y  no  está
+
+(4:17) este  relacionado  al  desarrollo  del  del
+
+(4:20) frontend  de  la  aplicación  con  el
+
+(4:21) backend,  ni  el  problema  está  en  la  base
+
+(4:23) de  datos,  sino  que  el  problema  está  en
+
+(4:25) la  comunicación  que  hay  entre  medio.  Y
+
+(4:28) cuando  esos  problemas  existen,  ya  sea
+
+(4:31) porque  no  hay  comunicación  entre  entre
+
+(4:34) lo  que  está  en  la  DMZ  y  lo  que  está  en
+
+(4:36) la  Redlan,
+
+(4:38) eh,  y  esa  comunicación  se  ve  afectada  y
+
+(4:40) no  se  conoce  cuál  es  la  causa,  ahí  es
+
+(4:43) necesario  hacer  uso  de  una  herramienta
+
+(4:45) esta  para  analizar  el  tráfico,  para  ver
+
+(4:48) si  realmente  ese  servidor  que  está  en  el
+
+(4:50) frontend  llega  a  través  del  tráfico  de
+
+(4:54) los  distintos  segmentos  que  están
+
+(4:56) enrutados  o  tienen  en  firewall  en  el
+
+(4:58) medio,  si  llega  a  ese  tráfico  del  punto
+
+(5:01) A  al  punto  B,  ¿sí?  Ya  sea  porque  no  haya
+
+(5:04) algún  puerto  que  esté  bloqueado  eh  de
+
+(5:07) todos  los  que  se  pueden  utilizar  entre
+
+(5:10) entre  ambos  puntos  o  porque  el  tráfico
+
+(5:12) esté  filtrado,  digamos,  por  una  access
+
+(5:15) list  que  esté  aplicada  en  el  firewall.
+
+(5:17) Hasta  acá  conceptualmente  se  entiende
+
+(5:20) por  qué  se  usa  esta  herramienta  para,
+
+(5:22) digamos,  cuál  es  el  objetivo  e  y  cuál
+
+(5:26) sería  el  alcance  de  por  qué  utilizarla  y
+
+(5:29) por  qué  todas  las  áreas  que  no  solamente
+
+(5:30) es  seguridad  informática  o  o  redes  barra
+
+(5:33) networking  deberían  tener  el
+
+(5:35) conocimiento.
+
+(5:39) Sí.
+
+(5:40) Eh,  profe,  yo  tengo  una  pregunta  con  lo
+
+(5:43) que  dijo  recién  hace  poco,  eh,
+
+(5:48) que  hace
+
+(5:50) el  parcial  del  tele  5  y  6  iba  a  ser  la
+
+(5:53) semana  que  viene,  pero  se  pasa.  Eh,  no
+
+(5:56) sé  si  el  eh  me  parece  el  cronograma  sido
+
+(5:59) otra  cosa.
+
+(6:01) No  sé  si
+
+(6:03) está  bien,  pero  el  cronograma  yo  tengo
+
+(6:05) la  capacidad  de  alterarlo  como  digamos
+
+(6:06) en  el  laboratorio,  como  como  yo  desee,
+
+(6:09) digamos.  Simplemente  digamos  es  un  eh
+
+(6:14) eh  es  es  está  relacionado  por  cómo
+
+(6:18) vayamos  con  el  con  con  lo  con  el
+
+(6:19) temario.  Sí.  El  cronograma  es  algo  e
+
+(6:24) que  está  establecido,  digamos,  para
+
+(6:25) seguir  un  lineamiento,  digamos,  o  tener
+
+(6:28) una  hoja  de  ruta,  nada  más  que  por  eso.
+
+(6:31) No  quiere  decir  que  se  pueda  o  no
+
+(6:33) modificar.  nosotros  eh  las  clases  de
+
+(6:36) laboratorio  las  podemos  la  puedo
+
+(6:37) modificar  como  eh  eh  como  crea
+
+(6:41) conveniente.
+
+(6:43) Claro.  Pero
+
+(6:44) no  sé  cuál  es  tu  pregunta,
+
+(6:46) ¿no?  Claro,  es  que  como  todavía  recién
+
+(6:48) estamos  empezando  a  ver  el  TL5  y  recién
+
+(6:51) la  semana  que  viene  vemos,  supongo,  el
+
+(6:53) Tele6,  ¿no?  Mi  duda  era  esa,  cómo  iba  a
+
+(6:56) ser  el  parcial,  ya  el  segundo  parcial  la
+
+(6:59) semana  que  viene  o  incluso  dentro  de  dos
+
+(7:01) semanas,  sabiendo  que  nada,  tenemos  que
+
+(7:03) hacer  los  dos  las  dos  entregas.
+
+(7:06) Eh,
+
+(7:06) bueno,
+
+(7:08) al  principio  de  la  clase  dije  que
+
+(7:10) después  íbamos  a  ver  el  tema  porque  hoy
+
+(7:13) tranquilamente  yo  puedo  dar  el  trabajo
+
+(7:15) laboratorio  5  y  6,
+
+(7:17) perdón,  en  el  cronograma  figura  5  de
+
+(7:20) noviembre  la  evaluación  de  Tele  5  y  6.
+
+(7:24) 5  de  noviembre.
+
+(7:28) H,  a  ver,
+
+(7:31) no,
+
+(7:31) perdón,  una  cosita.  Hay  dos  cronogramas
+
+(7:34) en  el  del  grupo  de  45,
+
+(7:37) eh,  digamos,  de  teoría  figura  la  semana
+
+(7:39) que  viene,  pero  en  el  genérico  de  en  el
+
+(7:42) genérico  en  el  de  redes  de  laboratorio
+
+(7:44) figura  el  5  de  noviembre.  Capaz  que  por
+
+(7:46) ahí  está  la  confusión.
+
+(7:48) Bueno,  a  ver,  eh,  lo  vuelvo  a  decir,  lo
+
+(7:52) que  va  a  pasar  lo  voy  a  notificar  yo  o
+
+(7:55) Rafael,  porque  somos  los  cursos  en  los
+
+(7:57) que  estamos  eh  trabajando.  Sí,  el
+
+(8:01) cronograma  es  algo  tentativo,  digamos,  o
+
+(8:03) sea,  como  para  tener  una  hoja  de  ruta
+
+(8:05) de,  digamos,  de  de  de  cómo  eh  están
+
+(8:09) planteadas  las  clases,  pero  no  quiere
+
+(8:11) decir  que  sea  eh  o  que  se  siga
+
+(8:13) rajatabla,  porque  si  cae  un  feriado
+
+(8:17) en  alguno  de  los  días  que  que  que  están
+
+(8:20) en  los  cursos  o  jueves  o  viernes  en  este
+
+(8:21) caso,  o  sea,  eh  genera  movimientos  y
+
+(8:26) cosas.  Igualmente,  eh  lo  que  quiero
+
+(8:29) decir  es  lo  siguiente.  Eh  ustedes  se
+
+(8:31) tienen  que  regir  por  lo  que  decimos
+
+(8:32) nosotros,  que  somos  los  que  eh
+
+(8:36) eh  damos  las  clases  y  notificamos.  Por
+
+(8:39) supuesto  que  eh  yo  sé  que  tengo  que  dar
+
+(8:41) el  trabajo  del  abortio  cinco  y  seis  para
+
+(8:43) que  después  puedan  nadar  el  parcial.  si
+
+(8:45) no  sería  incoherente  lo  que  estoy
+
+(8:46) diciendo.  Con  lo  cual  lo  que  les  digo
+
+(8:49) es,  déjenme  avanzar  con  la  clase  y  ese
+
+(8:53) tipo  de  notificaciones,  denme  tiempo  a
+
+(8:55) poder  madurarlas  porque  nosotros  les
+
+(8:58) notificamos  a  ustedes
+
+(9:01) cuando  hay  modificaciones,  más  allá  que
+
+(9:03) haya  un  cronograma  teórico  tentativo
+
+(9:06) para  tener  una  hoja  de  ruta.
+
+(9:09) Sí,
+
+(9:14) bien.
+
+(9:16) Okay.  No  me  quiero  detener  mucho  en  eso.
+
+(9:18) Lo  que  les  pregunté  si  se  entendió  era
+
+(9:19) el  concepto  de  lo  que  acabo  de  explicar,
+
+(9:21) digamos.  E
+
+(9:26) bueno,  supongo  que  sí.
+
+(9:27) Perfecto.  Sí,  sí,  eso  sí.
+
+(9:30) Eh,  bueno,  entonces  eh
+
+(9:33) me  me  fui  de  foco  por  un  tema  que  no
+
+(9:35) tenía  nada  que  ver.  Eh,  cuando  me
+
+(9:37) pregunten  algo,  pregúntenme  acerca  de  lo
+
+(9:39) que  expliqué,  digamos,  después  vamos  a
+
+(9:42) tener  el  fin  de  la  clase  e  para  ver
+
+(9:45) otros  temas,  pero
+
+(9:47) les  pido  que  presten  atención  en  esto,
+
+(9:49) digamos,  porque  eh  es  lo  que  tenemos  que
+
+(9:51) avanzar  y  el  cronograma  lo  puedo
+
+(9:53) notificar  después,  digamos,  por  el  aula
+
+(9:55) virtual  o  lo  podemos  ver  al  final  de  la
+
+(9:57) clase  si  quieren,  pero  digamos  quiero
+
+(9:59) que  se  enfoquen  en  esto,  por  favor.
+
+(10:03) Entonces,  en  habiendo  dado  esta
+
+(10:06) introducción  en  cuando  se  bajen  el
+
+(10:09) material  del  trabajo  de  la  autoridad
+
+(10:11) número  cinco,  van  a  ver  estos  objetivos
+
+(10:12) que  están  acá.  Eh,  no  los  voy  a  leer
+
+(10:14) porque  no  tiene  sentido.
+
+(10:19) eh  habla  todo  esto  del  conocimiento
+
+(10:22) previo  y  bueno,
+
+(10:25) recién  expliqué  qué  era  esto,  qué  era  el
+
+(10:26) análisis  de  protocolo,  qué  información
+
+(10:28) proporcionaba  e
+
+(10:32) y  lo  que  vamos  a  abordar  de  o  lo  que
+
+(10:34) deberían  eh  empezar  a  trabajar  eh  cuando
+
+(10:38) abran  el  el  trabajo  de  laboratorio
+
+(10:40) número  cinco  es  acerca  de  eh
+
+(10:45) de  cómo  identificar  en  los  parámetros
+
+(10:48) que  le  va  a  ir  pidiendo  el  trabajo  en
+
+(10:52) sí,  ¿no?  Eh,  cuando  uno  hace  un  análisis
+
+(10:56) de  digamos  de  de  una  red,  eh  va  a
+
+(10:59) obtener  distintas  informaciones,
+
+(11:02) digamos,  como  ser,  por  ejemplo,  lo  que
+
+(11:04) nosotros  vimos  a  lo  largo  de  del
+
+(11:06) cuatrimestre  en  la  parte  teórica,  como
+
+(11:08) acá  en  el  laboratorio.
+
+(11:10) van  a  tener  una  dirección  macadre  de
+
+(11:11) origen,  una  dirección  macadre  de
+
+(11:12) destino,  una  dirección  IP  de  origen,  una
+
+(11:15) dirección  IP  de  destino,  digamos,  y  y
+
+(11:18) cuando  hagan  una  captura  del  tráfico,
+
+(11:20) digamos,  con  esta  herramienta,  toda  esa
+
+(11:23) información  se  va  a  ver  eh  digamos  y  la
+
+(11:26) va  y  la  va  a  mostrar  la  herramienta  para
+
+(11:28) que  ustedes  la  puedan  este  visualizar.
+
+(11:32) En  el  trabajo  de  la  rotor  número  cinco,
+
+(11:34) cuando  arranca,  lo  primero  que  les  va  a
+
+(11:36) pedir  es  justamente  eh  información  de  de
+
+(11:40) de  la  PC  con  la  que  está  con  la  que
+
+(11:42) están  trabajando  y  que  ustedes  van  a
+
+(11:44) tener  que  ir  completando  como  para
+
+(11:45) empezar  a  a  entender  eh  digamos  de  cómo
+
+(11:49) se  va  a  trabajar.  lo  que  les  va  a  pedir
+
+(11:52) es  esto,  cuál  es  el  nombre  de  su  PC,
+
+(11:53) digamos,  la  dirección  IP  que  tiene,  qué
+
+(11:55) máscara  sub  tiene,  cuál  es  la  la  puerta
+
+(11:58) de  enlace  o  el  gateway,  si  eso  si  esa
+
+(12:01) red  está,  digamos,  trabajando  por  DHCPE,
+
+(12:04) o  sea,  es  un  trabajo  que  tienen  que
+
+(12:05) hacer  en  forma
+
+(12:07) e  individual,  ¿no?  Pero  bueno,  e  después
+
+(12:11) cuando  entreguen  entreguen  uno  de  de  de
+
+(12:13) los  dos,  ¿no?  porque  están  trabajando  de
+
+(12:16) apares
+
+(12:18) e,
+
+(12:20) o  sea,  como  siempre,  ¿no?  La  entrega  es
+
+(12:22) de  a  dos,  entonces  se  ponen  de  acuerdo
+
+(12:25) en  el  trabajo  que  hacen  entre  los  dos,
+
+(12:28) cuál  quieren  entregar,  ¿sí?
+
+(12:30) y  les  va  a  pedir  algo  así,  análisis  de
+
+(12:33) la  red,  la  que  está  configurada  en  su
+
+(12:34) estación  de  trabajo,  o  sea,  su  PC  con  la
+
+(12:36) que  van  a  trabajar  y  les  dice,  ejecuten
+
+(12:39) un  IP  config/all  o  winip  sfg  si  es
+
+(12:42) Windows  en  el  caso  que  trabajen  con
+
+(12:44) Linux  o  con  Mac  se  fijan,  digamos,  qué
+
+(12:47) comando  para  Linux,  digamos,  o  para  Mac
+
+(12:50) es  equivalente  a  este.  Sí.
+
+(12:53) Eh,  y  con  eso  pueden  tienen  que
+
+(12:54) completar  esta  información
+
+(12:58) y  después  le  van  a  le  va  a  aparecer
+
+(12:59) preguntas  como  estas,  por  ejemplo,  ¿de
+
+(13:01) qué  clase  es  la  dirección  IP  de  la  PC  de
+
+(13:03) ustedes?  Cuando  ustedes  escriben  acá  la
+
+(13:06) dirección  IP,  digamos,  que  corresponde
+
+(13:08) al  al  a  al  web  station  con  el  que  están
+
+(13:11) trabajando,  se  van  a  dar  cuenta  que  si
+
+(13:13) es  la  la  PC,  digamos,  de  su  trabajo  o  la
+
+(13:18) de  su  casa,  le  va  a  decir,  192,  168
+
+(13:22) eh  01.
+
+(13:25) Sí,
+
+(13:26) cuando  tengan  eso  ustedes  por  el
+
+(13:29) conocimiento  que  tienen  eh  todo  lo  que
+
+(13:31) vimos  a  lo  largo  del  cuatrimestre,  van  a
+
+(13:33) saber  si  es  una  IP  de  qué  clase,  una
+
+(13:35) clase  A,  una  clase  B,  una  clase  C,
+
+(13:38) porque  va  a  ser  una  dirección  IP
+
+(13:39) privada,  no  va  a  ser  una  dirección  IP
+
+(13:42) pública.  Le  va  a  decir,  ¿cuál  es  su
+
+(13:44) máscara?  Esa  máscara  es  la  máscara  por
+
+(13:45) defecto.  ¿Cuándo  era  la  máscara  por
+
+(13:47) defecto?  ¿Quién  quién  me  puede  responder
+
+(13:49) eso?
+
+(13:58) ¿Qué  sería  la  máscara  por  defecto?  No,
+
+(13:59) no.
+
+(14:01) Y  si  estamos  hablando  de  una  de  una  red,
+
+(14:06) digamos,  de  una  de  un  direccionamiento
+
+(14:08) privado  de  clase  A,  clase  B  o  clase  C,
+
+(14:11) ¿cuál  es  la  máscara  por  defecto?
+
+(14:15) Y  clase  Ca/24  la  máscara,  por  ejemplo.
+
+(14:18) Bueno,  entonces  le  pregunta,  ¿cuál  es  su
+
+(14:20) máscara?  255  255  2550  es  la  máscara  por
+
+(14:25) defecto.  Y  sí,  porque  si  no  fuese  la
+
+(14:27) máscara  por  defecto,  la  red  estaría
+
+(14:29) subneteada  si  fuese  un  barra27,  1/28,  eh
+
+(14:32) 1/22.
+
+(14:34) Entonces,  la  pregunta  es  si  ven  que  es
+
+(14:37) un  barra24,  un  barra16  o  un  barra  100
+
+(14:40) según  qué  dirección  IPCA,  deberían
+
+(14:42) decir,  "Sí,  es  la  máscara  por  defecto."
+
+(14:45) Ahora,  si  es  la  máscara  por  defecto,
+
+(14:47) quiere  decir  que  esa  red  no  está
+
+(14:49) subneteada.  Entonces,  tienen  que  ir
+
+(14:51) respondiendo  estas  preguntas  teóricas
+
+(14:54) sobre  la  base  de  la  IP,  digamos,  eh,  que
+
+(14:58) cada  uno  obtiene  de  su  escenario.  Sí,
+
+(15:02) porque  esto  es  un  trabajo  individual  o
+
+(15:04) en  grupo  o  de  pares.  En  este  caso,  este,
+
+(15:08) si  quieren  pueden  conectarse  en  una
+
+(15:11) meeting  de  a  dos,  digamos,  en  el  digamos
+
+(15:14) los  que  conforman  el  grupo  y  lo  hacen
+
+(15:16) juntos,  ¿sí?  que  me  parece  un  poco  más
+
+(15:18) dinámico  y  un  poco  más  divertido  que  que
+
+(15:20) digamos  que  hacerlo  en  forma  individual.
+
+(15:22) Total,  el  resultado  va  a  ser  el  mismo
+
+(15:24) para  los  dos.  De  hecho,  yo  les  les
+
+(15:25) recomendaría  eso  aprovechando  que  tienen
+
+(15:27) la  posibilidad  de  hacerlo  eh  de  pares
+
+(15:31) y  después  les  va  a  decir,  "Es  una  red  eh
+
+(15:33) es  una  red,  perdón,  la  red  es  pública  o
+
+(15:36) privada.  ¿Qué  direcciones  de  red  está  en
+
+(15:40) la  misma  clase?
+
+(15:43) Eh,  perdón,  ¿qué  direcciones  de  red  de
+
+(15:45) esta  misma  clase  están  reservadas?
+
+(15:48) Bueno,  está  todo  relacionado  con,
+
+(15:50) digamos,  eh,  a  priori  creo  que  ya  vamos
+
+(15:53) a  saber  que  están  trabajando  en  una  red
+
+(15:55) privada.  Sí.  Eh,  entonces  esta  pregunta
+
+(15:59) está  relacionada  a  digamos  eh  si  es  un
+
+(16:04) barra24,  ¿cuántas  direcciones  IP  podría
+
+(16:07) eh  tener  utilizables,  o  sea,  asignables
+
+(16:10) a  un  host?
+
+(16:12) Eso  hace  referencia  a  esta  a  esta  esta
+
+(16:15) pregunta.
+
+(16:16) Y  después  viene  dice,  "¿Cuánto  host
+
+(16:18) puede  haber  en  la  red  como  máximo?"
+
+(16:21) Bueno,  si  es  un  barra24  saben  eh  ya  lo
+
+(16:25) pueden  responder  al  toque  si  la  red  está
+
+(16:27) subneteada,
+
+(16:29) o  sea,  que  lo  que  ustedes  ven  en  ese  IP
+
+(16:32) config/all
+
+(16:33) que  la  máscara  no  es  un  barra24,  por
+
+(16:36) ejemplo,  es  un  un  240.
+
+(16:39) Entonces,  bueno,  acá  tienen  que  hacer
+
+(16:41) las  cuentas  y  responder  cuántas
+
+(16:43) direcciones  eh  de  red  son  eh  asignables
+
+(16:46) como  máximo.  Y  después  tienen  que  decir
+
+(16:49) cuál  es  la  dirección,  digamos,  de
+
+(16:51) broadcast,
+
+(16:52) digamos,  si  es  un  barra24  es  la  es  la  ya
+
+(16:56) saben  cuál  es  que  es  la  eh  es  la  última
+
+(16:59) dirección
+
+(17:01) que  no  es  asignable,  digamos,  es  la  de
+
+(17:03) broadcast.
+
+(17:05) En  lo  mismo,  bueno,  esto  digamos  que
+
+(17:07) ustedes  saben,  dice,  "Es  una  red  con
+
+(17:10) colisiones.  En  caso  afirmativo,  ¿cuánto
+
+(17:12) dominio  colisión  tiene?
+
+(17:14) Es  una  red  de  broadcast,  digamos,  en
+
+(17:16) caso  afirmativo,  ¿cuántos  de  broadcast
+
+(17:18) tiene?"
+
+(17:19) Y  bueno,  esto  es  algo  teórico  que  lo  van
+
+(17:22) a  ir  viendo  en  la  medida  que  eh  que  que
+
+(17:27) vayan  eh  eh  avanzando.
+
+(17:31) Eh,
+
+(17:33) ¿cómo  se  puede  segmentar  una  un  dominio
+
+(17:35) de  colisión?  Esto  yo  se  lo  dije  en
+
+(17:37) alguna  de  las  clases  que  tuvimos.
+
+(17:38) ¿Alguien  se  acuerda  cómo
+
+(17:43) usando  switches  en  modo  puente  para  que
+
+(17:46) no  coleccion?
+
+(17:48) Exacto.  Los  switches,  digamos,  segmentan
+
+(17:51) dominios  de  colisión.  ¿Sí?  ¿Por  qué?
+
+(17:53) Porque  generan  una  tabla  de  macadres.  Y
+
+(17:55) esa  tabla  de  macadres
+
+(17:57) eh eh  sabe  que  para  cada  puerto  tiene  eh
+
+(18:02) asignado  una  macadres.  Eh,  es  una  manera
+
+(18:06) de de  segmentar  los  dominios  de
+
+(18:07) colisión.  ¿Y  cómo  se  segmentaban  los
+
+(18:09) dominios  de  broadcast?  ¿Se  acuerdan?
+
+(18:15) Con  Velant.
+
+(18:17) con  es  una  forma  y  la  otra  forma
+
+(18:19) fase  de  ruta.
+
+(18:21) Exacto.  Veamos,  porque  supongamos  que  no
+
+(18:23) tienen  bilance,  tien  una  red  llan
+
+(18:25) completa  que  que  que  se  consume  todo  el
+
+(18:28) el  barra24,  es  decir,  que  está  todo  en
+
+(18:31) la  van  en  la  van  un,  que  es  la  van
+
+(18:33) nativa.  Sí,  la  vila  por  default.
+
+(18:36) Supongamos  que  la  red  no  está  eh
+
+(18:39) segmentada  por  van.  Entonces,  ¿cuál  es
+
+(18:42) la  forma  de  segmentar  un  dominio  de
+
+(18:44) broadcast?  Bueno,  a  través  de  un  router,
+
+(18:46) digamos,  el  router  es  el  que  divide,
+
+(18:48) digamos,  o  sea,  una  red,  o  sea,  un
+
+(18:50) prefijo  de  otro  prefijo.
+
+(18:53) Y  después  dice,  esta  redemplea
+
+(18:55) direccionamiento  hiperestático  o
+
+(18:56) dinámico.  ¿Cómo  funciona  eso?  Bueno,  ya
+
+(18:59) conocen  cuál  es  el  mecanismo  para
+
+(19:01) asignación  dinámica  o  si  es  estático.  Y
+
+(19:04) bueno,  tienen  que  ir  un  poco  digamos
+
+(19:06) respondiendo  todas  estas  preguntas  con
+
+(19:08) el  escenario,  digamos  individual  de  de
+
+(19:10) cada  uno  de  ustedes.
+
+(19:13) Y  después  cuando  el  cuando  empiezan  a
+
+(19:16) trabajar  con  el  análisis  este  de  las
+
+(19:18) tramas,
+
+(19:20) esta  esta
+
+(19:23) eh  diapositiva  o  este  slides  no  se  ve
+
+(19:26) muy  bien,  pero  lo  que  pretende  es  eh
+
+(19:30) decirles  a  ustedes  que  una  trama  una
+
+(19:32) trama  Ethernet  tiene  esta  este  esta
+
+(19:36) forma  de  encapsular  o  desencapsular
+
+(19:39) eh
+
+(19:43) Bueno,  es  la  forma  de  encapsulamiento  o
+
+(19:46) de  ese  encapsulamiento  que  se  da  en  las
+
+(19:47) capas,  digamos,  del  modelo  OSI,
+
+(19:51) que  en  realidad
+
+(19:53) ustedes  conocen  el  modelo  teórico,  pero
+
+(19:55) el  modelo  real  es  el  modelo  TCP.  ¿Sí?  Y
+
+(19:58) fíjense  que  eh eh  en  este  proceso  de
+
+(20:02) encapsulamiento  o  desencapsulamiento
+
+(20:05) tienen  la  capa  de  aplicación,  si  este  es
+
+(20:07) el  modelo  TCP,  digamos,  a  eso  se  le
+
+(20:09) agrega  el  encabezado  TCP,  que  es  la
+
+(20:12) capa,  digamos  de  de  digamos  TCP.
+
+(20:16) Después  eso  se  vuelve  a  sobrar  y  tienen
+
+(20:17) la  capa  IP,  digamos,  eso  se  vuelve  a
+
+(20:20) sobrar  y  tienen  la  capa  de
+
+(20:21) direccionamiento  eh  a  nivel  capa  capa  2
+
+(20:25) que  es  este  se  lo  se  lo  conoce  como  esto
+
+(20:29) que  tiene  el  LC  y  Mac.  Sí.
+
+(20:33) Eh,  y  acá  tienen,  fíjense,  la  capa  de
+
+(20:36) aplicación,  digamos,  eh  o  la  última  capa
+
+(20:40) que  tiene  los  datos  y  y  lo  que  machea
+
+(20:43) con  el  modelo  OSI,  que  son  las  tres
+
+(20:45) capas,  eh,  que  son  la  de  sesión,  la  de
+
+(20:49) aplicación  y  la  otra  que  es  sesión
+
+(20:53) aplicación  y  se  me  fue  la  otra  ahora.
+
+(20:55) presentación
+
+(20:56) y  la  de  presentación
+
+(20:58) y  eso  cuando  cuando  se  le  pone  el
+
+(21:00) encabezado  se  lo  se  lo  digamos  de  capa
+
+(21:03) eh  cuatro  se  lo  llama  segmento.
+
+(21:06) Sí.  Después  cuando  se  le  pone  el
+
+(21:08) encabezado  IP  se  lo  llama  datagrama  y
+
+(21:10) cuando  se  le  pone  en  el  encabezado  capa
+
+(21:13) 2  e
+
+(21:16) en  eh
+
+(21:18) tenemos  paquete,  segmento  y  datagrama.
+
+(21:20) No  me  gusta  demasiado  esta  imagen  porque
+
+(21:23) crea  un  poco  de  confusión,  pero  es
+
+(21:25) segmento,  eh,  es  paquete,  segmento,
+
+(21:32) eh,  datagrama  y  y
+
+(21:36) después  ya  viene  el  tren  de  pulsos.  Sí,
+
+(21:38) no  es  esta  eh
+
+(21:42) esta  imagen  la  que  más  me  gusta.  Tengo
+
+(21:43) otra  para  mostrarles,  pero  bueno,  es  la
+
+(21:44) que  está  la  que  quedó  en  la
+
+(21:45) presentación,  que  es  un  poco  vieja.
+
+(21:48) Ahora  hay  algo  importante  en  y  acá  sí
+
+(21:52) hay  una  distinción  en  las  tramas.  Sí,  en
+
+(21:58) se  llama  trama  o  datagrama.  Sí.  Eh,  es
+
+(22:02) por  eso  les  digo  que  esto  no  me  gusta
+
+(22:05) demasiado  porque  eh  no  muestra  eh  100%
+
+(22:10) cómo  están  eh  especificados  los  nombres.
+
+(22:14) Después  les  voy  a  mostrar  una  imagen,
+
+(22:15) eh,  que  la  voy  a  compartir  que  se  ve  un
+
+(22:17) poco  mejor.
+
+(22:18) Profe,  perdón,  también  habíamos  visto
+
+(22:21) que  en  no  se  usa  capa  LLC  cuando  se
+
+(22:25) trabaja  con  IP,  tipo  que  que  se  va
+
+(22:27) directo  de  Mac  a  IP,  puede  ser.  ¿O  me
+
+(22:29) estoy  confundiendo?
+
+(22:30) Sí.  Eh,  por  eso,  por  eso  es  que  eh  tengo
+
+(22:34) que  avanzar  con  esto  para  que  se
+
+(22:35) entienda  esta  parte,  digamos,  que  para
+
+(22:38) que  se  entienda  esto  que  no  está  bien  no
+
+(22:41) está  bien  claro,  tengo  que  avanzar  un
+
+(22:42) poco  más  para  explicarles  cuando  nos
+
+(22:45) focalizamos  en  un  en  una  trama  Ethernet,
+
+(22:48) ¿sí?  Cuando  nos  focalizamos,  o  sea,  este
+
+(22:51) es  el  proceso  de  encapsulamiento  y
+
+(22:52) desencapsulamiento
+
+(22:54) de  de  las  cuatro  capas  del  modelo  TCP.
+
+(22:57) Eh,  pero  pero  nosotros  nos  vamos  a
+
+(23:00) enfocar  en  lo  que  es  la  trama  Ethernet,
+
+(23:02) ¿sí?  De  lo  que  vieron  en  teoría.
+
+(23:05) Entonces,  cuando  hablamos  de  tramas
+
+(23:07) Ethernet  tiene  tienen  estas  dos
+
+(23:08) clasificaciones,
+
+(23:10) ¿sí?  Una  es  la  trama  Ethernet  2,  porque
+
+(23:15) se  la  conoce  así  como  trama  Ethernet  2.
+
+(23:17) Lo  que  pasa  que  también  recibe  el  nombre
+
+(23:20) de  Ethernet
+
+(23:22) Dix  versión  2.  Sí.  O  sea,  pero  nosotros
+
+(23:26) la  conocemos  o  la  vamos  a  ver  en  todos
+
+(23:29) lados  con  este  nombre,  con  trama
+
+(23:30) Ethernet  2,  pero  este  es  el  nombre
+
+(23:34) verdadero  en  realidad.  Ethernet  Dix
+
+(23:36) versión  2.
+
+(23:38) Ese  es  un  tipo  de  trama  y  la  otra  trama
+
+(23:42) es  la  trama  802.3.
+
+(23:48) La  tienen  esas  dos  distinciones,  la
+
+(23:51) 802.3  TR  y  la  trama  Ethernet  2,  porque
+
+(23:54) son  las  que  vieron  en  teoría
+
+(23:57) y  se  diferencian  que  en  una  se  conoce
+
+(23:59) por  el  letter  type  y  con  el  otra  se
+
+(24:01) conoce  por  la  longitud.  ¿Se  acuerdan
+
+(24:02) eso?
+
+(24:03) Sí,  sí,
+
+(24:04) sí.
+
+(24:05) Bueno,  lo  que  pasa  que  esto  tiene  una
+
+(24:07) clasificación  que  es  es  un  poquito  más
+
+(24:10) eh  segregada  y  esa  clasificación  está
+
+(24:13) que  esta  trama  802.3
+
+(24:17) tiene  dos  tipos  de  encabezados.  Una  es
+
+(24:20) la  que  tiene  cabecera  802.2  LLC  y  la
+
+(24:24) otra  es  802.2  Snap.
+
+(24:28) ¿Qué  significa  cada  una  de  esas  cosas?
+
+(24:30) Lo  dice  acá  abajo.  La  LLC,  que  es  la  que
+
+(24:32) más  conocemos  también  se  llama  logical
+
+(24:35) link  control.  Y  la  otra,  la  SNAP,  que
+
+(24:38) también  existía  o  existe,  significa
+
+(24:42) Subnetwork  Access  Protocol.
+
+(24:46) De  vuelta  es  una  clasificación  que
+
+(24:48) ustedes  la  tienen  que  conocer,  que
+
+(24:49) existe,  ¿sí?  Pero  nosotros  generalmente
+
+(24:52) vamos  a  trabajar  con  esta,  con  la
+
+(24:53) Ethernet  2,  pero  a  nivel  teórico  la
+
+(24:56) tienen  que  conocer  y  tienen  que  conocer
+
+(24:57) su  diferencia.
+
+(25:00) Entonces,  dicho  esto,  conociendo  estas
+
+(25:01) dos  clasificaciones,  la  Ethernet  Dot  y
+
+(25:03) la  802.3,  que  ya  lo  vieron  en  la  teoría,
+
+(25:05) más  allá  que  les  estoy  mostrando  esta
+
+(25:07) segregación,  son  tramas  distintas.
+
+(25:12) Sí.
+
+(25:14) Y  acá  viene  la  trama  Ethernet.  La  trama
+
+(25:17) Ethernet  viene  tiene  todos  estos
+
+(25:20) parámetros  que  no  los  voy  a  ir
+
+(25:21) repitiendo  porque  ya  lo  vieron  varias
+
+(25:23) veces,
+
+(25:25) pero  sí  me  interesa  que  se  focalicen  en
+
+(25:27) esto,  que  los  datos  van  de  0  a  15  y
+
+(25:31) sobre  eso  se  encapsula,  o  sea,  digamos,
+
+(25:34) se  ensobra
+
+(25:36) la  capa  IP  y  la  capa  TCP.
+
+(25:40) ¿Se  entiende?
+
+(25:44) Sí,
+
+(25:44) sí,  sí.
+
+(25:45) Bueno,
+
+(25:48) fíjense  que  lo  importante  es  lo  que  va  a
+
+(25:50) pasar  con  esto  que  está  acá,  el  campo  de
+
+(25:52) datos.
+
+(25:54) Sí,  ese  es  el  campo  que  le  tenemos  que
+
+(25:56) prestar  más  atención  en  esta  distinción
+
+(25:58) de  una  trama  Ethernet.
+
+(26:00) ¿Qué  pasa  con  la  trama  Ethernet?  Esta  la
+
+(26:03) Ethernet  Dots  que  se  la  llama  divx  dice,
+
+(26:07) "La  longitud  del  campo  de  datos  se
+
+(26:08) obtiene  mediante  la  interpretación  del
+
+(26:10) campo  de  datos.  O  sea,  en  el  campo  este
+
+(26:14) de  datos  aparece  esto,  el  type,  ¿sí?,
+
+(26:19) que  dice  0x800  o  0x806.  IP  versión  4  o
+
+(26:23) IP  versión  6.
+
+(26:26) ¿Es  correcto?  ¿Me  siguen
+
+(26:30) bien?
+
+(26:32) Y  después  tiene,  bueno,  como  siempre  la
+
+(26:34) sincronización,  la  dirección  eh  de
+
+(26:37) destino,  dirección  de  origen,  el  el
+
+(26:40) letter  type  o  el  o  el  campo  type  y
+
+(26:43) después  vienen  los  datos  y  después  viene
+
+(26:44) el  CRC.
+
+(26:48) O  sea,  esta  trama,  la  Ethernet  2,  no
+
+(26:51) utiliza,  o  sea,  no  tiene  nada  que  ver
+
+(26:54) con  esta  otra  clasificación,
+
+(26:58) ¿se  entiende?  O  sea,  estoy  hablando  de
+
+(26:59) la  primer  clasificación,  la  Ethernet  2.
+
+(27:03) Sí.
+
+(27:06) Ahora  me  voy,  digamos,  a  la  otra
+
+(27:09) clasificación,  a  la  que  tiene  la
+
+(27:12) cabecera  o  la  que  se  la  conoce  como
+
+(27:14) trama  de  Ethernet  802.3.
+
+(27:17) Y  802.3
+
+(27:20) tenemos  dos  tipos.  La  que  es  con
+
+(27:22) cabecera  802.2  L  elc,  que  es  la  que
+
+(27:25) ustedes  más  escucharon.
+
+(27:27) Y  acá  pasa  lo  siguiente.
+
+(27:33) Este  campo  que  está  acá  ya  no  es  más  el
+
+(27:36) type,  es  la  longitud  del  campo  de  datos.
+
+(27:40) ¿Sí?  Y  acá  la  longitud  del  campo  de
+
+(27:42) datos  dice
+
+(27:45) lo  siguiente,
+
+(27:47) que  se  roba,  digamos,  del  campo  de
+
+(27:50) datos.  Esta  trama  se  roba  del  campo  de
+
+(27:52) datos.
+
+(27:55) Si  si  el  otro  era  100,  acá  es  1497
+
+(27:59) porque  se  roba  a  3  bytes  del  campo  de
+
+(28:01) datos  para  poner  esta  información.
+
+(28:05) Sí,  de  SAP,  SS  SAP  y  control,  que  son  eh
+
+(28:09) 3  bytes  de  control  y  se  emplean  para
+
+(28:12) esto,  se  emplean  para  identificar  el
+
+(28:14) protocolo.
+
+(28:17) O  sea,  cuando  les  hablé  de  las  tramas,
+
+(28:22) les  dije  que  le  presten  atención  a  esto.
+
+(28:25) En  una  trama  de  Ethernet,  los  datos
+
+(28:28) oscilan  entre  0  y  1500.  Sí,  el  campo  de
+
+(28:31) datos  1500  by  de  0  a  1500  bytes
+
+(28:37) en  la  tram  en  la  cabecera  y  triple  802.3
+
+(28:41) con  cabecera
+
+(28:43) 802.2  del  LC  se  roba  3  bytes  del  campo
+
+(28:48) de  datos  para  esto,  para  esta
+
+(28:49) información.
+
+(28:51) ¿Me  siguen  ahí?
+
+(28:54) Sí,  sí,
+
+(28:54) sí,  sí.  Entonces,  acá  donde  dice
+
+(28:57) longitud  del  campo  de  datos  va  a  decir
+
+(28:59) 1497  by  acá.  Entonces,  cuando  ustedes
+
+(29:02) leen  este  este  campo,  ya  saben  si  dice
+
+(29:05) esto  14,  ya  saben  que  es  esta.
+
+(29:09) Ahora  bien,
+
+(29:12) la  otra  clasificación
+
+(29:15) es  la  802.3
+
+(29:17) de  la  I  triple,  pero  con  la  cabecera
+
+(29:19) 800.2  Snap,  que  era  la  segunda
+
+(29:22) clasificación,  ¿se  acuerdan?
+
+(29:25) esa  clasificación
+
+(29:29) en  el  lenguaje  que  más  me  gusta  hablar  a
+
+(29:30) mí,  que  es  el  el  lenguaje  que  manejamos
+
+(29:34) nosotros,  eh  como  si  fuéramos  eh  pares,
+
+(29:39) o  sea,  como  si  yo  fuese  otro  alumno  más,
+
+(29:42) es  que  del  campo  de  datos  se  afana  esta
+
+(29:47) 8  bytes,  5  6  7  8,  o  sea,  se  afana  el
+
+(29:52) campo  de  datos  ocho  8  bytes,  la  otra  se
+
+(29:55) afanaba  eh  13.
+
+(29:58) Entonces  el  campo  este  de  datos  va  a
+
+(30:00) decir  que  acá  tiene  1492  bytes.  Si
+
+(30:04) ustedes  leen  que  acá  dice  1492  bytes,
+
+(30:07) saben  que  se  trata  de  una  IH12.3
+
+(30:10) con  cabecera  Snap.
+
+(30:13) Y  la  cabecera  Snap  tiene  estos  campos
+
+(30:16) que  son  los  mismos  que  antes,  pero  le
+
+(30:18) agrega  un  campo  más  que  se  llama
+
+(30:20) Protocol  ID  y  que  y  que  se  se  afana  5
+
+(30:23) bytes  más.  Sí,  se  entendió  hasta  ahora,
+
+(30:29) ¿eh?  Sí.  Y  si  tiene  13  by  porque  los
+
+(30:32) datos  son  menos  ahí,  ¿cómo  los
+
+(30:34) identificarías  a  los  dos?
+
+(30:37) Vamos  paso  a  paso.
+
+(30:38) Okay.  Okay.
+
+(30:41) Entonces,
+
+(30:43) y  acá  les  presento  una  captura  que  es  un
+
+(30:47) poco  antigua  del  e  del  analizador  de
+
+(30:51) protocolos  que  se  llama  WA,  que  lo  vamos
+
+(30:52) a  abrir  después,
+
+(30:55) donde  en  esta  trama,  que  es  la  que  está
+
+(30:57) marcada,
+
+(31:00) se  da  cuenta  que  acá  se  trata  de  una
+
+(31:03) cabecera  de  tipo  LLC.  Sí.  Y  eso  lo  ven
+
+(31:08) acá  dentro.  Fíjense  en  esta  parte  que
+
+(31:11) está  acá  que  dice  Ile  802.3  3  Ethernet,
+
+(31:15) el  analizador  de  protocolos  que  está
+
+(31:18) viendo
+
+(31:20) en  la  línea  que  está  identificada,
+
+(31:23) cuando  uno  abre  la  trama  con  el
+
+(31:26) analizador  de  protocolos,  abre  la  trama,
+
+(31:28) o  sea,  el  analizador  de  protocolos,  el
+
+(31:31) wires  captura  tramas,  captura  captura
+
+(31:34) tráfico  y  ese  tráfico  que  captura  tiene
+
+(31:38) la  capacidad  de  leerlo  y  cuando  lo  lee,
+
+(31:41) lo  lee  de  la  misma  forma  que  eh  eh  que
+
+(31:45) ustedes  conocen  cómo  es
+
+(31:50) el  modelo  TCP.
+
+(31:52) ¿Qué  decía  el  modelo  TCP?  Que  el  primer
+
+(31:55) la  primer  capa  es  donde  está  el  tren  de
+
+(31:57) pulso,  los  bytes.  La  segunda  capa  hace
+
+(32:00) referencia  al  direccionamiento  físico  de
+
+(32:03) MACRES.  La  tercera  capa  hace  eh
+
+(32:05) referencia  a  erecciones  eh
+
+(32:09) [carraspeo]  eh  bueno,  en  realidad  están
+
+(32:13) eh
+
+(32:15) ya  saben  cómo  es  el  modelo  TCP,  cómo
+
+(32:17) machea  con  el  modelo  OSI.  Entonces
+
+(32:20) tengan  en  cuenta  que  acá  está  el  modelo
+
+(32:21) eh  TCP,  la  capa  uno,  la  capa  dos,  la
+
+(32:24) capa  3  y  la  capa  cuatro.  Sí.
+
+(32:27) E  entonces  en  la  capa  que  hace
+
+(32:31) referencia  a  la  capa  dos,  fíjense  que
+
+(32:33) dice  Ile  802.3  la  trama  es  esa  la  trama.
+
+(32:38) Y  cuando  lo  despiegan  y  lo  abren,
+
+(32:41) aparece  el  campo  este  que  dice  logical
+
+(32:43) link  control,  o  sea,  que  es  una  trama
+
+(32:45) LLC  y  ahí  adentro  tienen  la  información
+
+(32:48) para  poder  eh  leerla.  ¿Sí?  O  sea,  que
+
+(32:52) ustedes  con  el  analizador  de  protocolos
+
+(32:53) lo  ven  la  información  y  acá  es  donde
+
+(32:55) está  la  respuesta  de  lo  que  me
+
+(32:57) preguntaba  un  compañero  recién.  ¿Qué
+
+(32:59) pasa  si  son  1300?  Bueno,  con  el
+
+(33:01) analizador  de  protocolos  ven  esa
+
+(33:03) información.
+
+(33:07) Y  en  un  poco  avanzando  eh  con  la  parte
+
+(33:12) teórica,  vamos  a  llamarlo,  digamos,  eh
+
+(33:14) ustedes  saben  que  una  dirección  MACADRES
+
+(33:16) tiene  48  eh  48  bytes
+
+(33:21) eh  perdón,  48  bits  eh  y  esos  48  bits
+
+(33:24) están  eh
+
+(33:27) eh
+
+(33:29) separados  de  esta  manera.  Los  primeros,
+
+(33:33) o  sea,  son  6  bytes,  fíjense,  1  byte,  2
+
+(33:37) bytte,  3  bytte,  4  byte,  5  byte,  6  bytes.
+
+(33:43) Sí,  porque  6  *  8  es  48,  o  sea,  48  bits.
+
+(33:49) O  sea,  estos  dos  dígitos  es  un  byte,  o
+
+(33:52) sea,  cada  uno  está  representado  por  por
+
+(33:56) eh  por  un  byte,  ¿sí?  Eh,  o  sea,  00  es  un
+
+(34:02) byte,
+
+(34:04) 03  es  un  byte,  6B  es  un  byte,  o  sea,  y
+
+(34:08) los  primeros  3  byt  hacen  referencia  de
+
+(34:12) de  la  dirección  macadres,  los  primeros  6
+
+(34:14) bytte  hacen  referencia  al  identificador
+
+(34:16) del  fabricante.  Por  ejemplo,  puede  ser
+
+(34:18) Broadcom,  por  ejemplo,  puede  ser  Cisco,
+
+(34:21) puede  ser,  digamos,  el  fabricante,  sería
+
+(34:23) de  la  de  la  de  la  de  la  placa  de  red.
+
+(34:26) Y  los  otros  bytes,  los  otros  tres  bytes
+
+(34:29) siguientes  son  los  identificadores
+
+(34:32) únicos,  unívocos  eh  de  la  placa  de  red.
+
+(34:36) O  sea,  la  placa  red  está  tiene  esta
+
+(34:39) dirección  macadres  donde  si  yo  lo  separo
+
+(34:42) entre  los  primeros  3  byt  y  los  últimos,
+
+(34:44) lo  con  los  primeros  voy  a  saber  que  cuál
+
+(34:47) es  el  fabricante  y  eso  está  en  una
+
+(34:49) tablita  identificado.
+
+(34:57) Bueno,  esto  no  le  vamos  a  dar
+
+(34:59) importancia  porque  después  lo  voy  a
+
+(35:02) mostrar  con  otra  con  otra
+
+(35:04) con  otra  imagen  un  poco  más  legible,
+
+(35:06) pero  bueno,  lo  que  les  voy  a  adelantar
+
+(35:09) es  que  nosotros  tenemos  macadres  que  son
+
+(35:13) de  broadcast,  que  ya  saben  que  es  cuando
+
+(35:15) todos  los  bytes  están  identificados  con
+
+(35:18) con  la  letra  F.  Si  todos  están  con  F  es
+
+(35:21) un  es  un  broadcast.  Si  tienen  eh  digamos
+
+(35:26) algo  que  no  es  un  broadcast  puede  ser  o
+
+(35:30) o  una  dirección  macades  de  unicast,  pero
+
+(35:32) lo  que  sí  tienen  que  saber  que  existen
+
+(35:34) las  direcciones  macaderes  de  multicast,
+
+(35:37) ¿sí?  y  que  tienen  una  e
+
+(35:41) eh  una  forma  específica  de  escribirse,
+
+(35:44) que  esta  no  es  la  imagen  más  feliz  para
+
+(35:46) mostrarles  porque  es  un  poco  confusa,
+
+(35:49) pero  sí  recuerden  que  son  6  bytes,  48
+
+(35:52) bits  en  total,  donde  los  primeros  3
+
+(35:55) bytes  hacen  referencia  al  identificador
+
+(35:56) del  fabricante,  los  segundos  bytes  hacen
+
+(35:59) referencia  a  al  al  dispositivo,  pero
+
+(36:03) existe  la  particularidad  de  cuandondo  es
+
+(36:05) una  macad  de  broadcast  o  de  multicast.
+
+(36:12) Y  acá,  bueno,  hace  referencia  un  poquito
+
+(36:14) a  esta  imagen  anterior,  que  cuando
+
+(36:16) ustedes  ven
+
+(36:18) los  primeros  dos  bytes,  digamos,  que  en
+
+(36:21) este  caso  es  00
+
+(36:24) en
+
+(36:26) acá  hace  referencia  a  que  si  el  primero
+
+(36:29) es  cero  eh  y  el  segundo  es  cero  hace
+
+(36:34) referencia  a  que  es  una  dirección
+
+(36:35) marcada  global.
+
+(36:38) y  y  de  tipo  únicas.  Ahora,  si  es  eh  como
+
+(36:42) dice  acá  tiene  un  uno  puede  ser  de
+
+(36:44) múlticas  o  puede  ser  local,  pero  ya  les
+
+(36:46) digo,  no  está  bien  eh  explicado  esta  eh
+
+(36:50) esta  esta  imagen.
+
+(36:53) Y  acá  algunas  particularidades  de  lo  que
+
+(36:55) yo  ya  les  comenté.  ocupan  se  bytes.
+
+(36:58) El  primer  bit  indica  si  es  individual  o
+
+(37:01) de  un  grupo,
+
+(37:04) pero  mucho  no  no  explica  esta
+
+(37:05) diapositiva.  Voy  a  seguir  avanzando.
+
+(37:10) Entonces,  cuando  ustedes  empiezan  a
+
+(37:11) hacer  un  análisis,  digamos,  con  el
+
+(37:15) en  el  trabajo  de  la  número  5,  les  va  a
+
+(37:18) ir  preguntando,  les  va  a  decir  esto,
+
+(37:20) inicien  una  captura  con  el  con  el
+
+(37:24) y  en  el  momento  que  hagan  la  captura
+
+(37:26) hagan  un  ping  al  default  gateway.  Vieron
+
+(37:28) que  ustedes  al  principio  ponen  IP
+
+(37:29) config.  Sí,  cuando  ponen  IPconfig
+
+(37:34) les  muestra  la  IPconfig/  all  no  pueden
+
+(37:37) poner  les  muestra  cuál  es  la  dirección
+
+(37:39) IP  de  su  dispositivo,  de  su  workstation,
+
+(37:42) le  muestra  cuál  es  la  máscara  subred,  le
+
+(37:44) muestra  cuál  es  el  su  default  gateway.
+
+(37:46) Entonces,  lo  que  acá  les  dice  es  inicien
+
+(37:49) una  captura  con  el  warjack,  que  ahora
+
+(37:50) después  les  voy  a  mostrar  cómo  es,  y  en
+
+(37:53) ese  momento  tengan  abierta  eh  el  la
+
+(37:57) terminal  o  la  consola,  el  cmd.xe,  Ex  y
+
+(38:00) hagan  un  pin  al  default  Gateway  que  van
+
+(38:03) a  saber  cuál  es.  En  ese  momento  el
+
+(38:06) analizador  de  protocolos  el  Wac,  captura
+
+(38:09) eso  y  leamos  después  lo  después  lo  paran
+
+(38:14) y  cuando  lo  paran  dice  eh  van  a  fijarse
+
+(38:19) eh  cuál  es  el  el  protocolo  ISMP
+
+(38:23) y  acá  van  a  tener  que  empezar  a
+
+(38:25) responder  estas  preguntas.  Por  ejemplo,
+
+(38:27) ¿cuáles  son  los  campos  de  la  trama?
+
+(38:29) ¿Qué  valores  tiene  cada  campo  y  cuál  es
+
+(38:31) su  significado?  Sí,  esto  para  que  vayan
+
+(38:34) aprendiendo
+
+(38:35) en  lo  que  hace  unos  minutos  fui
+
+(38:38) explicando.
+
+(38:40) Las  voy  a  leer  todas  las  preguntas.  ¿Qué
+
+(38:42) tipo  de  encabezado  el  eh  qué  tamaño
+
+(38:45) tiene  el  encabezado  la  trama?  ¿Y  cuáles
+
+(38:46) son  sus  campos?  ¿Qué  tamaño  tiene  la
+
+(38:49) cola  de  la  trama?  O  sea,  la  parte  final
+
+(38:51) de  la  trama.  Eh,  ¿qué  campo  sirve  para
+
+(38:55) detectar  errores?  ¿Y  cuál  es  el  valor?
+
+(38:57) Sí.  ¿Cuántos
+
+(39:00) bytte  corresponden  a  los  datos?
+
+(39:02) ¿Qué  tamaño  tiene  ese  campo?
+
+(39:06) ¿Qué  protocolos  de  nivel  3  TCP  se
+
+(39:09) encapsulan  en  la  trama?  Si  ustedes
+
+(39:12) conocen,  ustedes  tienen  que  saber  bien
+
+(39:14) desde  el  punto  de  vista  teórico  cómo  es
+
+(39:16) una  trama  y  cuáles  son  los  campos  que
+
+(39:18) tiene.  O  sea,  tienen  que  saber  bien
+
+(39:19) esto.
+
+(39:24) ¿Por  qué  tienen  que  saber  bien  esto?
+
+(39:25) Porque  tienen  que  saber  que  este  es  el
+
+(39:27) campo,  el  el  preámbulo.  El  preámbulo  y
+
+(39:30) el  CRC  no  se  los  muestra  el  Wirador  de
+
+(39:33) protocolos.  Le  va  a  mostrar,  digamos,
+
+(39:36) desde  la  dirección  destino  hasta
+
+(39:40) acá.
+
+(39:43) Incluso  eh  me  animaría  a  decir  que  el
+
+(39:46) relleno  tampoco.  Me  animaría  a  decir  que
+
+(39:48) les  va  a  mostrar  todo  esto.
+
+(39:53) E  esto  que  está  acá  eh  el  CRC  no  se  los
+
+(39:56) muestra  y  el  y  estos  dos  campos  tampoco.
+
+(39:59) Pero  ustedes  que  saben  la  teoría  y
+
+(40:01) conocen  cómo  es  una  trama  de  terne
+
+(40:02) tienen  que  saber  para  poder  responder
+
+(40:05) las  preguntas.  Sí,  ustedes  van  a  ver  en
+
+(40:08) el  en  el  anillador  de  protocolos  la
+
+(40:10) dirección  macades  de  origen,  la
+
+(40:12) dirección  macadera  de  destino,  el  campo
+
+(40:14) de  datos  y  van  a  ver  eh  van  a  ver
+
+(40:17) exactamente  esto  mismo.  Obviamente  que
+
+(40:20) eso  mismo  lo  van  a  entender  y  cuando  se
+
+(40:22) encapsula  esto  también  lo  van  a  ver  en
+
+(40:25) el  analizador  de  protocolos.  Van  a  ver
+
+(40:28) el  campo  eh  digamos  de  de  la  capa
+
+(40:32) superior  y  la  otra  y  la  superior.  Lo  van
+
+(40:34) a  ver.  Sí,  porque  está  encapsulado.  O
+
+(40:36) sea,  acá  dentro  cuando  lo  despiegan  está
+
+(40:40) esto  y  está  esto.
+
+(40:43) O  sea,  fíjense,  miren
+
+(40:47) la  está  está  la  el  está  el  frame,  está
+
+(40:52) esto  está  desplegado,  esto  que  dice  I8,
+
+(40:54) está  la  trama  desplegada  acá  y  después
+
+(40:57) está  el  campo  de  datos.  Si  ustedes
+
+(40:58) despliegan  el  campo  de  datos  que  está
+
+(41:00) acá  marcado  en  amarillo,  va  a  aparecer
+
+(41:04) esta  información.
+
+(41:06) Va  a  aparecer  esta  información  de  acá.
+
+(41:09) Esto  va  a  aparecer  porque  si  lo
+
+(41:11) desplegan  lo  van  a  ver,  lo  van  a  lo  van
+
+(41:13) a  abrir  y  van  a  ver  estos  otros  estos
+
+(41:15) dos  encabezados  van  a  ver.
+
+(41:18) ¿Se  entiende?  ¿Me  explico?  Esos  dos
+
+(41:20) encabezados,  el  encabezado  IP  y  el
+
+(41:22) encabezado  TCP,
+
+(41:25) en  base  a  la  pregunta  que  creo  que  me
+
+(41:26) hiciste  vos,  Matías,
+
+(41:29) consumen  parte  del  campo  de  datos  porque
+
+(41:32) ustedes  saben  cuánto  es  la  cabecera  IP  y
+
+(41:34) cuánto  es  la  cabecera  TCP.
+
+(41:37) ¿Saben  cuántos  bytes  consume  cada  una  o
+
+(41:39) no?
+
+(41:40) Porque  eso  no  es  aleatorio,
+
+(41:46) ¿sí  o  no?
+
+(41:48) Sí.  Sí.
+
+(41:49) O  sea,  ¿saben  cuánto  cuántos  bytes  ocupa
+
+(41:53) el  encabezado  IP  y  cuántos  bytes  ocupa
+
+(41:55) el  encabezado  TCP
+
+(41:58) o  UDP?
+
+(42:00) Sí,  porque  TCP  ocupa  más.  El  encabezado
+
+(42:02) TCP  ocupa  más  que  el  encabezado  UDP.
+
+(42:07) Entonces,  estos  dos  encabezados
+
+(42:11) se  comen  parte  del  encabezado  de  datos.
+
+(42:16) Perdón,  se  comen  parte  del  campo  de
+
+(42:18) datos  y  después  queda  otra  parte  acá
+
+(42:20) utilizable  para  los  datos.
+
+(42:23) Ahí  viene  lo  que  me  preguntaste  vos,
+
+(42:24) Matías,  ¿qué  pasa  si  es  1300?  Y  bueno,
+
+(42:28) cuando  ustedes  sepan  que  el  campo  de
+
+(42:30) datos  si  es  el  encabezado  Ethernet  2,
+
+(42:33) oscila  entre  0  y  1500,  pero  a  eso  le  a
+
+(42:36) de  0  a  1500  le  robo  una  parte  por  el
+
+(42:39) encaso  TCP  IP  y  le  robo  una  parte  porque
+
+(42:42) el  encaso  es  TCP,  va  a  quedar,  o  sea,
+
+(42:45) los  1500  le  restan  estos  encabezados  y
+
+(42:48) lo  que  queda  acá,  si  es  una  trama
+
+(42:51) Ethernet  2,  es  lo  que  va  a  estar
+
+(42:53) disponible  para  que  viaje  ahí  los  datos
+
+(42:56) que  que  van  a  ir  de  un  lado  al  otro.  ¿Se
+
+(42:58) entiende?  ¿Me  explico  bien?
+
+(43:02) Si  hay  algo  de  lo  que  digo  que  no  machea
+
+(43:05) con  lo  que  vieron  en  la  teoría,  me  lo  me
+
+(43:07) lo  dicen  porque  también  me  puedo
+
+(43:08) equivocar,
+
+(43:10) ¿no?  Sí.  Eh,  yo  la  pregunta  en  sí  es,  o
+
+(43:13) sea,  viendo  los  bits  de  la  trama,  sé  que
+
+(43:16) si  es  0800  o  0806,
+
+(43:19) sé  que  es  eternet  Ethernet  2  y  si  es  de
+
+(43:25) 05  para  abajo,  o  sea,  0500  y  pico  para
+
+(43:27) abajo,  sería
+
+(43:29) no  no  hay  que  ver  otras  cosas.
+
+(43:31) La  longitud,
+
+(43:32) por  eso  te  digo,  este  capo,  este  capo  es
+
+(43:34) variable,  mi  amor.
+
+(43:35) No  digo  el  de  longitud  de  datos.
+
+(43:39) Bueno,  por  eso00an
+
+(43:42) a  ver  eso  porque  está  relacionado  e  con
+
+(43:46) el  análisis  de  la  trama,  digamos.  Eh,
+
+(43:52) lo  van  a  ver  después  cuando  cuando
+
+(43:53) analicen  las  tramas,  digamos,  ¿qué  qué
+
+(43:56) saben  ustedes?  Yo  lo  pregunto  al  revés.
+
+(43:58) ¿Qué  saben  ustedes,  digamos,  si  el  campo
+
+(44:00) no  es  el  campo  type  como  este  de  esta
+
+(44:02) acá,
+
+(44:04) ¿qué  le  qué  les  explicaron  ustedes  en  la
+
+(44:06) teoría  si  se  trata  de  este  campo?  Yo  es
+
+(44:08) al  revés,  se  los  pregunto  yo  a  ustedes,
+
+(44:10) digamos,  ¿qué  pasa  con  este  campo?
+
+(44:13) Alguno  de  ustedes  tiene  que  saberlo  esto
+
+(44:14) si  rindieron  el  parcial  de  teoría.  Ese
+
+(44:16) campo,
+
+(44:16) ¿qué  pasa  con  ese  campo  si  no  es  este
+
+(44:18) campo  que  está  acá  que  que que  lo  leen  y
+
+(44:21) saben  que  puede  ser  0800,  0806?
+
+(44:24) Al  revés,  se  lo  pregunto  yo  a  ustedes.
+
+(44:26) Te  lo  pregunto  a  vos,  Matías,  ¿qué  pasa
+
+(44:27) con  este  campo?  Claro,  ese  sería  la
+
+(44:30) longitud  del  campo  de  datos  que  tiene
+
+(44:32) hasta  15,  o  sea,  si  lo  pasas  a  extra
+
+(44:34) sería  05  siempre  de  05  para  abajo,  los
+
+(44:38) dos  primeros  05  algo  para  abajo.  Y  ahí
+
+(44:42) sé  que  no  es  Ethernet  2.
+
+(44:46) Pero  la  pregunta  era  la  respuesta
+
+(44:49) eh,  para  diferenciar  entre  LLC  y  el
+
+(44:52) otro.
+
+(44:55) Y  bueno,
+
+(44:55) ahí  no  sabía.
+
+(44:57) Y  bueno,  y  te  lo  expliqué  recién,
+
+(44:59) digamos,  si  es  LLC  o  es  Snap,  ya  no
+
+(45:02) tenés  100,  tenés  más  lo  que  le  restas  de
+
+(45:06) lo  demás.  Tenés  1497
+
+(45:09) o  tenés
+
+(45:11) 1492,  o  sea,  ya  no  tenés  100,
+
+(45:16) tenés  menos,
+
+(45:22) ¿entendés?  Y  y  después  lo  y  después  lo
+
+(45:24) que  lo  que  ah,  me  fui  me  fui  y  después
+
+(45:28) lo  que  consuma  eh  esta  parte,
+
+(45:33) o  sea,  en  vez  de  ser  1500  y  después  le
+
+(45:36) restas  el  encabezado  P,  el  encausado
+
+(45:37) TCP,  tenés  1492  o  10097
+
+(45:42) según  en  el  caso  que  sea  y  después  le
+
+(45:44) tenés  que  restar  esto.
+
+(45:46) Pero  ya  a  priori  ya  sabes  que  no  es  eh
+
+(45:49) no  es  Etthernet  2  porque  acá  es  el  campo
+
+(45:51) de  longitud  de  datos.
+
+(45:53) Claro.  Sí,  sí,
+
+(45:54) sí.
+
+(45:56) Supongamos  que  la  trama  estaba
+
+(45:58) supongamos  que  la  trama  que  estás
+
+(46:00) analizando  no  tiene  datos,  simplemente
+
+(46:03) tiene  las  cabeceras,
+
+(46:07) o  sea,  no  tiene  datos.  Vamos  a  hacer  de
+
+(46:11) cuenta  que  no  viajó  ningún  dato  ahí.
+
+(46:14) Entonces,  ¿qué  tendría?  ¿Cómo  cómo
+
+(46:15) sabrías  decirle  vos  a  la  pregunta
+
+(46:17) teórica  si  es  una  trama  LLC  o  si  es  una
+
+(46:21) trama  Snap?
+
+(46:25) ¿Cómo  la  cómo  harías  la  cuenta
+
+(46:28) para  saber  cuál  de  las  dos  es  fácil?  Le
+
+(46:30) resto.
+
+(46:32) Si  yo  sé  cuánto  es  el  encabezado  IP  y  sé
+
+(46:34) cuánto  es  el  encabezado  TCP,  porque  es
+
+(46:36) un  valor  teórico  eso.  Si  sabemos  que  es
+
+(46:38) que  es  TCP,  ¿no?  Porque  podría  ser  UDP.
+
+(46:40) Acá
+
+(46:42) sé  cuánto  es  esto  y  sé  cuánto  es  esto
+
+(46:45) porque  no  son  variables.  Yo  sé  cuántos
+
+(46:47) son  cada  una.
+
+(46:49) lo  resto  al  al  valor  que  dice  acá,
+
+(46:54) a  digamos  lo  resto  al  valor  que  dice  acá
+
+(46:58) y  y  me  voy  a  dar  cuenta,  digamos,  o  sea,
+
+(47:00) si  es  una  u  otra,  porque  eh  ya  no  es
+
+(47:03) 100,
+
+(47:05) ¿no?
+
+(47:07) Entonces,  eh,  o  sea,  porque  no  tiene
+
+(47:09) datos,  solamente  le  restas  el
+
+(47:11) encabezado.  Y  si  le  restas  el
+
+(47:13) encabezado,
+
+(47:15) el  valor  que  te  queda,  digamos,  si  no  va
+
+(47:18) a  ser  ni  va  a  ser  o  este,  o  sea,  debería
+
+(47:21) ser  este,  uno  de  estos  dos  debería  ser  o
+
+(47:23) 1492  o  1497.
+
+(47:28) Si  si  le  quitas,  o  sea,  estás  estarías
+
+(47:30) en  en  este  en  esta  situación,  no  tiene
+
+(47:33) datos,  entonces  si  está  vacío  tiene  este
+
+(47:35) valor
+
+(47:38) o  este  valor.
+
+(47:43) Y  si  tiene  datos,  bueno,  le  restas  le
+
+(47:46) restas  los  encabezados,  que  es  el  mismo,
+
+(47:47) y  de  alguna  otra  manera  con  esas  cuentas
+
+(47:50) te  vas  a  dar,  te  vas  a  saber  si  es  uno  u
+
+(47:52) otro,  pero  a  priori  en  el  en  el  en  el
+
+(47:56) analizador  de  protocolos  esa  información
+
+(47:57) te  la  dice,  como  acá.  Este  es  un
+
+(48:00) ejemplo.
+
+(48:02) Acá  lo  dice.
+
+(48:04) Profe,  yo  de  la  teoría  tenía  entendido
+
+(48:06) que  si  no  hay  carga  útil  en  el  en  la
+
+(48:09) trama,  el  campo  de  longitud  de  datos  es
+
+(48:11) cero  porque  te  dice  que  no  tenés  datos
+
+(48:15) en  esa  trama.
+
+(48:18) Pero  no  sé,  o  sea,  yo  tenía  entendido
+
+(48:20) eso.  No  sé
+
+(48:23) en  este  en  este  la  longitud  de  datos.
+
+(48:26) Claro.  Exacto.  En  la  802.3.
+
+(48:29) Eh,  si  longitud  es  cero  es  porque  no
+
+(48:32) viajan  datos  útiles.
+
+(48:34) Claro.  E  exacto.  Es  así.  Pero  desde  el
+
+(48:37) punto  de  vista  teórico,  si  es  cero,
+
+(48:39) ¿cuánto  es  el  digamos?  Si  acá  es  cero,
+
+(48:42) está  bien,  eso  es  la  verdadera
+
+(48:44) interpretación.  Si  acá  es  cero  y  te
+
+(48:48) pregunta,  porque  la  pregunta  es,  ¿cuánto
+
+(48:50) es  el  cuánto  es  la  longitud  del  campo  de
+
+(48:52) datos?
+
+(48:54) Si  acá  es  cero,  como  vos  decís,  entonces
+
+(48:56) la  respuesta  de  la  longitud  del  campo  de
+
+(48:58) datos  es  1492.
+
+(49:03) ¿Se  entiende?
+
+(49:06) ¿Está  bien?  La  la  interpretación  tuya  es
+
+(49:08) la  correcta.  Si  acá  es  cero,
+
+(49:13) entonces  la  pregunta  es,  ¿cuánto  es  el
+
+(49:15) la  longitud  del  campo  de  datos?  O  sea,
+
+(49:17) ¿cuánto  es  esto?  La  pregunta  es,  ¿cuánto
+
+(49:19) es  esto?  Si  acá  er  0  es  1492.
+
+(49:24) Entonces,  si  es  1492  es  una  cabecera  Ile
+
+(49:27) 802.2  Snap.  Si  me  voy  a  la  otra  y  acá  es
+
+(49:32) cero,  como  vos  decís,  entonces,  ¿cuánto
+
+(49:34) es  la  longitud  del  campo  de  datos?  Es  la
+
+(49:36) pregunta  teórica.  Es97,
+
+(49:39) porque  es  una  cabecera  del  tipo  802.2
+
+(49:43) LLC.  Si  me  voy  al  Ethernet  2  y  te
+
+(49:47) preguntan,  ¿cuánto  es  el  campo  de  datos?
+
+(49:52) 100
+
+(49:54) si  si  no  tiene  datos.
+
+(49:57) Claro.  Sí,  sí,  porque  no  lleva  datos  de
+
+(49:59) encabezado.
+
+(50:01) Claro.  Eh,  se  entendió  los  tres  casos
+
+(50:06) porque  la  pregunta  es  esa,  ¿cuánto  es  la
+
+(50:08) longitud  del  campo  de  datos?
+
+(50:10) Y  según  la  trapan  que  sea,  digamos,  o
+
+(50:13) sea,  ustedes  desde  el  punto  de  vista
+
+(50:15) teórico  tienen  que  saber  eso.  Después
+
+(50:18) con  el  analizador  de  protocolos  van  a
+
+(50:19) ver  la  información  esa  y  por  ahí  del
+
+(50:22) campo  de  datos  de  los  en  vez  de  en  vez
+
+(50:24) de  en  vez  de  mandar  100  mandan  500
+
+(50:30) bytes,  ¿no?  Y  si  mandan  100  e,  perdón,  y
+
+(50:35) si  mandan  500,
+
+(50:37) le  preguntan  cuánto  es  la  longitud  del
+
+(50:39) campo  de  datos.  La  longitud  teórica  del
+
+(50:41) campo  de  datos,  si  se  si  se  si  se  habla
+
+(50:43) de  esta  trama  es  1500,  pero  lo  que  se
+
+(50:47) mandó  fueron  500  y  lo  que  queda  el
+
+(50:50) offset  son  1000.
+
+(50:53) No  van  a  ser  1500  tampoco,  porque  hay
+
+(50:54) que  descontarle  la  cabecera
+
+(50:58) IP  y  TCP.  Nunca  van  a  ser  1500  acá,  ¿se
+
+(51:01) entiende?  Porque  1500  es  el  total,  pero
+
+(51:03) hay  que  restarle  esto.
+
+(51:07) Va  a  ser  1500.  Si,  digamos,  si  están
+
+(51:09) hablando  pura  exclusivamente  la  trama  de
+
+(51:11) Ethernet,  pero  pero  en  realidad
+
+(51:12) acuérdense  que  tienen  capsulado  esto.
+
+(51:17) O  sea,  se  entiende  que  una  parte  una
+
+(51:19) cosa  es  la  parte  teórica  de  otra  parte  y
+
+(51:21) otra  cosa  es  la  parte  cuando  lo  ven  en
+
+(51:23) la  práctica  como  lo  vamos  a  ver
+
+(51:24) nosotros.
+
+(51:25) O  sea,  los  datos  de  Ethernet  son  eh  los
+
+(51:28) encabezados  de  TCP,  de  IP  y  los  datos
+
+(51:31) que  ya  haya  encapsulado  de  las  capas
+
+(51:33) anteriores.
+
+(51:35) Claro.  E  porque  acá  dentro  va  digamos,
+
+(51:39) como  les  decía,  el  campo  de  datos
+
+(51:42) va  a  estar
+
+(51:44) una  parte  así  como  la  que  sombrie,  se  la
+
+(51:46) va  a  morfar  el  encabezado  IP  y  el
+
+(51:48) encabezado  TCP,  si  lo  ven  en  la  capa  de
+
+(51:52) aplicación.  Y  lo  otro  que  queda  acá  es
+
+(51:54) lo  es  lo  es  lo  es  lo  que  lo  que  viaja
+
+(51:58) porque  está  encapsulado.
+
+(52:00) Sí.  Pero  si  está  desencapsulado  y  está
+
+(52:03) eh  abierto  como  acá,
+
+(52:06) es  difícil  explicar  eh  así  en  el  aire,
+
+(52:08) pero  yo  no  sé  si  me  siguen  cuando  les
+
+(52:10) estoy  explicando  la  trama  y  les  muestro
+
+(52:12) cómo  se  se  abre.
+
+(52:16) Sí,  sí.  Se  ve  acá  cómo  se  abre  y  y  cómo
+
+(52:19) se  ve  que  está  abierta  y  bueno,  pero
+
+(52:22) después  cada  campo  tiene  la  información
+
+(52:24) que  ustedes  necesiten.  Por  ejemplo,  acá
+
+(52:25) dice  la  dirección  eh  macadres  de
+
+(52:27) destino.  Es  esta  que  está  acá.  ¿La  ven
+
+(52:30) donde  estoy  con  el  donde  estoy  con  el
+
+(52:32) puntero  del  mouse?
+
+(52:34) ¿La  ven  que  está  acá  la  dirección
+
+(52:35) macadre  destino?
+
+(52:36) Sí.
+
+(52:38) ¿La  ven  la  otra?  la  dirección  Macadres
+
+(52:40) de  origen  que  dice  Cisco  y  y  digamos  el
+
+(52:43) el  analizador  de  protocolos  reconoce  que
+
+(52:45) los  primeros  tres  byes  son  C  e  0A  D740  y
+
+(52:50) ya  sabe  por  cómo  lo  tiene  él  incorporado
+
+(52:54) que  esa  es  una  placa  de  red  Cisco  de
+
+(52:56) tipo  Cisco  y  que  los  otros  números  bueno
+
+(52:58) son  y  sabe  que  la  placa  de  red
+
+(53:03) by  0100C
+
+(53:05) es  una  placa  de  red  del  fabricante  STP
+
+(53:08) Ablink  Fast.
+
+(53:10) Sí.
+
+(53:12) E
+
+(53:14) y  después  sabe,  digamos,  que  eh  que  que
+
+(53:18) es  una  trama  del  tipo  eh  802.3  eh  LLC  y
+
+(53:23) bueno,  y  les  muestra  acá  la  información
+
+(53:24) de  de  eso  y  por  qué
+
+(53:28) y  así  van  abriendo.  Eh,  eso  es  lo  que
+
+(53:31) hace  la  la  nosotros  lo  vimos  en  la
+
+(53:33) teoría,  pero  acá  se  ve  en  la  práctica.
+
+(53:36) Yo  estoy  haciendo  una  introducción
+
+(53:37) teórica,  no  estoy  mostrándole
+
+(53:38) directamente  el  analizador  y  listo.
+
+(53:44) Bueno,  eh  pero  ¿por  qué  estoy  haciendo
+
+(53:46) esta  introducción?  Porque  ustedes  tienen
+
+(53:47) que  responder  estas  preguntas.  Entonces
+
+(53:50) dice,  ¿qué  protocolos  de  nivel  tres  TCP
+
+(53:52) se  encapsulan  en  la  trama?  Ustedes  lo
+
+(53:55) saben  eso  porque  vienen  a  la  trama.
+
+(53:58) Ustedes  tienen  la  trama  así,
+
+(54:02) pero  cuando  ustedes  la  abren,  la  trama
+
+(54:04) la  abren,  la  desencapsulan,
+
+(54:06) ven  en  nivel  tres  y  nivel  cuatro  lo  ven
+
+(54:09) porque  vienen  acá,  lo  van  a  abrir  la
+
+(54:12) parte  de  datos  y  ahí  va  a  haber  un
+
+(54:15) campo,  digamos,  o  sea,  que  es  el
+
+(54:17) encabezado  TCP  y  el  encabezado  IP  donde
+
+(54:20) pueden  ver  esa  información  para
+
+(54:22) responder  esto
+
+(54:26) porque  hay  un  campo
+
+(54:28) sin  que  ustedes  sepan  que  que  que  les
+
+(54:30) dice  si  es  TCP,  digamos,  este  UDP,
+
+(54:33) digamos,  o  es  eh  eh  o  o  después  o  o  en
+
+(54:39) esta  parte,  ¿saben  si  es  ICMP,  si  es
+
+(54:43) SSH,  https?  saben  porque  no  la  van  a
+
+(54:46) abrir  toda,  pero  hay  un  campo  que  se  los
+
+(54:48) dice  porque  está  encapsulado
+
+(54:52) en  el  encabezado.  Les  dice  sin  sin  ver
+
+(54:55) los  datos,  o  sea,  eh  si  sin  ver  la
+
+(54:58) última  capa  de  la  aplicación.
+
+(55:01) Eh  eh  qué  es  porque  lo  dice  el
+
+(55:03) encabezado  o  el  IP  o  el  TCP.  ¿Se
+
+(55:05) entiende?
+
+(55:08) Sí.  Sí.  Perfecto.
+
+(55:10) O  sea,  es  como  es  como  cuando  ustedes
+
+(55:12) ven  vienen  acá  la  parte  de  la  trama.
+
+(55:16) Esta  es  la  trama  de  Ethernet  2.  Si
+
+(55:19) ustedes  ven  este  campo  que  dice  0x800
+
+(55:22) ox806,
+
+(55:24) saben  que  tienen  capsulado  acá  dentro  si
+
+(55:28) es  esto  una  trama  IP  versión  4  o  si  es
+
+(55:30) esto  o  es  una  trama  IP  versión  6.  ¿Es
+
+(55:32) así  o  no  es  así?
+
+(55:35) Sí.
+
+(55:36) Y  no  tienen  que  abrir  esta  parte  para
+
+(55:38) saber  si  tienen  capsulado  acá  dentro  una
+
+(55:41) una  trama  IP  versión  4  o  IP  versión  6,
+
+(55:43) porque  lo  ven  en  la  trama,  lo  dice.
+
+(55:47) Eso  es  lo  que  les  quiero  explicar,  que
+
+(55:49) no  hace  falta  abrir  esto,  digamos,
+
+(55:51) porque  ya  saben  que  tienen  encapsulado
+
+(55:53) algo  de  esto.  Acad  puede  decir  otra
+
+(55:56) cosa,  pero  eh  generalmente  dice  algo  así
+
+(56:02) y  y  generalmente  casi  siempre  dice  esto.
+
+(56:08) ¿Se  entiende?  Por  eso  en  las  preguntas
+
+(56:09) estas  le  dice  el  encabezado  de  nivel
+
+(56:12) superior,
+
+(56:13) porque  el  encabezado  de  nivel  superior
+
+(56:15) está  acá  dentro,  pero  ustedes  viendo  lo
+
+(56:18) viendo  y  entendiendo  cómo  es  cómo  son
+
+(56:21) los  los  distintos  campos  del  encabezado
+
+(56:25) de  la  trama  de  la  trama,  saben  que  es  lo
+
+(56:28) que  tienen  encapsulado  acá  dentro.  Y  lo
+
+(56:30) mismo  va  a  pasar  cuando
+
+(56:34) vean.  Bueno,  otra  vez  me  pasé.
+
+(56:37) Lo  mismo  va  a  pasar  cuando  se  paren  acá
+
+(56:39) y  les  pregunte  cuál  es  el  el  encabezado
+
+(56:42) de  la  trama  de  del  encabezado  de  la
+
+(56:45) trama  de  perdón,  el  encabezado  de  la
+
+(56:47) capa  superior.  ¿Cuál  es  la  capa  superior
+
+(56:50) de  IP?  TCP.  Es  la  de  arriba,  la
+
+(56:53) superior.  Si  se  separan  acá  y  si  separan
+
+(56:56) ahí,  acá  dentro  tiene  que  haber  un  campo
+
+(56:58) que  les  diga  que  lo  que  está  acá  es  TCP
+
+(57:00) o  UDP.
+
+(57:02) Y  cuando  se  paren  acá  en  este
+
+(57:05) encabezado,  va  a  haber  un  campo  que  les
+
+(57:07) va  a  decir  que  lo  que  está  encapsulado
+
+(57:10) adentro  de  esto,  ¿sí?  Este,  o  sea,  en  la
+
+(57:13) parte  de  datos  que  digamos  eh  que  que
+
+(57:16) viene  encapsulado  arriba  en  la  capa
+
+(57:18) superior
+
+(57:19) es  https.  Sc  es  es  en  eh  bueno,
+
+(57:25) cualquier  otro  cualquier  otro  este
+
+(57:28) protocolo  de  capa  7,  http,  https  o
+
+(57:31) cualquier  otro.  ¿Se  entiende  o  no?
+
+(57:35) Sí,  sí  se  entiende.
+
+(57:36) Sí.  Bueno,  sigo  porque  si  no  si  ya  me
+
+(57:38) estoy  deteniendo  demasiado  y  me  me  estoy
+
+(57:42) eh  Bueno,  después  está  eh  eh  también
+
+(57:46) están  las  tramas  802.11,  que  es  la
+
+(57:49) wireless,  que  en  vez  de  ser  una  eh  acá
+
+(57:53) 802.3
+
+(57:55) y  triple  802.3  o  o  en  vez  de  ser  la
+
+(57:58) Ethernet  2  es  esta  la  802.11  que  es  la
+
+(58:02) wireless  y  aparece  acá  en  el  mismo
+
+(58:05) lugar.  donde  aparece  la  las  otras  dos,
+
+(58:09) nada  más  que  las  otras  dos  son  para
+
+(58:10) redes  cableadas  y  estas  son  para  redes
+
+(58:12) inalámbricas  y  les  muestra  toda  esta
+
+(58:15) información  que  cuando  lo  abren  está
+
+(58:16) acá.  Vamos  bien.
+
+(58:21) Sí.
+
+(58:22) Sí.  Bien.
+
+(58:25) Ahora
+
+(58:27) también  existen  estas  tramas.  Ustedes
+
+(58:30) saben  que  el  protocolo  spanning  tre,  el
+
+(58:33) spanning  tre  protocol
+
+(58:35) trabaja  a  nivel  capa  2  también,  ¿se
+
+(58:38) acuerdan  de  eso?
+
+(58:40) Sí.  Sí.
+
+(58:42) Entonces,  si  yo  tengo  una  trama  802.3
+
+(58:45) tres
+
+(58:46) y  me  doy  cuenta  que  por  lo  que  despliego
+
+(58:49) acá  es  la  tipo  LLC.
+
+(58:52) Si  despliego  también,  yo  sé  que  si  es
+
+(58:56) una  trama  del  tipo  spaning  tre,
+
+(58:59) cuando  despliego  la  capa  dos,  me  aparece
+
+(59:02) acá  spaning  tre  protocol  y  me  aparece  la
+
+(59:05) información  de  esa  trama  que  es  de
+
+(59:07) spaning  tree.  ¿Se  acuerdan  que  la  trama
+
+(59:09) de  spaning  tre  estaba  dada  por  unos
+
+(59:12) paquetitos  que  se  llamaban  BPDU?
+
+(59:15) que  son  estos  que  están  acá
+
+(59:18) y  esos  BPDU  tienen  la  información  si  es
+
+(59:21) un  root  bridge,  si  es  un  digamos  si  es
+
+(59:23) un  eh  si  es  un  non  root  bridge  y  todo
+
+(59:27) eso,  ¿qué  es  lo  mismo  que  dice  acá?
+
+(59:30) Bueno,  está  relacionado.  Ven  como  ven
+
+(59:33) como  el  analizador  de  protocolos
+
+(59:36) les,  vamos  a  decir,  les  botonea  qué  tipo
+
+(59:39) de  trama  es  sobre  la  que  están  parados,
+
+(59:41) cómo  les  dice  a  ustedes  se  paran  esta
+
+(59:42) parte  gris  que  está  acá.  donde  estoy
+
+(59:44) moviendo  el  puntero  del  mouse  es  la
+
+(59:46) trama  que  capturó  el  analizador  de
+
+(59:48) protocolos  y  si  ustedes  se  paran  ahí  les
+
+(59:51) muestra  toda  la  información  de  esa
+
+(59:52) trama.
+
+(59:56) Lo  mismo  si  es  una  trama  de  internet  y
+
+(59:59) tiene  una  van.  Sí.  ¿Dónde  estaba?  Eh,
+
+(60:03) ¿dónde  estaba  la  van?
+
+(60:05) ¿Dónde  aparece  la  van?  ¿Se  acuerdan  que
+
+(60:08) en  la  trama?
+
+(60:09) Eh,  ¿se  acuerdan  cuando  eh  en  la  parte
+
+(60:14) teórica  le  muestran  dónde  aparece  eh  eh
+
+(60:18) la  vilan,  que  es  como  que  se  estira  la
+
+(60:20) trama  y  en  el  medio  de  la  capa  2  y  la
+
+(60:23) capa  3  aparece  la  parte  de  vance?  Sería
+
+(60:26) como,  ¿se  acuerdan  de  eso?  ¿Dónde
+
+(60:28) aparece?  Bueno,  acá  se  ve,  tienen  la
+
+(60:30) capa  uno  que  dice  frame,  la  capa  dos  que
+
+(60:33) dice  Ethernet  2,  después  tienen  la  capa
+
+(60:36) 3  que  habla  de  IP  y  la  capa  4  TCP.  Sí.  Y
+
+(60:41) en  el  medio  de  la  capa  2  y  la  capa  3
+
+(60:43) aparece  la  parte  de  van,  la  la  vanan,
+
+(60:47) ¿se  acuerdan?
+
+(60:49) Sí,  sí,
+
+(60:49) sí,  sí.
+
+(60:50) Y  bueno,  ahí  aparece  que  dice  802.1Q  1q
+
+(60:54) porque  esta  esta  trama  en  particular
+
+(60:58) esta  trama  en  particular  la  que  fue
+
+(60:59) seleccionada,  la  que  está  marcada  acá
+
+(61:03) en  en  un  en
+
+(61:07) la  que  está  marcada  acá  dice,  ven  que
+
+(61:09) acá  dice  frame  un,  es  decir,  que  está
+
+(61:11) parado  acá  en  la  uno.  Si  acá  dijera
+
+(61:15) frame  3  o  frame  7,  estaría  parado  o  en
+
+(61:18) el  tres  o  en  el  siete,  pero  acá  está
+
+(61:20) parado  en  el  uno.  Acá  se  paró  ahí  la
+
+(61:24) persona  que  analizó  esta  trama  se  paró
+
+(61:25) ahí  y  la  empezó  a  desplegar  y  dice,  "Ah,
+
+(61:29) esta  es  una  Ethernet  2,  porque  acá  dice
+
+(61:31) Ethernet  2.  Veo  cuáles  son  la  dirección
+
+(61:33) macades  de  origen,  la  de  destino,  pero
+
+(61:35) ¿qué  pasa?  Aparece  el  campo  de  802.1Q  1q
+
+(61:38) van  tag  porque  tiene  esto  80x
+
+(61:43) eh  eh
+
+(61:46) 800  8100  ox  800  eh  no  sé  cómo  decírselo,
+
+(61:51) pero  aparece  así.
+
+(61:53) Eh,  entonces  saben  viendo  ese  campo  que
+
+(61:58) tiene  eh  que  es  que  esta  que  esta  trama
+
+(62:03) digamos  no  es  una  trama  eh
+
+(62:07) llamémosla  común,  sino  que  tiene  una  van
+
+(62:10) es  802.1  van  tag
+
+(62:13) en  800.1Q  y  ahí  la  despliegan  y  se  fijan
+
+(62:17) y  acá  les  dice  cuál  es  el  I  de  la  vanan.
+
+(62:19) Lo  ven  acá  que  dice  32,
+
+(62:23) o  sea,  el  ID  de  esta  van  la  vilan  32  en
+
+(62:27) esta  trama  de  ejemplo.  Sí,  acá  lo  dice.
+
+(62:30) Si  se  paran  acá  dice  ID  la  Biblia  en  32.
+
+(62:33) Pero  si  lo  despliegan  y  quieren  ver
+
+(62:35) cuáles  son,  porque  se  acuerdan  que  la  la
+
+(62:38) eh  el  campo  este  digamos  de  de
+
+(62:43) estos  campos  que  que  le  agrega
+
+(62:46) el  800.1Q  1Q  a  la  a  la  trama  Ethernet,
+
+(62:50) digamos,  no  me  acuerdo  cuántos  bytes
+
+(62:51) son,  pero  si  lo  explican  acá  les  muestra
+
+(62:54) que  era  cada  uno  y  uno  de  ellos  el  el
+
+(62:57) alaba  la  información  del  ID  y  en  este
+
+(63:01) caso  se  los  muestra  que  es  esto  001
+
+(63:05) 00  y  eso  es  32  cuando  lo  pasan  a
+
+(63:09) decimal.
+
+(63:11) ¿Me  siguen
+
+(63:13) bien?  Sí,
+
+(63:14) sí,  sí.  Después  los  otros  eran  prioridad
+
+(63:16) y  indicador,  creo,  algo  así.
+
+(63:17) Sí.  Acá  dice  priority.  Lo  que  pasa  que,
+
+(63:19) bueno,  yo  uno  no  se  acuerda  de  memoria
+
+(63:23) siempre  cuántos  son  las  longitudes  de
+
+(63:25) cada  campo,  digamos.  Lo  importante  es  el
+
+(63:26) concepto.  Obviamente  que  para  estudiar,
+
+(63:28) para  el  parcial  lo  tienen  que  saber,
+
+(63:29) pero  después  cuando  pasa  el  tiempo,
+
+(63:33) digamos,  se  no  se  van  a  acordar
+
+(63:35) exactamente.  Ah,  si  era  el  campo  de  Tai
+
+(63:37) iba  a  tener  un  by  para  esto,  dos  by  para
+
+(63:39) esto  y  cuatro  by  para  esto.  Se  van  a
+
+(63:41) acordar  desde  el  punto  de  vista  teórico,
+
+(63:43) pero  van  a  saber  eh  eh  eso
+
+(63:47) bien.
+
+(63:49) Después,
+
+(63:51) o  sea,  la  primer  pruebita  que  tienen  que
+
+(63:53) hacer  es  era  esta.  agarran,  abren  el
+
+(63:56) wiresack,
+
+(63:58) ponen  a  capturar  tráfico.  ¿Cómo  se  pone
+
+(64:00) a  capturar  tráfico?  Tiene  esta  aletita
+
+(64:03) de  tiburón  que  está  acá,  donde  tengo  el
+
+(64:05) puntero  del  mouse.  Cuando  aprietan  ahí
+
+(64:08) empieza  a  capturar  tráfico  y  después
+
+(64:10) aprietan  en  el  rojo  y  para.  Sí.
+
+(64:14) En  entre  medio  ustedes  hicieron  un  ping
+
+(64:17) al  default  gateway,  ¿sí?  en  el  momento
+
+(64:20) ese  que  está  capturando  tráfico  hicieron
+
+(64:22) un  ping  al  default  gatewayight  y  después
+
+(64:24) se  van  a  parar  en  un  determinado  lugar  y
+
+(64:27) van  a  van  a  responder  estas  preguntas.
+
+(64:30) Después  le  digo  cómo  lo  después  lo
+
+(64:31) mostramos.
+
+(64:34) En
+
+(64:37) la  segunda  parte,  digamos,  del  trabajo  o
+
+(64:40) el  o  parte  del  trabajo  es
+
+(64:43) van  a  hacer  lo  mismo,  van  a  poner  a
+
+(64:46) capturar  el  tráfico
+
+(64:48) y  van  a  hacer  esto.
+
+(64:54) van  a  ser  en,  digamos,  en  el  CMD  ARP-  A
+
+(64:58) y  después  van  a  ser  les  va  a  mostrar  con
+
+(65:01) ARP-  A  le  va  a  mostrar  la  tabla
+
+(65:04) dinámica,
+
+(65:06) le  va  a  mostrar  la  trama,  la la  la  tabla
+
+(65:09) dinámica  de  macadres,  o  sea,  les  muestra
+
+(65:12) una  tablita,  digamos,  en  que  resid
+
+(65:16) memoria,  digamos,  porque  cuando  ustedes
+
+(65:18) le  hacen  un  pin  al  default  gateway  y  esa
+
+(65:21) y  digamos  eh  el  en  La  PC  de  ustedes  en
+
+(65:26) forma  dinámica  se  agrega,  digamos,  o  le
+
+(65:28) hacen  un  pin  a  un  otro  dispositivo  que
+
+(65:31) esté  en  la  misma  red.  Por  ejemplo,  si
+
+(65:33) están  usando  la  laptop  y  le  hacen  un  pin
+
+(65:36) a  a  la  IP  que  tiene  asignada  el
+
+(65:38) smartphone,  estando  en  la  misma  red
+
+(65:40) Wi-Fi,  va  a  agregar  la  la  dirección  IP  y
+
+(65:45) va  a  agregar  y  se  va  a  prender  también
+
+(65:47) la  dirección  MACADES  de  ese  dispositivo
+
+(65:51) y  va  a  aparecer  en  esa  tablita  en  forma
+
+(65:53) dinámica.  Cuando  ponen  RP  -  A,
+
+(65:56) les  va  a  decir,  "Bueno,  capturas,
+
+(65:58) capturate  ese  tráfico  y  después  hace  un
+
+(66:00) RP  -  D.
+
+(66:02) Copiate,  digamos,  así,  copiate.  Botón
+
+(66:05) derecho,  copiar  y  pega  acá  la  dirección
+
+(66:08) IP,  digamos,  de  ese  dispositivo  en  el
+
+(66:10) caso  del  smartphone  y  dale  enter  y  te  la
+
+(66:12) va  a  borrar.  Va  a  borrar  esa  dirección
+
+(66:14) IP  y  después  le  vuelven  a  hacer  un  ping
+
+(66:17) dispositivo  a  ese  mismo  y  se  la  va  a
+
+(66:20) volver  a  prender  porque  es  dinámico.
+
+(66:22) Nada  más  que  ustedes  lo  que  hicieron  con
+
+(66:23) esto  es  borrarla  a  propósito  para  ver  el
+
+(66:26) comportamiento  este  de  la  memoria  caché
+
+(66:28) de  ARP  de  su  PC.
+
+(66:30) Sí.
+
+(66:32) Y  eso  lo  van  a  capturar  con  el
+
+(66:36) y  después  dice,
+
+(66:39) inicie  una  captura  con  el  analizador  pin
+
+(66:41) a  otra  PC.  Bueno,  es  esto.  El  default
+
+(66:43) gateway  eh  en  realidad  va  a  ser  al
+
+(66:46) smartphone,  no  va  a  ser  al  default  g  de
+
+(66:48) vuelta  y  van  a  responder  estas
+
+(66:50) preguntas.
+
+(66:52) ¿Cuántas  PDU  intervienen  en  la
+
+(66:53) resolución  RP?
+
+(66:56) Porque  si  usted,  o  sea,  yo  tengo  en  mi
+
+(66:59) cabeza  que  ustedes  en  la  teoría  vieron
+
+(67:01) protocolo  RP  y  cómo  resuelve,  que  tiene
+
+(67:04) un  RP,  digamos,  eh
+
+(67:07) eh
+
+(67:08) eh  tiene,  digamos,  determinadas  PDU  en
+
+(67:12) ese  proceso,
+
+(67:14) ¿no?
+
+(67:17) RP,
+
+(67:17) o  sea,  lo  que  vimos  es  que  RP  tira  un
+
+(67:20) broadcast  Lan,
+
+(67:21) tira  un  broadcast  LAN  y  le  responde  el
+
+(67:23) dueño  de  la  macadrés.  Así  lo  vimos
+
+(67:25) también,
+
+(67:26) pero  no  tiene  un  RP  request,  un  RP  reply
+
+(67:29) y  todo  eso.
+
+(67:35) La  verdad  que  esto  no  lo  vimos.
+
+(67:36) No  lo  vimos  en  profundidad,  la  verdad.
+
+(67:38) Okay.  Bueno,  no  importa.  Se  los  va  a
+
+(67:40) mostrar  eh  el  el  analizador  después  eh
+
+(67:43) se  los  muestro.  Y  bueno,  tienen  que
+
+(67:45) responder  esto.  ¿Cuántas  PDU
+
+(67:47) intervienen?  ¿Qué  significa  cuántas  PDU
+
+(67:49) intervienen?
+
+(67:51) Bueno,  digamos,  en  cuando,  ¿se  acuerdan
+
+(67:54) cuando  yo  les  conté?  Lo  voy  a  hacer  una
+
+(67:55) analogía  con  el  DHCP,  ¿se  acuerda  que  el
+
+(67:57) DHCP  e  intervienen  cuatro  cuatro  PDUs?
+
+(68:02) eh  cuando  le  hace  el  discovery,  cuando
+
+(68:05) le  hace  eh  digamos  el  offer,  cuando  le
+
+(68:07) hace  eh  la  asignación  y  cuando  le  hace
+
+(68:10) bueno,  esas  son  las  PDU  que  intervienen
+
+(68:12) en  RP  pasa  lo  mismo,  digamos,  hay  un
+
+(68:15) intercambio
+
+(68:16) de  PDUs  para  que  finalmente  se  dé  el
+
+(68:20) resultado  final.
+
+(68:22) Y  eso  le  dice,  "Describa  cuál  es  la
+
+(68:24) secuencia  de  tramas  involucradas  porque
+
+(68:26) eso  va  a  pasar,  eh,  lo  van  a  ver  en  el
+
+(68:28) en  el  analizador  de  protocolos.  ¿Cuál  es
+
+(68:31) el  estado  de  la  memoria?  Volver  a
+
+(68:33) ejecutar  el  comando  PIN,  o  sea,  es  algo
+
+(68:36) que  tienen  que  hacerlo  para  verlo.  ¿Qué
+
+(68:39) formato  tiene  una  PDURP?  les  dice  lo
+
+(68:42) último,
+
+(68:44) si  ven  que  no  lo  pueden  hacer,  si  ven
+
+(68:47) que  no  lo  pueden  hacer,  fíjense,  este  es
+
+(68:49) el  encabezado  ARP,
+
+(68:52) o  este  eh  sí,  el  encabezado.  Eh,  esto
+
+(68:55) deberían  haberlo  visto  en  la  teoría
+
+(68:57) ustedes  en  algún  momento.
+
+(69:00) Sí,  lo  tenemos,
+
+(69:02) salvo  que  no  hayan  llegado,  pero  lo
+
+(69:03) deberían  haber  visto.  Y  bueno,
+
+(69:07) conociendo  esto,  el  OP  code  y  todo  eso
+
+(69:09) que  se  los  muestra  el  analizador  de
+
+(69:11) protocolo,  el  analizador  de  protocolos
+
+(69:12) cuando  es  una  trama  de  este  tipo  ARP  les
+
+(69:15) va  a  mostrar  esto.
+
+(69:17) ¿Y  cómo  les  muestra  eso?  De  esta  manera.
+
+(69:20) Miren,
+
+(69:22) cuando  uno  hace  un  un
+
+(69:25) RP,  aparece  esto,  broadcast,  broadcast
+
+(69:29) y  lamos  y  después  aparece,
+
+(69:32) pero  esto  estaba  dado  por  el  por  el
+
+(69:36) famoso  OPCE.  Tienen,  miren,  acá  arriba
+
+(69:40) tienen  un  RP  que  es  el  RP  request.
+
+(69:43) ¿Cómo  se  fija  eso?  Acá  fíjense  que  está
+
+(69:47) la  parte  la  parte  esta  de  digamos  de  de
+
+(69:51) Ethernet  2  y  después  viene
+
+(69:54) encapsulado,  tiene  el  el  encabezado  RP  y
+
+(69:58) el  encabezado  RP  dice  esto
+
+(70:02) que  no  es  ni  más  ni  menos  que  esto.
+
+(70:03) Miren,
+
+(70:05) es  todo  esto  que  está  acá
+
+(70:11) y  eso  que  está  ahí  lo  ven  acá  mismo
+
+(70:14) parados  en  el  en  esta  línea  que  si  la
+
+(70:16) abren  aparece  toda  esa  información.  Dice
+
+(70:19) hardware  type,  Ethernet  1,  Protocol
+
+(70:23) typeversión  4
+
+(70:25) y  los  otros  campos.  Pero  hay  uno,  este,
+
+(70:27) el  OPCE,  que  es  el  que  me  interesa  que
+
+(70:30) que  sepan,  el  OPCE.  que  dice  que  el
+
+(70:34) primer  paquete  es  un  request.
+
+(70:37) Voy  a  pasar  al  siguiente  a  la  siguiente
+
+(70:39) eh  slide.
+
+(70:41) Fíjense  cómo  varía.  Estoy  en  la  línea
+
+(70:43) 54,  paso  a  la  línea  55.  ¿Ven  que  acá
+
+(70:46) dice  número?  Acá  adelante  el  primero
+
+(70:48) acá.
+
+(70:50) La  línea  54  me  dice  que  es  un  request.
+
+(70:54) ¿Sí?  O  sea,  hago  un  RP  -  A  y  me  y  es  un
+
+(70:58) request.
+
+(71:00) El  el  segundo  el  segundo  PDU  es  un
+
+(71:03) reply.  Fíjense  que  lo  que  cambia  es  este
+
+(71:06) lob  code.
+
+(71:08) En  el  otro  era  un  request,  en  el  uno.  El
+
+(71:12) dos  es  un  reply.
+
+(71:14) Sí.  O  sea,  el  request  y  el  reply.  Recuen
+
+(71:22) dos.
+
+(71:23) Sí.
+
+(71:24) Entonces,  ¿cuál  es  la  cuál  es  la
+
+(71:25) respuesta  a  esta  pregunta?
+
+(71:30) Dos,
+
+(71:30) dos.
+
+(71:31) Perfecto.  Listo.
+
+(71:35) Pero  esto  no  es  que  yo  lo  inventé  porque
+
+(71:37) ustedes  en  la  teoría  vieron  esto,  lo  que
+
+(71:38) significa  el  opode.
+
+(71:42) Y  y  bueno,  lo  que  yo  estoy  acá  tratando
+
+(71:43) de  hacer  es  llevar  lo  de  lo  que  viene  en
+
+(71:45) la  teoría,  plasmarlo  en  la  práctica  con
+
+(71:48) con  estas  capturas  que  ya  están  hechas
+
+(71:50) del  analizador  de  protocolos,  pero
+
+(71:52) ustedes  lo  van  a  ver  cuando  lo  hagan.
+
+(71:53) Sí,  yo  se  los  muestro  acá  con  una
+
+(71:56) captura  para  que  lo  vean,  pero  ustedes
+
+(71:57) lo  van  a  vivenciar  cuando  hagan  la
+
+(72:01) práctica
+
+(72:04) y  después  también  van  a  hacer  un
+
+(72:06) análisis  del  tráfico  IP  e  ICMP.
+
+(72:12) ¿Le  es  familiar  esta  este  encabezado?  se
+
+(72:15) los  dejo  para  que  lo  miren,  se  se  lo
+
+(72:19) graben  con  la  vista  porque  lo  van  a  ver
+
+(72:22) eh  hasta  que  termine  la  cursada.  Así  que
+
+(72:26) denme  un  segundo  que  ya  vengo  y  piensen
+
+(72:28) si  tienen  alguna  pregunta  e  me  la  se  la
+
+(72:31) hacen  eh,  si  quieren  a  Rafael  y  me  la
+
+(72:35) trasladan  a  mí  ahora  cuando  vengo.  Siro,
+
+(72:37) pero  identifiquen  bien  esta  trama  porque
+
+(72:40) la  van  a  ver  hasta  en  la  sopa.  Está,
+
+(72:42) perdón,  está  encabezado.
+
+(79:27) Muy  bien,  perfecto.
+
+(79:29) Bueno,  si  se  memorizaron  esto,
+
+(79:33) este  es  el  encabezado  de  eh  es  el
+
+(79:36) encabezado  IP.  ¿Se  acuerdan  que  yo  les
+
+(79:39) decía  que  sabemos  cuánto  es?  Bueno,  este
+
+(79:44) tiene  20  20  bytes  acá,
+
+(79:47) 20  octetos,  o  sea,  20  bytes.
+
+(79:51) O  sea,  que  cuando  eh  al  principio  vimos
+
+(79:54) que  sabíamos  cuánto  era  eh  el  el  tamaño
+
+(79:58) del  encabezado  IP,
+
+(80:01) bueno,  sabemos  que  es  20  byes.  O  sea,
+
+(80:03) que  si  yo  tuviese  una  trama  Ethernet  2,
+
+(80:07) que  sé  que  el  campo  de  datos  va  de  0  a
+
+(80:10) 15  y  tengo  encabezado  y  tengo
+
+(80:13) encapsulado  el  encabezado  IP,  ya  a  1500
+
+(80:17) le  tengo  que  restar  20.
+
+(80:20) Sí,  porque  ya  el  encabezado  IP  me  come
+
+(80:23) 20  bytes  y  después  de  eso  viene  el
+
+(80:25) encabezado  TCP  que  me  come  otra  cantidad
+
+(80:27) de  bytes  o  UDP,  si  es  uno  u  otro.  En
+
+(80:30) este  caso  es  el  encabezado  IP  primero
+
+(80:33) porque  estamos  en  la  capa  la  capa  tres.
+
+(80:39) Bueno,  el  encabezado  IP.  No  voy  a  decir
+
+(80:42) ni  a  recorrer  todo  esto  porque  son  9  men
+
+(80:44) 10  21  casi  las  21  horas.  No  voy  a
+
+(80:49) decirle  qué  es  cada  una  de  estas  cosas
+
+(80:50) porque  ya  la  vieron  la  recontra  bien  la
+
+(80:52) teoría  y  la  deben  saber  un  montón  de
+
+(80:54) veces  ya.  Pero  sí  lo  que  les  voy  a
+
+(80:56) contar  que  este  campo  flax  es  importante
+
+(81:00) y  el  campo  eh  que  tiene,  o  sea,  me
+
+(81:03) importa  que  entiendan  el  campo  más  que
+
+(81:05) nada  el  campo  de  flax  y  y  el  tema  del
+
+(81:07) offset,  esto
+
+(81:10) porque  en  base  a  eso  van  a  poder
+
+(81:12) entender  si  es  porque  qué  pasa  qué  pasa
+
+(81:17) en  la  capa  cuatro,
+
+(81:19) digamos,  del  modelo  o  eh  con  lo  que  se
+
+(81:23) lo  llama  un  segmento  ¿Quién
+
+(81:26) me  dice  por  qué  se  lo  llama  segmento  en
+
+(81:28) la  capa  4  donde  aparece  el  encabezado
+
+(81:30) TCP?
+
+(81:32) Porque  se  parte  en  muchos  pedazos.
+
+(81:35) Perfecto.  Impecable.
+
+(81:37) ¿Y  cómo  sé  yo  cuál  es  cómo  sé  yo  si  es
+
+(81:40) un  paquete  solo?  Si  son  eh  cinco
+
+(81:44) paquetes  en  total  el  que,  o  sea,  ¿cómo
+
+(81:46) sé  si  es  un  segmento  solo?  O  sea,  y
+
+(81:48) puedo  decir  que  es  un  paquete  o  cómo
+
+(81:50) puedes  cómo  puedo  saber  yo  si  son  cinco
+
+(81:52) segmentos.  Es  decir,  son  cinco  paquetes
+
+(81:55) con  el  flag  de  Morflag.
+
+(81:58) Bien.  ¿Y  cómo  sé,  por  ejemplo,  si  es  el
+
+(82:01) último  fragmento  o  el  primero  o  es  uno
+
+(82:04) intermedio?
+
+(82:06) Porque  viene  num,  no  hay  otro  flag  que
+
+(82:08) tiene  el  cer  o  un  y  si  es  cero  es  el
+
+(82:11) último  o  único.
+
+(82:12) Perfecto.  Y  ustedes  y  ustedes  con  el
+
+(82:16) analizador  de  protocolos  esa  información
+
+(82:18) la  van  a  saber  y  la  van  a  poder
+
+(82:19) responder  en  las  preguntas  de  los
+
+(82:21) exámenes.  Sí,  porque  viendo  los  flags
+
+(82:23) van  a  saber  si  es  un  fragmento  único.
+
+(82:25) Porque  ¿por  qué?  Porque  mandan  un
+
+(82:27) paquete  y  ese  paquete,  digamos,  está
+
+(82:31) dentro  de  lo  que  le  queda  al  al  campo  de
+
+(82:34) data.
+
+(82:35) dentro  de  lo  que  le  queda.  Digo,  porque
+
+(82:37) primero  tienen  que  restar  el  encabezado
+
+(82:39) IP,  el  encabezado  TCP  y  después  lo  que
+
+(82:42) queda  es  el  campo  de  datos.  Si  ese  campo
+
+(82:43) de  datos  se  usó  una  partecita  y  no
+
+(82:46) completo,  quiere  decir  que  va  a  ser  un
+
+(82:48) fragmento  solo,  o  sea,  un  segmento  solo.
+
+(82:52) Pero  también  van  a  saber  cuál  es  el
+
+(82:53) offset,  digamos,  decir  lo  que  le  queda.
+
+(82:56) Sí,
+
+(82:57) por  eso  me  interesa  que  sepan  esto,  que
+
+(82:59) lo  tienen  que  saber
+
+(83:01) porque  acá  justamente  dice  eso,  este,
+
+(83:04) les  explica  todo  eso.  Eh,  ¿quieren
+
+(83:07) sacarle  una  captura  de  pantalla  a  esta,
+
+(83:08) a  esta  diapositiva  y  a  esta?  Sí,  porque
+
+(83:10) me  interesa  a  estas  tres,  miren,  a  esta,
+
+(83:13) a  esta  y  a  esta.  Así  que  vamos  de  a  una.
+
+(83:16) Tome  la  captura  esta
+
+(83:18) y  y  después  paso  a  la  otra.
+
+(83:41) Tomen  captura  a  esta  ahora.
+
+(84:05) Y  ahora  tomen  esto.
+
+(84:41) Guarda  que  está  muteado,  profe,  eh,  por
+
+(84:43) las  dudas.
+
+(84:45) Sí,  sí,  estaba
+
+(84:48) leyendo  un  poco
+
+(84:50) lo  que  decía  como  para
+
+(84:53) darles  esa  conclusión.  Fíjense  que
+
+(84:58) este  campo  también  se  usa  mucho  y  es  una
+
+(85:02) y  aparecen  las  preguntas  que  van  a  van  a
+
+(85:04) ver  más  adelante.  Longitud  total,  tamaño
+
+(85:08) total  en  octetos
+
+(85:10) del  datagrama,  incluyendo  el  tamaño  de
+
+(85:13) la  cabecera  y  el  de  los  datos.
+
+(85:17) En  caso  de  fragmentación,
+
+(85:20) o  sea,  ¿qué  significa  en  caso  de
+
+(85:21) fragmentación?
+
+(85:24) que  el  paquete
+
+(85:26) va  a  estar  va  a  ser  fragmentado  en
+
+(85:29) pedacitos  más  chiquitos  porque  no  entra
+
+(85:31) dentro  de  lo  que  queda  de  los  15  bytes.
+
+(85:35) O  sea,
+
+(85:37) veamos  si  e  si  le  restamos  el  encabezado
+
+(85:42) IP  20  bytes  más  el  encab  el  encabezado
+
+(85:45) TCP  o  UDP  porque  puede  ser  o  uno  u  otro
+
+(85:48) TCP  o  UDP.
+
+(85:50) Lo  que  queda  del  campo  de  datos  es  donde
+
+(85:52) van  a  ir  transportados  esos  datos.  Si
+
+(85:54) superas  eh  la  cantidad  esa  de  de  de  lo
+
+(85:57) que  queda,
+
+(86:01) e
+
+(86:02) entonces  ahí  eh  se  fragmenta.  Entonces
+
+(86:06) este  campo  dice  longitud  total,  dice
+
+(86:07) tamaño  total  expresado  en  octetos
+
+(86:11) del  datagrama,  incluyendo  el  tamaño  de
+
+(86:14) la  cabecera  y  el  de  los  datos.  Y  ahí
+
+(86:17) hace  una  salvidad.  En  caso  de
+
+(86:19) fragmentación,  este  campo  contendrá  el
+
+(86:22) tamaño  del  fragmento,
+
+(86:24) no  el  del  datagrama  original.
+
+(86:27) ¿Se  entiende
+
+(86:29) bien?
+
+(86:30) o  si  no  después  lean  más  tranquilo.
+
+(86:35) Y  lo  otro  que  me  importa  es  que  como  les
+
+(86:38) dije  antes  es  esto,  que  si  bien  ustedes
+
+(86:40) lo  dijeron  acá  es  donde  les  muestra
+
+(86:44) cuando  está  reservado,  cuando  es
+
+(86:47) divisible,  o  sea,  digamos,  fíjense,  en
+
+(86:49) uno  divisible,  en  uno  divisible,  o  sea,
+
+(86:50) cuando  hay  más  fragmentos  o  no,  el
+
+(86:52) último  bit  se  pone  en  uno  cuando  es  el
+
+(86:55) último  fragmento.  Y  si  no,  quiere  decir
+
+(86:57) que  vienen  más  fragmentos.
+
+(86:59) Sí,  por  eso  es  importante
+
+(87:05) esto  que  dice  posición  del  fragmento  es
+
+(87:06) el  el  campo  ese  de  offset  que  está  en
+
+(87:08) inglés.
+
+(87:10) Léanlo  bien.  En  paquetes  fragmentados
+
+(87:13) indica  la  posición  en  unidades  de  64
+
+(87:17) bits
+
+(87:18) que  ocupa  el  paquete  actual  dentro  del
+
+(87:21) datagrama  original.  el  primer  paquete  de
+
+(87:24) la  serie,  el  fragmento  con  el  valor  en
+
+(87:25) cero.  O  sea,  con  esto  saben  si  es  el
+
+(87:28) primer  paquete,  el  segundo,  el  tercero,
+
+(87:30) el  quinto,  porque  en  una  red,  cuando
+
+(87:33) esto  está  fragmentado
+
+(87:35) y  se  y  los  datos  viajan,  no  viajan  en
+
+(87:38) manera  de  manera  secuencial,
+
+(87:42) el  el  origen
+
+(87:45) a  otro  concepto  teórico
+
+(87:50) y  espero  que  con  esto  que  le  digo  no
+
+(87:51) cometan  los  errores  cuando  se  los
+
+(87:53) preguntan.  El  paquete  se  fragmenta  en
+
+(87:57) origen
+
+(87:59) y  se  reensambla  en  destino.
+
+(88:03) ¿Sí?  O  sea,  cuando  se  manda  se  divide  en
+
+(88:08) cinco  paquetes,  pero  esos  paquetes
+
+(88:10) llegan  desordenados  en  el  en  el  destino.
+
+(88:13) Puede  llegar  primero  el  paquete  uno,
+
+(88:16) después  el  paquete  cinco  y  por  último  eh
+
+(88:19) el  después  el  tres  y  por  último  el
+
+(88:21) cuatro.
+
+(88:22) los  recibe  el  el  destino  y  los
+
+(88:26) reensambla,  o  sea,  lo
+
+(88:29) arma  el  rompecabezas  y  lo  vuelve  a  hacer
+
+(88:32) completo  y  con  ese  paquete  completo  que
+
+(88:35) tiene  el  dato  verdadero.  ¿Se  entiende?
+
+(88:40) Sí,  sí,  sí.  Bueno,  eso  es  lo  que  pasa  y
+
+(88:43) toda  esa  información  se  obtiene  con
+
+(88:45) estos  tres  campos  que  les  mostré,  el
+
+(88:47) flag,  el  offset  y
+
+(88:52) longitud  del  longitud  total.
+
+(88:56) Bueno,  teoría  full,
+
+(89:00) eh,  bueno,  ya  lo  demás  ya  lo  saben.
+
+(89:03) Entonces,  análisis  de  un  encabezado  IP
+
+(89:07) en  el  Wac.
+
+(89:12) Me  fijo,  el  paquete  que  está  sombreado
+
+(89:15) en  violeta
+
+(89:17) es  el  que  donde  estoy  parado.  Fíjense
+
+(89:19) que  la  capa,  el  la  primer  capa  que  dice
+
+(89:23) frame,  dice  uno  acá  y  tiene  la
+
+(89:25) información  esa  del  frame  que  no  está
+
+(89:27) desplegada  porque  no  es  lo  que  quiero
+
+(89:28) ver  ahora.
+
+(89:30) La  capa  2  dice  es  un  ethernet  2,  no  está
+
+(89:33) desplegada  porque  no  quiero  ver  los
+
+(89:35) detalles,  pero  a  priori  en  la  línea  esta
+
+(89:37) me  dice  cuál  es  la  macadres  de  origen  y
+
+(89:39) la  de  y  la  destino  source  y  destination,
+
+(89:43) o  sea,  me  da  el  dato  más  relevante.
+
+(89:45) Después  si  quiero  profundizar  lo  abro,
+
+(89:47) pero  ahora  estoy  analizando  el
+
+(89:49) encabezado  de  la  capa  3.  O  sea,  ¿qué
+
+(89:51) hacemos  con  el  wir  con  el  analizador  de
+
+(89:53) protocolos
+
+(89:55) hasta  ahora  con  lo  que  les  fui
+
+(89:56) explicando?  ¿Qué  veo?
+
+(90:01) encabezados  o  las  los  campos.
+
+(90:04) Bien,  o  sea,  veo  los  encabezados  de  cada
+
+(90:07) una  de  las  capas,  desde  la  capa
+
+(90:11) uno  hasta  la  capa
+
+(90:13) hasta  la  capa  cuatro,
+
+(90:16) ¿sí?  del  frame.
+
+(90:18) Sí,  veo  el  frame  es  el  digamos  la  capa,
+
+(90:22) digamos  más  primitiva.
+
+(90:25) La  capa  dos  que  es  la  donde  habla  el
+
+(90:28) direccionamiento  físico  a  nivel
+
+(90:29) macadres,  la  capa  tres  a  nivel  de  IP  y
+
+(90:32) la  capa  4  a  nivel  de  eh  lo  que  tengo.
+
+(90:36) Bueno,  de  vuelta,  recuerden  el  macheo
+
+(90:39) que  hay  entre  la  capa  del  modelo  OSI,
+
+(90:42) que  es  la  teórica,  y  la  capa,  las  capas,
+
+(90:45) mejor  dicho,  del  modelo  TCP,  que  es  esto
+
+(90:48) es  lo  real.  Sí,  acuérdense  que  yo  les
+
+(90:51) expliqué  que  el  macheo  es  entre  las
+
+(90:53) siete  capas  del  modelo  OS  y  el  con  el
+
+(90:55) modelo  TCP.  El  modelo  es  el  modelo
+
+(90:58) teórico  para  entender  eh  la  teoría  y  el
+
+(91:02) y  el  real,  el  que  se  ve  en  la  vida  real,
+
+(91:04) que  con  esto  que  es  el  analizador  de
+
+(91:06) protocolos,  es  el  modelo  TCP.  Sí,  dicho
+
+(91:10) esto,  porque  yo  hablo  la  capa  1  2  3  4,
+
+(91:12) pero  ya  sabemos  cuál  es  el  macheo,  ¿no?
+
+(91:14) Entonces,
+
+(91:16) e  a  lo  que  voy  es
+
+(91:20) con  el  analizador  de  protocolos  veo  la
+
+(91:23) los  encabezados,  el  encabezado,  digamos,
+
+(91:27) eh  Ethernet  de  K  2,  el  encabezado  IP  y
+
+(91:31) el  encabezado  TCP.
+
+(91:34) Y  dentro  de  todo  eso  voy  viendo  cuando
+
+(91:37) lo  abro  qué  es  lo  que  está  encapsulado
+
+(91:39) después.  Entonces,
+
+(91:41) fíjense  lo  siguiente.
+
+(91:47) ¿Se  acuerdan  que  hace  un  rato  les  dije
+
+(91:50) que  hay  un  campo,  en  este  caso  lo  llama
+
+(91:53) protocol,  este  es  el  encabezado  IP?  En
+
+(91:57) este  campo  que  dice  protocol,  yo  a
+
+(92:00) priori  ya  puedo  saber  qué  es  lo  que
+
+(92:03) viene  encapsulado  en  la  capa  superior,  o
+
+(92:06) sea,  en  la  capa  cuatro.
+
+(92:08) ¿Sí?
+
+(92:10) ¿Cómo  lo  veo?  Bueno,  si  la  teoría  me
+
+(92:12) dice  eso  y  bueno,  lo  abro,  el  encabezado
+
+(92:15) de  IP  lo  abro.  Tengo  toda  la  información
+
+(92:17) que  dice  ahí  en  la  teoría  y  lo  que
+
+(92:20) significa  cada  uno  de  estos  campos.  Y  el
+
+(92:22) campo  protocol  me  dice  que  lo  que  viene
+
+(92:25) después
+
+(92:27) dentro  del  encapsulado  en  la  capa  de
+
+(92:30) orden  superior  es  el  protocolo  ICMP  y
+
+(92:34) acá  abajo  aparece  ICMP.
+
+(92:42) Entonces,
+
+(92:53) yo  había  entendido  la  teoría  que  ISMP
+
+(92:55) está  al  mismo  nivel  que  IP,  pero  puede
+
+(92:58) ser.  Bueno,  pero  está  encapsulado.
+
+(93:01) Okay.  Ah,  claro.
+
+(93:06) Entonces,
+
+(93:08) ¿qué  protocolos  de  nivel  3
+
+(93:11) TCP/IP  se  encapsulan  en  las  tramas?
+
+(93:17) ¿Qué  protocolos
+
+(93:19) de  nivel  4  y  5  TCP  se  encapsulan  en  las
+
+(93:21) tramas?  Bueno,  entonces  con  esa  estas
+
+(93:24) preguntas  están  relacionadas  con  eso.
+
+(93:29) ¿Por  qué  acá  dice  cinco  si  el  modelo  TCP
+
+(93:31) tiene  cuatro  capas?
+
+(93:38) Buena  pregunta.  No,  no  lo  sé.
+
+(93:42) la  aplicación  sería
+
+(93:43) claro  porque  digamos  según  el  este
+
+(93:47) macheo  que  hay  con  la  con  el  modelo  OSI,
+
+(93:50) ¿cómo  digo  yo?  Lo  que  tienen  encapsulado
+
+(93:53) eh  eh  digamos  de  como  si  fuese  de  orden
+
+(93:55) superior  en  la  capa  cuatro  el  modelo
+
+(93:57) OSI.
+
+(93:59) O  sea,  es  una  manera  como  de  decir,
+
+(94:01) "Che,  ¿qué  tiene  adentro?  Eh,  lo  que
+
+(94:02) está  más  arriba  que  no  digamos  en  o  lo
+
+(94:05) que  tiene  adentro,  ¿se  entiende?  O  sea,
+
+(94:08) es  una  manera  de  decir  lo  que  tiene
+
+(94:10) adentro,
+
+(94:12) porque  si  yo  después  me  paro  acá  en  TCP,
+
+(94:14) me  paro  en  esta,  que  vendría  a  ser  la
+
+(94:15) capa  4,  eh,  o  sea,  lo  que  está  dentro,  o
+
+(94:21) sea,  hace  referencia  a  eso,  a  ese  cinco
+
+(94:23) que  está  ahí,  ¿no?  O  sea,  es  algo  medio
+
+(94:26) conceptual,  confuso,  pero  medio
+
+(94:28) conceptual.  Pero  bueno,  se  lo  tenía  que
+
+(94:29) demostrar  porque  cuando  lo  lean  no  lo
+
+(94:31) iban  a  entender,  si  no
+
+(94:35) entonces
+
+(94:37) en  en  el  cabezado  de  P  aparece  todo
+
+(94:40) esto,
+
+(94:41) dirección
+
+(94:43) destino,  dirección  eh  de  origen  y
+
+(94:46) destino.
+
+(94:48) Ahora  ustedes  cuando  se  paran  en  el
+
+(94:51) encabezado  P,  o  sea,  ustedes  en  realidad
+
+(94:54) lo  ven  así.  Esto  la  trama  es  todo  esto
+
+(94:56) para  ustedes.
+
+(94:59) Lo  que  pasa  que  según  donde  se  paren  se
+
+(95:01) va  pintando  una  cosa  u  otra,
+
+(95:04) porque  ustedes  lo  conocen  a  nivel  byes.
+
+(95:08) Y  seguramente  cuando  le  tomaron  el
+
+(95:10) parcial  de  teoría,  no  sé  si  en  el
+
+(95:12) primero  o  vendrá  en  el  segundo,  a  usted
+
+(95:14) le  van  a  dar  esto  que  está  acá  abajo,  lo
+
+(95:15) que  acabo  de  de  hacer  con  el  rectángulo.
+
+(95:19) Y  ustedes  deberían  saber  que  es  cada
+
+(95:21) cosa
+
+(95:26) porque  porque  saben  cuánto  es  la
+
+(95:27) dirección  MACADES,  cuántos  by  tiene.
+
+(95:29) Entonces  van  contando  los  bytes
+
+(95:33) y  se  van  a  dar  cuenta.
+
+(95:37) Igual  ya  se  dan  cuenta,  ¿no?  Acá  dice,
+
+(95:39) miren,
+
+(95:41) si  acá  dice  0x800,
+
+(95:46) yo  visualizo  que  eso  es  una  IP  versión  4
+
+(95:49) y  lo  que  viene  antes  de  eso,  una,  2,  3,
+
+(95:53) 4.
+
+(95:57) ¿Se  acuerdan
+
+(95:59) qué  es  cada  cosa  de  este  que  está  acá?
+
+(96:04) Origen  y  destino.
+
+(96:06) Exacto.  Muy  bien,  muy  bien.  Lo  tienen  lo
+
+(96:10) tienen  acá  macheteado,  ¿no?  Pero  si  yo
+
+(96:12) no  tengo  este  machete,  yo  sé  que  una,
+
+(96:15) dos,  3,  4,  5,  6,  o  sea,  todo  esto  que
+
+(96:19) está  acá,
+
+(96:21) 6*  8  48,  conociendo  yo  la  cómo  es  la
+
+(96:25) trama  Ethernet  2,  yo  sé  que  esa  es  la
+
+(96:29) dirección  macadres  de  origen,  porque
+
+(96:32) viene  dirección  macad  cómo  viene  la
+
+(96:34) trama.  Dirección  macadres  destino,
+
+(96:40) dirección  macadres  de  origen
+
+(96:45) y  campo  type.
+
+(96:49) Entonces,  yo  sabiendo  la  teoría,  aunque
+
+(96:51) no  vea  esto  que  está  acá  y  no  lo  vea
+
+(96:53) desplegado,  yo  sé  que  es  cada  cosa.
+
+(96:57) Si  sigo  0x45.
+
+(97:00) Yo  sé  que  eso  es  IP  versión  4.
+
+(97:12) No  me  parece  me  confundí.
+
+(97:15) Eh,  déjenme  ver  un
+
+(97:17) creo  que  es  cuatro  y  el  cinco  es  el
+
+(97:19) Helen
+
+(97:20) Claro.
+
+(97:22) Eh,
+
+(97:25) en  sí,  miren,  porque  son  4  bytes.
+
+(97:32) Está  versión  4  bytes
+
+(97:35) 0x  eh  01.
+
+(97:40) ¿Ven?
+
+(97:41) Un  esto,  esto  0x  100  es  en  bits,  pero  si
+
+(97:44) yo  hago  1  2  4  8,  ¿cuál  está  en  uno?  El
+
+(97:49) cuatro.  Entonces  el  cuatro  hace
+
+(97:52) referencia  a,
+
+(97:56) perdón.
+
+(97:58) Bueno,  ya  saben,  ese  es  el  análisis  que
+
+(97:59) tienen  que  usar  ustedes.
+
+(98:01) ¿Se  entiende?  Vamos  bien  hasta  acá.
+
+(98:05) Sí.
+
+(98:06) Bien.  Bueno,  e  entonces,  bueno,  ahí  ya
+
+(98:10) tienen  todo  el  encabezado  en  IP  para
+
+(98:13) entender  eh  lo  que  tienen  que  hacer.
+
+(98:16) Ahora  viene  el  encabezado  IMP,  que  es  el
+
+(98:18) encabezado  de  la  capa  superior  o  lo  que
+
+(98:21) viene  acá,  acá  encapsulado.  ¿Ven  que
+
+(98:24) está  acá?
+
+(98:28) ¿Me  siguen?
+
+(98:30) Sí,
+
+(98:31) eso  también  tiene  un  eso  también  tiene
+
+(98:33) un  un  encabezado  y  MP  también  tiene  un
+
+(98:35) encabezado  que  es  este  que  está  acá.  ¿Lo
+
+(98:37) conocen?  ¿Lo  vieron  en  la  teoría?
+
+(98:42) Eh,  sí,  sí  están  en  las  diapositivas.
+
+(98:46) Entonces  con  esta  información
+
+(98:50) también  la  pueden  ver  en  el  WJAC  y  la
+
+(98:52) teoría  es  todo  esto  que  está  acá  que
+
+(98:54) también  lo  tenían  en  ustedes  en  la  en  Si
+
+(98:57) quieren  tómenle  una  captura  a  esta
+
+(98:58) también  para  tenerlo,  pero
+
+(99:01) en  es  lo  que  vieron  ustedes  en  la
+
+(99:04) teoría,  ¿no?  Pero  del  punto  de  vista
+
+(99:06) práctico,  cuando  yo  me  esa  en  esa  misma
+
+(99:09) trama  en  la  que  estaba  despliego  el
+
+(99:13) encabezado,
+
+(99:14) digamos,  ICMP,  que  es  el  que  está
+
+(99:16) encapsulado,  digamos,  en  la  capa  de
+
+(99:19) orden  superior.
+
+(99:21) Acá  tengo,  y  fíjense  que  existen
+
+(99:24) distintos  tipos  de
+
+(99:26) eh  de  eco  de  de  mensajes  ICMP.  Está  el
+
+(99:30) eco  request,  está  el  eco  reply.  Sí.
+
+(99:35) Ah,  una  cosa,
+
+(99:37) ISMP  es  el  protocolo.
+
+(99:41) Es  el  protocolo.  Pink,  PIN.  PIN  es  la
+
+(99:45) herramienta.  Es  la  herramienta  que  se
+
+(99:47) usa  para  hacer  uso  de  ese  protocolo.  Sí.
+
+(99:51) No  es  que  PIN  es  es  el  es  algo.  PIN  es
+
+(99:55) la  herramienta  y  ISMP  es  el  protocolo
+
+(99:57) que  usa  esa  herramienta  para  enviar  un
+
+(100:00) paquete  de  tipo  ecquest  o  eco  reply.
+
+(100:05) Se  entienden,  ¿ven?  Mire,
+
+(100:08) sí,  la  aplicación  PIN.
+
+(100:11) Sí,  exacto.  Sería  la  aplicación.  Esa  es
+
+(100:13) la  herramienta,  sería  la  aplicación  de
+
+(100:15) Bueno,  eh  algo  importante  y  acá  ya  viene
+
+(100:17) lo  que  van  a  hacer  en  la  última  parte
+
+(100:19) del  trabajo  laboratorio  número  cinco,
+
+(100:22) que  es
+
+(100:24) ustedes  van  a  poner  a  correr  el
+
+(100:25) analizador  de  protocolos  tocando  el
+
+(100:28) botoncito  este  de  la  letra  de  tiburón,
+
+(100:30) que  cuando  lo  tocan  se  pone  a  capturar  y
+
+(100:33) acá  va  a  empezar  a  moverse  el  tráfico.
+
+(100:34) Ahora  lo  vamos  a  ver  igual.  Empieza  a
+
+(100:36) moverse  el  tráfico,  pa  pa.  empieza  a
+
+(100:37) capturar  todo  lo  que  ve  por  la  interface
+
+(100:39) esa,  que  puede  ser  la  wireless  o  puede
+
+(100:42) ser  la  Ethernet,  la  que  tengan
+
+(100:43) conectada,  empiezan  a  ver  cómo  se  mueve
+
+(100:46) la  información  acá,  que  es  lo  que  está
+
+(100:47) capturando  cuando  van  al
+
+(100:51) al  CMD  acá,  al  CMD.  que  es  digamos  el  la
+
+(100:56) terminal
+
+(100:57) y  le  hacen  un  ping  al  default  gateway
+
+(101:00) poniendo  pink,  digamos,  como  le  como  les
+
+(101:02) va  a  decir  el  el  enunciado  de  del  del
+
+(101:05) TL5,  hacen  un  pin  y  le  están  jcodeando
+
+(101:09) que  el  pin  tenga  esta  este  tamaño  200
+
+(101:12) bytes.  Sí,  van  a  ver  que  el  pin  va  a
+
+(101:17) producir  que  se  mande  un  paquete  que
+
+(101:20) adentro  de  ese  paquete  no  supere  los  200
+
+(101:21) bytes.  Con  lo  cual,  ¿qué  va  a  pasar  si
+
+(101:24) no  supera  los  si  no  es  más  de  200  byt
+
+(101:26) con  ese  paquete?
+
+(101:31) ¿Va  a  estar  fragmentado?
+
+(101:35) Eh,  no.
+
+(101:36) Bien,  no  estab  no  va  a  estar  fragmentado
+
+(101:38) porque  eh  es  un  paquete  que  chiquito  que
+
+(101:41) no  supera  el  tamaño  del  del  campo  de
+
+(101:44) datos,  restándole  obviamente  el
+
+(101:48) encabezado  TCP  y  el  encabezado  UDP.
+
+(101:51) e
+
+(101:53) y  el  encabezado  dice  MP,  o  sea,  le
+
+(101:56) restan  todo  eso  y  el  campo  de  datos
+
+(101:58) queda  con  el  espacio,  llamémosle  holgado
+
+(102:04) para  meter  estos  200  by,  o  sea,  que
+
+(102:08) tranqui,  va  a  pasar  directo,  no  va  a  ser
+
+(102:11) fragmentado.
+
+(102:13) Ese  mismo  trabajo  lo  tienen  que  hacer
+
+(102:15) otra  vez,  repitiendo  eso  mismo,  con  un
+
+(102:19) pin  con  1499.
+
+(102:21) Acá,  ¿qué  va  a  pasar?
+
+(102:26) Se  va  a  fragmentar.
+
+(102:27) Se  va  a  fragmentar.  Perfecto.  Se  va  a
+
+(102:29) fragmentar  n  cantidad  en  n  cantidad  de
+
+(102:32) segmentos
+
+(102:35) y  en  esto  va  a  pasar  lo  mismo.  Ojo,  en
+
+(102:40) este  tienen  que  ver  que  va  a  pasar.  Sí,
+
+(102:43) tienen  los  dos  casos  extremos  200  nada.
+
+(102:47) Algo  va  a  pasar  acá  y  acá  obviamente  que
+
+(102:50) recontrafagmenta,
+
+(102:51) digamos.  Y  si  ustedes  se  fijan  acá  abajo
+
+(102:58) en  el  encabezado
+
+(103:00) IP,
+
+(103:02) fíjense  acá  el  campo  de  fragment  4.  Y
+
+(103:06) fíjense  acá  lo  que  va,  o  sea,  usted
+
+(103:07) tiene  que  mirar  esto,  el  offset,  tiene
+
+(103:10) que  mirar  el  offset.  los  flags.  ¿Y  qué
+
+(103:13) pasa  acá  con  los  fragmentos?  Eso  tienen
+
+(103:14) que  mirar  porque  les  va  a  preguntar  todo
+
+(103:17) esto.  Miren.  Bueno,  tienen  distintos  eh
+
+(103:21) ejemplitos  acá.
+
+(103:23) Yo  no  los  voy  a  no  los  voy  a  no  nos
+
+(103:25) vamos  más  si  sigo  si  sigo  hablando,  pero
+
+(103:28) pero  ¿qué  pasa  en  el  en  la  guía?  Les  va
+
+(103:30) a  preguntar  a  ver  si  estaba  acá.
+
+(103:38) No,  acá  no  está,  pero  lo  voy  a  abrir
+
+(103:40) acá.  Esperen.
+
+(103:42) Eh,  telec,
+
+(103:45) tele  C5,  Tel5.  Acá  lo  quería  abrir,
+
+(103:49) [suspiro]
+
+(103:49) fíjense  lo  siguiente.  Miren,
+
+(103:53) acá  vienen  los  objetivos,  viene,  bueno,
+
+(103:56) fíjense  que  hay  una  página  del  Wires,
+
+(104:02) si  no  pueden  cuando  vayan  trabajando,
+
+(104:05) no  en  el  trabajo  este,  sino  en  el  otro,
+
+(104:08) cuando  vayan  trabajando  va  a  haber
+
+(104:10) tramas  que  no  van  a  poder  capturar.  La
+
+(104:11) de  Spaning  Tree  no  la  van  a  poder
+
+(104:12) capturar.  La  de  van  tal  vez  tampoco,
+
+(104:15) pero  ustedes  en  la  página  de  Warjack
+
+(104:17) cuando  entren  en  una  parte  van  a  poder
+
+(104:21) bajarse  ahí  donde  dice  wiki.org/vilan.
+
+(104:26) Esa  es  una  trama  que  se  puede  descargar
+
+(104:28) de  ejemplo.  Así  como  yo  tengo  la  de  las
+
+(104:30) capturas  de  pantalla,  bueno,  así  les  va
+
+(104:32) a  aparecer.  Ustedes  le  dan  doble  clic  y
+
+(104:34) les  abre  en  el  una  captura  ya  hecha.  Son
+
+(104:37) de  ejemplos  para  que  puedan  analizar  así
+
+(104:39) eso  como  analicé  yo,  que  les  mostré.
+
+(104:42) Pero  bueno,  acá  tiene  el  trabajo  de
+
+(104:44) laboratorio  del  cinco,  que  es  bastante
+
+(104:45) fácil.  Simplemente  tienen  que  ir
+
+(104:47) respondiendo  preguntas
+
+(104:50) teóricas,  algunas  las  vimos.  Y  acá  en  lo
+
+(104:53) último,
+
+(104:56) déjenme  ver.  Bajo,  bajo,  bajo.  Acá  esta
+
+(104:58) es  la  parte  donde  les  va
+
+(105:02) acá  donde  tienen  que  hacer  todo  esto  que
+
+(105:04) yo  les  dije  y  responder  estas  preguntas
+
+(105:06) según  el  cada  caso.  Se  ejecutó  el
+
+(105:08) comando  PIN,  eh,  salen  paquetes  hacia  la
+
+(105:11) red,  ¿cuántos?  ¿Qué  tamaño  tiene?
+
+(105:13) ¿Cuántos  by  corresponden  a  cada
+
+(105:15) protocolo?  ¿Cuántos  bytes  corresponden  a
+
+(105:17) los  datos  transmitidos?
+
+(105:21) Y  después  les  pregunta  todo  esto,  ¿ven?
+
+(105:24) O  sea,  tienen  que
+
+(105:29) esta  es  la  parte  que  les  quería  mostrar.
+
+(105:32) Esto  es  lo  que  yo  les  mostré  recién,  que
+
+(105:34) con  todo  lo  que  les  enseñé  del  punto  de
+
+(105:36) vista  teórico,  tienen  que  responder
+
+(105:38) esto.  Dice,  "¿En  qué  caso  se  fragmentan
+
+(105:40) los  paquetes?  ¿A  cuántos  bytes  se
+
+(105:42) produjo  el  fragmento?  ¿Qué  campos  de
+
+(105:44) protocolo  interviene  en  la
+
+(105:45) fragmentación?"  Esto,  estas  respuestas
+
+(105:46) de  la  A  a  la  F  la  tienen  que  responder
+
+(105:49) para  el  punto  uno,  que  son  para  200
+
+(105:51) byte.  para  el  punto  4,  para  el  punto
+
+(105:54) dos,  que  son  1499  byt  y  para  el  punto  3,
+
+(105:57) que  son  2,000  by.  Para  cada  caso  tienen
+
+(106:00) que  responder  esto  porque  eso  les  va  a
+
+(106:03) ustedes  a  enseñar
+
+(106:05) cómo  trabaja  TCP  para  cuando  tiene  que
+
+(106:09) fragmentar  paquetes,  si  es  que  lo  tiene
+
+(106:11) que  fragmentar  o  si  es  que  no  lo  tiene
+
+(106:12) que  fragmentar  y  cómo  funciona.
+
+(106:16) Bien,  me  voy  a  migrar  al  Wir  para
+
+(106:19) mostrarles
+
+(106:21) e  ahora  no  con  capturas  de  pantalla,
+
+(106:24) sino  e
+
+(106:27) eh  con
+
+(106:29) el  simulador.
+
+(106:42) Bueno,  ahí  me  cambié  eh  a  la  laptop.
+
+(106:44) ¿Ustedes  me  escuchan  bien  ahí?
+
+(106:47) Sí,  sí.
+
+(106:49) Bien,  entonces  ahora  les  voy  a  compartir
+
+(106:52) la  pantalla.
+
+(106:54) Eh,  algo  importante  cuando  ustedes
+
+(106:57) entren
+
+(106:58) al  wirck,
+
+(107:01) que  es  esto  que  está  acá,
+
+(107:03) cuando  ustedes  lo  abran,  lo  tienen  que
+
+(107:05) abrir.
+
+(107:07) Es  importante  esto  que  les  voy  a  decir.
+
+(107:08) Lo  tienen  que  ejecutar  como
+
+(107:09) administrador.  Botón  derecho,
+
+(107:12) ejecutar  como  administrador.  Les  va  a
+
+(107:15) aparecer  esta  pantalla  y  les  va  a
+
+(107:16) aparecer  cuál  de  estas  interfaces  que
+
+(107:19) están  acá  es  la  que  está  capturando
+
+(107:20) tráfico.  En  mi  caso  los  Wi-Fi.  Así  que
+
+(107:22) le  doy  doble  clic  acá.  y  me  abre.
+
+(107:25) Fíjense,  con  esto  detengo
+
+(107:29) y  con  esto  me  pongo  a  capturar.  Ahí  me
+
+(107:31) pongo  a  capturar,
+
+(107:33) continuar  sin  guardar  y  empieza  a
+
+(107:35) capturar.
+
+(107:36) Yo  abro  acá
+
+(107:39) p  config
+
+(107:41) y  le  hago  un  pin  al  default  gateway.
+
+(107:46) Profe,  solo  se  ve  el  wire  shark.
+
+(107:48) Ah,  sí.  Bueno,  le  hice  un  ping  al
+
+(107:50) default  gateway,  no  importa.
+
+(107:52) Detengo  el  tráfico.
+
+(107:54) Detengo  el  tráfico.
+
+(107:58) Yo  acá  capturó  un  montón.  Fíjense  que
+
+(108:00) capturó  un  montón.  Si  yo  quiero  filtrar,
+
+(108:05) quiero  filtrar
+
+(108:07) en  los  paquetes,  hago  lo  siguiente.  Acá
+
+(108:11) pongo
+
+(108:13) ICMP.  ICMP.
+
+(108:19) Enter.  Y  ahí  me  filtra  todos  los
+
+(108:21) paquetes,  digamos,  que  yo  filtré,  en
+
+(108:24) este  caso  por  el  protocolo  ISMP.  Fíjense
+
+(108:26) que  cuando  yo  le  hice  un  ping  al  default
+
+(108:28) GW  y  ustedes  no  lo  vieron  en  esta  en
+
+(108:31) esta  primera  línea,  porque  esto  capturó
+
+(108:33) un  montón.  Fíjense,  este  es  en  el  3912.
+
+(108:37) Si  yo  me  paro  acá
+
+(108:40) en  el  frame,
+
+(108:42) me  muestra  toda  la  trama,  me  muestra
+
+(108:44) sombreado  de  la  parte  derecha  toda  la
+
+(108:47) trama  completa.
+
+(108:49) Si  yo  la  despliego,  veo  toda  la
+
+(108:51) información  de  la  capa  uno,  que  es
+
+(108:52) información  más  de  bajo  nivel,  ¿no  se
+
+(108:55) acuerdan  cuál  es  el  concepto  de  la  capa
+
+(108:57) uno,  pero  si  ya  me  voy  a  la  Ethernet  2,
+
+(109:00) fíjense,  toda  esta  es  la  trama.  A
+
+(109:02) ustedes  en  el  parcial  se  las  van  a  dar
+
+(109:04) así  toda  completa  la  trama,  como  lo  que
+
+(109:06) está  sombreado.  Y  lo  que  yo  hago  ahora
+
+(109:09) es  empezar  a  verlo  con  el  con  el  con  el
+
+(109:12) analizador  de  protocolos.  Bueno,  voy  a
+
+(109:14) analizar  la  capa  dos.  La  capa  dos,  el
+
+(109:17) encabezado  de  la  capa  dos.  Repito,  el
+
+(109:21) encabezado  de  la  capa  2  es  lo  que  está
+
+(109:23) sombreado  en  azul.
+
+(109:26) Si  yo  lo  despliego,
+
+(109:29) veo  cuál  es  la  dirección  macadrés  de
+
+(109:30) origen,  cuál  es  la  dirección  macadrés  de
+
+(109:32) destino  y  veo  que  el  protocolo  que  viene
+
+(109:35) encapsulado  es  IP  versión  4.  Y  fíjense
+
+(109:37) que  si  me  paro  en  IP  versión  4  me
+
+(109:38) muestra  que  es  0x800,
+
+(109:41) que  es  lo  que  la  teoría  me  dice  y  me
+
+(109:43) dice  dónde  está.  Si  me  paro  en  la
+
+(109:45) dirección  macaderes  destino,  me  dice
+
+(109:47) cuáles  son  y  es  correcto  porque  yo  lo
+
+(109:49) sé.  Y  al  igual  que  la  que  me  muestra  la
+
+(109:51) dirección  macadares  de  origen.  Minimizo
+
+(109:55) esto.  Ahora  me  voy  a  parar  en  el
+
+(109:58) encabezado  de  capa  3  en  el  IP.  Fíjense
+
+(110:01) que  yo  sé  dónde  empieza  y  dónde  termina.
+
+(110:04) Son  20  bytte,  pero  por  la  teoría  yo
+
+(110:06) también  sabía  cuánto  era.  Pero  si  los
+
+(110:08) cuento
+
+(110:10) va  a  coincidir  con  lo  que  me  muestra  el
+
+(110:11) analizador  de  protocolos.  Lo  abro.
+
+(110:14) Veo  la  versión.  Sí,
+
+(110:18) yo  antes  le  decía  que  era  0445,  pero
+
+(110:21) bueno,  es  el  número  cuatro  es  el  al  que
+
+(110:23) se  referencia.  El  cinco  es  el  heer,
+
+(110:25) ¿viste?  Que  que  dice  que  es  20  bytes.
+
+(110:27) Sí.
+
+(110:28) E  pero  bueno,  así  van  viendo  y  después
+
+(110:32) ya  sé  cuál  es  el  protocolo  de  orden
+
+(110:33) superior  que  va  a  ser  ISMP,  que  es  el
+
+(110:35) que  estoy  trabajando,
+
+(110:38) y  me  dice  cuál  es  dirección  de  destino,
+
+(110:41) la  de  origen  y  la  de  destino.
+
+(110:43) Todo  eso  ustedes  lo  tienen  que  saber
+
+(110:45) identificar.  Si  si  el  profe  de  teoría  le
+
+(110:47) da  esta  trama  así
+
+(110:51) en  el  parcial  y  les  dice,  "Decime  cuál
+
+(110:53) es  dirección  de  IP  de  origen,  cuál  es
+
+(110:55) dirección  de  IP  destino,  decime  si  es
+
+(110:57) una  decime  si  es  una  trama  de  si  es  una
+
+(111:00) trama  de  broadcast  o  es  una  trama  eh
+
+(111:02) unicast."  Todo  eso  ustedes  lo  pueden
+
+(111:04) analizar
+
+(111:06) conociendo  la  teoría  y  conociendo  los
+
+(111:08) encabezados  de  cada  una  de  la  trama  y  de
+
+(111:10) de  dónde  va  uno,  hacia  dónde  va,  cuándo
+
+(111:13) empieza  uno,  cuándo  termina.
+
+(111:16) cada  uno  de  ellos  porque  saben  que
+
+(111:18) cuánto  ocupa,  cuántos  bytes  ocupa  cada
+
+(111:20) uno.  Sí,  ven,  este  era  20  by.  Es  este  ya
+
+(111:25) saben  cuánto  es  y  se  me  p  se  los  dije
+
+(111:27) hace  un  ratito  también  con  la  teoría.
+
+(111:29) Entonces  tienen  que  conocer  bien  la
+
+(111:31) teoría.
+
+(111:32) En  el  caso  de  la  práctica,
+
+(111:35) más  allá  de  que  tienen  que  saber  la
+
+(111:37) teoría  y  tienen  que  saberlo,  yo  les  voy
+
+(111:39) a  dejar  usar  el  analizador  de  protocolo
+
+(111:41) porque  acá  lo  que  estamos  haciendo  es
+
+(111:42) ejercitar  el  uso  de  la  herramienta  y  no
+
+(111:45) que  se  sepan  de  memoria  los  campos,
+
+(111:49) pero  en  la  teoría  cuando  les  tomen  el
+
+(111:50) parcial,  se  los  van  a  tomar  así.
+
+(111:54) Y  les  voy  a  mostrar  una  cosita.
+
+(111:59) Fíjense  lo  siguiente.
+
+(112:01) Si  me  voy  acá  a  la  parte  de  preferencias
+
+(112:04) del  webc,  me  voy  a  ir  acá  a  la  parte
+
+(112:07) donde  dice  diseño
+
+(112:09) y  en  la  tercer  columna  pongo
+
+(112:13) diagrama,  diagrama  del  paquete.
+
+(112:16) Aceptar.
+
+(112:18) Fíjense  que  me  muestra
+
+(112:21) la  teoría  de  de  los  encabezados.  ¿Ven?
+
+(112:24) Miren.
+
+(112:26) Ethernet.
+
+(112:28) IP  versión  4  eMP.
+
+(112:31) ¿Lo  ven?  ¿Vieron  qué  bueno  que  está?  Y
+
+(112:33) miren  lo  siguiente.
+
+(112:35) Me  paro  acá.
+
+(112:37) ¿Cuál  es  la  dirección  macaderes  destino?
+
+(112:40) P.
+
+(112:41) Ahí  me  muestra  cuál  es.  ¿Cuál  es  la  de
+
+(112:43) origen?  P.  ¿Cuál  es  el  tipo?  Sí.
+
+(112:47) Y  lo  mismo  pasa  con
+
+(112:51) la  IP  versión  4.  ¿Ven
+
+(112:54) la  versión?  Quiero  saber  cuál  es  el
+
+(112:55) protocolo  de  orden  superior.  O  sea,  el
+
+(112:58) encabezado  IP  me  me
+
+(113:01) está  diciendo  que  eh  tiene  encapsulado
+
+(113:05) en  la  capa  superior  y  es  el  protocolo
+
+(113:06) SMP.  Okay.  A  ver,  vamos  a  ver  el
+
+(113:08) protocolo  IMP.  Me  paro  acá.
+
+(113:12) ¿Qué  es?  ¿Qué  tipo  de  IMP  es  este?
+
+(113:16) Es  un
+
+(113:18) request.  Ahora,  si  me  paro  en  la  otra
+
+(113:20) línea,
+
+(113:22) ¿qué  tipo  es?  Es  un  reply
+
+(113:26) y  así  es  como  ustedes  tienen  que  ir
+
+(113:28) analizando  cada  una  de  las  cosas.
+
+(113:32) Puedo  filtrar  acá  también  por  dirección
+
+(113:34) macades  o  destino.  Fíjense,  192,  168
+
+(113:38) 208.26.
+
+(113:41) Esa  es  208  pun.  Quito  este  filtro.
+
+(113:48) IP  pun  source.
+
+(113:55) IP.Sur  punto
+
+(113:59) src
+
+(114:01) igual  igual.  Bueno,  hay  que  respetarlo
+
+(114:03) igual,  ¿no?  Igual  igual  espacio  192  168
+
+(114:07) 208
+
+(114:09) 208.26
+
+(114:12) 26.
+
+(114:14) Y  en  el  filtro  que  me  hace  con  todo  lo
+
+(114:17) que  me  va  a  mostrar,  no  solamente  ahora
+
+(114:19) dice  MP,  sino  todo  lo  que  me  va  a
+
+(114:20) mostrar,  me  muestra  todo  lo  que  sale
+
+(114:24) desde  la  dirección  IP  de  origen.
+
+(114:29) Sí.  Y  también  puedo  filtrar
+
+(114:33) haciendo  un  la  operación  y  pongo
+
+(114:37) protocol,
+
+(114:40) creo  que  es  así.  A  ver,  I
+
+(114:43) mp,
+
+(114:45) no,  a  ver,  pongo  andan  y  a  ver  si  pongo
+
+(114:47) ICMP  solo,  porque  a  veces  según  la
+
+(114:49) versión  IC  MP,  ahí  está,
+
+(114:55) no  solamente  y  acá  fíjense  que  solamente
+
+(114:57) me  puso  lo  de  la  dirección  IP  de  origen.
+
+(115:02) Si  le  vuelvo  a  quitar  esto,
+
+(115:04) perdón,  si  le  vuelvo  a  quitar  esto  y
+
+(115:06) pongo  ICMP  de  vuelta,
+
+(115:10) me  muestra
+
+(115:12) no  solamente  la  dirección  IP  de  origen,
+
+(115:13) sino  también  e
+
+(115:17) eh  la  la  de  destino.  ¿Lo  ven?  ¿Cómo
+
+(115:20) puedo  aplicar  filtros  para  poder  buscar
+
+(115:23) lo  que  necesito?  Por  ejemplo,  no  sé.
+
+(115:26) Eh,  a  ver,  déjenme  en
+
+(115:30) si  quiero  buscar,  por  ejemplo,  a  ver,  en
+
+(115:34) vez  de  MP,  quiero  ver,
+
+(115:41) a  ver,  no  se  me  ocurre  otra  cosa.
+
+(115:45) Bueno,  IPX  no  hay  acá.  A  ver,  algo  que
+
+(115:51) Bueno,  pueden  aplicar  otro  filtro.  Ahora
+
+(115:53) no  se  me  ocurre  qué  filtrar,  eh,  como
+
+(115:55) para  mostrarles,  eh,  pero
+
+(116:00) a  ver  si  pongo  UDP  acá.  UDP.
+
+(116:04) Ahí  está.  Acá  me  muestra  en  la  parte  de
+
+(116:06) protocolos  todo  lo  de  UDP,
+
+(116:09) fíjense.
+
+(116:10) Y  y  yo  puedo  analizar  que  es  que  qué  es
+
+(116:13) el  el  UDP.  Este,
+
+(116:18) siempre  lo  mismo.  Analizo  dirección  IP
+
+(116:20) de  origen,  destino.  Si  digamos  en  este
+
+(116:22) caso,  fíjense  cómo  es  el  encabezado  UDP,
+
+(116:25) que  no  tiene  nada  que  ver  con  el  TCP  que
+
+(116:27) que  era  chiquitito.  Miren,
+
+(116:29) miren  lo  que  es  el  encabezado  UDP
+
+(116:31) comparado  con  el  TCP,  como  lo  vieron  en
+
+(116:33) la  teoría,  solamente  tiene  el  puerto,
+
+(116:36) dirección  destino  y  dirección  y  nada
+
+(116:39) más,  porque  a  veces  la  dirección  de
+
+(116:41) origen  es  opcional
+
+(116:43) en  en  el  campo
+
+(116:47) Sport  destination
+
+(116:50) y  después  ya  vienen  los  datos.  Después
+
+(116:52) el  encabezado  vienen  los  datos.  ¿Hay
+
+(116:55) alguna  duda  hasta  acá  de  todo  lo  que
+
+(116:57) explicamos?
+
+(117:01) No,  no,  bastante  claro  todo.
+
+(117:04) Bueno,  hasta  acá  sería  en  el  trabajo  de
+
+(117:07) laboratorio  número  cinco.
+
+(117:10) Tranquilamente,  y  digo  tranquilamente
+
+(117:13) porque  si  nos  quedáramos  una  hora  más,
+
+(117:15) pero  no  lo  vamos  a  hacer,  podríamos  dar
+
+(117:17) también
+
+(117:19) lo  del  trabajo  laboratorio  número  número
+
+(117:22) seis.
+
+(117:23) No  lo  voy  a  hacer  porque  quiero  que
+
+(117:25) vayan  paso  a  paso.
+
+(117:27) Eh,  así  que
+
+(117:30) eh  vamos  a  dejar  acá  la  clase  que  viene.
+
+(117:35) Vamos  a hacer  el  trabajo  del  número  seis
+
+(117:37) y  el  parcial  va  a  ser  la  otra  clase,  o
+
+(117:40) sea,  no  la  próxima,  sino  la  otra,  con  lo
+
+(117:42) cual  a  ustedes  les  va  a  dar  la
+
+(117:44) posibilidad
+
+(117:46) de  que  puedan  estudiar  bien  la  parte
+
+(117:49) teórica  de  esto,  eh,  que  ya  lo  la  teoría
+
+(117:53) un  poco  ya  la  vieron,  pero  pero  que
+
+(117:55) puedan  practicar  con  el  analizador  de
+
+(117:57) protocolos,  con  el  WCK,  eh,  todo  lo  que
+
+(118:00) fuimos  viendo  hoy,  ¿sí?  para  que  puedan
+
+(118:03) asimilarlo,  porque
+
+(118:05) es  mucha  información,
+
+(118:07) eh,  más  allá  que  muchas  la  vieron  en  la
+
+(118:09) teoría,  yo  volví  a  hacer  todo  un  repaso
+
+(118:11) teórico  medio  a  fondo
+
+(118:14) abordando  en  esa  teoría  en
+
+(118:19) con  la  práctica,  con  unas  capturas  de
+
+(118:21) pantalla  y  eso  e  y  no  y  no  yendo  al
+
+(118:25) grano  de  venir  directamente  abrir  el  el
+
+(118:28) analizador  y  y  mostrando  esto.  Pero
+
+(118:31) bueno,  existe  un  cheat  sheet
+
+(118:35) que  que  tiene  todos  estos  filtros  porque
+
+(118:37) con  el  analizador  protocolo  este  se
+
+(118:38) puede  hacer  muchas  cosas,  es  algo  muy
+
+(118:41) completo
+
+(118:43) e  y  tiene  para  para  ver,  pero  de  todo.  E
+
+(118:49) lo  que  yo  estoy  dando  es  como  lo  más
+
+(118:50) elemental,
+
+(118:52) eh,  pero  sepan  que
+
+(118:55) que  esto  es
+
+(118:57) enorme  lo  que  pueden  ver  con  esto.  Así
+
+(119:00) que  bueno,
+
+(119:02) profe,
+
+(119:03) sí.
+
+(119:04) ¿Cuál  sería  el  formato  esperado  del
+
+(119:06) entregable?  Porque  son  todas  consultas  a
+
+(119:09) responder.
+
+(119:10) El  formato  del  entregable  sería  así.
+
+(119:14) Ustedes  pueden  pasar  ese  documento  que
+
+(119:18) creo  es  un  PDF,  lo  pueden  pasar  a  Word
+
+(119:20) si  quieren,
+
+(119:22) eh,  o  digamos  se  hacen  un  documento
+
+(119:25) nuevo  donde  van  poniendo  la  pregunta  y
+
+(119:28) abajo  pegan  la  respuesta.
+
+(119:30) Eh,  háganlo  prolijo  porque  si  lo  pones
+
+(119:32) en  otros  colores,  en  otro  color,  se  va  a
+
+(119:34) entender  cuál  es  la  pregunta  y  cuál  es
+
+(119:35) la  respuesta.  Pues  si  lo  hacen  así  no
+
+(119:38) más,
+
+(119:39) es  como  una  entrega  a  un  trabajo
+
+(119:41) práctico.  Sí,  don  como  si  como  se  hace
+
+(119:44) en  cualquier  materia,  un  trabajo
+
+(119:45) práctico.  Tiene  la  carátula  donde  dice
+
+(119:48) quiénes  son  los  alumnos,  de  qué  cursos
+
+(119:51) son.  Bueno,  la  carátula  esa
+
+(119:52) institucional  que  se  usa  en  todas  las
+
+(119:55) materias,  ¿viste?,  para  hacer  una
+
+(119:56) entrega  de  un  trabajo
+
+(119:59) donde
+
+(119:59) sí,  perfecto.
+
+(120:00) Ponen  la  pregunta,  ponen  las  respuestas,
+
+(120:04) eh,  copiando,  pegando,  completando  y
+
+(120:07) después  lo  pasa,  después  lo  guardan  en
+
+(120:10) el  archivo  que  ustedes  usan,  el  punto
+
+(120:12) doc,  que  usen  para  hacer  el  trabajo.
+
+(120:16) Después  ponen  archivo,  guardar  como  PDF,
+
+(120:19) ¿no?  Y  lo  entregan  en  PDF,  ¿no?  Lo
+
+(120:21) entreguen  en  en  punto  do dc  X.  Sí,
+
+(120:24) claro.  Sí,  sí.  Eh,  pueden  hacer  si
+
+(120:26) quieren  pueden  pegar  imágenes,  digamos,
+
+(120:29) del  war,  pero  tienen  que  responder  las
+
+(120:31) preguntas,  responderlas,  no  responder
+
+(120:33) con  capturas  de  pantalla  porque  eso  está
+
+(120:35) mal.  Sí,  la  captura  de  pantalla  sirve
+
+(120:38) como
+
+(120:40) en  como  para  mostrar  eh  la  trama  que
+
+(120:44) ustedes  capturaron,  ¿no?  Pero  respondan
+
+(120:47) correctamente
+
+(120:49) porque  me  ha  pasado  que  entregaron  e
+
+(120:54) entregaron  este  trabajo  con  todas
+
+(120:56) capturas  de  pantalla  como  como  si  como
+
+(120:59) si  la  captura  de  pantalla  dijera  algo.
+
+(121:01) Sí,  muestra  lo  que  es,  pero  lo  tienen
+
+(121:03) que  responder.  Claro.  Y  las  preguntas
+
+(121:07) son  las  que  dicen  a  partir  del  punto
+
+(121:08) tres,  tareas,  o  sea,  ahí  empiezan  las
+
+(121:11) preguntas,  entiendo,  ¿no?
+
+(121:12) Las  preguntas  empiezan
+
+(121:15) desde,  ya  te  digo,  esperá  que  me  voy  a
+
+(121:17) cambiar
+
+(121:19) de  vuelta  de
+
+(121:20) de  de de  PC.
+
+(121:27) Creo  que
+
+(121:36) Bueno,  acá  estoy  de  vuelta.  Creo  que  me
+
+(121:37) escuchan.  Díganme.
+
+(121:39) Sí,  sí,
+
+(121:41) voy.
+
+(121:51) Las  preguntas  son  todas  estas.
+
+(121:55) a  partir  de  la
+
+(121:56) es,  o  sea,
+
+(121:58) es  a  partir  de  acá.
+
+(122:02) Bien,
+
+(122:02) a  partir  de  ahí  les  dice,  realice  la
+
+(122:04) siguiente  interpretación.
+
+(122:06) O  sea,  es  es  es  a  partir  desde  acá,
+
+(122:09) desde  el  punto  tres  que  hice  tareas.  Ahí
+
+(122:11) empiezan  a  trabajar,
+
+(122:13) o  sea,  ponen  esto,  este,  ponen  este
+
+(122:16) cuadrito,  si  quieren  lo  hacen  con  Excel,
+
+(122:19) como  quieran  ustedes,  el  nombre  de  su
+
+(122:21) PC,  la  dirección  IP  que  tienen,  digamos,
+
+(122:24) eh,  la  máscara  de  subred,  completan,
+
+(122:28) lo  digamos,  pegan,  pegan  la  pregunta  y
+
+(122:30) pegan  la  respuesta.
+
+(122:33) Pegan  la  pregunta  cuando  hacen  el  RP
+
+(122:35) men-  A.  Ah,  eso  no  se  los  mostré.
+
+(122:40) V.  Esperen,  eh.
+
+(122:54) Ahí  voy.  Eh,
+
+(123:00) cuando  ustedes  hacen
+
+(123:04) cuando  usted  cuando  ustedes  hacen  eso  RP
+
+(123:06) men-  A  les  muestra  esto.
+
+(123:11) Fíjense  la  dirección  IP  y  la  macadres.
+
+(123:15) Dirección  IP,  macades,  dirección  IP,
+
+(123:16) macadres.
+
+(123:19) de  todos  los  dispositivos  que  ustedes,
+
+(123:21) estas  son  estáticas,  pero  estas  son
+
+(123:24) dinámicas.  Hagan  de  cuenta  que  uno  es  un
+
+(123:26) default  gateway,  otro  es  un  su
+
+(123:28) smartphone,  o  sea,  lo  que  está  en  la  red
+
+(123:30) en  donde  ustedes  están.  Yo  acá  eh  hice
+
+(123:33) 800  ping,  entr  800  lugares  y  por  eso  me
+
+(123:36) muestra  todas  estas  direcciones  privadas
+
+(123:37) y  todas  estas  macadres.  Sí,  pero  bueno,
+
+(123:41) eh,  a  ustedes  la  lista  de  ustedes  va  a
+
+(123:43) ser  cortita,  ¿sí?  Eh,  y  eso  es  lo  que
+
+(123:46) tienen  que  esa  pantalla  es  la  que  tienen
+
+(123:47) que  pegar.
+
+(123:50) Sí.
+
+(123:52) Cuando  hacen  eso,  cuando  hacen  esto,
+
+(123:54) ¿ven?
+
+(123:57) Eh,  acá  les  pregunta,  lo  escriben  y
+
+(123:59) digamos  y  y  y  lo  bueno  y  así  van
+
+(124:02) respondiendo.  Pon  la  pregunta  y  la
+
+(124:04) respuesta.  Pongan  la  respuesta  en  un
+
+(124:06) color,  en  no  sé,  en  eh  si  esto  está  en
+
+(124:09) en  negro,  pongan  las  respuestas  si
+
+(124:11) quieren  en  azul  para  para  entender,  ¿no?
+
+(124:14) Porque  cuando  está  si  está  todo
+
+(124:17) mal  puesto  o  hecho  así  no  más,  es
+
+(124:19) difícil  de  entender  para  para  después  eh
+
+(124:24) para  después  observarlo,  corregirlo  y
+
+(124:26) ese  tipo  de  cosas.
+
+(124:28) E  así  que  bueno,  eso  es  lo  que  tienen
+
+(124:30) que  hacer  e
+
+(124:34) y  con  eso  que  van  haciendo,
+
+(124:37) van  absorbiendo  todo  ese  conocimiento  de
+
+(124:40) todo  lo  que  yo  expliqué.
+
+(124:43) Lleva  tiempo,  pero  no  mucho  tampoco.
+
+(124:47) Yo  les  recomiendo  que  lo  hagan  entre,
+
+(124:49) digamos,  entre  para  no  hacer  uno  cada
+
+(124:51) uno,  se  juntan  un  ratito,  una  tarde  este
+
+(124:55) y  lo  hacen  juntos,  este,  compartiéndose
+
+(124:57) la  pantalla  así  por  una  Zoom  y  lo  hacen
+
+(125:01) juntos  en  un  archivo.  Después  lo  guardan
+
+(125:03) como  punto  PDF  con  el  apellido  cada  uno
+
+(125:07) y  lo  suben.
+
+(125:10) ¿Sí  les  parece?
+
+(125:13) Sí,  de  una.
+
+(125:16) Bueno,  hasta  acá  llegamos.  Si  quieren
+
+(125:18) preguntar  algo  más,  si  no  ya  cerramos
+
+(125:20) todo.
+
+(125:21) Consulta,  profe.
+
+(125:22) Eh,  ¿se  puede  usar  otro?  O  sea,  debe  ser
+
+(125:25) un  formato  en  eh,  o  sea,  debe  ser  un
+
+(125:29) formato  PF  generado  por  Docs  o  se  puede
+
+(125:31) usar  otra  herramienta.  Yo,  por  ejemplo,
+
+(125:33) uso  látex.
+
+(125:35) Eh,  se  puede  entregar  un  PDF  con  formato
+
+(125:37) látex.
+
+(125:40) E  y  en  en  ese  formato  te  muestra,  por
+
+(125:43) ejemplo,  las  preguntas,  las  respuestas,
+
+(125:45) todo.  Entiendo  que  sí,  pero
+
+(125:47) eso  lo  paso,  no  hay  problema.
+
+(125:49) Látex  genera  un  PDF,  así  que  no  hay
+
+(125:51) problema.
+
+(125:52) Sí,  sí,  yo  entiendo  que  sí.
+
+(125:53) Un  PDF  igual  que  cualquier  cosa.
+
+(125:56) Tal  cual.  Sí,  sí,  no  hay  problema.
+
+(125:58) Está  está  bueno.  Sí,  tal  cual.  Gracias,
+
+(126:00) Rafa.
+
+(126:01) Gracias.
+
+(126:03) Yo  le  quería  hacer  dos  consultas.  Había
+
+(126:06) mencionado  un  cheat.  Eh,  si  si  lo  va  a
+
+(126:10) pasar  o
+
+(126:11) Sí,  sí,  se  los  puedo  compartir,  obvio  lo
+
+(126:13) puedo  subir  en  el  aula  virtual.
+
+(126:15) Dale,  perfecto,  muchas  gracias.  Y  por
+
+(126:17) otro  lado,  le  quería  preguntar  si  capaz
+
+(126:20) es  muy  adelantado,  ¿no?  Pero  si  si  sabe
+
+(126:23) cómo  va  a  ser  la  modalidad,  si  va  a  ser
+
+(126:24) parecida  al  parcial  anterior,  como  si
+
+(126:27) tiene  algo  de  eso.
+
+(126:29) Sí,  mira,  la  modalidad  es  la  siguiente.
+
+(126:31) Eh,  después  lo  voy  a  validar  porque  este
+
+(126:35) año  eh  hubo  algunos  cambios  en  relación
+
+(126:39) al  año  anterior.  Sí,  te  cuento  cómo  es
+
+(126:42) la  modalidad  que  se  venía  trabajando,
+
+(126:44) eh,  porque  es  no  no  hay  nada  que
+
+(126:47) esconder,  eh,  pero  hay  que  ver  cómo  se
+
+(126:50) va  a  implementar  este  año  por  por
+
+(126:53) cambios  que  se  van  dando  a  lo  largo  del
+
+(126:55) tiempo,  ¿no?  Había  dos  modalidades  de
+
+(126:58) tomar  esto.  Se  les  daba  una
+
+(127:01) captura  de  pantalla  que  era  una  imagen,
+
+(127:04) ¿si?  con  eh  como  les  mostré  en  el  warja
+
+(127:08) que  estaba  todo  sombreado  eh  de  color
+
+(127:11) azul  y  eran  todos  hexadecimal
+
+(127:14) y  ustedes  conociendo  como  les  decía,
+
+(127:16) dónde  empieza  una  un  encabezado,  dónde
+
+(127:19) termina,  dónde  empieza  el  otro
+
+(127:21) encabezado,  dónde  termina  y  así
+
+(127:25) ustedes  podían  responder  una  serie  de
+
+(127:27) preguntas  teóricas  viendo  eso  y  usando
+
+(127:30) material  de  apoyo.
+
+(127:33) La  otra  forma  o  modalidad  que  hay  de
+
+(127:36) tomar  el  examen  este  es  o  era
+
+(127:40) se  les  daba  un  archivito  en  con  la
+
+(127:44) extensión  delack.
+
+(127:46) Sí.  Eh,  ese  archivito  ustedes  lo  abrían
+
+(127:50) con  el  wersjack  en  el  en  la  PC,
+
+(127:54) seleccionaban  de  de  las  n  cantidad  de
+
+(127:57) tramas  que  había,  se  les  decía,  "Bueno,
+
+(127:59) seleccionar  la  trama  5,  que  es  la  que  te
+
+(128:01) va  a  corresponder  a  vos.
+
+(128:03) Y  a  partir  de  esa  trama  cinco  respondé
+
+(128:05) esta  serie  de  preguntas.  Las  preguntas
+
+(128:07) son  las  mismas  para  todos,  nada  más  que
+
+(128:10) a  cada  uno  de  ustedes  le  va  a  tocar  una
+
+(128:13) trama  distinta.  A  uno  le  toca  la  cinco,
+
+(128:15) a  uno  la  tres,  a  uno  la  la  10,  perdón,
+
+(128:18) la  la  nueve  y  así.  Entonces,  cada  uno
+
+(128:22) tiene  que  responder  las  mismas  preguntas
+
+(128:25) focalizándose  en  la  trama  que  le  tocó.
+
+(128:29) Sí,  esa  es  la  esa  era  la  modalidad  que
+
+(128:31) se  venía  trabajando  ahora.  Las  dos
+
+(128:33) modalidades
+
+(128:35) son  es  responder  preguntas  teóricas  como
+
+(128:37) las  de  los  teles
+
+(128:40) focalizándose  en  la  trama  que  le  toca  a
+
+(128:41) cada  uno  y  sabiendo  todo  lo  que  yo  les
+
+(128:44) expliqué
+
+(128:45) o  lo  que  fuimos  viendo
+
+(128:48) en  la  teoría.
+
+(128:49) Perfecto.  ¿Y  sería  eh  virtual  o
+
+(128:53) presencial  el  examen,  profe?
+
+(128:55) No,  va  a  ser  virtual.  Perfecto,
+
+(128:57) perfecto.  Muchas  gracias.
+
+(128:59) Buenísimo.
+
+(129:01) Bueno,
+
+(129:06) ¿alguna  pregunta  más?
+
+(129:08) Profe,  yo  tengo  una  duda.  ¿Hay  fechas
+
+(129:10) para  el  recuperatorio  del  primer
+
+(129:12) parcial?
+
+(129:14) Sí,  van  a  ser  todas  después  escalonadas,
+
+(129:16) o  sea,  todo  es  escalonado  después  del
+
+(129:17) del  próximo  examen.
+
+(129:21) Okay,  perfecto.  Gracias.
+
+(129:24) Las  notas  ya  estaban  o  no
+
+(129:28) estamos  trabajando  en  eso.  Ya  les  vamos
+
+(129:30) a  dar  información.
+
+(129:31) No,  no,  como  como  preguntaron  por  el
+
+(129:33) rejo,  pensé  que  ya  les  habían  dado.
+
+(129:35) No,  no,  igual  tenemos  tiempo  para
+
+(129:37) corregir,  o  sea,  no  se  adelanten  tanto
+
+(129:40) porque
+
+(129:42) todo  va  paso  a  paso.  Sí.  Eh,  y  y  los
+
+(129:45) lineamientos  se  los  damos,  o  sea,  se  los
+
+(129:48) se  los  comunicamos,  o  sea,  tranqui,
+
+(129:51) cuando  haya  algo  que  no  les  digamos  y  y
+
+(129:54) se  venció  el  periodo  cuando  se  lo
+
+(129:56) tengamos  que  decir,  ahí  pregúntenos.  Si
+
+(129:58) no,  tranqui,  no  nos  abrumen  con  con  ese
+
+(130:01) tipo  de  cosas  porque  eh  todo  tiene  su
+
+(130:03) tiempo  y  e  y  y  el  desarrollo.  Sí,  por
+
+(130:08) eso  les  decía  hoy  al  principio  cuando  me
+
+(130:10) preguntaron,  eh,  ¿qué  va  a  pasar  con  el
+
+(130:12) parcial?  y  déjame  llegar  al  final  de  la
+
+(130:14) clase.
+
+(130:16) O  sea,  ¿cómo  les  voy  a  comunicar  algo?  A
+
+(130:18) ver,  si  a  mí  me  daba  el  tiempo  hoy  para
+
+(130:21) hacer  el  trabajo  de  la  tro  5  y  seis,  el
+
+(130:23) parcial  iba  a  ser  la  semana  que  viene,
+
+(130:26) pero  yo  tengo  que  ir  viendo  y
+
+(130:28) encasillando  las  cosas  según  cómo
+
+(130:30) ustedes  van  aprendiendo  y  asimilando.
+
+(130:33) Sí,  o  sea,  el  cronograma  es  tentativo,
+
+(130:37) eh,  se  entiende.  Así  que  por  eso  les
+
+(130:40) digo,  tranqui,  paciencia.  no  se
+
+(130:43) adelanten  en  hacer  ese  tipo  de  de
+
+(130:47) preguntas  porque  eh  vamos  paso  a  paso,
+
+(130:51) está  todo  planificado  acá,  no  hay  nada
+
+(130:53) librado  del  azar.
+
+(130:57) ¿Alguna  pregunta  más?
+
+(131:01) No,  no,  todo  claro.
+
+(131:03) Bueno,  nos  vemos  la  clase.
+
+(131:06) Sí,
+
+(131:06) disculpe.  Eh,  es  sobre  un  caso  que  le
+
+(131:09) comenté  la  semana  pasada  de  que  habíamos
+
+(131:12) entregado  el  archivo  del  Tele  4  en  punto
+
+(131:15) PKT  y  me  dijo  que  iba  a  reabrir  la
+
+(131:18) entrega  para  que  le  entreguemos  la
+
+(131:19) versión  PKZ.
+
+(131:21) Eh,  para  consultarles  sobre  eso,  si
+
+(131:23) dejamos  la  PKT  o  porque  no  reabrieron  la
+
+(131:26) entrega.
+
+(131:27) Ah,  sí.  Lo  que  pasa  es  que  eh  no  no
+
+(131:30) recordaba  tu  apellido.  Eh  hacé  una  cosa,
+
+(131:34) mandé  un  mail  eh  recordándomelo
+
+(131:37) eh  que  que  lo  después  lo  vemos  en  en
+
+(131:40) detalle  y  te  respondo  por  privado.
+
+(131:43) Dale,  perfecto.  Gracias,  profe.
+
+(131:45) A  vos.
+
+(131:48) Bueno,  chicos,  si  no  hay  ninguna
+
+(131:50) pregunta  más,  ya  estamos.  Eh,  los  libero
+
+(131:52) y  nos  vemos  la  la  semana  que  viene  para
+
+(131:55) ver  el  Tele6.
+
+(131:58) Nos  vemos,  profe.
+
+(131:59) Nos  vemos,  profe.

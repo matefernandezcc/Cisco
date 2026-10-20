@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TL5 - Análisis de tramas y paquetes en redes Ethernet</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm 15mm 20mm 15mm;
+
+      @bottom-right {
+        content: counter(page);
+      }
+    }
+
+    body {
+      font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+      color: #111827;
+      line-height: 1.5;
+      font-size: 10.5pt;
+      background-color: #ffffff;
+    }
+
+    .cover {
+      page-break-after: always;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 85vh;
+      text-align: center;
+      border: 2px solid #1e3a8a;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .cover h1 {
+      font-size: 20pt;
+      color: #1e3a8a;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .cover h2 {
+      font-size: 15pt;
+      color: #3b82f6;
+      margin-top: 0;
+      font-weight: 600;
+    }
+
+    .cover h3 {
+      font-size: 13pt;
+      color: #374151;
+      margin-top: 25px;
+      font-weight: 500;
+    }
+
+    .cover .details {
+      margin-top: 40px;
+      text-align: left;
+      width: 80%;
+      background: #f8fafc;
+      padding: 20px;
+      border-left: 4px solid #1e3a8a;
+      border-radius: 4px;
+      font-size: 11pt;
+    }
+
+    .cover .details p {
+      margin: 8px 0;
+    }
+
+    .section-title {
+      color: #1e3a8a;
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 4px;
+      margin-top: 28px;
+      margin-bottom: 14px;
+      font-size: 14pt;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .question {
+      font-weight: bold;
+      color: #111827;
+      margin-top: 14px;
+      margin-bottom: 4px;
+    }
+
+    .answer {
+      color: #1d4ed8;
+      /* Color azul requerido por el profesor */
+      margin-bottom: 12px;
+      background: #eff6ff;
+      padding: 8px 12px;
+      border-radius: 4px;
+      border-left: 3px solid #3b82f6;
+    }
+
+    .answer p {
+      margin: 4px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 9.5pt;
+    }
+
+    th,
+    td {
+      border: 1px solid #cbd5e1;
+      padding: 6px 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    .table-ans {
+      color: #1d4ed8;
+      font-weight: 600;
+    }
+
+    pre {
+      background-color: #0f172a;
+      color: #38bdf8;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-size: 8pt;
+      overflow-x: auto;
+      font-family: 'Consolas', 'Courier New', monospace;
+      margin: 8px 0;
+    }
+
+    .note-box {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 8px 12px;
+      margin: 10px 0;
+      font-size: 9pt;
+      color: #92400e;
+    }
+
+    .page-break {
+      page-break-after: always;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- CARÁTULA INSTITUCIONAL -->
+  <div class="cover">
+    <h1>Universidad Tecnológica Nacional</h1>
+    <h2>Facultad Regional Buenos Aires</h2>
+    <h3>Departamento de Ingeniería en Sistemas de Información</h3>
+    <div style="margin: 25px 0 15px 0; font-size: 16pt; font-weight: bold; color: #1e3a8a;">
+      REDES DE DATOS — CICLO LECTIVO 2026
+    </div>
+    <div style="font-size: 14pt; color: #1f2937; font-weight: 600; margin-bottom: 20px;">
+      Trabajo de Laboratorio Nº 5<br>
+      <span style="font-size: 12pt; font-weight: normal; color: #4b5563;">Análisis de tramas y paquetes en redes
+        Ethernet</span>
+    </div>
+
+    <div class="details">
+      <p><strong>Alumnos:</strong> Mateo Fernández y Agustin Toledo </p>
+      <p><strong>Nivel:</strong> Cuarto</p>
+      <p><strong>Cátedra / Curso:</strong> Redes de Datos - K4051 / Cuarto Nivel</p>
+      <p><strong>Docentes:</strong> Equipo de Cátedra</p>
+      <p><strong>Fecha de Realización:</strong> Octubre de 2026</p>
+      <p><strong>Modalidad:</strong> Virtual / Análisis con Analizador de Protocolos (Wireshark)</p>
+    </div>
+  </div>
+
+  <!-- CUERPO DEL INFORME -->
+
+  <h2 class="section-title">3. Tareas — Respuestas al Cuestionario</h2>
+
+  <h3 style="color: #1e3a8a; margin-top: 15px;">a. Análisis de la LAN / WLAN donde está su estación de trabajo</h3>
+
+  <div class="question">1) Obtenga los datos de su Host en su entorno de LAN/WLAN con el comando ipconfig /all y analice
+    / registre los datos obtenidos:</div>
+  <div class="question">a) ¿Cuántas interfaces de red identifica? ¿cuáles son virtuales? ¿cuál es la interfaz real que
+    se empleará en la red LAN y cuál en la WLAN?</div>
+  <div class="answer">
+    Se identifican un total de <strong>11 interfaces de red</strong> registradas en el sistema operativo:
+    <ul>
+      <li><strong>Interfaces Virtuales / Túneles:</strong>
+        <ul>
+          <li><code>vEthernet (WSL)</code>: Interfaz virtual del switch Hyper-V asignada a Windows Subsystem for Linux.
+          </li>
+          <li><code>vEthernet (Default Switch)</code>: Switch virtual interno de Hyper-V.</li>
+          <li><code>Tailscale</code>: Adaptador virtual de túnel VPN mallada (Tailscale Tunnel).</li>
+          <li><code>XLink Kai Loopback PS3 e1e2</code>: Adaptador de loopback de pruebas de Microsoft KM-TEST.</li>
+          <li><code>Local Area Connection* 1</code> y <code>Local Area Connection* 2</code>: Adaptadores virtuales de
+            Microsoft Wi-Fi Direct.</li>
+          <li><code>Bluetooth Network Connection</code>: Interfaz de red de área personal (PAN) Bluetooth.</li>
+          <li><code>Local Area Connection</code>: Adaptador virtual TAP-Windows Adapter V9 (VPN).</li>
+        </ul>
+      </li>
+      <li><strong>Interfaz real para LAN:</strong> <code>Realtek Gaming GbE Family Controller</code> (Ethernet física
+        con cable UTP conectado).</li>
+      <li><strong>Interfaz real para WLAN:</strong> <code>Intel(R) Wi-Fi 6E AX210 160MHz</code> (placa inalámbrica
+        física).</li>
+    </ul>
+  </div>
+
+  <div class="question">b) Datos de su equipo (Completar tabla):</div>
+  <div class="answer">
+    <table>
+      <tr>
+        <th style="width: 50%;">Parámetro</th>
+        <th style="width: 50%;">Valor Obtenido</th>
+      </tr>
+      <tr>
+        <td>Nombre del Host</td>
+        <td class="table-ans">DESKTOP-B7E9HII</td>
+      </tr>
+      <tr>
+        <td>Dirección IP del Host</td>
+        <td class="table-ans">192.168.0.53</td>
+      </tr>
+      <tr>
+        <td>Máscara de Subred del Host</td>
+        <td class="table-ans">255.255.255.0 (/24)</td>
+      </tr>
+      <tr>
+        <td>Puerta de enlace predeterminada (Gateway)</td>
+        <td class="table-ans">192.168.0.1</td>
+      </tr>
+      <tr>
+        <td>Dirección de Broadcast IP de la red</td>
+        <td class="table-ans">192.168.0.255</td>
+      </tr>
+      <tr>
+        <td>Servidor DHCP de la Red</td>
+        <td class="table-ans">192.168.0.1</td>
+      </tr>
+      <tr>
+        <td>Dirección MAC de la Placa de Red WiFi</td>
+        <td class="table-ans">4C-03-4F-03-FC-CD (y Ethernet: B4-2E-99-56-09-3D)</td>
+      </tr>
+      <tr>
+        <td>Servidor/es DNS reconocidos</td>
+        <td class="table-ans">8.8.8.8 (Google Public DNS)</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="question">2) Obtenga las direcciones IP conocidas por su Host en el entorno de la misma red IP para
+    utilizarlas en el laboratorio, mediante el comando arp –a:</div>
+  <div class="answer">
+    Al ejecutar <code>arp -a</code> se obtiene la tabla de traducción de direcciones para la interfaz física activa
+    (192.168.0.53):
+    <pre>Interface: 192.168.0.53 --- 0xa
+  Internet Address      Physical Address      Type
+  192.168.0.1           cc-32-e5-18-1d-fc     dynamic   (Gateway / Router)
+  192.168.0.206         e0-9d-13-a4-bc-8a     dynamic   (Host LAN - Smartphone)
+  192.168.0.255         ff-ff-ff-ff-ff-ff     static    (Broadcast dirigido)
+  224.0.0.22            01-00-5e-00-00-16     static    (Multicast IGMPv3)
+  224.0.0.251           01-00-5e-00-00-fb     static    (Multicast mDNS)
+  239.255.255.250       01-00-5e-7f-ff-fa     static    (Multicast SSDP)</pre>
+  </div>
+
+  <div class="question">3) Identifique cuáles direcciones IP y MAC corresponden a cada dispositivo:</div>
+  <div class="answer">
+    <table>
+      <tr>
+        <th>HOST</th>
+        <th>Dirección IP</th>
+        <th>Dirección MAC</th>
+      </tr>
+      <tr>
+        <td>PC (Estación de trabajo)</td>
+        <td class="table-ans">192.168.0.53</td>
+        <td class="table-ans">B4-2E-99-56-09-3D</td>
+      </tr>
+      <tr>
+        <td>Celular (Smartphone en LAN)</td>
+        <td class="table-ans">192.168.0.206</td>
+        <td class="table-ans">E0-9D-13-A4-BC-8A</td>
+      </tr>
+      <tr>
+        <td>Dispositivo adicional en LAN</td>
+        <td class="table-ans">192.168.0.25</td>
+        <td class="table-ans">0A-C0-7A-70-8D-90</td>
+      </tr>
+      <tr>
+        <td>Access Point (Gateway / Router TP-Link)</td>
+        <td class="table-ans">192.168.0.1</td>
+        <td class="table-ans">CC-32-E5-18-1D-FC</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="question">4) Confirme los datos con los que fueron obtenidos mediante el comando ipconfig /all:</div>
+  <div class="answer">
+    Efectivamente coinciden. En el adaptador Ethernet <code>Realtek Gaming GbE Family Controller</code>, la dirección
+    física informada por <code>ipconfig /all</code> es exactamente <code>B4-2E-99-56-09-3D</code> y la dirección IPv4 es
+    <code>192.168.0.53</code> con puerta de enlace <code>192.168.0.1</code>.
+  </div>
+
+  <div class="question">5) Verifique la correspondencia de alguna dirección IP, entre las versiones 4 y 6. Compare las
+    diferentes formas de las notaciones IPv6:</div>
+  <div class="answer">
+    Tomando la IP del host <code>192.168.0.53</code>:
+    <ul>
+      <li><strong>Representación IPv4-Mapped IPv6 (RFC 4291):</strong> <code>::ffff:192.168.0.53</code> o en hexadecimal
+        completo <code>0000:0000:0000:0000:0000:ffff:c0a8:0035</code> (ya que 192=0xC0, 168=0xA8, 0=0x00, 53=0x35).</li>
+      <li><strong>Representación 6to4 (RFC 3056):</strong> <code>2002:c0a8:0035::/48</code>.</li>
+      <li><strong>Comparación de notaciones:</strong>
+        <ul>
+          <li><em>Notación completa (preferida estándar):</em> 8 grupos de 4 dígitos hexadecimales de 16 bits cada uno
+            (128 bits en total), separados por dos puntos.</li>
+          <li><em>Notación abreviada (reglas RFC 5952):</em> Supresión de ceros iniciales en cada hexteto (ej.
+            <code>0035</code> se escribe <code>35</code>) y compresión de la secuencia más larga de bloques contiguos de
+            ceros mediante un único símbolo de doble dos puntos (<code>::</code>).</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="question">6) ¿De qué clase es la dirección IP del Host utilizado?</div>
+  <div class="answer">
+    Es una dirección de <strong>Clase C</strong>. El primer octeto es <code>192</code> (en binario
+    <code>11000000</code>), perteneciente al rango histórico con clase de 192.0.0.0 a 223.255.255.255.
+  </div>
+
+  <div class="question">7) ¿Cuál es su máscara de red? ¿Es una máscara por defecto o natural?</div>
+  <div class="answer">
+    Su máscara de red es <code>255.255.255.0</code> (longitud de prefijo <strong>/24</strong>). <strong>Sí, es la
+      máscara natural o por defecto</strong> de la arquitectura con clase (Classful) para direcciones de Clase C (24
+    bits para red y 8 bits para hosts).
+  </div>
+
+  <div class="question">8) ¿La red tiene subredes?</div>
+  <div class="answer">
+    <strong>No, no tiene subredes adicionales.</strong> Dado que la máscara configurada coincide exactamente con la
+    máscara natural de la clase (/24), no se han tomado bits prestados de la porción de host para crear subredes (no hay
+    subnetting).
+  </div>
+
+  <div class="question">9) ¿La dirección de red es pública o privada? ¿Qué otras direcciones de red de esta misma clase
+    están reservadas? ¿para qué?</div>
+  <div class="answer">
+    Es una <strong>dirección privada</strong>, perteneciente al bloque de Clase C privada definido por la <strong>RFC
+      1918</strong> (rango <code>192.168.0.0/16</code>, es decir, de 192.168.0.0 a 192.168.255.255).<br>
+    Otras direcciones de red reservadas en esta misma clase (primer octeto 192 a 223) incluyen:
+    <ul>
+      <li><code>192.0.0.0/24</code>: Reservado por IANA para asignaciones especiales de protocolos (RFC 6890).</li>
+      <li><code>192.0.2.0/24</code> (TEST-NET-1), <code>198.51.100.0/24</code> (TEST-NET-2) y
+        <code>203.0.113.0/24</code> (TEST-NET-3): Reservadas para documentación y ejemplos didácticos (RFC 5737). No son
+        enrutables.</li>
+      <li><code>192.88.99.0/24</code>: Reservado históricamente para el servicio anycast de retransmisión 6to4 (RFC 3068
+        / RFC 7526).</li>
+    </ul>
+  </div>
+
+  <div class="question">10) ¿Cuántos hosts puede haber en la red como máximo?</div>
+  <div class="answer">
+    Para una máscara /24, la cantidad de bits para host es \(h = 32 - 24 = 8\).<br>
+    Cantidad máxima de hosts asignables = \(2^h - 2 = 2^8 - 2 = 256 - 2 =\) <strong>254 hosts</strong>.<br>
+    (Se descuentan la dirección de red <code>192.168.0.0</code> y la dirección de broadcast <code>192.168.0.255</code>).
+  </div>
+
+  <div class="question">11) ¿Cuál es el estándar IEEE que se emplea en esta red? ¿Qué método de Control de Acceso
+    utiliza, CSMA/CD o CSMA/CA?</div>
+  <div class="answer">
+    <ul>
+      <li>En la conexión activa (cableada): Estándar <strong>IEEE 802.3 (Gigabit Ethernet 1000BASE-T)</strong>. El
+        método estandarizado para Ethernet compartido es <strong>CSMA/CD</strong> (Carrier Sense Multiple Access with
+        Collision Detection), aunque en enlaces full-duplex con switch el control de contienda queda desactivado al no
+        haber colisiones.</li>
+      <li>En la conexión inalámbrica (WLAN disponible): Estándar <strong>IEEE 802.11ax (Wi-Fi 6E)</strong>, el cual
+        emplea <strong>CSMA/CA</strong> (Carrier Sense Multiple Access with Collision Avoidance).</li>
+    </ul>
+  </div>
+
+  <div class="question">12) ¿Es una red que detecta colisiones? En caso afirmativo, ¿Cuántos dominios de colisión tiene?
+  </div>
+  <div class="answer">
+    El protocolo IEEE 802.3 base posee detección de colisiones mediante <strong>CSMA/CD</strong>. Sin embargo, en esta
+    red Ethernet conmutada que opera en <strong>Full-Duplex mediante un Switch</strong>, cada puerto del switch forma un
+    enlace punto a punto dedicado, eliminando físicamente las colisiones.<br>
+    <strong>Cantidad de dominios de colisión:</strong> La red tiene tantos dominios de colisión como puertos conmutados
+    activos posea el switch (1 dominio de colisión por cada puerto con conexión activa).
+  </div>
+
+  <div class="question">13) ¿Es una red que previene colisiones? En caso afirmativo, ¿Qué problemas resuelve CSMA/CA que
+    no resuelve CSMA/CD?</div>
+  <div class="answer">
+    En la interfaz inalámbrica IEEE 802.11 <strong>sí es una red que previene colisiones</strong> mediante CSMA/CA.<br>
+    <strong>Problemas que resuelve:</strong> En el medio inalámbrico (aire), una estación que transmite satura su propio
+    receptor, impidiéndole detectar colisiones mientras transmite (CSMA/CD no es viable). Además, resuelve el
+    <strong>problema del nodo oculto (Hidden Node Problem)</strong> —donde dos estaciones fuera de su rango mutuo
+    transmiten simultáneamente al mismo punto de acceso— y el <strong>problema del nodo expuesto</strong>, utilizando
+    ranuras de tiempo de espera (IFS), backoff aleatorio e intercambios opcionales de tramas de control RTS (Request to
+    Send) y CTS (Clear to Send).
+  </div>
+
+  <div class="question">14) ¿Es una red que utiliza broadcast de direcciones MAC? En caso afirmativo, ¿Cuántos dominios
+    de broadcast tiene? ¿Qué protocolos en entorno LAN/WLAN utilizan broadcast de capa 2 para funcionar?</div>
+  <div class="answer">
+    <strong>Sí, utiliza broadcast de Capa 2</strong> a través de la dirección MAC de difusión
+    <code>FF:FF:FF:FF:FF:FF</code>.<br>
+    <strong>Dominios de broadcast:</strong> Posee <strong>1 único dominio de broadcast</strong>, ya que todos los
+    puertos del switch/router hogareño integran la misma LAN sin enrutamiento interno ni segmentación en VLANs.<br>
+    <strong>Protocolos que utilizan broadcast de Capa 2:</strong>
+    <ul>
+      <li><strong>ARP (Address Resolution Protocol):</strong> Mediante el ARP Request enviado a broadcast para descubrir
+        la MAC de una IP.</li>
+      <li><strong>DHCP (Dynamic Host Configuration Protocol):</strong> En los mensajes iniciales DHCP Discover y DHCP
+        Request cuando el cliente aún no tiene IP configurada.</li>
+      <li><strong>Wake-on-LAN (WoL):</strong> Mediante el "Magic Packet" enviado a broadcast.</li>
+    </ul>
+  </div>
+
+  <div class="question">15) En una LAN ¿cómo se puede segmentar un dominio de colisión?</div>
+  <div class="answer">
+    Un dominio de colisión se segmenta incorporando dispositivos de Capa 2, principalmente <strong>Switches
+      (conmutadores)</strong> o <strong>Bridges (puentes)</strong>. Cada puerto de un switch crea un dominio de colisión
+    aislado e independiente.
+  </div>
+
+  <div class="question">16) En una LAN ¿cómo se puede segmentar un dominio de broadcast?</div>
+  <div class="answer">
+    Un dominio de broadcast se segmenta mediante:
+    <ul>
+      <li>Dispositivos de Capa 3: <strong>Routers (enrutadores)</strong> o switches de Capa 3 (Multilayer Switches), los
+        cuales no reenvían tramas de broadcast de Capa 2 entre sus interfaces.</li>
+      <li>A nivel lógico en switches de Capa 2: Mediante la creación de <strong>VLANs (Virtual Local Area Networks -
+          IEEE 802.1Q)</strong>, aislando el tráfico de difusión dentro de cada VLAN.</li>
+    </ul>
+  </div>
+
+  <div class="question">17) ¿Esta red emplea direccionamiento IP estático o dinámico? ¿Qué protocolo se utiliza para
+    asignación dinámica de direcciones IP y cuántas PDU se intercambian entre el cliente y el servidor?</div>
+  <div class="answer">
+    Emplea <strong>direccionamiento IP dinámico</strong>.<br>
+    El protocolo utilizado es <strong>DHCP (Dynamic Host Configuration Protocol)</strong>, operando sobre UDP (puerto 68
+    cliente, puerto 67 servidor).<br>
+    Se intercambian un total de <strong>4 PDUs</strong> durante el proceso de concesión (secuencia
+    <strong>D.O.R.A.</strong>):
+    <ol>
+      <li><code>DHCP Discover</code>: El cliente busca servidores DHCP disponibles (Broadcast L2/L3).</li>
+      <li><code>DHCP Offer</code>: El servidor ofrece una dirección IP y parámetros de configuración (Unicast o
+        Broadcast).</li>
+      <li><code>DHCP Request</code>: El cliente solicita formalmente la concesión de la IP ofrecida (Broadcast).</li>
+      <li><code>DHCP ACK (Acknowledge)</code>: El servidor confirma la asignación y los tiempos de concesión (Lease).
+      </li>
+    </ol>
+  </div>
+
+  <div class="question">18) Identifique direcciones IP públicas conocidas por su Host:</div>
+  <div class="answer">
+    <ul>
+      <li>Servidor DNS configurado: <code>8.8.8.8</code> (Google Public DNS).</li>
+      <li>Direcciones de servidores web externos consultados por el host (ej. <code>142.250.79.110</code> de Google,
+        <code>104.16.132.229</code> de Cloudflare).</li>
+    </ul>
+  </div>
+
+  <!-- SECCIÓN B -->
+  <div class="page-break"></div>
+  <h3 style="color: #1e3a8a; margin-top: 25px;">b. Análisis de una trama Ethernet (Captura de Ping al Gateway)</h3>
+  <div class="note-box">
+    <strong>Archivo de captura generado:</strong> <code>wireshark/TL5/capturas/b_ping_gateway.pcapng</code> (8 paquetes
+    ICMP capturados correspondientes a 4 solicitudes de eco y 4 respuestas con el Gateway 192.168.0.1).
+  </div>
+
+  <div class="question">1) ¿Cuáles son los campos de la trama? ¿Qué valores tiene cada campo y cuál es su significado?
+  </div>
+  <div class="answer">
+    Analizando la trama Nº 1 (Echo Request enviado al Gateway):
+    <ul>
+      <li><strong>Preámbulo y SFD:</strong> 7 bytes de preámbulo (<code>0xAA...</code>) y 1 byte de delimitador de
+        inicio de trama SFD (<code>0xAB</code>). Operan en Capa 1 Física para sincronización de reloj del receptor. No
+        son capturados por Wireshark ya que la NIC los procesa en hardware.</li>
+      <li><strong>Destination MAC (Dirección MAC Destino):</strong> <code>cc:32:e5:18:1d:fc</code> (6 bytes). Identifica
+        la placa física del receptor inmediato en la LAN (Router / Gateway TP-Link).</li>
+      <li><strong>Source MAC (Dirección MAC Origen):</strong> <code>b4:2e:99:56:09:3d</code> (6 bytes). Identifica la
+        placa de red de la estación transmisora (PC Gigabyte).</li>
+      <li><strong>EtherType (Tipo de Protocolo):</strong> <code>0x0800</code> (2 bytes). Indica que el protocolo de capa
+        superior encapsulado dentro del payload es IPv4.</li>
+      <li><strong>Data / Payload (Carga Útil):</strong> 60 bytes en esta trama. Contiene el datagrama IPv4 completo (20
+        bytes cabecera IPv4 + 8 bytes cabecera ICMP + 32 bytes de datos ICMP).</li>
+      <li><strong>FCS (Frame Check Sequence):</strong> 4 bytes. Secuencia de comprobación de trama mediante CRC-32 para
+        detección de errores de transmisión.</li>
+    </ul>
+  </div>
+
+  <div class="question">2) ¿Qué tamaño tiene el encabezado de la trama y cuáles son sus campos?</div>
+  <div class="answer">
+    El encabezado de la trama Ethernet II tiene un tamaño fijo de <strong>14 bytes</strong>, compuesto por:
+    <ul>
+      <li>MAC Destino: 6 bytes</li>
+      <li>MAC Origen: 6 bytes</li>
+      <li>EtherType: 2 bytes</li>
+    </ul>
+  </div>
+
+  <div class="question">3) ¿Qué tamaño tiene la cola de su trama? ¿Qué campo sirve para detectar errores y cuál es su
+    valor?</div>
+  <div class="answer">
+    La cola de la trama tiene un tamaño de <strong>4 bytes</strong>.<br>
+    El campo destinado a la detección de errores es el <strong>FCS (Frame Check Sequence)</strong>, calculado con un
+    código de redundancia cíclica de 32 bits (CRC-32).<br>
+    <em>Nota técnica:</em> En sistemas Windows, los controladores de la tarjeta de red (NIC) verifican el FCS en
+    hardware y lo descartan antes de transferir la trama a la pila del sistema operativo, por lo cual Wireshark
+    habitualmente no muestra el campo FCS en la captura. Su valor estandarizado es un polinomio CRC-32 de 4 bytes.
+  </div>
+
+  <div class="question">4) ¿Cuántos bytes corresponden a los datos? ¿Este campo es de tamaño fijo o variable? En este
+    nivel ¿el campo de datos tiene una longitud mínima, máxima o no está especificado por su estándar?</div>
+  <div class="answer">
+    En la trama capturada corresponden <strong>60 bytes</strong> a los datos (datagrama IP).<br>
+    El campo es de <strong>tamaño variable</strong>.<br>
+    En el estándar IEEE 802.3 / Ethernet II:
+    <ul>
+      <li><strong>Longitud mínima:</strong> <strong>46 bytes</strong>. Si los datos superiores tienen menor tamaño, se
+        añade un campo de relleno (Padding) para garantizar que la trama alcance los 64 bytes mínimos exigidos por el
+        mecanismo de detección de colisiones de Ethernet (14B cabecera + 46B datos + 4B FCS = 64B).</li>
+      <li><strong>Longitud máxima:</strong> <strong>1500 bytes</strong>, definida por la Unidad Máxima de Transferencia
+        (MTU) estándar de Ethernet.</li>
+    </ul>
+  </div>
+
+  <div class="question">5) Revisando nuevamente la trama Ethernet ¿qué campos se corresponden con los especificados en
+    IEEE 802.2 y cuáles a IEEE 802.3?</div>
+  <div class="answer">
+    <ul>
+      <li><strong>IEEE 802.3:</strong> Define la subcapa MAC: Preámbulo, SFD, Dirección MAC Destino, Dirección MAC
+        Origen, campo Longitud y FCS.</li>
+      <li><strong>IEEE 802.2:</strong> Define la subcapa LLC (Logical Link Control), añadiendo encabezados adicionales
+        como DSAP (Destination Service Access Point), SSAP (Source Service Access Point) y Control.</li>
+      <li><strong>Análisis de la trama capturada:</strong> La trama capturada sigue el formato estándar <strong>Ethernet
+          II (DIX)</strong>, en el cual el campo de 2 bytes posterior a las MACs tiene un valor \(\ge 0x0600\) (aquí
+        <code>0x0800</code>), funcionando como <em>EtherType</em>. Por lo tanto, <strong>no contiene cabecera IEEE 802.2
+          LLC</strong>, multiplexando directamente hacia la Capa de Red.</li>
+    </ul>
+  </div>
+
+  <div class="question">6) ¿Qué protocolos de nivel 3 (TCP/IP) se encapsularon en las tramas?</div>
+  <div class="answer">
+    Se encapsuló <strong>IPv4</strong> (identificado por EtherType <code>0x0800</code>) y, dentro del datagrama IP, el
+    protocolo de control de nivel 3 <strong>ICMP</strong> (Internet Control Message Protocol, identificado por el campo
+    Protocol con valor <code>1</code> en la cabecera IP).
+  </div>
+
+  <div class="question">7) ¿Qué protocolos de nivel 4 y 5 (TCP/IP) se encapsularon en la trama?</div>
+  <div class="answer">
+    <strong>Ninguno.</strong> La herramienta Ping opera mediante mensajes ICMP, los cuales viajan directamente sobre
+    IPv4 (Capa 3). No se utilizan protocolos de transporte de Capa 4 (como TCP o UDP) ni capas de aplicación (Capa 5/7).
+  </div>
+
+  <!-- SECCIÓN C -->
+  <div class="page-break"></div>
+  <h3 style="color: #1e3a8a; margin-top: 25px;">c. Estudio comparativo de tramas típicas de LAN Ethernet</h3>
+  <div class="note-box">
+    <strong>Capturas analizadas:</strong> <code>b_ping_gateway.pcapng</code> (Ethernet II),
+    <code>c_wlan_80211.pcap</code> (IEEE 802.11 Beacon frame), <code>c_stp_8021d.pcap</code> (IEEE 802.1D Spanning Tree
+    BPDU) y <code>c_vlan_8021q.cap</code> (IEEE 802.1Q tagged frame).
+  </div>
+
+  <div class="question">Realice un estudio comparativo de los 4 tipos de tramas, identificando las funciones
+    particulares de la capa de enlace, qué campos intervienen en cada caso, los procesos que intervienen en el Tx y en
+    el Rx, señalando similitudes y diferencias:</div>
+  <div class="answer">
+    <table>
+      <tr>
+        <th style="width: 18%;">Característica</th>
+        <th style="width: 20%;">Ethernet II / 802.3</th>
+        <th style="width: 22%;">IEEE 802.11 (WLAN)</th>
+        <th style="width: 20%;">IEEE 802.1D (STP)</th>
+        <th style="width: 20%;">IEEE 802.1Q (VLAN)</th>
+      </tr>
+      <tr>
+        <td><strong>Objetivo Principal</strong></td>
+        <td>Transporte estándar de datos en LAN cableada punto a punto o compartida.</td>
+        <td>Comunicación inalámbrica por radiofrecuencia con soporte de movilidad.</td>
+        <td>Prevención de bucles de conmutación en topologías redundantes de Capa 2.</td>
+        <td>Segmentación lógica de dominios de broadcast sobre la misma infraestructura física.</td>
+      </tr>
+      <tr>
+        <td><strong>Tamaño Encabezado</strong></td>
+        <td>14 bytes</td>
+        <td>24 a 30 bytes (variable según subtipo)</td>
+        <td>14B (802.3) + 3B (LLC 802.2) = 17 bytes</td>
+        <td>18 bytes (14B Ethernet + 4B VLAN Tag)</td>
+      </tr>
+      <tr>
+        <td><strong>Direccionamiento</strong></td>
+        <td>2 direcciones MAC de 48 bits (Destino y Origen).</td>
+        <td>Hasta <strong>4 direcciones MAC</strong>: Receiver (RA), Transmitter (TA), BSSID y Original Src/Dst (WDS).
+        </td>
+        <td>MAC Destino Multicast específica (<code>01:80:C2:00:00:00</code>) y MAC Origen del switch emisor.</td>
+        <td>2 direcciones MAC (Destino y Origen) con formato estándar Ethernet.</td>
+      </tr>
+      <tr>
+        <td><strong>Campos Clave Distintivos</strong></td>
+        <td>
+          • MAC Dst (6B)<br>
+          • MAC Src (6B)<br>
+          • EtherType (2B)
+        </td>
+        <td>
+          • Frame Control (2B: Type, Subtype, Flags To/From DS)<br>
+          • Duration/ID (2B para NAV)<br>
+          • Sequence Control (2B: Seq# y Frag#)
+        </td>
+        <td>
+          • 802.3 Length (2B)<br>
+          • LLC Header (DSAP/SSAP 0x42)<br>
+          • Root Bridge ID (8B)<br>
+          • Root Cost (4B)<br>
+          • Bridge ID (8B)
+        </td>
+        <td>
+          • TPID = <code>0x8100</code> (2B)<br>
+          • TCI (2B):<br>
+          &nbsp;&nbsp;- PCP Prioridad (3b)<br>
+          &nbsp;&nbsp;- DEI (1b)<br>
+          &nbsp;&nbsp;- VLAN ID (12b: 1-4094)<br>
+          • EtherType original (2B)
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Control de Acceso</strong></td>
+        <td>CSMA/CD (o conmutación full-duplex dedicada).</td>
+        <td>CSMA/CA con temporizadores DIFS/SIFS y backoff aleatorio.</td>
+        <td>No aplica (utiliza el medio Ethernet subyacente).</td>
+        <td>Hereda el mecanismo Ethernet del puerto trunk.</td>
+      </tr>
+      <tr>
+        <td><strong>Proceso en Tx</strong></td>
+        <td>Encapsula datagrama IP, añade encabezado Ethernet II y calcula FCS.</td>
+        <td>Añade control de tramas, temporizador NAV de reserva de canal, calcula CRC.</td>
+        <td>El switch genera periódicamente BPDUs Configuration/TCN hacia la MAC multicast 01:80:c2:00:00:00.</td>
+        <td>El switch en puerto Trunk inserta el tag 802.1Q de 4 bytes antes de transmitir la trama.</td>
+      </tr>
+      <tr>
+        <td><strong>Proceso en Rx</strong></td>
+        <td>Verifica FCS, compara MAC de destino y demultiplexa según EtherType.</td>
+        <td>Verifica FCS, procesa confirmación ACK inmediata si es Unicast, actualiza NAV.</td>
+        <td>El switch receptor procesa la BPDU para recalcular el árbol de expansión y estados de puerto.</td>
+        <td>El switch receptor lee el VID, retira el tag (untagging) y reenvía hacia los puertos de esa VLAN.</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- SECCIÓN D -->
+  <div class="page-break"></div>
+  <h3 style="color: #1e3a8a; margin-top: 25px;">d. Análisis del tráfico ARP</h3>
+  <div class="note-box">
+    <strong>Archivo de captura generado:</strong> <code>wireshark/TL5/capturas/d_arp_traffic.pcapng</code> (contiene
+    tramas ARP Request en broadcast y ARP Reply en unicast reales de la red).
+  </div>
+
+  <div class="question">1) Observe el estado de la memoria caché de ARP en su PC (arp -a):</div>
+  <div class="answer">
+    Se observan entradas dinámicas que asocian las IPs activas en la subred con sus respectivas direcciones físicas MAC
+    (ej. <code>192.168.0.1 -> cc-32-e5-18-1d-fc</code> y <code>192.168.0.206 -> e0-9d-13-a4-bc-8a</code>), además de
+    entradas estáticas reservadas para broadcast y multicast.
+  </div>
+
+  <div class="question">2 y 3) Inicie una captura y haga PING a otra PC o al Gateway. Responda:</div>
+
+  <div class="question">a) ¿En qué nivel del modelo OSI funciona el protocolo ARP?</div>
+  <div class="answer">
+    El protocolo ARP funciona en la <strong>Capa de Enlace de Datos (Capa 2)</strong> del modelo OSI (frecuentemente
+    denominado protocolo de "Capa 2.5"), ya que se encapsula directamente dentro de la trama Ethernet (EtherType
+    <code>0x0806</code>) y su función es resolver direcciones de Capa 3 a direcciones físicas de Capa 2.
+  </div>
+
+  <div class="question">b) ¿Cuántas PDU intervienen en la resolución ARP?</div>
+  <div class="answer">
+    Intervienen exactamente <strong>2 PDUs</strong>:
+    <ol>
+      <li><code>ARP Request (Solicitud ARP)</code>: Emitida por el host que requiere conocer la MAC.</li>
+      <li><code>ARP Reply (Respuesta ARP)</code>: Emitida por el host propietario de la dirección IP consultada.</li>
+    </ol>
+  </div>
+
+  <div class="question">c) Describa la secuencia de tramas involucradas, justificando todas las direcciones MAC e IP que
+    aparecen:</div>
+  <div class="answer">
+    Tomando como referencia la resolución de dirección capturada en el archivo:
+    <ul>
+      <li><strong>Trama 1 (ARP Request):</strong>
+        <ul>
+          <li><em>Encabezado Ethernet:</em> MAC Origen = <code>b4:2e:99:56:09:3d</code> (PC), MAC Destino =
+            <code>ff:ff:ff:ff:ff:ff</code> (Broadcast general en Capa 2, para que todos los dispositivos de la LAN
+            reciban el mensaje). EtherType = <code>0x0806</code> (ARP).</li>
+          <li><em>Payload ARP:</em> Opcode = 1 (Request). Sender MAC = <code>b4:2e:99:56:09:3d</code>, Sender IP =
+            <code>192.168.0.53</code>. Target IP = <code>192.168.0.1</code>. Target MAC = <code>00:00:00:00:00:00</code>
+            (campo en ceros, ya que es el dato desconocido que se busca averiguar).</li>
+        </ul>
+      </li>
+      <li><strong>Trama 2 (ARP Reply):</strong>
+        <ul>
+          <li><em>Encabezado Ethernet:</em> MAC Origen = <code>cc:32:e5:18:1d:fc</code> (Gateway TP-Link), MAC Destino =
+            <code>b4:2e:99:56:09:3d</code> (Unicast hacia la PC solicitante, ya que el Gateway aprendió la MAC de la PC
+            del Request previo).</li>
+          <li><em>Payload ARP:</em> Opcode = 2 (Reply). Sender MAC = <code>cc:32:e5:18:1d:fc</code>, Sender IP =
+            <code>192.168.0.1</code>. Target MAC = <code>b4:2e:99:56:09:3d</code>, Target IP =
+            <code>192.168.0.53</code>.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="question">d) ¿Cuál es el estado actual de la memoria caché de ARP?</div>
+  <div class="answer">
+    La memoria caché ARP incorpora inmediatamente una nueva entrada de tipo dinámico mapeando la dirección IP resuelta
+    con la dirección MAC informada en el Reply (con un temporizador de caducidad o TTL asignado por el sistema
+    operativo).
+  </div>
+
+  <div class="question">e) Volver a ejecutar el comando Ping a la misma máquina y observar la secuencia de tramas ARP.
+    ¿Aparecen las mismas tramas ARP? ¿Por qué?</div>
+  <div class="answer">
+    <strong>No aparecen tramas ARP.</strong> El sistema operativo consulta primero su tabla caché ARP local en memoria
+    RAM. Al constatar que ya posee la correspondencia IP-MAC válida y vigente, encapsula directamente los paquetes ICMP
+    en tramas Ethernet Unicast sin generar solicitudes ARP en la red.
+  </div>
+
+  <div class="question">f) ¿Qué formato tiene una PDU ARP?</div>
+  <div class="answer">
+    La PDU ARP sobre redes Ethernet/IPv4 tiene una longitud estándar de <strong>28 bytes</strong>, compuesta por los
+    siguientes campos:
+    <ul>
+      <li>Hardware Type (HTYPE): 2 bytes (valor <code>1</code> para Ethernet).</li>
+      <li>Protocol Type (PTYPE): 2 bytes (valor <code>0x0800</code> para IPv4).</li>
+      <li>Hardware Address Length (HLEN): 1 byte (valor <code>6</code> para MAC).</li>
+      <li>Protocol Address Length (PLEN): 1 byte (valor <code>4</code> para IPv4).</li>
+      <li>Operation Code (OPER): 2 bytes (<code>1</code> para Request, <code>2</code> para Reply).</li>
+      <li>Sender Hardware Address (SHA): 6 bytes (MAC del emisor).</li>
+      <li>Sender Protocol Address (SPA): 4 bytes (IP del emisor).</li>
+      <li>Target Hardware Address (THA): 6 bytes (MAC del destinatario).</li>
+      <li>Target Protocol Address (TPA): 4 bytes (IP del destinatario).</li>
+    </ul>
+  </div>
+
+  <div class="question">4) Abra una página en Internet que no haya abierto desde que encendió la PC. Capture el tráfico
+    involucrado:</div>
+  <div class="question">a) Responda las mismas preguntas que en el ejercicio anterior:</div>
+  <div class="answer">
+    Al iniciar tráfico hacia una IP fuera de la subred local, el stack de red identifica que el destino es foráneo. Por
+    ende, la consulta ARP busca exclusivamente la dirección MAC de la <strong>Puerta de Enlace Predeterminada (Default
+      Gateway 192.168.0.1)</strong>, nunca la MAC del servidor remoto en Internet.
+  </div>
+
+  <div class="question">b) ¿Los Hosts que intervienen en esta captura son los mismos que en el caso anterior?</div>
+  <div class="answer">
+    <strong>A nivel de Capa 2 sí:</strong> la trama Ethernet viaja estrictamente entre la estación local (PC) y el
+    Gateway (Router). Sin embargo, <strong>a nivel de Capa 3 no:</strong> el paquete IP transporta como dirección de
+    destino la dirección IP pública del servidor web remoto.
+  </div>
+
+  <div class="question">c) ¿Cómo se llama a este mecanismo de ARP?</div>
+  <div class="answer">
+    Se denomina <strong>Resolución hacia la Puerta de Enlace / Enrutamiento de siguiente salto (Next-Hop
+      Routing)</strong>. En caso de que un router intermedio responda con su propia MAC a una solicitud ARP dirigida a
+    otra red, el mecanismo se denomina <strong>Proxy ARP</strong> (RFC 1027).
+  </div>
+
+  <!-- SECCIÓN E -->
+  <div class="page-break"></div>
+  <h3 style="color: #1e3a8a; margin-top: 25px;">e. Análisis del tráfico IP e ICMP</h3>
+  <div class="note-box">
+    <strong>Capturas analizadas:</strong> <code>e1_ping_local.pcapng</code> (ping a propia IP),
+    <code>e2_ping_gateway.pcapng</code> (ping a Gateway) y <code>e3_ping_remote.pcapng</code> (ping a 8.8.8.8).
+  </div>
+
+  <div class="question">Responda las siguientes preguntas para cada caso (Completar tabla):</div>
+  <div class="answer">
+    <table>
+      <tr>
+        <th style="width: 34%;">Preguntas</th>
+        <th style="width: 22%;">Caso 1)<br>Ping a IP propia (192.168.0.53)</th>
+        <th style="width: 22%;">Caso 2)<br>Ping a Gateway (192.168.0.1)</th>
+        <th style="width: 22%;">Caso 3)<br>Ping a Internet (8.8.8.8)</th>
+      </tr>
+      <tr>
+        <td><strong>a) ¿Se ejecutó la aplicación Ping?</strong></td>
+        <td class="table-ans">Sí (recibió 4 respuestas exitosas con TTL=128).</td>
+        <td class="table-ans">Sí (recibió respuestas con TTL=64).</td>
+        <td class="table-ans">Sí (recibió respuestas con TTL=118).</td>
+      </tr>
+      <tr>
+        <td><strong>b) ¿Salen paquetes hacia la red? ¿Cuántos?</strong></td>
+        <td class="table-ans"><strong>No. 0 paquetes en la red física.</strong> El tráfico es enrutado internamente en
+          el kernel por la interfaz loopback.</td>
+        <td class="table-ans"><strong>Sí. 4 paquetes</strong> (2 Echo Request salientes y 2 Echo Reply entrantes
+          capturados).</td>
+        <td class="table-ans"><strong>Sí. 4 paquetes</strong> (2 Echo Request salientes y 2 Echo Reply entrantes
+          capturados).</td>
+      </tr>
+      <tr>
+        <td><strong>c) ¿Qué tamaño tiene cada paquete?</strong></td>
+        <td class="table-ans">No transita en el cable físico (internamente datagrama IP de 60B).</td>
+        <td class="table-ans"><strong>74 bytes</strong> en el medio físico (60 bytes de datagrama IPv4 + 14B Ethernet).
+        </td>
+        <td class="table-ans"><strong>74 bytes</strong> en el medio físico (60 bytes de datagrama IPv4 + 14B Ethernet).
+        </td>
+      </tr>
+      <tr>
+        <td><strong>d) ¿Cuántos bytes corresponden a cada protocolo?</strong></td>
+        <td class="table-ans">Internamente: IP = 20B, ICMP = 8B cabecera.</td>
+        <td class="table-ans">
+          • Ethernet: 14 bytes<br>
+          • IPv4: 20 bytes<br>
+          • ICMP: 8 bytes (cabecera)
+        </td>
+        <td class="table-ans">
+          • Ethernet: 14 bytes<br>
+          • IPv4: 20 bytes<br>
+          • ICMP: 8 bytes (cabecera)
+        </td>
+      </tr>
+      <tr>
+        <td><strong>e) ¿Cuántos bytes corresponden a los datos transmitidos?</strong></td>
+        <td class="table-ans">32 bytes</td>
+        <td class="table-ans"><strong>32 bytes</strong> (cadena estándar de Windows:
+          <code>abcdefghijklmnopqrstuvwabcdefghi</code>).</td>
+        <td class="table-ans"><strong>32 bytes</strong> (cadena estándar de Windows:
+          <code>abcdefghijklmnopqrstuvwabcdefghi</code>).</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="question">4) Al hacer Ping ¿cuántas capas del Modelo OSI y qué protocolos intervienen? ¿Qué tipos y
+    códigos de mensaje ICMP se observaron en los casos analizados?</div>
+  <div class="answer">
+    <strong>Capas del modelo OSI y protocolos intervinientes:</strong>
+    <ul>
+      <li><strong>Capa 1 (Física):</strong> Codificación de bits y transmisión eléctrica en el cable UTP.</li>
+      <li><strong>Capa 2 (Enlace de datos):</strong> Protocolo <strong>Ethernet II / IEEE 802.3</strong> (trama MAC).
+      </li>
+      <li><strong>Capa 3 (Red):</strong> Protocolos <strong>IPv4</strong> (direccionamiento y ruteo de datagramas) e
+        <strong>ICMP</strong> (mensajería y control de eco).</li>
+    </ul>
+    <strong>Tipos y códigos ICMP observados:</strong>
+    <ul>
+      <li><strong>Tipo 8, Código 0:</strong> <code>Echo Request (Solicitud de eco)</code>, emitido por el host local
+        hacia el destino.</li>
+      <li><strong>Tipo 0, Código 0:</strong> <code>Echo Reply (Respuesta de eco)</code>, emitido por el host de destino
+        confirmando la recepción.</li>
+    </ul>
+  </div>
+
+  <!-- SECCIÓN F -->
+  <div class="page-break"></div>
+  <h3 style="color: #1e3a8a; margin-top: 25px;">f. Análisis del MTU de la red y fragmentación</h3>
+  <div class="note-box">
+    <strong>Capturas analizadas:</strong> <code>f1_ping_l200.pcapng</code>, <code>f2_ping_l1499.pcapng</code>,
+    <code>f3_ping_l2000.pcapng</code> y <code>f4_ping_15frag.pcapng</code>.
+  </div>
+
+  <div class="question">Realice las siguientes tareas en el intérprete de comandos y registre lo obtenido (ping -l 200,
+    1499 y 2000):</div>
+  <div class="question">a) ¿En qué caso se fragmentaron los paquetes? ¿A cuántos bytes se produjo la fragmentación?
+  </div>
+  <div class="answer">
+    <ul>
+      <li><strong>Caso ping -l 200:</strong> <strong>NO se fragmentó.</strong> El datagrama IP mide 228 bytes (200 datos
+        + 8 ICMP + 20 IP), valor inferior a la MTU de 1500 bytes.</li>
+      <li><strong>Caso ping -l 1499:</strong> <strong>SÍ se fragmentó.</strong> El tamaño total del datagrama IP es de
+        \(1499 + 8 + 20 = 1527 ext{ bytes}\), superando la MTU de 1500 bytes. La fragmentación se produjo dividiendo el
+        datagrama a los <strong>1480 bytes</strong> de carga útil IP (múltiplo de 8).</li>
+      <li><strong>Caso ping -l 2000:</strong> <strong>SÍ se fragmentó.</strong> El tamaño total es de \(2000 + 8 + 20 =
+        2028 ext{ bytes}\), superando la MTU de 1500 bytes. Se fragmentó a los <strong>1480 bytes</strong> de carga útil
+        IP.</li>
+    </ul>
+  </div>
+
+  <div class="question">b) ¿Qué campos de qué protocolos intervienen en la fragmentación?</div>
+  <div class="answer">
+    Intervienen los campos de la cabecera del protocolo <strong>IPv4 (Capa 3)</strong>:
+    <ul>
+      <li><strong>Identification (ID):</strong> Campo de 16 bits idéntico en todos los fragmentos generados a partir del
+        mismo datagrama original para permitir su reensamble.</li>
+      <li><strong>Flags (Indicadores):</strong> 3 bits. Principalmente el bit <strong>MF (More Fragments)</strong> (1
+        indica que siguen más fragmentos; 0 indica que es el último fragmento) y el bit <strong>DF (Don't
+          Fragment)</strong>.</li>
+      <li><strong>Fragment Offset (Desplazamiento):</strong> Campo de 13 bits que indica la posición inicial de los
+        datos de este fragmento dentro del datagrama original, medido en bloques de <strong>8 octetos</strong>.</li>
+      <li><strong>Total Length:</strong> Indica la longitud total en bytes de cada fragmento individual.</li>
+    </ul>
+  </div>
+
+  <div class="question">c, d, e) ¿Qué tamaño tiene cada paquete? ¿Cuántos bytes corresponden a cada protocolo y a los
+    datos transmitidos?</div>
+  <div class="answer">
+    <table>
+      <tr>
+        <th>Prueba Ping</th>
+        <th>Fragmento</th>
+        <th>Tamaño Trama (Wire)</th>
+        <th>Total Length IP</th>
+        <th>Bytes Cabecera IP</th>
+        <th>Bytes Carga (ICMP / Datos)</th>
+        <th>Flag MF / Offset</th>
+      </tr>
+      <tr>
+        <td><strong>ping -l 200</strong></td>
+        <td>Único</td>
+        <td class="table-ans">242 bytes</td>
+        <td class="table-ans">228 bytes</td>
+        <td class="table-ans">20 B</td>
+        <td class="table-ans">8B cabecera ICMP + 200B datos</td>
+        <td class="table-ans">MF = 0 / Offset = 0</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><strong>ping -l 1499</strong></td>
+        <td>Frag 1</td>
+        <td class="table-ans">1514 bytes</td>
+        <td class="table-ans">1500 bytes</td>
+        <td class="table-ans">20 B</td>
+        <td class="table-ans">8B cabecera ICMP + 1472B datos</td>
+        <td class="table-ans">MF = 1 / Offset = 0</td>
+      </tr>
+      <tr>
+        <td>Frag 2</td>
+        <td class="table-ans">61 bytes</td>
+        <td class="table-ans">47 bytes</td>
+        <td class="table-ans">20 B</td>
+        <td class="table-ans">27B datos restantes</td>
+        <td class="table-ans">MF = 0 / Offset = 185 (1480 B)</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><strong>ping -l 2000</strong></td>
+        <td>Frag 1</td>
+        <td class="table-ans">1514 bytes</td>
+        <td class="table-ans">1500 bytes</td>
+        <td class="table-ans">20 B</td>
+        <td class="table-ans">8B cabecera ICMP + 1472B datos</td>
+        <td class="table-ans">MF = 1 / Offset = 0</td>
+      </tr>
+      <tr>
+        <td>Frag 2</td>
+        <td class="table-ans">562 bytes</td>
+        <td class="table-ans">548 bytes</td>
+        <td class="table-ans">20 B</td>
+        <td class="table-ans">528B datos restantes</td>
+        <td class="table-ans">MF = 0 / Offset = 185 (1480 B)</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="question">f) ¿Qué valor de tamaño de paquete tiene el umbral de fragmentación? ¿es constante o variable?
+  </div>
+  <div class="answer">
+    El umbral de fragmentación para el parámetro <code>-l</code> de la aplicación Ping es de <strong>1472
+      bytes</strong>.<br>
+    Cálculo: \( ext{MTU} - ext{Cabecera IP} - ext{Cabecera ICMP} = 1500 - 20 - 8 = 1472 ext{ bytes}\).<br>
+    Cualquier solicitud de Ping con un parámetro <code>-l > 1472</code> provocará fragmentación.<br>
+    <strong>Es un valor VARIABLE:</strong> Depende de la MTU impuesta por la tecnología de Capa 2 del enlace (por
+    ejemplo, 1500 en Ethernet, 1492 en enlaces con encapsulamiento PPPoE, o valores superiores en redes con Jumbo Frames
+    de 9000 bytes).
+  </div>
+
+  <div class="question">4) Calcule un valor umbral de Bytes, que deben ser configurados como parámetro en la aplicación
+    Ping, para que el datagrama IP se fragmente en 15 paquetes. Verifíquelo en la PC:</div>
+  <div class="answer">
+    <strong>Cálculo matemático:</strong>
+    <ul>
+      <li>La MTU del enlace Ethernet es de 1500 bytes.</li>
+      <li>La cabecera IPv4 ocupa 20 bytes, por lo que la carga máxima por fragmento es de \(1500 - 20 = 1480 ext{
+        bytes}\) (múltiplo exacto de 8).</li>
+      <li>Para que el datagrama se fragmente en exactamente <strong>15 paquetes</strong>:
+        <ul>
+          <li>Los primeros 14 fragmentos deben transportar obligatoriamente 1480 bytes de carga IP cada uno: \(14 imes
+            1480 = 20720 ext{ bytes}\).</li>
+          <li>El fragmento 15 debe transportar entre 1 y 1480 bytes de carga restante.</li>
+        </ul>
+      </li>
+      <li>Por lo tanto, la carga IP total requerida (Cabecera ICMP de 8 bytes + Datos del Ping \(L\)) debe satisfacer:
+        \[20720 < (8 + L) \le 20720 + 1480\] \[20720 < 8 + L \le 22200\] Restando 8 bytes en toda la inecuación:
+          \[\mathbf{20713 \le L \le 22192 ext{ bytes}}\] </li>
+    </ul>
+    <strong>Verificación experimental:</strong><br>
+    Se seleccionó el valor representativo <strong>\(L = 21000 ext{ bytes}\)</strong> ejecutando:
+    <pre>ping -n 1 -l 21000 192.168.0.1</pre>
+    En la captura <code>f4_ping_15frag.pcapng</code>, Wireshark verificó la generación de <strong>exactamente 15
+      fragmentos</strong> para la solicitud (Request) y 15 fragmentos para la respuesta (Reply):
+    <pre>Frag 1:  Offset = 0,    Len = 1500, MF = 1
+Frag 2:  Offset = 185,  Len = 1500, MF = 1
+Frag 3:  Offset = 370,  Len = 1500, MF = 1
+Frag 4:  Offset = 555,  Len = 1500, MF = 1
+Frag 5:  Offset = 740,  Len = 1500, MF = 1
+Frag 6:  Offset = 925,  Len = 1500, MF = 1
+Frag 7:  Offset = 1110, Len = 1500, MF = 1
+Frag 8:  Offset = 1295, Len = 1500, MF = 1
+Frag 9:  Offset = 1480, Len = 1500, MF = 1
+Frag 10: Offset = 1665, Len = 1500, MF = 1
+Frag 11: Offset = 1850, Len = 1500, MF = 1
+Frag 12: Offset = 2035, Len = 1500, MF = 1
+Frag 13: Offset = 2220, Len = 1500, MF = 1
+Frag 14: Offset = 2405, Len = 1500, MF = 1
+Frag 15: Offset = 2590, Len = 308,  MF = 0  (Último fragmento: 288B datos + 20B cabecera IP)</pre>
+    Total de datos de carga IP transmitidos = \(14 imes 1480 + 288 = 20720 + 288 = 21008 ext{ bytes}\) (8 bytes de
+    cabecera ICMP + 21000 bytes de datos).
+  </div>
+
+</body>
+
+</html>
