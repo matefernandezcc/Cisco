@@ -1,0 +1,74 @@
+DNI: 44535387 - Mateo Fernandez Cruz
+================================================================================
+PARCIAL REDES DE DATOS - UTN FRBA
+PUNTO 1: En relación con el Nivel 2 (TCP/IP)
+Archivo de captura: 7.pcapng (Preguntas 1 y 2 - TL5)
+Trama analizada: Trama N° 7 (Frame 7)
+================================================================================
+
+Hex Dump de la Trama 7:
+
+0000   90 f8 91 67 b5 db 20 6a 8a 3d 26 b4 08 00 45 00   ...g.. j.=&...E.
+0010   00 34 db 8e 40 00 80 06 9d ce c0 a8 00 15 c0 a8   .4..@...........
+0020   00 01 c4 71 1f 4d 5c 29 1c 35 00 00 00 00 80 02   ...q.M\).5......
+0030   fa f0 96 9b 00 00 02 04 05 b4 01 03 03 08 01 01   ................
+0040   04 02                                             ..
+
+================================================================================
+1.1 ¿Es una trama de comunicación unicast, multicast o broadcast? ¿Qué valor tiene el campo que verifica la respuesta anterior?
+--------------------------------------------------------------------------------
+Se trata de una trama de comunicación de tipo UNICAST (individual). Esta condición se verifica analizando el campo de Dirección MAC Destino (KaonGroup_67:b5:db, con valor hexadecimal 90 f8 91 67 b5 db), ubicado en los primeros 6 bytes de la trama (offset 0x0000 a 0x0005). En el direccionamiento de Nivel 2, el tipo de comunicación está determinado por el bit menos significativo del primer octeto (denominado bit I/G: Individual/Group). Al convertir dicho primer byte (0x90) a binario obtenemos 10010000b, donde se comprueba que el bit I/G (el último bit en la representación binaria habitual o primer bit transmitido en el medio) se encuentra en 0. Un valor de 0 define formalmente una dirección individual (Unicast), mientras que un valor de 1 identificaría una dirección de grupo (Multicast o Broadcast).
+
+- HEXDUMP DEL CAMPO (MAC Destino):
+0000   90 f8 91 67 b5 db                                 ...g..
+
+--------------------------------------------------------------------------------
+1.2 ¿Es una trama correspondiente a la VLAN por defecto o a una VLAN de negocios? ¿Qué valor o característica del encabezado verifican su respuesta?
+--------------------------------------------------------------------------------
+La trama corresponde a la VLAN POR DEFECTO (VLAN 1 nativa sin etiquetar). La característica principal del encabezado que verifica esta afirmación es que la trama se encuentra en estado untagged (sin etiquetar según el estándar IEEE 802.1Q). Si la trama perteneciera a una VLAN de datos/negocios transportada en un enlace troncal o etiquetada, contendría una cabecera adicional de 4 bytes tras las direcciones MAC con un identificador TPID de valor 0x8100 y un campo VID (VLAN ID) de 12 bits indicando la red virtual. En esta captura, inmediatamente después de la MAC de origen (byte 11), en los bytes 12 y 13 (offset 0x000C - 0x000D), se sitúa de forma directa el campo EtherType con el valor hexadecimal 08 00 (IPv4), sin ninguna cabecera 802.1Q intermedia. Al no poseer etiqueta, los switches conmutan dicho tráfico por la VLAN nativa o por defecto asignada al puerto.
+
+- HEXDUMP DEL ENCABEZADO ETHERNET (Sin etiqueta 802.1Q):
+0000   90 f8 91 67 b5 db 20 6a 8a 3d 26 b4 08 00        ...g.. j.=&...
+
+--------------------------------------------------------------------------------
+1.3 ¿Qué valor tiene el grupo HEXA que indica el inicio de los datos de la trama? ¿Cuál es la longitud del campo de datos?
+--------------------------------------------------------------------------------
+El inicio del campo de datos de la trama de enlace (payload de Nivel 2) está indicado por el valor hexadecimal 45 (o el par de bytes 45 00), que representa el primer octeto de la cabecera IPv4 (Versión 4 e IHL de 20 bytes), situado en el desplazamiento de byte 14 (offset 0x000E), inmediatamente posterior a los 14 bytes fijos que componen la cabecera Ethernet II. La longitud del campo de datos es de exactamente 52 bytes, cifra que surge de restar los 14 bytes del encabezado Ethernet a la longitud total de la trama capturada en el medio (66 bytes - 14 bytes = 52 bytes). Esta longitud coincide con el valor registrado en el campo Total Length de la cabecera IPv4 (bytes 0x0010 y 0x0011 con valor HEXA 00 34, es decir, 52 en base decimal), el cual contiene los 20 bytes de la cabecera IP sumados a los 32 bytes del segmento TCP SYN.
+
+- HEXDUMP DEL CAMPO DE DATOS (Payload L2, a partir de offset 0x000E):
+000e   45 00 00 34 db 8e 40 00 80 06 9d ce c0 a8 00 15   E..4..@.........
+001e   c0 a8 00 01 c4 71 1f 4d 5c 29 1c 35 00 00 00 00   .....q.M\).5....
+002e   80 02 fa f0 96 9b 00 00 02 04 05 b4 01 03 03 08   ................
+003e   01 01 04 02                                       ..
+
+--------------------------------------------------------------------------------
+1.4 ¿Este campo de datos será del mismo tamaño en otra trama que tenga los mismos hosts origen y destino? ¿Qué longitud deberá tener?
+--------------------------------------------------------------------------------
+El campo de datos no será necesariamente del mismo tamaño en otra trama entre los mismos hosts, ya que en la arquitectura TCP/IP y el estándar Ethernet la carga útil es de longitud variable y depende exclusivamente de la PDU de capa de red (IPv4) que se esté transmitiendo en cada instante. En esta trama N° 7 se transporta una solicitud de sincronización TCP SYN que solo demanda 52 bytes, pero cuando estos mismos extremos intercambien datos de aplicación (HTTP, transferencias o paquetes ICMP) o simples confirmaciones ACK, el tamaño cambiará. Reglamentariamente, según los estándares IEEE 802.3 y Ethernet II, este campo debe mantenerse dentro de un rango estricto: una longitud mínima de 46 bytes (para asegurar que la trama alcance los 64 bytes mínimos requeridos por CSMA/CD, incorporándose bytes de relleno o padding si el paquete fuese menor) y una longitud máxima de 1500 bytes, determinada por la MTU estándar de Ethernet, dando lugar a tramas de hasta 1518 bytes sin etiquetado.
+
+--------------------------------------------------------------------------------
+1.5 ¿Qué valor HEXA indica el inicio del encabezado de la PDU especificada en IEEE 802.2?
+--------------------------------------------------------------------------------
+En esta trama no existe ningún valor hexadecimal que señale el inicio de una PDU especificada en IEEE 802.2 (subcapa LLC). La justificación radica en que la captura utiliza la encapsulación Ethernet II (DIX) y no el estándar IEEE 802.3 con LLC 802.2. En el formato Ethernet II, el campo de dos bytes posterior a las direcciones MAC funciona como EtherType debido a que su valor es superior o igual a 0x0600 (en este caso 0x0800), el cual multiplexa de forma directa con el protocolo de red IPv4, prescindiendo por completo de la subcapa LLC de control de enlace lógico y de sus campos característicos DSAP, SSAP y Control. Por lo tanto, esta cabecera no aplica ni se encuentra presente en la trama.
+
+--------------------------------------------------------------------------------
+1.6 ¿Qué valor HEXA indica el inicio del encabezado de la PDU especificada en IEEE 802.3?
+--------------------------------------------------------------------------------
+El inicio del encabezado de la PDU especificada en IEEE 802.3 (trama de la subcapa MAC) está marcado por el valor hexadecimal 90, que constituye el primer byte de la trama capturada en el offset 0x0000 (o en su totalidad por los primeros 6 bytes correspondientes a la MAC Destino: 90 f8 91 67 b5 db). En la arquitectura de enlace, una vez que los campos físicos de preámbulo y SFD son descartados por la placa de red receptora tras la sincronización de reloj, la unidad de datos del protocolo MAC inicia formalmente con el campo de dirección física de destino.
+
+- HEXDUMP DEL INICIO DE LA PDU 802.3:
+0000   90                                                .
+
+--------------------------------------------------------------------------------
+1.7 ¿Qué valor HEXA indica el protocolo de nivel 3 (TCP/IP) encapsulado en la trama?
+--------------------------------------------------------------------------------
+El valor hexadecimal que especifica el protocolo de nivel 3 encapsulado es 08 00 (0x0800). Este identificador se encuentra alojado en el campo EtherType (Type) de la cabecera Ethernet II, situado exactamente en los octetos con desplazamiento 12 y 13 (offset 0x000C y 0x000D), inmediatamente tras la dirección MAC de origen.
+
+- HEXDUMP DEL CAMPO ETHERTYPE:
+000c   08 00                                             ..
+
+--------------------------------------------------------------------------------
+1.8 ¿Cuál es el protocolo encapsulado en la trama?
+--------------------------------------------------------------------------------
+El protocolo encapsulado en la trama es IPv4 (Internet Protocol Version 4). Esto se deduce unívocamente a partir de la asignación formal de números de protocolo de la IANA y el IEEE, donde el valor de EtherType 0x0800 está reservado en exclusiva para la versión 4 del protocolo de Internet.
+================================================================================

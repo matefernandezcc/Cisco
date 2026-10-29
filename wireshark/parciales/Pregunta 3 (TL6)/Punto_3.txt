@@ -1,0 +1,99 @@
+DNI: 44535387 - Mateo Fernandez Cruz
+================================================================================
+PARCIAL REDES DE DATOS - UTN FRBA
+PUNTO 3: En relación con los Niveles 4 y 5 (TCP/IP)
+Archivo de captura: 7.pcap (Pregunta 3 - TL6)
+Trama analizada: Trama N° 7 (Frame 7)
+================================================================================
+
+Hex Dump de la Trama 7 (Copy as Hex Dump de Wireshark):
+
+0000   00 04 e2 22 5a 03 00 c0 df 20 6c df 08 00 45 00   ..."Z.... l...E.
+0010   00 28 c1 3a 40 00 40 06 63 2e 0a 01 01 01 0a 01   .(.:@.@.c.......
+0020   01 65 00 50 0c 69 37 3b 87 ad 34 9c 06 5b 50 11   .e.P.i7;..4..[P.
+0030   19 20 79 b3 00 00 85 00 00 00 44 45               . y.......DE
+
+================================================================================
+3.1 ¿Qué protocolos de nivel 4 y 5 (TCP/IP) se encapsularon en el paquete?
+--------------------------------------------------------------------------------
+En el Nivel 4 (Transporte) se encapsuló el protocolo TCP (Transmission Control Protocol), mientras que en el Nivel 5 (Aplicación) la comunicación corresponde al protocolo HTTP (Hypertext Transfer Protocol). Aunque en este segmento particular no viaja carga útil de aplicación debido a que se trata de un paquete de control TCP, pertenece a la sesión web establecida en el puerto 80.
+
+- HEXDUMP DEL CAMPO PUERTO ORIGEN (Offset 0x0022 - 0x0023, Puerto 80 = HTTP):
+0022   00 50                                             .P
+
+--------------------------------------------------------------------------------
+3.2 Indique el valor del grupo HEXA que indica el comienzo del segmento.
+--------------------------------------------------------------------------------
+El valor del grupo HEXA que indica el comienzo del segmento TCP es 00 50. Este valor corresponde al primer campo de la cabecera TCP (Source Port = 80 decimal), ubicado en el desplazamiento de byte 34 (offset 0x0022 - 0x0023 de la trama), inmediatamente tras los 14 bytes de Ethernet y los 20 bytes del encabezado IPv4.
+
+- HEXDUMP DEL COMIENZO DEL SEGMENTO (Offset 0x0022 - 0x0023):
+0022   00 50                                             .P
+
+--------------------------------------------------------------------------------
+3.3 ¿La captura indica una comunicación orientada a la conexión? ¿a qué etapa pertenece la captura (establecimiento, transferencia o cierre)?
+--------------------------------------------------------------------------------
+Sí, indica una comunicación orientada a la conexión al utilizar el protocolo TCP, el cual gestiona una sesión formal de tres fases (establecimiento, transferencia y cierre). Esta captura específica pertenece a la etapa de CIERRE (terminación de la conexión), lo cual se verifica en el campo Flags (offset 0x002E - 0x002F con valor 50 11), donde se encuentran encendidas en simultáneo las banderas FIN (Finish) y ACK (Acknowledgment) con valor HEXA 0x011, señalando que el servidor inicia el cierre de su extremo de la conexión.
+
+- HEXDUMP DEL CAMPO FLAGS TCP (Offset 0x002E - 0x002F):
+002e   50 11                                             P.
+
+--------------------------------------------------------------------------------
+3.4 ¿La PDU de capa 4 tiene campos en su encabezado que se usan para el control de flujo?, ¿indique 2 valores HEXA y su significado que correspondan a 2 campos utilizados para regular el flujo?
+--------------------------------------------------------------------------------
+Sí, la PDU de capa 4 (segmento TCP) dispone de campos dedicados a la regulación del flujo. El primer campo es Window Size (Tamaño de Ventana), con valor HEXA 19 20 (6432 bytes en decimal, offset 0x0030 - 0x0031), el cual informa la capacidad disponible en el búfer de recepción del emisor para evitar que el receptor sea saturado. El segundo campo es Acknowledgment Number (Número de Acuse de Recibo), con valor HEXA 34 9c 06 5b (offset 0x002A - 0x002D), que junto con la bandera ACK (activa en el byte de flags con valor 11) confirma los bytes recibidos y permite avanzar el borde izquierdo de la ventana deslizante del transmisor.
+
+- HEXDUMP DE LOS CAMPOS ACK Y WINDOW (Offsets 0x002A - 0x002D y 0x0030 - 0x0031):
+002a   34 9c 06 5b                                       4..[
+0030   19 20                                             . 
+
+--------------------------------------------------------------------------------
+3.5 ¿Qué valor HEXA tiene el campo del encabezado en el sistema origen para multiplexar el servicio dado al nivel 5?
+--------------------------------------------------------------------------------
+El valor HEXA es 00 50 (puerto 80 en base decimal). Se localiza en el campo Source Port (Puerto Origen) del encabezado TCP, ubicado en los bytes con desplazamiento 0x0022 y 0x0023, el cual multiplexa hacia el nivel de aplicación identificando al servicio de servidor web HTTP.
+
+- HEXDUMP DEL PUERTO ORIGEN (Offset 0x0022 - 0x0023):
+0022   00 50                                             .P
+
+--------------------------------------------------------------------------------
+3.6 ¿Esta captura representa una PDU única, un fragmento intermedio o el último fragmento?
+--------------------------------------------------------------------------------
+Representa una PDU única (datagrama completo no fragmentado). A nivel de red (IPv4), los flags registran DF=1 (Don't Fragment) y MF=0 (More Fragments), con un Fragment Offset igual a 0 (palabra HEXA 40 00 en offset 0x0014 - 0x0015). A nivel de transporte, se trata de un segmento TCP de control sin datos de aplicación (Len = 0), conformando una unidad indivisa.
+
+- HEXDUMP DE FLAGS Y OFFSET IP (Offset 0x0014 - 0x0015):
+0014   40 00                                             @.
+
+--------------------------------------------------------------------------------
+3.7 En este caso ¿qué campo se utiliza para identificar este fragmento?
+--------------------------------------------------------------------------------
+Al no estar fragmentado, el campo utilizado en el encabezado IPv4 para identificar unívocamente al paquete (y que serviría para asociar fragmentos en caso de haberlos) es el campo Identification, cuyo valor HEXA es c1 3a (49466 en decimal, offset 0x0012 - 0x0013). Asimismo, en la capa 4 de transporte, la identificación y sincronización del segmento dentro del flujo TCP se efectúa mediante el campo Sequence Number (Número de Secuencia), con valor HEXA 37 3b 87 ad (offset 0x0026 - 0x0029).
+
+- HEXDUMP DEL CAMPO IDENTIFICATION IP (Offset 0x0012 - 0x0013):
+0012   c1 3a                                             .:
+
+--------------------------------------------------------------------------------
+3.8 ¿Qué valor HEXA tiene el campo que garantiza la provisión de una entrega confiable con el destino?
+--------------------------------------------------------------------------------
+El campo que garantiza la provisión de entrega confiable es el Acknowledgment Number (Número de Acuse de Recibo), cuyo valor HEXA es 34 9c 06 5b (offset 0x002A a 0x002D), complementado por la bandera ACK activa en el campo Flags (offset 0x002F, valor HEXA 11). Este mecanismo de reconocimiento positivo permite al emisor saber con exactitud qué datos fueron recibidos y retransmitir oportunamente en caso de pérdidas.
+
+- HEXDUMP DEL ACUSE DE RECIBO (Offset 0x002A - 0x002D):
+002a   34 9c 06 5b                                       4..[
+
+--------------------------------------------------------------------------------
+3.9 Indique la secuencia de encapsulamiento desde el más alto nivel al inferior, dando el nombre de cada protocolo.
+--------------------------------------------------------------------------------
+La secuencia de encapsulamiento ordenada jerárquicamente desde el nivel superior hacia el inferior es:
+1. Nivel 5 (Aplicación): HTTP (Hypertext Transfer Protocol).
+2. Nivel 4 (Transporte): TCP (Transmission Control Protocol).
+3. Nivel 3 (Red / Internet): IPv4 (Internet Protocol Version 4).
+4. Nivel 2 (Enlace de Datos): Ethernet II.
+
+--------------------------------------------------------------------------------
+3.10 ¿Qué valor HEXA da inicio al encabezado y cuál es la longitud particular de cada uno en su nivel, de todos los protocolos encapsulados?
+--------------------------------------------------------------------------------
+Para cada uno de los protocolos que intervienen en la trama:
+- Nivel 2 (Ethernet II): Inicia con el valor HEXA 00 (primer byte de la MAC Destino 00 04 e2 22 5a 03 en offset 0x0000) y su encabezado tiene una longitud fija de 14 bytes (offset 0x0000 a 0x000D).
+- Nivel 3 (IPv4): Inicia con el valor HEXA 45 (offset 0x000E, indicando versión 4 e IHL de 5 palabras) y su encabezado tiene una longitud de 20 bytes (offset 0x000E a 0x0021).
+- Nivel 4 (TCP): Inicia con el valor HEXA 00 50 (puerto origen 80 en offset 0x0022 - 0x0023) y su encabezado tiene una longitud de 20 bytes (offset 0x0022 a 0x0035, indicado por el nibble de Data Offset 5).
+- Nivel 5 (HTTP): Tiene una longitud de 0 bytes en este segmento específico, ya que por tratarse de un paquete de control de cierre TCP (FIN, ACK), no encapsula datos de aplicación.
+*(Los 6 bytes finales en offset 0x0036 a 0x003B corresponden a padding/trailer Ethernet para cumplir con el tamaño mínimo de 60 bytes en el medio).*
+================================================================================

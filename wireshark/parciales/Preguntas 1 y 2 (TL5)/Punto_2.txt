@@ -1,0 +1,65 @@
+DNI: 44535387 - Mateo Fernandez Cruz
+================================================================================
+PARCIAL REDES DE DATOS - UTN FRBA
+PUNTO 2: En relación con el Nivel 3 (TCP/IP)
+Archivo de captura: 7.pcapng (Preguntas 1 y 2 - TL5)
+Trama analizada: Trama N° 7 (Frame 7)
+================================================================================
+
+Hex Dump de la Trama 7 (Encabezado IPv4 a partir de offset 0x000E):
+
+0000   90 f8 91 67 b5 db 20 6a 8a 3d 26 b4 08 00 45 00   ...g.. j.=&...E.
+0010   00 34 db 8e 40 00 80 06 9d ce c0 a8 00 15 c0 a8   .4..@...........
+0020   00 01 c4 71 1f 4d 5c 29 1c 35 00 00 00 00 80 02   ...q.M\).5......
+0030   fa f0 96 9b 00 00 02 04 05 b4 01 03 03 08 01 01   ................
+0040   04 02                                             ..
+
+================================================================================
+2.1 ¿Esta captura representa una PDU única, un fragmento intermedio o el último fragmento?, en cualquier caso ¿qué valor tiene el grupo HEXA del campo que identifica el paquete?
+--------------------------------------------------------------------------------
+Representa una PDU única (datagrama completo no fragmentado). Esto se verifica en los campos Flags y Fragment Offset (offset 0x0014 y 0x0015 con valor 40 00), donde el bit More Fragments (MF) es 0, el Fragment Offset es 0 y el bit Don't Fragment (DF) está activo en 1. El campo que identifica al paquete (para vincular posibles fragmentos o identificar unívocamente al datagrama) es el campo Identification, cuyo valor hexadecimal es db 8e (56206 en decimal), ubicado en los bytes con offset 0x0012 y 0x0013.
+
+- HEXDUMP DEL CAMPO IDENTIFICATION (Offset 0x0012 - 0x0013):
+0012   db 8e                                             ..
+
+--------------------------------------------------------------------------------
+2.2 ¿Cuál es la dirección de la RED destino (Nivel IP) a la cual se encamina este paquete?
+--------------------------------------------------------------------------------
+La dirección IP del host destino es 192.168.0.1 (registrada en hexadecimal como c0 a8 00 01 en el offset 0x001E a 0x0021). Considerando la máscara de subred estándar de clase C / red local de /24 (255.255.255.0), la dirección de la RED destino a la cual se encamina este paquete es 192.168.0.0 (o 192.168.0.0/24), cuyo valor hexadecimal de red es c0 a8 00 00.
+
+- HEXDUMP DE LA DIRECCIÓN IP DESTINO (Offset 0x001E - 0x0021):
+001e   c0 a8 00 01                                       ....
+
+--------------------------------------------------------------------------------
+2.3 ¿Qué valor tiene la dirección del HOST origen desde donde proviene el paquete?
+--------------------------------------------------------------------------------
+La dirección del HOST origen completa es 192.168.0.21, cuyo valor en formato hexadecimal es c0 a8 00 15, ubicado en los bytes con desplazamiento 0x001A a 0x001D. Si se considera estrictamente el identificador numérico del host dentro de la red local /24 (192.168.0.0/24), la porción de host corresponde a .21, representada por el valor hexadecimal 15.
+
+- HEXDUMP DE LA DIRECCIÓN IP ORIGEN (Offset 0x001A - 0x001D):
+001a   c0 a8 00 15                                       ....
+
+--------------------------------------------------------------------------------
+2.4 ¿En algún campo del encabezado y con qué valor HEXA se indica que es un paquete que ofrece un servicio confiable?
+--------------------------------------------------------------------------------
+En el encabezado IP no existe ningún campo que indique que ofrece un servicio confiable, ya que el protocolo IPv4 (Nivel 3) es por diseño un protocolo de "mejor esfuerzo" (best effort), no orientado a conexión y no confiable. No obstante, en el encabezado IP el campo Protocol (offset 0x0017) contiene el valor hexadecimal 06, el cual indica que el protocolo encapsulado de capa superior es TCP (Nivel 4), siendo este último quien sí proporciona un servicio confiable mediante confirmaciones, control de flujo y retransmisiones.
+
+- HEXDUMP DEL CAMPO PROTOCOL (Offset 0x0017):
+0017   06                                                .
+
+--------------------------------------------------------------------------------
+2.5 ¿Qué valor HEXA del encabezado IP indica que el protocolo brinda un servicio de entrega ordenada?
+--------------------------------------------------------------------------------
+Ningún valor hexadecimal del encabezado IP indica que el protocolo brinde entrega ordenada, dado que el protocolo IP enruta y entrega datagramas de manera independiente, sin garantizar el orden de recepción ni controlar secuenciamiento. La entrega ordenada es una función brindada en el Nivel 4 por el protocolo de transporte TCP, el cual está referenciado en el campo Protocol del encabezado IP mediante el valor hexadecimal 06 (offset 0x0017).
+
+- HEXDUMP DEL CAMPO PROTOCOL (Offset 0x0017):
+0017   06                                                .
+
+--------------------------------------------------------------------------------
+2.6 ¿Qué valor HEXA del encabezado IP indica que el fragmento podrá ser reensamblado por el HOST destino, en la posición correcta dentro de la PDU en caso de ser necesario?
+--------------------------------------------------------------------------------
+El campo que permite ubicar el fragmento en la posición correcta dentro de la PDU para su posterior reensamblado es el Fragment Offset (Desplazamiento del Fragmento). En esta trama, dicho campo de 13 bits tiene el valor hexadecimal 00 00 (0 en decimal), integrado dentro de la palabra de 16 bits de Flags y Offset con valor HEXA 40 00 (offset 0x0014 y 0x0015). Dado que este parámetro se mide en unidades de bloques de 8 octetos, un valor de 0 indica que los datos corresponden a la posición inicial (byte 0) de la carga útil original.
+
+- HEXDUMP DEL CAMPO FLAGS Y FRAGMENT OFFSET (Offset 0x0014 - 0x0015):
+0014   40 00                                             @.
+================================================================================
+
