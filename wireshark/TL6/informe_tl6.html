@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TL6 - Análisis de segmentos y aplicaciones de red en Ethernet</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm 15mm 20mm 15mm;
+      @bottom-right {
+        content: counter(page);
+      }
+    }
+    body {
+      font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+      color: #111827;
+      line-height: 1.5;
+      font-size: 10.5pt;
+      background-color: #ffffff;
+    }
+    .cover {
+      page-break-after: always;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 85vh;
+      text-align: center;
+      border: 2px solid #1e3a8a;
+      padding: 30px;
+      border-radius: 8px;
+    }
+    .cover h1 {
+      font-size: 20pt;
+      color: #1e3a8a;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .cover h2 {
+      font-size: 15pt;
+      color: #3b82f6;
+      margin-top: 0;
+      font-weight: 600;
+    }
+    .cover h3 {
+      font-size: 13pt;
+      color: #374151;
+      margin-top: 25px;
+      font-weight: 500;
+    }
+    .cover .details {
+      margin-top: 40px;
+      text-align: left;
+      width: 80%;
+      background: #f8fafc;
+      padding: 20px;
+      border-left: 4px solid #1e3a8a;
+      border-radius: 4px;
+      font-size: 11pt;
+    }
+    .cover .details p {
+      margin: 8px 0;
+    }
+    .section-title {
+      color: #1e3a8a;
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 4px;
+      margin-top: 28px;
+      margin-bottom: 14px;
+      font-size: 14pt;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .subsection-title {
+      color: #1e3a8a;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 12pt;
+      font-weight: 600;
+      border-left: 3px solid #3b82f6;
+      padding-left: 8px;
+    }
+    .question {
+      font-weight: bold;
+      color: #111827;
+      margin-top: 14px;
+      margin-bottom: 4px;
+    }
+    .answer {
+      color: #1d4ed8; /* Color azul requerido por la cátedra */
+      margin-bottom: 12px;
+      background: #eff6ff;
+      padding: 8px 12px;
+      border-radius: 4px;
+      border-left: 3px solid #3b82f6;
+    }
+    .answer p {
+      margin: 4px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 9pt;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 6px 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      font-weight: 600;
+    }
+    tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+    .table-ans {
+      color: #1d4ed8;
+      font-weight: 600;
+    }
+    pre {
+      background-color: #0f172a;
+      color: #38bdf8;
+      padding: 10px 14px;
+      border-radius: 5px;
+      font-size: 8pt;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: 'Consolas', 'Courier New', monospace;
+      margin: 8px 0;
+      line-height: 1.4;
+    }
+    .note-box {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 8px 12px;
+      margin: 10px 0;
+      font-size: 9pt;
+      color: #92400e;
+    }
+    .img-box {
+      text-align: center;
+      margin: 15px 0;
+    }
+    .img-box img {
+      max-width: 95%;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .img-caption {
+      font-size: 8.5pt;
+      color: #4b5563;
+      margin-top: 5px;
+      font-style: italic;
+    }
+    .page-break {
+      page-break-after: always;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CARÁTULA INSTITUCIONAL -->
+  <div class="cover">
+    <h1>Universidad Tecnológica Nacional</h1>
+    <h2>Facultad Regional Buenos Aires</h2>
+    <h3>Departamento de Ingeniería en Sistemas de Información</h3>
+    <div style="margin: 25px 0 15px 0; font-size: 16pt; font-weight: bold; color: #1e3a8a;">
+      REDES DE DATOS — CICLO LECTIVO 2026
+    </div>
+    <div style="font-size: 14pt; color: #1f2937; font-weight: 600; margin-bottom: 20px;">
+      Trabajo de Laboratorio Nº 6<br>
+      <span style="font-size: 12pt; font-weight: normal; color: #4b5563;">Análisis de segmentos y aplicaciones de red en Ethernet</span>
+    </div>
+
+    <div class="details">
+      <p><strong>Alumnos:</strong> Mateo Fernández y Agustin Toledo</p>
+      <p><strong>Nivel:</strong> Cuarto</p>
+      <p><strong>Cátedra / Curso:</strong> Redes de Datos - K4051 / Cuarto Nivel</p>
+      <p><strong>Docentes:</strong> Equipo de Cátedra</p>
+      <p><strong>Fecha de Realización:</strong> Octubre de 2026</p>
+      <p><strong>Modalidad:</strong> Virtual / Análisis con Analizador de Protocolos (Wireshark)</p>
+    </div>
+  </div>
+
+  <!-- CUERPO DEL INFORME -->
+
+  <h2 class="section-title">3. Tareas de análisis</h2>
+
+  <h3 class="subsection-title">a. Análisis del tráfico que produce un protocolo orientado a la conexión (TCP)</h3>
+
+  <div class="question">1) Ejecute una aplicación TCP / IP que emplee el protocolo TCP e inicie una captura con el analizador de protocolos:</div>
+  <div class="question">a) Verifique que el protocolo pueda ser empleado.<br>
+  b) Ejecute una captura del tráfico cursado entre los hosts.<br>
+  c) Desde la PC ejecute la aplicación a la dirección IP destino.</div>
+  <div class="answer">
+    <p>Para analizar el protocolo TCP en texto claro y de forma exhaustiva, se utilizó la aplicación de transferencia web <strong>HTTP/1.1</strong> hacia un servidor web público sin cifrado TLS: <code>http://neverssl.com</code> (servidor Apache en Amazon AWS, IP <code>34.223.124.45</code>, puerto conocido <code>80</code>) solicitando cierre de conexión mediante el encabezado <code>Connection: close</code>.</p>
+    <ul>
+      <li><strong>Verificación de conectividad:</strong> Se constató enlace operativo de Capa 3 y socket TCP activo mediante la interfaz Ethernet física <code>Realtek Gaming GbE Family Controller</code> con IP local <code>192.168.0.53</code>.</li>
+      <li><strong>Ejecución y captura:</strong> Se inició la captura con Wireshark/tshark sobre la interfaz <code>10</code> filtrando por <code>tcp port 80 and host 34.223.124.45</code>. Se ejecutó la petición HTTP GET, capturándose con éxito el ciclo de vida completo de la conexión TCP: establecimiento (handshake de 3 vías), transferencia de datos segmentada (HTTP 200 OK de 3961 bytes) y liberación de conexión (cierre en 4 vías).</li>
+      <li><strong>Archivo de captura resguardado:</strong> <code>capturas/3a_tcp_http_session.pcapng</code> (14 paquetes registrados).</li>
+    </ul>
+  </div>
+
+  <div class="img-box">
+    <img src="img/img_tcp_handshake.png" alt="Wireshark Handshake TCP">
+    <div class="img-caption">Figura 1: Captura en Wireshark del Three-Way Handshake TCP (Tramas 1, 3 y 4 de 3a_tcp_http_session.pcapng).</div>
+  </div>
+
+  <div class="question">2) Analice el tráfico cursado, graficando la comunicación de tramas (intercambio de tramas que encapsulan los segmentos que representan la comunicación orientada a la conexión) y verifique lo siguiente:</div>
+
+  <div class="question">a) Establecimiento de conexión TCP:</div>
+  <div class="question">(1) ¿Cuántos segmentos se emplean para establecer y liberar la comunicación?</div>
+  <div class="answer">
+    <p>• <strong>Para establecer la comunicación:</strong> Se emplean exactamente <strong>3 segmentos</strong> a través del proceso normalizado denominado <em>Three-Way Handshake</em> (Apretón de manos de 3 vías):</p>
+    <ol>
+      <li><strong>Segmento 1 (Cliente → Servidor):</strong> <code>[SYN]</code> Solicitud de sincronización y anuncio de parámetros iniciales.</li>
+      <li><strong>Segmento 3 (Servidor → Cliente):</strong> <code>[SYN, ACK]</code> Acuse de recibo del SYN del cliente y anuncio del SYN propio del servidor.</li>
+      <li><strong>Segmento 4 (Cliente → Servidor):</strong> <code>[ACK]</code> Acuse de recibo del SYN del servidor. La conexión pasa al estado <code>ESTABLISHED</code>.</li>
+    </ol>
+    <p>• <strong>Para liberar la comunicación:</strong> Se emplean <strong>4 segmentos</strong> (o 3 si se combinan FIN y ACK en piggybacking) mediante el proceso <em>Four-Way Handshake</em> de desconexión ordenada, debido a que TCP es Full Duplex y cada sentido de transmisión debe cerrarse de manera independiente:</p>
+    <ol>
+      <li><strong>Segmento 11 (Servidor → Cliente):</strong> <code>[FIN, ACK]</code> El servidor anuncia que no transmitirá más datos (cierre de Tx servidor).</li>
+      <li><strong>Segmento 12 (Cliente → Servidor):</strong> <code>[ACK]</code> El cliente confirma la recepción del FIN del servidor.</li>
+      <li><strong>Segmento 13 (Cliente → Servidor):</strong> <code>[FIN, ACK]</code> El cliente finaliza su transmisión y cierra su sentido (cierre de Tx cliente).</li>
+      <li><strong>Segmento 14 (Servidor → Cliente):</strong> <code>[ACK]</code> El servidor confirma el FIN del cliente. La conexión queda totalmente cerrada (<code>CLOSED</code>).</li>
+    </ol>
+  </div>
+
+  <div class="question">(2) Para el establecimiento de la conexión analice el paso a paso:</div>
+  <div class="question">(a) Window Size:</div>
+  <div class="question">1. Cliente → Servidor (SYN): ¿Incluye el campo Window Size = W1? ¿qué significa y para qué servicio se emplea?</div>
+  <div class="answer">
+    <p><strong>Sí, incluye explícitamente el campo Window Size</strong>, con un valor medido en la captura de <strong>W1 = 64240 bytes</strong> (con factor de escala <em>Window Scale</em> = 256 negociado en las opciones TCP).</p>
+    <p><strong>Significado:</strong> Representa el tamaño de la ventana de recepción (<em>Receive Window</em>, rwnd) que el cliente ofrece al servidor en ese instante. Indica la cantidad de bytes que el cliente es capaz de almacenar en su buffer de recepción sin que se produzca pérdida por saturación.</p>
+    <p><strong>Servicio para el cual se emplea:</strong> Se emplea para el servicio de <strong>Control de Flujo</strong> (<em>Flow Control</em>). Su función primordial es evitar que un emisor rápido sobrecargue y desborde el buffer de memoria del receptor lento, garantizando que el transmisor nunca tenga en tránsito más datos sin confirmar que los permitidos por la ventana anunciada.</p>
+  </div>
+
+  <div class="question">2. Servidor → Cliente (SYN-ACK): ¿Incluye Window Size = W1 o W2? ¿por qué?</div>
+  <div class="answer">
+    <p><strong>Incluye un valor independiente W2</strong> (en nuestra captura: <strong>W2 = 26883 bytes</strong>, con opción Window Scale = 128).</p>
+    <p><strong>Justificación técnica:</strong> Porque TCP es una conexión completamente <strong>Full Duplex</strong> (bidireccional simétrica). Ambos extremos disponen de recursos de memoria, sockets y buffers de recepción independientes asignados por sus respectivos sistemas operativos. El servidor debe anunciar al cliente la capacidad disponible en <em>su propio buffer de recepción</em> (W2), el cual no tiene relación alguna con el buffer asignado por el cliente (W1). Cada sentido de transmisión posee su propio control de flujo desacoplado.</p>
+  </div>
+
+  <div class="question">3. Cliente → Servidor (ACK): ¿Confirma el ISN del servidor?</div>
+  <div class="answer">
+    <p><strong>Sí, confirma explícitamente el ISN del servidor.</strong></p>
+    <p>En el segmento SYN-ACK (Trama 3), el servidor anunció su Número de Secuencia Inicial <code>ISN_servidor = y = 1302559821</code> (valor relativo 0). En el protocolo TCP, el flag de control <code>SYN</code> consume virtualmente 1 unidad de espacio de numeración de secuencia (a pesar de no transportar datos de aplicación). Por ende, el cliente responde en la Trama 4 con el campo <em>Acknowledgment Number</em> <code>Ack = y + 1 = 1302559822</code> (valor relativo 1), lo que significa: <em>"Confirmo la recepción de tu SYN (byte y) y quedo a la espera del byte y+1 (tus primeros datos)"</em>.</p>
+  </div>
+
+  <div class="question">(b) Números de secuencia: ¿cuáles son los valores y su significado en la captura en el segmento analizado?</div>
+  <div class="answer">
+    <p>En la captura <code>3a_tcp_http_session.pcapng</code>, los números de secuencia y acuse en el Handshake presentan los siguientes valores (tanto en representación relativa de Wireshark como en sus valores absolutos de 32 bits de la red):</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Paso / Trama</th>
+          <th>Extremo Tx → Rx</th>
+          <th>Flags</th>
+          <th>Seq (Relativo / Absoluto)</th>
+          <th>Ack (Relativo / Absoluto)</th>
+          <th>Significado Técnico en la Captura</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1. Trama 1</strong></td>
+          <td>Cliente → Servidor</td>
+          <td><code>[SYN]</code></td>
+          <td class="table-ans">Seq = 0<br>(2699328797)</td>
+          <td>Ack = 0<br>(No válido)</td>
+          <td>El cliente genera de forma pseudoaleatoria su ISN (x). Identifica el inicio del flujo de bytes transmitidos por el cliente hacia el servidor.</td>
+        </tr>
+        <tr>
+          <td><strong>2. Trama 3</strong></td>
+          <td>Servidor → Cliente</td>
+          <td><code>[SYN, ACK]</code></td>
+          <td class="table-ans">Seq = 0<br>(1302559821)</td>
+          <td class="table-ans">Ack = 1<br>(2699328798)</td>
+          <td>El servidor genera su propio ISN (y) y acusa recibo del SYN del cliente solicitando el siguiente byte esperado (x + 1).</td>
+        </tr>
+        <tr>
+          <td><strong>3. Trama 4</strong></td>
+          <td>Cliente → Servidor</td>
+          <td><code>[ACK]</code></td>
+          <td class="table-ans">Seq = 1<br>(2699328798)</td>
+          <td class="table-ans">Ack = 1<br>(1302559822)</td>
+          <td>El cliente confirma el SYN del servidor reconociendo hasta el byte y (solicitando y + 1) y se posiciona en x + 1 listo para enviar datos.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>Significado general de los Números de Secuencia:</strong> TCP es un protocolo orientado al flujo de bytes (<em>byte-stream oriented</em>). Cada byte individual transmitido lleva asignado un número de secuencia correlativo de 32 bits. Esto permite al receptor detectar segmentos duplicados, ordenar segmentos que lleguen desordenados y verificar que no se haya extraviado ningún dato intermedio.</p>
+  </div>
+
+  <div class="question">b) Identifique la conexión lógica mediante el par de sockets asociados:</div>
+  <div class="answer">
+    <p>Una conexión TCP lógica se define de manera unívoca mediante la combinación de las direcciones IP y los números de puerto de ambos extremos (tupla de 4 elementos más el protocolo de transporte):</p>
+    <ul>
+      <li><strong>Socket Local (Cliente):</strong> <code>192.168.0.53:65300</code> (Dirección IP privada de la PC + Puerto efímero dinámico asignado por el S.O.).</li>
+      <li><strong>Socket Remoto (Servidor):</strong> <code>34.223.124.45:80</code> (Dirección IP pública del servidor neverssl.com + Puerto bien conocido 80 de servicio HTTP).</li>
+      <li><strong>Protocolo de transporte:</strong> TCP (identificador de protocolo IP = <code>6</code>).</li>
+      <li><strong>Identificador de canal lógico:</strong> <code>{192.168.0.53:65300 ⇄ 34.223.124.45:80}</code></li>
+    </ul>
+  </div>
+
+  <div class="img-box">
+    <img src="img/img_tcp_data_transfer.png" alt="Wireshark Transferencia de Datos TCP">
+    <div class="img-caption">Figura 2: Captura en Wireshark de la fase de Transferencia de Datos HTTP y segmentación (Tramas 5 a 10 de 3a_tcp_http_session.pcapng).</div>
+  </div>
+
+  <div class="question">c) Transferencia de datos a través de un canal lógico:</div>
+  <div class="question">(1) ¿Cuántos segmentos se emplean para transmitir los datos?</div>
+  <div class="answer">
+    <p>En la fase de transferencia de datos de nuestra sesión HTTP se emplean exactamente <strong>4 segmentos que transportan carga útil de aplicación (Len &gt; 0)</strong>, acompañados por 2 segmentos de acuse de recibo puro (ACK con Len = 0):</p>
+    <ul>
+      <li><strong>1 segmento del cliente:</strong> Trama 5 (solicitud <code>GET / HTTP/1.1</code>, Len = 95 bytes de datos).</li>
+      <li><strong>3 segmentos del servidor:</strong> Tramas 7, 8 y 9 que transportan la respuesta <code>HTTP/1.1 200 OK</code> y el cuerpo HTML (1440 B + 1440 B + 1388 B = <strong>4268 bytes totales</strong> de payload de aplicación).</li>
+      <li><strong>Segmentos de confirmación ACK puros asociados:</strong> Trama 6 (ACK intermedio del servidor reconociendo los 95 bytes del GET) y Trama 10 (ACK acumulativo final del cliente reconociendo los 4268 bytes recibidos del servidor).</li>
+      <li><strong>Total segmentos involucrados en la fase de transferencia:</strong> 6 segmentos (4 con datos + 2 ACKs puros).</li>
+    </ul>
+  </div>
+
+  <div class="question">(2) Repita el mismo análisis para 3 segmentos de la transmisión de datos durante la conexión:<br>
+  (3) ¿cuáles son los valores y su significado en la captura en el segmento analizado?</div>
+  <div class="answer">
+    <p>Analizamos 3 segmentos representativos de la transferencia de datos en la captura:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Segmento</th>
+          <th>Sentido</th>
+          <th>Flags</th>
+          <th>Seq (rel / abs)</th>
+          <th>Ack (rel / abs)</th>
+          <th>Len</th>
+          <th>Win</th>
+          <th>Significado y Función en la Captura</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Trama 5</strong></td>
+          <td>Cliente → Servidor</td>
+          <td><code>[PSH, ACK]</code></td>
+          <td class="table-ans">Seq = 1<br>(2699328798)</td>
+          <td class="table-ans">Ack = 1<br>(1302559822)</td>
+          <td>95 B</td>
+          <td>263424</td>
+          <td>El cliente transmite la solicitud HTTP GET (95 B). <code>Seq=1</code> indica el primer byte de datos. <code>PSH</code> solicita al servidor entregar los datos inmediatamente a la aplicación web.</td>
+        </tr>
+        <tr>
+          <td><strong>Trama 7</strong></td>
+          <td>Servidor → Cliente</td>
+          <td><code>[ACK]</code></td>
+          <td class="table-ans">Seq = 1<br>(1302559822)</td>
+          <td class="table-ans">Ack = 96<br>(2699328893)</td>
+          <td>1440 B</td>
+          <td>27008</td>
+          <td>El servidor acusa recibo del GET con <code>Ack = 96</code> (1 + 95) y transmite el primer bloque de datos HTML (1440 bytes, su tamaño máximo de segmento MSS).</td>
+        </tr>
+        <tr>
+          <td><strong>Trama 8</strong></td>
+          <td>Servidor → Cliente</td>
+          <td><code>[ACK]</code></td>
+          <td class="table-ans">Seq = 1441<br>(1302561262)</td>
+          <td class="table-ans">Ack = 96<br>(2699328893)</td>
+          <td>1440 B</td>
+          <td>27008</td>
+          <td>El servidor continúa enviando el archivo HTML. <code>Seq = 1441</code> (1 + 1440) indica exactamente el byte inicial de este segundo fragmento de datos.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="question">(4) ¿en qué se asemejan y en qué se diferencian de la secuencia analizada para el three-way handshake?</div>
+  <div class="answer">
+    <p>• <strong>Semejanzas:</strong></p>
+    <ul>
+      <li>Ambos procesos utilizan la misma estructura de cabecera TCP estandarizada con campos de 32 bits de <em>Sequence Number</em> y <em>Acknowledgment Number</em>.</li>
+      <li>En ambos casos el campo <code>Ack</code> especifica el próximo número de secuencia que el receptor espera recibir del emisor.</li>
+      <li>En ambos casos cada segmento actualiza el campo <em>Window Size</em> informando el espacio de buffer libre del emisor para el control de flujo continuo.</li>
+    </ul>
+    <p>• <strong>Diferencias:</strong></p>
+    <ul>
+      <li><strong>Flags de control:</strong> En el handshake intervienen los flags de sincronización <code>SYN</code> y <code>SYN-ACK</code>. En la transferencia se utilizan <code>ACK</code> y <code>PSH</code> (Push).</li>
+      <li><strong>Carga útil (Payload / Len):</strong> En el handshake los segmentos no transportan datos de aplicación (<strong>Len = 0 bytes</strong>). En la transferencia los segmentos transportan los bytes reales del protocolo de aplicación (<strong>Len &gt; 0 bytes</strong>).</li>
+      <li><strong>Incremento de Sequence Number:</strong> En el handshake, el flag SYN consume de manera ficticia 1 unidad de secuencia (el ACK responde con $ISN + 1$). En la transferencia, el número de secuencia se incrementa estrictamente en función de la cantidad de bytes reales transmitidos: $Seq_{next} = Seq_{actual} + Len$.</li>
+      <li><strong>Opciones de negociación:</strong> Las opciones TCP avanzadas (MSS, Window Scale, SACK-Permitted) solo se negocian en los segmentos SYN del handshake. Durante la transferencia de datos ya no se renegocian estas capacidades.</li>
+    </ul>
+  </div>
+
+  <div class="question">d) ¿Qué servicios proporciona TCP en el nivel de transporte?</div>
+  <div class="answer">
+    <p>TCP proporciona un conjunto integral de servicios orientados a la conexión:</p>
+    <ol>
+      <li><strong>(1) ¿Ordenamiento y reensamble? SÍ.</strong> TCP asigna un número de secuencia correlativo a cada byte individual. Si los paquetes IP viajan por rutas distintas en Internet y llegan desordenados, el receptor los retiene en su buffer de reensamble y los ordena matemáticamente antes de entregarlos de forma secuencial y transparente a la capa de aplicación.</li>
+      <li><strong>(2) ¿Fiabilidad? SÍ.</strong> Brinda entrega confiable extremo a extremo (<em>Reliable Data Transfer</em>). Garantiza que el flujo de datos entregado a la aplicación destino sea una réplica exacta, completa y no corrompida de lo transmitido, recuperando pérdidas y descartando duplicados mediante el mecanismo PAR (<em>Positive Acknowledgment with Retransmission</em>).</li>
+      <li><strong>(3) ¿Control de errores - Reconocimientos y retransmisiones? SÍ.</strong> Posee un campo <em>Checksum</em> de 16 bits para detectar corrupción de bits (los segmentos corruptos se descartan). Implementa reconocimientos acumulativos (ACKs) y selectivos (SACK). Si el emisor no recibe el ACK antes de que expire el temporizador RTO (<em>Retransmission Timeout</em>), o si recibe 3 ACKs duplicados (<em>Fast Retransmit</em>), retransmite el segmento de inmediato. En nuestra captura se observó la retransmisión del SYN a los 1.007 segundos.</li>
+      <li><strong>(4) ¿Control de flujo? SÍ.</strong> Implementa el algoritmo de <em>Ventana Deslizante</em> (Sliding Window). El receptor notifica en cada segmento el tamaño libre de su buffer mediante el campo <em>Window Size</em>. Si la ventana llega a cero (<em>Zero Window</em>), el emisor frena el envío de datos hasta recibir una actualización de ventana (<em>Window Update</em>), evitando el colapso del buffer del receptor.</li>
+      <li><strong>(5) ¿Multiplexación? SÍ.</strong> Permite que múltiples aplicaciones y procesos compartan concurrentemente la misma interfaz física y la misma dirección IP. Se logra combinando las direcciones IP con los números de puerto origen y destino de 16 bits (puertos efímeros y conocidos), formando sockets independientes.</li>
+      <li><strong>(6) ¿Conexión Full Duplex? SÍ.</strong> Permite la transferencia simultánea y bidireccional de datos en ambos sentidos a través del mismo canal. Cada sentido posee su propia numeración de secuencia y su propia ventana de flujo. Además, TCP utiliza <em>piggybacking</em>, aprovechando los segmentos con datos salientes para transportar los acuses de recibo de los datos recibidos.</li>
+    </ol>
+  </div>
+
+  <div class="img-box">
+    <img src="img/img_tcp_teardown.png" alt="Wireshark Teardown TCP">
+    <div class="img-caption">Figura 3: Captura en Wireshark del Four-Way Handshake de liberación de conexión (Tramas 11 a 14 de 3a_tcp_http_session.pcapng).</div>
+  </div>
+
+  <div class="question">e) Cierre de conexión en el Tx - Cierre de Conexión en el Rx. ¿Cuántos segmentos se emplean para liberar la conexión?</div>
+  <div class="answer">
+    <p>Se emplean <strong>4 segmentos</strong> (proceso <em>Four-Way Handshake</em> de desconexión) debido a que TCP es un canal simétrico Full Duplex donde cada sentido de transmisión debe cerrarse de manera separada e independiente:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Paso / Trama</th>
+          <th>Sentido</th>
+          <th>Flags</th>
+          <th>Seq</th>
+          <th>Ack</th>
+          <th>Transición de Estados Finitos de TCP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1. Trama 11</strong></td>
+          <td>Servidor → Cliente</td>
+          <td><code>[FIN, ACK]</code></td>
+          <td>4269</td>
+          <td>96</td>
+          <td>El servidor anuncia fin de transmisión. Servidor pasa a <code>FIN_WAIT_1</code>. Cliente pasa a <code>CLOSE_WAIT</code>.</td>
+        </tr>
+        <tr>
+          <td><strong>2. Trama 12</strong></td>
+          <td>Cliente → Servidor</td>
+          <td><code>[ACK]</code></td>
+          <td>96</td>
+          <td>4270</td>
+          <td>El cliente acusa recibo del FIN (4269 + 1). Servidor pasa a <code>FIN_WAIT_2</code>.</td>
+        </tr>
+        <tr>
+          <td><strong>3. Trama 13</strong></td>
+          <td>Cliente → Servidor</td>
+          <td><code>[FIN, ACK]</code></td>
+          <td>96</td>
+          <td>4270</td>
+          <td>El cliente finaliza su propio sentido de transmisión. Cliente pasa a <code>LAST_ACK</code>.</td>
+        </tr>
+        <tr>
+          <td><strong>4. Trama 14</strong></td>
+          <td>Servidor → Cliente</td>
+          <td><code>[ACK]</code></td>
+          <td>4270</td>
+          <td>97</td>
+          <td>El servidor acusa recibo del FIN del cliente (96 + 1). Servidor pasa a <code>TIME_WAIT</code> (espera 2*MSL) y cliente pasa a <code>CLOSED</code>.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr style="border: 0; border-top: 1px solid #cbd5e1; margin: 25px 0;">
+
+  <h3 class="subsection-title">b. Análisis del tráfico que produce un protocolo no orientado a la conexión (UDP)</h3>
+
+  <div class="question">1) Ejecute una aplicación TCP / IP que emplee el protocolo UDP e inicie una captura con el analizador de protocolos:</div>
+  <div class="question">a) Verifique que el protocolo pueda ser empleado.<br>
+  b) Ejecute una captura del tráfico cursado entre los hosts.<br>
+  c) Desde la PC asignada ejecute la aplicación a la dirección IP destino.</div>
+  <div class="answer">
+    <p>Se ejecutó la aplicación fundamental de resolución de nombres de dominio <strong>DNS (Domain Name System)</strong> sobre el protocolo de transporte <strong>UDP</strong>, enviando una consulta estándar para el registro A de <code>www.frba.utn.edu.ar</code> hacia el servidor DNS público de Google <code>8.8.8.8</code> en el puerto bien conocido <code>53</code>.</p>
+    <ul>
+      <li><strong>Verificación y captura:</strong> Se capturó el tráfico en Wireshark/tshark con el filtro <code>udp port 53 and host 8.8.8.8</code>. La consulta y respuesta se completaron en 3.7 milisegundos de forma atómica.</li>
+      <li><strong>Archivo de captura resguardado:</strong> <code>capturas/3b_udp_dns_query.pcapng</code> (2 datagramas registrados).</li>
+      <li><strong>Direccionamiento y sockets:</strong>
+        <ul>
+          <li>Consulta (Trama 1): <code>192.168.0.53:56459 → 8.8.8.8:53</code> (UDP Len = 45 B, Checksum = 0xd12b).</li>
+          <li>Respuesta (Trama 2): <code>8.8.8.8:53 → 192.168.0.53:56459</code> (UDP Len = 75 B, Checksum = 0xcba4, Resuelve CNAME a <code>frba.utn.edu.ar</code> y dirección IPv4 <code>200.89.153.22</code>).</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="img-box">
+    <img src="img/img_udp_dns.png" alt="Wireshark UDP DNS">
+    <div class="img-caption">Figura 4: Captura en Wireshark de la consulta y respuesta DNS sobre UDP (Tramas 1 y 2 de 3b_udp_dns_query.pcapng).</div>
+  </div>
+
+  <div class="question">2) Analice el tráfico cursado, graficando la comunicación de tramas y verifique lo siguiente:</div>
+  <div class="question">a) Si UDP proporciona los siguientes servicios en el nivel de transporte:</div>
+  <div class="answer">
+    <ol>
+      <li><strong>(1) ¿Conexión? NO.</strong> UDP es un protocolo <strong>no orientado a la conexión</strong> (<em>Connectionless</em>). No existe una fase previa de handshake para acordar parámetros ni una fase posterior de cierre o liberación. Cada datagrama se transmite de forma totalmente autónoma e independiente hacia la dirección IP y puerto destino.</li>
+      <li><strong>(2) ¿Fiabilidad? NO.</strong> Ofrece un servicio de entrega de <strong>mejor esfuerzo</strong> (<em>Best-Effort</em>). No garantiza que el datagrama llegue a destino, no implementa acuses de recibo (ACKs), no detecta pérdida de paquetes, no retransmite automáticamente ni previene la duplicación de datagramas. La fiabilidad, si se requiere, debe ser programada íntegramente en la capa de aplicación.</li>
+      <li><strong>(3) ¿Control de Flujo? NO.</strong> El encabezado UDP no posee campo de ventana (<em>Window Size</em>) ni ningún mecanismo de retroalimentación de flujo. UDP envía los datagramas a la tasa que la aplicación se los entrega; si el buffer del receptor o de los routers intermediarios se satura, los datagramas simplemente se descartan.</li>
+      <li><strong>(4) ¿Control de errores? PARCIAL.</strong>
+        <ul>
+          <li>Provee <strong>detección de corrupción de bits</strong> mediante el campo <em>Checksum</em> de 16 bits (en nuestra captura: <code>0xd12b</code> y <code>0xcba4</code>), que cubre el pseudoencabezado IP, el encabezado UDP y los datos.</li>
+          <li>Sin embargo, <strong>NO posee recuperación ni control de errores por pérdidas</strong>: si el receptor detecta un checksum inválido, descarta el datagrama silenciosamente sin notificar al emisor ni solicitar retransmisión. En IPv4 el uso del checksum es opcional, mientras que en IPv6 es obligatorio.</li>
+        </ul>
+      </li>
+      <li><strong>(5) ¿Multiplexación? SÍ.</strong> Al igual que TCP, UDP brinda multiplexación y demultiplexación en Capa 4 a través de los campos de 16 bits <em>Source Port</em> (puerto efímero del cliente <code>56459</code>) y <em>Destination Port</em> (puerto conocido <code>53</code> de DNS), permitiendo que múltiples procesos de red utilicen simultáneamente la misma pila de red IP sin colisiones.</li>
+    </ol>
+  </div>
+
+  <div class="img-box">
+    <img src="img/img_dhcp_dora.png" alt="Wireshark DHCP DORA">
+    <div class="img-caption">Figura 5: Captura en Wireshark del ciclo completo DHCP DORA sobre UDP puertos 67/68 (dhcp.pcap).</div>
+  </div>
+
+  <div class="img-box">
+    <img src="img/img_ftp_session.png" alt="Wireshark Sesión FTP">
+    <div class="img-caption">Figura 6: Captura en Wireshark de la sesión FTP mostrando Canal de Control (puerto 21) y Canal de Datos pasivo (puerto 1040) (3d_tcp_ftp_session.pcapng).</div>
+  </div>
+
+  <div class="question">3) Realice el siguiente cálculo para determinar el encapsulamiento de un segmento UDP y otro TCP:</div>
+  <div class="question">DHCP – HTTP – HTTPS – FTP – DNS</div>
+  <div class="question">a) Estudie los procesos / servicios de segmentación, ordenamiento y reensamble; multiplexación; encapsulamiento; conexión; confiabilidad; control de flujo y control de errores que el protocolo TCP o UDP le brindan a cada protocolo de aplicación, en cada caso.</div>
+  <div class="answer">
+    <p>A continuación se fundamenta la elección del protocolo de transporte (TCP o UDP) y el rol de cada proceso para las 5 aplicaciones requeridas:</p>
+    <ul>
+      <li><strong>1. DHCP (Dynamic Host Configuration Protocol) → Utiliza UDP (Puertos 67 Servidor / 68 Cliente):</strong>
+        <br><em>Justificación:</em> Cuando un host cliente se inicia en la red, <strong>carece de dirección IP asignada</strong>, no conoce la máscara de subred ni el gateway. Por ende, es matemáticamente imposible establecer una conexión TCP (que exige direcciones IP unicast en emisor y receptor para el handshake). DHCP requiere datagramas difundidos por <em>Broadcast</em> (IP destino <code>255.255.255.255</code> y MAC destino <code>ff:ff:ff:ff:ff:ff</code>) mediante transacciones cortas e independientes (Discover, Offer, Request, ACK). UDP no añade sobrecarga de conexión ni control de flujo innecesario.</li>
+      <li><strong>2. HTTP (Hypertext Transfer Protocol) → Utiliza TCP (Puerto 80):</strong>
+        <br><em>Justificación:</em> La transferencia de documentos web (HTML, JavaScript, CSS, imágenes) exige <strong>cero tolerancia a pérdidas o corrupción de bits</strong>; la pérdida de una sola etiqueta o carácter corrompería la página o el script. TCP brinda entrega confiable, ordenamiento estricto y control de flujo adaptado a la memoria del navegador.</li>
+      <li><strong>3. HTTPS (HTTP Secure over TLS/SSL) → Utiliza TCP (Puerto 443):</strong>
+        <br><em>Justificación:</em> La capa criptográfica TLS/SSL opera como una máquina de estados secuencial basada en registros cifrados en bloques o streams continuos. Si un solo segmento se perdiera, duplicara o alterara su orden, el receptor no podría descifrar los bloques posteriores debido a la desincronización de los vectores de inicialización (IV) y números de secuencia de los MACs criptográficos. Exige fiabilidad absoluta e incondicional en Capa 4.</li>
+      <li><strong>4. FTP (File Transfer Protocol) → Utiliza TCP (Puertos 21 Control / 20 o Dinámico Datos):</strong>
+        <br><em>Justificación:</em> FTP implementa una arquitectura de dos conexiones paralelas: una conexión de control (puerto 21) para autenticación y comandos de estado, y una conexión de datos (puerto 20 o dinámico negociado en PASV) para transferir archivos binarios completos. Cualquier pérdida de bytes corrompería irreversiblemente los archivos descargados o subidos, haciendo indispensable la garantía de confiabilidad y reordenamiento de TCP.</li>
+      <li><strong>5. DNS (Domain Name System) → Utiliza UDP (Puerto 53) primario / TCP (Puerto 53) secundario:</strong>
+        <br><em>Justificación:</em>
+        <ul>
+          <li><em>Uso primario de UDP:</em> Las consultas de nombres constan de un único mensaje de pregunta y un único mensaje de respuesta. Utilizar TCP requeriría 3 paquetes de handshake + 4 de teardown para resolver un nombre, triplicando la latencia y sobrecargando masivamente los servidores raíz y TLD de Internet.</li>
+          <li><em>Uso de TCP:</em> Se utiliza cuando la respuesta excede los 512 bytes del datagrama UDP tradicional (o el buffer negociado en EDNS0) y el servidor activa el bit TC (<em>Truncated</em>), forzando al cliente a reintentar por TCP. También se emplea obligatoriamente para transferencias de zona completa (<em>Zone Transfers</em> - AXFR/IXFR) entre servidores primarios y secundarios, donde se requiere transferir bases de datos íntegras sin errores.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="question">b) Para cada proceso o servicio, identifique los campos y parámetros (valores) del encabezado de TCP / UDP que intervienen, tanto en el Tx como en el Rx, indicando un ejemplo de cada caso:</div>
+  <div class="answer">
+    <table>
+      <thead>
+        <tr>
+          <th>Proceso / Servicio</th>
+          <th>Protocolo</th>
+          <th>Campos en Tx (Emisor)</th>
+          <th>Campos en Rx (Receptor)</th>
+          <th>Ejemplo con Datos Reales de la Captura</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2"><strong>1. Segmentación</strong></td>
+          <td><strong>TCP</strong></td>
+          <td>Opción <code>MSS</code> (Maximum Segment Size = 1460 B en SYN), Carga útil <code>Len</code>.</td>
+          <td>Opción <code>MSS</code> (1440 B en SYN-ACK), ensambla segmentos hasta agotar el flujo.</td>
+          <td class="table-ans">Servidor fragmenta respuesta HTTP de 4268 B en 3 segmentos: 1440 B (Trama 7) + 1440 B (Trama 8) + 1388 B (Trama 9).</td>
+        </tr>
+        <tr>
+          <td><strong>UDP</strong></td>
+          <td>No segmenta en L4 (toma el bloque completo hasta 65535 B).</td>
+          <td>No segmenta (delega la fragmentación a IP en L3 si excede la MTU).</td>
+          <td class="table-ans">Consulta DNS enviada en un único datagrama atómico de 45 B (UDP Length = 45 B).</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><strong>2. Ordenamiento y Reensamble</strong></td>
+          <td><strong>TCP</strong></td>
+          <td><code>Sequence Number</code> (32 bits, avanza por cada byte de datos enviado).</td>
+          <td>Verifica <code>Seq</code> recibido, almacena en buffer de reensamble y ordena correlativamente.</td>
+          <td class="table-ans">Trama 7: Seq=1 (1440 B) → Trama 8: Seq=1441 (1440 B) → Trama 9: Seq=2881 (1388 B).</td>
+        </tr>
+        <tr>
+          <td><strong>UDP</strong></td>
+          <td>Inexistente (no tiene campo de secuencia).</td>
+          <td>Inexistente (entrega a la aplicación en el orden de llegada).</td>
+          <td class="table-ans">No posee campos en la cabecera de 8 bytes de UDP.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><strong>3. Multiplexación</strong></td>
+          <td><strong>TCP</strong></td>
+          <td><code>Source Port</code> (16 bits) = 65300,<br><code>Destination Port</code> = 80.</td>
+          <td>Invierte simétricamente: <code>Source Port</code> = 80,<br><code>Destination Port</code> = 65300.</td>
+          <td class="table-ans">Permite asociar la respuesta al socket exacto del navegador web del cliente.</td>
+        </tr>
+        <tr>
+          <td><strong>UDP</strong></td>
+          <td><code>Source Port</code> = 56459,<br><code>Destination Port</code> = 53.</td>
+          <td>Invierte: <code>Source Port</code> = 53,<br><code>Destination Port</code> = 56459.</td>
+          <td class="table-ans">Permite encaminar la respuesta DNS al proceso local que lanzó la resolución de nombres.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><strong>4. Encapsulamiento</strong></td>
+          <td><strong>TCP</strong></td>
+          <td><code>Data Offset</code> (4 bits, ej. 5 = 20B base o 8 = 32B con opciones), <code>Checksum</code>.</td>
+          <td>Lee <code>Data Offset</code> para conocer inicio del payload de aplicación.</td>
+          <td class="table-ans">Trama 5: Cabecera TCP = 20 B, Payload HTTP = 95 B → Total Segmento = 115 B.</td>
+        </tr>
+        <tr>
+          <td><strong>UDP</strong></td>
+          <td><code>Length</code> (16 bits, cabecera 8B + datos) = 45 B, <code>Checksum</code> = 0xd12b.</td>
+          <td>Comprueba <code>Length</code> y valida <code>Checksum</code> con pseudoencabezado IP.</td>
+          <td class="table-ans">Trama 1 DNS: UDP Length = 45 B (8 B cabecera + 37 B consulta DNS).</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><strong>5. Conexión</strong></td>
+          <td><strong>TCP</strong></td>
+          <td>Flags de control: <code>SYN</code>, <code>ACK</code>, <code>FIN</code>, <code>RST</code>.</td>
+          <td>Evalúa flags y transiciona máquina de estados finitos (ESTABLISHED, CLOSE_WAIT).</td>
+          <td class="table-ans">Trama 1: SYN (inicio) → Trama 3: SYN-ACK → Trama 11: FIN-ACK (cierre).</td>
+        </tr>
+        <tr>
+          <td><strong>UDP</strong></td>
+          <td>Inexistente (sin flags de conexión).</td>
+          <td>Inexistente (sin máquina de estados).</td>
+          <td class="table-ans">Tráfico puramente no orientado a la conexión.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><strong>6. Confiabilidad</strong></td>
+          <td><strong>TCP</strong></td>
+          <td>Temporizadores de retransmisión (RTO), registro de paquetes sin confirmar.</td>
+          <td><code>Acknowledgment Number</code> (32 bits, confirma hasta el byte n y solicita n+1).</td>
+          <td class="table-ans">Trama 10: Ack = 4269 confirmando los 4268 bytes recibidos del servidor. Retransmisión SYN Trama 2.</td>
+        </tr>
+        <tr>
+          <td><strong>UDP</strong></td>
+          <td>Inexistente (sin acuses de recibo ni retransmisiones).</td>
+          <td>Inexistente (no confirma recepción).</td>
+          <td class="table-ans">Si se pierde la consulta DNS, el cliente reintenta a nivel de aplicación tras un timeout.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><strong>7. Control de Flujo</strong></td>
+          <td><strong>TCP</strong></td>
+          <td>Respeta la ventana del receptor: no envía más bytes que <code>Window Size</code>.</td>
+          <td>Informa espacio libre de buffer: campo <code>Window Size</code> (16 bits) + <code>Window Scale</code>.</td>
+          <td class="table-ans">Trama 1: W1 = 64240 B. Trama 3: W2 = 26883 B. Trama 4: Ventana cliente actualizada a 263424 B.</td>
+        </tr>
+        <tr>
+          <td><strong>UDP</strong></td>
+          <td>Inexistente (transmite a la tasa que impone la aplicación).</td>
+          <td>Inexistente (no puede frenar al emisor).</td>
+          <td class="table-ans">Si el receptor no da abasto procesando datagramas, se descartan silenciosamente.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><strong>8. Control de Errores</strong></td>
+          <td><strong>TCP</strong></td>
+          <td><code>Checksum</code> (16 bits) calculado sobre pseudoencabezado + cabecera + payload.</td>
+          <td>Verifica Checksum; si falla, descarta el segmento y no envía ACK (fuerza retransmisión).</td>
+          <td class="table-ans">Trama 5: Checksum = 0x937c [validado con éxito por el receptor].</td>
+        </tr>
+        <tr>
+          <td><strong>UDP</strong></td>
+          <td><code>Checksum</code> (16 bits) calculado sobre pseudoencabezado IP + cabecera UDP + datos.</td>
+          <td>Verifica Checksum; si falla, descarta silenciosamente (sin aviso al emisor).</td>
+          <td class="table-ans">Trama 1: Checksum = 0xd12b. Trama 2: Checksum = 0xcba4 [validado].</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="question">c) Cálculo detallado para determinar el encapsulamiento de un segmento UDP y otro TCP:</div>
+  <div class="answer">
+    <p>Se realiza el cálculo matemático riguroso de encapsulamiento capa por capa comparando la trama TCP (petición HTTP GET) contra la trama UDP (consulta DNS):</p>
+
+    <h4 style="color: #1e3a8a; margin: 10px 0 5px 0;">1. Encapsulamiento del Segmento TCP (Petición HTTP GET - Trama 5):</h4>
+    <ul>
+      <li><strong>Capa 7 - Aplicación (HTTP GET):</strong> <code>GET / HTTP/1.1
+Host: neverssl.com
+...</code> = <strong>95 bytes</strong> de carga útil.</li>
+      <li><strong>Capa 4 - Transporte (TCP):</strong> Cabecera base sin opciones: Puerto Origen (2 B) + Puerto Destino (2 B) + Sequence Number (4 B) + Acknowledgment Number (4 B) + Data Offset/Reserved/Flags (2 B) + Window Size (2 B) + Checksum (2 B) + Urgent Pointer (2 B) = <strong>20 bytes</strong>.</li>
+      <li><strong>Capa 3 - Red (IPv4):</strong> Cabecera IPv4 estándar: Versión/IHL (1 B) + DSCP/ECN (1 B) + Total Length = 135 B (2 B) + Identification (2 B) + Flags/Fragment Offset (2 B) + TTL (1 B) + Protocol = 6 TCP (1 B) + Header Checksum (2 B) + IP Origen (4 B) + IP Destino (4 B) = <strong>20 bytes</strong>.</li>
+      <li><strong>Capa 2 - Enlace de Datos (Ethernet II):</strong> MAC Destino (6 B) + MAC Origen (6 B) + EtherType 0x0800 (2 B) = <strong>14 bytes</strong> (más 4 bytes de cola FCS verificada por el hardware = 18 B).</li>
+    </ul>
+    <p><strong>Cálculo de Longitud Total de la Trama TCP:</strong></p>
+    <pre>Longitud Trama (Wire) = 14 (Eth) + 20 (IP) + 20 (TCP) + 95 (HTTP) = 149 Bytes (153 B con FCS)
+Eficiencia de Datos Útiles (Payload Ratio) = 95 / 149 = 63.76 %
+Sobrecarga Total de Protocolos (Overhead)  = 54 / 149 = 36.24 %
+(los 20 B de la cabecera TCP representan el 13.42 % de la trama total)</pre>
+
+    <h4 style="color: #1e3a8a; margin: 10px 0 5px 0;">2. Encapsulamiento del Segmento UDP (Consulta DNS Query - Trama 1):</h4>
+    <ul>
+      <li><strong>Capa 7 - Aplicación (DNS Query):</strong> Encabezado DNS (Transaction ID, Flags, Questions Count) + Consulta por registro A de <code>www.frba.utn.edu.ar</code> = <strong>37 bytes</strong> de carga útil.</li>
+      <li><strong>Capa 4 - Transporte (UDP):</strong> Encabezado mínimo fijo: Source Port (2 B) + Destination Port (2 B) + Length (2 B) + Checksum (2 B) = <strong>8 bytes</strong>.</li>
+      <li><strong>Capa 3 - Red (IPv4):</strong> Cabecera IPv4 estándar (Total Length = 65 bytes, Protocol = 17 UDP) = <strong>20 bytes</strong>.</li>
+      <li><strong>Capa 2 - Enlace de Datos (Ethernet II):</strong> Cabecera MAC Ethernet II = <strong>14 bytes</strong> (más 4 bytes de FCS = 18 B).</li>
+    </ul>
+    <p><strong>Cálculo de Longitud Total de la Trama UDP:</strong></p>
+    <pre>Longitud Trama (Wire) = 14 (Eth) + 20 (IP) + 8 (UDP) + 37 (DNS) = 79 Bytes (83 B con FCS)
+Eficiencia de Datos Útiles (Payload Ratio) = 37 / 79 = 46.84 %
+Sobrecarga Total de Protocolos (Overhead)  = 42 / 79 = 53.16 %
+(los 8 B de la cabecera UDP representan solo el 10.13 % de la trama total)</pre>
+
+    <p><strong>Conclusión Comparativa del Encapsulamiento:</strong><br>
+    El encabezado UDP introduce una sobrecarga mínima constante de <strong>8 bytes</strong>, lo que representa una <strong>reducción del 60% en sobrecarga de transporte</strong> frente a los 20 bytes mínimos de TCP (o hasta 60 bytes cuando TCP incluye opciones de sincronización como MSS, Window Scale, SACK y Timestamps). Esto optimiza la velocidad y latencia en transacciones cortas (DNS, DHCP, streaming de audio/video en tiempo real), mientras que TCP justifica sus 20 bytes adicionales aportando control de congestión, control de flujo, ordenamiento y entrega confiable garantizada.</p>
+  </div>
+
+  <div class="page-break"></div>
+
+  <h3 class="subsection-title">CRITERIO DE AUTOEVALUACION</h3>
+  <div class="answer" style="background: #f0fdf4; border-left: 3px solid #22c55e; color: #166534;">
+    <p><strong>Verificación de Objetivos Alcanzados:</strong></p>
+    <ol>
+      <li><strong>Ejecución experimental completa:</strong> Se capturaron y resguardaron satisfactoriamente en la carpeta <code>wireshark/TL6/capturas/</code> las trazas reales de los 5 protocolos analizados:
+        <ul>
+          <li><code>3a_tcp_http_session.pcapng</code>: Sesión TCP HTTP completa (handshake de 3 vías, transferencia segmentada y liberación en 4 vías).</li>
+          <li><code>3b_udp_dns_query.pcapng</code>: Consulta y respuesta DNS atómica sobre datagramas UDP.</li>
+          <li><code>dhcp.pcap</code>: Proceso DORA sobre UDP puertos 67 y 68.</li>
+          <li><code>3c_tcp_https_session.pcapng</code>: Sesión HTTPS/TLS sobre TCP puerto 443.</li>
+          <li><code>3d_tcp_ftp_session.pcapng</code>: Sesión FTP con canal de control (21) y canal de datos (1040).</li>
+        </ul>
+      </li>
+      <li><strong>Respaldo de respuestas teóricas y experimentales:</strong> Cada pregunta del cuestionario fue respondida exhaustivamente con texto explicativo, fundamentación teórica de acuerdo a los estándares RFC y valores numéricos exactos extraídos de las capturas de laboratorio.</li>
+    </ol>
+  </div>
+
+</body>
+</html>

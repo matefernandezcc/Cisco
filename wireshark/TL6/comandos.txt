@@ -1,0 +1,238 @@
+===============================================================================
+UTN - FRBA | Redes de Datos - Cuarto Nivel
+TRABAJO DE LABORATORIO Nº 6: Análisis de segmentos y aplicaciones de red en Ethernet
+Alumnos: Mateo Fernández y Agustin Toledo
+===============================================================================
+
+=== 1. DATOS DE RED DEL HOST (IPCONFIG /ALL) ===
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : DESKTOP-B7E9HII
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Unknown adapter Tailscale:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Tailscale Tunnel
+   Physical Address. . . . . . . . . : 
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::d8ff:5060:f230:9168%6(Preferred) 
+   Autoconfiguration IPv4 Address. . : 169.254.83.107(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . : 
+   DNS Servers . . . . . . . . . . . : fec0:0:0:ffff::1%1
+                                       fec0:0:0:ffff::2%1
+                                       fec0:0:0:ffff::3%1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Realtek Gaming GbE Family Controller
+   Physical Address. . . . . . . . . : B4-2E-99-56-09-3D
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::9a23:2aea:4eb3:43bd%10(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.0.53(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : jueves, 29 de octubre de 2026 10:28:47
+   Lease Expires . . . . . . . . . . : jueves, 29 de octubre de 2026 15:18:43
+   Default Gateway . . . . . . . . . : 192.168.0.1
+   DHCP Server . . . . . . . . . . . : 192.168.0.1
+   DHCPv6 IAID . . . . . . . . . . . : 162803353
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2C-80-3A-CF-B4-2E-99-56-09-3D
+   DNS Servers . . . . . . . . . . . : 8.8.8.8
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Ethernet adapter XLink Kai Loopback PS3 e1e2:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft KM-TEST Loopback Adapter
+   Physical Address. . . . . . . . . : 02-EE-4D-C2-E1-E2
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::b7b2:ccb5:bc28:7f6b%4(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 10.253.225.226(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 1057095756
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2C-80-3A-CF-B4-2E-99-56-09-3D
+   DNS Servers . . . . . . . . . . . : fec0:0:0:ffff::1%1
+                                       fec0:0:0:ffff::2%1
+                                       fec0:0:0:ffff::3%1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Unknown adapter Local Area Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : TAP-Windows Adapter V9
+   Physical Address. . . . . . . . . : 00-FF-70-C8-8D-C1
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Wi-Fi:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Intel(R) Wi-Fi 6E AX210 160MHz
+   Physical Address. . . . . . . . . : 4C-03-4F-03-FC-CD
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   Physical Address. . . . . . . . . : 4C-03-4F-03-FC-CE
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
+   Physical Address. . . . . . . . . : 4E-03-4F-03-FC-CD
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Bluetooth Device (Personal Area Network)
+   Physical Address. . . . . . . . . : 4C-03-4F-03-FC-D1
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Ethernet adapter vEthernet (Default Switch):
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Hyper-V Virtual Ethernet Adapter
+   Physical Address. . . . . . . . . : 00-15-5D-D5-A7-16
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::cf0c:c93a:be77:9735%26(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 172.18.224.1(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.240.0
+   Default Gateway . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 436213085
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2C-80-3A-CF-B4-2E-99-56-09-3D
+   DNS Servers . . . . . . . . . . . : fec0:0:0:ffff::1%1
+                                       fec0:0:0:ffff::2%1
+                                       fec0:0:0:ffff::3%1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+
+=== 2. TSHARK: SESION TCP HTTP (3a_tcp_http_session.pcapng) ===
+    1 0.000000000 192.168.0.53 â†’ 34.223.124.45 TCP 66 65300 â†’ 80 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 WS=256 SACK_PERM
+    2 1.007536900 192.168.0.53 â†’ 34.223.124.45 TCP 66 [TCP Retransmission] 65300 â†’ 80 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 WS=256 SACK_PERM
+    3 1.215834600 34.223.124.45 â†’ 192.168.0.53 TCP 66 80 â†’ 65300 [SYN, ACK] Seq=0 Ack=1 Win=26883 Len=0 MSS=1440 SACK_PERM WS=128
+    4 1.215892900 192.168.0.53 â†’ 34.223.124.45 TCP 54 65300 â†’ 80 [ACK] Seq=1 Ack=1 Win=263424 Len=0
+    5 1.227047200 192.168.0.53 â†’ 34.223.124.45 HTTP 149 GET / HTTP/1.1 
+    6 1.435341600 34.223.124.45 â†’ 192.168.0.53 TCP 60 80 â†’ 65300 [ACK] Seq=1 Ack=96 Win=27008 Len=0
+    7 2.177497900 34.223.124.45 â†’ 192.168.0.53 TCP 1494 HTTP/1.1 200 OK 
+    8 2.177498600 34.223.124.45 â†’ 192.168.0.53 TCP 1494 80 â†’ 65300 [ACK] Seq=1441 Ack=96 Win=27008 Len=1440
+    9 2.177499100 34.223.124.45 â†’ 192.168.0.53 HTTP 1442 HTTP/1.1 200 OK  (text/html)
+   10 2.177528400 192.168.0.53 â†’ 34.223.124.45 TCP 54 65300 â†’ 80 [ACK] Seq=96 Ack=4269 Win=263424 Len=0
+   11 2.177590600 34.223.124.45 â†’ 192.168.0.53 TCP 60 80 â†’ 65300 [FIN, ACK] Seq=4269 Ack=96 Win=27008 Len=0
+   12 2.177601000 192.168.0.53 â†’ 34.223.124.45 TCP 54 65300 â†’ 80 [ACK] Seq=96 Ack=4270 Win=263424 Len=0
+   13 2.178122400 192.168.0.53 â†’ 34.223.124.45 TCP 54 65300 â†’ 80 [FIN, ACK] Seq=96 Ack=4270 Win=263424 Len=0
+   14 2.385527700 34.223.124.45 â†’ 192.168.0.53 TCP 60 80 â†’ 65300 [ACK] Seq=4270 Ack=97 Win=27008 Len=0
+
+
+=== 3. DETALLE DE CAMPOS TCP EN 3a_tcp_http_session.pcapng ===
+No	Time	SrcIP	DstIP	SrcPort	DstPort	Flags	SeqRel	SeqRaw	AckRel	AckRaw	Len	WinSize	Info
+1	0.000000000	192.168.0.53	34.223.124.45	65300	80	Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·SÂ·	0	2699328797	0	0	0	64240	65300 â†’ 80 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 WS=256 SACK_PERM
+2	1.007536900	192.168.0.53	34.223.124.45	65300	80	Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·SÂ·	0	2699328797	0	0	0	64240	[TCP Retransmission] 65300 â†’ 80 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 WS=256 SACK_PERM
+3	1.215834600	34.223.124.45	192.168.0.53	80	65300	Â·Â·Â·Â·Â·Â·Â·AÂ·Â·SÂ·	0	1302559821	1	2699328798	0	26883	80 â†’ 65300 [SYN, ACK] Seq=0 Ack=1 Win=26883 Len=0 MSS=1440 SACK_PERM WS=128
+4	1.215892900	192.168.0.53	34.223.124.45	65300	80	Â·Â·Â·Â·Â·Â·Â·AÂ·Â·Â·Â·	1	2699328798	1	1302559822	0	263424	65300 â†’ 80 [ACK] Seq=1 Ack=1 Win=263424 Len=0
+5	1.227047200	192.168.0.53	34.223.124.45	65300	80	Â·Â·Â·Â·Â·Â·Â·APÂ·Â·Â·	1	2699328798	1	1302559822	95	263424	GET / HTTP/1.1 
+6	1.435341600	34.223.124.45	192.168.0.53	80	65300	Â·Â·Â·Â·Â·Â·Â·AÂ·Â·Â·Â·	1	1302559822	96	2699328893	0	27008	80 â†’ 65300 [ACK] Seq=1 Ack=96 Win=27008 Len=0
+7	2.177497900	34.223.124.45	192.168.0.53	80	65300	Â·Â·Â·Â·Â·Â·Â·AÂ·Â·Â·Â·	1	1302559822	96	2699328893	1440	27008	HTTP/1.1 200 OK 
+8	2.177498600	34.223.124.45	192.168.0.53	80	65300	Â·Â·Â·Â·Â·Â·Â·AÂ·Â·Â·Â·	1441	1302561262	96	2699328893	1440	27008	80 â†’ 65300 [ACK] Seq=1441 Ack=96 Win=27008 Len=1440
+9	2.177499100	34.223.124.45	192.168.0.53	80	65300	Â·Â·Â·Â·Â·Â·Â·APÂ·Â·Â·	2881	1302562702	96	2699328893	1388	27008	HTTP/1.1 200 OK  (text/html)
+10	2.177528400	192.168.0.53	34.223.124.45	65300	80	Â·Â·Â·Â·Â·Â·Â·AÂ·Â·Â·Â·	96	2699328893	4269	1302564090	0	263424	65300 â†’ 80 [ACK] Seq=96 Ack=4269 Win=263424 Len=0
+11	2.177590600	34.223.124.45	192.168.0.53	80	65300	Â·Â·Â·Â·Â·Â·Â·AÂ·Â·Â·F	4269	1302564090	96	2699328893	0	27008	80 â†’ 65300 [FIN, ACK] Seq=4269 Ack=96 Win=27008 Len=0
+12	2.177601000	192.168.0.53	34.223.124.45	65300	80	Â·Â·Â·Â·Â·Â·Â·AÂ·Â·Â·Â·	96	2699328893	4270	1302564091	0	263424	65300 â†’ 80 [ACK] Seq=96 Ack=4270 Win=263424 Len=0
+13	2.178122400	192.168.0.53	34.223.124.45	65300	80	Â·Â·Â·Â·Â·Â·Â·AÂ·Â·Â·F	96	2699328893	4270	1302564091	0	263424	65300 â†’ 80 [FIN, ACK] Seq=96 Ack=4270 Win=263424 Len=0
+14	2.385527700	34.223.124.45	192.168.0.53	80	65300	Â·Â·Â·Â·Â·Â·Â·AÂ·Â·Â·Â·	4270	1302564091	97	2699328894	0	27008	80 â†’ 65300 [ACK] Seq=4270 Ack=97 Win=27008 Len=0
+
+
+=== 4. TSHARK: CONSULTA Y RESPUESTA UDP DNS (3b_udp_dns_query.pcapng) ===
+No	Time	SrcIP	DstIP	SrcPort	DstPort	Length	Checksum	Info
+1	0.000000000	192.168.0.53	8.8.8.8	56459	53	45	0xd12b	Standard query 0x752f A www.frba.utn.edu.ar
+2	0.003742600	8.8.8.8	192.168.0.53	53	56459	75	0xcba4	Standard query response 0x752f A www.frba.utn.edu.ar CNAME frba.utn.edu.ar A 200.89.153.22
+
+
+=== 5. TSHARK: TRANSACCION DHCP DORA (dhcp.pcap) ===
+    1   0.000000      0.0.0.0 â†’ 255.255.255.255 DHCP 314 DHCP Discover - Transaction ID 0x3d1d
+    2   0.000295  192.168.0.1 â†’ 192.168.0.10 DHCP 342 DHCP Offer    - Transaction ID 0x3d1d
+    3   0.070031      0.0.0.0 â†’ 255.255.255.255 DHCP 314 DHCP Request  - Transaction ID 0x3d1e
+    4   0.070345  192.168.0.1 â†’ 192.168.0.10 DHCP 342 DHCP ACK      - Transaction ID 0x3d1e
+
+
+=== 6. TSHARK: SESION FTP CONTROL Y DATOS (3d_tcp_ftp_session.pcapng) ===
+    1 0.000000000 192.168.0.53 â†’ 194.108.117.16 TCP 66 49153 â†’ 21 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 WS=256 SACK_PERM
+    2 0.237889900 194.108.117.16 â†’ 192.168.0.53 TCP 66 21 â†’ 49153 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1440 WS=256 SACK_PERM
+    3 0.237952900 192.168.0.53 â†’ 194.108.117.16 TCP 54 49153 â†’ 21 [ACK] Seq=1 Ack=1 Win=263424 Len=0
+    4 0.475983600 194.108.117.16 â†’ 192.168.0.53 FTP 225 Response: 220-Welcome to test.rebex.net!
+    5 0.476171600 192.168.0.53 â†’ 194.108.117.16 FTP 65 Request: USER demo
+    6 0.714221400 194.108.117.16 â†’ 192.168.0.53 FTP 130 Response: 331 Anonymous login OK, send your complete email address as your password.
+    7 0.714379900 192.168.0.53 â†’ 194.108.117.16 FTP 69 Request: PASS password
+    8 0.951851700 194.108.117.16 â†’ 192.168.0.53 FTP 82 Response: 230 User 'demo' logged in.
+    9 0.951962400 192.168.0.53 â†’ 194.108.117.16 FTP 62 Request: TYPE A
+   10 1.189533400 194.108.117.16 â†’ 192.168.0.53 FTP 74 Response: 200 TYPE set to A.
+   11 1.189676300 192.168.0.53 â†’ 194.108.117.16 FTP 60 Request: PASV
+   12 1.427425600 194.108.117.16 â†’ 192.168.0.53 FTP 103 Response: 227 Entering Passive Mode (194,108,117,16,4,16)
+   13 1.428070300 192.168.0.53 â†’ 194.108.117.16 TCP 66 49161 â†’ 1040 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 WS=256 SACK_PERM
+   14 1.466790300 192.168.0.53 â†’ 194.108.117.16 TCP 54 49153 â†’ 21 [ACK] Seq=41 Ack=345 Win=263168 Len=0
+   15 1.665589500 194.108.117.16 â†’ 192.168.0.53 TCP 66 1040 â†’ 49161 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1440 WS=256 SACK_PERM
+   16 1.665641600 192.168.0.53 â†’ 194.108.117.16 TCP 54 49161 â†’ 1040 [ACK] Seq=1 Ack=1 Win=263424 Len=0
+   17 1.688958200 192.168.0.53 â†’ 194.108.117.16 FTP 60 Request: NLST
+   18 1.926499400 194.108.117.16 â†’ 192.168.0.53 FTP-DATA 71 FTP Data: 17 bytes (PASV) (NLST)
+   19 1.926500100 194.108.117.16 â†’ 192.168.0.53 TCP 60 1040 â†’ 49161 [FIN, ACK] Seq=18 Ack=1 Win=2097920 Len=0
+   20 1.926535700 192.168.0.53 â†’ 194.108.117.16 TCP 54 49161 â†’ 1040 [ACK] Seq=1 Ack=19 Win=263424 Len=0
+   21 1.926537300 194.108.117.16 â†’ 192.168.0.53 FTP 116 Response: 125 Data connection already open; starting 'ASCII' transfer.
+   22 1.926741900 192.168.0.53 â†’ 194.108.117.16 TCP 54 49161 â†’ 1040 [FIN, ACK] Seq=1 Ack=19 Win=263424 Len=0
+   23 1.966439500 192.168.0.53 â†’ 194.108.117.16 TCP 54 49153 â†’ 21 [ACK] Seq=47 Ack=407 Win=262912 Len=0
+   24 2.163738400 194.108.117.16 â†’ 192.168.0.53 TCP 60 1040 â†’ 49161 [ACK] Seq=19 Ack=2 Win=2097920 Len=0
+   25 2.163910900 194.108.117.16 â†’ 192.168.0.53 FTP 78 Response: 226 Transfer complete.
+   26 2.164048800 192.168.0.53 â†’ 194.108.117.16 FTP 60 Request: QUIT
+   27 2.401425500 194.108.117.16 â†’ 192.168.0.53 FTP 76 Response: 221 Closing session.
+   28 2.401426200 194.108.117.16 â†’ 192.168.0.53 TCP 60 21 â†’ 49153 [FIN, ACK] Seq=453 Ack=53 Win=2097920 Len=0
+   29 2.401477600 192.168.0.53 â†’ 194.108.117.16 TCP 54 49153 â†’ 21 [ACK] Seq=53 Ack=454 Win=262912 Len=0
+   30 2.401570500 192.168.0.53 â†’ 194.108.117.16 TCP 54 49153 â†’ 21 [FIN, ACK] Seq=53 Ack=454 Win=262912 Len=0
+   31 2.638680400 194.108.117.16 â†’ 192.168.0.53 TCP 60 21 â†’ 49153 [ACK] Seq=454 Ack=54 Win=2097920 Len=0
+
+
+=== 7. TSHARK: SESION HTTPS (3c_tcp_https_session.pcapng) ===
+    1 0.000000000 192.168.0.53 â†’ 200.89.153.22 TCP 66 49201 â†’ 443 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 WS=256 SACK_PERM
+    2 0.003275100 200.89.153.22 â†’ 192.168.0.53 TCP 66 443 â†’ 49201 [SYN, ACK] Seq=0 Ack=1 Win=64240 Len=0 MSS=1440 SACK_PERM WS=128
+    3 0.003335400 192.168.0.53 â†’ 200.89.153.22 TCP 54 49201 â†’ 443 [ACK] Seq=1 Ack=1 Win=263424 Len=0
+    4 0.005137500 192.168.0.53 â†’ 200.89.153.22 TLSv1.2 246 Client Hello (SNI=frba.utn.edu.ar)
+    5 0.008780200 200.89.153.22 â†’ 192.168.0.53 TLSv1.2 1494 Server Hello
+    6 0.008851600 200.89.153.22 â†’ 192.168.0.53 TCP 1494 443 â†’ 49201 [ACK] Seq=1441 Ack=193 Win=64128 Len=1440
+    7 0.008853200 200.89.153.22 â†’ 192.168.0.53 TCP 1270 443 â†’ 49201 [PSH, ACK] Seq=2881 Ack=193 Win=64128 Len=1216
+    8 0.008868700 192.168.0.53 â†’ 200.89.153.22 TCP 54 49201 â†’ 443 [ACK] Seq=193 Ack=4097 Win=263424 Len=0
+    9 0.012971700 200.89.153.22 â†’ 192.168.0.53 TCP 1494 443 â†’ 49201 [ACK] Seq=4097 Ack=193 Win=64128 Len=1440
+   10 0.012973400 200.89.153.22 â†’ 192.168.0.53 TLSv1.2 812 Certificate, Server Key Exchange, Server Hello Done
+   11 0.013009600 192.168.0.53 â†’ 200.89.153.22 TCP 54 49201 â†’ 443 [ACK] Seq=193 Ack=6295 Win=263424 Len=0
+   12 0.014361300 192.168.0.53 â†’ 200.89.153.22 TLSv1.2 147 Client Key Exchange, Change Cipher Spec, Encrypted Handshake Message
+   13 0.017941600 200.89.153.22 â†’ 192.168.0.53 TLSv1.2 328 New Session Ticket, Change Cipher Spec, Encrypted Handshake Message
+   14 0.020355600 192.168.0.53 â†’ 200.89.153.22 TLSv1.2 181 Application Data
+   15 0.066104800 200.89.153.22 â†’ 192.168.0.53 TCP 60 443 â†’ 49201 [ACK] Seq=6569 Ack=413 Win=64128 Len=0
+   16 4.463388500 200.89.153.22 â†’ 192.168.0.53 TLSv1.2 1494 
+   17 4.463389600 200.89.153.22 â†’ 192.168.0.53 TCP 1494 443 â†’ 49201 [PSH, ACK] Seq=8009 Ack=413 Win=64128 Len=1440
+   18 4.463424600 192.168.0.53 â†’ 200.89.153.22 TCP 54 49201 â†’ 443 [ACK] Seq=413 Ack=9449 Win=263424 Len=0
+   19 4.463897700 200.89.153.22 â†’ 192.168.0.53 TLSv1.2 1494 Application Data
+   20 4.463898500 200.89.153.22 â†’ 192.168.0.53 TCP 1494 443 â†’ 49201 [ACK] Seq=10889 Ack=413 Win=64128 Len=1440
+
+
